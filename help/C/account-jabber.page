@@ -10,6 +10,7 @@
       <e:review by="shaunm@gnome.org" date="2009-08-31" status="done"/>
       -->
     </revision>
+    <revision pkgversion="3.12" date="2015-02-03" status="review"/>
     <credit type="author">
       <name>Shaun McCance</name>
       <email>shaunm@gnome.org</email>
@@ -50,10 +51,12 @@
       required</gui> to prevent <app>Empathy</app> from communicating with
       the Jabber server when encryption is not possible.</p>
       <p>Some Jabber servers may encrypt data using invalid certificates,
-      or using certificates from unknown authorities.  If you trust the
-      server you are connecting to, you can select <gui>Ignore SSL
-      certificate errors</gui> to allow encrypted communication with
-      invalid certificates.</p>
+      or using certificates signed by unknown authorities.  You can select
+      <gui>Ignore SSL certificate errors</gui> to allow encrypted communication
+      with invalid certificates, but this allows an attacker to intercept your
+      communication with the server (including your password). You might want to
+      use this option for testing purposes, or if your server is broken and you
+      do not care about the security of your communication.</p>
     </item>
     <item>
       <title><gui>Resource</gui></title>
