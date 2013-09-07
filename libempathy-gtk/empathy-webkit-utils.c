@@ -263,10 +263,10 @@ empathy_webkit_create_context_menu (WebKitWebView *view,
   if (flags & EMPATHY_WEBKIT_MENU_CLEAR)
     {
       item = gtk_separator_menu_item_new ();
-      gtk_menu_shell_prepend (GTK_MENU_SHELL (menu), item);
+      gtk_menu_shell_append (GTK_MENU_SHELL (menu), item);
 
       item = gtk_image_menu_item_new_from_stock (GTK_STOCK_CLEAR, NULL);
-      gtk_menu_shell_prepend (GTK_MENU_SHELL (menu), item);
+      gtk_menu_shell_append (GTK_MENU_SHELL (menu), item);
 
       g_signal_connect_swapped (item, "activate",
           G_CALLBACK (empathy_theme_adium_clear),

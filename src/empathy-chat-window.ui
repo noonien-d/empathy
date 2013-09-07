@@ -185,12 +185,12 @@
           <menuitem action="menu_conv_join_chat"/>
           <menuitem action="menu_conv_leave_chat"/>
           <separator/>
-          <menuitem action="menu_conv_clear"/>
           <menuitem action="menu_conv_insert_smiley"/>
           <menuitem action="menu_conv_favorite"/>
           <menuitem action="menu_conv_always_urgent"/>
           <menuitem action="menu_conv_toggle_contacts"/>
           <menuitem action="menu_conv_invite_participant"/>
+          <menuitem action="menu_conv_clear"/>
           <separator/>
           <menuitem action="menu_conv_close"/>
         </menu>
