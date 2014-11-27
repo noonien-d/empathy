@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: empathy\n"
-"POT-Creation-Date: 2014-02-04 04:30+0000\n"
+"POT-Creation-Date: 2014-11-27 04:24+0000\n"
 "PO-Revision-Date: 2014-03-17 08:41+0100\n"
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
@@ -35,14 +35,14 @@ msgstr "Další informace potřebné k připojení do sítí IRC."
 
 #. (itstool) path: credit/name
 #: C/account-irc.page:17 C/account-jabber.page:14 C/accounts-window.page:17
-#: C/add-account.page:25 C/disable-account.page:25 C/import-account.page:27
+#: C/add-account.page:26 C/disable-account.page:25 C/import-account.page:27
 #: C/prev-conv.page:21 C/status-icons.page:21
 msgid "Shaun McCance"
 msgstr "Shaun McCance"
 
 #. (itstool) path: license/p
 #: C/account-irc.page:21 C/account-jabber.page:18 C/accounts-window.page:21
-#: C/add-account.page:29 C/add-contact.page:22 C/audio-call.page:31
+#: C/add-account.page:30 C/add-contact.page:22 C/audio-call.page:31
 #: C/audio-video.page:21 C/change-status.page:28 C/create-account.page:29
 #: C/disable-account.page:29 C/favorite-rooms.page:18 C/geolocation.page:21
 #: C/geolocation-not-showing.page:21 C/geolocation-privacy.page:21
@@ -492,7 +492,7 @@ msgid "Add a new account to <app>Empathy</app>."
 msgstr "Jak přidat nový účet do <app>Empathy</app>."
 
 #. (itstool) path: credit/name
-#: C/add-account.page:21 C/audio-call.page:22 C/audio-video.page:17
+#: C/add-account.page:22 C/audio-call.page:22 C/audio-video.page:16
 #: C/create-account.page:20 C/disable-account.page:21 C/favorite-rooms.page:14
 #: C/geolocation.page:17 C/geolocation-not-showing.page:17
 #: C/geolocation-privacy.page:17 C/geolocation-supported.page:16
@@ -511,12 +511,12 @@ msgid "Milo Casagrande"
 msgstr "Milo Casagrande"
 
 #. (itstool) path: page/title
-#: C/add-account.page:40
+#: C/add-account.page:41
 msgid "Add a new account"
 msgstr "Přidání nového účtu"
 
 #. (itstool) path: page/p
-#: C/add-account.page:42
+#: C/add-account.page:43
 msgid ""
 "You can add instant messaging accounts from any supported service to "
 "communicate with all of your contacts in <app>Empathy</app>. For some "
@@ -529,44 +529,30 @@ msgstr ""
 "podrobností viz <link xref=\"create-account\"/>."
 
 #. (itstool) path: item/p
-#: C/add-account.page:49 C/disable-account.page:49 C/irc-nick-password.page:50
-#: C/remove-account.page:43
+#: C/add-account.page:50
 msgid ""
-"From the <gui>Contact List</gui> window, choose <guiseq><gui>Edit</gui> "
-"<gui>Accounts</gui></guiseq>, or press <key>F4</key>."
+"Click <guiseq><gui>Empathy</gui><gui>Accounts</gui></guiseq>, or press "
+"<key>F4</key>."
 msgstr ""
-"V okně <gui>Seznam kontaktů</gui> vyberte <guiseq><gui>Upravit</gui> "
-"<gui>Účty</gui></guiseq> nebo zmáčkněte <key>F4</key>."
+"Klikněte na <guiseq><gui>Empathy</gui> <gui>Účty</gui></guiseq> nebo "
+"zmáčkněte <key>F4</key>."
 
 #. (itstool) path: item/p
-#: C/add-account.page:53
+#: C/add-account.page:54
 msgid "Click <gui style=\"button\">+</gui>."
 msgstr "Klikněte na <gui style=\"button\">+</gui>."
 
 #. (itstool) path: item/p
-#: C/add-account.page:58
+#: C/add-account.page:59
 msgid ""
-"From the <gui>Protocol</gui> drop-down list, select the type of account you "
-"wish to add."
+"From the <gui>What kind of chat account do you have?</gui> drop-down list, "
+"select the type of account you wish to add."
 msgstr ""
-"V rozbalovacím seznamu <gui>Protokol</gui> vyberte typ účtu, který chcete "
-"přidat."
+"V rozbalovacím seznamu <gui>Jaký typ diskuzního účtu máte?</gui> vyberte typ "
+"účtu, který chcete přidat."
 
 #. (itstool) path: item/p
-#: C/add-account.page:62
-msgid ""
-"If you do not already have a registered account, select <gui>Create a new "
-"account on the server</gui>. This feature is not available for all account "
-"types, and may not work with some account providers. See <link xref=\"create-"
-"account\"/> for more information."
-msgstr ""
-"Pokud ještě nemáte registrovaný účet, vyberte <gui>Vytvořit nový účet na "
-"serveru</gui>. Tato funkce není dostupná pro všechny typy účtů a nemusí "
-"fungovat u některých poskytovatelů. Více informací viz <link xref=\"create-"
-"account\"/>."
-
-#. (itstool) path: item/p
-#: C/add-account.page:69
+#: C/add-account.page:63
 msgid ""
 "Enter the required information. For most accounts, you will only need a "
 "login ID and a password. Some accounts may require additional information. "
@@ -577,21 +563,21 @@ msgstr ""
 "<link xref=\"accounts-window#details\"/>."
 
 #. (itstool) path: item/p
-#: C/add-account.page:74 C/import-account.page:61 C/irc-nick-password.page:63
-msgid "Click <gui style=\"button\">Apply</gui>."
-msgstr "Klikněte na <gui style=\"button\">Použít</gui>."
+#: C/add-account.page:68
+msgid "Click <gui style=\"button\">Add</gui>."
+msgstr "Klikněte na <gui style=\"button\">Přidat</gui>."
 
 #. (itstool) path: note/p
-#: C/add-account.page:81
+#: C/add-account.page:73
 msgid ""
-"To change the name that identifies the account in the <gui>Accounts</gui> "
-"window, select the account from the list on the left and either click on the "
-"name or press the space bar. Edit the account name and press <key>Enter</"
-"key> when you’re finished."
+"To change the name that identifies the account in the <gui>Messaging and "
+"VoIP Accounts</gui> window, select the account from the list on the left and "
+"either click on the name or press the space bar. Edit the account name and "
+"press <key>Enter</key> when you’re finished."
 msgstr ""
 "Pro změnu názvu, který identifikuje účet, vyberte účet ze seznamu v okně "
-"<gui>Účty</gui> nalevo a klikněte na jeho název, nebo zmáčkněte mezerník. "
-"Upravte název účtu a poté zmáčkněte <key>Enter</key>."
+"<gui>Účty IM a VoIP</gui> nalevo a klikněte na jeho název, nebo zmáčkněte "
+"mezerník. Upravte název účtu a poté zmáčkněte <key>Enter</key>."
 
 #. (itstool) path: info/desc
 #: C/add-contact.page:9
@@ -759,90 +745,28 @@ msgstr ""
 "<gui>Seznam kontaktů</gui> a zastavíte se na něm: objeví se malá vyskakovací "
 "zpráva zobrazující počet kontaktů, které tvoří metakontakt."
 
-#. (itstool) path: media
-#. This is a reference to an external file such as an image or video. When
-#. the file changes, the md5 hash will change to let you know you need to
-#. update your localized copy. The msgstr is not used at all. Set it to
-#. whatever you like once you have updated your copy of the file.
-#: C/audio-video.page:58
-msgctxt "_"
-msgid "external ref='figures/audio-input-microphone.png' md5='__failed__'"
-msgstr "external ref='figures/audio-input-microphone.png' md5='__failed__'"
-
-#. (itstool) path: media
-#. This is a reference to an external file such as an image or video. When
-#. the file changes, the md5 hash will change to let you know you need to
-#. update your localized copy. The msgstr is not used at all. Set it to
-#. whatever you like once you have updated your copy of the file.
-#: C/audio-video.page:70
-msgctxt "_"
-msgid "external ref='figures/camera-web.png' md5='__failed__'"
-msgstr "external ref='figures/camera-web.png' md5='__failed__'"
-
 #. (itstool) path: info/desc
-#: C/audio-video.page:8
+#: C/audio-video.page:30
 msgid ""
 "Information on when it is possible to have an audio or video conversation."
 msgstr "Informace o tom, kdy je možné použít hlasovou nebo videokonverzaci."
 
 #. (itstool) path: page/title
-#: C/audio-video.page:32
+#: C/audio-video.page:35
 msgid "Audio and video support"
 msgstr "Podpora hlasu a videa"
 
 #. (itstool) path: page/p
-#: C/audio-video.page:34
+#: C/audio-video.page:37
 msgid ""
 "You can only have audio and video conversation with contacts who are using "
-"an application which also supports this feature. When your contacts support "
-"audio or video conversations, you will see the following icons next to their "
-"names in the contact list:"
+"an application which also supports this feature."
 msgstr ""
 "Hlasové a videokonverzace můžete vést jen s kontakty, jenž používají "
-"aplikaci, která také podporuje tuto funkci. Pokud vaše kontakty podporují "
-"hlasové nebo videokonverzace, uvidíte vedle jejich jmen v seznamu kontaktů "
-"následující ikony:"
-
-#. (itstool) path: td/p
-#: C/audio-video.page:43
-msgid "Icon"
-msgstr "Ikona"
-
-#. (itstool) path: td/p
-#: C/audio-video.page:48
-msgid "Description"
-msgstr "Popis"
-
-#. (itstool) path: td/p
-#: C/audio-video.page:57
-msgid ""
-"<media type=\"image\" mime=\"image/png\" src=\"figures/audio-input-"
-"microphone.png\"> Icon for audio conversation </media>"
-msgstr ""
-"<media type=\"image\" mime=\"image/png\" src=\"figures/audio-input-"
-"microphone.png\"> Ikona pro hlasové konverzace</media>"
-
-#. (itstool) path: td/p
-#: C/audio-video.page:64
-msgid "The contact is able to have an audio conversation."
-msgstr "S kontaktem je možné začít hlasovou konverzaci."
-
-#. (itstool) path: td/p
-#: C/audio-video.page:69
-msgid ""
-"<media type=\"image\" mime=\"image/png\" src=\"figures/camera-web.png\"> "
-"Icon for video conversation </media>"
-msgstr ""
-"<media type=\"image\" mime=\"image/png\" src=\"figures/camera-web.png\"> "
-"Ikona pro videokonverzaci</media>"
-
-#. (itstool) path: td/p
-#: C/audio-video.page:76
-msgid "The contact is able to have a video conversation."
-msgstr "S kontaktem je možné začít videokonverzaci."
+"aplikaci, která také podporuje tuto funkci."
 
 #. (itstool) path: note/p
-#: C/audio-video.page:83
+#: C/audio-video.page:41
 msgid ""
 "In order to have an audio conversation, you need to have a sound card that "
 "is supported by your operating system, and a working microphone."
@@ -851,7 +775,7 @@ msgstr ""
 "vaším operačním systémem, a funkční mikrofon."
 
 #. (itstool) path: note/p
-#: C/audio-video.page:87
+#: C/audio-video.page:43
 msgid ""
 "In order to have a video conversation, you need to have a webcam that is "
 "supported by your operating system, and a working microphone."
@@ -860,12 +784,12 @@ msgstr ""
 "operačním systémem, a funkční mikrofon."
 
 #. (itstool) path: section/title
-#: C/audio-video.page:95
+#: C/audio-video.page:49
 msgid "Supported Account Types"
 msgstr "Podporované typy účtů"
 
 #. (itstool) path: section/p
-#: C/audio-video.page:97
+#: C/audio-video.page:51
 msgid ""
 "You can only have audio and video conversations using accounts on certain "
 "supported services. The following table lists whether audio and video is "
@@ -876,7 +800,7 @@ msgstr ""
 "a videokonverzace u daných typů účtů podporovány."
 
 #. (itstool) path: note/p
-#: C/audio-video.page:102
+#: C/audio-video.page:56
 msgid ""
 "Account types are provided by plugins. Your system may not have all of the "
 "following types available, or it may have types not listed here. Updated "
@@ -890,126 +814,126 @@ msgstr ""
 "nepodporují."
 
 #. (itstool) path: td/p
-#: C/audio-video.page:128
+#: C/audio-video.page:82
 msgid "Service"
 msgstr "Služba"
 
 #. (itstool) path: td/p
-#: C/audio-video.page:129
+#: C/audio-video.page:83
 msgid "Audio"
 msgstr "Hlas"
 
 #. (itstool) path: td/p
-#: C/audio-video.page:130
+#: C/audio-video.page:84
 msgid "Video"
 msgstr "Video"
 
 #. (itstool) path: td/p
-#: C/audio-video.page:135
+#: C/audio-video.page:89
 msgid "AIM"
 msgstr "AIM"
 
 #. (itstool) path: td/p
-#: C/audio-video.page:136 C/audio-video.page:137 C/audio-video.page:141
-#: C/audio-video.page:142 C/audio-video.page:146 C/audio-video.page:147
-#: C/audio-video.page:156 C/audio-video.page:157 C/audio-video.page:161
-#: C/audio-video.page:162 C/audio-video.page:166 C/audio-video.page:167
-#: C/audio-video.page:181 C/audio-video.page:182 C/audio-video.page:186
-#: C/audio-video.page:187 C/audio-video.page:191 C/audio-video.page:192
-#: C/audio-video.page:196 C/audio-video.page:197 C/audio-video.page:201
-#: C/audio-video.page:202 C/audio-video.page:211 C/audio-video.page:212
-#: C/audio-video.page:216 C/audio-video.page:217
+#: C/audio-video.page:90 C/audio-video.page:91 C/audio-video.page:95
+#: C/audio-video.page:96 C/audio-video.page:100 C/audio-video.page:101
+#: C/audio-video.page:110 C/audio-video.page:111 C/audio-video.page:115
+#: C/audio-video.page:116 C/audio-video.page:120 C/audio-video.page:121
+#: C/audio-video.page:135 C/audio-video.page:136 C/audio-video.page:140
+#: C/audio-video.page:141 C/audio-video.page:145 C/audio-video.page:146
+#: C/audio-video.page:150 C/audio-video.page:151 C/audio-video.page:155
+#: C/audio-video.page:156 C/audio-video.page:165 C/audio-video.page:166
+#: C/audio-video.page:170 C/audio-video.page:171
 msgid "No"
 msgstr "ne"
 
 #. (itstool) path: td/p
-#: C/audio-video.page:140
+#: C/audio-video.page:94
 msgid "Facebook Chat"
 msgstr "Facebook Chat"
 
 #. (itstool) path: td/p
-#: C/audio-video.page:145
+#: C/audio-video.page:99
 msgid "gadugadu"
 msgstr "gadugadu"
 
 #. (itstool) path: td/p
-#: C/audio-video.page:150
+#: C/audio-video.page:104
 msgid "Google Talk"
 msgstr "Google Talk"
 
 #. (itstool) path: td/p
-#: C/audio-video.page:151 C/audio-video.page:152 C/audio-video.page:171
-#: C/audio-video.page:172 C/audio-video.page:176 C/audio-video.page:177
-#: C/audio-video.page:206 C/audio-video.page:207
+#: C/audio-video.page:105 C/audio-video.page:106 C/audio-video.page:125
+#: C/audio-video.page:126 C/audio-video.page:130 C/audio-video.page:131
+#: C/audio-video.page:160 C/audio-video.page:161
 msgid "Yes"
 msgstr "ano"
 
 #. (itstool) path: td/p
-#: C/audio-video.page:155
+#: C/audio-video.page:109
 msgid "Groupwise"
 msgstr "Groupwise"
 
 #. (itstool) path: td/p
-#: C/audio-video.page:160
+#: C/audio-video.page:114
 msgid "ICQ"
 msgstr "ICQ"
 
 #. (itstool) path: td/p
 #. (itstool) path: section/title
-#: C/audio-video.page:165 C/create-account.page:49
+#: C/audio-video.page:119 C/create-account.page:49
 msgid "IRC"
 msgstr "IRC"
 
 #. (itstool) path: td/p
 #. (itstool) path: section/title
-#: C/audio-video.page:170 C/create-account.page:79
+#: C/audio-video.page:124 C/create-account.page:79
 msgid "Jabber"
 msgstr "Jabber"
 
 #. (itstool) path: td/p
-#: C/audio-video.page:175
+#: C/audio-video.page:129
 msgid "MSN"
 msgstr "MSN"
 
 #. (itstool) path: td/p
-#: C/audio-video.page:180
+#: C/audio-video.page:134
 msgid "myspace"
 msgstr "myspace"
 
 #. (itstool) path: td/p
-#: C/audio-video.page:185
+#: C/audio-video.page:139
 msgid "qq"
 msgstr "qq"
 
 #. (itstool) path: td/p
 #. (itstool) path: section/title
-#: C/audio-video.page:190 C/create-account.page:97
+#: C/audio-video.page:144 C/create-account.page:97
 msgid "People Nearby"
 msgstr "People Nearby"
 
 #. (itstool) path: td/p
-#: C/audio-video.page:195
+#: C/audio-video.page:149
 msgid "sametime"
 msgstr "sametime"
 
 #. (itstool) path: td/p
-#: C/audio-video.page:200
+#: C/audio-video.page:154
 msgid "silc"
 msgstr "silc"
 
 #. (itstool) path: td/p
 #. (itstool) path: section/title
-#: C/audio-video.page:205 C/create-account.page:110
+#: C/audio-video.page:159 C/create-account.page:110
 msgid "SIP"
 msgstr "SIP"
 
 #. (itstool) path: td/p
-#: C/audio-video.page:210
+#: C/audio-video.page:164
 msgid "Yahoo!"
 msgstr "Yahoo!"
 
 #. (itstool) path: td/p
-#: C/audio-video.page:215
+#: C/audio-video.page:169
 msgid "zephyr"
 msgstr "zephyr"
 
@@ -1300,6 +1224,16 @@ msgstr ""
 "povolení účtu se vám může hodit například, když se k účtu chcete přihlašovat "
 "jen v určitou dobu, ale ostatní účty v <app>Empathy</app> chcete používat "
 "pořád."
+
+#. (itstool) path: item/p
+#: C/disable-account.page:49 C/irc-nick-password.page:50
+#: C/remove-account.page:43
+msgid ""
+"From the <gui>Contact List</gui> window, choose <guiseq><gui>Edit</gui> "
+"<gui>Accounts</gui></guiseq>, or press <key>F4</key>."
+msgstr ""
+"V okně <gui>Seznam kontaktů</gui> vyberte <guiseq><gui>Upravit</gui> "
+"<gui>Účty</gui></guiseq> nebo zmáčkněte <key>F4</key>."
 
 #. (itstool) path: item/p
 #: C/disable-account.page:53
@@ -2040,6 +1974,11 @@ msgstr ""
 #: C/import-account.page:58
 msgid "Select the check box next to each account you wish to import."
 msgstr "Zaškrtněte políčko vedle každého účtu, který si přejete importovat."
+
+#. (itstool) path: item/p
+#: C/import-account.page:61 C/irc-nick-password.page:63
+msgid "Click <gui style=\"button\">Apply</gui>."
+msgstr "Klikněte na <gui style=\"button\">Použít</gui>."
 
 #. (itstool) path: note/p
 #: C/import-account.page:66
