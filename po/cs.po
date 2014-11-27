@@ -1784,7 +1784,7 @@ msgstr "<span size=\"x-large\">Načítá se…</span>"
 
 #: ../libempathy-gtk/empathy-new-account-dialog.c:130
 msgid "What kind of chat account do you have?"
-msgstr "Jaký typ účtu chcete vytvořit?"
+msgstr "Jaký typ diskuzního účtu máte?"
 
 #: ../libempathy-gtk/empathy-new-account-dialog.c:152
 msgid "Add new account"
