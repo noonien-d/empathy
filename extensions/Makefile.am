@@ -66,7 +66,7 @@ extensions.html: _gen/all.xml $(tools_dir)/doc-generator.xsl
 		$(tools_dir)/doc-generator.xsl \
 		$< > $@
 
-_gen/gtypes.h _gen/gtypes-body.h: _gen/all.xml \
+_gen/gt%pes.h _gen/gt%pes-body.h: _gen/all.xml \
 	$(top_srcdir)/tools/glib-gtypes-generator.py
 	$(AM_V_GEN)$(PYTHON) $(top_srcdir)/tools/glib-gtypes-generator.py \
 		$< _gen/gtypes Emp
@@ -82,7 +82,7 @@ _gen/enums.h: _gen/all.xml \
 		Emp \
 		$< _gen/enums
 
-_gen/interfaces-body.h _gen/interfaces.h: _gen/all.xml \
+_gen/int%rfaces-body.h _gen/int%rfaces.h: _gen/all.xml \
 	$(tools_dir)/glib-interfaces-gen.py
 	$(AM_V_GEN)$(PYTHON) $(tools_dir)/glib-interfaces-gen.py \
 		Emp _gen/interfaces-body.h _gen/interfaces.h $<
