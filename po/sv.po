@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: empathy\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=empathy&keywords=I18N+L10N&component=General\n"
-"POT-Creation-Date: 2014-10-03 15:26+0000\n"
+"POT-Creation-Date: 2014-12-07 04:25+0000\n"
 "PO-Revision-Date: 2014-10-04 12:29+0100\n"
 "Last-Translator: Anders Jonsson <anders.jonsson@norsjovallen.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
@@ -499,7 +499,7 @@ msgstr "Empathy bör minska precisionen för platsen"
 #: ../data/org.gnome.Empathy.gschema.xml.h:93
 msgid ""
 "Whether Empathy should reduce the location's accuracy for privacy reasons."
-msgstr "Huruvida Empathy ska minska platsens precision av integritetsskäl."
+msgstr "Huruvida Empathy ska minska platsens precision av sekretesskäl."
 
 #: ../libempathy/empathy-ft-handler.c:730
 msgid "No reason was specified"
@@ -3447,7 +3447,7 @@ msgstr "_Minska precision för plats"
 
 #: ../src/empathy-preferences.ui.h:34
 msgid "Privacy"
-msgstr "Integritet"
+msgstr "Sekretess"
 
 #: ../src/empathy-preferences.ui.h:36
 msgid ""
