@@ -275,6 +275,10 @@ out:
 
       empathy_presence_manager_set_auto_away (self->presence_mgr, autoaway);
     }
+
+  /* Now that we have been started, reset this flag so future invocation will
+   * be able to raise the window, see bgo#729282 */
+  self->start_hidden = FALSE;
 }
 
 static void
