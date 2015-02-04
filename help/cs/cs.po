@@ -3,13 +3,13 @@
 # Lucas Lommer <llommer@svn.gnome.org>, 2008.
 # Martin Picek <picek.martin@gnome-cesko.cz>, 2009.
 # Tomáš Karger <tomkarger@gmail.com>, 2013.
-# Marek Černocký <marek@manet.cz>, 2014.
+# Marek Černocký <marek@manet.cz>, 2014, 2015.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: empathy\n"
-"POT-Creation-Date: 2014-11-27 04:24+0000\n"
-"PO-Revision-Date: 2014-03-17 08:41+0100\n"
+"POT-Creation-Date: 2015-02-04 04:25+0000\n"
+"PO-Revision-Date: 2015-02-04 12:10+0100\n"
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
 "Language: cs\n"
@@ -34,14 +34,14 @@ msgid "Additional information necessary for connecting to IRC networks."
 msgstr "Další informace potřebné k připojení do sítí IRC."
 
 #. (itstool) path: credit/name
-#: C/account-irc.page:17 C/account-jabber.page:14 C/accounts-window.page:17
+#: C/account-irc.page:17 C/account-jabber.page:15 C/accounts-window.page:17
 #: C/add-account.page:26 C/disable-account.page:25 C/import-account.page:27
 #: C/prev-conv.page:21 C/status-icons.page:21
 msgid "Shaun McCance"
 msgstr "Shaun McCance"
 
 #. (itstool) path: license/p
-#: C/account-irc.page:21 C/account-jabber.page:18 C/accounts-window.page:21
+#: C/account-irc.page:21 C/account-jabber.page:19 C/accounts-window.page:21
 #: C/add-account.page:30 C/add-contact.page:22 C/audio-call.page:31
 #: C/audio-video.page:21 C/change-status.page:28 C/create-account.page:29
 #: C/disable-account.page:29 C/favorite-rooms.page:18 C/geolocation.page:21
@@ -339,12 +339,12 @@ msgid "Advanced options for Jabber and Google Talk accounts."
 msgstr "Pokročilé volby účtů Jabber a Google Talk."
 
 #. (itstool) path: page/title
-#: C/account-jabber.page:29
+#: C/account-jabber.page:30
 msgid "Jabber account details"
 msgstr "Podrobnosti účtu Jabber"
 
 #. (itstool) path: page/p
-#: C/account-jabber.page:31
+#: C/account-jabber.page:32
 msgid ""
 "Most Jabber accounts will require only a login ID and a password to connect. "
 "For some accounts or on certain types of networks, you may need to enter "
@@ -358,7 +358,7 @@ msgstr ""
 "volby. Obecný návod na přidání účtu viz <link xref=\"add-account\"/>."
 
 #. (itstool) path: note/p
-#: C/account-jabber.page:39
+#: C/account-jabber.page:40
 msgid ""
 "Google Talk is a type of Jabber account. These instructions hold for Google "
 "Talk accounts as well."
@@ -366,17 +366,17 @@ msgstr ""
 "Google Talk je typ účtu Jabber. Tento návod platí i pro účty Google Talk."
 
 #. (itstool) path: item/title
-#: C/account-jabber.page:45
+#: C/account-jabber.page:46
 msgid "<gui>Encryption required (TLS/SSL)</gui>"
 msgstr "<gui>Vyžadováno šifrování (TLS/SSL)</gui>"
 
 #. (itstool) path: item/title
-#: C/account-jabber.page:46
+#: C/account-jabber.page:47
 msgid "<gui>Ignore SSL certificate errors</gui>"
 msgstr "<gui>Ignorovat chyby certifikátu SSL</gui>"
 
 #. (itstool) path: item/p
-#: C/account-jabber.page:47
+#: C/account-jabber.page:48
 msgid ""
 "Whenever possible, communication between <app>Empathy</app> and the Jabber "
 "server is encrypted. If encrypted communication is not possible, messages "
@@ -390,30 +390,36 @@ msgstr ""
 "nebude se serverem komunikovat, když šifrování nebude možné."
 
 #. (itstool) path: item/p
-#: C/account-jabber.page:52
+#: C/account-jabber.page:53
 msgid ""
 "Some Jabber servers may encrypt data using invalid certificates, or using "
-"certificates from unknown authorities. If you trust the server you are "
-"connecting to, you can select <gui>Ignore SSL certificate errors</gui> to "
-"allow encrypted communication with invalid certificates."
+"certificates signed by unknown authorities. You can select <gui>Ignore SSL "
+"certificate errors</gui> to allow encrypted communication with invalid "
+"certificates, but this allows an attacker to intercept your communication "
+"with the server (including your password). You might want to use this option "
+"for testing purposes, or if your server is broken and you do not care about "
+"the security of your communication."
 msgstr ""
-"Některé servery Jabber mohou šifrovat data pomocí neplatných certifikátů, "
-"nebo pomocí certifikátů neznámých autorit. Pokud věříte serveru, ke kterému "
-"se připojujete, můžete vybrat <gui>Ignorovat chyby certifikátu SSL</gui> a "
-"povolit tak šifrovanou komunikaci s neplatnými certifikáty."
+"Některé servery Jabber mohou šifrovat data pomocí neplatných certifikátů "
+"nebo certifikátů podepsaných neznámými autoritami. Můžete vybrat "
+"<gui>Ignorovat chyby certifikátů SSL</gui>, aby se povolila šifrovaná "
+"komunikace s neplatnými certifikáty, ale útočníci tím získají možnost "
+"proniknout do vaší komunikace se serverem (včetně vašeho hesla). Proto se "
+"tato volba hodí spíše pro testovací účely nebo, když je server poškozený a "
+"vy se neobáváte o bezpečnost své komunikace."
 
 #. (itstool) path: item/title
-#: C/account-jabber.page:59
+#: C/account-jabber.page:62
 msgid "<gui>Resource</gui>"
 msgstr "<gui>Zdroj</gui>"
 
 #. (itstool) path: item/title
-#: C/account-jabber.page:60
+#: C/account-jabber.page:63
 msgid "<gui>Priority</gui>"
 msgstr "<gui>Priorita</gui>"
 
 #. (itstool) path: item/p
-#: C/account-jabber.page:61
+#: C/account-jabber.page:64
 msgid ""
 "If you have multiple applications (for instance, on separate computers) "
 "connected to your account at the same time, you can set a resource to "
@@ -426,7 +432,7 @@ msgstr ""
 "<input>Telepathy</input>."
 
 #. (itstool) path: item/p
-#: C/account-jabber.page:65
+#: C/account-jabber.page:68
 msgid ""
 "You can set the priority to specify which application should receive "
 "incoming messages from your contacts. New messages will be sent to the "
@@ -437,12 +443,12 @@ msgstr ""
 "nejvyšší prioritou."
 
 #. (itstool) path: item/title
-#: C/account-jabber.page:70
+#: C/account-jabber.page:73
 msgid "<gui>Override server settings</gui>"
 msgstr "<gui>Přepsat nastavení serveru</gui>"
 
 #. (itstool) path: item/p
-#: C/account-jabber.page:71
+#: C/account-jabber.page:74
 msgid ""
 "<app>Empathy</app> will use default settings to connect to the Jabber server "
 "based on your login ID. For some Jabber servers, you will need to enter "
@@ -3740,3 +3746,14 @@ msgid ""
 msgstr ""
 "Vyberte kontakt, se kterým chcete hovořit, a v nabídce vyberte <gui style="
 "\"menuitem\">Videohovor</gui>."
+
+#~ msgid ""
+#~ "Some Jabber servers may encrypt data using invalid certificates, or using "
+#~ "certificates from unknown authorities. If you trust the server you are "
+#~ "connecting to, you can select <gui>Ignore SSL certificate errors</gui> to "
+#~ "allow encrypted communication with invalid certificates."
+#~ msgstr ""
+#~ "Některé servery Jabber mohou šifrovat data pomocí neplatných certifikátů, "
+#~ "nebo pomocí certifikátů neznámých autorit. Pokud věříte serveru, ke "
+#~ "kterému se připojujete, můžete vybrat <gui>Ignorovat chyby certifikátu "
+#~ "SSL</gui> a povolit tak šifrovanou komunikaci s neplatnými certifikáty."
