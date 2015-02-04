@@ -1,13 +1,13 @@
 # translation of empathy-help.master.po to Español
 # Jorge González <jorgegonz@svn.gnome.org>, 2009, 2010, 2011.
-# Daniel Mustieles <daniel.mustieles@gmail.com>, 2011, 2012, 2013, 2014.
+# Daniel Mustieles <daniel.mustieles@gmail.com>, 2011, 2012, 2013, 2014, 2015.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: empathy-help.master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-10-07 17:07+0000\n"
-"PO-Revision-Date: 2014-10-15 18:30+0200\n"
+"POT-Creation-Date: 2015-02-04 04:25+0000\n"
+"PO-Revision-Date: 2015-02-04 12:28+0100\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: Español; Castellano <gnome-es-list@gnome.org>\n"
 "Language: \n"
@@ -21,7 +21,7 @@ msgstr ""
 msgctxt "_"
 msgid "translator-credits"
 msgstr ""
-"Daniel Mustieles <daniel.mustieles@gmail.com>, 2012 - 2014\n"
+"Daniel Mustieles <daniel.mustieles@gmail.com>, 2012 - 2015\n"
 "Jorge González <jorgegonz@svn.gnome.org>, 2008-2010"
 
 #. (itstool) path: info/desc
@@ -30,14 +30,14 @@ msgid "Additional information necessary for connecting to IRC networks."
 msgstr "Información adicional necesaria para conectarse a redes IRC."
 
 #. (itstool) path: credit/name
-#: C/account-irc.page:17 C/account-jabber.page:14 C/accounts-window.page:17
+#: C/account-irc.page:17 C/account-jabber.page:15 C/accounts-window.page:17
 #: C/add-account.page:26 C/disable-account.page:25 C/import-account.page:27
 #: C/prev-conv.page:21 C/status-icons.page:21
 msgid "Shaun McCance"
 msgstr "Shaun McCance"
 
 #. (itstool) path: license/p
-#: C/account-irc.page:21 C/account-jabber.page:18 C/accounts-window.page:21
+#: C/account-irc.page:21 C/account-jabber.page:19 C/accounts-window.page:21
 #: C/add-account.page:30 C/add-contact.page:22 C/audio-call.page:31
 #: C/audio-video.page:21 C/change-status.page:28 C/create-account.page:29
 #: C/disable-account.page:29 C/favorite-rooms.page:18 C/geolocation.page:21
@@ -339,12 +339,12 @@ msgid "Advanced options for Jabber and Google Talk accounts."
 msgstr "Opciones avanzadas para cuentas Jabber y Google Talk."
 
 #. (itstool) path: page/title
-#: C/account-jabber.page:29
+#: C/account-jabber.page:30
 msgid "Jabber account details"
 msgstr "Detalles de la cuenta Jabber"
 
 #. (itstool) path: page/p
-#: C/account-jabber.page:31
+#: C/account-jabber.page:32
 msgid ""
 "Most Jabber accounts will require only a login ID and a password to connect. "
 "For some accounts or on certain types of networks, you may need to enter "
@@ -360,7 +360,7 @@ msgstr ""
 "instrucciones generales para añadir una cuenta."
 
 #. (itstool) path: note/p
-#: C/account-jabber.page:39
+#: C/account-jabber.page:40
 msgid ""
 "Google Talk is a type of Jabber account. These instructions hold for Google "
 "Talk accounts as well."
@@ -369,17 +369,17 @@ msgstr ""
 "funcionan para cuentas de Google Talk."
 
 #. (itstool) path: item/title
-#: C/account-jabber.page:45
+#: C/account-jabber.page:46
 msgid "<gui>Encryption required (TLS/SSL)</gui>"
 msgstr "<gui>Se requiere cifrado (TLS/SSL)</gui>"
 
 #. (itstool) path: item/title
-#: C/account-jabber.page:46
+#: C/account-jabber.page:47
 msgid "<gui>Ignore SSL certificate errors</gui>"
 msgstr "<gui>Ignorar los errores de certificados SSL</gui>"
 
 #. (itstool) path: item/p
-#: C/account-jabber.page:47
+#: C/account-jabber.page:48
 msgid ""
 "Whenever possible, communication between <app>Empathy</app> and the Jabber "
 "server is encrypted. If encrypted communication is not possible, messages "
@@ -394,31 +394,36 @@ msgstr ""
 "servidor Jabber cuando no es posible cifrar la comunicación."
 
 #. (itstool) path: item/p
-#: C/account-jabber.page:52
+#: C/account-jabber.page:53
 msgid ""
 "Some Jabber servers may encrypt data using invalid certificates, or using "
-"certificates from unknown authorities. If you trust the server you are "
-"connecting to, you can select <gui>Ignore SSL certificate errors</gui> to "
-"allow encrypted communication with invalid certificates."
+"certificates signed by unknown authorities. You can select <gui>Ignore SSL "
+"certificate errors</gui> to allow encrypted communication with invalid "
+"certificates, but this allows an attacker to intercept your communication "
+"with the server (including your password). You might want to use this option "
+"for testing purposes, or if your server is broken and you do not care about "
+"the security of your communication."
 msgstr ""
-"Algunos servidores Jabber pueden cifrar datos usando certificados no válidos "
-"o usando certificados de autoridades desconocidas. Si confía en el servidor "
-"al que se está conectando puede seleccionar <gui>Ignorar los errores de "
-"certificados SSL</gui> para permitir comunicaciones cifradas con "
-"certificados no válidos."
+"Algunos servidores de Jabber pueden cifrar los datos usando certificados no "
+"válidos, o usando certificados firmados por autoridades desconocidas. Puede "
+"elegir <gui>Ignorar los errores en certificados SSL</gui> para permitir una "
+"comunicación cifrada con certificados no válidos, pero esto permite que un "
+"atacante intercepte su comunicación con el servidor (incluyendo la "
+"contraseña). Puede querer usar esta opción para pruebas, o si su servidor no "
+"funciona y no le importa la seguridad de su comunicación."
 
 #. (itstool) path: item/title
-#: C/account-jabber.page:59
+#: C/account-jabber.page:62
 msgid "<gui>Resource</gui>"
 msgstr "<gui>Recurso</gui>"
 
 #. (itstool) path: item/title
-#: C/account-jabber.page:60
+#: C/account-jabber.page:63
 msgid "<gui>Priority</gui>"
 msgstr "<gui>Prioridad</gui>"
 
 #. (itstool) path: item/p
-#: C/account-jabber.page:61
+#: C/account-jabber.page:64
 msgid ""
 "If you have multiple applications (for instance, on separate computers) "
 "connected to your account at the same time, you can set a resource to "
@@ -431,7 +436,7 @@ msgstr ""
 "app> usará <input>Telepathy</input> como recurso."
 
 #. (itstool) path: item/p
-#: C/account-jabber.page:65
+#: C/account-jabber.page:68
 msgid ""
 "You can set the priority to specify which application should receive "
 "incoming messages from your contacts. New messages will be sent to the "
@@ -442,12 +447,12 @@ msgstr ""
 "a la aplicación con la prioridad más alta."
 
 #. (itstool) path: item/title
-#: C/account-jabber.page:70
+#: C/account-jabber.page:73
 msgid "<gui>Override server settings</gui>"
 msgstr "<gui>Sobrescribir los ajustes del servidor</gui>"
 
 #. (itstool) path: item/p
-#: C/account-jabber.page:71
+#: C/account-jabber.page:74
 msgid ""
 "<app>Empathy</app> will use default settings to connect to the Jabber server "
 "based on your login ID. For some Jabber servers, you will need to enter "
@@ -539,9 +544,6 @@ msgstr ""
 
 #. (itstool) path: item/p
 #: C/add-account.page:50
-#| msgid ""
-#| "From the <gui>Contact List</gui> window, choose <guiseq><gui>Edit</gui> "
-#| "<gui>Accounts</gui></guiseq>, or press <key>F4</key>."
 msgid ""
 "Click <guiseq><gui>Empathy</gui><gui>Accounts</gui></guiseq>, or press "
 "<key>F4</key>."
@@ -556,9 +558,6 @@ msgstr "Pulse <gui style=\"button\">+</gui>."
 
 #. (itstool) path: item/p
 #: C/add-account.page:59
-#| msgid ""
-#| "From the <gui>Protocol</gui> drop-down list, select the type of account "
-#| "you wish to add."
 msgid ""
 "From the <gui>What kind of chat account do you have?</gui> drop-down list, "
 "select the type of account you wish to add."
@@ -580,17 +579,11 @@ msgstr ""
 
 #. (itstool) path: item/p
 #: C/add-account.page:68
-#| msgid "Click <gui style=\"button\">+</gui>."
 msgid "Click <gui style=\"button\">Add</gui>."
 msgstr "Pulse <gui style=\"button\">Añadir</gui>."
 
 #. (itstool) path: note/p
 #: C/add-account.page:73
-#| msgid ""
-#| "To change the name that identifies the account in the <gui>Accounts</gui> "
-#| "window, select the account from the list on the left and either click on "
-#| "the name or press the space bar. Edit the account name and press "
-#| "<key>Enter</key> when you’re finished."
 msgid ""
 "To change the name that identifies the account in the <gui>Messaging and "
 "VoIP Accounts</gui> window, select the account from the list on the left and "
@@ -784,11 +777,6 @@ msgstr "Soporte de sonido y vídeo"
 
 #. (itstool) path: page/p
 #: C/audio-video.page:37
-#| msgid ""
-#| "You can only have audio and video conversation with contacts who are "
-#| "using an application which also supports this feature. When your contacts "
-#| "support audio or video conversations, you will see the following icons "
-#| "next to their names in the contact list:"
 msgid ""
 "You can only have audio and video conversation with contacts who are using "
 "an application which also supports this feature."
@@ -3836,6 +3824,18 @@ msgid ""
 msgstr ""
 "Seleccione el contacto con el que quiere tener la conversación y, del menú, "
 "seleccione <gui style=\"menuitem\">Llamada de vídeo</gui>."
+
+#~ msgid ""
+#~ "Some Jabber servers may encrypt data using invalid certificates, or using "
+#~ "certificates from unknown authorities. If you trust the server you are "
+#~ "connecting to, you can select <gui>Ignore SSL certificate errors</gui> to "
+#~ "allow encrypted communication with invalid certificates."
+#~ msgstr ""
+#~ "Algunos servidores Jabber pueden cifrar datos usando certificados no "
+#~ "válidos o usando certificados de autoridades desconocidas. Si confía en "
+#~ "el servidor al que se está conectando puede seleccionar <gui>Ignorar los "
+#~ "errores de certificados SSL</gui> para permitir comunicaciones cifradas "
+#~ "con certificados no válidos."
 
 #~ msgid ""
 #~ "If you do not already have a registered account, select <gui>Create a new "
