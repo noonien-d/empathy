@@ -1288,7 +1288,8 @@ empathy_theme_adium_get_has_selection (EmpathyThemeAdium *self)
 void
 empathy_theme_adium_clear (EmpathyThemeAdium *self)
 {
-  theme_adium_load_template (self);
+  webkit_web_view_execute_script (WEBKIT_WEB_VIEW (self), "clearPage()");
+  empathy_theme_adium_scroll_down (self);
 
   /* Clear last contact to avoid trying to add a 'joined'
    * message when we don't have an insertion point. */

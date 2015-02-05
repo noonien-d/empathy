@@ -26,6 +26,7 @@
 			this.isCoalescing = false;
 			this.isConsecutive = undefined;
 			this.shouldScroll = undefined;
+			this.interdiv = undefined;
 			
 			var appendElement = function (elem) {
 				document.getElementById("Chat").appendChild(elem);
@@ -101,6 +102,22 @@
 				}
 			}
 			
+			// This method is called, if the size of the chat window
+			// changes or after new messages have been appended.
+			// Adjusts the size of the interleaving page (if existing)
+			this.onchange = function() {
+				if (self.interdiv !== undefined){
+					var old_padding = parseInt(self.interdiv.style.paddingTop, 10);
+					var diff = document.height -
+						   (self.interdiv.offsetTop + old_padding);
+					new_padding = window.innerHeight - diff;
+
+					if (new_padding <= 0)
+						removePage();
+					else
+						self.interdiv.style.paddingTop = new_padding + "px";
+				}
+			}
 			
 			// coalased analogs to the global functions
 			
@@ -118,6 +135,7 @@
 				node = null;
 
 				setShouldScroll(shouldScroll);
+				self.onchange();
 				self.coalesce();
 			}
 			
@@ -133,6 +151,7 @@
 				}
 				node = null;
 				setShouldScroll(shouldScroll);
+				self.onchange();
 				self.coalesce();
 			}
 			
@@ -305,12 +324,48 @@
 
 		window.onresize = function windowDidResize(){
 			alignChat(true/*nearBottom()*/); //nearBottom buggy with inactive tabs
+			window.onresize = coalescedHTML.onchange;
 		}
 		
 		function initStyle() {
 			alignChat(true);
 			if(!coalescedHTML)
 				coalescedHTML = new CoalescedHTML();
+		}
+
+		/* Implementation of the CTRL-L command to clear the chat
+                 * window. (Similar to a linux terminal)
+                 */
+		function clearPage(){
+			removePage();
+			if (checkForAndRemoveInsertNodes()){
+				var interdiv = document.createElement('div');
+				interdiv.id = 'interleaving_page';
+				interdiv.style.paddingTop = window.innerHeight + 'px';
+				chat.appendChild(interdiv);
+				coalescedHTML.interdiv = interdiv;
+			}
+		}
+
+		function checkForAndRemoveInsertNodes() {
+			var inserts = chat.querySelectorAll("#insert");
+			if (inserts.length <= 0){
+				return false;
+			}
+			for (var n = 0; n < inserts.length-1; n++) {
+				var rm = inserts[n];
+				rm.parentNode.removeChild(rm);
+			}
+			return true;
+		}
+
+		function removePage(){
+			var interdivs = chat.querySelectorAll("#interleaving_page");
+			if (interdivs.length > 0){
+				var rm = interdivs[0];
+				rm.parentNode.removeChild(rm);
+			}
+			coalescedHTML.interdiv = undefined;
 		}
 	</script>
 
