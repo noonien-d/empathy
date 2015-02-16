@@ -46,7 +46,7 @@ msgstr ""
 msgid "chat;talk;im;message;irc;voip;gtalk;facebook;jabber;"
 msgstr ""
 "chat;im;irc;voip;gtalk;facebook;jabber;komunikovať;komunikácia;rozhovor;"
-"hovor;videohovor;telefonovanie"
+"hovor;videohovor;telefonovanie;"
 
 #: ../data/empathy.appdata.xml.in.h:1
 msgid ""
