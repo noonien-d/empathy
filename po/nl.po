@@ -57,7 +57,7 @@ msgstr "Chatten op Google Talk, Facebook, MSN en vele andere chatdiensten"
 
 #: ../data/empathy.desktop.in.in.h:5
 msgid "chat;talk;im;message;irc;voip;gtalk;facebook;jabber;"
-msgstr "chat;talk;im;message;irc;voip;gtalk;facebook;jabber;gesprek;bericht"
+msgstr "chat;talk;im;message;irc;voip;gtalk;facebook;jabber;gesprek;bericht;"
 
 #: ../data/empathy.appdata.xml.in.h:1
 msgid ""
