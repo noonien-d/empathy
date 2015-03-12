@@ -146,19 +146,6 @@ get_tp_parameters (GoaAccount *account)
       PARAM ("param-extra-certificate-identities", "talk.google.com");
       PARAM ("param-require-encryption", "true");
     }
-  else if (!tp_strdiff (type, "facebook"))
-    {
-      PARAM ("manager", "gabble");
-      PARAM ("protocol", "jabber");
-      PARAM ("Icon", "im-facebook");
-      PARAM ("Service", "facebook");
-
-      PARAM ("param-account", "chat.facebook.com");
-      PARAM ("param-server", "chat.facebook.com");
-      PARAM ("param-require-encryption", "true");
-      PARAM ("param-fallback-servers",
-          "chat.facebook.com:443");
-    }
   else
     {
       DEBUG ("Unknown account type %s", type);
