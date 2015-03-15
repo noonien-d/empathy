@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=empathy&keywords=I18N+L10N&component=General\n"
-"POT-Creation-Date: 2015-03-07 16:25+0000\n"
-"PO-Revision-Date: 2015-03-08 13:49+0500\n"
+"POT-Creation-Date: 2015-03-14 16:26+0000\n"
+"PO-Revision-Date: 2015-03-15 08:15+0500\n"
 "Last-Translator: Baurzhan Muftakhidinov <baurthefirst@gmail.com>\n"
 "Language-Team: Kazakh <kk_KZ@googlegroups.com>\n"
 "Language: kk\n"
@@ -111,7 +111,6 @@ msgid "Whether to show contacts that are offline in the contact list."
 msgstr ""
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:14
-#| msgid "Show offline contacts"
 msgid "Show Balance in contact list"
 msgstr ""
 
@@ -162,7 +161,6 @@ msgid "The stored position (in pixels) of the chat window side pane."
 msgstr ""
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:26
-#| msgid "Show offline contacts"
 msgid "Show contact groups"
 msgstr ""
 
@@ -482,7 +480,6 @@ msgid "Unknown reason"
 msgstr "Себебі белгісіз"
 
 #: ../libempathy/empathy-ft-handler.c:895
-#| msgid "File transfer completed"
 msgid "File transfer completed, but the file was corrupted"
 msgstr ""
 
@@ -637,7 +634,7 @@ msgstr "Сервер бұл байланысты өңдеу үшін тым бо
 
 #: ../libempathy/empathy-utils.c:311
 msgid "Certificate has been revoked"
-msgstr ""
+msgstr "Сертификат қайта шақырылған"
 
 #: ../libempathy/empathy-utils.c:313
 msgid ""
@@ -663,9 +660,8 @@ msgid "Internal error"
 msgstr "Ішкі қате"
 
 #: ../libempathy-gtk/empathy-account-chooser.c:687
-#| msgid "_Accounts"
 msgid "All accounts"
-msgstr ""
+msgstr "Барлық тіркелгілер"
 
 #: ../libempathy-gtk/empathy-avatar-image.c:320
 msgid "Click to enlarge"
@@ -673,7 +669,6 @@ msgstr ""
 
 #: ../libempathy-gtk/empathy-bad-password-dialog.c:128
 #, c-format
-#| msgid "Authentication failed"
 msgid "Authentication failed for account <b>%s</b>"
 msgstr ""
 
@@ -693,7 +688,7 @@ msgstr ""
 #. remember password ticky box
 #: ../libempathy-gtk/empathy-base-password-dialog.c:262
 msgid "Remember password"
-msgstr ""
+msgstr "Парольді еске сақтау"
 
 #: ../libempathy-gtk/empathy-call-utils.c:37
 #: ../libempathy-gtk/empathy-call-utils.c:55
@@ -1067,12 +1062,10 @@ msgid "Search contacts"
 msgstr ""
 
 #: ../libempathy-gtk/empathy-contact-search-dialog.c:582
-#| msgid "Search"
 msgid "Search: "
 msgstr ""
 
 #: ../libempathy-gtk/empathy-contact-search-dialog.c:640
-#| msgid "Contact"
 msgid "_Add Contact"
 msgstr ""
 
@@ -1305,13 +1298,13 @@ msgstr "Ө_шіру"
 #: ../libempathy-gtk/empathy-individual-menu.c:1351
 #: ../libempathy-gtk/empathy-new-message-dialog.c:308
 msgid "_Chat"
-msgstr ""
+msgstr "_Чат"
 
 #. add SMS button
 #: ../libempathy-gtk/empathy-individual-menu.c:1418
 #: ../libempathy-gtk/empathy-new-message-dialog.c:302
 msgid "_SMS"
-msgstr ""
+msgstr "_SMS"
 
 #: ../libempathy-gtk/empathy-individual-menu.c:1484
 msgctxt "menu item"
@@ -1524,6 +1517,9 @@ msgid ""
 "same network as you. If you want to use this feature, please check that the "
 "details below are correct."
 msgstr ""
+"Empathy сізбен бірге бір желіде орналасқан адамдарды автотауып, олармен "
+"хабарласуды мүмкін етеді. Бұл мүмкіндікті қолданғыңыз келсе, төмендегі "
+"деректерді толтырып, тексеріңіз."
 
 #: ../libempathy-gtk/empathy-local-xmpp-assistant-widget.c:102
 msgid "People nearby"
@@ -1534,6 +1530,8 @@ msgid ""
 "You can change these details later or disable this feature by choosing <span "
 "style=\"italic\">Edit → Accounts</span> in the Contact List."
 msgstr ""
+"Болашақта бұл деректерді өзгерту не бұл мүмкіндікті сөндіру үшін контакттар "
+"тізімінен <span style=\"italic\">Түзету → Тіркелгілер</span> мәзірін ашыңыз."
 
 #: ../libempathy-gtk/empathy-log-window.c:631
 msgid "History"
@@ -1666,9 +1664,8 @@ msgid "Delete from:"
 msgstr ""
 
 #: ../libempathy-gtk/empathy-log-window.ui.h:1
-#| msgid "File"
 msgid "_File"
-msgstr ""
+msgstr "_Файл"
 
 #: ../libempathy-gtk/empathy-log-window.ui.h:2
 #: ../src/empathy-call-window.ui.h:2 ../src/empathy-chat-window.ui.h:11
@@ -1699,15 +1696,15 @@ msgstr "бет 2"
 
 #: ../libempathy-gtk/empathy-log-window.ui.h:9
 msgid "<span size=\"x-large\">Loading…</span>"
-msgstr ""
+msgstr "<span size=\"x-large\">Жүктелуде…</span>"
 
 #: ../libempathy-gtk/empathy-new-account-dialog.c:130
 msgid "What kind of chat account do you have?"
-msgstr ""
+msgstr "Сізде тіркелгінің қай түрі бар?"
 
 #: ../libempathy-gtk/empathy-new-account-dialog.c:152
 msgid "Add new account"
-msgstr ""
+msgstr "Жаңа тіркелгіні қосу"
 
 #: ../libempathy-gtk/empathy-new-call-dialog.c:189
 #: ../libempathy-gtk/empathy-new-message-dialog.c:279
@@ -1717,22 +1714,21 @@ msgstr ""
 #. add video button
 #: ../libempathy-gtk/empathy-new-call-dialog.c:212
 msgid "_Video Call"
-msgstr ""
+msgstr "_Видео қоңырау"
 
 #. add audio button
 #: ../libempathy-gtk/empathy-new-call-dialog.c:222
-#| msgid "Audio"
 msgid "_Audio Call"
-msgstr ""
+msgstr "_Аудио қоңырау"
 
 #. Tweak the dialog
 #: ../libempathy-gtk/empathy-new-call-dialog.c:232
 msgid "New Call"
-msgstr ""
+msgstr "Жаңа қоңырау"
 
 #: ../libempathy-gtk/empathy-new-message-dialog.c:72
 msgid "The contact is offline"
-msgstr ""
+msgstr "Контакт желіде емес"
 
 #: ../libempathy-gtk/empathy-new-message-dialog.c:74
 msgid "The specified contact is either invalid or unknown"
@@ -1780,9 +1776,8 @@ msgid "New Conversation"
 msgstr ""
 
 #: ../libempathy-gtk/empathy-password-dialog.c:132
-#| msgid "Password:"
 msgid "Password Required"
-msgstr ""
+msgstr "Пароль керек"
 
 #. COL_STATUS_TEXT
 #. COL_STATE_ICON_NAME
@@ -1914,7 +1909,6 @@ msgstr "Қ_абылдау"
 
 #: ../libempathy-gtk/empathy-theme-adium.c:1218
 #, c-format
-#| msgid "Message received"
 msgid "Message edited at %s"
 msgstr ""
 
@@ -1947,7 +1941,6 @@ msgid "The hostname verified by the certificate doesn't match the server name."
 msgstr ""
 
 #: ../libempathy-gtk/empathy-tls-dialog.c:171
-#| msgid "Certificate self-signed"
 msgid "The certificate is self-signed."
 msgstr ""
 
@@ -1995,7 +1988,6 @@ msgid "Remember this choice for future connections"
 msgstr ""
 
 #: ../libempathy-gtk/empathy-tls-dialog.c:301
-#| msgid "Certificate expired"
 msgid "Certificate Details"
 msgstr ""
 
@@ -2039,7 +2031,6 @@ msgid "Inspect HTML"
 msgstr ""
 
 #: ../libempathy-gtk/empathy-roster-model.h:27
-#| msgid "Contact"
 msgid "Top Contacts"
 msgstr ""
 
@@ -2049,22 +2040,22 @@ msgstr ""
 
 #: ../libempathy-gtk/empathy-roster-model.h:29
 msgid "Ungrouped"
-msgstr ""
+msgstr "Топталмаған"
 
 #. Add a prefix explaining that something goes wrong when trying to
 #. * fetch contact's presence.
 #: ../libempathy-gtk/empathy-roster-contact.c:202
 #, c-format
 msgid "Server cannot find contact: %s"
-msgstr ""
+msgstr "Сервер контактты таба алмады: %s"
 
 #: ../src/empathy-about-dialog.c:82
 msgid "An Instant Messaging client for GNOME"
-msgstr ""
+msgstr "GNOME үшін жедел хабарласу клиенті"
 
 #: ../src/empathy-about-dialog.c:88
 msgid "translator-credits"
-msgstr "Baurzhan Muftakhidinov <baurthefirst@gmail.com>, 2010"
+msgstr "Baurzhan Muftakhidinov <baurthefirst@gmail.com>"
 
 #: ../src/empathy-accounts.c:171
 msgid "Don't display any dialogs; do any work (eg, importing) and exit"
@@ -2085,11 +2076,11 @@ msgstr ""
 
 #: ../src/empathy-accounts.c:186
 msgid "- Empathy Accounts"
-msgstr ""
+msgstr "- Empathy тіркелгілері"
 
 #: ../src/empathy-accounts.c:240
 msgid "Empathy Accounts"
-msgstr ""
+msgstr "Empathy тіркелгілері"
 
 #. The primary text of the dialog shown to the user when he is about to lose
 #. * unsaved changes
@@ -2187,15 +2178,15 @@ msgstr ""
 #. Tweak the dialog
 #: ../src/empathy-accounts-dialog.c:2400
 msgid "Messaging and VoIP Accounts"
-msgstr ""
+msgstr "Хабарламалар және VoIP тіркелгілері"
 
 #: ../src/empathy-accounts-dialog.ui.h:1
 msgid "Add…"
-msgstr ""
+msgstr "Қосу…"
 
 #: ../src/empathy-accounts-dialog.ui.h:3
 msgid "_Import…"
-msgstr ""
+msgstr "_Импорттау…"
 
 #: ../src/empathy-accounts-dialog.ui.h:4
 msgid "Loading account information"
@@ -2212,12 +2203,10 @@ msgid "No protocol backends installed"
 msgstr ""
 
 #: ../src/empathy-auth-client.c:285
-#| msgid "Authentication failed"
 msgid " - Empathy authentication client"
 msgstr ""
 
 #: ../src/empathy-auth-client.c:301
-#| msgid "Authentication failed"
 msgid "Empathy authentication client"
 msgstr ""
 
@@ -3134,11 +3123,11 @@ msgstr ""
 
 #: ../src/empathy-preferences.c:143
 msgid "Account connected"
-msgstr ""
+msgstr "Тіркелгі байланысқан"
 
 #: ../src/empathy-preferences.c:144
 msgid "Account disconnected"
-msgstr ""
+msgstr "Тіркелгі ажыратылған"
 
 #: ../src/empathy-preferences.c:369
 msgid "Language"
@@ -3190,27 +3179,27 @@ msgstr "Баптаулар"
 
 #: ../src/empathy-preferences.ui.h:2
 msgid "Show groups"
-msgstr ""
+msgstr "Топтарды көрсету"
 
 #: ../src/empathy-preferences.ui.h:3
 msgid "Show account balances"
-msgstr ""
+msgstr "Тіркелгілер теңгерімдерін көрсету"
 
 #: ../src/empathy-preferences.ui.h:4 ../src/empathy-roster-window.c:2301
 msgid "Contact List"
-msgstr ""
+msgstr "Контакттар тізімі"
 
 #: ../src/empathy-preferences.ui.h:5
 msgid "Start chats in:"
-msgstr ""
+msgstr "Чаттарды бастау:"
 
 #: ../src/empathy-preferences.ui.h:6
 msgid "new ta_bs"
-msgstr ""
+msgstr "жаңа _беттерде"
 
 #: ../src/empathy-preferences.ui.h:7
 msgid "new _windows"
-msgstr ""
+msgstr "жаңа _терезелерде"
 
 #: ../src/empathy-preferences.ui.h:8
 msgid "Show _smileys as images"
@@ -3320,28 +3309,27 @@ msgstr ""
 
 #: ../src/empathy-preferences.ui.h:37
 msgid "Enable spell checking for languages:"
-msgstr ""
+msgstr "Келесі тілдер үшін емлені тексеруді іске қосу:"
 
 #: ../src/empathy-preferences.ui.h:38
 msgid "Spell Checking"
-msgstr ""
+msgstr "Емлені тексеру"
 
 #: ../src/empathy-preferences.ui.h:39
 msgid "Chat Th_eme:"
-msgstr ""
+msgstr "Чат т_емасы:"
 
 #: ../src/empathy-preferences.ui.h:40
 msgid "Variant:"
-msgstr ""
+msgstr "Нұсқасы:"
 
 #: ../src/empathy-preferences.ui.h:41
 msgid "Themes"
 msgstr "Темалар"
 
 #: ../src/empathy-roster-window.c:231
-#| msgid "Password:"
 msgid "Provide Password"
-msgstr ""
+msgstr "Парольді ұсыну"
 
 #: ../src/empathy-roster-window.c:237
 msgid "Disconnect"
@@ -3349,7 +3337,7 @@ msgstr "Байланысты үзу"
 
 #: ../src/empathy-roster-window.c:494
 msgid "You need to set up an account to see contacts here."
-msgstr ""
+msgstr "Осында контакттарды көру үшін сізге тіркегіні баптау керек."
 
 #: ../src/empathy-roster-window.c:570
 #, c-format
@@ -3372,7 +3360,7 @@ msgstr "Facebook"
 #: ../src/empathy-roster-window.c:690
 #, c-format
 msgid "%s account requires authorisation"
-msgstr ""
+msgstr "%s тіркелгісі авторизацияны талап етеді"
 
 #: ../src/empathy-roster-window.c:701
 msgid "Online Accounts"
@@ -3380,7 +3368,7 @@ msgstr "Желілік тіркелгілер"
 
 #: ../src/empathy-roster-window.c:748
 msgid "Update software…"
-msgstr ""
+msgstr "БҚ жаңарту…"
 
 #: ../src/empathy-roster-window.c:754
 msgid "Reconnect"
@@ -3388,7 +3376,7 @@ msgstr "Қайта байланысу"
 
 #: ../src/empathy-roster-window.c:758
 msgid "Edit Account"
-msgstr ""
+msgstr "Тіркелгіні түзету"
 
 #: ../src/empathy-roster-window.c:763
 msgid "Close"
@@ -3414,26 +3402,25 @@ msgstr ""
 
 #: ../src/empathy-roster-window.c:1721
 msgid "No match found"
-msgstr ""
+msgstr "Сәйкестіктер табылмады"
 
 #: ../src/empathy-roster-window.c:1728
 msgid "You haven't added any contacts yet"
-msgstr ""
+msgstr "Сіз әлі бірде-бір контактты қосқан жоқсыз"
 
 #: ../src/empathy-roster-window.c:1731
-#| msgid "Show offline contacts"
 msgid "No online contacts"
 msgstr ""
 
 #: ../src/empathy-roster-window-menubar.ui.h:1
 #: ../src/empathy-status-icon.ui.h:2
 msgid "_New Conversation…"
-msgstr ""
+msgstr "_Жаңа сөйлесу…"
 
 #: ../src/empathy-roster-window-menubar.ui.h:2
 #: ../src/empathy-status-icon.ui.h:3
 msgid "New _Call…"
-msgstr ""
+msgstr "Жаңа қ_оңырау…"
 
 #: ../src/empathy-roster-window-menubar.ui.h:3
 msgid "Contacts"
@@ -3485,7 +3472,7 @@ msgstr "Көмек"
 
 #: ../src/empathy-roster-window-menubar.ui.h:16
 msgid "About"
-msgstr ""
+msgstr "Осы туралы"
 
 #: ../src/empathy-roster-window-menubar.ui.h:17
 #: ../src/empathy-status-icon.ui.h:5
