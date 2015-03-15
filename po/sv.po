@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: empathy\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=empathy&keywords=I18N+L10N&component=General\n"
-"POT-Creation-Date: 2014-12-07 04:25+0000\n"
+"POT-Creation-Date: 2015-03-14 04:24+0000\n"
 "PO-Revision-Date: 2014-10-04 12:29+0100\n"
 "Last-Translator: Anders Jonsson <anders.jonsson@norsjovallen.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
@@ -199,11 +199,11 @@ msgstr "Huruvida grupper ska visas i kontaktlistan."
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:28
 msgid "Use notification sounds"
-msgstr "Använd notifieringsljud"
+msgstr "Använd aviseringsljud"
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:29
 msgid "Whether to play a sound to notify of events."
-msgstr "Huruvida ett ljud ska spelas upp för att notifiera om händelser."
+msgstr "Huruvida ett ljud ska spelas upp för att avisera om händelser."
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:30
 msgid "Disable sounds when away"
@@ -211,7 +211,7 @@ msgstr "Inaktivera ljud under frånvaro"
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:31
 msgid "Whether to play sound notifications when away or busy."
-msgstr "Huruvida ljudnotifieringar ska spelas upp vid frånvaro eller upptagen."
+msgstr "Huruvida ljudaviseringar ska spelas upp vid frånvaro eller upptagen."
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:32
 msgid "Play a sound for incoming messages"
@@ -274,48 +274,48 @@ msgstr "Huruvida ett ljud ska spelas upp vid utloggning från ett nätverk."
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:46
 msgid "Enable popup notifications for new messages"
-msgstr "Aktivera popupnotifieringar för nya meddelanden"
+msgstr "Aktivera popupaviseringar för nya meddelanden"
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:47
 msgid "Whether to show a popup notification when receiving a new message."
 msgstr ""
-"Huruvida en popupnotifiering ska visas när ett nytt meddelande tas emot."
+"Huruvida en popupavisering ska visas när ett nytt meddelande tas emot."
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:48
 msgid "Disable popup notifications when away"
-msgstr "Inaktivera popupnotifieringar under frånvaro"
+msgstr "Inaktivera popupaviseringar under frånvaro"
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:49
 msgid "Whether to show popup notifications when away or busy."
-msgstr "Huruvida popupnotifieringar ska visas vid frånvaro eller upptagen."
+msgstr "Huruvida popupaviseringar ska visas vid frånvaro eller upptagen."
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:50
 msgid "Pop up notifications if the chat isn't focused"
-msgstr "Visa popupnotifieringar om chatten inte är fokuserad"
+msgstr "Visa popupaviseringar om chatten inte är fokuserad"
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:51
 msgid ""
 "Whether to show a popup notification when receiving a new message even if "
 "the chat is already opened, but not focused."
 msgstr ""
-"Huruvida en popupnotifiering ska visas när ett nytt meddelande tas emot, "
+"Huruvida en popupavisering ska visas när ett nytt meddelande tas emot, "
 "även om chatten redan är öppnad, men inte fokuserad."
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:52
 msgid "Pop up notifications when a contact logs in"
-msgstr "Visa popupnotifieringar när en kontakt loggar in"
+msgstr "Visa popupaviseringar när en kontakt loggar in"
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:53
 msgid "Whether to show a popup notification when a contact goes online."
-msgstr "Huruvida popupnotifieringar ska visas när en kontakt ansluter."
+msgstr "Huruvida popupaviseringar ska visas när en kontakt ansluter."
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:54
 msgid "Pop up notifications when a contact logs out"
-msgstr "Visa popupnotifieringar när en kontakt loggar ut"
+msgstr "Visa popupaviseringar när en kontakt loggar ut"
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:55
 msgid "Whether to show a popup notification when a contact goes offline."
-msgstr "Huruvida popupnotifieringar ska visas när en kontakt kopplar från."
+msgstr "Huruvida popupaviseringar ska visas när en kontakt kopplar från."
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:56
 msgid "Use graphical smileys"
@@ -2755,7 +2755,7 @@ msgstr "_Favoritchattrum"
 
 #: ../src/empathy-chat-window.ui.h:5
 msgid "Notify for All Messages"
-msgstr "Notifiera för alla meddelanden"
+msgstr "Avisera för alla meddelanden"
 
 #: ../src/empathy-chat-window.ui.h:6 ../src/empathy-status-icon.ui.h:1
 msgid "_Show Contact List"
@@ -3356,7 +3356,7 @@ msgstr "Logga samtal"
 
 #: ../src/empathy-preferences.ui.h:12
 msgid "Display incoming events in the notification area"
-msgstr "Visa inkommande händelser i notifieringsytan"
+msgstr "Visa inkommande händelser i aviseringsytan"
 
 #: ../src/empathy-preferences.ui.h:13
 msgid "_Automatically connect on startup"
@@ -3372,31 +3372,31 @@ msgstr "Allmänt"
 
 #: ../src/empathy-preferences.ui.h:16
 msgid "_Enable bubble notifications"
-msgstr "_Aktivera bubbelnotifieringar"
+msgstr "_Aktivera bubbelaviseringar"
 
 #: ../src/empathy-preferences.ui.h:17
 msgid "Disable notifications when _away or busy"
-msgstr "Inaktivera notifieringar under fr_ånvaro eller upptagen"
+msgstr "Inaktivera aviseringar under fr_ånvaro eller upptagen"
 
 #: ../src/empathy-preferences.ui.h:18
 msgid "Enable notifications when the _chat is not focused"
-msgstr "Aktivera notifieringar när _chatten inte är fokuserad"
+msgstr "Aktivera aviseringar när _chatten inte är fokuserad"
 
 #: ../src/empathy-preferences.ui.h:19
 msgid "Enable notifications when a contact comes online"
-msgstr "Aktivera notifieringar när en kontakt ansluter"
+msgstr "Aktivera aviseringar när en kontakt ansluter"
 
 #: ../src/empathy-preferences.ui.h:20
 msgid "Enable notifications when a contact goes offline"
-msgstr "Aktivera notifieringar när en kontakt kopplar från"
+msgstr "Aktivera aviseringar när en kontakt kopplar från"
 
 #: ../src/empathy-preferences.ui.h:21
 msgid "Notifications"
-msgstr "Notifieringar"
+msgstr "Aviseringar"
 
 #: ../src/empathy-preferences.ui.h:22
 msgid "_Enable sound notifications"
-msgstr "_Aktivera ljudnotifieringar"
+msgstr "_Aktivera ljudaviseringar"
 
 #: ../src/empathy-preferences.ui.h:23
 msgid "Disable sounds when _away or busy"
@@ -5788,7 +5788,7 @@ msgstr "Integrera dina IM-konton"
 #~ msgstr "Gossip kör fortfarande, den är bara dold."
 
 #~ msgid "Click on the notification area icon to show Gossip."
-#~ msgstr "Klicka på ikonen i notifieringsytan för att visa Gossip."
+#~ msgstr "Klicka på ikonen i aviseringsytan för att visa Gossip."
 
 #~ msgid "You were about to quit!"
 #~ msgstr "Du är på väg att avsluta!"
@@ -5800,7 +5800,7 @@ msgstr "Integrera dina IM-konton"
 #~ "This is just a reminder, from now on, Gossip will quit when performing "
 #~ "this action unless you uncheck the option below."
 #~ msgstr ""
-#~ "Eftersom ingen system- eller notifieringslåda har hittats skulle denna "
+#~ "Eftersom ingen system- eller aviseringslåda har hittats skulle denna "
 #~ "åtgärd normalt sett avslutat Gossip.\n"
 #~ "\n"
 #~ "Detta är bara en påminnelse, från och med nu kommer Gossip att avslutas "
@@ -6136,7 +6136,7 @@ msgstr "Integrera dina IM-konton"
 #~ "will be sent. Until this request is approved, the user will always be "
 #~ "shown as \"Offline\" in your contact list."
 #~ msgstr ""
-#~ "För att kunna prenumerera på närvaronotifikationer från användaren kommer "
+#~ "För att kunna prenumerera på närvaroaviseringar från användaren kommer "
 #~ "en förfrågan att skickas. Användaren kommer alltid att visas som "
 #~ "\"Frånkopplad\" i din kontaktlista till dess att denna förfrågan är "
 #~ "godkänd."
