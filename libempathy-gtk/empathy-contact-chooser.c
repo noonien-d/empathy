@@ -213,7 +213,7 @@ get_contacts_cb (GObject *source,
   GError *error = NULL;
   FolksIndividual *individual;
   TpContact *contact;
-  EmpathyContact *emp_contact;
+  EmpathyContact *emp_contact = NULL;
 
   self = tp_weak_ref_dup_object (wr);
   if (self == NULL)
