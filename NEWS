@@ -1,3 +1,27 @@
+NEW in 3.12.8 (16/03/2015)
+=============
+
+Bugs fixed:
+ - Fixed #705326, User help suggests "ignore SSL certificate errors" option for Jabber accounts "if you trust the server you are connecting to" (Michael Catanzaro)
+ - Fixed #746100, goa-mc-plugin: Remove Facebook chat using Jabber (Debarshi Ray)
+
+Translations:
+ - Updated bs Translation (Samir Ribic)
+ - Updated cs Translation (Marek Černocký)
+ - Updated de Translation (Benjamin Steinwender)
+ - Updated fi Translation (Timo Jyrinki)
+ - Updated kk Translation (Baurzhan Muftakhidinov)
+ - Updated nl Translation (Andre Klapper, Erwin Poeze)
+ - Updated sk Translation (Andre Klapper)
+ - Updated sv Translation (Josef Andersson, Anders Jonsson)
+ - Updated tr Translation (Necdet Yücel)
+
+Documentation translations:
+ - Updated cs Documentation translation (Marek Černocký)
+ - Updated de Documentation translation (Christian Kirbach)
+ - Updated el Documentation translation (Efstathios Iosifidis, Tom Tryfonidis)
+ - Updated es Documentation translation (Daniel Mustieles)
+
 NEW in 3.12.7 (14/10/2014)
 =============
 
