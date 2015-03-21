@@ -2,19 +2,19 @@
 # Copyright (C) 2010, 2011. Free Software Foundation, Inc.
 # This file is distributed under the same license as the empathy help.
 #
-# Gabor Kelemen <kelemeng at gnome dot hu>, 2010, 2011, 2012, 2013, 2014.
+# Gabor Kelemen <kelemeng at gnome dot hu>, 2010, 2011, 2012, 2013, 2014, 2015.
 msgid ""
 msgstr ""
 "Project-Id-Version: empathy-docs master\n"
-"POT-Creation-Date: 2014-10-07 17:07+0000\n"
-"PO-Revision-Date: 2014-10-08 01:12+0200\n"
-"Last-Translator: Gabor Kelemen <kelemeng at gnome dot hu>\n"
+"POT-Creation-Date: 2015-03-12 04:26+0000\n"
+"PO-Revision-Date: 2015-03-21 01:15+0100\n"
+"Last-Translator: Gabor Kelemen <kelemeng at ubuntu dot com>\n"
 "Language-Team: Hungarian <openscope at googlegroups dot com>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 1.4\n"
+"X-Generator: Lokalize 1.5\n"
 "Plural-Forms:  nplurals=2; plural=(n != 1);\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
@@ -28,14 +28,14 @@ msgid "Additional information necessary for connecting to IRC networks."
 msgstr "IRC-hálózatokhoz való csatlakozáshoz szükséges további információk"
 
 #. (itstool) path: credit/name
-#: C/account-irc.page:17 C/account-jabber.page:14 C/accounts-window.page:17
+#: C/account-irc.page:17 C/account-jabber.page:15 C/accounts-window.page:17
 #: C/add-account.page:26 C/disable-account.page:25 C/import-account.page:27
 #: C/prev-conv.page:21 C/status-icons.page:21
 msgid "Shaun McCance"
 msgstr "Shaun McCance"
 
 #. (itstool) path: license/p
-#: C/account-irc.page:21 C/account-jabber.page:18 C/accounts-window.page:21
+#: C/account-irc.page:21 C/account-jabber.page:19 C/accounts-window.page:21
 #: C/add-account.page:30 C/add-contact.page:22 C/audio-call.page:31
 #: C/audio-video.page:21 C/change-status.page:28 C/create-account.page:29
 #: C/disable-account.page:29 C/favorite-rooms.page:18 C/geolocation.page:21
@@ -339,12 +339,12 @@ msgid "Advanced options for Jabber and Google Talk accounts."
 msgstr "Speciális beállítások Jabber és Google Talk fiókokhoz."
 
 #. (itstool) path: page/title
-#: C/account-jabber.page:29
+#: C/account-jabber.page:30
 msgid "Jabber account details"
 msgstr "Jabber fiókok részletei"
 
 #. (itstool) path: page/p
-#: C/account-jabber.page:31
+#: C/account-jabber.page:32
 msgid ""
 "Most Jabber accounts will require only a login ID and a password to connect. "
 "For some accounts or on certain types of networks, you may need to enter "
@@ -359,7 +359,7 @@ msgstr ""
 "hozzáadásával kapcsolatban lásd az <link xref=\"add-account\"/> oldalt."
 
 #. (itstool) path: note/p
-#: C/account-jabber.page:39
+#: C/account-jabber.page:40
 msgid ""
 "Google Talk is a type of Jabber account. These instructions hold for Google "
 "Talk accounts as well."
@@ -368,17 +368,17 @@ msgstr ""
 "fiókokra is érvényesek."
 
 #. (itstool) path: item/title
-#: C/account-jabber.page:45
+#: C/account-jabber.page:46
 msgid "<gui>Encryption required (TLS/SSL)</gui>"
 msgstr "<gui>Titkosítás szükséges (TLS/SSL)</gui>"
 
 #. (itstool) path: item/title
-#: C/account-jabber.page:46
+#: C/account-jabber.page:47
 msgid "<gui>Ignore SSL certificate errors</gui>"
 msgstr "<gui>SSL-tanúsítványhibák figyelmen kívül hagyása</gui>"
 
 #. (itstool) path: item/p
-#: C/account-jabber.page:47
+#: C/account-jabber.page:48
 msgid ""
 "Whenever possible, communication between <app>Empathy</app> and the Jabber "
 "server is encrypted. If encrypted communication is not possible, messages "
@@ -394,31 +394,37 @@ msgstr ""
 "lehetséges."
 
 #. (itstool) path: item/p
-#: C/account-jabber.page:52
+#: C/account-jabber.page:53
 msgid ""
 "Some Jabber servers may encrypt data using invalid certificates, or using "
-"certificates from unknown authorities. If you trust the server you are "
-"connecting to, you can select <gui>Ignore SSL certificate errors</gui> to "
-"allow encrypted communication with invalid certificates."
+"certificates signed by unknown authorities. You can select <gui>Ignore SSL "
+"certificate errors</gui> to allow encrypted communication with invalid "
+"certificates, but this allows an attacker to intercept your communication "
+"with the server (including your password). You might want to use this option "
+"for testing purposes, or if your server is broken and you do not care about "
+"the security of your communication."
 msgstr ""
-"Egyes Jabber kiszolgálók az adatokat érvénytelen, vagy ismeretlen "
-"hitelesítésszolgáltatóktól származó tanúsítványokkal titkosíthatják. Ha "
-"megbízik a kiszolgálóban, amelyhez csatlakozik, akkor kiválaszthatja az "
-"<gui>SSL-tanúsítványhibák figyelmen kívül hagyása</gui> négyzetet az "
-"érvénytelen tanúsítvánnyal történő titkosított kommunikáció engedélyezéséhez."
+"Néhány Jabber kiszolgáló érvénytelen, vagy ismeretlen hitelesítésszolgáltató "
+"által aláírt tanúsítványokkal titkosíthatja az adatokat. Az <gui>"
+"SSL-tanúsítványhibák figyelmen kívül hagyása</gui> lehetőség választásával "
+"engedélyezheti a titkosított kommunikációt érvénytelen tanúsítványok "
+"használatával, de ez lehetővé teheti egy támadó számára a kiszolgálóval folyó "
+"kommunikáció (beleértve a jelszót is) eltérítését. Ezt a lehetőséget "
+"tesztelési célra érdemes csak használni, vagy ha a kiszolgáló hibás, és nem "
+"foglalkozik a kommunikáció biztonságával."
 
 #. (itstool) path: item/title
-#: C/account-jabber.page:59
+#: C/account-jabber.page:62
 msgid "<gui>Resource</gui>"
 msgstr "<gui>Erőforrás</gui>"
 
 #. (itstool) path: item/title
-#: C/account-jabber.page:60
+#: C/account-jabber.page:63
 msgid "<gui>Priority</gui>"
 msgstr "<gui>Prioritás</gui>"
 
 #. (itstool) path: item/p
-#: C/account-jabber.page:61
+#: C/account-jabber.page:64
 msgid ""
 "If you have multiple applications (for instance, on separate computers) "
 "connected to your account at the same time, you can set a resource to "
@@ -431,7 +437,7 @@ msgstr ""
 "input> értéket használja."
 
 #. (itstool) path: item/p
-#: C/account-jabber.page:65
+#: C/account-jabber.page:68
 msgid ""
 "You can set the priority to specify which application should receive "
 "incoming messages from your contacts. New messages will be sent to the "
@@ -442,12 +448,12 @@ msgstr ""
 "alkalmazásnak kerülnek elküldésre."
 
 #. (itstool) path: item/title
-#: C/account-jabber.page:70
+#: C/account-jabber.page:73
 msgid "<gui>Override server settings</gui>"
 msgstr "<gui>Kiszolgáló beállításainak felülbírálása</gui>"
 
 #. (itstool) path: item/p
-#: C/account-jabber.page:71
+#: C/account-jabber.page:74
 msgid ""
 "<app>Empathy</app> will use default settings to connect to the Jabber server "
 "based on your login ID. For some Jabber servers, you will need to enter "
@@ -539,16 +545,12 @@ msgstr ""
 
 #. (itstool) path: item/p
 #: C/add-account.page:50
-#| msgid ""
-#| "From the <gui>Contact List</gui> window, choose <guiseq><gui>Edit</gui> "
-#| "<gui>Accounts</gui></guiseq>, or press <key>F4</key>."
 msgid ""
 "Click <guiseq><gui>Empathy</gui><gui>Accounts</gui></guiseq>, or press "
 "<key>F4</key>."
 msgstr ""
 "Válassza az <guiseq><gui>Empathy</gui><gui>Fiókok</gui></guiseq> menüpontot, "
-"vagy nyomja meg az <key>F4</key> "
-"billentyűt."
+"vagy nyomja meg az <key>F4</key> billentyűt."
 
 #. (itstool) path: item/p
 #: C/add-account.page:54
@@ -557,16 +559,12 @@ msgstr "Nyomja meg a <gui style=\"button\">+</gui> gombot."
 
 #. (itstool) path: item/p
 #: C/add-account.page:59
-#| msgid ""
-#| "From the <gui>Protocol</gui> drop-down list, select the type of account "
-#| "you wish to add."
 msgid ""
 "From the <gui>What kind of chat account do you have?</gui> drop-down list, "
 "select the type of account you wish to add."
 msgstr ""
 "A <gui>Milyen típusú csevegőfiókja van?</gui> legördülő listából válassza ki "
-"a felvenni kívánt fiók "
-"típusát."
+"a felvenni kívánt fiók típusát."
 
 #. (itstool) path: item/p
 #: C/add-account.page:63
@@ -581,17 +579,11 @@ msgstr ""
 
 #. (itstool) path: item/p
 #: C/add-account.page:68
-#| msgid "Click <gui style=\"button\">+</gui>."
 msgid "Click <gui style=\"button\">Add</gui>."
 msgstr "Nyomja meg a <gui style=\"button\">Hozzáadás</gui> gombot."
 
 #. (itstool) path: note/p
 #: C/add-account.page:73
-#| msgid ""
-#| "To change the name that identifies the account in the <gui>Accounts</gui> "
-#| "window, select the account from the list on the left and either click on "
-#| "the name or press the space bar. Edit the account name and press "
-#| "<key>Enter</key> when you’re finished."
 msgid ""
 "To change the name that identifies the account in the <gui>Messaging and "
 "VoIP Accounts</gui> window, select the account from the list on the left and "
@@ -599,10 +591,9 @@ msgid ""
 "press <key>Enter</key> when you’re finished."
 msgstr ""
 "A fiókot az <gui>Üzenetküldő- és VoIP-fiókok</gui> ablakban azonosító név "
-"módosításához válassza "
-"ki a fiókot a bal oldali listából, és kattintson a nevére, vagy nyomja meg a "
-"szóköz billentyűt. Módosítsa a fiók nevét, és nyomja meg az <key>Enter</key> "
-"billentyűt ha befejezte."
+"módosításához válassza ki a fiókot a bal oldali listából, és kattintson a "
+"nevére, vagy nyomja meg a szóköz billentyűt. Módosítsa a fiók nevét, és "
+"nyomja meg az <key>Enter</key> billentyűt ha befejezte."
 
 #. (itstool) path: info/desc
 #: C/add-contact.page:9
@@ -785,11 +776,6 @@ msgstr "Hang- és videotámogatás"
 
 #. (itstool) path: page/p
 #: C/audio-video.page:37
-#| msgid ""
-#| "You can only have audio and video conversation with contacts who are "
-#| "using an application which also supports this feature. When your contacts "
-#| "support audio or video conversations, you will see the following icons "
-#| "next to their names in the contact list:"
 msgid ""
 "You can only have audio and video conversation with contacts who are using "
 "an application which also supports this feature."
@@ -3805,6 +3791,19 @@ msgid ""
 msgstr ""
 "Válassza ki a partnert, akivel beszélgetni szeretne, és a menüből válassza a "
 "<gui style=\"menuitem\">Videohívás</gui> lehetőséget."
+
+#~ msgid ""
+#~ "Some Jabber servers may encrypt data using invalid certificates, or using "
+#~ "certificates from unknown authorities. If you trust the server you are "
+#~ "connecting to, you can select <gui>Ignore SSL certificate errors</gui> to "
+#~ "allow encrypted communication with invalid certificates."
+#~ msgstr ""
+#~ "Egyes Jabber kiszolgálók az adatokat érvénytelen, vagy ismeretlen "
+#~ "hitelesítésszolgáltatóktól származó tanúsítványokkal titkosíthatják. Ha "
+#~ "megbízik a kiszolgálóban, amelyhez csatlakozik, akkor kiválaszthatja az "
+#~ "<gui>SSL-tanúsítványhibák figyelmen kívül hagyása</gui> négyzetet az "
+#~ "érvénytelen tanúsítvánnyal történő titkosított kommunikáció "
+#~ "engedélyezéséhez."
 
 #~ msgctxt "_"
 #~ msgid ""
