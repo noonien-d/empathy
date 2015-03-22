@@ -28,6 +28,7 @@
 #include "empathy-debug.h"
 
 #define GEOCLUE_BUS_NAME "org.freedesktop.GeoClue2"
+#define EMPATHY_DESKTOP_ID "empathy"
 
 /**
  * SECTION: empathy-geoclue-helper
@@ -305,6 +306,7 @@ client_cb (GObject *source,
 
   g_object_set (self->priv->client,
       "distance-threshold", self->priv->distance_threshold,
+      "desktop-id", EMPATHY_DESKTOP_ID,
       NULL);
 
   g_task_return_boolean (task, TRUE);
