@@ -368,6 +368,18 @@ publish_cb (GSettings *gsettings_loc,
 }
 
 static void
+reduce_accuracy_cb (GSettings *gsettings_loc,
+                    const gchar *key,
+                    gpointer user_data)
+{
+  EmpathyLocationManager *self = EMPATHY_LOCATION_MANAGER (user_data);
+
+  DEBUG ("Reduce Accuracy changed");
+
+  self->priv->reduce_accuracy = g_settings_get_boolean (gsettings_loc, key);
+}
+
+static void
 account_manager_prepared_cb (GObject *source_object,
     GAsyncResult *result,
     gpointer user_data)
@@ -416,7 +428,12 @@ empathy_location_manager_init (EmpathyLocationManager *self)
       "changed::" EMPATHY_PREFS_LOCATION_PUBLISH,
       G_CALLBACK (publish_cb), self);
 
+  g_signal_connect (priv->gsettings_loc,
+      "changed::" EMPATHY_PREFS_LOCATION_REDUCE_ACCURACY,
+      G_CALLBACK (reduce_accuracy_cb), self);
+
   publish_cb (priv->gsettings_loc, EMPATHY_PREFS_LOCATION_PUBLISH, self);
+  reduce_accuracy_cb (priv->gsettings_loc, EMPATHY_PREFS_LOCATION_REDUCE_ACCURACY, self);
 }
 
 EmpathyLocationManager *
