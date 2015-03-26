@@ -11,6 +11,7 @@ public_icons = \
 	hicolor_apps_32x32_empathy.png \
 	hicolor_apps_48x48_empathy.png \
 	hicolor_apps_256x256_empathy.png \
+	hicolor_apps_scalable_empathy-symbolic.svg \
 	$(NULL)
 
 private_icons_themes = \
