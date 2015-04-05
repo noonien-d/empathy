@@ -20,7 +20,7 @@
  *          Xavier Claessens <xclaesse@gmail.com>
  */
 
-#ifndef __EMPATHY_SMILEY_MANAGER__H__
+#ifndef __EMPATHY_SMILEY_MANAGER_H__
 #define __EMPATHY_SMILEY_MANAGER_H__
 
 #include <gtk/gtk.h>
