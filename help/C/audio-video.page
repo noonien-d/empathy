@@ -67,14 +67,6 @@
     the accessibility team</link> for input.</p>
   </comment>
 
-  <comment>
-    <cite date="2009-09-04">Shaun McCance</cite>
-    <p>There's recent work on telepathy-butterfly and papyon to support
-    audio and video for MSN.  It might be released in time for 2.28, but
-    since it doesn't follow the Gnome release schedule, I can't be sure.
-    If it looks like it's going to ship, let's mark it Yes.</p>
-  </comment>
-  
   <table frame="all" rules="rowgroups colgroups" shade="rows">
     <colgroup><col/></colgroup><colgroup><col/><col/></colgroup>
     <thead>
@@ -87,11 +79,6 @@
     <tbody>
       <tr>
         <td><p>AIM</p></td>
-        <td><p>No</p></td>
-        <td><p>No</p></td>
-      </tr>
-      <tr>
-        <td><p>Facebook Chat</p></td>
         <td><p>No</p></td>
         <td><p>No</p></td>
       </tr>
@@ -122,11 +109,6 @@
       </tr>
       <tr>
         <td><p>Jabber</p></td>
-        <td><p>Yes</p></td>
-        <td><p>Yes</p></td>
-      </tr>
-      <tr>
-        <td><p>MSN</p></td>
         <td><p>Yes</p></td>
         <td><p>Yes</p></td>
       </tr>
