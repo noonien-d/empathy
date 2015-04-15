@@ -1,3 +1,19 @@
+NEW in 3.12.9 (15/04/2015)
+=============
+Bugs fixed:
+
+ - Fixed #746612, Geoclue2 requires a DesktopId property (Fabrice Bellet, Debarshi Ray)
+ - Fixed #747375, Fix a wrong header guard in libempathy-gtk/empathy-smiley-manager.h (Ting-Wei Lan)
+ - Fixed #747170, Typo (messenging) in documentation (Kat)
+
+Translations:
+ - Updated et Translation (Mattias Põldaru)
+
+Documentation translations:
+ - Updated cs Documentation translation (Marek Černocký)
+ - Updated el Documentation translation (Tom Tryfonidis)
+ - Updated hu Documentation translation (Gábor Kelemen)
+
 NEW in 3.12.8 (16/03/2015)
 =============
 
