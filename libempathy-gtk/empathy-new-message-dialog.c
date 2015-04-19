@@ -254,7 +254,9 @@ selection_changed_cb (GtkWidget *chooser,
     }
 
   gtk_widget_set_sensitive (self->priv->button_chat, can_chat);
+#if 0
   gtk_widget_set_sensitive (self->priv->button_sms, can_sms);
+#endif
 }
 
 static void
@@ -267,7 +269,6 @@ selection_activate_cb (GtkWidget *chooser,
 static void
 empathy_new_message_dialog_init (EmpathyNewMessageDialog *self)
 {
-  GtkWidget *label;
   GtkWidget *image;
   GtkWidget *content;
 
@@ -276,17 +277,13 @@ empathy_new_message_dialog_init (EmpathyNewMessageDialog *self)
 
   content = gtk_dialog_get_content_area (GTK_DIALOG (self));
 
-  label = gtk_label_new (_("Enter a contact identifier or phone number:"));
-  gtk_box_pack_start (GTK_BOX (content), label, FALSE, FALSE, 0);
-  gtk_widget_show (label);
-
   /* contact chooser */
   self->priv->chooser = empathy_contact_chooser_new ();
 
   empathy_contact_chooser_set_filter_func (
       EMPATHY_CONTACT_CHOOSER (self->priv->chooser), filter_individual, self);
 
-  gtk_box_pack_start (GTK_BOX (content), self->priv->chooser, TRUE, TRUE, 6);
+  gtk_box_pack_start (GTK_BOX (content), self->priv->chooser, TRUE, TRUE, 0);
   gtk_widget_show (self->priv->chooser);
 
   g_signal_connect (self->priv->chooser, "selection-changed",
@@ -296,23 +293,27 @@ empathy_new_message_dialog_init (EmpathyNewMessageDialog *self)
 
   /* close button */
   gtk_dialog_add_button (GTK_DIALOG (self),
-      GTK_STOCK_CLOSE, GTK_RESPONSE_CLOSE);
+      GTK_STOCK_CANCEL, GTK_RESPONSE_CANCEL);
 
+#if 0
   /* add SMS button */
   self->priv->button_sms = gtk_button_new_with_mnemonic (_("_SMS"));
   image = gtk_image_new_from_icon_name (EMPATHY_IMAGE_SMS,
       GTK_ICON_SIZE_BUTTON);
   gtk_button_set_image (GTK_BUTTON (self->priv->button_sms), image);
+#endif
 
   /* add chat button */
-  self->priv->button_chat = gtk_button_new_with_mnemonic (_("_Chat"));
+  self->priv->button_chat = gtk_button_new_with_mnemonic (_("_Done"));
   image = gtk_image_new_from_icon_name (EMPATHY_IMAGE_NEW_MESSAGE,
       GTK_ICON_SIZE_BUTTON);
   gtk_button_set_image (GTK_BUTTON (self->priv->button_chat), image);
 
+#if 0
   gtk_dialog_add_action_widget (GTK_DIALOG (self), self->priv->button_sms,
       EMP_NEW_MESSAGE_SMS);
   gtk_widget_show (self->priv->button_sms);
+#endif
 
   gtk_dialog_add_action_widget (GTK_DIALOG (self), self->priv->button_chat,
       EMP_NEW_MESSAGE_TEXT);
@@ -323,10 +324,12 @@ empathy_new_message_dialog_init (EmpathyNewMessageDialog *self)
   gtk_window_set_role (GTK_WINDOW (self), "new_message");
 
   /* Set a default height so a few contacts are displayed */
-  gtk_window_set_default_size (GTK_WINDOW (self), -1, 400);
+  gtk_window_set_default_size (GTK_WINDOW (self), -1, 600);
 
   gtk_widget_set_sensitive (self->priv->button_chat, FALSE);
+#if 0
   gtk_widget_set_sensitive (self->priv->button_sms, FALSE);
+#endif
 }
 
 static void
@@ -356,7 +359,9 @@ empathy_new_message_dialog_show (GtkWindow *parent)
 {
   GtkWidget *dialog;
 
-  dialog = g_object_new (EMPATHY_TYPE_NEW_MESSAGE_DIALOG, NULL);
+  dialog = g_object_new (EMPATHY_TYPE_NEW_MESSAGE_DIALOG,
+                  "use-header-bar", 1,
+                  NULL);
 
   if (parent)
     {

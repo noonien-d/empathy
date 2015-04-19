@@ -12,6 +12,8 @@
 #include "config.h"
 #include "empathy-contact-chooser.h"
 
+#include <glib/gi18n-lib.h>
+
 #include "empathy-client-factory.h"
 #include "empathy-individual-store-manager.h"
 #include "empathy-individual-view.h"
@@ -409,8 +411,10 @@ empathy_contact_chooser_init (EmpathyContactChooser *self)
   tp_proxy_prepare_async (self->priv->account_mgr, features, NULL, NULL);
 
   /* Search entry */
-  self->priv->search_entry = gtk_entry_new ();
-  gtk_box_pack_start (GTK_BOX (self), self->priv->search_entry, FALSE, TRUE, 6);
+  self->priv->search_entry = gtk_search_entry_new ();
+  gtk_entry_set_placeholder_text ( GTK_ENTRY(self->priv->search_entry),
+                  _("Type to search a contact…"));
+  gtk_box_pack_start (GTK_BOX (self), self->priv->search_entry, FALSE, TRUE, 0);
   gtk_widget_show (self->priv->search_entry);
 
   g_signal_connect (self->priv->search_entry, "changed",
@@ -446,7 +450,7 @@ empathy_contact_chooser_init (EmpathyContactChooser *self)
   gtk_container_add (GTK_CONTAINER (self->priv->scroll_view),
       GTK_WIDGET (self->priv->view));
 
-  gtk_box_pack_start (GTK_BOX (self), self->priv->scroll_view, TRUE, TRUE, 6);
+  gtk_box_pack_start (GTK_BOX (self), self->priv->scroll_view, TRUE, TRUE, 0);
   gtk_widget_show (GTK_WIDGET (self->priv->view));
   gtk_widget_show (self->priv->scroll_view);
 }
