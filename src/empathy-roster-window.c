@@ -2286,6 +2286,9 @@ empathy_roster_window_init (EmpathyRosterWindow *self)
   GtkWidget *sw;
   gchar *filename;
   GtkWidget *search_vbox;
+  GtkWidget *header_bar;
+  GtkWidget *new_conversation_button;
+  GtkWidget *image;
   guint i;
   EmpathyRosterModel *model;
 
@@ -2325,6 +2328,20 @@ empathy_roster_window_init (EmpathyRosterWindow *self)
       "spinner_loading", &self->priv->spinner_loading,
       NULL);
   g_free (filename);
+
+  header_bar = gtk_header_bar_new ();
+  gtk_header_bar_set_title (GTK_HEADER_BAR(header_bar), _("Conversations"));
+  gtk_header_bar_set_show_close_button (GTK_HEADER_BAR(header_bar), TRUE);
+
+  image = gtk_image_new_from_icon_name ("list-add-symbolic", GTK_ICON_SIZE_BUTTON);
+  new_conversation_button = gtk_button_new ();
+  g_signal_connect (new_conversation_button, "clicked",
+      G_CALLBACK (roster_window_chat_new_message_cb), self);
+  gtk_button_set_image (GTK_BUTTON (new_conversation_button), image);
+  gtk_widget_set_tooltip_text (new_conversation_button, _("New Conversation"));
+  gtk_window_set_titlebar (GTK_WINDOW (self), header_bar);
+  gtk_container_add (GTK_CONTAINER (header_bar), new_conversation_button);
+  gtk_widget_show_all (header_bar);
 
   gtk_container_add (GTK_CONTAINER (self), self->priv->main_vbox);
   gtk_widget_show (self->priv->main_vbox);
