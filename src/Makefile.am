@@ -58,8 +58,7 @@ bin_PROGRAMS =			\
 
 libexec_PROGRAMS = \
 	empathy-auth-client \
-	empathy-call \
-	empathy-chat
+	empathy-call
 
 empathy_accounts_SOURCES =						\
 	empathy-accounts.c empathy-accounts.h				\
@@ -92,6 +91,7 @@ empathy_chat_SOURCES =						\
 	empathy-chat-window.c empathy-chat-window.h		\
 	empathy-invite-participant-dialog.c empathy-invite-participant-dialog.h \
 	empathy-chat.c \
+	polari-fixed-size-frame.c  polari-fixed-size-frame.h \
 	$(NULL)
 
 nodist_empathy_chat_SOURCES = \
@@ -151,6 +151,7 @@ empathy_handwritten_source = \
 	empathy-preferences.c empathy-preferences.h			\
 	empathy-status-icon.c empathy-status-icon.h			\
 	empathy-chat-manager.c empathy-chat-manager.h			\
+	polari-fixed-size-frame.c  polari-fixed-size-frame.h \
 	empathy.c
 
 empathy_SOURCES =							\

@@ -1,22 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <interface>
   <!-- interface-requires gtk+ 2.12 -->
-  <object class="GtkVBox" id="main_vbox">
-    <property name="visible">True</property>
+  <object class="GtkBox" id="main_vbox">
     <property name="can_focus">False</property>
     <property name="border-width">12</property>
+    <property name="orientation">horizontal</property>
+    <property name="visible">True</property>
     <child>
-      <object class="GtkHBox" id="presence_toolbar">
-        <property name="visible">True</property>
+      <object class="GtkRevealer" id="revealer">
         <property name="can_focus">False</property>
         <property name="spacing">12</property>
-      </object>
-      <packing>
-        <property name="expand">False</property>
-        <property name="fill">False</property>
-        <property name="position">1</property>
-      </packing>
-    </child>
+        <property name="hexpand">False</property>
+        <property name="reveal_child">True</property>
+        <property name="transition_type">slide-right</property>
+        <property name="visible">True</property>
+        <child>
+          <object class="PolariFixedSizeFrame" id="sidebar_frame">
+            <property name="hexpand">False</property>
+            <property name="width">240</property>
+            <property name="visible">True</property>
+            <style>
+              <class name="sidebar"/>
+              <class name="chat-sidebar"/>
+            </style>
+            <child>
+              <object class="GtkGrid" id="grid0">
+                <property name="can_focus">False</property>
+                <property name="hexpand">False</property>
+                <property name="orientation">vertical</property>
+                <property name="visible">True</property>
     <child>
       <object class="GtkVBox" id="balance_vbox">
         <property name="can_focus">False</property>
@@ -57,26 +69,14 @@
         <property name="position">4</property>
       </packing>
     </child>
-    <child>
-      <object class="GtkVBox" id="search_vbox">
-        <property name="visible">True</property>
-        <property name="can_focus">False</property>
-        <child>
-          <placeholder/>
-        </child>
-      </object>
-      <packing>
-        <property name="expand">False</property>
-        <property name="fill">False</property>
-        <property name="position">5</property>
-      </packing>
-    </child>
-    <child>
-      <object class="GtkNotebook" id="notebook">
+
+                <child>
+  <object class="GtkNotebook" id="notebook">
         <property name="visible">True</property>
         <property name="can_focus">True</property>
         <property name="show_tabs">False</property>
         <property name="show_border">False</property>
+        <property name="expand">True</property>
         <child>
           <object class="GtkScrolledWindow" id="roster_scrolledwindow">
             <property name="visible">True</property>
@@ -252,11 +252,111 @@
           </packing>
         </child>
       </object>
+                </child>
+                <child>
+                  <object class="GtkFrame" id="status_area">
+                    <property name="can_focus">False</property>
+                    <property name="visible">True</property>
+                    <style>
+                      <class name="chat-status-area"/>
+                    </style>
+                    <child>
+                      <object class="GtkGrid" id="status_area_grid0">
+                        <property name="can_focus">False</property>
+                        <property name="hexpand">True</property>
+                        <property name="orientation">horizontal</property>
+                        <property name="vexpand">False</property>
+                        <property name="visible">True</property>
+                        <child>
+                          <object class="GtkGrid" id="status_area_grid1">
+                            <property name="can_focus">False</property>
+                            <property name="hexpand">True</property>
+                            <property name="orientation">vertical</property>
+                            <property name="vexpand">False</property>
+                            <property name="visible">True</property>
+
+			    <child>
+			      <object class="GtkHBox" id="presence_toolbar">
+				<property name="visible">True</property>
+				<property name="can_focus">False</property>
+				<property name="spacing">3</property>
+				<property name="border-width">3</property>
+                                <property name="hexpand">True</property>
+				</object>
+			</child>
+
+                            <child>
+                              <object class="GtkLabel" id="status_area_nickname">
+                                <property name="can_focus">False</property>
+                                <property name="ellipsize">end</property>
+                                <property name="halign">start</property>
+                                <property name="hexpand">True</property>
+                                <property name="use_markup">True</property>
+                                <property name="valign">center</property>
+                                <property name="vexpand">True</property>
+                                <property name="visible">False</property>
+                              </object>
+                            </child>
+                            <child>
+                              <object class="GtkGrid" id="status_area_grid2">
+                                <property name="can_focus">False</property>
+                                <property name="column_spacing">3</property>
+                                <property name="hexpand">True</property>
+                                <property name="orientation">horizontal</property>
+                                <property name="vexpand">False</property>
+                                <property name="visible">False</property>
+                                <child>
+                                  <object class="GtkImage" id="status_area_presence_icon">
+                                    <property name="can_focus">False</property>
+                                    <property name="icon_size">1</property>
+                                    <property name="visible">False</property>
+                                  </object>
+                                </child>
+                                <child>
+                                  <object class="GtkLabel" id="status_area_presence_message">
+                                    <property name="can_focus">False</property>
+                                    <property name="ellipsize">end</property>
+                                    <property name="halign">start</property>
+                                    <property name="hexpand">True</property>
+                                    <property name="valign">center</property>
+                                    <property name="vexpand">True</property>
+                                    <property name="visible">False</property>
+                                  </object>
+                                </child>
+                              </object>
+                            </child>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
       <packing>
-        <property name="expand">True</property>
-        <property name="fill">True</property>
-        <property name="position">6</property>
+        <property name="expand">False</property>
+        <property name="fill">False</property>
+        <property name="position">0</property>
       </packing>
     </child>
+
+<child>
+  <object class="GtkVBox" id="chat_vbox">
+    <property name="visible">True</property>
+    <child>
+      <placeholder/>
+    </child>
+  </object>
+  <packing>
+    <property name="expand">True</property>
+    <property name="fill">True</property>
+    <property name="position">1</property>
+  </packing>
+
+</child>
+
   </object>
 </interface>

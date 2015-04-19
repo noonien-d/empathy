@@ -45,6 +45,7 @@
 #include "empathy-sound-manager.h"
 #include "empathy-ui-utils.h"
 #include "empathy-utils.h"
+#include "empathy-new-message-dialog.h"
 
 #define DEBUG_FLAG EMPATHY_DEBUG_CHAT
 #include "empathy-debug.h"
@@ -170,7 +171,7 @@ static void empathy_chat_window_get_nb_chats (EmpathyChatWindow *self,
     guint *nb_rooms,
     guint *nb_private);
 
-G_DEFINE_TYPE (EmpathyChatWindow, empathy_chat_window, GTK_TYPE_WINDOW)
+G_DEFINE_TYPE (EmpathyChatWindow, empathy_chat_window, GTK_TYPE_BIN)
 
 static void
 chat_window_accel_cb (GtkAccelGroup *accelgroup,
@@ -313,7 +314,7 @@ confirm_close (EmpathyChatWindow *self,
     }
 
   dialog = gtk_message_dialog_new (
-    GTK_WINDOW (self),
+    GTK_WINDOW (gtk_widget_get_toplevel (GTK_WIDGET (self))),
     GTK_DIALOG_MODAL | GTK_DIALOG_DESTROY_WITH_PARENT,
     GTK_MESSAGE_WARNING,
     GTK_BUTTONS_CANCEL,
@@ -603,6 +604,9 @@ chat_window_contact_menu_update (EmpathyChatWindow *self)
 {
   GtkWidget *menu, *submenu, *orig_submenu;
 
+  if (self->priv->current_chat == NULL)
+    return;
+
   if (self->priv->updating_menu)
     return;
   self->priv->updating_menu = TRUE;
@@ -731,7 +735,7 @@ chat_window_title_update (EmpathyChatWindow *self)
   gchar *name;
 
   name = get_window_title_name (self);
-  gtk_window_set_title (GTK_WINDOW (self), name);
+  //gtk_window_set_title (GTK_WINDOW (self), name);
   g_free (name);
 }
 
@@ -749,8 +753,8 @@ chat_window_icon_update (EmpathyChatWindow *self,
   /* Update window icon */
   if (new_messages)
     {
-      gtk_window_set_icon_name (GTK_WINDOW (self),
-          EMPATHY_IMAGE_MESSAGE);
+      //gtk_window_set_icon_name (GTK_WINDOW (self),
+      //    EMPATHY_IMAGE_MESSAGE);
     }
   else
     {
@@ -762,14 +766,14 @@ chat_window_icon_update (EmpathyChatWindow *self,
           remote_contact = empathy_chat_get_remote_contact (self->priv->current_chat);
           icon = empathy_pixbuf_avatar_from_contact_scaled (remote_contact,
               0, 0);
-          gtk_window_set_icon (GTK_WINDOW (self), icon);
+          //gtk_window_set_icon (GTK_WINDOW (self), icon);
 
           if (icon != NULL)
             g_object_unref (icon);
         }
       else
         {
-          gtk_window_set_icon_name (GTK_WINDOW (self), NULL);
+          //gtk_window_set_icon_name (GTK_WINDOW (self), NULL);
         }
     }
 }
@@ -1258,7 +1262,7 @@ chat_window_invite_participant_activate_cb (GtkAction *action,
   tp_chat = empathy_chat_get_tp_chat (self->priv->current_chat);
 
   dialog = empathy_invite_participant_dialog_new (
-      GTK_WINDOW (self), tp_chat);
+      GTK_WINDOW (gtk_widget_get_toplevel (GTK_WIDGET (self))), tp_chat);
 
   gtk_widget_show (dialog);
 
@@ -1447,6 +1451,19 @@ chat_window_tabs_previous_activate_cb (GtkAction *action,
   gtk_notebook_prev_page (GTK_NOTEBOOK (self->priv->notebook));
 }
 
+void
+empathy_chat_window_next_tab (EmpathyChatWindow *self)
+{
+  chat_window_tabs_next_activate_cb (NULL, self);
+}
+
+void
+empathy_chat_window_prev_tab (EmpathyChatWindow *self)
+{
+  chat_window_tabs_previous_activate_cb (NULL, self);
+}
+
+
 static void
 chat_window_tabs_undo_close_tab_activate_cb (GtkAction *action,
     EmpathyChatWindow *self)
@@ -1491,14 +1508,10 @@ chat_window_tabs_right_activate_cb (GtkAction *action,
   chat_window_menu_context_update (self, num_pages);
 }
 
-static EmpathyChatWindow *
+EmpathyChatWindow *
 empathy_chat_window_new (void)
 {
   return g_object_new (EMPATHY_TYPE_CHAT_WINDOW,
-      "default-width", 580,
-      "default-height", 480,
-      "title", _("Chat"),
-      "role", "chat",
       NULL);
 }
 
@@ -1528,7 +1541,7 @@ static void
 chat_window_help_about_activate_cb (GtkAction *action,
     EmpathyChatWindow *self)
 {
-  empathy_about_dialog_new (GTK_WINDOW (self));
+  empathy_about_dialog_new (GTK_WINDOW (gtk_widget_get_toplevel (GTK_WIDGET (self))));
 }
 
 static gboolean
@@ -1575,7 +1588,7 @@ static void
 chat_window_set_urgency_hint (EmpathyChatWindow *self,
     gboolean urgent)
 {
-  gtk_window_set_urgency_hint (GTK_WINDOW (self), urgent);
+  //gtk_window_set_urgency_hint (GTK_WINDOW (self), urgent);
 }
 
 static void
@@ -1678,7 +1691,7 @@ empathy_chat_window_has_focus (EmpathyChatWindow *self)
 
   g_return_val_if_fail (EMPATHY_IS_CHAT_WINDOW (self), FALSE);
 
-  g_object_get (self, "has-toplevel-focus", &has_focus, NULL);
+  g_object_get ( gtk_widget_get_toplevel (GTK_WIDGET (self)), "has-toplevel-focus", &has_focus, NULL);
 
   return has_focus;
 }
@@ -1849,7 +1862,7 @@ notebook_create_window_cb (GtkNotebook *source,
   empathy_chat_window_move_chat (window, new_window, chat);
 
   gtk_widget_show (GTK_WIDGET (new_window));
-  gtk_window_move (GTK_WINDOW (new_window), x, y);
+  //gtk_window_move (GTK_WINDOW (new_window), x, y);
 
   return NULL;
 }
@@ -1975,6 +1988,9 @@ chat_window_focus_in_event_cb (GtkWidget *widget,
     GdkEvent *event,
     EmpathyChatWindow *self)
 {
+  if (self->priv->current_chat == NULL) {
+          return FALSE;
+  }
   empathy_chat_messages_read (self->priv->current_chat);
 
   chat_window_set_urgency_hint (self, FALSE);
@@ -2407,6 +2423,17 @@ empathy_chat_window_class_init (EmpathyChatWindowClass *klass)
 }
 
 static void
+chat_window_chat_new_message_cb (GSimpleAction *action,
+    GVariant *parameter,
+    gpointer user_data)
+{
+  EmpathyChatWindow *self = user_data;
+
+  //empathy_new_message_dialog_show (GTK_WINDOW (self));
+}
+
+
+static void
 empathy_chat_window_init (EmpathyChatWindow *self)
 {
   GtkBuilder *gui;
@@ -2416,6 +2443,7 @@ empathy_chat_window_init (EmpathyChatWindow *self)
   GtkWidget *submenu;
   guint i;
   GtkWidget *chat_vbox;
+  GtkWidget *main_box;
   gchar *filename;
   EmpathySmileyManager *smiley_manager;
 
@@ -2425,6 +2453,7 @@ empathy_chat_window_init (EmpathyChatWindow *self)
   filename = empathy_file_lookup ("empathy-chat-window.ui", "src");
   gui = tpaw_builder_get_file (filename,
       "chat_vbox", &chat_vbox,
+      "main_box", &main_box,
       "ui_manager", &self->priv->ui_manager,
       "menu_conv_insert_smiley", &self->priv->menu_conv_insert_smiley,
       "menu_conv_favorite", &self->priv->menu_conv_favorite,
@@ -2480,11 +2509,12 @@ empathy_chat_window_init (EmpathyChatWindow *self)
   self->priv->sound_mgr = empathy_sound_manager_dup_singleton ();
 
   self->priv->notebook = gtk_notebook_new ();
+  //gtk_notebook_set_show_tabs (GTK_NOTEBOOK (self->priv->notebook), FALSE);
 
   g_signal_connect (self->priv->notebook, "create-window",
       G_CALLBACK (notebook_create_window_cb), self);
 
-  gtk_container_add (GTK_CONTAINER (self), chat_vbox);
+  gtk_container_add (GTK_CONTAINER (self), main_box);
 
   gtk_notebook_set_group_name (GTK_NOTEBOOK (self->priv->notebook),
     "EmpathyChatWindow");
@@ -2493,9 +2523,10 @@ empathy_chat_window_init (EmpathyChatWindow *self)
   gtk_box_pack_start (GTK_BOX (chat_vbox), self->priv->notebook, TRUE, TRUE, 0);
   gtk_widget_show (self->priv->notebook);
 
+#if 0 /* no top level window yet at this point */
   /* Set up accels */
   accel_group = gtk_accel_group_new ();
-  gtk_window_add_accel_group (GTK_WINDOW (self), accel_group);
+  gtk_window_add_accel_group (GTK_WINDOW (gtk_widget_get_toplevel (GTK_WIDGET (self))), accel_group);
 
   for (i = 0; i < G_N_ELEMENTS (tab_accel_keys); i++)
     {
@@ -2507,6 +2538,7 @@ empathy_chat_window_init (EmpathyChatWindow *self)
     }
 
   g_object_unref (accel_group);
+#endif
 
   /* Set up drag target lists */
   self->priv->contact_targets = gtk_target_list_new (drag_types_dest_contact,
@@ -2590,6 +2622,7 @@ empathy_chat_window_get_default (gboolean room)
 
   separate_windows = g_settings_get_boolean (gsettings,
       EMPATHY_PREFS_UI_SEPARATE_CHAT_WINDOWS);
+  separate_windows = FALSE;
 
   g_object_unref (gsettings);
 
@@ -2604,6 +2637,7 @@ empathy_chat_window_get_default (gboolean room)
 
       chat_window = l->data;
 
+#if 0
       empathy_chat_window_get_nb_chats (chat_window, &nb_rooms, &nb_private);
 
       /* Skip the window if there aren't any rooms in it */
@@ -2613,6 +2647,7 @@ empathy_chat_window_get_default (gboolean room)
       /* Skip the window if there aren't any 1-1 chats in it */
       if (!room && nb_private == 0)
         continue;
+#endif
 
       return chat_window;
     }
@@ -2643,6 +2678,7 @@ empathy_chat_window_add_chat (EmpathyChatWindow *self,
 
       separate_windows = g_settings_get_boolean (self->priv->gsettings_ui,
           EMPATHY_PREFS_UI_SEPARATE_CHAT_WINDOWS);
+          separate_windows = FALSE;
 
       if (empathy_chat_is_room (chat))
         name = "room-window";
@@ -2652,24 +2688,24 @@ empathy_chat_window_add_chat (EmpathyChatWindow *self,
           gint x, y;
 
           /* Save current position of the window */
-          gtk_window_get_position (GTK_WINDOW (self), &x, &y);
+          //gtk_window_get_position (GTK_WINDOW (self), &x, &y);
 
           /* First bind to the 'generic' name. So new window for which we didn't
           * save a geometry yet will have the geometry of the last saved
           * window (bgo #601191). */
-          empathy_geometry_bind (GTK_WINDOW (self), name);
+          //empathy_geometry_bind (GTK_WINDOW (self), name);
 
           /* Restore previous position of the window so the newly created window
           * won't be in the same position as the latest saved window and so
           * completely hide it. */
-          gtk_window_move (GTK_WINDOW (self), x, y);
+          //gtk_window_move (GTK_WINDOW (self), x, y);
 
           /* Then bind it to the name of the contact/room so we'll save the
           * geometry specific to this window */
           name = empathy_chat_get_id (chat);
         }
 
-      empathy_geometry_bind (GTK_WINDOW (self), name);
+      //empathy_geometry_bind (GTK_WINDOW (self), name);
     }
 
   child = GTK_WIDGET (chat);
@@ -2824,6 +2860,13 @@ empathy_chat_window_present_chat (EmpathyChat *chat,
   EmpathyChatWindow *self;
   guint32 x_timestamp;
 
+  if (chat == NULL) {
+    /* initial window */
+    self = empathy_chat_window_new ();
+    gtk_widget_show (GTK_WIDGET (self));
+    return self;
+  }
+
   g_return_val_if_fail (EMPATHY_IS_CHAT (chat), NULL);
 
   self = chat_window_find_chat (chat);
@@ -2869,7 +2912,7 @@ empathy_chat_window_present_chat (EmpathyChat *chat,
    * to our current desktop but move to the window's desktop instead. This is
    * more coherent with Shell's 'app is ready' notication which moves the view
    * to the app desktop rather than moving the app itself. */
-  empathy_move_to_window_desktop (GTK_WINDOW (self), x_timestamp);
+  empathy_move_to_window_desktop (GTK_WINDOW (gtk_widget_get_toplevel(GTK_WIDGET(self))), x_timestamp);
 
   gtk_widget_grab_focus (chat->input_text_view);
   return self;

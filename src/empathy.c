@@ -300,6 +300,10 @@ empathy_app_activate (GApplication *app)
           "<Primary>h",
           "win." EMPATHY_PREFS_UI_SHOW_OFFLINE,
           NULL);
+      gtk_application_add_accelerator (GTK_APPLICATION (app),
+          "<Control>Page_Up", "win.tab_prev", NULL);
+      gtk_application_add_accelerator (GTK_APPLICATION (app),
+          "<Control>Page_Down", "win.tab_next", NULL);
 
       /* Allow Empathy to watch session state */
       autoaway = g_settings_get_boolean (self->gsettings,
@@ -830,7 +834,7 @@ main (int argc, char *argv[])
   add_empathy_features ();
 
   app = g_object_new (EMPATHY_TYPE_APP,
-      "application-id", EMPATHY_BUS_NAME,
+      "application-id", EMPATHY_CHAT_BUS_NAME,
       NULL);
 
   retval = g_application_run (G_APPLICATION (app), argc, argv);

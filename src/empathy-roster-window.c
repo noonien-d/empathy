@@ -32,6 +32,7 @@
 #include "empathy-accounts-dialog.h"
 #include "empathy-call-observer.h"
 #include "empathy-chat-manager.h"
+#include "empathy-chat-window.h"
 #include "empathy-chatroom-manager.h"
 #include "empathy-chatrooms-window.h"
 #include "empathy-client-factory.h"
@@ -55,6 +56,8 @@
 #include "empathy-roster-model-manager.h"
 #include "empathy-roster-view.h"
 #include "empathy-status-presets.h"
+#include "empathy-theme-manager.h"
+#include "empathy-theme-manager.h"
 #include "empathy-ui-utils.h"
 #include "empathy-utils.h"
 
@@ -90,6 +93,8 @@ G_DEFINE_TYPE (EmpathyRosterWindow, empathy_roster_window, GTK_TYPE_APPLICATION_
 struct _EmpathyRosterWindowPriv {
   EmpathyRosterView *view;
   TpAccountManager *account_manager;
+  EmpathyChatManager *chat_manager;
+  EmpathyThemeManager *theme_manager;
   EmpathyChatroomManager *chatroom_manager;
   EmpathyEventManager *event_manager;
   EmpathySoundManager *sound_mgr;
@@ -116,6 +121,7 @@ struct _EmpathyRosterWindowPriv {
   GtkWidget *button_add_contact;
   GtkWidget *spinner_loading;
   GtkWidget *tooltip_widget;
+  GtkWidget *chat_window;
 
   GMenu *menumodel;
   GMenu *rooms_section;
@@ -1033,6 +1039,8 @@ empathy_roster_window_finalize (GObject *window)
 
   g_object_unref (self->priv->call_observer);
   g_object_unref (self->priv->event_manager);
+  g_object_unref (self->priv->chat_manager);
+  g_object_unref (self->priv->theme_manager);
   g_object_unref (self->priv->chatroom_manager);
 
   g_object_unref (self->priv->gsettings_ui);
@@ -1540,6 +1548,25 @@ roster_window_help_contents_cb (GSimpleAction *action,
   empathy_url_show (GTK_WIDGET (self), "help:empathy");
 }
 
+static void
+next_tab_cb (GSimpleAction *action,
+    GVariant *parameter,
+    gpointer user_data)
+{
+  EmpathyRosterWindow *self = user_data;
+  empathy_chat_window_next_tab (EMPATHY_CHAT_WINDOW (self->priv->chat_window));
+}
+
+static void
+prev_tab_cb (GSimpleAction *action,
+    GVariant *parameter,
+    gpointer user_data)
+{
+  EmpathyRosterWindow *self = user_data;
+  empathy_chat_window_prev_tab (EMPATHY_CHAT_WINDOW (self->priv->chat_window));
+}
+
+
 static gboolean
 roster_window_throbber_button_press_event_cb (GtkWidget *throbber,
     GdkEventButton *event,
@@ -1897,6 +1924,13 @@ static GActionEntry menubar_entries[] = {
   {"help-contents", roster_window_help_contents_cb},
   {"help-about", roster_window_help_about_cb},
 };
+
+static GActionEntry app_entries[] =
+{
+  { "tab_next", next_tab_cb, NULL, NULL, NULL },
+  { "tab_prev", prev_tab_cb, NULL, NULL, NULL }
+};
+
 
 static void
 empathy_roster_window_set_property (GObject *object,
@@ -2285,10 +2319,10 @@ empathy_roster_window_init (EmpathyRosterWindow *self)
   GtkBuilder *gui;
   GtkWidget *sw;
   gchar *filename;
-  GtkWidget *search_vbox;
   GtkWidget *header_bar;
   GtkWidget *new_conversation_button;
   GtkWidget *image;
+  GtkWidget *chat_vbox;
   guint i;
   EmpathyRosterModel *model;
 
@@ -2313,10 +2347,10 @@ empathy_roster_window_init (EmpathyRosterWindow *self)
   filename = empathy_file_lookup ("empathy-roster-window.ui", "src");
   gui = tpaw_builder_get_file (filename,
       "main_vbox", &self->priv->main_vbox,
+      "chat_vbox", &chat_vbox,
       "balance_vbox", &self->priv->balance_vbox,
       "errors_vbox", &self->priv->errors_vbox,
       "auth_vbox", &self->priv->auth_vbox,
-      "search_vbox", &search_vbox,
       "presence_toolbar", &self->priv->presence_toolbar,
       "notebook", &self->priv->notebook,
       "no_entry_label", &self->priv->no_entry_label,
@@ -2363,6 +2397,10 @@ empathy_roster_window_init (EmpathyRosterWindow *self)
 
   self->priv->status_changed_handlers = g_hash_table_new_full (g_direct_hash,
       g_direct_equal, NULL, NULL);
+
+  /* set up accelerators */
+  g_action_map_add_action_entries (G_ACTION_MAP (self),
+      app_entries, G_N_ELEMENTS (app_entries), self);
 
   /* set up menus */
   g_action_map_add_action_entries (G_ACTION_MAP (self),
@@ -2416,6 +2454,7 @@ empathy_roster_window_init (EmpathyRosterWindow *self)
   self->priv->view = EMPATHY_ROSTER_VIEW (
       empathy_roster_view_new (model));
 
+
   g_object_unref (model);
 
   gtk_widget_show (GTK_WIDGET (self->priv->view));
@@ -2454,8 +2493,6 @@ empathy_roster_window_init (EmpathyRosterWindow *self)
       GTK_WIDGET (self->priv->view));
   empathy_roster_view_set_live_search (self->priv->view,
       TPAW_LIVE_SEARCH (self->priv->search_bar));
-  gtk_box_pack_start (GTK_BOX (search_vbox), self->priv->search_bar,
-      FALSE, TRUE, 0);
 
   g_signal_connect_swapped (self, "map",
       G_CALLBACK (gtk_widget_grab_focus), self->priv->view);
@@ -2467,9 +2504,16 @@ empathy_roster_window_init (EmpathyRosterWindow *self)
   /* Set window size. */
   empathy_geometry_bind (GTK_WINDOW (self), GEOMETRY_NAME);
 
+  self->priv->chat_window = GTK_WIDGET (empathy_chat_window_new ());
+  gtk_widget_show (GTK_WIDGET (self->priv->chat_window) );
+  gtk_box_pack_start (GTK_BOX (chat_vbox), self->priv->chat_window, TRUE, TRUE, 0);
+
   /* Enable event handling */
   self->priv->call_observer = empathy_call_observer_dup_singleton ();
   self->priv->event_manager = empathy_event_manager_dup_singleton ();
+  self->priv->chat_manager = empathy_chat_manager_dup_singleton ();
+
+  self->priv->theme_manager = empathy_theme_manager_dup_singleton ();
 
   tp_g_signal_connect_object (self->priv->event_manager, "event-added",
       G_CALLBACK (roster_window_event_added_cb), self, 0);

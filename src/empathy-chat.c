@@ -76,6 +76,8 @@ activate_cb (GApplication *application)
   g_assert (chat_mgr == NULL);
   chat_mgr = empathy_chat_manager_dup_singleton ();
 
+  empathy_chat_window_present_chat(NULL, 0);
+
   g_signal_connect (chat_mgr, "displayed-chats-changed",
       G_CALLBACK (displayed_chats_changed_cb), GUINT_TO_POINTER (1));
 }

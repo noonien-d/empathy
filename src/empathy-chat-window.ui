@@ -176,6 +176,7 @@
             <property name="stock_id">gtk-about</property>
             <property name="name">menu_help_about</property>
           </object>
+          <accelerator key="F2" modifiers=""/>
         </child>
       </object>
     </child>
@@ -213,24 +214,28 @@
         </menu>
         <menu action="menu_help">
           <menuitem action="menu_help_contents"/>
-          <menuitem action="menu_help_about"/>
         </menu>
       </menubar>
     </ui>
   </object>
+  <object class="GtkBox" id="main_box">
+    <property name="can_focus">False</property>
+    <property name="orientation">horizontal</property>
+    <property name="visible">True</property>
+
+<child>
   <object class="GtkVBox" id="chat_vbox">
     <property name="visible">True</property>
-    <child>
-      <object class="GtkMenuBar" constructor="ui_manager" id="chats_menubar">
-        <property name="visible">True</property>
-      </object>
-      <packing>
-        <property name="expand">False</property>
-        <property name="fill">False</property>
-      </packing>
-    </child>
     <child>
       <placeholder/>
     </child>
   </object>
+  <packing>
+    <property name="expand">True</property>
+    <property name="fill">True</property>
+    <property name="position">1</property>
+  </packing>
+
+</child>
+</object>
 </interface>

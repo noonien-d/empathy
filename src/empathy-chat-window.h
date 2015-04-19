@@ -63,13 +63,13 @@ typedef struct _EmpathyChatWindowPriv EmpathyChatWindowPriv;
 
 struct _EmpathyChatWindow
 {
-  GtkWindow parent;
+  GtkBin parent;
   EmpathyChatWindowPriv *priv;
 };
 
 struct _EmpathyChatWindowClass
 {
-  GtkWindowClass parent_class;
+  GtkBinClass parent_class;
 };
 
 GType empathy_chat_window_get_type (void);
@@ -81,8 +81,13 @@ EmpathyChat * empathy_chat_window_find_chat (TpAccount *account,
 EmpathyChatWindow * empathy_chat_window_present_chat (EmpathyChat *chat,
     gint64 timestamp);
 
+EmpathyChatWindow * empathy_chat_window_new (void);
+
 EmpathyIndividualManager * empathy_chat_window_get_individual_manager (
     EmpathyChatWindow *self);
+
+void empathy_chat_window_next_tab (EmpathyChatWindow *self);
+void empathy_chat_window_prev_tab (EmpathyChatWindow *self);
 
 G_END_DECLS
 
