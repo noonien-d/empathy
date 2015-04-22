@@ -85,6 +85,7 @@ empathy_local_xmpp_assistant_widget_constructed (GObject *object)
         "details below are correct."));
   gtk_misc_set_alignment (GTK_MISC (w), 0, 0.5);
   gtk_label_set_line_wrap (GTK_LABEL (w), TRUE);
+  gtk_label_set_max_width_chars (GTK_LABEL (w), 60);
   gtk_grid_attach (GTK_GRID (self), w, 0, 0, 1, 1);
   gtk_widget_show (w);
 
