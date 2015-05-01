@@ -2530,15 +2530,11 @@ empathy_roster_window_init (EmpathyRosterWindow *self)
       "most-available-presence-changed",
       G_CALLBACK (roster_window_most_available_presence_changed_cb), self);
 
-  g_settings_bind (self->priv->gsettings_ui, EMPATHY_PREFS_UI_SHOW_OFFLINE,
-      self->priv->view, "show-offline",
-      G_SETTINGS_BIND_GET);
-  tp_g_signal_connect_object (self->priv->gsettings_ui,
-      "changed::" EMPATHY_PREFS_UI_SHOW_OFFLINE,
-      G_CALLBACK (show_offline_changed_cb), self, 0);
-  g_settings_bind (self->priv->gsettings_ui, EMPATHY_PREFS_UI_SHOW_GROUPS,
-      self->priv->view, "show-groups",
-      G_SETTINGS_BIND_GET);
+  g_object_set (G_OBJECT (self->priv->view),
+                  "show-offline", TRUE,
+                  "show-groups", FALSE,
+                  NULL);
+
   g_settings_bind (self->priv->gsettings_ui, "show-balance-in-roster",
       self->priv->balance_vbox, "visible",
       G_SETTINGS_BIND_GET);
