@@ -65,3 +65,20 @@ div.message {
   padding: 0.3ex 0;
   line-height: 130%;
 }
+
+span.timestamp {
+  color: black;
+  opacity: 0.2;
+  position: absolute;
+  right: 2px;
+  font-size: small;
+  -webkit-transition: all .2s ease-in-out;
+  border-radius: 3px;
+}
+
+span.timestamp:hover {
+  opacity: 0.8;
+  background: #666;
+  color: #eee;
+  z-index: 1000;
+}
