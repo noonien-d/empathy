@@ -18,6 +18,7 @@ enum
   PROP_GROUP,
   PROP_ONLINE,
   PROP_ALIAS,
+  PROP_MOST_RECENT_EVENT,
   N_PROPS
 };
 
@@ -33,12 +34,17 @@ static guint signals[LAST_SIGNAL];
 struct _EmpathyRosterContactPriv
 {
   FolksIndividual *individual;
+  EmpathyContact *contact;
   gchar *group;
+
+  TplLogManager *log_manager;
+  TplEvent *most_recent_event;
 
   GtkWidget *avatar;
   GtkWidget *first_line_alig;
   GtkWidget *alias;
   GtkWidget *presence_msg;
+  GtkWidget *most_recent_msg;
   GtkWidget *presence_icon;
   GtkWidget *phone_icon;
 
@@ -77,6 +83,9 @@ empathy_roster_contact_get_property (GObject *object,
       case PROP_ALIAS:
         g_value_set_string (value, get_alias (self));
         break;
+      case PROP_MOST_RECENT_EVENT:
+        g_value_set_object (value, self->priv->most_recent_event);
+        break;
       default:
         G_OBJECT_WARN_INVALID_PROPERTY_ID (object, property_id, pspec);
         break;
@@ -105,6 +114,24 @@ empathy_roster_contact_set_property (GObject *object,
         G_OBJECT_WARN_INVALID_PROPERTY_ID (object, property_id, pspec);
         break;
     }
+}
+
+gint64
+empathy_roster_contact_get_most_recent_timestamp (EmpathyRosterContact *contact)
+{
+  if (contact->priv->most_recent_event) {
+    return tpl_event_get_timestamp (contact->priv->most_recent_event);
+  }
+  return 0;
+}
+
+static const gchar*
+get_most_recent_message (EmpathyRosterContact *contact)
+{
+  if (contact->priv->most_recent_event) {
+    return tpl_text_event_get_message (TPL_TEXT_EVENT(contact->priv->most_recent_event));
+  }
+  return NULL;
 }
 
 static void
@@ -136,6 +163,29 @@ avatar_loaded_cb (GObject *source,
 
 out:
   tp_weak_ref_destroy (wr);
+}
+
+static void
+update_most_recent_msg (EmpathyRosterContact *self)
+{
+  const gchar* msg = get_most_recent_message (self);
+
+  if (tp_str_empty (msg))
+    {
+      gtk_alignment_set (GTK_ALIGNMENT (self->priv->first_line_alig),
+          0, 0.5, 1, 1);
+      gtk_widget_hide (self->priv->most_recent_msg);
+    }
+  else
+    {
+      gchar *tmp = g_strdup (msg);
+      if (strchr(tmp, '\n')) strchr(tmp, '\n')[0] = 0;
+      gtk_label_set_text (GTK_LABEL (self->priv->most_recent_msg), tmp);
+      gtk_alignment_set (GTK_ALIGNMENT (self->priv->first_line_alig),
+          0, 0.75, 1, 1);
+      gtk_misc_set_alignment (GTK_MISC (self->priv->most_recent_msg), 0, 0.25);
+      g_free (tmp);
+    }
 }
 
 static void
@@ -292,9 +342,35 @@ presence_status_changed_cb (FolksIndividual *individual,
 }
 
 static void
+get_filtered_events (GObject *source_object, GAsyncResult *res, gpointer user_data)
+{
+  EmpathyRosterContact *contact = EMPATHY_ROSTER_CONTACT (user_data);
+  GError *error;
+  GList *events;
+
+  error = NULL;
+  if (!tpl_log_manager_get_filtered_events_finish (contact->priv->log_manager, res, &events, &error))
+    {
+      g_warning ("Unable to get events: %s", error->message);
+      g_error_free (error);
+      goto out;
+    }
+
+  if (events) {
+    contact->priv->most_recent_event = TPL_EVENT (events->data);
+    g_object_notify (G_OBJECT (contact), "most-recent-event");
+    update_most_recent_msg (contact);
+  }
+
+ out:
+  return;
+}
+
+static void
 empathy_roster_contact_constructed (GObject *object)
 {
   EmpathyRosterContact *self = EMPATHY_ROSTER_CONTACT (object);
+  TplEntity *tpl_entity;
   void (*chain_up) (GObject *) =
       ((GObjectClass *) empathy_roster_contact_parent_class)->constructed;
 
@@ -302,6 +378,26 @@ empathy_roster_contact_constructed (GObject *object)
     chain_up (object);
 
   g_assert (FOLKS_IS_INDIVIDUAL (self->priv->individual));
+
+  self->priv->contact = empathy_contact_dup_best_for_action (
+                  self->priv->individual,
+                  EMPATHY_ACTION_CHAT);
+
+  self->priv->log_manager = tpl_log_manager_dup_singleton ();
+
+  tpl_entity = tpl_entity_new_from_tp_contact (
+                  empathy_contact_get_tp_contact (self->priv->contact),
+                  TPL_ENTITY_CONTACT);
+  tpl_log_manager_get_filtered_events_async(
+                  self->priv->log_manager,
+                  empathy_contact_get_account (self->priv->contact),
+                  tpl_entity,
+                  TPL_EVENT_MASK_TEXT,
+                  1,
+                  NULL,
+                  NULL,
+                  get_filtered_events,
+                  object);
 
   tp_g_signal_connect_object (self->priv->individual, "notify::avatar",
       G_CALLBACK (avatar_changed_cb), self, 0);
@@ -343,6 +439,7 @@ empathy_roster_contact_finalize (GObject *object)
 
   g_free (self->priv->group);
   g_free (self->priv->event_icon);
+  g_object_unref (self->priv->log_manager);
 
   if (chain_up != NULL)
     chain_up (object);
@@ -384,6 +481,12 @@ empathy_roster_contact_class_init (
       NULL,
       G_PARAM_READABLE | G_PARAM_STATIC_STRINGS);
   g_object_class_install_property (oclass, PROP_ALIAS, spec);
+
+  spec = g_param_spec_object ("most-recent-event", "Most recent event",
+      "Most recent event",
+      TPL_TYPE_EVENT,
+      G_PARAM_READABLE | G_PARAM_STATIC_STRINGS);
+  g_object_class_install_property (oclass, PROP_MOST_RECENT_EVENT, spec);
 
   g_type_class_add_private (klass, sizeof (EmpathyRosterContactPriv));
 }
@@ -445,10 +548,22 @@ empathy_roster_contact_init (EmpathyRosterContact *self)
   self->priv->presence_msg = gtk_label_new (NULL);
   gtk_label_set_ellipsize (GTK_LABEL (self->priv->presence_msg),
       PANGO_ELLIPSIZE_END);
+  /*
   gtk_box_pack_start (GTK_BOX (box), self->priv->presence_msg, TRUE, TRUE, 0);
   gtk_widget_show (self->priv->presence_msg);
+  */
 
   context = gtk_widget_get_style_context (self->priv->presence_msg);
+  gtk_style_context_add_class (context, GTK_STYLE_CLASS_DIM_LABEL);
+
+  /* Most recent message */
+  self->priv->most_recent_msg = gtk_label_new (NULL);
+  gtk_label_set_ellipsize (GTK_LABEL (self->priv->most_recent_msg),
+      PANGO_ELLIPSIZE_END);
+  gtk_box_pack_start (GTK_BOX (box), self->priv->most_recent_msg, TRUE, TRUE, 0);
+  gtk_widget_show (self->priv->most_recent_msg);
+
+  context = gtk_widget_get_style_context (self->priv->most_recent_msg);
   gtk_style_context_add_class (context, GTK_STYLE_CLASS_DIM_LABEL);
 
   /* Presence icon */
@@ -479,6 +594,12 @@ FolksIndividual *
 empathy_roster_contact_get_individual (EmpathyRosterContact *self)
 {
   return self->priv->individual;
+}
+
+EmpathyContact *
+empathy_roster_contact_get_contact (EmpathyRosterContact *self)
+{
+  return self->priv->contact;
 }
 
 gboolean

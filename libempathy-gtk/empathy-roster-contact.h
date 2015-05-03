@@ -3,6 +3,7 @@
 
 #include <gtk/gtk.h>
 #include <folks/folks.h>
+#include "empathy-contact.h"
 
 G_BEGIN_DECLS
 
@@ -52,6 +53,8 @@ GtkWidget * empathy_roster_contact_new (FolksIndividual *individual,
 
 FolksIndividual * empathy_roster_contact_get_individual (EmpathyRosterContact *self);
 
+EmpathyContact * empathy_roster_contact_get_contact (EmpathyRosterContact *self);
+
 const gchar * empathy_roster_contact_get_group (EmpathyRosterContact *self);
 
 gboolean empathy_roster_contact_is_online (EmpathyRosterContact *self);
@@ -61,6 +64,8 @@ void empathy_roster_contact_set_event_icon (EmpathyRosterContact *self,
 
 GdkPixbuf * empathy_roster_contact_get_avatar_pixbuf (
     EmpathyRosterContact *self);
+
+gint64 empathy_roster_contact_get_most_recent_timestamp (EmpathyRosterContact *contact);
 
 G_END_DECLS
 

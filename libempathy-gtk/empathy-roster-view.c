@@ -189,6 +189,10 @@ add_roster_contact (EmpathyRosterView *self,
   g_signal_connect (contact, "notify::alias",
       G_CALLBACK (roster_contact_changed_cb), self);
 
+  /* Need to resort if most recent event changed */
+  g_signal_connect (contact, "notify::most-recent-event",
+      G_CALLBACK (roster_contact_changed_cb), self);
+
   gtk_widget_show (contact);
   gtk_container_add (GTK_CONTAINER (self), contact);
 
@@ -626,6 +630,20 @@ contact_in_top (EmpathyRosterView *self,
 }
 
 static gint
+compare_roster_contacts_by_conversation_time (EmpathyRosterContact *a,
+    EmpathyRosterContact *b)
+{
+  gint64 ts_a, ts_b;
+
+  ts_a = empathy_roster_contact_get_most_recent_timestamp (a);
+  ts_b = empathy_roster_contact_get_most_recent_timestamp (b);
+
+  if (ts_a == ts_b) return 0;
+  if (ts_a > ts_b) return -1;
+  return 1;
+}
+
+static gint
 compare_roster_contacts_by_alias (EmpathyRosterContact *a,
     EmpathyRosterContact *b)
 {
@@ -654,7 +672,7 @@ compare_roster_contacts_no_group (EmpathyRosterView *self,
   if (top_a == top_b)
     /* Both contacts are in the top of the roster (or not). Sort them
      * alphabetically */
-    return compare_roster_contacts_by_alias (a, b);
+    return compare_roster_contacts_by_conversation_time (a, b);
   else if (top_a)
     return -1;
   else
@@ -691,7 +709,7 @@ compare_roster_contacts_with_groups (EmpathyRosterView *self,
 
   if (!tp_strdiff (group_a, group_b))
     /* Same group, compare the contacts */
-    return compare_roster_contacts_by_alias (a, b);
+    return compare_roster_contacts_by_conversation_time (a, b);
 
   /* Sort by group */
   return compare_group_names (group_a, group_b);

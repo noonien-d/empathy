@@ -208,7 +208,7 @@ roster_window_auth_display (EmpathyRosterWindow *self,
   gtk_info_bar_set_message_type (GTK_INFO_BAR (info_bar), GTK_MESSAGE_QUESTION);
 
   gtk_widget_set_no_show_all (info_bar, TRUE);
-  gtk_box_pack_start (GTK_BOX (self->priv->auth_vbox), info_bar, FALSE, TRUE, 0);
+  gtk_container_add (GTK_CONTAINER (self->priv->auth_vbox), info_bar);
   gtk_widget_show (info_bar);
 
   icon_name = tp_account_get_icon_name (account);
@@ -228,8 +228,8 @@ roster_window_auth_display (EmpathyRosterWindow *self,
   g_free (str);
 
   content_area = gtk_info_bar_get_content_area (GTK_INFO_BAR (info_bar));
-  gtk_box_pack_start (GTK_BOX (content_area), image, FALSE, FALSE, 0);
-  gtk_box_pack_start (GTK_BOX (content_area), label, TRUE, TRUE, 0);
+  gtk_container_add (GTK_CONTAINER (content_area), image);
+  gtk_container_add (GTK_CONTAINER (content_area), label);
 
   image = gtk_image_new_from_stock (GTK_STOCK_ADD, GTK_ICON_SIZE_BUTTON);
   add_button = gtk_button_new ();
@@ -248,7 +248,7 @@ roster_window_auth_display (EmpathyRosterWindow *self,
   gtk_widget_show (action_grid);
 
   action_area = gtk_info_bar_get_action_area (GTK_INFO_BAR (info_bar));
-  gtk_box_pack_start (GTK_BOX (action_area), action_grid, FALSE, FALSE, 0);
+  gtk_container_add (GTK_CONTAINER (action_area), action_grid);
 
   gtk_grid_attach (GTK_GRID (action_grid), add_button, 0, 0, 1, 1);
   gtk_grid_attach (GTK_GRID (action_grid), close_button, 1, 0, 1, 1);
@@ -608,7 +608,7 @@ roster_window_error_create_info_bar (EmpathyRosterWindow *self,
   gtk_info_bar_set_message_type (GTK_INFO_BAR (info_bar), message_type);
 
   gtk_widget_set_no_show_all (info_bar, TRUE);
-  gtk_box_pack_start (GTK_BOX (self->priv->errors_vbox), info_bar, FALSE, TRUE, 0);
+  gtk_container_add (GTK_CONTAINER (self->priv->errors_vbox), info_bar);
   gtk_widget_show (info_bar);
 
   icon_name = tp_account_get_icon_name (account);
@@ -623,8 +623,8 @@ roster_window_error_create_info_bar (EmpathyRosterWindow *self,
   gtk_widget_show (label);
 
   content_area = gtk_info_bar_get_content_area (GTK_INFO_BAR (info_bar));
-  gtk_box_pack_start (GTK_BOX (content_area), image, FALSE, FALSE, 0);
-  gtk_box_pack_start (GTK_BOX (content_area), label, TRUE, TRUE, 0);
+  gtk_container_add (GTK_CONTAINER (content_area), image);
+  gtk_container_add (GTK_CONTAINER (content_area), label);
 
   action_area = gtk_info_bar_get_action_area (GTK_INFO_BAR (info_bar));
   gtk_orientable_set_orientation (GTK_ORIENTABLE (action_area),
@@ -879,7 +879,7 @@ roster_window_setup_balance (EmpathyRosterWindow *self,
 
   /* protocol icon */
   image = gtk_image_new ();
-  gtk_box_pack_start (GTK_BOX (hbox), image, FALSE, TRUE, 0);
+  gtk_container_add (GTK_CONTAINER (hbox), image);
   g_object_bind_property (account, "icon-name", image, "icon-name",
       G_BINDING_SYNC_CREATE);
 
@@ -887,14 +887,14 @@ roster_window_setup_balance (EmpathyRosterWindow *self,
   label = gtk_label_new ("");
   gtk_misc_set_alignment (GTK_MISC (label), 0.0, 0.5);
   gtk_label_set_ellipsize (GTK_LABEL (label), PANGO_ELLIPSIZE_END);
-  gtk_box_pack_start (GTK_BOX (hbox), label, TRUE, TRUE, 0);
+  gtk_container_add (GTK_CONTAINER (hbox), label);
   g_object_bind_property (account, "display-name", label, "label",
       G_BINDING_SYNC_CREATE);
 
   /* balance label */
   label = gtk_label_new ("");
   gtk_misc_set_alignment (GTK_MISC (label), 0.0, 0.5);
-  gtk_box_pack_start (GTK_BOX (hbox), label, FALSE, TRUE, 0);
+  gtk_container_add (GTK_CONTAINER (hbox), label);
 
   /* top up button */
   uri = tp_connection_get_balance_uri (conn);
@@ -909,7 +909,7 @@ roster_window_setup_balance (EmpathyRosterWindow *self,
             GTK_ICON_SIZE_SMALL_TOOLBAR));
       gtk_button_set_relief (GTK_BUTTON (button), GTK_RELIEF_NONE);
       gtk_widget_set_tooltip_text (button, _("Top up account"));
-      gtk_box_pack_start (GTK_BOX (hbox), button, FALSE, TRUE, 0);
+      gtk_container_add (GTK_CONTAINER (hbox), button);
 
       g_signal_connect_data (button, "clicked",
           G_CALLBACK (empathy_url_show),
@@ -917,7 +917,7 @@ roster_window_setup_balance (EmpathyRosterWindow *self,
           0);
     }
 
-  gtk_box_pack_start (GTK_BOX (self->priv->balance_vbox), hbox, FALSE, TRUE, 0);
+  gtk_container_add (GTK_CONTAINER (self->priv->balance_vbox), hbox);
   gtk_widget_show_all (hbox);
 
   g_object_set_data (G_OBJECT (account), "balance-money-label", label);
@@ -2306,14 +2306,6 @@ roster_window_most_available_presence_changed_cb (TpAccountManager *manager,
 }
 
 static void
-show_offline_changed_cb (GSettings *settings,
-    const gchar *key,
-    EmpathyRosterWindow *self)
-{
-  set_notebook_page (self);
-}
-
-static void
 empathy_roster_window_init (EmpathyRosterWindow *self)
 {
   GtkBuilder *gui;
@@ -2429,9 +2421,7 @@ empathy_roster_window_init (EmpathyRosterWindow *self)
   /* Set up presence chooser */
   self->priv->presence_chooser = empathy_presence_chooser_new ();
   gtk_widget_show (self->priv->presence_chooser);
-  gtk_box_pack_start (GTK_BOX (self->priv->presence_toolbar),
-      self->priv->presence_chooser,
-      TRUE, TRUE, 0);
+  gtk_container_add (GTK_CONTAINER (self->priv->presence_toolbar), self->priv->presence_chooser);
 
   /* Set up the throbber */
   self->priv->throbber = gtk_spinner_new ();
@@ -2440,9 +2430,7 @@ empathy_roster_window_init (EmpathyRosterWindow *self)
   g_signal_connect (self->priv->throbber, "button-press-event",
     G_CALLBACK (roster_window_throbber_button_press_event_cb),
     self);
-  gtk_box_pack_start (GTK_BOX (self->priv->presence_toolbar),
-      self->priv->throbber,
-      FALSE, TRUE, 0);
+  gtk_container_add (GTK_CONTAINER (self->priv->presence_toolbar), self->priv->throbber);
 
   self->priv->individual_manager = empathy_individual_manager_dup_singleton ();
 
@@ -2506,7 +2494,7 @@ empathy_roster_window_init (EmpathyRosterWindow *self)
 
   self->priv->chat_window = GTK_WIDGET (empathy_chat_window_new ());
   gtk_widget_show (GTK_WIDGET (self->priv->chat_window) );
-  gtk_box_pack_start (GTK_BOX (chat_vbox), self->priv->chat_window, TRUE, TRUE, 0);
+  gtk_container_add (GTK_CONTAINER (chat_vbox), self->priv->chat_window);
 
   /* Enable event handling */
   self->priv->call_observer = empathy_call_observer_dup_singleton ();
