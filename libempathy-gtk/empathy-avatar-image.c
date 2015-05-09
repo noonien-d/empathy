@@ -119,6 +119,19 @@ avatar_image_finalize (GObject *object)
 	G_OBJECT_CLASS (empathy_avatar_image_parent_class)->finalize (object);
 }
 
+#ifdef GDK_WINDOWING_X11
+static gboolean
+running_in_x11 (void)
+{
+	GdkDisplay* display;
+
+	display = gdk_display_get_default ();
+	if (!display)
+		return FALSE;
+
+	return GDK_IS_X11_DISPLAY (display);
+}
+
 static GdkFilterReturn
 avatar_image_filter_func (GdkXEvent  *gdkxevent,
 			  GdkEvent   *event,
@@ -127,6 +140,9 @@ avatar_image_filter_func (GdkXEvent  *gdkxevent,
 	XEvent                *xevent = gdkxevent;
 	Atom                   atom;
 	EmpathyAvatarImagePriv *priv;
+
+	if (!running_in_x11 ())
+		return GDK_FILTER_CONTINUE;
 
 	priv = GET_PRIV (data);
 
@@ -151,6 +167,9 @@ avatar_image_add_filter (EmpathyAvatarImage *avatar_image)
 	gint       mask;
 	XWindowAttributes attrs;
 
+	if (!running_in_x11 ())
+		return;
+
 	mask = PropertyChangeMask;
 
 	window = gdk_x11_get_default_root_xwindow ();
@@ -167,6 +186,20 @@ avatar_image_add_filter (EmpathyAvatarImage *avatar_image)
 
 	gdk_window_add_filter (NULL, avatar_image_filter_func, avatar_image);
 }
+#else
+static GdkFilterReturn
+avatar_image_filter_func (GdkXEvent  *gdkxevent,
+			  GdkEvent   *event,
+			  gpointer    data)
+{
+	return GDK_FILTER_CONTINUE;
+}
+
+static void
+avatar_image_add_filter (EmpathyAvatarImage *avatar_image)
+{
+}
+#endif
 
 static void
 avatar_image_remove_filter (EmpathyAvatarImage *avatar_image)
