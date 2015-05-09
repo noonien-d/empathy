@@ -123,7 +123,7 @@ avatar_image_finalize (GObject *object)
 static gboolean
 running_in_x11 (void)
 {
-	GdkDisplay* display;
+	GdkDisplay *display;
 
 	display = gdk_display_get_default ();
 	if (!display)
