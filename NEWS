@@ -1,3 +1,19 @@
+NEW in 3.12.10 (13/05/2015)
+==============
+
+Bugs fixed:
+ - Fixed #741771, Preferences dialog expands to absurd width (Michael Catanzaro)
+ - Fixed #745504, Fix preferences with modern gtk+ (Giovanni Campagna)
+ - Fixed #746841, provide a scalable -symbolic variant of the app icon (Jakub Steiner)
+ - Fixed #747460, Initial empathy accounts window is too wide (Michael Catanzaro)
+ - Don't crash when running in Wayland (Michael Catanzaro)
+
+Translations:
+ - Updated ja Translation (Hajime Taira)
+
+Documentation translations:
+ - Updated es Documentation translation (Daniel Mustieles)
+
 NEW in 3.12.9 (15/04/2015)
 =============
 Bugs fixed:
