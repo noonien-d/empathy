@@ -1,15 +1,15 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# Victor Ibragimov <victor.ibragimov@gmail.com>, 2013.
+# Victor Ibragimov <victor.ibragimov@gmail.com>, 2013, 2014, 2015.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Tajik Gnome\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=empathy&keywords=I18N+L10N&component=General\n"
-"POT-Creation-Date: 2013-12-28 01:59+0000\n"
-"PO-Revision-Date: 2014-01-21 16:00+0500\n"
+"POT-Creation-Date: 2015-06-04 03:29+0000\n"
+"PO-Revision-Date: 2015-06-04 11:07+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: \n"
 "Language: tg\n"
@@ -17,20 +17,17 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.6.3\n"
+"X-Generator: Poedit 1.7.5\n"
 
 #: ../data/empathy.desktop.in.in.h:1
-#, fuzzy
 msgid "Empathy"
 msgstr "Empathy"
 
 #: ../data/empathy.desktop.in.in.h:2
-#, fuzzy
 msgid "IM Client"
-msgstr "Муштарӣ"
+msgstr "Муштарии IM"
 
 #: ../data/empathy.desktop.in.in.h:3
-#, fuzzy
 msgid "Empathy Internet Messaging"
 msgstr "Паёмнависии Интернетии Empathy"
 
@@ -146,14 +143,12 @@ msgid "Whether to show account balances in the contact list."
 msgstr "Намоиши тамосҳо бо рақамҳои мушаххас"
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:16
-#, fuzzy
 msgid "Hide main window"
-msgstr "Пинҳон кардани тугмаҳои менюи асосӣ"
+msgstr "Пинҳон кардани равзанаи асосӣ"
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:17
-#, fuzzy
 msgid "Hide the main window."
-msgstr "Пинҳон кардани тугмаҳои менюи асосӣ"
+msgstr "Пинҳон кардани равзанаи асосӣ."
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:18
 #, fuzzy
@@ -202,9 +197,8 @@ msgid "The stored position (in pixels) of the chat window side pane."
 msgstr "Намоиш додан/пинҳон кардани панҷараки паҳлӯи равзана."
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:26
-#, fuzzy
 msgid "Show contact groups"
-msgstr "Намоиши тамосҳо бо рақамҳои мушаххас"
+msgstr "Намоиш додани гурӯҳҳои тамос"
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:27
 #, fuzzy
@@ -576,57 +570,57 @@ msgid ""
 "Whether Empathy should reduce the location's accuracy for privacy reasons."
 msgstr "Ҷойгиршавии охирин ва дақиқӣ"
 
-#: ../libempathy/empathy-ft-handler.c:734
+#: ../libempathy/empathy-ft-handler.c:730
 #, fuzzy
 msgid "No reason was specified"
 msgstr "Сабаби номаълум"
 
-#: ../libempathy/empathy-ft-handler.c:737
+#: ../libempathy/empathy-ft-handler.c:733
 #, fuzzy
 msgid "The change in state was requested"
 msgstr "Вазъият:"
 
-#: ../libempathy/empathy-ft-handler.c:740
+#: ../libempathy/empathy-ft-handler.c:736
 #, fuzzy
 msgid "You canceled the file transfer"
 msgstr "Интиқолдиҳии файл"
 
-#: ../libempathy/empathy-ft-handler.c:743
+#: ../libempathy/empathy-ft-handler.c:739
 #, fuzzy
 msgid "The other participant canceled the file transfer"
 msgstr "Интиқолдиҳии файл"
 
-#: ../libempathy/empathy-ft-handler.c:746
+#: ../libempathy/empathy-ft-handler.c:742
 #, fuzzy
 msgid "Error while trying to transfer the file"
 msgstr "Ҳангоми навсозӣ шудан, насбкунанда хатогиҳоро муайян кард:"
 
-#: ../libempathy/empathy-ft-handler.c:749
+#: ../libempathy/empathy-ft-handler.c:745
 #, fuzzy
 msgid "The other participant is unable to transfer the file"
 msgstr "Интиқолдиҳии файл"
 
-#: ../libempathy/empathy-ft-handler.c:752 ../libempathy/empathy-utils.c:260
+#: ../libempathy/empathy-ft-handler.c:748 ../libempathy/empathy-utils.c:260
 #, fuzzy
 msgid "Unknown reason"
 msgstr "Сабаби номаълум"
 
-#: ../libempathy/empathy-ft-handler.c:915
+#: ../libempathy/empathy-ft-handler.c:895
 #, fuzzy
 msgid "File transfer completed, but the file was corrupted"
 msgstr "Интиқолдиҳии файл"
 
-#: ../libempathy/empathy-ft-handler.c:1201
+#: ../libempathy/empathy-ft-handler.c:1176
 #, fuzzy
 msgid "File transfer not supported by remote contact"
 msgstr "Интиқолдиҳии файл"
 
-#: ../libempathy/empathy-ft-handler.c:1257
+#: ../libempathy/empathy-ft-handler.c:1232
 #, fuzzy
 msgid "The selected file is not a regular file"
 msgstr "Ин файл ғайриоддӣ мебошад ё ки файли матнӣ намебошад."
 
-#: ../libempathy/empathy-ft-handler.c:1266
+#: ../libempathy/empathy-ft-handler.c:1241
 #, fuzzy
 msgid "The selected file is empty"
 msgstr "Ягон файл интихоб нашудааст"
@@ -820,11 +814,11 @@ msgstr "Пароли нав ва кӯҳна хеле монанданд"
 msgid "Internal error"
 msgstr "Хатогии дохилӣ"
 
-#: ../libempathy-gtk/empathy-account-chooser.c:683
+#: ../libempathy-gtk/empathy-account-chooser.c:687
 msgid "All accounts"
 msgstr "Ҳамаи ҳисобҳо"
 
-#: ../libempathy-gtk/empathy-avatar-image.c:320
+#: ../libempathy-gtk/empathy-avatar-image.c:353
 #, fuzzy
 msgid "Click to enlarge"
 msgstr "Бузург кардани тасвир"
@@ -835,7 +829,7 @@ msgid "Authentication failed for account <b>%s</b>"
 msgstr "<b>Барқарорсозӣ (%s)</b>"
 
 #: ../libempathy-gtk/empathy-bad-password-dialog.c:140
-#: ../libempathy-gtk/empathy-chat.c:3846
+#: ../libempathy-gtk/empathy-chat.c:3828
 msgid "Retry"
 msgstr "Аз нав кӯшидан"
 
@@ -888,74 +882,74 @@ msgstr "Протокол:"
 msgid "You don't have enough credit in order to place this call"
 msgstr "Шумо барои хондани ин файл иҷозатҳои кофӣ надоред."
 
-#: ../libempathy-gtk/empathy-chat.c:733
+#: ../libempathy-gtk/empathy-chat.c:729
 #, fuzzy
 msgid "Failed to open private chat"
 msgstr "Кушодани равзанаи нави браузери шахсӣ"
 
-#: ../libempathy-gtk/empathy-chat.c:791
+#: ../libempathy-gtk/empathy-chat.c:787
 #, fuzzy
 msgid "Topic not supported on this conversation"
 msgstr "МАВЗӮЪ"
 
-#: ../libempathy-gtk/empathy-chat.c:797
+#: ../libempathy-gtk/empathy-chat.c:793
 #, fuzzy
 msgid "You are not allowed to change the topic"
 msgstr "МАВЗӮЪ"
 
-#: ../libempathy-gtk/empathy-chat.c:973
+#: ../libempathy-gtk/empathy-chat.c:964
 #, fuzzy
 msgid "Invalid contact ID"
 msgstr "Ягон тамос бо рақами мушаххаси %s ёфт нашуд"
 
-#: ../libempathy-gtk/empathy-chat.c:1060
+#: ../libempathy-gtk/empathy-chat.c:1051
 #, fuzzy
 msgid "/clear: clear all messages from the current conversation"
 msgstr "Пок кардани паёмҳо"
 
-#: ../libempathy-gtk/empathy-chat.c:1063
+#: ../libempathy-gtk/empathy-chat.c:1054
 #, fuzzy
 msgid "/topic <topic>: set the topic of the current conversation"
 msgstr "МАВЗӮЪ"
 
-#: ../libempathy-gtk/empathy-chat.c:1066
+#: ../libempathy-gtk/empathy-chat.c:1057
 #, fuzzy
 msgid "/join <chat room ID>: join a new chat room"
 msgstr "Хонаи чат"
 
-#: ../libempathy-gtk/empathy-chat.c:1069
+#: ../libempathy-gtk/empathy-chat.c:1060
 #, fuzzy
 msgid "/j <chat room ID>: join a new chat room"
 msgstr "Хонаи чат"
 
-#: ../libempathy-gtk/empathy-chat.c:1073
+#: ../libempathy-gtk/empathy-chat.c:1064
 #, fuzzy
 msgid ""
 "/part [<chat room ID>] [<reason>]: leave the chat room, by default the "
 "current one"
 msgstr "Хонаи чат"
 
-#: ../libempathy-gtk/empathy-chat.c:1077
+#: ../libempathy-gtk/empathy-chat.c:1068
 #, fuzzy
 msgid "/query <contact ID> [<message>]: open a private chat"
 msgstr "Ягон тамос бо рақами мушаххаси %s ёфт нашуд"
 
-#: ../libempathy-gtk/empathy-chat.c:1080
+#: ../libempathy-gtk/empathy-chat.c:1071
 #, fuzzy
 msgid "/msg <contact ID> <message>: open a private chat"
 msgstr "Ягон тамос бо рақами мушаххаси %s ёфт нашуд"
 
-#: ../libempathy-gtk/empathy-chat.c:1083
+#: ../libempathy-gtk/empathy-chat.c:1074
 #, fuzzy
 msgid "/nick <nickname>: change your nickname on the current server"
 msgstr "Тахаллус"
 
-#: ../libempathy-gtk/empathy-chat.c:1086
+#: ../libempathy-gtk/empathy-chat.c:1077
 #, fuzzy
 msgid "/me <message>: send an ACTION message to the current conversation"
 msgstr "Навиштани паём"
 
-#: ../libempathy-gtk/empathy-chat.c:1089
+#: ../libempathy-gtk/empathy-chat.c:1080
 #, fuzzy
 msgid ""
 "/say <message>: send <message> to the current conversation. This is used to "
@@ -963,12 +957,12 @@ msgid ""
 "join a new chat room\""
 msgstr "Паём аз хонаи чати %s"
 
-#: ../libempathy-gtk/empathy-chat.c:1094
+#: ../libempathy-gtk/empathy-chat.c:1085
 #, fuzzy
 msgid "/whois <contact ID>: display information about a contact"
 msgstr "Ягон тамос бо рақами мушаххаси %s ёфт нашуд"
 
-#: ../libempathy-gtk/empathy-chat.c:1097
+#: ../libempathy-gtk/empathy-chat.c:1088
 #, fuzzy
 msgid ""
 "/help [<command>]: show all supported commands. If <command> is defined, "
@@ -977,141 +971,141 @@ msgstr ""
 "Барои дидани тафсилоти бештар, бо --show-unsupported, --show-supported ё --"
 "show-all иҷро кунед"
 
-#: ../libempathy-gtk/empathy-chat.c:1116
+#: ../libempathy-gtk/empathy-chat.c:1107
 #, c-format
 msgid "Usage: %s"
 msgstr "Истифодабарӣ: %s"
 
-#: ../libempathy-gtk/empathy-chat.c:1161
+#: ../libempathy-gtk/empathy-chat.c:1152
 #, fuzzy
 msgid "Unknown command"
 msgstr "номаълум"
 
-#: ../libempathy-gtk/empathy-chat.c:1287
+#: ../libempathy-gtk/empathy-chat.c:1278
 #, fuzzy
 msgid "Unknown command; see /help for the available commands"
 msgstr ""
 "Барои дидани рӯйхати пурра бо имконоти сатри фармон, фармони \"%s --help\"-"
 "ро иҷро кунед."
 
-#: ../libempathy-gtk/empathy-chat.c:1542
+#: ../libempathy-gtk/empathy-chat.c:1533
 #, fuzzy
 msgid "insufficient balance to send message"
 msgstr "_Мувозина:"
 
-#: ../libempathy-gtk/empathy-chat.c:1546 ../libempathy-gtk/empathy-chat.c:1560
-#: ../libempathy-gtk/empathy-chat.c:1623
+#: ../libempathy-gtk/empathy-chat.c:1537 ../libempathy-gtk/empathy-chat.c:1551
+#: ../libempathy-gtk/empathy-chat.c:1614
 #, fuzzy, c-format
 msgid "Error sending message '%s': %s"
 msgstr "Паём дар бораи хатогӣ: '%s'."
 
-#: ../libempathy-gtk/empathy-chat.c:1548 ../libempathy-gtk/empathy-chat.c:1565
-#: ../libempathy-gtk/empathy-chat.c:1627
+#: ../libempathy-gtk/empathy-chat.c:1539 ../libempathy-gtk/empathy-chat.c:1556
+#: ../libempathy-gtk/empathy-chat.c:1618
 #, fuzzy, c-format
 msgid "Error sending message: %s"
 msgstr "Паём дар бораи хатогӣ: '%s'."
 
 #. translators: error used when user doesn't have enough credit on his
 #. * account to send the message.
-#: ../libempathy-gtk/empathy-chat.c:1554
+#: ../libempathy-gtk/empathy-chat.c:1545
 #, fuzzy, c-format
 msgid "insufficient balance to send message. <a href='%s'>Top up</a>."
 msgstr "_Мувозина:"
 
-#: ../libempathy-gtk/empathy-chat.c:1594
+#: ../libempathy-gtk/empathy-chat.c:1585
 #, fuzzy
 msgid "not capable"
 msgstr "Ресивер бо қобилияти DTS"
 
-#: ../libempathy-gtk/empathy-chat.c:1601
+#: ../libempathy-gtk/empathy-chat.c:1592
 msgid "offline"
 msgstr "офлайн"
 
-#: ../libempathy-gtk/empathy-chat.c:1604
+#: ../libempathy-gtk/empathy-chat.c:1595
 #, fuzzy
 msgid "invalid contact"
 msgstr "Решаи насб беэътибор аст. Луфтан бо маъмури худ тамос гиред."
 
-#: ../libempathy-gtk/empathy-chat.c:1607
+#: ../libempathy-gtk/empathy-chat.c:1598
 #, fuzzy
 msgid "permission denied"
 msgstr "Дастарсӣ манъ аст"
 
-#: ../libempathy-gtk/empathy-chat.c:1610
+#: ../libempathy-gtk/empathy-chat.c:1601
 #, fuzzy
 msgid "too long message"
 msgstr "Номи корбар хеле дароз аст"
 
-#: ../libempathy-gtk/empathy-chat.c:1613
+#: ../libempathy-gtk/empathy-chat.c:1604
 msgid "not implemented"
 msgstr "иҷронашуда"
 
-#: ../libempathy-gtk/empathy-chat.c:1617
+#: ../libempathy-gtk/empathy-chat.c:1608
 msgid "unknown"
 msgstr "номаълум"
 
-#: ../libempathy-gtk/empathy-chat.c:1684 ../src/empathy-chat-window.c:973
+#: ../libempathy-gtk/empathy-chat.c:1675 ../src/empathy-chat-window.c:973
 #, fuzzy
 msgid "Topic:"
 msgstr "МАВЗӮЪ"
 
-#: ../libempathy-gtk/empathy-chat.c:1699
+#: ../libempathy-gtk/empathy-chat.c:1690
 #, fuzzy, c-format
 msgid "Topic set to: %s"
 msgstr "МАВЗӮЪ"
 
-#: ../libempathy-gtk/empathy-chat.c:1701
+#: ../libempathy-gtk/empathy-chat.c:1692
 #, fuzzy, c-format
 msgid "Topic set by %s to: %s"
 msgstr "МАВЗӮЪ"
 
 #. No need to display this 'event' is no topic can be defined anyway
-#: ../libempathy-gtk/empathy-chat.c:1706
+#: ../libempathy-gtk/empathy-chat.c:1697
 #, fuzzy
 msgid "No topic defined"
 msgstr "МАВЗӮЪ"
 
-#: ../libempathy-gtk/empathy-chat.c:2224
+#: ../libempathy-gtk/empathy-chat.c:2215
 #, fuzzy
 msgid "(No Suggestions)"
 msgstr "(Ягон пешниҳод нест)"
 
 #. translators: %s is the selected word
-#: ../libempathy-gtk/empathy-chat.c:2292
+#: ../libempathy-gtk/empathy-chat.c:2283
 #, fuzzy, c-format
 msgid "Add '%s' to Dictionary"
 msgstr "Илова кардани \"%s\" ба луғат"
 
 #. translators: first %s is the selected word,
 #. * second %s is the language name of the target dictionary
-#: ../libempathy-gtk/empathy-chat.c:2329
+#: ../libempathy-gtk/empathy-chat.c:2320
 #, fuzzy, c-format
 msgid "Add '%s' to %s Dictionary"
 msgstr "Илова кардани \"%s\" ба луғат"
 
-#: ../libempathy-gtk/empathy-chat.c:2399
+#: ../libempathy-gtk/empathy-chat.c:2390
 #, fuzzy
 msgid "Insert Smiley"
 msgstr "_Дарҷ кардан"
 
 #. send button
-#: ../libempathy-gtk/empathy-chat.c:2417
+#: ../libempathy-gtk/empathy-chat.c:2408
 #: ../libempathy-gtk/empathy-ui-utils.c:809
 msgid "_Send"
 msgstr "_Фиристодан"
 
 #. Spelling suggestions
-#: ../libempathy-gtk/empathy-chat.c:2474
+#: ../libempathy-gtk/empathy-chat.c:2465
 #, fuzzy
 msgid "_Spelling Suggestions"
 msgstr "Намоиш додани пешниҳодҳои санҷиши имло"
 
-#: ../libempathy-gtk/empathy-chat.c:2585
+#: ../libempathy-gtk/empathy-chat.c:2570
 #, fuzzy
 msgid "Failed to retrieve recent logs"
 msgstr "Бозёбии файли пештанзимшуда қатъ шудааст"
 
-#: ../libempathy-gtk/empathy-chat.c:2828
+#: ../libempathy-gtk/empathy-chat.c:2808
 #, fuzzy, c-format
 msgid "%s has disconnected"
 msgstr "Қатъшуда"
@@ -1119,12 +1113,12 @@ msgstr "Қатъшуда"
 #. translators: reverse the order of these arguments
 #. * if the kicked should come before the kicker in your locale.
 #.
-#: ../libempathy-gtk/empathy-chat.c:2835
+#: ../libempathy-gtk/empathy-chat.c:2815
 #, fuzzy, c-format
 msgid "%1$s was kicked by %2$s"
 msgstr "%1$s: %2$s"
 
-#: ../libempathy-gtk/empathy-chat.c:2838
+#: ../libempathy-gtk/empathy-chat.c:2818
 #, fuzzy, c-format
 msgid "%s was kicked"
 msgstr "%s дюм"
@@ -1132,17 +1126,17 @@ msgstr "%s дюм"
 #. translators: reverse the order of these arguments
 #. * if the banned should come before the banner in your locale.
 #.
-#: ../libempathy-gtk/empathy-chat.c:2846
+#: ../libempathy-gtk/empathy-chat.c:2826
 #, fuzzy, c-format
 msgid "%1$s was banned by %2$s"
 msgstr "%1$s: %2$s"
 
-#: ../libempathy-gtk/empathy-chat.c:2849
+#: ../libempathy-gtk/empathy-chat.c:2829
 #, fuzzy, c-format
 msgid "%s was banned"
 msgstr "%s дюм"
 
-#: ../libempathy-gtk/empathy-chat.c:2853
+#: ../libempathy-gtk/empathy-chat.c:2833
 #, fuzzy, c-format
 msgid "%s has left the room"
 msgstr "Дар принтери \"%s\" тонер тамом шуд."
@@ -1152,17 +1146,17 @@ msgstr "Дар принтери \"%s\" тонер тамом шуд."
 #. * given by the user living the room. If this poses a problem,
 #. * please let us know. :-)
 #.
-#: ../libempathy-gtk/empathy-chat.c:2862
+#: ../libempathy-gtk/empathy-chat.c:2842
 #, c-format
 msgid " (%s)"
 msgstr " (%s)"
 
-#: ../libempathy-gtk/empathy-chat.c:2887
+#: ../libempathy-gtk/empathy-chat.c:2867
 #, fuzzy, c-format
 msgid "%s has joined the room"
 msgstr "Паём аз хонаи чати %s"
 
-#: ../libempathy-gtk/empathy-chat.c:2912
+#: ../libempathy-gtk/empathy-chat.c:2892
 #, fuzzy, c-format
 msgid "%s is now known as %s"
 msgstr "%s аллакой бо номи %s номида мешавад"
@@ -1170,33 +1164,33 @@ msgstr "%s аллакой бо номи %s номида мешавад"
 #. We don't know if the incoming call has been accepted or not, so we
 #. * assume it hasn't and if it has, we'll set the proper status when
 #. * we get the new handler.
-#: ../libempathy-gtk/empathy-chat.c:3099 ../src/empathy-call-window.c:1525
-#: ../src/empathy-call-window.c:1575 ../src/empathy-call-window.c:2654
-#: ../src/empathy-call-window.c:2953 ../src/empathy-event-manager.c:1170
+#: ../libempathy-gtk/empathy-chat.c:3079 ../src/empathy-call-window.c:1526
+#: ../src/empathy-call-window.c:1576 ../src/empathy-call-window.c:2655
+#: ../src/empathy-call-window.c:2954 ../src/empathy-event-manager.c:1141
 msgid "Disconnected"
 msgstr "Қатъшуда"
 
 #. Add message
-#: ../libempathy-gtk/empathy-chat.c:3786
+#: ../libempathy-gtk/empathy-chat.c:3768
 #, fuzzy
 msgid "Would you like to store this password?"
 msgstr "Худо ҳофиз! Шумо мехоҳед, ки..."
 
-#: ../libempathy-gtk/empathy-chat.c:3792
+#: ../libempathy-gtk/empathy-chat.c:3774
 msgid "Remember"
 msgstr "Ба ёд гирифтани парол"
 
-#: ../libempathy-gtk/empathy-chat.c:3802
+#: ../libempathy-gtk/empathy-chat.c:3784
 msgid "Not now"
 msgstr "Ҳоло не"
 
-#: ../libempathy-gtk/empathy-chat.c:3850
+#: ../libempathy-gtk/empathy-chat.c:3832
 #, fuzzy
 msgid "Wrong password; please try again:"
 msgstr "Пароли нодуруст, лутфан амалро такрор кунед"
 
 #. Add message
-#: ../libempathy-gtk/empathy-chat.c:3974
+#: ../libempathy-gtk/empathy-chat.c:3956
 #, fuzzy
 msgid "This room is protected by a password:"
 msgstr ""
@@ -1207,22 +1201,22 @@ msgstr ""
 "(Шумо метавонед калиди махфии худро тавассути openssl бо парол муҳофизат "
 "кунед)"
 
-#: ../libempathy-gtk/empathy-chat.c:4001
+#: ../libempathy-gtk/empathy-chat.c:3983
 #: ../src/empathy-new-chatroom-dialog.c:787
 msgid "Join"
 msgstr "Пайвастан"
 
-#: ../libempathy-gtk/empathy-chat.c:4193 ../src/empathy-event-manager.c:1191
+#: ../libempathy-gtk/empathy-chat.c:4175 ../src/empathy-event-manager.c:1162
 msgid "Connected"
 msgstr "Пайвастшуда"
 
-#: ../libempathy-gtk/empathy-chat.c:4248
+#: ../libempathy-gtk/empathy-chat.c:4227
 msgid "Conversation"
 msgstr "Муколама"
 
 #. Translators: this string is a something like
 #. * "Escher Cat (SMS)"
-#: ../libempathy-gtk/empathy-chat.c:4253
+#: ../libempathy-gtk/empathy-chat.c:4232
 #, fuzzy, c-format
 msgid "%s (SMS)"
 msgstr "%s дюм"
@@ -1428,8 +1422,8 @@ msgstr ""
 #: ../libempathy-gtk/empathy-individual-dialogs.c:244
 msgid "The following identity will be blocked:"
 msgid_plural "The following identities will be blocked:"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Шахсияти зерин манъ карда мешавад:"
+msgstr[1] "Шахсиятҳои зерин манъ карда мешаванд:"
 
 #: ../libempathy-gtk/empathy-individual-dialogs.c:251
 msgid "The following identity can not be blocked:"
@@ -1478,161 +1472,161 @@ msgstr "Тамосҳои GNOME"
 msgid "%s (%s)"
 msgstr "%s, %s, %s, %s ва %s"
 
-#: ../libempathy-gtk/empathy-individual-menu.c:363
+#: ../libempathy-gtk/empathy-individual-menu.c:342
 #, fuzzy
 msgid "Select account to use to place the call"
 msgstr "Занг задан"
 
-#: ../libempathy-gtk/empathy-individual-menu.c:367
+#: ../libempathy-gtk/empathy-individual-menu.c:346
 #: ../libempathy-gtk/empathy-log-window.ui.h:6
 #: ../src/empathy-call-window.ui.h:20
 msgid "Call"
 msgstr "Занг"
 
-#: ../libempathy-gtk/empathy-individual-menu.c:433
+#: ../libempathy-gtk/empathy-individual-menu.c:412
 msgid "Mobile"
 msgstr "Мобилӣ"
 
-#: ../libempathy-gtk/empathy-individual-menu.c:435
+#: ../libempathy-gtk/empathy-individual-menu.c:414
 msgid "Work"
 msgstr "Кор"
 
-#: ../libempathy-gtk/empathy-individual-menu.c:437
+#: ../libempathy-gtk/empathy-individual-menu.c:416
 msgid "HOME"
 msgstr "АСОСӢ"
 
 #. translators: first argument is a phone number like +32123456 and
 #. * the second one is something like 'home' or 'work'.
-#: ../libempathy-gtk/empathy-individual-menu.c:478
+#: ../libempathy-gtk/empathy-individual-menu.c:457
 #, fuzzy, c-format
 msgid "Call %s (%s)"
 msgstr "Занги видеоӣ аз %s"
 
 #. translators: argument is a phone number like +32123456
-#: ../libempathy-gtk/empathy-individual-menu.c:483
+#: ../libempathy-gtk/empathy-individual-menu.c:462
 #, fuzzy, c-format
 #| msgid "Calls"
 msgid "Call %s"
 msgstr "Занги видеоӣ аз %s"
 
-#: ../libempathy-gtk/empathy-individual-menu.c:695
+#: ../libempathy-gtk/empathy-individual-menu.c:674
 #, fuzzy
 msgid "_Block Contact"
 msgstr "Манъ кардан"
 
-#: ../libempathy-gtk/empathy-individual-menu.c:750
+#: ../libempathy-gtk/empathy-individual-menu.c:729
 #, fuzzy, c-format
 msgid "Remove from _Group '%s'"
 msgstr "Дастгоҳе, ки аз гурӯҳи ҳаҷм тоза мешавад:"
 
-#: ../libempathy-gtk/empathy-individual-menu.c:771
+#: ../libempathy-gtk/empathy-individual-menu.c:750
 #, fuzzy
 msgid "Delete and _Block"
 msgstr "Манъ кардан"
 
-#: ../libempathy-gtk/empathy-individual-menu.c:859
+#: ../libempathy-gtk/empathy-individual-menu.c:838
 #, fuzzy, c-format
 msgid "Do you really want to remove the contact '%s'?"
 msgstr "Оё шумо дар ҳақиқат мехоҳед, ки \"%s\"-ро ба интихоб илова кунед?"
 
-#: ../libempathy-gtk/empathy-individual-menu.c:868
+#: ../libempathy-gtk/empathy-individual-menu.c:847
 #, fuzzy, c-format
 msgid ""
 "Do you really want to remove the linked contact '%s'? Note that this will "
 "remove all the contacts which make up this linked contact."
 msgstr "%s ба тамос пайваст шудааст"
 
-#: ../libempathy-gtk/empathy-individual-menu.c:879
+#: ../libempathy-gtk/empathy-individual-menu.c:858
 #, fuzzy
 msgid "Removing contact"
 msgstr "Тоза шуда истодааст"
 
-#: ../libempathy-gtk/empathy-individual-menu.c:955
-#: ../libempathy-gtk/empathy-individual-view.c:2442
+#: ../libempathy-gtk/empathy-individual-menu.c:934
+#: ../libempathy-gtk/empathy-individual-view.c:2444
 msgid "_Remove"
 msgstr "_Тоза кардан"
 
 #. add chat button
-#: ../libempathy-gtk/empathy-individual-menu.c:1374
+#: ../libempathy-gtk/empathy-individual-menu.c:1351
 #: ../libempathy-gtk/empathy-new-message-dialog.c:308
 msgid "_Chat"
 msgstr "_Чат"
 
 #. add SMS button
-#: ../libempathy-gtk/empathy-individual-menu.c:1413
+#: ../libempathy-gtk/empathy-individual-menu.c:1418
 #: ../libempathy-gtk/empathy-new-message-dialog.c:302
 msgid "_SMS"
 msgstr "_SMS"
 
-#: ../libempathy-gtk/empathy-individual-menu.c:1450
+#: ../libempathy-gtk/empathy-individual-menu.c:1484
 #, fuzzy
 msgctxt "menu item"
 msgid "_Audio Call"
 msgstr "Занг задан"
 
-#: ../libempathy-gtk/empathy-individual-menu.c:1487
+#: ../libempathy-gtk/empathy-individual-menu.c:1550
 msgctxt "menu item"
 msgid "_Video Call"
 msgstr "Занги видеоӣ"
 
-#: ../libempathy-gtk/empathy-individual-menu.c:1529
+#: ../libempathy-gtk/empathy-individual-menu.c:1632
 #: ../src/empathy-roster-window-menubar.ui.h:11
 #, fuzzy
 msgid "_Previous Conversations"
 msgstr "_Қаблӣ"
 
-#: ../libempathy-gtk/empathy-individual-menu.c:1561
+#: ../libempathy-gtk/empathy-individual-menu.c:1689
 #, fuzzy
 msgid "Send File"
 msgstr "Фиристодан:"
 
-#: ../libempathy-gtk/empathy-individual-menu.c:1595
+#: ../libempathy-gtk/empathy-individual-menu.c:1751
 #, fuzzy
 msgid "Share My Desktop"
 msgstr "Дастрасии муштарак"
 
-#: ../libempathy-gtk/empathy-individual-menu.c:1622
+#: ../libempathy-gtk/empathy-individual-menu.c:1809
 #: ../libempathy-gtk/empathy-individual-widget.c:1423
 msgid "Favorite"
 msgstr "Баргузида"
 
-#: ../libempathy-gtk/empathy-individual-menu.c:1651
+#: ../libempathy-gtk/empathy-individual-menu.c:1838
 msgid "Infor_mation"
 msgstr "_Иттилоот"
 
-#: ../libempathy-gtk/empathy-individual-menu.c:1700
+#: ../libempathy-gtk/empathy-individual-menu.c:1887
 msgctxt "Edit individual (contextual menu)"
 msgid "_Edit"
 msgstr "_Таҳрир кардан"
 
 #. send invitation
-#: ../libempathy-gtk/empathy-individual-menu.c:1816
+#: ../libempathy-gtk/empathy-individual-menu.c:2003
 #: ../src/empathy-chat-window.c:1274
 #, fuzzy
 msgid "Inviting you to this room"
 msgstr "%s шуморо барои ҳамроҳ шудан ба %s даъват мекунад"
 
-#: ../libempathy-gtk/empathy-individual-menu.c:1862
+#: ../libempathy-gtk/empathy-individual-menu.c:2049
 #, fuzzy
 msgid "_Invite to Chat Room"
 msgstr "Хонаи чат"
 
-#: ../libempathy-gtk/empathy-individual-menu.c:2058
+#: ../libempathy-gtk/empathy-individual-menu.c:2245
 #: ../src/empathy-roster-window.ui.h:4
 msgid "_Add Contact…"
 msgstr "_Илова кардани тамос..."
 
-#: ../libempathy-gtk/empathy-individual-view.c:2362
+#: ../libempathy-gtk/empathy-individual-view.c:2364
 #, fuzzy, c-format
 msgid "Do you really want to remove the group '%s'?"
 msgstr "Оё шумо дар ҳақиқат мехоҳед, ки \"%s\"-ро ба интихоб илова кунед?"
 
-#: ../libempathy-gtk/empathy-individual-view.c:2365
+#: ../libempathy-gtk/empathy-individual-view.c:2367
 #, fuzzy
 msgid "Removing group"
 msgstr "Тоза шуда истодааст"
 
-#: ../libempathy-gtk/empathy-individual-view.c:2433
+#: ../libempathy-gtk/empathy-individual-view.c:2435
 #, fuzzy
 msgid "Re_name"
 msgstr "Аз нав _твит кардан"
@@ -1808,12 +1802,12 @@ msgstr ""
 "мехоҳед, ки тафсилоти пардохти охиринро истифода баред? Фармони худро "
 "бозбинӣ кунед."
 
-#: ../libempathy-gtk/empathy-local-xmpp-assistant-widget.c:102
+#: ../libempathy-gtk/empathy-local-xmpp-assistant-widget.c:103
 #, fuzzy
 msgid "People nearby"
 msgstr "Одамон"
 
-#: ../libempathy-gtk/empathy-local-xmpp-assistant-widget.c:117
+#: ../libempathy-gtk/empathy-local-xmpp-assistant-widget.c:118
 #, fuzzy
 msgid ""
 "You can change these details later or disable this feature by choosing <span "
@@ -2007,7 +2001,6 @@ msgid "What kind of chat account do you have?"
 msgstr "Шумо мехоҳед кадом намуди мушкилиро гузориш диҳед?"
 
 #: ../libempathy-gtk/empathy-new-account-dialog.c:152
-#| msgid "All accounts"
 msgid "Add new account"
 msgstr "Илова кардани ҳисоби нав"
 
@@ -2149,7 +2142,7 @@ msgid "Set status"
 msgstr "Вазъият ба \"офлайн\" гузаштааст"
 
 #. Custom messages
-#: ../libempathy-gtk/empathy-presence-chooser.c:1095
+#: ../libempathy-gtk/empathy-presence-chooser.c:1098
 #, fuzzy
 msgid "Custom messages…"
 msgstr "Паёмҳо"
@@ -2242,13 +2235,13 @@ msgid "Subscription Request"
 msgstr "Дархости обунашавӣ"
 
 #: ../libempathy-gtk/empathy-subscription-dialog.c:240
-#: ../src/empathy-event-manager.c:1108
+#: ../src/empathy-event-manager.c:1079
 #, fuzzy, c-format
 msgid "%s would like permission to see when you are online"
 msgstr "%s аз шумо иҷозат мепурсад, ки тавонад шуморо дар онлайн бинад"
 
 #: ../libempathy-gtk/empathy-subscription-dialog.c:281
-#: ../src/empathy-event-manager.c:723
+#: ../src/empathy-event-manager.c:694
 msgid "_Decline"
 msgstr "_Рад кардан"
 
@@ -2431,75 +2424,38 @@ msgstr "Шабакаҳои гурӯҳбандинашуда"
 msgid "Server cannot find contact: %s"
 msgstr "Тамоси эҷодшудаи нав ёфт нашудааст\n"
 
-#: ../src/empathy-about-dialog.c:77
-#, fuzzy
-msgid ""
-"Empathy is free software; you can redistribute it and/or modify it under the "
-"terms of the GNU General Public License as published by the Free Software "
-"Foundation; either version 2 of the License, or (at your option) any later "
-"version."
-msgstr ""
-"Ин барнома нармафзори ройгон мебошад; шумо метавонед онро дар асоси "
-"Иҷозатномаи ҷамъиятии умумии GNU-и чопшуда аз ҷониби Фонди нармафзори озод "
-"паҳн кунед ё/ва тағйир диҳед; дар асоси Иҷозатномаи версияи 2 ё (интихобӣ) "
-"ягон версияи навтарин."
-
-#: ../src/empathy-about-dialog.c:81
-#, fuzzy
-msgid ""
-"Empathy is distributed in the hope that it will be useful, but WITHOUT ANY "
-"WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS "
-"FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more "
-"details."
-msgstr ""
-"Терминали GNOME бо мақсаде таҳия мешаванд, ки онҳо фоидаовар бошанд, вале БЕ "
-"ЯГОН КАФОЛАТ, ҳатто бе кафолати пешбинишавандаи ФУРӮХТАШАВӢ ё МУТОБИҚАТ БА "
-"ҲАДАФИ МУАЙЯН. Барои маълумоти бештар ба иҷозатномаи умумии ҷамъиятии GNU "
-"нигаред. "
-
-#: ../src/empathy-about-dialog.c:85
-#, fuzzy
-msgid ""
-"You should have received a copy of the GNU General Public License along with "
-"Empathy; if not, write to the Free Software Foundation, Inc., 51 Franklin "
-"Street, Fifth Floor, Boston, MA 02110-130159 USA"
-msgstr ""
-"Шумо нусхаи Иҷозатномаи ҷамъиятии умумии GNU-ро бо ин барнома қабул кардед; "
-"ба таври дигар, ба суроғаи Фонди нармафзори озод нависед: 51 Franklin "
-"Street, Fifth Floor, Boston, MA  02110-1301, USA"
-
-#: ../src/empathy-about-dialog.c:105
+#: ../src/empathy-about-dialog.c:82
 #, fuzzy
 msgid "An Instant Messaging client for GNOME"
 msgstr "Муштарии паёмнависии фаврӣ барои MSN, Gtalk ва Facebook"
 
-#: ../src/empathy-about-dialog.c:111
+#: ../src/empathy-about-dialog.c:88
 #, fuzzy
 msgid "translator-credits"
 msgstr "Victor Ibragimov, victor.ibragimo@gmail.com"
 
-#: ../src/empathy-accounts.c:172
+#: ../src/empathy-accounts.c:171
 #, fuzzy
 msgid "Don't display any dialogs; do any work (eg, importing) and exit"
 msgstr "Ягон плагинро бор накунед"
 
-#: ../src/empathy-accounts.c:176
+#: ../src/empathy-accounts.c:175
 #, fuzzy
 msgid ""
 "Don't display any dialogs unless there are only \"People Nearby\" accounts"
 msgstr "Истифода набурдани ин дисплей"
 
-#: ../src/empathy-accounts.c:180
+#: ../src/empathy-accounts.c:179
 #, fuzzy
 msgid "Initially select given account (eg, gabble/jabber/foo_40example_2eorg0)"
 msgstr "Jabber"
 
-#: ../src/empathy-accounts.c:182
+#: ../src/empathy-accounts.c:181
 #, fuzzy
 msgid "<account-id>"
 msgstr "ID"
 
-#: ../src/empathy-accounts.c:187
+#: ../src/empathy-accounts.c:186
 #, fuzzy
 msgid "- Empathy Accounts"
 msgstr "Empathy"
@@ -2659,27 +2615,27 @@ msgstr "Empathy"
 msgid "Empathy authentication client"
 msgstr "Empathy"
 
-#: ../src/empathy.c:408
+#: ../src/empathy.c:411
 #, fuzzy
 msgid "Don't connect on startup"
 msgstr "Ман ҳозир ба шабакаи wi-fi пайваст шудан намехоҳам"
 
-#: ../src/empathy.c:412
+#: ../src/empathy.c:415
 #, fuzzy
 msgid "Don't display the contact list or any other dialogs on startup"
 msgstr "Тамоси дигари Google"
 
-#: ../src/empathy.c:441
+#: ../src/empathy.c:444
 #, fuzzy
 msgid "- Empathy IM Client"
 msgstr "Empathy"
 
-#: ../src/empathy.c:627
+#: ../src/empathy.c:630
 #, fuzzy
 msgid "Error contacting the Account Manager"
 msgstr "Хатои қайдкунии ҳисоб"
 
-#: ../src/empathy.c:629
+#: ../src/empathy.c:632
 #, fuzzy, c-format
 msgid ""
 "There was an error while trying to connect to the Telepathy Account Manager. "
@@ -2690,17 +2646,17 @@ msgstr ""
 "Ҳангоми гирифтани маълумоти корбар хатогӣ ба вуҷуд омад:\n"
 "%s"
 
-#: ../src/empathy-call.c:116
+#: ../src/empathy-call.c:115
 #, fuzzy
 msgid "In a call"
 msgstr "Занг задан"
 
-#: ../src/empathy-call.c:224
+#: ../src/empathy-call.c:223
 #, fuzzy
 msgid "- Empathy Audio/Video Client"
 msgstr "Empathy"
 
-#: ../src/empathy-call.c:248
+#: ../src/empathy-call.c:247
 #, fuzzy
 msgid "Empathy Audio/Video Client"
 msgstr "Empathy"
@@ -2710,28 +2666,28 @@ msgstr "Empathy"
 msgid "%s just tried to call you, but you were in another call."
 msgstr "Занг задан"
 
-#: ../src/empathy-call-window.c:1542 ../src/empathy-event-manager.c:503
+#: ../src/empathy-call-window.c:1543 ../src/empathy-event-manager.c:474
 #, fuzzy
 msgid "Incoming call"
 msgstr "Даромад"
 
-#: ../src/empathy-call-window.c:1548 ../src/empathy-event-manager.c:906
+#: ../src/empathy-call-window.c:1549 ../src/empathy-event-manager.c:877
 #, fuzzy, c-format
 msgid "Incoming video call from %s"
 msgstr "Занги видеоӣ аз %s"
 
-#: ../src/empathy-call-window.c:1548 ../src/empathy-event-manager.c:511
-#: ../src/empathy-event-manager.c:906
+#: ../src/empathy-call-window.c:1549 ../src/empathy-event-manager.c:482
+#: ../src/empathy-event-manager.c:877
 #, fuzzy, c-format
 msgid "Incoming call from %s"
 msgstr "Занги видеоӣ аз %s"
 
-#: ../src/empathy-call-window.c:1552
+#: ../src/empathy-call-window.c:1553
 #: ../src/empathy-notifications-approver.c:191
 msgid "Reject"
 msgstr "Рад кардан"
 
-#: ../src/empathy-call-window.c:1553
+#: ../src/empathy-call-window.c:1554
 #: ../src/empathy-notifications-approver.c:196
 #: ../src/empathy-notifications-approver.c:201
 msgid "Answer"
@@ -2739,81 +2695,81 @@ msgstr "Ҷавоб"
 
 #. translators: Call is a noun and %s is the contact name. This string
 #. * is used in the window title
-#: ../src/empathy-call-window.c:1923
+#: ../src/empathy-call-window.c:1924
 #, fuzzy, c-format
 msgid "Call with %s"
 msgstr "Занги видеоӣ аз %s"
 
-#: ../src/empathy-call-window.c:2175
+#: ../src/empathy-call-window.c:2176
 #, fuzzy
 msgid "The IP address as seen by the machine"
 msgstr "Суроғаи IP:"
 
-#: ../src/empathy-call-window.c:2177
+#: ../src/empathy-call-window.c:2178
 #, fuzzy
 msgid "The IP address as seen by a server on the Internet"
 msgstr "Санҷиши Интернет (номи домен ё суроғаи IP):"
 
-#: ../src/empathy-call-window.c:2179
+#: ../src/empathy-call-window.c:2180
 #, fuzzy
 msgid "The IP address of the peer as seen by the other side"
 msgstr "Суроғаи IP:"
 
-#: ../src/empathy-call-window.c:2181
+#: ../src/empathy-call-window.c:2182
 #, fuzzy
 msgid "The IP address of a relay server"
 msgstr "Суроғаи IP:"
 
-#: ../src/empathy-call-window.c:2183
+#: ../src/empathy-call-window.c:2184
 #, fuzzy
 msgid "The IP address of the multicast group"
 msgstr "Суроғаи IP:"
 
-#: ../src/empathy-call-window.c:2597 ../src/empathy-call-window.c:2598
-#: ../src/empathy-call-window.c:2599 ../src/empathy-call-window.c:2600
+#: ../src/empathy-call-window.c:2598 ../src/empathy-call-window.c:2599
+#: ../src/empathy-call-window.c:2600 ../src/empathy-call-window.c:2601
 #: ../src/empathy-call-window.ui.h:28
 msgid "Unknown"
 msgstr "Номаълум"
 
-#: ../src/empathy-call-window.c:2951
+#: ../src/empathy-call-window.c:2952
 #, fuzzy
 msgid "On hold"
 msgstr " (Нигаҳдорӣ)"
 
-#: ../src/empathy-call-window.c:2955
+#: ../src/empathy-call-window.c:2956
 msgid "Mute"
 msgstr "Бесадо кардан"
 
-#: ../src/empathy-call-window.c:2957
+#: ../src/empathy-call-window.c:2958
 msgid "Duration"
 msgstr "Давомнокӣ"
 
 #. Translators: 'status - minutes:seconds' the caller has been connected
-#: ../src/empathy-call-window.c:2960
+#: ../src/empathy-call-window.c:2961
 #, fuzzy, c-format
 msgid "%s — %d:%02dm"
 msgstr "%d x %d (%s)"
 
-#: ../src/empathy-call-window.c:3056
+#: ../src/empathy-call-window.c:3057
 #, fuzzy
 msgid "Technical Details"
 msgstr "Тавсифи техникӣ"
 
-#: ../src/empathy-call-window.c:3095
+#: ../src/empathy-call-window.c:3096
 #, fuzzy, c-format
 msgid ""
 "%s's software does not understand any of the audio formats supported by your "
 "computer"
 msgstr "Файли \"%s\" ягон манбаи нармафзори боэътиборро дар бар намегирад."
 
-#: ../src/empathy-call-window.c:3100
+#: ../src/empathy-call-window.c:3101
 #, fuzzy, c-format
 msgid ""
 "%s's software does not understand any of the video formats supported by your "
 "computer"
 msgstr "Файли \"%s\" ягон манбаи нармафзори боэътиборро дар бар намегирад."
 
-#: ../src/empathy-call-window.c:3106
+#: ../src/empathy-call-window.c:3107
 #, fuzzy, c-format
 msgid ""
 "Can't establish a connection to %s. One of you might be on a network that "
@@ -2822,24 +2778,24 @@ msgstr ""
 "Шумо дар онлайн мебошед? Эҳтимол аст, ки шумо пайвасти Интернетро надоред - "
 "барои насб кардани %(app_name)s шумо бояд ба Интернет пайваст шавед"
 
-#: ../src/empathy-call-window.c:3112
+#: ../src/empathy-call-window.c:3113
 #, fuzzy
 msgid "There was a failure on the network"
 msgstr "Нокомӣ."
 
-#: ../src/empathy-call-window.c:3116
+#: ../src/empathy-call-window.c:3117
 #, fuzzy
 msgid ""
 "The audio formats necessary for this call are not installed on your computer"
 msgstr "Навъи ҷаласаи пазируфтаи %s дар ин компютер насб нашудааст."
 
-#: ../src/empathy-call-window.c:3119
+#: ../src/empathy-call-window.c:3120
 #, fuzzy
 msgid ""
 "The video formats necessary for this call are not installed on your computer"
 msgstr "Занги видеоӣ аз %s"
 
-#: ../src/empathy-call-window.c:3131
+#: ../src/empathy-call-window.c:3132
 #, fuzzy, c-format
 msgid ""
 "Something unexpected happened in a Telepathy component. Please <a href=\"%s"
@@ -2853,37 +2809,37 @@ msgstr ""
 "upgrade/ ба гузориши хато замима кунед.\n"
 "%s"
 
-#: ../src/empathy-call-window.c:3140
+#: ../src/empathy-call-window.c:3141
 #, fuzzy
 msgid "There was a failure in the call engine"
 msgstr "Занг задан"
 
-#: ../src/empathy-call-window.c:3143
+#: ../src/empathy-call-window.c:3144
 #, fuzzy
 msgid "The end of the stream was reached"
 msgstr "ҶАРАЁН"
 
-#: ../src/empathy-call-window.c:3183
+#: ../src/empathy-call-window.c:3184
 #, fuzzy
 msgid "Can't establish audio stream"
 msgstr "Ҷараёни аудиоӣ"
 
-#: ../src/empathy-call-window.c:3193
+#: ../src/empathy-call-window.c:3194
 #, fuzzy
 msgid "Can't establish video stream"
 msgstr "ҶАРАЁН"
 
-#: ../src/empathy-call-window.c:3230
+#: ../src/empathy-call-window.c:3231
 #, fuzzy, c-format
 msgid "Your current balance is %s."
 msgstr "_Мувозина:"
 
-#: ../src/empathy-call-window.c:3234
+#: ../src/empathy-call-window.c:3235
 #, fuzzy
 msgid "Sorry, you don’t have enough credit for that call."
 msgstr "Иттилооти мавҷудбударо дубора нанависед"
 
-#: ../src/empathy-call-window.c:3236
+#: ../src/empathy-call-window.c:3237
 #, fuzzy
 msgid "Top Up"
 msgstr "боло"
@@ -3018,7 +2974,7 @@ msgstr "Маҳаллӣ"
 msgid "Audio"
 msgstr "Аудио"
 
-#: ../src/empathy-chat.c:101
+#: ../src/empathy-chat.c:100
 #, fuzzy
 msgid "- Empathy Chat Client"
 msgstr "Empathy"
@@ -3214,84 +3170,84 @@ msgstr "Ҳаракати варақа _ба рост"
 msgid "_Detach Tab"
 msgstr "Варақаи ҷудосозӣ"
 
-#: ../src/empathy-debugger.c:77
+#: ../src/empathy-debugger.c:76
 #, fuzzy
 msgid "Show a particular service"
 msgstr "Хидмат"
 
-#: ../src/empathy-debugger.c:82
+#: ../src/empathy-debugger.c:81
 #, fuzzy
 msgid "- Empathy Debugger"
 msgstr "Empathy"
 
-#: ../src/empathy-debugger.c:142
+#: ../src/empathy-debugger.c:141
 #, fuzzy
 msgid "Empathy Debugger"
 msgstr "Empathy"
 
-#: ../src/empathy-debug-window.c:1556
+#: ../src/empathy-debug-window.c:1564
 msgid "Save"
 msgstr "Захира кардан"
 
-#: ../src/empathy-debug-window.c:1616
+#: ../src/empathy-debug-window.c:1624
 #, fuzzy
 msgid "Pastebin link"
 msgstr "пайванд"
 
-#: ../src/empathy-debug-window.c:1625
+#: ../src/empathy-debug-window.c:1633
 #, fuzzy
 msgid "Pastebin response"
 msgstr "Посухи даромад"
 
-#: ../src/empathy-debug-window.c:1632
+#: ../src/empathy-debug-window.c:1640
 #, fuzzy
 msgid "Data too large for a single paste. Please save logs to file."
 msgstr ""
 "Пеш аз идома, лутфан, мутмаин шавед, ки системаи файлие, ки шумо мехоҳед ба "
 "он сабти рӯйдодҳои ислоҳи хатоҳоро захира кунед, васл шудааст."
 
-#: ../src/empathy-debug-window.c:1814
+#: ../src/empathy-debug-window.c:1822
 msgid "Debug Window"
 msgstr "Равзанаи ислоҳи хатоҳо"
 
-#: ../src/empathy-debug-window.c:1874
+#: ../src/empathy-debug-window.c:1882
 #, fuzzy
 msgid "Send to pastebin"
 msgstr "Фиристодан:"
 
-#: ../src/empathy-debug-window.c:1918
+#: ../src/empathy-debug-window.c:1926
 msgid "Pause"
 msgstr "Таваққуф"
 
-#: ../src/empathy-debug-window.c:1930
+#: ../src/empathy-debug-window.c:1938
 msgid "Level "
 msgstr "Сатҳ "
 
-#: ../src/empathy-debug-window.c:1949
+#: ../src/empathy-debug-window.c:1957
 msgid "Debug"
 msgstr "Ислоҳи хатоҳо"
 
-#: ../src/empathy-debug-window.c:1954
+#: ../src/empathy-debug-window.c:1962
 msgid "Info"
 msgstr "Маълумот"
 
-#: ../src/empathy-debug-window.c:1959 ../src/empathy-debug-window.c:2039
+#: ../src/empathy-debug-window.c:1967 ../src/empathy-debug-window.c:2047
 msgid "Message"
 msgstr "Паём"
 
-#: ../src/empathy-debug-window.c:1964
+#: ../src/empathy-debug-window.c:1972
 msgid "Warning"
 msgstr "Огоҳӣ"
 
-#: ../src/empathy-debug-window.c:1969
+#: ../src/empathy-debug-window.c:1977
 msgid "Critical"
 msgstr "Танқидӣ"
 
-#: ../src/empathy-debug-window.c:1974
+#: ../src/empathy-debug-window.c:1982
 msgid "Error"
 msgstr "Хато"
 
-#: ../src/empathy-debug-window.c:1987
+#: ../src/empathy-debug-window.c:1995
 #, fuzzy
 msgid ""
 "Even if they don't display passwords, logs can contain sensitive information "
@@ -3309,23 +3265,23 @@ msgstr ""
 "таҳиягарони система кӯшиш мекунанд, ки ин мушкилиро ба қадри имкон ҳал "
 "кунанд."
 
-#: ../src/empathy-debug-window.c:2019
+#: ../src/empathy-debug-window.c:2027
 msgid "Time"
 msgstr "Вақт"
 
-#: ../src/empathy-debug-window.c:2022
+#: ../src/empathy-debug-window.c:2030
 msgid "Domain"
 msgstr "Домен"
 
-#: ../src/empathy-debug-window.c:2025
+#: ../src/empathy-debug-window.c:2033
 msgid "Category"
 msgstr "Категория"
 
-#: ../src/empathy-debug-window.c:2028
+#: ../src/empathy-debug-window.c:2036
 msgid "Level"
 msgstr "Сатҳ"
 
-#: ../src/empathy-debug-window.c:2062
+#: ../src/empathy-debug-window.c:2070
 #, fuzzy
 msgid ""
 "The selected connection manager does not support the remote debugging "
@@ -3337,74 +3293,72 @@ msgstr ""
 "\n"
 "Такмилдиҳӣ ҳозир қатъ карда мешавад. Лутфан, бе ssh кӯшиш кунед."
 
-#: ../src/empathy-event-manager.c:503
+#: ../src/empathy-event-manager.c:474
 #, fuzzy
 msgid "Incoming video call"
 msgstr "Занги видеоӣ аз %s"
 
-#: ../src/empathy-event-manager.c:507
+#: ../src/empathy-event-manager.c:478
 #, fuzzy, c-format
 msgid "%s is video calling you. Do you want to answer?"
 msgstr "Оё шумо мехоҳед, ки файли видеоии \"%s\"-ро илова кунед?"
 
-#: ../src/empathy-event-manager.c:508
+#: ../src/empathy-event-manager.c:479
 #, fuzzy, c-format
 msgid "%s is calling you. Do you want to answer?"
 msgstr "Оё шумо мехоҳед, ки \"%s\"-ро ҷойгузин кунед?"
 
-#: ../src/empathy-event-manager.c:536
+#: ../src/empathy-event-manager.c:507
 msgid "_Reject"
 msgstr "_Рад кардан"
 
-#: ../src/empathy-event-manager.c:544 ../src/empathy-event-manager.c:552
+#: ../src/empathy-event-manager.c:515 ../src/empathy-event-manager.c:523
 msgid "_Answer"
 msgstr "_Ҷавоб"
 
-#: ../src/empathy-event-manager.c:552
-#, fuzzy
+#: ../src/empathy-event-manager.c:523
 msgid "_Answer with video"
-msgstr "Ҷавоб"
+msgstr "_Ҷавоб бо видео"
 
-#: ../src/empathy-event-manager.c:706
+#: ../src/empathy-event-manager.c:677
 #, fuzzy
 msgid "Room invitation"
 msgstr "Даъватнома"
 
-#: ../src/empathy-event-manager.c:708
+#: ../src/empathy-event-manager.c:679
 #, fuzzy, c-format
 msgid "Invitation to join %s"
 msgstr "Даъватнома барои to %s"
 
-#: ../src/empathy-event-manager.c:715
+#: ../src/empathy-event-manager.c:686
 #, fuzzy, c-format
 msgid "%s is inviting you to join %s"
 msgstr "%s шуморо барои ҳамроҳ шудан ба %s даъват мекунад"
 
-#: ../src/empathy-event-manager.c:728
+#: ../src/empathy-event-manager.c:699
 msgid "_Join"
 msgstr "_Ҳамроҳ шудан"
 
-#: ../src/empathy-event-manager.c:754
+#: ../src/empathy-event-manager.c:725
 #, fuzzy, c-format
 msgid "%s invited you to join %s"
 msgstr "%s шуморо барои ҳамроҳ шудан ба %s даъват мекунад"
 
-#: ../src/empathy-event-manager.c:760
+#: ../src/empathy-event-manager.c:731
 #, fuzzy, c-format
 msgid "You have been invited to join %s"
 msgstr "%s шуморо барои ҳамроҳ шудан ба %s даъват мекунад"
 
-#: ../src/empathy-event-manager.c:949
+#: ../src/empathy-event-manager.c:920
 #, fuzzy, c-format
 msgid "Incoming file transfer from %s"
 msgstr "Интиқолдиҳии файл"
 
-#: ../src/empathy-event-manager.c:977 ../src/empathy-roster-window.c:214
-#, fuzzy
+#: ../src/empathy-event-manager.c:948 ../src/empathy-roster-window.c:214
 msgid "Password required"
-msgstr "Пароли зарурӣ барои \"%s\""
+msgstr "Парол лозим аст"
 
-#: ../src/empathy-event-manager.c:1114
+#: ../src/empathy-event-manager.c:1085
 #, fuzzy, c-format
 msgid ""
 "\n"
@@ -3413,9 +3367,9 @@ msgstr "%s дюм"
 
 #. Translators: time left, when it is more than one hour
 #: ../src/empathy-ft-manager.c:94
-#, fuzzy, c-format
+#, c-format
 msgid "%u:%02u.%02u"
-msgstr "У-и паст"
+msgstr "%u:%02u.%02u"
 
 #. Translators: time left, when is is less than one hour
 #: ../src/empathy-ft-manager.c:97
@@ -3434,9 +3388,9 @@ msgid "%s of %s at %s/s"
 msgstr "%s аз %s дар %s/s"
 
 #: ../src/empathy-ft-manager.c:269
-#, fuzzy, c-format
+#, c-format
 msgid "%s of %s"
-msgstr "%s, %s, %s, %s ва %s"
+msgstr "%s аз %s"
 
 #. translators: first %s is filename, second %s is the contact name
 #: ../src/empathy-ft-manager.c:300
@@ -3724,15 +3678,12 @@ msgstr "Забон"
 #. translators: Contact name for the chat theme preview
 #: ../src/empathy-preferences.c:620
 msgid "Juliet"
-msgstr ""
+msgstr "Ҷулиета"
 
 #. translators: Contact name for the chat theme preview
 #: ../src/empathy-preferences.c:627
-#, fuzzy
 msgid "Romeo"
-msgstr ""
-"Бастаҳои тасдиқшуда. Тавассути Romeo ё аз ҷониби Linux Mint бевосита санҷида "
-"шудаанд."
+msgstr "Ромео"
 
 #. translators: Quote from Romeo & Julier, for chat theme preview
 #: ../src/empathy-preferences.c:633
@@ -3786,7 +3737,7 @@ msgstr "Гурӯҳҳо"
 msgid "Show account balances"
 msgstr "Ҳисоб"
 
-#: ../src/empathy-preferences.ui.h:4 ../src/empathy-roster-window.c:2302
+#: ../src/empathy-preferences.ui.h:4 ../src/empathy-roster-window.c:2301
 #, fuzzy
 msgid "Contact List"
 msgstr "Мудири тамосҳо"
@@ -4000,35 +3951,30 @@ msgid "%s account requires authorisation"
 msgstr "Ҳисоби %s"
 
 #: ../src/empathy-roster-window.c:701
-#, fuzzy
 msgid "Online Accounts"
 msgstr "Ҳисобҳои онлайн"
 
 #: ../src/empathy-roster-window.c:748
-#, fuzzy
-#| msgid "Update software..."
 msgid "Update software…"
-msgstr "Навсозӣ кардани нармафзор"
+msgstr "Навсозӣ кардани нармафзор…"
 
 #: ../src/empathy-roster-window.c:754
 msgid "Reconnect"
 msgstr "Аз нав пайваст шудан"
 
 #: ../src/empathy-roster-window.c:758
-#, fuzzy
 msgid "Edit Account"
-msgstr "Таҳрир"
+msgstr "Таҳрир кардани ҳисоб"
 
 #: ../src/empathy-roster-window.c:763
 msgid "Close"
 msgstr "Пӯшидан"
 
 #: ../src/empathy-roster-window.c:905
-#, fuzzy
 msgid "Top up account"
-msgstr "Насб кардани ҳисоб"
+msgstr "Пур кардани ҳисоб"
 
-#: ../src/empathy-roster-window.c:1627
+#: ../src/empathy-roster-window.c:1626
 #, fuzzy
 msgid "You need to enable one of your accounts to see contacts here."
 msgstr ""
@@ -4038,67 +3984,55 @@ msgstr ""
 "лозим аст."
 
 #. translators: argument is an account name
-#: ../src/empathy-roster-window.c:1635
+#: ../src/empathy-roster-window.c:1634
 #, fuzzy, c-format
 msgid "You need to enable %s to see contacts here."
 msgstr ""
 "Барои фаъол кардани воридшавӣ тавассути нақши ангушт, шумо бояд тавассути "
 "дастгоҳи \"%s\" яке аз нақшҳои ангушти худро захира кунед."
 
-#: ../src/empathy-roster-window.c:1713
+#: ../src/empathy-roster-window.c:1712
 #, fuzzy
 msgid "Change your presence to see contacts here"
 msgstr "[барои тағйир додан ин ҷо зер кунед]"
 
-#: ../src/empathy-roster-window.c:1722
-#, fuzzy
+#: ../src/empathy-roster-window.c:1721
 msgid "No match found"
-msgstr "MATCH"
+msgstr "Ягон мутобиқат ёфт нашуд"
 
-#: ../src/empathy-roster-window.c:1729
-#, fuzzy
+#: ../src/empathy-roster-window.c:1728
 msgid "You haven't added any contacts yet"
-msgstr ""
-"Чунин менамояд, ки шумо то ҳол усули прдохти дӯстдоштаро барои Дӯкони Ubuntu "
-"One танзим накардед. Барои илова кардани усули пардохт, лутфан ба Дӯкони "
-"онлайни Ubuntu One гузаред."
+msgstr "Шумо то ҳол ягон тамосро илова накардед"
 
-#: ../src/empathy-roster-window.c:1732
-#, fuzzy
+#: ../src/empathy-roster-window.c:1731
 msgid "No online contacts"
-msgstr "_Тамосҳо"
+msgstr "Ягон тамоси онлайн нест"
 
 #: ../src/empathy-roster-window-menubar.ui.h:1
 #: ../src/empathy-status-icon.ui.h:2
-#, fuzzy
 msgid "_New Conversation…"
-msgstr "Нав"
+msgstr "_Муколамаи нав…"
 
 #: ../src/empathy-roster-window-menubar.ui.h:2
 #: ../src/empathy-status-icon.ui.h:3
-#, fuzzy
 msgid "New _Call…"
-msgstr "Занг задан"
+msgstr "_Занги нав…"
 
 #: ../src/empathy-roster-window-menubar.ui.h:3
 msgid "Contacts"
 msgstr "Тамосҳо"
 
 #: ../src/empathy-roster-window-menubar.ui.h:4
-#| msgid "Contacts"
 msgid "_Add Contacts…"
 msgstr "_Илова кардани тамосҳо..."
 
 #: ../src/empathy-roster-window-menubar.ui.h:5
-#, fuzzy
-#| msgid "Search contacts"
 msgid "_Search for Contacts…"
-msgstr "_Тамосҳо"
+msgstr "_Ҷустуҷӯи тамосҳо…"
 
 #: ../src/empathy-roster-window-menubar.ui.h:6
-#, fuzzy
 msgid "_Blocked Contacts"
-msgstr "Манъшуда"
+msgstr "_Тамосҳои манъшуда"
 
 #: ../src/empathy-roster-window-menubar.ui.h:7
 #, fuzzy
@@ -4111,10 +4045,9 @@ msgstr ""
 "аз ҷомеаи тараққикардаистода дар Интернет мебошад."
 
 #: ../src/empathy-roster-window-menubar.ui.h:8
-#, fuzzy
 #| msgid "_Join"
 msgid "_Join…"
-msgstr "Ҳангоми ҳамроҳ шудан ба домен хатогӣ ба вуҷуд омад"
+msgstr "_Пайвастан…"
 
 #: ../src/empathy-roster-window-menubar.ui.h:9
 #, fuzzy
@@ -4127,27 +4060,24 @@ msgid "_Manage Favorites"
 msgstr "Баргузидаҳо"
 
 #: ../src/empathy-roster-window-menubar.ui.h:12
-#, fuzzy
 msgid "_File Transfers"
-msgstr "Интиқолҳои охирин"
+msgstr "Интиқоли _файлҳо"
 
 #: ../src/empathy-roster-window-menubar.ui.h:13
 msgid "_Accounts"
 msgstr "_Ҳисобҳо"
 
 #: ../src/empathy-roster-window-menubar.ui.h:14
-#, fuzzy
 msgid "P_references"
-msgstr "_Бартариҳо"
+msgstr "_Хусусиятҳо"
 
 #: ../src/empathy-roster-window-menubar.ui.h:15
 msgid "Help"
 msgstr "Кӯмак"
 
 #: ../src/empathy-roster-window-menubar.ui.h:16
-#, fuzzy
 msgid "About"
-msgstr "_Дар бораи"
+msgstr "Дар бораи барнома"
 
 #: ../src/empathy-roster-window-menubar.ui.h:17
 #: ../src/empathy-status-icon.ui.h:5
@@ -4159,16 +4089,12 @@ msgid "Account settings"
 msgstr "Танзимоти ҳисоб"
 
 #: ../src/empathy-roster-window.ui.h:2
-#, fuzzy
 msgid "Go _Online"
-msgstr ""
-"Барои илова кардани ҳисобҳои\n"
-"Enterprise ба онлайн гузаред."
+msgstr "Ба _онлайн гузаред"
 
 #: ../src/empathy-roster-window.ui.h:3
-#, fuzzy
 msgid "Show _Offline Contacts"
-msgstr "Офлайн"
+msgstr "Намоиш додани тамосҳои _офлайн"
 
 #: ../src/empathy-status-icon.ui.h:4
 msgid "Status"
@@ -4195,6 +4121,40 @@ msgstr "Таҳрир кардани имконот"
 #, fuzzy
 msgid "Integrate your IM accounts"
 msgstr "Намоиш додани ҳисобҳо, ки бо зерин якҷоя мешаванд:"
+
+#, fuzzy
+#~ msgid ""
+#~ "Empathy is free software; you can redistribute it and/or modify it under "
+#~ "the terms of the GNU General Public License as published by the Free "
+#~ "Software Foundation; either version 2 of the License, or (at your option) "
+#~ "any later version."
+#~ msgstr ""
+#~ "Ин барнома нармафзори ройгон мебошад; шумо метавонед онро дар асоси "
+#~ "Иҷозатномаи ҷамъиятии умумии GNU-и чопшуда аз ҷониби Фонди нармафзори "
+#~ "озод паҳн кунед ё/ва тағйир диҳед; дар асоси Иҷозатномаи версияи 2 ё "
+#~ "(интихобӣ) ягон версияи навтарин."
+
+#, fuzzy
+#~ msgid ""
+#~ "Empathy is distributed in the hope that it will be useful, but WITHOUT "
+#~ "ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+#~ "FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
+#~ "more details."
+#~ msgstr ""
+#~ "Терминали GNOME бо мақсаде таҳия мешаванд, ки онҳо фоидаовар бошанд, вале "
+#~ "БЕ ЯГОН КАФОЛАТ, ҳатто бе кафолати пешбинишавандаи ФУРӮХТАШАВӢ ё "
+#~ "МУТОБИҚАТ БА ҲАДАФИ МУАЙЯН. Барои маълумоти бештар ба иҷозатномаи умумии "
+#~ "ҷамъиятии GNU нигаред. "
+
+#, fuzzy
+#~ msgid ""
+#~ "You should have received a copy of the GNU General Public License along "
+#~ "with Empathy; if not, write to the Free Software Foundation, Inc., 51 "
+#~ "Franklin Street, Fifth Floor, Boston, MA 02110-130159 USA"
+#~ msgstr ""
+#~ "Шумо нусхаи Иҷозатномаи ҷамъиятии умумии GNU-ро бо ин барнома қабул "
+#~ "кардед; ба таври дигар, ба суроғаи Фонди нармафзори озод нависед: 51 "
+#~ "Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA"
 
 #~ msgid "_Port"
 #~ msgstr "_Порт:"
