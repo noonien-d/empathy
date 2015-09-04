@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: empathy help master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-12-18 16:26+0000\n"
-"PO-Revision-Date: 2014-12-19 23:09+0100\n"
+"POT-Creation-Date: 2015-08-19 03:31+0000\n"
+"PO-Revision-Date: 2015-08-19 15:13+0200\n"
 "Last-Translator: Christian Kirbach <christian.kirbach@gmail.com>\n"
 "Language-Team: Deutsch <gnome-de@gnome.org>\n"
 "Language: de_DE\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.5.4\n"
+"X-Generator: Poedit 1.8.4\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -28,7 +28,7 @@ msgid "translator-credits"
 msgstr ""
 "Mario Blättermann <mario.blaettermann@gmail.com>, 2008-2013\n"
 "Philipp Kerling <k.philipp@gmail.com>, 2008\n"
-"Christian Kirbach <Christian.Kirbach@gmail.com>, 2010-2014"
+"Christian Kirbach <Christian.Kirbach@gmail.com>, 2010-2015"
 
 #. (itstool) path: info/desc
 #: C/account-irc.page:9
@@ -37,14 +37,14 @@ msgstr ""
 "Zusätzlich erforderliche Informationen für Verbindungen zu IRC-Netzwerken."
 
 #. (itstool) path: credit/name
-#: C/account-irc.page:17 C/account-jabber.page:14 C/accounts-window.page:17
+#: C/account-irc.page:17 C/account-jabber.page:15 C/accounts-window.page:17
 #: C/add-account.page:26 C/disable-account.page:25 C/import-account.page:27
 #: C/prev-conv.page:21 C/status-icons.page:21
 msgid "Shaun McCance"
 msgstr "Shaun McCance"
 
 #. (itstool) path: license/p
-#: C/account-irc.page:21 C/account-jabber.page:18 C/accounts-window.page:21
+#: C/account-irc.page:21 C/account-jabber.page:19 C/accounts-window.page:21
 #: C/add-account.page:30 C/add-contact.page:22 C/audio-call.page:31
 #: C/audio-video.page:21 C/change-status.page:28 C/create-account.page:29
 #: C/disable-account.page:29 C/favorite-rooms.page:18 C/geolocation.page:21
@@ -357,12 +357,12 @@ msgid "Advanced options for Jabber and Google Talk accounts."
 msgstr "Fortgeschrittene Optionen für Konten bei Jabber und Google Talk."
 
 #. (itstool) path: page/title
-#: C/account-jabber.page:29
+#: C/account-jabber.page:30
 msgid "Jabber account details"
 msgstr "Jabber-Kontendetails"
 
 #. (itstool) path: page/p
-#: C/account-jabber.page:31
+#: C/account-jabber.page:32
 msgid ""
 "Most Jabber accounts will require only a login ID and a password to connect. "
 "For some accounts or on certain types of networks, you may need to enter "
@@ -378,7 +378,7 @@ msgstr ""
 "Kontos finden Sie in <link xref=\"add-account\"/>."
 
 #. (itstool) path: note/p
-#: C/account-jabber.page:39
+#: C/account-jabber.page:40
 msgid ""
 "Google Talk is a type of Jabber account. These instructions hold for Google "
 "Talk accounts as well."
@@ -387,17 +387,17 @@ msgstr ""
 "für Google Talk."
 
 #. (itstool) path: item/title
-#: C/account-jabber.page:45
+#: C/account-jabber.page:46
 msgid "<gui>Encryption required (TLS/SSL)</gui>"
 msgstr "<gui>Verschlüsselung erforderlich (TLS/SSL)</gui>"
 
 #. (itstool) path: item/title
-#: C/account-jabber.page:46
+#: C/account-jabber.page:47
 msgid "<gui>Ignore SSL certificate errors</gui>"
 msgstr "<gui>SSL-Zertifikatfehler ignorieren</gui>"
 
 #. (itstool) path: item/p
-#: C/account-jabber.page:47
+#: C/account-jabber.page:48
 msgid ""
 "Whenever possible, communication between <app>Empathy</app> and the Jabber "
 "server is encrypted. If encrypted communication is not possible, messages "
@@ -413,31 +413,37 @@ msgstr ""
 "Verschlüsselung nicht möglich ist."
 
 #. (itstool) path: item/p
-#: C/account-jabber.page:52
+#: C/account-jabber.page:53
 msgid ""
 "Some Jabber servers may encrypt data using invalid certificates, or using "
-"certificates from unknown authorities. If you trust the server you are "
-"connecting to, you can select <gui>Ignore SSL certificate errors</gui> to "
-"allow encrypted communication with invalid certificates."
+"certificates signed by unknown authorities. You can select <gui>Ignore SSL "
+"certificate errors</gui> to allow encrypted communication with invalid "
+"certificates, but this allows an attacker to intercept your communication "
+"with the server (including your password). You might want to use this option "
+"for testing purposes, or if your server is broken and you do not care about "
+"the security of your communication."
 msgstr ""
-"Einige Jabber-Server könnten Daten mit ungültigen Zertifikaten verschlüsseln "
-"oder Zertifikate von unbekannten Ausgabestellen verwenden. Falls Sie dem "
-"Server vertrauen, mit dem Sie sich verbinden wollen, wählen Sie <gui>SSL-"
-"Zertifikat-Fehler ignorieren</gui>, um verschlüsselte Kommunikation mit "
-"ungültigen Zertifikaten allgemein zuzulassen."
+"Einige Jabber-Server verschlüsseln Daten mit ungültigen Zertifikaten oder "
+"Zertifikaten, die von unbekannten Dienststellen signiert wurden. Wählen Sie "
+"<gui>SSL-Zertifikatfehler ignorieren</gui>, um verschlüsselten "
+"Datenaustausch mit ungültigen Zeichen zu erlauben. Allerdings ermöglicht das "
+"einem Angreifer die Kommunikation mit einem Server anzugreifen "
+"(einschließlich Ihrem Passwort). Diese Einstellung bietet sich für "
+"Testzwecke an oder wenn Ihr Server defekt ist und Datensicherheit keine "
+"Rolle spielt."
 
 #. (itstool) path: item/title
-#: C/account-jabber.page:59
+#: C/account-jabber.page:62
 msgid "<gui>Resource</gui>"
 msgstr "<gui>Ressource</gui>"
 
 #. (itstool) path: item/title
-#: C/account-jabber.page:60
+#: C/account-jabber.page:63
 msgid "<gui>Priority</gui>"
 msgstr "<gui>Priorität</gui>"
 
 #. (itstool) path: item/p
-#: C/account-jabber.page:61
+#: C/account-jabber.page:64
 msgid ""
 "If you have multiple applications (for instance, on separate computers) "
 "connected to your account at the same time, you can set a resource to "
@@ -451,7 +457,7 @@ msgstr ""
 "<input>Telepathy</input>."
 
 #. (itstool) path: item/p
-#: C/account-jabber.page:65
+#: C/account-jabber.page:68
 msgid ""
 "You can set the priority to specify which application should receive "
 "incoming messages from your contacts. New messages will be sent to the "
@@ -462,12 +468,12 @@ msgstr ""
 "werden dabei zu der Anwendung mit der höchsten Priorität gesendet."
 
 #. (itstool) path: item/title
-#: C/account-jabber.page:70
+#: C/account-jabber.page:73
 msgid "<gui>Override server settings</gui>"
 msgstr "<gui>Server-Einstellungen überschreiben</gui>"
 
 #. (itstool) path: item/p
-#: C/account-jabber.page:71
+#: C/account-jabber.page:74
 msgid ""
 "<app>Empathy</app> will use default settings to connect to the Jabber server "
 "based on your login ID. For some Jabber servers, you will need to enter "
@@ -559,9 +565,6 @@ msgstr ""
 
 #. (itstool) path: item/p
 #: C/add-account.page:50
-#| msgid ""
-#| "From the <gui>Contact List</gui> window, choose <guiseq><gui>Edit</gui> "
-#| "<gui>Accounts</gui></guiseq>, or press <key>F4</key>."
 msgid ""
 "Click <guiseq><gui>Empathy</gui><gui>Accounts</gui></guiseq>, or press "
 "<key>F4</key>."
@@ -576,9 +579,6 @@ msgstr "Klicken Sie auf <gui style=\"button\">+</gui>."
 
 #. (itstool) path: item/p
 #: C/add-account.page:59
-#| msgid ""
-#| "From the <gui>Protocol</gui> drop-down list, select the type of account "
-#| "you wish to add."
 msgid ""
 "From the <gui>What kind of chat account do you have?</gui> drop-down list, "
 "select the type of account you wish to add."
@@ -600,17 +600,11 @@ msgstr ""
 
 #. (itstool) path: item/p
 #: C/add-account.page:68
-#| msgid "Click <gui style=\"button\">+</gui>."
 msgid "Click <gui style=\"button\">Add</gui>."
 msgstr "Klicken Sie auf <gui style=\"button\">Hinzufügen</gui>."
 
 #. (itstool) path: note/p
 #: C/add-account.page:73
-#| msgid ""
-#| "To change the name that identifies the account in the <gui>Accounts</gui> "
-#| "window, select the account from the list on the left and either click on "
-#| "the name or press the space bar. Edit the account name and press "
-#| "<key>Enter</key> when you’re finished."
 msgid ""
 "To change the name that identifies the account in the <gui>Messaging and "
 "VoIP Accounts</gui> window, select the account from the list on the left and "
@@ -806,11 +800,6 @@ msgstr "Sprach- und Video-Unterstützung"
 
 #. (itstool) path: page/p
 #: C/audio-video.page:37
-#| msgid ""
-#| "You can only have audio and video conversation with contacts who are "
-#| "using an application which also supports this feature. When your contacts "
-#| "support audio or video conversations, you will see the following icons "
-#| "next to their names in the contact list:"
 msgid ""
 "You can only have audio and video conversation with contacts who are using "
 "an application which also supports this feature."
@@ -869,126 +858,114 @@ msgstr ""
 "Konten dennoch Sprach- und Video-Unterhaltungen ermöglichen."
 
 #. (itstool) path: td/p
-#: C/audio-video.page:82
+#: C/audio-video.page:74
 msgid "Service"
 msgstr "Dienst"
 
 #. (itstool) path: td/p
-#: C/audio-video.page:83
+#: C/audio-video.page:75
 msgid "Audio"
 msgstr "Audio"
 
 #. (itstool) path: td/p
-#: C/audio-video.page:84
+#: C/audio-video.page:76
 msgid "Video"
 msgstr "Video"
 
 #. (itstool) path: td/p
-#: C/audio-video.page:89
+#: C/audio-video.page:81
 msgid "AIM"
 msgstr "AIM"
 
 #. (itstool) path: td/p
-#: C/audio-video.page:90 C/audio-video.page:91 C/audio-video.page:95
-#: C/audio-video.page:96 C/audio-video.page:100 C/audio-video.page:101
-#: C/audio-video.page:110 C/audio-video.page:111 C/audio-video.page:115
-#: C/audio-video.page:116 C/audio-video.page:120 C/audio-video.page:121
-#: C/audio-video.page:135 C/audio-video.page:136 C/audio-video.page:140
-#: C/audio-video.page:141 C/audio-video.page:145 C/audio-video.page:146
-#: C/audio-video.page:150 C/audio-video.page:151 C/audio-video.page:155
-#: C/audio-video.page:156 C/audio-video.page:165 C/audio-video.page:166
-#: C/audio-video.page:170 C/audio-video.page:171
+#: C/audio-video.page:82 C/audio-video.page:83 C/audio-video.page:87
+#: C/audio-video.page:88 C/audio-video.page:97 C/audio-video.page:98
+#: C/audio-video.page:102 C/audio-video.page:103 C/audio-video.page:107
+#: C/audio-video.page:108 C/audio-video.page:117 C/audio-video.page:118
+#: C/audio-video.page:122 C/audio-video.page:123 C/audio-video.page:127
+#: C/audio-video.page:128 C/audio-video.page:132 C/audio-video.page:133
+#: C/audio-video.page:137 C/audio-video.page:138 C/audio-video.page:147
+#: C/audio-video.page:148 C/audio-video.page:152 C/audio-video.page:153
 msgid "No"
 msgstr "Nein"
 
 #. (itstool) path: td/p
-#: C/audio-video.page:94
-msgid "Facebook Chat"
-msgstr "Facebook-Unterhaltung"
-
-#. (itstool) path: td/p
-#: C/audio-video.page:99
+#: C/audio-video.page:86
 msgid "gadugadu"
 msgstr "gadugadu"
 
 #. (itstool) path: td/p
-#: C/audio-video.page:104
+#: C/audio-video.page:91
 msgid "Google Talk"
 msgstr "Google Talk"
 
 #. (itstool) path: td/p
-#: C/audio-video.page:105 C/audio-video.page:106 C/audio-video.page:125
-#: C/audio-video.page:126 C/audio-video.page:130 C/audio-video.page:131
-#: C/audio-video.page:160 C/audio-video.page:161
+#: C/audio-video.page:92 C/audio-video.page:93 C/audio-video.page:112
+#: C/audio-video.page:113 C/audio-video.page:142 C/audio-video.page:143
 msgid "Yes"
 msgstr "Ja"
 
 #. (itstool) path: td/p
-#: C/audio-video.page:109
+#: C/audio-video.page:96
 msgid "Groupwise"
 msgstr "Groupwise"
 
 #. (itstool) path: td/p
-#: C/audio-video.page:114
+#: C/audio-video.page:101
 msgid "ICQ"
 msgstr "ICQ"
 
 #. (itstool) path: td/p
 #. (itstool) path: section/title
-#: C/audio-video.page:119 C/create-account.page:49
+#: C/audio-video.page:106 C/create-account.page:49
 msgid "IRC"
 msgstr "IRC"
 
 #. (itstool) path: td/p
 #. (itstool) path: section/title
-#: C/audio-video.page:124 C/create-account.page:79
+#: C/audio-video.page:111 C/create-account.page:68
 msgid "Jabber"
 msgstr "Jabber"
 
 #. (itstool) path: td/p
-#: C/audio-video.page:129
-msgid "MSN"
-msgstr "MSN"
-
-#. (itstool) path: td/p
-#: C/audio-video.page:134
+#: C/audio-video.page:116
 msgid "myspace"
 msgstr "myspace"
 
 #. (itstool) path: td/p
-#: C/audio-video.page:139
+#: C/audio-video.page:121
 msgid "qq"
 msgstr "qq"
 
 #. (itstool) path: td/p
 #. (itstool) path: section/title
-#: C/audio-video.page:144 C/create-account.page:97
+#: C/audio-video.page:126 C/create-account.page:86
 msgid "People Nearby"
 msgstr "Personen in der Nähe"
 
 #. (itstool) path: td/p
-#: C/audio-video.page:149
+#: C/audio-video.page:131
 msgid "sametime"
 msgstr "gleichzeitig"
 
 #. (itstool) path: td/p
-#: C/audio-video.page:154
+#: C/audio-video.page:136
 msgid "silc"
 msgstr "silc"
 
 #. (itstool) path: td/p
 #. (itstool) path: section/title
-#: C/audio-video.page:159 C/create-account.page:110
+#: C/audio-video.page:141 C/create-account.page:99
 msgid "SIP"
 msgstr "SIP"
 
 #. (itstool) path: td/p
-#: C/audio-video.page:164
+#: C/audio-video.page:146
 msgid "Yahoo!"
 msgstr "Yahoo!"
 
 #. (itstool) path: td/p
-#: C/audio-video.page:169
+#: C/audio-video.page:151
 msgid "zephyr"
 msgstr "zephyr"
 
@@ -1121,34 +1098,8 @@ msgstr ""
 "Viele GNOME-Projekte nutzen <code>irc.gnome.org</code> für Projekt-bezogene "
 "Diskussionen."
 
-#. (itstool) path: section/title
-#: C/create-account.page:68
-msgid "Facebook"
-msgstr "Facebook"
-
 #. (itstool) path: section/p
 #: C/create-account.page:70
-msgid ""
-"Facebook is one of the more popular social networks. It allows users to "
-"create their own profile and to communicate with their friends."
-msgstr ""
-"Facebook ist eines der am meisten genutzten sozialen Netzwerke. Den "
-"Benutzern wird die Erstellung eines eigenen Profils und die Kommunikation "
-"mit ihren Freunden ermöglicht."
-
-#. (itstool) path: section/p
-#: C/create-account.page:73
-msgid ""
-"To use Facebook to communicate with your friends, you will need to create a "
-"new account from the website: <link href=\"https://www.facebook.com\">www."
-"facebook.com</link>."
-msgstr ""
-"Um Facebook zur Unterhaltung mit Ihren Freunden nutzen zu können, müssen Sie "
-"ein neues Konto auf folgender Webseite erstellen: <link href=\"https://www."
-"facebook.com\">www.facebook.com</link>."
-
-#. (itstool) path: section/p
-#: C/create-account.page:81
 msgid ""
 "Jabber is an open instant messaging system. Like email, Jabber allows you to "
 "choose your account provider and communicate with all other Jabber users, "
@@ -1159,7 +1110,7 @@ msgstr ""
 "Jabber-Benutzern, unabhängig von deren Konto-Dienstanbietern."
 
 #. (itstool) path: section/p
-#: C/create-account.page:85
+#: C/create-account.page:74
 msgid ""
 "You will need to create a new account with a Jabber provider. There are many "
 "free providers; one popular provider is <link href=\"http://register.jabber."
@@ -1170,7 +1121,7 @@ msgstr ""
 "populärsten ist <link href=\"http://register.jabber.org/\">jabber.org</link>."
 
 #. (itstool) path: note/p
-#: C/create-account.page:90
+#: C/create-account.page:79
 msgid ""
 "If you use Gmail or Google+ Hangouts, you already have a Jabber account. Use "
 "your Gmail address and password in <app>Empathy</app> to connect."
@@ -1180,7 +1131,7 @@ msgstr ""
 "Passwort in <app>Empathy</app> für die Verbindung."
 
 #. (itstool) path: section/p
-#: C/create-account.page:99
+#: C/create-account.page:88
 msgid ""
 "This service works whenever you are connected to a local network, such as a "
 "wireless hotspot, you do not need to create an account with service "
@@ -1195,7 +1146,7 @@ msgstr ""
 "werden im Netzwerk automatisch gefunden."
 
 #. (itstool) path: section/p
-#: C/create-account.page:105
+#: C/create-account.page:94
 msgid ""
 "For more information, see the <link xref=\"salut-protocol\">salut protocol</"
 "link>."
@@ -1204,7 +1155,7 @@ msgstr ""
 "Protokoll</link>."
 
 #. (itstool) path: section/p
-#: C/create-account.page:112
+#: C/create-account.page:101
 msgid ""
 "SIP is an open system which allows users to have audio and video "
 "conversations over the Internet. You need to create an account with a SIP "
@@ -1217,7 +1168,7 @@ msgstr ""
 "mit allen anderen SIP-Benutzern kommunizieren."
 
 #. (itstool) path: section/p
-#: C/create-account.page:117
+#: C/create-account.page:106
 msgid ""
 "Some SIP providers allow you to call normal phones from your computer. "
 "Generally, you will need to subscribe to a paid service for this feature."
@@ -1227,12 +1178,12 @@ msgstr ""
 "bezahlenden Dienst registrieren müssen."
 
 #. (itstool) path: section/title
-#: C/create-account.page:123
+#: C/create-account.page:112
 msgid "Proprietary Services"
 msgstr "Proprietäre Dienste"
 
 #. (itstool) path: section/p
-#: C/create-account.page:125
+#: C/create-account.page:114
 msgid ""
 "There are many proprietary instant messaging services that have been "
 "developed by different companies or organizations. <app>Empathy</app> allows "
@@ -1247,22 +1198,17 @@ msgstr ""
 "anzulegen, besuchen Sie bitte die Webseite des jeweiligen Anbieters."
 
 #. (itstool) path: item/p
-#: C/create-account.page:133
+#: C/create-account.page:122
 msgid "<link href=\"http://dashboard.aim.com/aim\">AIM</link>"
 msgstr "<link href=\"http://dashboard.aim.com/aim\">AIM</link>"
 
 #. (itstool) path: item/p
-#: C/create-account.page:136
+#: C/create-account.page:125
 msgid "<link href=\"https://www.icq.com/register/\">ICQ</link>"
 msgstr "<link href=\"https://www.icq.com/register/\">ICQ</link>"
 
 #. (itstool) path: item/p
-#: C/create-account.page:139
-msgid "<link href=\"https://accountservices.passport.net\">MSN</link>"
-msgstr "<link href=\"https://accountservices.passport.net\">MSN</link>"
-
-#. (itstool) path: item/p
-#: C/create-account.page:142
+#: C/create-account.page:128
 msgid "<link href=\"https://login.yahoo.com/config/login\">Yahoo!</link>"
 msgstr "<link href=\"https://login.yahoo.com/config/login\">Yahoo!</link>"
 
@@ -2085,12 +2031,11 @@ msgstr ""
 #. (itstool) path: info/desc
 #: C/index.page:28
 msgid ""
-"Empathy is the instant messenging application for GNOME. It supports text, "
+"Empathy is the instant messaging application for GNOME. It supports text, "
 "voice and video chat over many protocols."
 msgstr ""
 "Empathy ist eine Sofortnachrichten-Anwendung für GNOME. Textnachrichten, "
-"Sprach- und Videoanrufe sowie alle gängigen Nachrichtensysteme werden "
-"unterstützt."
+"Sprach- und Videoanrufe vieler Nachrichtenprotokolle werden unterstützt."
 
 #. (itstool) path: info/title
 #: C/index.page:30
@@ -2166,13 +2111,13 @@ msgstr "Einführung"
 msgid ""
 "<app>Empathy</app> is an instant messaging application for the GNOME "
 "Desktop. It supports text messaging, voice &amp; video calls, file "
-"transfers, and all the most used messaging systems such as MSN and Google "
+"transfers, and all the most used messaging systems such as Jabber and Google "
 "Talk."
 msgstr ""
 "<app>Empathy</app> ist eine Sofortnachrichten-Anwendung für die GNOME-"
 "Arbeitsumgebung. Textnachrichten, Sprach- und Videoanrufe, "
-"Dateiübertragungen sowie alle gängigen Nachrichtensysteme wie MSN und "
-"GoogleTalk werden unterstützt."
+"Dateiübertragungen sowie alle gängigen Nachrichtensysteme wie Jabber und "
+"Google Talk werden unterstützt."
 
 #. (itstool) path: page/p
 #: C/introduction.page:28
@@ -2655,18 +2600,19 @@ msgstr ""
 
 #. (itstool) path: item/p
 #: C/link-contacts.page:44
-msgid "janes@facebook"
-msgstr "janinas@facebook"
-
-#. (itstool) path: item/p
-#: C/link-contacts.page:49
 msgid "jane.smith@gmail"
 msgstr "Janina Schmitt@gmail"
 
 #. (itstool) path: item/p
-#: C/link-contacts.page:54
+#: C/link-contacts.page:49
 msgid "jane_smith@hotmail"
 msgstr "Janina_Schmitt@hotmail"
+
+#. (itstool) path: item/p
+#: C/link-contacts.page:54
+#| msgid "janes@facebook"
+msgid "janes@yahoo"
+msgstr "janes@yahoo"
 
 #. (itstool) path: page/p
 #: C/link-contacts.page:59
@@ -3908,6 +3854,47 @@ msgid ""
 msgstr ""
 "Wählen Sie den Kontakt aus, mit dem Sie eine Unterhaltung beginnen wollen, "
 "und wählen Sie im Menü  <gui style=\"menuitem\">Videoanruf</gui>."
+
+#~ msgid ""
+#~ "Some Jabber servers may encrypt data using invalid certificates, or using "
+#~ "certificates from unknown authorities. If you trust the server you are "
+#~ "connecting to, you can select <gui>Ignore SSL certificate errors</gui> to "
+#~ "allow encrypted communication with invalid certificates."
+#~ msgstr ""
+#~ "Einige Jabber-Server könnten Daten mit ungültigen Zertifikaten "
+#~ "verschlüsseln oder Zertifikate von unbekannten Ausgabestellen verwenden. "
+#~ "Falls Sie dem Server vertrauen, mit dem Sie sich verbinden wollen, wählen "
+#~ "Sie <gui>SSL-Zertifikat-Fehler ignorieren</gui>, um verschlüsselte "
+#~ "Kommunikation mit ungültigen Zertifikaten allgemein zuzulassen."
+
+#~ msgid "Facebook Chat"
+#~ msgstr "Facebook-Unterhaltung"
+
+#~ msgid "MSN"
+#~ msgstr "MSN"
+
+#~ msgid "Facebook"
+#~ msgstr "Facebook"
+
+#~ msgid ""
+#~ "Facebook is one of the more popular social networks. It allows users to "
+#~ "create their own profile and to communicate with their friends."
+#~ msgstr ""
+#~ "Facebook ist eines der am meisten genutzten sozialen Netzwerke. Den "
+#~ "Benutzern wird die Erstellung eines eigenen Profils und die Kommunikation "
+#~ "mit ihren Freunden ermöglicht."
+
+#~ msgid ""
+#~ "To use Facebook to communicate with your friends, you will need to create "
+#~ "a new account from the website: <link href=\"https://www.facebook.com"
+#~ "\">www.facebook.com</link>."
+#~ msgstr ""
+#~ "Um Facebook zur Unterhaltung mit Ihren Freunden nutzen zu können, müssen "
+#~ "Sie ein neues Konto auf folgender Webseite erstellen: <link href="
+#~ "\"https://www.facebook.com\">www.facebook.com</link>."
+
+#~ msgid "<link href=\"https://accountservices.passport.net\">MSN</link>"
+#~ msgstr "<link href=\"https://accountservices.passport.net\">MSN</link>"
 
 #~ msgctxt "_"
 #~ msgid ""
