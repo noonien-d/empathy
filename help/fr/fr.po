@@ -18,8 +18,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: empathy 3.2.2\n"
-"POT-Creation-Date: 2013-07-18 13:54+0000\n"
-"PO-Revision-Date: 2013-08-21 21:21+0200\n"
+"POT-Creation-Date: 2015-09-20 03:32+0000\n"
+"PO-Revision-Date: 2015-09-20 17:07+0200\n"
 "Last-Translator: Alain Lojewski <allomervan@gmail.com>\n"
 "Language-Team: GNOME French Team <gnomefr@traduc.org>\n"
 "Language: \n"
@@ -43,197 +43,50 @@ msgstr ""
 "Alain Lojewski <allomervan@gmail.com>, 2012-2013\n"
 "Mickael Albertus <mickael.albertus@gmail.com>, 2012"
 
-#. This is a reference to an external file such as an image or video. When
-#. the file changes, the md5 hash will change to let you know you need to
-#. update your localized copy. The msgstr is not used at all. Set it to
-#. whatever you like once you have updated your copy of the file.
-#.
-#. This is a reference to an external file such as an image or video. When
-#. the file changes, the md5 hash will change to let you know you need to
-#. update your localized copy. The msgstr is not used at all. Set it to
-#. whatever you like once you have updated your copy of the file.
-#: C/index.page:35(media)
-msgctxt "_"
-msgid ""
-"external ref='figures/empathy-logo.png' "
-"md5='1afc419a644e90b16393807e35cb5cb2'"
+#. (itstool) path: info/desc
+#: C/account-irc.page:9
+msgid "Additional information necessary for connecting to IRC networks."
 msgstr ""
-"external ref='figures/empathy-logo.png' "
-"md5='1afc419a644e90b16393807e35cb5cb2'"
+"Informations supplémentaires nécessaires pour se connecter aux réseaux IRC."
 
-#: C/index.page:20(credit/name) C/add-account.page:21(credit/name)
-#: C/audio-call.page:22(credit/name) C/audio-video.page:17(credit/name)
-#: C/create-account.page:20(credit/name)
-#: C/disable-account.page:21(credit/name)
-#: C/favorite-rooms.page:14(credit/name) C/geolocation.page:17(credit/name)
-#: C/geolocation-not-showing.page:17(credit/name)
-#: C/geolocation-privacy.page:17(credit/name)
-#: C/geolocation-supported.page:16(credit/name)
-#: C/geolocation-turn.page:18(credit/name)
-#: C/geolocation-what-is.page:18(credit/name)
-#: C/group-conversations.page:19(credit/name)
-#: C/hide-contacts.page:11(credit/name) C/import-account.page:23(credit/name)
-#: C/introduction.page:13(credit/name) C/irc-commands.page:10(credit/name)
-#: C/irc-join-pwd.page:17(credit/name) C/irc-join-room.page:16(credit/name)
-#: C/irc-manage.page:19(credit/name) C/irc-nick-password.page:18(credit/name)
-#: C/irc-send-file.page:16(credit/name)
-#: C/irc-start-conversation.page:15(credit/name)
-#: C/link-contacts.page:15(credit/name) C/prev-conv.page:17(credit/name)
-#: C/prob-conn-acctdisabled.page:19(credit/name)
-#: C/prob-conn-auth.page:22(credit/name) C/prob-conn-name.page:19(credit/name)
-#: C/prob-conn-neterror.page:20(credit/name)
-#: C/remove-account.page:19(credit/name) C/salut-protocol.page:18(credit/name)
-#: C/send-file.page:21(credit/name) C/set-custom-status.page:19(credit/name)
-#: C/share-desktop.page:14(credit/name) C/status-icons.page:17(credit/name)
-#: C/video-call.page:25(credit/name)
-msgid "Milo Casagrande"
-msgstr "Milo Casagrande"
+#. (itstool) path: credit/name
+#: C/account-irc.page:17 C/account-jabber.page:15 C/accounts-window.page:17
+#: C/add-account.page:26 C/disable-account.page:25 C/import-account.page:27
+#: C/prev-conv.page:21 C/status-icons.page:21
+msgid "Shaun McCance"
+msgstr "Shaun McCance"
 
-#: C/index.page:25(license/p) C/account-irc.page:21(license/p)
-#: C/account-jabber.page:18(license/p) C/accounts-window.page:21(license/p)
-#: C/add-account.page:29(license/p) C/add-contact.page:22(license/p)
-#: C/audio-call.page:31(license/p) C/audio-video.page:21(license/p)
-#: C/change-status.page:28(license/p) C/create-account.page:29(license/p)
-#: C/disable-account.page:29(license/p) C/favorite-rooms.page:18(license/p)
-#: C/geolocation.page:21(license/p)
-#: C/geolocation-not-showing.page:21(license/p)
-#: C/geolocation-privacy.page:21(license/p)
-#: C/geolocation-supported.page:20(license/p)
-#: C/geolocation-turn.page:22(license/p)
-#: C/geolocation-what-is.page:22(license/p)
-#: C/group-conversations.page:23(license/p) C/hide-contacts.page:15(license/p)
-#: C/import-account.page:31(license/p) C/introduction.page:17(license/p)
-#: C/irc-commands.page:14(license/p) C/irc-join-pwd.page:21(license/p)
-#: C/irc-join-room.page:20(license/p) C/irc-manage.page:28(license/p)
-#: C/irc-nick-password.page:22(license/p) C/irc-send-file.page:20(license/p)
-#: C/irc-start-conversation.page:19(license/p)
-#: C/link-contacts.page:23(license/p) C/overview.page:21(license/p)
-#: C/prev-conv.page:25(license/p) C/prob-conn-acctdisabled.page:23(license/p)
-#: C/prob-conn-auth.page:26(license/p) C/prob-conn-name.page:23(license/p)
-#: C/prob-conn-neterror.page:24(license/p) C/prob-conn.page:18(license/p)
-#: C/remove-account.page:23(license/p) C/salut-protocol.page:22(license/p)
-#: C/send-file.page:25(license/p) C/send-message.page:21(license/p)
-#: C/set-custom-status.page:23(license/p) C/share-desktop.page:22(license/p)
-#: C/status-icons.page:25(license/p) C/video-call.page:34(license/p)
+#. (itstool) path: license/p
+#: C/account-irc.page:21 C/account-jabber.page:19 C/accounts-window.page:21
+#: C/add-account.page:30 C/add-contact.page:22 C/audio-call.page:31
+#: C/audio-video.page:21 C/change-status.page:28 C/create-account.page:29
+#: C/disable-account.page:29 C/favorite-rooms.page:18 C/geolocation.page:21
+#: C/geolocation-not-showing.page:21 C/geolocation-privacy.page:21
+#: C/geolocation-supported.page:20 C/geolocation-turn.page:22
+#: C/geolocation-what-is.page:22 C/group-conversations.page:23
+#: C/hide-contacts.page:15 C/import-account.page:31 C/index.page:25
+#: C/introduction.page:17 C/irc-commands.page:14 C/irc-join-pwd.page:21
+#: C/irc-join-room.page:20 C/irc-manage.page:28 C/irc-nick-password.page:22
+#: C/irc-send-file.page:20 C/irc-start-conversation.page:19
+#: C/link-contacts.page:23 C/overview.page:21 C/prev-conv.page:25
+#: C/prob-conn-acctdisabled.page:23 C/prob-conn-auth.page:26
+#: C/prob-conn-name.page:23 C/prob-conn-neterror.page:24 C/prob-conn.page:18
+#: C/remove-account.page:23 C/salut-protocol.page:22 C/send-file.page:25
+#: C/send-message.page:21 C/set-custom-status.page:23 C/share-desktop.page:22
+#: C/status-icons.page:25 C/video-call.page:34
 msgid "Creative Commons Share Alike 3.0"
 msgstr ""
 "Creative Commons Paternité - Partage des Conditions Initiales à l'Identique "
 "3.0"
 
-#: C/index.page:28(info/desc)
-msgid ""
-"Empathy is the instant messenging application for GNOME. It supports text, "
-"voice and video chat over many protocols."
-msgstr ""
-"Empathy est le client de messagerie instantanée de GNOME. Il prend en charge "
-"les discussions textuelles, vocales et vidéo sous de nombreux protocoles."
-
-#: C/index.page:30(info/title)
-msgctxt "link"
-msgid "Empathy"
-msgstr "Empathy"
-
-#: C/index.page:31(info/title)
-msgctxt "text"
-msgid "Empathy"
-msgstr "Empathy"
-
-#: C/index.page:34(page/title)
-msgid "<_:media-1/> Empathy"
-msgstr "<_:media-1/> Empathy"
-
-#: C/index.page:40(section/title)
-msgid "Account Management"
-msgstr "Gestion du compte"
-
-#: C/index.page:44(section/title)
-msgid "Contact Management"
-msgstr "Gestion des contacts"
-
-#: C/index.page:48(section/title)
-msgid "Text Conversations"
-msgstr "Conversations en mode texte"
-
-#: C/index.page:52(section/title)
-msgid "Audio and Video Conversations"
-msgstr "Conversations audio et vidéo"
-
-#: C/index.page:56(section/title)
-msgid "Advanced Actions"
-msgstr "Actions avancées"
-
-#: C/index.page:60(section/title) C/irc-manage.page:64(section/title)
-msgid "Common Problems"
-msgstr "Problèmes courants"
-
-#. This is a reference to an external file such as an image or video. When
-#. the file changes, the md5 hash will change to let you know you need to
-#. update your localized copy. The msgstr is not used at all. Set it to
-#. whatever you like once you have updated your copy of the file.
-#: C/account-irc.page:107(media)
-msgctxt "_"
-msgid ""
-"external ref='figures/gtk-add.png' md5='a856b499d8d4681b70b5ce6f25bc5c6d'"
-msgstr ""
-"external ref='figures/gtk-add.png' md5='a856b499d8d4681b70b5ce6f25bc5c6d'"
-
-#. This is a reference to an external file such as an image or video. When
-#. the file changes, the md5 hash will change to let you know you need to
-#. update your localized copy. The msgstr is not used at all. Set it to
-#. whatever you like once you have updated your copy of the file.
-#.
-#. This is a reference to an external file such as an image or video. When
-#. the file changes, the md5 hash will change to let you know you need to
-#. update your localized copy. The msgstr is not used at all. Set it to
-#. whatever you like once you have updated your copy of the file.
-#.
-#. This is a reference to an external file such as an image or video. When
-#. the file changes, the md5 hash will change to let you know you need to
-#. update your localized copy. The msgstr is not used at all. Set it to
-#. whatever you like once you have updated your copy of the file.
-#.
-#. This is a reference to an external file such as an image or video. When
-#. the file changes, the md5 hash will change to let you know you need to
-#. update your localized copy. The msgstr is not used at all. Set it to
-#. whatever you like once you have updated your copy of the file.
-#: C/account-irc.page:111(media) C/prob-conn-auth.page:58(media)
-#: C/prob-conn-name.page:44(media) C/prob-conn-neterror.page:59(media)
-msgctxt "_"
-msgid ""
-"external ref='figures/gtk-edit.png' md5='4f21b451732817be0604fe3e2c8da98b'"
-msgstr ""
-"external ref='figures/gtk-edit.png' md5='4f21b451732817be0604fe3e2c8da98b'"
-
-#. This is a reference to an external file such as an image or video. When
-#. the file changes, the md5 hash will change to let you know you need to
-#. update your localized copy. The msgstr is not used at all. Set it to
-#. whatever you like once you have updated your copy of the file.
-#: C/account-irc.page:115(media)
-msgctxt "_"
-msgid ""
-"external ref='figures/gtk-remove.png' md5='215e3a325a3dd619874e35c30a018bb6'"
-msgstr ""
-"external ref='figures/gtk-remove.png' md5='215e3a325a3dd619874e35c30a018bb6'"
-
-#: C/account-irc.page:9(info/desc)
-msgid "Additional information necessary for connecting to IRC networks."
-msgstr ""
-"Informations supplémentaires nécessaires pour se connecter aux réseaux IRC."
-
-#: C/account-irc.page:17(credit/name) C/account-jabber.page:14(credit/name)
-#: C/accounts-window.page:17(credit/name) C/add-account.page:25(credit/name)
-#: C/disable-account.page:25(credit/name)
-#: C/import-account.page:27(credit/name) C/prev-conv.page:21(credit/name)
-#: C/status-icons.page:21(credit/name)
-msgid "Shaun McCance"
-msgstr "Shaun McCance"
-
-#: C/account-irc.page:32(page/title)
+#. (itstool) path: page/title
+#: C/account-irc.page:32
 msgid "IRC account details"
 msgstr "Détails du compte IRC"
 
 # Alias = Nickname ? NON c'est différent (Bruno)
-#: C/account-irc.page:34(page/p)
+#. (itstool) path: page/p
+#: C/account-irc.page:34
 msgid ""
 "IRC accounts require different information than many other types of "
 "accounts. To create an IRC account, you must specify at least an IRC network "
@@ -245,7 +98,8 @@ msgstr ""
 "nom de réseau IRC et un pseudonyme. Cette page énumère les informations que "
 "vous pouvez fournir pour un compte IRC."
 
-#: C/account-irc.page:40(note/p) C/irc-manage.page:42(note/p)
+#. (itstool) path: note/p
+#: C/account-irc.page:40 C/irc-manage.page:42
 msgid ""
 "You must have the <sys>telepathy-idle</sys> package installed to use IRC in "
 "<app>Empathy</app>."
@@ -253,11 +107,13 @@ msgstr ""
 "Vous devez avoir installé le paquet <sys>telepathy-idle</sys> pour pouvoir "
 "utiliser IRC avec <app>Empathy</app>."
 
-#: C/account-irc.page:46(item/title) C/account-irc.page:124(item/title)
+#. (itstool) path: item/title
+#: C/account-irc.page:46 C/account-irc.page:124
 msgid "<gui>Network</gui>"
 msgstr "<gui>Réseau</gui>"
 
-#: C/account-irc.page:47(item/p)
+#. (itstool) path: item/p
+#: C/account-irc.page:47
 msgid ""
 "IRC is an open system that allows people to run separate IRC networks. Each "
 "network is distinct and has its own users and chat rooms. <app>Empathy</app> "
@@ -271,11 +127,13 @@ msgstr ""
 "Vous pouvez y ajouter des réseaux supplémentaires. Consultez <link xref="
 "\"#networks\"/> ci-dessous."
 
-#: C/account-irc.page:54(item/title)
+#. (itstool) path: item/title
+#: C/account-irc.page:54
 msgid "<gui>Nickname</gui>"
 msgstr "<gui>Pseudonyme</gui>"
 
-#: C/account-irc.page:55(item/p)
+#. (itstool) path: item/p
+#: C/account-irc.page:55
 msgid ""
 "Your nickname is your unique name on the IRC network. Only one person on a "
 "network may use a given nickname. If you get an error message that says "
@@ -287,11 +145,13 @@ msgstr ""
 "voyez apparaître ce message d'erreur <link xref=\"prob-conn-name\" role="
 "\"error-msg\"/>, c'est que vous devez changer de pseudonyme."
 
-#: C/account-irc.page:61(item/title)
+#. (itstool) path: item/title
+#: C/account-irc.page:61
 msgid "<gui>Password</gui>"
 msgstr "<gui>Mot de passe</gui>"
 
-#: C/account-irc.page:62(item/p)
+#. (itstool) path: item/p
+#: C/account-irc.page:62
 msgid ""
 "Some servers, particularly those on private networks, require a password to "
 "connect. If you are authorized to use the network, the network "
@@ -301,11 +161,13 @@ msgstr ""
 "de passe pour vous y connecter. Si vous êtes autorisé à utiliser le réseau, "
 "son administrateur doit vous fournir un mot de passe."
 
-#: C/account-irc.page:66(note/title)
+#. (itstool) path: note/title
+#: C/account-irc.page:66
 msgid "NickServ Passwords"
 msgstr "Mots de passe NickServ"
 
-#: C/account-irc.page:67(note/p)
+#. (itstool) path: note/p
+#: C/account-irc.page:67
 msgid ""
 "On some networks, nicknames can be registered using a service known as "
 "NickServ. <app>Empathy</app> does not directly support nickname passwords. "
@@ -321,11 +183,13 @@ msgstr ""
 "transférés vers NickServ, vous permettant ainsi de vous authentifier. "
 "Consultez <link xref=\"irc-nick-password\"/> pour plus de détails."
 
-#: C/account-irc.page:77(item/title)
+#. (itstool) path: item/title
+#: C/account-irc.page:77
 msgid "<gui>Real name</gui>"
 msgstr "<gui>Nom réel</gui>"
 
-#: C/account-irc.page:78(item/p)
+#. (itstool) path: item/p
+#: C/account-irc.page:78
 msgid ""
 "You can provide your real name in addition to your nickname. Other users "
 "will be able to see this when they view your information."
@@ -333,11 +197,13 @@ msgstr ""
 "Vous pouvez donner votre vrai nom en plus de votre pseudonyme. Les autres "
 "utilisateurs peuvent ainsi le voir lorsqu'ils affichent vos informations."
 
-#: C/account-irc.page:82(item/title)
+#. (itstool) path: item/title
+#: C/account-irc.page:82
 msgid "<gui>Quit message</gui>"
 msgstr "<gui>Message de déconnexion</gui>"
 
-#: C/account-irc.page:83(item/p)
+#. (itstool) path: item/p
+#: C/account-irc.page:83
 msgid ""
 "When you go offline, a quit message is sent to all the chat rooms you’re in "
 "and to all the users you’re having a private conversation with. Use this "
@@ -348,16 +214,19 @@ msgstr ""
 "êtes en conversation. Renseignez ce champ pour personnaliser votre message "
 "de déconnexion."
 
-#: C/account-irc.page:95(info/title)
+#. (itstool) path: info/title
+#: C/account-irc.page:95
 msgctxt "link"
 msgid "IRC Networks"
 msgstr "Réseaux IRC"
 
-#: C/account-irc.page:98(section/title)
+#. (itstool) path: section/title
+#: C/account-irc.page:98
 msgid "Networks"
 msgstr "Réseaux"
 
-#: C/account-irc.page:100(section/p)
+#. (itstool) path: section/p
+#: C/account-irc.page:100
 msgid ""
 "<app>Empathy</app> includes a list of popular IRC networks. If you wish to "
 "another IRC network, you can add it to the list. You can also modify "
@@ -368,44 +237,52 @@ msgstr ""
 "l'ajouter à la liste. Vous pouvez aussi modifier les réseaux existants et "
 "les supprimer de la liste."
 
-#: C/account-irc.page:108(media/span)
+#. (itstool) path: media/span
+#: C/account-irc.page:108
 msgid "Add"
 msgstr "Ajouter"
 
-#: C/account-irc.page:105(item/p)
+#. (itstool) path: item/p
+#: C/account-irc.page:105
 msgid "To add a network to the list, click <_:media-1/>."
 msgstr "Pour ajouter un réseau à la liste, cliquez sur <_:media-1/>."
 
-#: C/account-irc.page:112(media/span)
+#. (itstool) path: media/span
+#: C/account-irc.page:112
 msgid "Edit"
 msgstr "Modifier"
 
-#: C/account-irc.page:109(item/p)
+#. (itstool) path: item/p
+#: C/account-irc.page:109
 msgid ""
 "To modify a network in the list, select the network and click <_:media-1/>."
 msgstr ""
 "Pour modifier un réseau de la liste, sélectionnez le réseau et cliquez sur "
 "<_:media-1/>."
 
-#: C/account-irc.page:116(media/span)
+#. (itstool) path: media/span
+#: C/account-irc.page:116
 msgid "Remove"
 msgstr "Supprimer"
 
-#: C/account-irc.page:113(item/p)
+#. (itstool) path: item/p
+#: C/account-irc.page:113
 msgid ""
 "To remove a network from the list, select the network and click <_:media-1/>."
 msgstr ""
 "Pour supprimer un réseau de la liste, sélectionnez le réseau et cliquez sur "
 "<_:media-1/>."
 
-#: C/account-irc.page:119(section/p)
+#. (itstool) path: section/p
+#: C/account-irc.page:119
 msgid ""
 "When adding or modifying a network, you can enter the following information:"
 msgstr ""
 "Lorsque vous ajoutez ou modifiez un réseau, vous pouvez saisir les "
 "informations suivantes :"
 
-#: C/account-irc.page:125(item/p)
+#. (itstool) path: item/p
+#: C/account-irc.page:125
 msgid ""
 "This is the name of the network as you want it to appear in the list of "
 "networks."
@@ -413,11 +290,13 @@ msgstr ""
 "C'est le nom du réseau tel que vous voulez qu'il apparaisse dans la liste "
 "des réseaux."
 
-#: C/account-irc.page:129(item/title)
+#. (itstool) path: item/title
+#: C/account-irc.page:129
 msgid "<gui>Charset</gui>"
 msgstr "<gui>Codage de caractères</gui>"
 
-#: C/account-irc.page:130(item/p)
+#. (itstool) path: item/p
+#: C/account-irc.page:130
 msgid ""
 "This specifies the character encoding that is typically used on this "
 "network. A character encoding is a specific way of recording characters "
@@ -431,7 +310,8 @@ msgstr ""
 "et vous devez utiliser le même que ceux des autres utilisateurs pour pouvoir "
 "afficher leurs messages correctement."
 
-#: C/account-irc.page:139(item/p)
+#. (itstool) path: item/p
+#: C/account-irc.page:139
 msgid ""
 "By default, <app>Empathy</app> uses UTF-8, a modern character encoding that "
 "can handle text from most of the world's languages. Another common encoding "
@@ -442,11 +322,13 @@ msgstr ""
 "autre codage commun pour l'anglais et quelques autres langues occidentales "
 "est le codage ISO-8859-1."
 
-#: C/account-irc.page:145(item/title)
+#. (itstool) path: item/title
+#: C/account-irc.page:145
 msgid "<gui>Servers</gui>"
 msgstr "<gui>Serveurs</gui>"
 
-#: C/account-irc.page:146(item/p)
+#. (itstool) path: item/p
+#: C/account-irc.page:146
 msgid ""
 "An IRC network may have many servers you can connect to. When you are "
 "connected to a server on a particular network, you can communicate with all "
@@ -459,7 +341,8 @@ msgstr ""
 "autres serveurs sur ce réseau. Vous pouvez ajouter et enlever des serveurs "
 "de ce réseau avec les boutons <gui>Ajouter</gui> et <gui>Enlever</gui>."
 
-#: C/account-irc.page:151(item/p)
+#. (itstool) path: item/p
+#: C/account-irc.page:151
 msgid ""
 "When a server is selected, click the field under <gui>Server</gui> or "
 "<gui>Port</gui> to edit it. Alternatively, use the left and right arrow keys "
@@ -470,7 +353,8 @@ msgstr ""
 "utiliser les flèches droite et gauche pour sélectionner le champ et ensuite "
 "appuyer sur la barre d'espace pour commencer la modification."
 
-#: C/account-irc.page:155(item/p)
+#. (itstool) path: item/p
+#: C/account-irc.page:155
 msgid ""
 "Select the check box in the <gui>SSL</gui> column to encrypt all "
 "communication with a server. Note that this does not prevent other users on "
@@ -481,15 +365,18 @@ msgstr ""
 "pas les autres utilisateurs de voir ce que vous écrivez dans les salons de "
 "discussion publics."
 
-#: C/account-jabber.page:7(info/desc)
+#. (itstool) path: info/desc
+#: C/account-jabber.page:7
 msgid "Advanced options for Jabber and Google Talk accounts."
 msgstr "Options avancées pour les comptes Jabber et Google Talk."
 
-#: C/account-jabber.page:29(page/title)
+#. (itstool) path: page/title
+#: C/account-jabber.page:30
 msgid "Jabber account details"
 msgstr "Détails du compte Jabber"
 
-#: C/account-jabber.page:31(page/p)
+#. (itstool) path: page/p
+#: C/account-jabber.page:32
 msgid ""
 "Most Jabber accounts will require only a login ID and a password to connect. "
 "For some accounts or on certain types of networks, you may need to enter "
@@ -505,7 +392,8 @@ msgstr ""
 "générales sur la façon d'ajouter un compte, consultez <link xref=\"add-"
 "account\"/>."
 
-#: C/account-jabber.page:39(note/p)
+#. (itstool) path: note/p
+#: C/account-jabber.page:40
 msgid ""
 "Google Talk is a type of Jabber account. These instructions hold for Google "
 "Talk accounts as well."
@@ -513,15 +401,18 @@ msgstr ""
 "Google Talk est un compte de type Jabber. Ces instructions sont donc aussi "
 "valables pour les comptes Google Talk."
 
-#: C/account-jabber.page:45(item/title)
+#. (itstool) path: item/title
+#: C/account-jabber.page:46
 msgid "<gui>Encryption required (TLS/SSL)</gui>"
 msgstr "<gui>Chiffrement requis (TLS/SSL)</gui>"
 
-#: C/account-jabber.page:46(item/title)
+#. (itstool) path: item/title
+#: C/account-jabber.page:47
 msgid "<gui>Ignore SSL certificate errors</gui>"
 msgstr "<gui>Ignorer les erreurs de certificat SSL</gui>"
 
-#: C/account-jabber.page:47(item/p)
+#. (itstool) path: item/p
+#: C/account-jabber.page:48
 msgid ""
 "Whenever possible, communication between <app>Empathy</app> and the Jabber "
 "server is encrypted. If encrypted communication is not possible, messages "
@@ -535,28 +426,30 @@ msgstr ""
 "pour empêcher <app>Empathy</app> de communiquer avec le serveur Jabber "
 "lorsque le chiffrement n'est pas possible."
 
-#: C/account-jabber.page:52(item/p)
+#. (itstool) path: item/p
+#: C/account-jabber.page:53
 msgid ""
 "Some Jabber servers may encrypt data using invalid certificates, or using "
-"certificates from unknown authorities. If you trust the server you are "
-"connecting to, you can select <gui>Ignore SSL certificate errors</gui> to "
-"allow encrypted communication with invalid certificates."
+"certificates signed by unknown authorities. You can select <gui>Ignore SSL "
+"certificate errors</gui> to allow encrypted communication with invalid "
+"certificates, but this allows an attacker to intercept your communication "
+"with the server (including your password). You might want to use this option "
+"for testing purposes, or if your server is broken and you do not care about "
+"the security of your communication."
 msgstr ""
-"Certains serveurs Jabber peuvent chiffrer les données en utilisant des "
-"certificats non valides ou provenant d'autorités non reconnues. Si vous "
-"faites confiance au serveur sur lequel vous êtes connecté, vous pouvez "
-"sélectionner <gui>Ignorer les erreurs de certificat SSL</gui> pour autoriser "
-"les communications chiffrées avec des certificats non valides."
 
-#: C/account-jabber.page:59(item/title)
+#. (itstool) path: item/title
+#: C/account-jabber.page:62
 msgid "<gui>Resource</gui>"
 msgstr "<gui>Ressource</gui>"
 
-#: C/account-jabber.page:60(item/title)
+#. (itstool) path: item/title
+#: C/account-jabber.page:63
 msgid "<gui>Priority</gui>"
 msgstr "<gui>Priorité</gui>"
 
-#: C/account-jabber.page:61(item/p)
+#. (itstool) path: item/p
+#: C/account-jabber.page:64
 msgid ""
 "If you have multiple applications (for instance, on separate computers) "
 "connected to your account at the same time, you can set a resource to "
@@ -568,7 +461,8 @@ msgstr ""
 "ressource pour identifier chacune d'elles. Par défaut, <app>Empathy</app> "
 "utilise <input>Telepathy</input> en tant que ressource."
 
-#: C/account-jabber.page:65(item/p)
+#. (itstool) path: item/p
+#: C/account-jabber.page:68
 msgid ""
 "You can set the priority to specify which application should receive "
 "incoming messages from your contacts. New messages will be sent to the "
@@ -578,11 +472,13 @@ msgstr ""
 "recevoir les messages entrants de vos contacts. Les nouveaux messages sont "
 "envoyés à l'application possédant la plus haute priorité."
 
-#: C/account-jabber.page:70(item/title)
+#. (itstool) path: item/title
+#: C/account-jabber.page:73
 msgid "<gui>Override server settings</gui>"
 msgstr "<gui>Outrepasser les paramètres du serveur</gui>"
 
-#: C/account-jabber.page:71(item/p)
+#. (itstool) path: item/p
+#: C/account-jabber.page:74
 msgid ""
 "<app>Empathy</app> will use default settings to connect to the Jabber server "
 "based on your login ID. For some Jabber servers, you will need to enter "
@@ -594,15 +490,18 @@ msgstr ""
 "Jabber, vous devez saisir manuellement des paramètres personnalisés. Ces "
 "paramètres doivent vous être remis par votre fournisseur Jabber."
 
-#: C/accounts-window.page:10(info/desc)
+#. (itstool) path: info/desc
+#: C/accounts-window.page:10
 msgid "Add, modify, and delete accounts."
 msgstr "Ajouter, modifier et supprimer des comptes."
 
-#: C/accounts-window.page:32(page/title)
+#. (itstool) path: page/title
+#: C/accounts-window.page:32
 msgid "Accounts Window"
 msgstr "Fenêtre des comptes"
 
-#: C/accounts-window.page:34(page/p)
+#. (itstool) path: page/p
+#: C/accounts-window.page:34
 msgid ""
 "The <gui>Accounts</gui> window allows you to add, modify, and delete "
 "accounts."
@@ -610,11 +509,13 @@ msgstr ""
 "La fenêtre des <gui>Comptes</gui> vous permet d'ajouter, de modifier et de "
 "supprimer des comptes."
 
-#: C/accounts-window.page:42(section/title)
+#. (itstool) path: section/title
+#: C/accounts-window.page:42
 msgid "Account Details"
 msgstr "Détails du compte"
 
-#: C/accounts-window.page:43(section/p)
+#. (itstool) path: section/p
+#: C/accounts-window.page:43
 msgid ""
 "For most types of accounts, you can simply enter a login ID and a password. "
 "Certain accounts or account types, however, may require additional "
@@ -624,15 +525,37 @@ msgstr ""
 "connexion et d'un mot de passe suffit. Cependant, certains comptes ou types "
 "de comptes nécessitent des informations supplémentaires."
 
-#: C/add-account.page:9(info/desc)
+#. (itstool) path: info/desc
+#: C/add-account.page:9
 msgid "Add a new account to <app>Empathy</app>."
 msgstr "Ajouter un nouveau compte à <app>Empathy</app>."
 
-#: C/add-account.page:40(page/title)
+#. (itstool) path: credit/name
+#: C/add-account.page:22 C/audio-call.page:22 C/audio-video.page:16
+#: C/create-account.page:20 C/disable-account.page:21 C/favorite-rooms.page:14
+#: C/geolocation.page:17 C/geolocation-not-showing.page:17
+#: C/geolocation-privacy.page:17 C/geolocation-supported.page:16
+#: C/geolocation-turn.page:18 C/geolocation-what-is.page:18
+#: C/group-conversations.page:19 C/hide-contacts.page:11
+#: C/import-account.page:23 C/index.page:20 C/introduction.page:13
+#: C/irc-commands.page:10 C/irc-join-pwd.page:17 C/irc-join-room.page:16
+#: C/irc-manage.page:19 C/irc-nick-password.page:18 C/irc-send-file.page:16
+#: C/irc-start-conversation.page:15 C/link-contacts.page:15 C/prev-conv.page:17
+#: C/prob-conn-acctdisabled.page:19 C/prob-conn-auth.page:22
+#: C/prob-conn-name.page:19 C/prob-conn-neterror.page:20
+#: C/remove-account.page:19 C/salut-protocol.page:18 C/send-file.page:21
+#: C/set-custom-status.page:19 C/share-desktop.page:14 C/status-icons.page:17
+#: C/video-call.page:25
+msgid "Milo Casagrande"
+msgstr "Milo Casagrande"
+
+#. (itstool) path: page/title
+#: C/add-account.page:41
 msgid "Add a new account"
 msgstr "Ajout d'un nouveau compte"
 
-#: C/add-account.page:42(page/p)
+#. (itstool) path: page/p
+#: C/add-account.page:43
 msgid ""
 "You can add instant messaging accounts from any supported service to "
 "communicate with all of your contacts in <app>Empathy</app>. For some "
@@ -645,42 +568,31 @@ msgstr ""
 "étapes vous permettent aussi d'enregistrer un nouveau compte. Pour plus de "
 "détails, consultez <link xref=\"create-account\"/>."
 
-#: C/add-account.page:49(item/p) C/disable-account.page:49(item/p)
-#: C/irc-nick-password.page:50(item/p) C/remove-account.page:43(item/p)
+#. (itstool) path: item/p
+#: C/add-account.page:50
 msgid ""
-"From the <gui>Contact List</gui> window, choose <guiseq><gui>Edit</gui> "
-"<gui>Accounts</gui></guiseq>, or press <key>F4</key>."
+"Click <guiseq><gui>Empathy</gui><gui>Accounts</gui></guiseq>, or press "
+"<key>F4</key>."
 msgstr ""
-"À partir de la fenêtre <gui>Liste des contacts</gui>, choisissez "
-"<guiseq><gui>Édition</gui> <gui>Comptes</gui></guiseq>, ou appuyez sur "
+"Cliquez sur <guiseq><gui>Empathy</gui><gui>Comptes</gui>, ou appuyez sur "
 "<key>F4</key>."
 
-#: C/add-account.page:53(item/p)
+#. (itstool) path: item/p
+#: C/add-account.page:54
 msgid "Click <gui style=\"button\">+</gui>."
 msgstr "Cliquez sur <gui style=\"button\">+</gui>."
 
-#: C/add-account.page:58(item/p)
+#. (itstool) path: item/p
+#: C/add-account.page:59
 msgid ""
-"From the <gui>Protocol</gui> drop-down list, select the type of account you "
-"wish to add."
+"From the <gui>What kind of chat account do you have?</gui> drop-down list, "
+"select the type of account you wish to add."
 msgstr ""
-"À partir de la liste déroulante <gui>Protocole</gui>, sélectionnez le type "
+"À partir de la liste déroulante <gui>Quel type de compte de discussion possédez-vous ?</gui>, sélectionnez le type "
 "de compte que vous souhaitez ajouter."
 
-#: C/add-account.page:62(item/p)
-msgid ""
-"If you do not already have a registered account, select <gui>Create a new "
-"account on the server</gui>. This feature is not available for all account "
-"types, and may not work with some account providers. See <link xref=\"create-"
-"account\"/> for more information."
-msgstr ""
-"Si vous n'avez pas encore de compte enregistré, sélectionnez <gui>Créer un "
-"nouveau compte sur le serveur</gui>. Cette fonction n'est pas disponible "
-"pour tous les types de compte et peut ne pas fonctionner avec certains "
-"fournisseurs de comptes. Consultez <link xref=\"create-account\"/> pour plus "
-"d'informations."
-
-#: C/add-account.page:69(item/p)
+#. (itstool) path: item/p
+#: C/add-account.page:63
 msgid ""
 "Enter the required information. For most accounts, you will only need a "
 "login ID and a password. Some accounts may require additional information. "
@@ -691,46 +603,51 @@ msgstr ""
 "D'autres comptes peuvent demander plus d'informations. Consultez <link xref="
 "\"accounts-window#details\"/> pour plus d'informations."
 
-#: C/add-account.page:74(item/p) C/import-account.page:61(item/p)
-#: C/irc-nick-password.page:63(item/p)
-msgid "Click <gui style=\"button\">Apply</gui>."
-msgstr "Cliquez sur <gui style=\"button\">Appliquer</gui>."
+#. (itstool) path: item/p
+#: C/add-account.page:68
+msgid "Click <gui style=\"button\">Add</gui>."
+msgstr "Cliquez sur <gui style=\"button\">Ajouter</gui>."
 
-#: C/add-account.page:81(note/p)
+#. (itstool) path: note/p
+#: C/add-account.page:73
 msgid ""
-"To change the name that identifies the account in the <gui>Accounts</gui> "
-"window, select the account from the list on the left and either click on the "
-"name or press the space bar. Edit the account name and press <key>Enter</"
-"key> when you’re finished."
+"To change the name that identifies the account in the <gui>Messaging and "
+"VoIP Accounts</gui> window, select the account from the list on the left and "
+"either click on the name or press the space bar. Edit the account name and "
+"press <key>Enter</key> when you’re finished."
 msgstr ""
 "Pour modifier le nom qui identifie le compte dans la fenêtre des "
-"<gui>Comptes</gui>, sélectionnez le compte à partir de la liste de gauche et "
+"<gui>Comptes de messagerie et VoIP</gui>, sélectionnez le compte à partir de la liste de gauche et "
 "cliquez sur le nom ou appuyez sur la barre d'espace. Modifiez le nom du "
 "compte et appuyez sur <key>Entrée</key> lorsque vous avez terminé."
 
-#: C/add-contact.page:9(info/desc)
+#. (itstool) path: info/desc
+#: C/add-contact.page:9
 msgid "Add someone to the contact list."
 msgstr "Ajouter une personne à la liste des contacts."
 
-#: C/add-contact.page:18(credit/name) C/change-status.page:24(credit/name)
-#: C/prob-conn-acctdisabled.page:15(credit/name)
-#: C/prob-conn-auth.page:18(credit/name)
-#: C/prob-conn-neterror.page:16(credit/name) C/prob-conn.page:14(credit/name)
-#: C/send-file.page:17(credit/name) C/send-message.page:17(credit/name)
+#. (itstool) path: credit/name
+#: C/add-contact.page:18 C/change-status.page:24
+#: C/prob-conn-acctdisabled.page:15 C/prob-conn-auth.page:18
+#: C/prob-conn-neterror.page:16 C/prob-conn.page:14 C/send-file.page:17
+#: C/send-message.page:17
 msgid "Phil Bull"
 msgstr "Phil Bull"
 
-#: C/add-contact.page:33(page/title)
+#. (itstool) path: page/title
+#: C/add-contact.page:33
 msgid "Add someone to your list of contacts"
 msgstr "Ajout d'une personne à votre liste de contacts"
 
-#: C/add-contact.page:37(item/p)
+#. (itstool) path: item/p
+#: C/add-contact.page:37
 msgid "Choose <guiseq><gui>Chat</gui><gui>Add Contact</gui></guiseq>."
 msgstr ""
 "Sélectionnez <guiseq><gui>Discussion</gui><gui>Ajouter un contact</gui></"
 "guiseq>."
 
-#: C/add-contact.page:40(item/p)
+#. (itstool) path: item/p
+#: C/add-contact.page:40
 msgid ""
 "From the <gui>Account</gui> drop-down list, select the account you wish to "
 "use to connect to your contact. Your contact will need to be using the same "
@@ -740,7 +657,8 @@ msgstr ""
 "que vous voulez utiliser pour vous connecter à votre contact. Votre contact "
 "doit utiliser le même service que celui que vous avez sélectionné."
 
-#: C/add-contact.page:45(item/p)
+#. (itstool) path: item/p
+#: C/add-contact.page:45
 msgid ""
 "In the <gui>Identifier</gui> field, enter your contact’s login ID, username, "
 "screen name, or other appropriate identifier for the service type."
@@ -749,7 +667,8 @@ msgstr ""
 "de votre contact, son nom d'utilisateur, son pseudonyme ou tout autre "
 "identifiant approprié à ce type de service."
 
-#: C/add-contact.page:49(item/p)
+#. (itstool) path: item/p
+#: C/add-contact.page:49
 msgid ""
 "In the <gui>Alias</gui> field, type your contact’s name as you would like it "
 "to appear in your contact list."
@@ -757,13 +676,15 @@ msgstr ""
 "Dans le champ <gui>Alias</gui>, saisissez le nom de votre contact tel que "
 "vous voulez le voir apparaître dans votre liste des contacts."
 
-#: C/add-contact.page:53(item/p)
+#. (itstool) path: item/p
+#: C/add-contact.page:53
 msgid "Click <gui>Add</gui> to add the person to your list of contacts."
 msgstr ""
 "Cliquez sur <gui>Ajouter</gui> pour ajouter cette personne à votre liste de "
 "contacts."
 
-#: C/add-contact.page:61(note/p)
+#. (itstool) path: note/p
+#: C/add-contact.page:61
 msgid ""
 "To add a new person to your list of contacts, you need to be connected to "
 "the Internet and to your account."
@@ -771,21 +692,24 @@ msgstr ""
 "Pour ajouter une nouvelle personne à votre liste de contacts, vous devez "
 "être connecté à Internet et à votre compte."
 
-#: C/audio-call.page:10(info/desc)
+#. (itstool) path: info/desc
+#: C/audio-call.page:10
 msgid "Call your contacts over the Internet."
 msgstr "Appeler vos contacts sur Internet."
 
-#: C/audio-call.page:26(credit/name) C/create-account.page:24(credit/name)
-#: C/overview.page:17(credit/name) C/share-desktop.page:18(credit/name)
-#: C/video-call.page:29(credit/name)
+#. (itstool) path: credit/name
+#: C/audio-call.page:26 C/create-account.page:24 C/overview.page:17
+#: C/share-desktop.page:18 C/video-call.page:29
 msgid "Ekaterina Gerasimova"
 msgstr "Ekaterina Gerasimova"
 
-#: C/audio-call.page:35(page/title)
+#. (itstool) path: page/title
+#: C/audio-call.page:35
 msgid "Start an audio conversation"
 msgstr "Démarrage d'une conversation audio"
 
-#: C/audio-call.page:37(page/p)
+#. (itstool) path: page/p
+#: C/audio-call.page:37
 msgid ""
 "You can call your contacts and have an audio conversation with them. This "
 "features only works with certain types of accounts and it requires the other "
@@ -796,7 +720,8 @@ msgstr ""
 "requiert que l'autre personne possède une application compatible avec les "
 "appels audio."
 
-#: C/audio-call.page:43(item/p)
+#. (itstool) path: item/p
+#: C/audio-call.page:43
 msgid ""
 "Right-click on the contact that you want to call and select <gui style="
 "\"menuitem\">Audio Call</gui>."
@@ -804,7 +729,8 @@ msgstr ""
 "Faites un clic droit sur le contact que vous voulez appeler et sélectionnez "
 "<gui style=\"menuitem\">Appel audio</gui>."
 
-#: C/audio-call.page:49(item/p) C/video-call.page:50(item/p)
+#. (itstool) path: item/p
+#: C/audio-call.page:49 C/video-call.page:50
 msgid ""
 "A new window will open. When the connection is established, you will see the "
 "total conversation time at the bottom of the window."
@@ -812,7 +738,8 @@ msgstr ""
 "Une nouvelle fenêtre s'ouvre. Lorsque la connexion est établie, le temps "
 "total de conversation s'affiche en bas de la fenêtre."
 
-#: C/audio-call.page:55(item/p)
+#. (itstool) path: item/p
+#: C/audio-call.page:55
 msgid ""
 "To end the conversation, click the <gui style=\"button\">hand up</gui> "
 "button."
@@ -820,7 +747,8 @@ msgstr ""
 "Pour terminer la conversation, cliquez sur <gui style=\"button\">Raccrocher</"
 "gui>."
 
-#: C/audio-call.page:63(note/p)
+#. (itstool) path: note/p
+#: C/audio-call.page:63
 msgid ""
 "To turn an audio conversation into a video conversation, choose <guiseq><gui "
 "style=\"menu\">Video</gui> <gui style=\"menuitem\">Video On</gui></guiseq>."
@@ -829,20 +757,22 @@ msgstr ""
 "<guiseq><gui style=\"menu\">Vidéo</gui> <gui style=\"menuitem\">Vidéo "
 "activée</gui></guiseq>."
 
-#: C/audio-call.page:71(section/title)
+#. (itstool) path: section/title
+#: C/audio-call.page:71
 msgid "Start an audio conversation with a meta-contact"
 msgstr "Démarrage d'une conversation audio avec un méta-contact"
 
 # meta-contact
-#: C/audio-call.page:74(item/p) C/send-message.page:53(item/p)
-#: C/video-call.page:68(item/p)
+#. (itstool) path: item/p
+#: C/audio-call.page:74 C/send-message.page:53 C/video-call.page:68
 msgid ""
 "From the <gui>Contact List</gui> window, right-click on the meta-contact."
 msgstr ""
 "Dans la fenêtre <gui>Liste des contacts</gui>, faites un clic droit sur le "
 "méta-contact."
 
-#: C/audio-call.page:79(item/p)
+#. (itstool) path: item/p
+#: C/audio-call.page:79
 msgid ""
 "Select the contact you want to have the conversation, and from the menu "
 "select <gui style=\"menuitem\">Audio Call</gui>."
@@ -850,8 +780,8 @@ msgstr ""
 "Sélectionnez le contact avec lequel vous voulez avoir une conversation et "
 "choisissez <gui style=\"menuitem\">Appel audio</gui> dans le menu."
 
-#: C/audio-call.page:86(note/p) C/send-message.page:65(note/p)
-#: C/video-call.page:80(note/p)
+#. (itstool) path: note/p
+#: C/audio-call.page:86 C/send-message.page:65 C/video-call.page:80
 msgid ""
 "To recognize if a contact is a <em>meta-contact</em>, move your mouse on a "
 "contact in the <gui>Contact List</gui> window, and stop over it for a "
@@ -863,81 +793,31 @@ msgstr ""
 "et attendez pendant environ une seconde : un petit message indiquant le "
 "nombre de contacts composant le méta-contact apparaît."
 
-#. This is a reference to an external file such as an image or video. When
-#. the file changes, the md5 hash will change to let you know you need to
-#. update your localized copy. The msgstr is not used at all. Set it to
-#. whatever you like once you have updated your copy of the file.
-#: C/audio-video.page:58(media)
-msgctxt "_"
-msgid "external ref='figures/audio-input-microphone.png' md5='__failed__'"
-msgstr "external ref='figures/audio-input-microphone.png' md5='__failed__'"
-
-#. This is a reference to an external file such as an image or video. When
-#. the file changes, the md5 hash will change to let you know you need to
-#. update your localized copy. The msgstr is not used at all. Set it to
-#. whatever you like once you have updated your copy of the file.
-#: C/audio-video.page:70(media)
-msgctxt "_"
-msgid "external ref='figures/camera-web.png' md5='__failed__'"
-msgstr "external ref='figures/camera-web.png' md5='__failed__'"
-
-#: C/audio-video.page:8(info/desc)
+#. (itstool) path: info/desc
+#: C/audio-video.page:30
 msgid ""
 "Information on when it is possible to have an audio or video conversation."
 msgstr ""
 "Information pour savoir quand il est possible d'avoir une conversation audio "
 "ou vidéo."
 
-#: C/audio-video.page:32(page/title)
+#. (itstool) path: page/title
+#: C/audio-video.page:35
 msgid "Audio and video support"
 msgstr "Prise en charge audio et vidéo"
 
-#: C/audio-video.page:34(page/p)
+#. (itstool) path: page/p
+#: C/audio-video.page:37
 msgid ""
 "You can only have audio and video conversation with contacts who are using "
-"an application which also supports this feature. When your contacts support "
-"audio or video conversations, you will see the following icons next to their "
-"names in the contact list:"
+"an application which also supports this feature."
 msgstr ""
 "Vous ne pouvez avoir des conversations audio et vidéo qu'avec des contacts "
 "qui utilisent une application prenant aussi en charge cette fonction. "
-"Lorsque c'est le cas, les icônes suivantes s'affichent à côté de leur nom "
-"dans la liste des contacts :"
-
-#: C/audio-video.page:43(td/p)
-msgid "Icon"
-msgstr "Icône"
-
-#: C/audio-video.page:48(td/p)
-msgid "Description"
-msgstr "Description"
-
-#: C/audio-video.page:57(td/p)
-msgid ""
-"<media type=\"image\" mime=\"image/png\" src=\"figures/audio-input-"
-"microphone.png\"> Icon for audio conversation </media>"
-msgstr ""
-"<media type=\"image\" mime=\"image/png\" src=\"figures/audio-input-"
-"microphone.png\"> Icône de conversation audio </media>"
-
-#: C/audio-video.page:64(td/p)
-msgid "The contact is able to have an audio conversation."
-msgstr "Le contact est en mesure d'avoir une conversation audio."
-
-#: C/audio-video.page:69(td/p)
-msgid ""
-"<media type=\"image\" mime=\"image/png\" src=\"figures/camera-web.png\"> "
-"Icon for video conversation </media>"
-msgstr ""
-"<media type=\"image\" mime=\"image/png\" src=\"figures/camera-web.png\"> "
-"Icône de conversation vidéo </media>"
-
-#: C/audio-video.page:76(td/p)
-msgid "The contact is able to have a video conversation."
-msgstr "Le contact est en mesure d'avoir une conversation vidéo."
 
 # Est ce nécessaire d'indiquer que le microphone doit être fonctionnel?
-#: C/audio-video.page:83(note/p)
+#. (itstool) path: note/p
+#: C/audio-video.page:41
 msgid ""
 "In order to have an audio conversation, you need to have a sound card that "
 "is supported by your operating system, and a working microphone."
@@ -946,7 +826,8 @@ msgstr ""
 "charge par votre système d'exploitation et un microphone opérationnel."
 
 # idem
-#: C/audio-video.page:87(note/p)
+#. (itstool) path: note/p
+#: C/audio-video.page:43
 msgid ""
 "In order to have a video conversation, you need to have a webcam that is "
 "supported by your operating system, and a working microphone."
@@ -954,12 +835,14 @@ msgstr ""
 "Pour avoir une conversation vidéo, il vous faut une webcam prise en charge "
 "par votre système d'exploitation et un microphone opérationnel."
 
-#: C/audio-video.page:95(section/title)
+#. (itstool) path: section/title
+#: C/audio-video.page:49
 msgid "Supported Account Types"
 msgstr "Types de comptes pris en charge"
 
 # négation?
-#: C/audio-video.page:97(section/p)
+#. (itstool) path: section/p
+#: C/audio-video.page:51
 msgid ""
 "You can only have audio and video conversations using accounts on certain "
 "supported services. The following table lists whether audio and video is "
@@ -969,7 +852,8 @@ msgstr ""
 "certains services pris en charge. Le tableau suivant indique si l'audio et "
 "la vidéo sont pris en charge pour chaque type de compte."
 
-#: C/audio-video.page:102(note/p)
+#. (itstool) path: note/p
+#: C/audio-video.page:56
 msgid ""
 "Account types are provided by plugins. Your system may not have all of the "
 "following types available, or it may have types not listed here. Updated "
@@ -982,120 +866,132 @@ msgstr ""
 "peut permettre des conversations audio ou vidéo sur des types de comptes qui "
 "sont répertoriés ici comme incompatibles."
 
-#: C/audio-video.page:128(td/p)
+#. (itstool) path: td/p
+#: C/audio-video.page:74
 msgid "Service"
 msgstr "Service"
 
-#: C/audio-video.page:129(td/p)
+#. (itstool) path: td/p
+#: C/audio-video.page:75
 msgid "Audio"
 msgstr "Audio"
 
-#: C/audio-video.page:130(td/p)
+#. (itstool) path: td/p
+#: C/audio-video.page:76
 msgid "Video"
 msgstr "Vidéo"
 
-#: C/audio-video.page:135(td/p)
+#. (itstool) path: td/p
+#: C/audio-video.page:81
 msgid "AIM"
 msgstr "AIM"
 
-#: C/audio-video.page:136(td/p) C/audio-video.page:137(td/p)
-#: C/audio-video.page:141(td/p) C/audio-video.page:142(td/p)
-#: C/audio-video.page:146(td/p) C/audio-video.page:147(td/p)
-#: C/audio-video.page:156(td/p) C/audio-video.page:157(td/p)
-#: C/audio-video.page:161(td/p) C/audio-video.page:162(td/p)
-#: C/audio-video.page:166(td/p) C/audio-video.page:167(td/p)
-#: C/audio-video.page:181(td/p) C/audio-video.page:182(td/p)
-#: C/audio-video.page:186(td/p) C/audio-video.page:187(td/p)
-#: C/audio-video.page:191(td/p) C/audio-video.page:192(td/p)
-#: C/audio-video.page:196(td/p) C/audio-video.page:197(td/p)
-#: C/audio-video.page:201(td/p) C/audio-video.page:202(td/p)
-#: C/audio-video.page:211(td/p) C/audio-video.page:212(td/p)
-#: C/audio-video.page:216(td/p) C/audio-video.page:217(td/p)
+#. (itstool) path: td/p
+#: C/audio-video.page:82 C/audio-video.page:83 C/audio-video.page:87
+#: C/audio-video.page:88 C/audio-video.page:97 C/audio-video.page:98
+#: C/audio-video.page:102 C/audio-video.page:103 C/audio-video.page:107
+#: C/audio-video.page:108 C/audio-video.page:117 C/audio-video.page:118
+#: C/audio-video.page:122 C/audio-video.page:123 C/audio-video.page:127
+#: C/audio-video.page:128 C/audio-video.page:132 C/audio-video.page:133
+#: C/audio-video.page:137 C/audio-video.page:138 C/audio-video.page:147
+#: C/audio-video.page:148 C/audio-video.page:152 C/audio-video.page:153
 msgid "No"
 msgstr "Non"
 
-#: C/audio-video.page:140(td/p)
-msgid "Facebook Chat"
-msgstr "Discussion Facebook"
-
-#: C/audio-video.page:145(td/p)
+#. (itstool) path: td/p
+#: C/audio-video.page:86
 msgid "gadugadu"
 msgstr "gadugadu"
 
-#: C/audio-video.page:150(td/p)
+#. (itstool) path: td/p
+#: C/audio-video.page:91
 msgid "Google Talk"
 msgstr "Google Talk"
 
-#: C/audio-video.page:151(td/p) C/audio-video.page:152(td/p)
-#: C/audio-video.page:171(td/p) C/audio-video.page:172(td/p)
-#: C/audio-video.page:176(td/p) C/audio-video.page:177(td/p)
-#: C/audio-video.page:206(td/p) C/audio-video.page:207(td/p)
+#. (itstool) path: td/p
+#: C/audio-video.page:92 C/audio-video.page:93 C/audio-video.page:112
+#: C/audio-video.page:113 C/audio-video.page:142 C/audio-video.page:143
 msgid "Yes"
 msgstr "Oui"
 
-#: C/audio-video.page:155(td/p)
+#. (itstool) path: td/p
+#: C/audio-video.page:96
 msgid "Groupwise"
 msgstr "Groupwise"
 
-#: C/audio-video.page:160(td/p)
+#. (itstool) path: td/p
+#: C/audio-video.page:101
 msgid "ICQ"
 msgstr "ICQ"
 
-#: C/audio-video.page:165(td/p) C/create-account.page:49(section/title)
+#. (itstool) path: td/p
+#. (itstool) path: section/title
+#: C/audio-video.page:106 C/create-account.page:49
 msgid "IRC"
 msgstr "IRC"
 
-#: C/audio-video.page:170(td/p) C/create-account.page:79(section/title)
+#. (itstool) path: td/p
+#. (itstool) path: section/title
+#: C/audio-video.page:111 C/create-account.page:68
 msgid "Jabber"
 msgstr "Jabber"
 
-#: C/audio-video.page:175(td/p)
-msgid "MSN"
-msgstr "MSN"
-
-#: C/audio-video.page:180(td/p)
+#. (itstool) path: td/p
+#: C/audio-video.page:116
 msgid "myspace"
 msgstr "myspace"
 
-#: C/audio-video.page:185(td/p)
+#. (itstool) path: td/p
+#: C/audio-video.page:121
 msgid "qq"
 msgstr "qq"
 
-#: C/audio-video.page:190(td/p) C/create-account.page:97(section/title)
+#. (itstool) path: td/p
+#. (itstool) path: section/title
+#: C/audio-video.page:126 C/create-account.page:86
 msgid "People Nearby"
 msgstr "Personnes à proximité"
 
 # Type de compte?
-#: C/audio-video.page:195(td/p)
+#. (itstool) path: td/p
+#: C/audio-video.page:131
 msgid "sametime"
 msgstr "sametime"
 
-#: C/audio-video.page:200(td/p)
+#. (itstool) path: td/p
+#: C/audio-video.page:136
 msgid "silc"
 msgstr "silc"
 
-#: C/audio-video.page:205(td/p) C/create-account.page:110(section/title)
+#. (itstool) path: td/p
+#. (itstool) path: section/title
+#: C/audio-video.page:141 C/create-account.page:99
 msgid "SIP"
 msgstr "SIP"
 
-#: C/audio-video.page:210(td/p)
+#. (itstool) path: td/p
+#: C/audio-video.page:146
 msgid "Yahoo!"
 msgstr "Yahoo!"
 
-#: C/audio-video.page:215(td/p)
+#. (itstool) path: td/p
+#: C/audio-video.page:151
 msgid "zephyr"
 msgstr "zephyr"
 
-#: C/change-status.page:9(info/desc)
+#. (itstool) path: info/desc
+#: C/change-status.page:9
 msgid "Change your status to advertise your availability to your contacts."
 msgstr ""
 "Modifier votre état pour informer vos contacts sur votre disponibilité."
 
-#: C/change-status.page:39(page/title)
+#. (itstool) path: page/title
+#: C/change-status.page:39
 msgid "Change your status"
 msgstr "Modification de votre état"
 
-#: C/change-status.page:41(page/p)
+#. (itstool) path: page/p
+#: C/change-status.page:41
 msgid ""
 "You can set your status to indicate your availability to your contacts. "
 "<app>Empathy</app> allows you to select from a list of defined statuses."
@@ -1104,18 +1000,21 @@ msgstr ""
 "disponibilité. <app>Empathy</app> vous permet de choisir à partir d'une "
 "liste d'états prédéfinis."
 
-#: C/change-status.page:46(item/p)
+#. (itstool) path: item/p
+#: C/change-status.page:46
 msgid ""
 "Click on the drop-down list at the top of the <gui>Contact List</gui> window."
 msgstr ""
 "Cliquez sur la liste déroulante en haut de la fenêtre <gui>Liste des "
 "contacts</gui>."
 
-#: C/change-status.page:51(item/p)
+#. (itstool) path: item/p
+#: C/change-status.page:51
 msgid "Select a status from the list."
 msgstr "Sélectionnez un état dans la liste."
 
-#: C/change-status.page:57(page/p)
+#. (itstool) path: page/p
+#: C/change-status.page:57
 msgid ""
 "See <link xref=\"status-icons\"/> for a list of the built-in statuses and "
 "what they mean. You can also <link xref=\"set-custom-status\">add custom "
@@ -1127,7 +1026,8 @@ msgstr ""
 "status\">ajouter des états personnalisés</link> pour informer davantage vos "
 "contacts sur votre disponibilité."
 
-#: C/change-status.page:63(note/p)
+#. (itstool) path: note/p
+#: C/change-status.page:63
 msgid ""
 "If you do not use your computer for a while, or if the screensaver is on, "
 "the status will be automatically set to Away."
@@ -1136,18 +1036,21 @@ msgstr ""
 "si l'économiseur d'écran est actif, votre état est automatiquement mis sur "
 "« Absent »."
 
-#: C/create-account.page:32(info/desc)
+#. (itstool) path: info/desc
+#: C/create-account.page:32
 msgid "Create an account for one of the supported messaging services."
 msgstr ""
 "Créer un compte pour un des services de messagerie instantanée pris en "
 "charge."
 
-#: C/create-account.page:36(page/title)
+#. (itstool) path: page/title
+#: C/create-account.page:36
 msgid "Register a new account"
 msgstr "Enregistrement d'un nouveau compte"
 
 # types de compte(S) ??
-#: C/create-account.page:38(page/p)
+#. (itstool) path: page/p
+#: C/create-account.page:38
 msgid ""
 "Most account types require you to create an account with a service provider "
 "before you can use that account with instant messaging applications. You can "
@@ -1161,7 +1064,8 @@ msgstr ""
 "nouveau compte chez quelques fournisseurs en suivant les mêmes étapes qu'en "
 "passant par <link xref=\"add-account\">Ajouter un compte</link>."
 
-#: C/create-account.page:44(page/p)
+#. (itstool) path: page/p
+#: C/create-account.page:44
 msgid ""
 "Once you create a new account, your account provider should give you a login "
 "or a username and a password, as well as any additional information you need "
@@ -1172,7 +1076,8 @@ msgstr ""
 "que toutes informations supplémentaires requises pour vous connecter avec "
 "<app>Empathy</app>."
 
-#: C/create-account.page:51(section/p)
+#. (itstool) path: section/p
+#: C/create-account.page:51
 msgid ""
 "IRC networks require that you specify a nick (nickname) when you connect to "
 "the server. Some IRC networks use a service, such as NickServ, to allow "
@@ -1187,7 +1092,8 @@ msgstr ""
 "ne pouvez le faire parce qu'un autre l'utilise déjà, alors vous devez en "
 "changer."
 
-#: C/create-account.page:57(section/p)
+#. (itstool) path: section/p
+#: C/create-account.page:57
 msgid ""
 "Some IRC servers are password protected. You will need to know the password "
 "to connect to these servers. Generally, these are private IRC networks."
@@ -1196,37 +1102,16 @@ msgstr ""
 "ce mot de passe pour vous y connecter. En général, ce sont des réseaux IRC "
 "privés."
 
-#: C/create-account.page:62(note/p)
+#. (itstool) path: note/p
+#: C/create-account.page:62
 msgid ""
 "Many GNOME projects use <code>irc.gnome.org</code> for project-related "
 "discussion."
 msgstr ""
-"Beaucoup de projets GNOME sont débattus sur <code>irc.gnome.org</"
-"code>."
+"Beaucoup de projets GNOME sont débattus sur <code>irc.gnome.org</code>."
 
-#: C/create-account.page:68(section/title)
-msgid "Facebook"
-msgstr "Facebook"
-
-#: C/create-account.page:70(section/p)
-msgid ""
-"Facebook is one of the more popular social networks. It allows users to "
-"create their own profile and to communicate with their friends."
-msgstr ""
-"Facebook est l'un des réseaux sociaux les plus populaires. Il permet aux "
-"utilisateurs de créer leur propre profil et de communiquer avec leurs amis."
-
-#: C/create-account.page:73(section/p)
-msgid ""
-"To use Facebook to communicate with your friends, you will need to create a "
-"new account from the website: <link href=\"https://www.facebook.com\">www."
-"facebook.com</link>."
-msgstr ""
-"Pour communiquer avec vos amis en utilisant Facebook, vous devrez créer un "
-"nouveau compte sur leur site Web : <link href=\"https://www.facebook.com"
-"\">www.facebook.com</link>."
-
-#: C/create-account.page:81(section/p)
+#. (itstool) path: section/p
+#: C/create-account.page:70
 msgid ""
 "Jabber is an open instant messaging system. Like email, Jabber allows you to "
 "choose your account provider and communicate with all other Jabber users, "
@@ -1237,7 +1122,8 @@ msgstr ""
 "communiquer avec tous les autres utilisateurs de Jabber, indépendamment de "
 "leur fournisseur de compte."
 
-#: C/create-account.page:85(section/p)
+#. (itstool) path: section/p
+#: C/create-account.page:74
 msgid ""
 "You will need to create a new account with a Jabber provider. There are many "
 "free providers; one popular provider is <link href=\"http://register.jabber."
@@ -1247,7 +1133,8 @@ msgstr ""
 "plusieurs fournisseurs gratuits ; un des plus populaires est <link href="
 "\"http://register.jabber.org/\">jabber.org</link>."
 
-#: C/create-account.page:90(note/p)
+#. (itstool) path: note/p
+#: C/create-account.page:79
 msgid ""
 "If you use Gmail or Google+ Hangouts, you already have a Jabber account. Use "
 "your Gmail address and password in <app>Empathy</app> to connect."
@@ -1256,7 +1143,8 @@ msgstr ""
 "Jabber. Utilisez votre adresse Gmail et son mot de passe associé dans "
 "<app>Empathy</app> pour vous y connecter."
 
-#: C/create-account.page:99(section/p)
+#. (itstool) path: section/p
+#: C/create-account.page:88
 msgid ""
 "This service works whenever you are connected to a local network, such as a "
 "wireless hotspot, you do not need to create an account with service "
@@ -1270,15 +1158,17 @@ msgstr ""
 "app> et il trouvera automatiquement tous les autres utilisateurs du réseau "
 "utilisant ce même service."
 
-#: C/create-account.page:105(section/p)
+#. (itstool) path: section/p
+#: C/create-account.page:94
 msgid ""
 "For more information, see the <link xref=\"salut-protocol\">salut protocol</"
 "link>."
 msgstr ""
-"Pour plus d'informations, consultez le <link xref=\"salut-protocol\">protocole salut"
-"</link>."
+"Pour plus d'informations, consultez le <link xref=\"salut-protocol"
+"\">protocole salut</link>."
 
-#: C/create-account.page:112(section/p)
+#. (itstool) path: section/p
+#: C/create-account.page:101
 msgid ""
 "SIP is an open system which allows users to have audio and video "
 "conversations over the Internet. You need to create an account with a SIP "
@@ -1290,7 +1180,8 @@ msgstr ""
 "un fournisseur SIP. Vous pouvez communiquer avec tous les autres "
 "utilisateurs SIP, indépendamment du fournisseur SIP qu'ils utilisent."
 
-#: C/create-account.page:117(section/p)
+#. (itstool) path: section/p
+#: C/create-account.page:106
 msgid ""
 "Some SIP providers allow you to call normal phones from your computer. "
 "Generally, you will need to subscribe to a paid service for this feature."
@@ -1299,11 +1190,13 @@ msgstr ""
 "téléphones fixes à partir de votre ordinateur. Généralement, vous devez "
 "souscrire à un service payant pour utiliser cette fonction."
 
-#: C/create-account.page:123(section/title)
+#. (itstool) path: section/title
+#: C/create-account.page:112
 msgid "Proprietary Services"
 msgstr "Services propriétaires"
 
-#: C/create-account.page:125(section/p)
+#. (itstool) path: section/p
+#: C/create-account.page:114
 msgid ""
 "There are many proprietary instant messaging services that have been "
 "developed by different companies or organizations. <app>Empathy</app> allows "
@@ -1317,32 +1210,34 @@ msgstr ""
 "services. Pour créer un nouveau compte avec un de ces services, vous devez "
 "visiter le site Web du service."
 
-#: C/create-account.page:133(item/p)
+#. (itstool) path: item/p
+#: C/create-account.page:122
 msgid "<link href=\"http://dashboard.aim.com/aim\">AIM</link>"
 msgstr "<link href=\"http://dashboard.aim.com/aim\">AIM</link>"
 
-#: C/create-account.page:136(item/p)
+#. (itstool) path: item/p
+#: C/create-account.page:125
 msgid "<link href=\"https://www.icq.com/register/\">ICQ</link>"
 msgstr "<link href=\"https://www.icq.com/register/\">ICQ</link>"
 
-#: C/create-account.page:139(item/p)
-msgid "<link href=\"https://accountservices.passport.net\">MSN</link>"
-msgstr "<link href=\"https://accountservices.passport.net\">MSN</link>"
-
-#: C/create-account.page:142(item/p)
+#. (itstool) path: item/p
+#: C/create-account.page:128
 msgid "<link href=\"https://login.yahoo.com/config/login\">Yahoo!</link>"
 msgstr "<link href=\"https://login.yahoo.com/config/login\">Yahoo!</link>"
 
-#: C/disable-account.page:9(info/desc)
+#. (itstool) path: info/desc
+#: C/disable-account.page:9
 msgid "Prevent <app>Empathy</app> from automatically logging in to an account."
 msgstr ""
 "Empêcher <app>Empathy</app> de se connecter automatiquement à un compte."
 
-#: C/disable-account.page:40(page/title)
+#. (itstool) path: page/title
+#: C/disable-account.page:40
 msgid "Disable an account"
 msgstr "Désactivation d'un compte"
 
-#: C/disable-account.page:42(page/p)
+#. (itstool) path: page/p
+#: C/disable-account.page:42
 msgid ""
 "You can disable an account to prevent <app>Empathy</app> from logging in to "
 "it without removing the account entirely. You may wish to disable and re-"
@@ -1354,7 +1249,19 @@ msgstr ""
 "désactiver un compte que vous ne voulez pas utiliser en permanence tout en "
 "continuant d'utiliser <app>Empathy</app> avec les autres comptes."
 
-#: C/disable-account.page:53(item/p)
+#. (itstool) path: item/p
+#: C/disable-account.page:49 C/irc-nick-password.page:50
+#: C/remove-account.page:43
+msgid ""
+"From the <gui>Contact List</gui> window, choose <guiseq><gui>Edit</gui> "
+"<gui>Accounts</gui></guiseq>, or press <key>F4</key>."
+msgstr ""
+"À partir de la fenêtre <gui>Liste des contacts</gui>, choisissez "
+"<guiseq><gui>Édition</gui> <gui>Comptes</gui></guiseq>, ou appuyez sur "
+"<key>F4</key>."
+
+#. (itstool) path: item/p
+#: C/disable-account.page:53
 msgid ""
 "Select the account you wish to disable from the accounts list on the left "
 "side of the window."
@@ -1363,31 +1270,38 @@ msgstr ""
 "à gauche de la fenêtre."
 
 # À revoir...
-#: C/disable-account.page:57(item/p)
+#. (itstool) path: item/p
+#: C/disable-account.page:57
 msgid "On the right side of the window, switch it off."
 msgstr "Désactivez-le dans la partie droite de la fenêtre."
 
-#: C/disable-account.page:62(page/p)
+#. (itstool) path: page/p
+#: C/disable-account.page:62
 msgid "To re-enable the account, switch it on."
 msgstr "Réactivez-le à partir du même endroit."
 
-#: C/favorite-rooms.page:10(info/desc)
+#. (itstool) path: info/desc
+#: C/favorite-rooms.page:10
 msgid "Set, join and manage favorite rooms."
 msgstr "Définir, rejoindre et gérer les salons favoris."
 
-#: C/favorite-rooms.page:29(page/title)
+#. (itstool) path: page/title
+#: C/favorite-rooms.page:29
 msgid "Favorite rooms"
 msgstr "Salons favoris"
 
-#: C/favorite-rooms.page:32(section/title)
+#. (itstool) path: section/title
+#: C/favorite-rooms.page:32
 msgid "Set a room as a favorite"
 msgstr "Définition d'un salon comme favori"
 
-#: C/favorite-rooms.page:35(item/p)
+#. (itstool) path: item/p
+#: C/favorite-rooms.page:35
 msgid "Join a room."
 msgstr "Rejoindre un salon."
 
-#: C/favorite-rooms.page:40(item/p)
+#. (itstool) path: item/p
+#: C/favorite-rooms.page:40
 msgid ""
 "See <link xref=\"irc-join-room\"/> for more information on how to join an "
 "IRC room."
@@ -1395,7 +1309,8 @@ msgstr ""
 "Consultez <link xref=\"irc-join-room\"/> pour plus d'informations sur "
 "comment rejoindre un salon IRC."
 
-#: C/favorite-rooms.page:46(item/p)
+#. (itstool) path: item/p
+#: C/favorite-rooms.page:46
 msgid ""
 "See <link xref=\"group-conversations\"/> for more information on how to "
 "start or join a group conversation."
@@ -1403,7 +1318,8 @@ msgstr ""
 "Consultez <link xref=\"group-conversations\"/> pour plus d'informations sur "
 "comment démarrer ou rejoindre une discussion de groupe."
 
-#: C/favorite-rooms.page:54(item/p)
+#. (itstool) path: item/p
+#: C/favorite-rooms.page:54
 msgid ""
 "From the conversation window, choose <guiseq><gui>Conversation</"
 "gui><gui>Favorite Chat Room</gui></guiseq>."
@@ -1411,21 +1327,25 @@ msgstr ""
 "À partir de la fenêtre de conversation, choisir <guiseq><gui>Conversation</"
 "gui><gui>Salon de discussion favori</gui></guiseq>."
 
-#: C/favorite-rooms.page:63(section/title)
+#. (itstool) path: section/title
+#: C/favorite-rooms.page:63
 msgid "Join favorite rooms"
 msgstr "Rejoindre les salons favoris"
 
-#: C/favorite-rooms.page:66(item/p) C/send-file.page:40(item/p)
+#. (itstool) path: item/p
+#: C/favorite-rooms.page:66 C/send-file.page:40
 msgid "From the <gui>Contact List</gui> window, perform one of the following:"
 msgstr ""
 "Dans la fenêtre <gui>Liste des contacts</gui>, effectuez une des actions "
 "suivantes :"
 
-#: C/favorite-rooms.page:71(item/p)
+#. (itstool) path: item/p
+#: C/favorite-rooms.page:71
 msgid "Press <key>F5</key>."
 msgstr "appuyez sur <key>F5</key>,"
 
-#: C/favorite-rooms.page:76(item/p)
+#. (itstool) path: item/p
+#: C/favorite-rooms.page:76
 msgid ""
 "Choose <guiseq><gui>Room</gui><gui>Join Favorites</gui></guiseq>, to join "
 "all your favorite rooms."
@@ -1433,13 +1353,15 @@ msgstr ""
 "choisissez <guiseq><gui>Salon</gui><gui>Rejoindre les favoris</gui></guiseq> "
 "pour rejoindre tous les salons favoris,"
 
-#: C/favorite-rooms.page:82(item/p)
+#. (itstool) path: item/p
+#: C/favorite-rooms.page:82
 msgid "Choose <gui>Room</gui>, and select the favorite room you want to join."
 msgstr ""
 "choisissez <gui>Salon</gui> et sélectionnez le salon favori que vous voulez "
 "rejoindre."
 
-#: C/favorite-rooms.page:90(note/p)
+#. (itstool) path: note/p
+#: C/favorite-rooms.page:90
 msgid ""
 "To join a favorite room, you need to be connected to the Internet and to "
 "your account."
@@ -1447,11 +1369,13 @@ msgstr ""
 "Pour rejoindre un salon favori, vous devez être connecté à Internet et à "
 "votre compte."
 
-#: C/favorite-rooms.page:98(section/title)
+#. (itstool) path: section/title
+#: C/favorite-rooms.page:98
 msgid "Manage favorite rooms"
 msgstr "Gestion des salons favoris"
 
-#: C/favorite-rooms.page:101(item/p)
+#. (itstool) path: item/p
+#: C/favorite-rooms.page:101
 msgid ""
 "From the <gui>Contact List</gui> window, choose <guiseq><gui>Room</"
 "gui><gui>Manage Favorites</gui></guiseq>."
@@ -1460,7 +1384,8 @@ msgstr ""
 "<guiseq><gui>Salon</gui><gui>Gérer les favoris</gui></guiseq>."
 
 # ouf...
-#: C/favorite-rooms.page:107(item/p)
+#. (itstool) path: item/p
+#: C/favorite-rooms.page:107
 msgid ""
 "From the <gui>Account</gui> drop-down list, select the account you want to "
 "manage the favorite rooms of."
@@ -1468,17 +1393,20 @@ msgstr ""
 "Dans la liste déroulante <gui>Compte</gui>, sélectionnez le compte où se "
 "trouve le salon à gérer."
 
-#: C/favorite-rooms.page:111(item/p)
+#. (itstool) path: item/p
+#: C/favorite-rooms.page:111
 msgid "Select <gui>All</gui> to see all you favorite rooms."
 msgstr ""
 "Sélectionnez <gui>Tous les comptes</gui> pour afficher tous vos salons "
 "favoris."
 
-#: C/favorite-rooms.page:116(item/p)
+#. (itstool) path: item/p
+#: C/favorite-rooms.page:116
 msgid "Select the favorite room you want to manage:"
 msgstr "Sélectionnez le salon favori que vous voulez gérer :"
 
-#: C/favorite-rooms.page:121(item/p)
+#. (itstool) path: item/p
+#: C/favorite-rooms.page:121
 msgid ""
 "Select the <gui>Auto-Connect</gui> check-box in order to automatically join "
 "that room when you connect to your account."
@@ -1486,40 +1414,49 @@ msgstr ""
 "Cochez la case <gui>Connexion automatique</gui> pour rejoindre "
 "automatiquement ce salon lorsque vous vous connectez à votre compte."
 
-#: C/favorite-rooms.page:127(item/p)
+#. (itstool) path: item/p
+#: C/favorite-rooms.page:127
 msgid "Click on <gui>Remove</gui> to remove the room from your favorites."
 msgstr ""
 "Cliquez sur <gui>Supprimer</gui> pour supprimer le salon de vos favoris."
 
-#: C/favorite-rooms.page:134(item/p)
+#. (itstool) path: item/p
+#: C/favorite-rooms.page:134
 msgid "When done, click <gui>Close</gui>."
 msgstr "Lorsque que vous avez terminé, cliquez sur <gui>Fermer</gui>."
 
-#: C/geolocation.page:8(info/desc)
+#. (itstool) path: info/desc
+#: C/geolocation.page:8
 msgid "Use and understand geolocation in <app>Empathy</app>."
 msgstr "Utiliser et comprendre la géolocalisation dans <app>Empathy</app>."
 
-#: C/geolocation.page:32(page/title)
+#. (itstool) path: page/title
+#: C/geolocation.page:32
 msgid "Geographical position"
 msgstr "Position géographique"
 
-#: C/geolocation.page:35(section/title)
+#. (itstool) path: section/title
+#: C/geolocation.page:35
 msgid "Geolocation"
 msgstr "Géolocalisation"
 
-#: C/geolocation.page:39(section/title)
+#. (itstool) path: section/title
+#: C/geolocation.page:39
 msgid "Fix common problems"
 msgstr "Résolution de problèmes courants"
 
-#: C/geolocation-not-showing.page:8(info/desc)
+#. (itstool) path: info/desc
+#: C/geolocation-not-showing.page:8
 msgid "<app>Empathy</app> does not publish my geographical position."
 msgstr "<app>Empathy</app> ne publie pas ma position géographique."
 
-#: C/geolocation-not-showing.page:32(page/title)
+#. (itstool) path: page/title
+#: C/geolocation-not-showing.page:32
 msgid "Geographical position not published"
 msgstr "Position géographique non publiée"
 
-#: C/geolocation-not-showing.page:34(page/p)
+#. (itstool) path: page/p
+#: C/geolocation-not-showing.page:34
 msgid ""
 "If your contacts cannot see your location, <app>Empathy</app> might not be "
 "able to discover with a good margin of precision your geographical position."
@@ -1528,7 +1465,8 @@ msgstr ""
 "qu'<app>Empathy</app> n'arrive pas à localiser précisément votre position "
 "géographique."
 
-#: C/geolocation-not-showing.page:38(page/p)
+#. (itstool) path: page/p
+#: C/geolocation-not-showing.page:38
 msgid ""
 "In this case, your position will not be published, but you are still able to "
 "see the location of your contacts."
@@ -1536,7 +1474,8 @@ msgstr ""
 "Dans ce cas, votre position ne sera pas publiée, mais vous pourrez toujours "
 "voir la position de vos contacts."
 
-#: C/geolocation-not-showing.page:42(page/p)
+#. (itstool) path: page/p
+#: C/geolocation-not-showing.page:42
 msgid ""
 "If you want to publish your geographical position, you can try to use an "
 "external device such as a GPS."
@@ -1544,7 +1483,8 @@ msgstr ""
 "Si vous voulez publier votre position géographique, vous pouvez essayer "
 "d'utiliser un périphérique externe tel qu'un GPS."
 
-#: C/geolocation-not-showing.page:48(note/p)
+#. (itstool) path: note/p
+#: C/geolocation-not-showing.page:48
 msgid ""
 "In order to publish your geographical location, your Jabber server needs to "
 "support the Personal Eventing Protocal (PEP). A list of <link href=\"http://"
@@ -1558,20 +1498,24 @@ msgstr ""
 "\">serveurs qui supportent le PEP</link> est tenue à jour en ligne. Google "
 "Talk ne prend pas en charge cette fonctionnalité pour l'instant."
 
-#: C/geolocation-privacy.page:8(info/desc)
+#. (itstool) path: info/desc
+#: C/geolocation-privacy.page:8
 msgid "What information are sent and to who."
 msgstr "Quelles informations sont envoyées et à qui."
 
 # Je vois pas vraiment autre chose...
-#: C/geolocation-privacy.page:32(page/title)
+#. (itstool) path: page/title
+#: C/geolocation-privacy.page:32
 msgid "Geolocation Privacy"
 msgstr "Confidentialité de la géolocalisation"
 
-#: C/geolocation-privacy.page:35(section/title)
+#. (itstool) path: section/title
+#: C/geolocation-privacy.page:35
 msgid "What information is sent"
 msgstr "Informations envoyées"
 
-#: C/geolocation-privacy.page:36(section/p)
+#. (itstool) path: section/p
+#: C/geolocation-privacy.page:36
 msgid ""
 "What is possible to send is: your country, region, locality, area, street, "
 "building, floor, room, and postal code, longitude, latitude and altitude, "
@@ -1582,7 +1526,8 @@ msgstr ""
 "d'étage, votre numéro de chambre, votre code postal, la longitude, la "
 "latitude, l'altitude, la vitesse et le relèvement."
 
-#: C/geolocation-privacy.page:40(section/p)
+#. (itstool) path: section/p
+#: C/geolocation-privacy.page:40
 msgid ""
 "The accuracy and the quantity of information about your geographical "
 "position are based on the software or on the infrastructure used to discover "
@@ -1592,7 +1537,8 @@ msgstr ""
 "sont basés sur le logiciel ou sur le matériel utilisés pour trouver votre "
 "position."
 
-#: C/geolocation-privacy.page:44(section/p)
+#. (itstool) path: section/p
+#: C/geolocation-privacy.page:44
 msgid ""
 "Different kind of networks may have different accuracy settings, and may "
 "send different information. The use of external devices such as GPS or "
@@ -1603,7 +1549,8 @@ msgstr ""
 "périphériques externes tels qu'un GPS ou qu'un téléphone cellulaire augmente "
 "la précision des informations envoyées."
 
-#: C/geolocation-privacy.page:49(section/p)
+#. (itstool) path: section/p
+#: C/geolocation-privacy.page:49
 msgid ""
 "When the privacy mode is enabled, nothing more precise than your city will "
 "be sent, even if you are using an external device."
@@ -1611,19 +1558,23 @@ msgstr ""
 "Lorsque le mode confidentiel est activé, seul le nom de votre ville est "
 "envoyé, même si vous utilisez un périphérique externe."
 
-#: C/geolocation-privacy.page:56(section/title)
+#. (itstool) path: section/title
+#: C/geolocation-privacy.page:56
 msgid "Who can see the information sent"
 msgstr "Destinataires de l'information envoyée"
 
-#: C/geolocation-privacy.page:57(section/p)
+#. (itstool) path: section/p
+#: C/geolocation-privacy.page:57
 msgid "Only your contacts can see your geographical position."
 msgstr "Seuls vos contacts peuvent voir votre position géographique."
 
-#: C/geolocation-privacy.page:63(section/title)
+#. (itstool) path: section/title
+#: C/geolocation-privacy.page:63
 msgid "What is the privacy mode"
 msgstr "Mode confidentiel"
 
-#: C/geolocation-privacy.page:64(section/p)
+#. (itstool) path: section/p
+#: C/geolocation-privacy.page:64
 msgid ""
 "The privacy mode, enabled by default, is a reduced accuracy mode that will "
 "decrease the accuracy of the geographical position sent to your contacts."
@@ -1631,46 +1582,55 @@ msgstr ""
 "Le mode confidentiel, activé par défaut, est un mode de précision réduite "
 "qui diminue la précision de la position géographique envoyée à vos contacts."
 
-#: C/geolocation-privacy.page:71(section/title)
+#. (itstool) path: section/title
+#: C/geolocation-privacy.page:71
 msgid "Privacy overview"
 msgstr "Vue d'ensemble sur la confidentialité"
 
-#: C/geolocation-privacy.page:72(section/p)
+#. (itstool) path: section/p
+#: C/geolocation-privacy.page:72
 msgid ""
 "Overview of the various geolocation privacy settings in <app>Empathy</app>."
 msgstr ""
 "Vue d'ensemble des différents paramètres de confidentialité de "
 "géolocalisation dans <app>Empathy</app>."
 
-#: C/geolocation-privacy.page:77(item/p)
+#. (itstool) path: item/p
+#: C/geolocation-privacy.page:77
 msgid "Geolocation is not enabled by default."
 msgstr "La géolocalisation n'est pas activée par défaut."
 
-#: C/geolocation-privacy.page:82(item/p)
+#. (itstool) path: item/p
+#: C/geolocation-privacy.page:82
 msgid "Privacy mode is enabled by default."
 msgstr "Le mode confidentiel est activé par défaut."
 
-#: C/geolocation-privacy.page:87(item/p)
+#. (itstool) path: item/p
+#: C/geolocation-privacy.page:87
 msgid ""
 "Privacy mode prevails even when using external and more precise devices."
 msgstr ""
 "Le mode confidentiel prévaut même lorsque vous utilisez des périphériques "
 "externes plus précis."
 
-#: C/geolocation-privacy.page:92(item/p)
+#. (itstool) path: item/p
+#: C/geolocation-privacy.page:92
 msgid "Only your contacts can see your position."
 msgstr "Seuls vos contacts peuvent connaître votre position."
 
-#: C/geolocation-supported.page:7(info/desc)
+#. (itstool) path: info/desc
+#: C/geolocation-supported.page:7
 msgid "Services that supports geolocation and compatibility."
 msgstr ""
 "Les services qui prennent en charge la géolocalisation et la compatibilité."
 
-#: C/geolocation-supported.page:31(page/title)
+#. (itstool) path: page/title
+#: C/geolocation-supported.page:31
 msgid "Supported services"
 msgstr "Services pris en charge"
 
-#: C/geolocation-supported.page:33(page/p)
+#. (itstool) path: page/p
+#: C/geolocation-supported.page:33
 msgid ""
 "The geolocation feature at the moment is compatible only with the Jabber "
 "service. In order to use it, you and your contacts need to have a Jabber "
@@ -1680,7 +1640,8 @@ msgstr ""
 "le service Jabber. Pour l'utiliser, vous et vos contacts devez posséder un "
 "compte Jabber."
 
-#: C/geolocation-supported.page:39(note/p)
+#. (itstool) path: note/p
+#: C/geolocation-supported.page:39
 msgid ""
 "It is necessary that also the server you are using supports the geolocation "
 "feature. Most of the Jabber servers support it. See your service website "
@@ -1691,11 +1652,13 @@ msgstr ""
 "supportent. Pour plus d'informations, consultez la documentation Web de "
 "votre service."
 
-#: C/geolocation-supported.page:47(section/title)
+#. (itstool) path: section/title
+#: C/geolocation-supported.page:47
 msgid "Compatibility"
 msgstr "Compatibilité"
 
-#: C/geolocation-supported.page:49(section/p)
+#. (itstool) path: section/p
+#: C/geolocation-supported.page:49
 msgid ""
 "<app>Empathy</app> geolocation feature is not compatible with other "
 "geographical position services such as <em>Google Latitude</em>, <em>Yahoo "
@@ -1705,35 +1668,42 @@ msgstr ""
 "compatible avec d'autres services tels que <em>Google Latitude</em>, "
 "<em>Yahoo Fire Eagle</em> ou <em>Brightkite</em>."
 
-#: C/geolocation-turn.page:9(info/desc)
+#. (itstool) path: info/desc
+#: C/geolocation-turn.page:9
 msgid "How to activate and deactivate geolocation in <app>Empathy</app>."
 msgstr ""
 "Comment activer et désactiver la géolocalisation dans <app>Empathy</app>."
 
-#: C/geolocation-turn.page:33(page/title)
+#. (itstool) path: page/title
+#: C/geolocation-turn.page:33
 msgid "Activate/Deactivate geolocation"
 msgstr "Activation/Désactivation de la géolocalisation"
 
-#: C/geolocation-turn.page:37(item/p)
+#. (itstool) path: item/p
+#: C/geolocation-turn.page:37
 msgid "Choose <guiseq><gui>Edit</gui><gui>Preferences</gui></guiseq>."
 msgstr "Choisissez <guiseq><gui>Édition</gui><gui>Préférences</gui></guiseq>."
 
-#: C/geolocation-turn.page:42(item/p)
+#. (itstool) path: item/p
+#: C/geolocation-turn.page:42
 msgid "Select the <gui>Location</gui> tab."
 msgstr "Sélectionnez l'onglet <gui>Position</gui>."
 
-#: C/geolocation-turn.page:47(item/p)
+#. (itstool) path: item/p
+#: C/geolocation-turn.page:47
 msgid ""
 "Select <gui>Publish location to my contacts</gui> to activate geolocation."
 msgstr ""
 "Sélectionnez <gui>Publier ma position pour mes contacts</gui> pour activer "
 "la géolocalisation."
 
-#: C/geolocation-turn.page:50(item/p)
+#. (itstool) path: item/p
+#: C/geolocation-turn.page:50
 msgid "To deactivate geolocation, deselect it."
 msgstr "Pour désactiver la géolocalisation, désélectionnez-la."
 
-#: C/geolocation-turn.page:55(item/p)
+#. (itstool) path: item/p
+#: C/geolocation-turn.page:55
 msgid ""
 "To increase the accuracy of your position, deselect <gui>Reduce location "
 "accuracy</gui>."
@@ -1741,7 +1711,8 @@ msgstr ""
 "Pour augmenter la précision de votre position, désélectionnez <gui>Réduire "
 "la précision de la position</gui>."
 
-#: C/geolocation-turn.page:61(item/p)
+#. (itstool) path: item/p
+#: C/geolocation-turn.page:61
 msgid ""
 "If you have an external device like a GPS or want to send a more accurate "
 "position, select the appropriate option in the <gui>Location sources</gui> "
@@ -1751,15 +1722,18 @@ msgstr ""
 "une plus grande précision sur votre position, sélectionnez l'option "
 "appropriée dans la section <gui>Sources de positionnement</gui>."
 
-#: C/geolocation-what-is.page:9(info/desc)
+#. (itstool) path: info/desc
+#: C/geolocation-what-is.page:9
 msgid "Understanding geolocation."
 msgstr "Comprendre la géolocalisation."
 
-#: C/geolocation-what-is.page:33(page/title)
+#. (itstool) path: page/title
+#: C/geolocation-what-is.page:33
 msgid "What is geolocation"
 msgstr "La géolocalisation"
 
-#: C/geolocation-what-is.page:35(page/p)
+#. (itstool) path: page/p
+#: C/geolocation-what-is.page:35
 msgid ""
 "Geolocation allows you to identify the real geographical location of a "
 "computer or a device connected to the Internet."
@@ -1767,19 +1741,23 @@ msgstr ""
 "La géolocalisation vous permet d'identifier la véritable position "
 "géographique d'un ordinateur ou d'un périphérique connecté à Internet."
 
-#: C/geolocation-what-is.page:37(page/p)
+#. (itstool) path: page/p
+#: C/geolocation-what-is.page:37
 msgid "With geolocation in <app>Empathy</app> you can:"
 msgstr "Avec la géolocalisation dans <app>Empathy</app>, vous pouvez :"
 
-#: C/geolocation-what-is.page:42(item/p)
+#. (itstool) path: item/p
+#: C/geolocation-what-is.page:42
 msgid "Publish your geographical location to your contacts."
 msgstr "communiquer votre position géographique à vos contacts,"
 
-#: C/geolocation-what-is.page:47(item/p)
+#. (itstool) path: item/p
+#: C/geolocation-what-is.page:47
 msgid "See your contacts’ geographical location and quickly contact them."
 msgstr "connaître leur position géographique et les contacter rapidement,"
 
-#: C/geolocation-what-is.page:52(item/p)
+#. (itstool) path: item/p
+#: C/geolocation-what-is.page:52
 msgid ""
 "Set the accuracy of your location and the device used to discover your "
 "location."
@@ -1787,7 +1765,8 @@ msgstr ""
 "définir la précision de votre position et le périphérique utilisé pour la "
 "trouver."
 
-#: C/geolocation-what-is.page:60(note/p)
+#. (itstool) path: note/p
+#: C/geolocation-what-is.page:60
 msgid ""
 "In order to see your contacts’ geographical locations, they need to use a "
 "service and an application that supports geolocation."
@@ -1796,15 +1775,18 @@ msgstr ""
 "utiliser un service et une application qui prenne en charge la "
 "géolocalisation."
 
-#: C/group-conversations.page:8(info/desc)
+#. (itstool) path: info/desc
+#: C/group-conversations.page:8
 msgid "Start or join a group conversation with your contacts."
 msgstr "Démarrer ou rejoindre une discussion de groupe avec vos contacts."
 
-#: C/group-conversations.page:34(page/title)
+#. (itstool) path: page/title
+#: C/group-conversations.page:34
 msgid "Group conversations"
 msgstr "Discussion de groupe"
 
-#: C/group-conversations.page:36(page/p)
+#. (itstool) path: page/p
+#: C/group-conversations.page:36
 msgid ""
 "Group conversations permits you to have text conversations with more than "
 "one contact at the same time."
@@ -1812,7 +1794,8 @@ msgstr ""
 "Les discussions de groupe vous permettent de discuter par écrit avec "
 "plusieurs contacts à la fois."
 
-#: C/group-conversations.page:40(page/p)
+#. (itstool) path: page/p
+#: C/group-conversations.page:40
 msgid ""
 "To have a group conversation you need to have a registered account with "
 "either Jabber or Google Talk, or a People Nearby account."
@@ -1820,7 +1803,8 @@ msgstr ""
 "Pour accéder à une discussion de groupe, vous devez posséder un compte "
 "enregistré sur Jabber ou Google Talk ou un compte de Personnes à proximité."
 
-#: C/group-conversations.page:46(note/p)
+#. (itstool) path: note/p
+#: C/group-conversations.page:46
 msgid ""
 "You can have a group conversation only with the contacts that are using the "
 "same service as yours."
@@ -1828,12 +1812,14 @@ msgstr ""
 "Vous ne pouvez participer à une discussion de groupe qu'avec les contacts "
 "qui utilisent le même service que le vôtre."
 
-#: C/group-conversations.page:54(section/title)
+#. (itstool) path: section/title
+#: C/group-conversations.page:54
 msgid "Start a group conversation"
 msgstr "Lancement d'une discussion de groupe"
 
-#: C/group-conversations.page:58(item/p)
-#: C/group-conversations.page:122(item/p) C/irc-join-room.page:39(item/p)
+#. (itstool) path: item/p
+#: C/group-conversations.page:58 C/group-conversations.page:122
+#: C/irc-join-room.page:39
 msgid ""
 "From the <gui>Contact List</gui> window, choose <guiseq><gui>Room</"
 "gui><gui>Join</gui></guiseq>."
@@ -1841,7 +1827,8 @@ msgstr ""
 "Dans la fenêtre <gui>Liste des contacts</gui>, choisissez "
 "<guiseq><gui>Salon</gui><gui>Rejoindre...</gui></guiseq>."
 
-#: C/group-conversations.page:63(item/p)
+#. (itstool) path: item/p
+#: C/group-conversations.page:63
 msgid ""
 "From the <gui>Account</gui> drop-down list, select the account you want to "
 "use for the group conversation."
@@ -1849,7 +1836,8 @@ msgstr ""
 "Dans la liste déroulante <gui>Compte</gui> , sélectionnez le compte que vous "
 "souhaitez utiliser pour la discussion de groupe."
 
-#: C/group-conversations.page:69(item/p)
+#. (itstool) path: item/p
+#: C/group-conversations.page:69
 msgid ""
 "In the <gui>Server</gui> text box, type the name of server in which the "
 "conversation will be hosted."
@@ -1857,11 +1845,13 @@ msgstr ""
 "Dans le champ <gui>Serveur</gui>, saisissez le nom du serveur qui héberge la "
 "discussion."
 
-#: C/group-conversations.page:73(item/p)
+#. (itstool) path: item/p
+#: C/group-conversations.page:73
 msgid "Leave it empty if it will be on the current server."
 msgstr "Laissez-le vide si vous utilisez le serveur en cours."
 
-#: C/group-conversations.page:78(item/p)
+#. (itstool) path: item/p
+#: C/group-conversations.page:78
 msgid ""
 "In the <gui>Room</gui> text box, type the name you want to give to the "
 "conversation."
@@ -1869,7 +1859,8 @@ msgstr ""
 "Dans le champ <gui>Salon</gui>, saisissez le nom que vous souhaitez donner à "
 "la discussion."
 
-#: C/group-conversations.page:82(note/p)
+#. (itstool) path: note/p
+#: C/group-conversations.page:82
 msgid ""
 "This will be the name of the room you are going to have a conversation. This "
 "name will be publicly available for other people to join. It is not possible "
@@ -1879,7 +1870,8 @@ msgstr ""
 "accessible aux autres personnes pour qu'elles puissent y accéder. Il est "
 "impossible de créer un salon privé."
 
-#: C/group-conversations.page:90(item/p)
+#. (itstool) path: item/p
+#: C/group-conversations.page:90
 msgid ""
 "To invite other contacts to join the group conversation, from the "
 "<gui>Contact List</gui> window, select the contact you want to invite, and "
@@ -1889,13 +1881,15 @@ msgstr ""
 "sélectionnez le contact que vous désirez inviter dans la fenêtre <gui>Liste "
 "des contacts</gui> et effectuez une des actions suivantes :"
 
-#: C/group-conversations.page:97(item/p)
+#. (itstool) path: item/p
+#: C/group-conversations.page:97
 msgid "Right-click on the contact and choose <gui>Invite to chatroom</gui>."
 msgstr ""
 "faites un clic droit sur l'un de vos contacts et sélectionnez <gui>Inviter à "
 "un salon de discussion</gui>,"
 
-#: C/group-conversations.page:102(item/p)
+#. (itstool) path: item/p
+#: C/group-conversations.page:102
 msgid ""
 "Choose <guiseq><gui>Edit</gui><gui>Contact</gui><gui>Invite to chatroom</"
 "gui></guiseq>."
@@ -1903,7 +1897,8 @@ msgstr ""
 "choisissez <guiseq><gui>Édition</gui><gui>Contact</gui><gui>Inviter à un "
 "salon de discussion</gui></guiseq>."
 
-#: C/group-conversations.page:107(item/p)
+#. (itstool) path: item/p
+#: C/group-conversations.page:107
 msgid ""
 "If you have more than one group conversation open, select the one you want "
 "to invite your contacts."
@@ -1911,21 +1906,25 @@ msgstr ""
 "Si vous avez plus d'une discussion de groupe ouverte, sélectionnez celle où "
 "vous voulez inviter vos contacts."
 
-#: C/group-conversations.page:118(section/title)
+#. (itstool) path: section/title
+#: C/group-conversations.page:118
 msgid "Join a group conversation"
 msgstr "Rejoindre une discussion de groupe"
 
-#: C/group-conversations.page:128(item/p)
+#. (itstool) path: item/p
+#: C/group-conversations.page:128
 msgid "Expand the <gui>Room List</gui> section to see all the existing rooms."
 msgstr ""
 "Déroulez la <gui>Liste des salons</gui> pour afficher tous les salons "
 "existants."
 
-#: C/group-conversations.page:133(item/p)
+#. (itstool) path: item/p
+#: C/group-conversations.page:133
 msgid "Double-click on the name of a room to join it."
 msgstr "Faites un double clic sur le nom d'un salon pour le rejoindre."
 
-#: C/group-conversations.page:139(section/p)
+#. (itstool) path: section/p
+#: C/group-conversations.page:139
 msgid ""
 "It is not possible to join all existing rooms. Some of the rooms might "
 "require a password, or might be invitation only. <app>Empathy</app> does not "
@@ -1935,16 +1934,19 @@ msgstr ""
 "salons nécessitent un mot de passe ou une invitation. <app>Empathy</app> ne "
 "prend pas en charge ce genre de salon."
 
-#: C/hide-contacts.page:8(info/desc)
+#. (itstool) path: info/desc
+#: C/hide-contacts.page:8
 msgid "Hide the offline contacts from your <gui>Contact List</gui>."
 msgstr ""
 "Masquer les contacts déconnectés de votre <gui>liste des contacts</gui>."
 
-#: C/hide-contacts.page:19(page/title)
+#. (itstool) path: page/title
+#: C/hide-contacts.page:19
 msgid "Hide offline contacts"
 msgstr "Masquage des contacts déconnectés "
 
-#: C/hide-contacts.page:21(page/p)
+#. (itstool) path: page/p
+#: C/hide-contacts.page:21
 msgid ""
 "Normally, <app>Empathy</app> shows all your contacts: those that are online, "
 "with which you can have a conversation, and also those that are offline."
@@ -1953,11 +1955,13 @@ msgstr ""
 "connectés, avec qui vous pouvez avoir une discussion et aussi ceux qui sont "
 "déconnectés."
 
-#: C/hide-contacts.page:25(page/p)
+#. (itstool) path: page/p
+#: C/hide-contacts.page:25
 msgid "To hide the contacts that are offline:"
 msgstr "Pour masquer les contacts qui sont déconnectés :"
 
-#: C/hide-contacts.page:31(item/p)
+#. (itstool) path: item/p
+#: C/hide-contacts.page:31
 msgid ""
 "From the <gui>Contact List</gui> window, choose <guiseq><gui>View</gui> "
 "<gui>Offline Contacts</gui></guiseq>, or press <keyseq><key>Ctrl</key> "
@@ -1967,25 +1971,30 @@ msgstr ""
 "<guiseq><gui>Affichage</gui> <gui>Contacts déconnectés</gui></guiseq>, ou "
 "appuyez sur <keyseq><key>Ctrl</key> <key>H</key></keyseq>."
 
-#: C/hide-contacts.page:36(item/p)
+#. (itstool) path: item/p
+#: C/hide-contacts.page:36
 msgid "To show the offline contacts again, repeat the same procedure above."
 msgstr ""
 "Pour afficher à nouveau les contacts déconnectés, répétez la même procédure "
 "ci-dessus."
 
-#: C/import-account.page:10(info/desc)
+#. (itstool) path: info/desc
+#: C/import-account.page:10
 msgid "Import an account from another instant messaging application."
 msgstr "Importer un compte d'une autre application de messagerie instantanée."
 
-#: C/import-account.page:19(credit/name)
+#. (itstool) path: credit/name
+#: C/import-account.page:19
 msgid "Peter Haslam"
 msgstr "Peter Haslam"
 
-#: C/import-account.page:42(page/title)
+#. (itstool) path: page/title
+#: C/import-account.page:42
 msgid "Import an existing account"
 msgstr "Importation d'un compte existant"
 
-#: C/import-account.page:44(page/p)
+#. (itstool) path: page/p
+#: C/import-account.page:44
 msgid ""
 "The first time you run <app>Empathy</app>, it will offer to import your "
 "accounts from other instant messaging applications. Currently, the only "
@@ -1996,7 +2005,8 @@ msgstr ""
 "instantanée. Actuellement, la seule application prise en charge est "
 "<app>Pidgin</app>."
 
-#: C/import-account.page:50(item/p)
+#. (itstool) path: item/p
+#: C/import-account.page:50
 msgid ""
 "Run <app>Empathy</app> for the first time. An assistant will offer you a "
 "number of options to create new accounts."
@@ -2004,7 +2014,8 @@ msgstr ""
 "Lancez <app>Empathy</app> pour la première fois. Un assistant vous propose "
 "un certain nombre d'options pour créer de nouveaux comptes."
 
-#: C/import-account.page:54(item/p)
+#. (itstool) path: item/p
+#: C/import-account.page:54
 msgid ""
 "Select <gui>Yes, import my account details from</gui> and click "
 "<gui>Forward</gui>."
@@ -2012,11 +2023,18 @@ msgstr ""
 "Sélectionnez <gui>Oui, importer les détails de mes comptes à partir de</gui> "
 "et cliquez sur <gui>Suivant</gui>."
 
-#: C/import-account.page:58(item/p)
+#. (itstool) path: item/p
+#: C/import-account.page:58
 msgid "Select the check box next to each account you wish to import."
 msgstr "Cochez la case à côté de chaque compte à importer."
 
-#: C/import-account.page:66(note/p)
+#. (itstool) path: item/p
+#: C/import-account.page:61 C/irc-nick-password.page:63
+msgid "Click <gui style=\"button\">Apply</gui>."
+msgstr "Cliquez sur <gui style=\"button\">Appliquer</gui>."
+
+#. (itstool) path: note/p
+#: C/import-account.page:66
 msgid ""
 "It is not currently possible to import accounts after you have completed the "
 "first-run assistant."
@@ -2024,11 +2042,68 @@ msgstr ""
 "Pour l'instant, vous ne pouvez plus importer de comptes après avoir utilisé "
 "l'assistant de première utilisation."
 
+#. (itstool) path: info/desc
+#: C/index.page:28
+msgid ""
+"Empathy is the instant messaging application for GNOME. It supports text, "
+"voice and video chat over many protocols."
+msgstr ""
+"Empathy est le client de messagerie instantanée de GNOME. Il prend en charge "
+"les discussions textuelles, vocales et vidéo sous de nombreux protocoles."
+
+#. (itstool) path: info/title
+#: C/index.page:30
+msgctxt "link"
+msgid "Empathy"
+msgstr "Empathy"
+
+#. (itstool) path: info/title
+#: C/index.page:31
+msgctxt "text"
+msgid "Empathy"
+msgstr "Empathy"
+
+#. (itstool) path: page/title
+#: C/index.page:34
+msgid "<_:media-1/> Empathy"
+msgstr "<_:media-1/> Empathy"
+
+#. (itstool) path: section/title
+#: C/index.page:40
+msgid "Account Management"
+msgstr "Gestion du compte"
+
+#. (itstool) path: section/title
+#: C/index.page:44
+msgid "Contact Management"
+msgstr "Gestion des contacts"
+
+#. (itstool) path: section/title
+#: C/index.page:48
+msgid "Text Conversations"
+msgstr "Conversations en mode texte"
+
+#. (itstool) path: section/title
+#: C/index.page:52
+msgid "Audio and Video Conversations"
+msgstr "Conversations audio et vidéo"
+
+#. (itstool) path: section/title
+#: C/index.page:56
+msgid "Advanced Actions"
+msgstr "Actions avancées"
+
+#. (itstool) path: section/title
+#: C/index.page:60 C/irc-manage.page:64
+msgid "Common Problems"
+msgstr "Problèmes courants"
+
+#. (itstool) path: media
 #. This is a reference to an external file such as an image or video. When
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#: C/introduction.page:41(media)
+#: C/introduction.page:41
 msgctxt "_"
 msgid ""
 "external ref='figures/empathy-main-window.png' "
@@ -2037,27 +2112,31 @@ msgstr ""
 "external ref='figures/empathy-main-window.png' "
 "md5='54908dcb2588beddb15ef0968d2c2582'"
 
-#: C/introduction.page:9(info/desc)
+#. (itstool) path: info/desc
+#: C/introduction.page:9
 msgid "Introduction to the <app>Empathy</app> instant messenger."
 msgstr "Introduction à la messagerie instantanée <app>Empathy</app>."
 
-#: C/introduction.page:21(page/title)
+#. (itstool) path: page/title
+#: C/introduction.page:21
 msgid "Introduction"
 msgstr "Introduction"
 
-#: C/introduction.page:23(page/p)
+#. (itstool) path: page/p
+#: C/introduction.page:23
 msgid ""
 "<app>Empathy</app> is an instant messaging application for the GNOME "
 "Desktop. It supports text messaging, voice &amp; video calls, file "
-"transfers, and all the most used messaging systems such as MSN and Google "
+"transfers, and all the most used messaging systems such as Jabber and Google "
 "Talk."
 msgstr ""
 "<app>Empathy</app> est un client de messagerie instantanée pour "
 "l'environnement de bureau GNOME. Il prend en charge la messagerie textuelle, "
 "les appels audio et vidéo, le transfert de fichiers et tous les systèmes de "
-"messagerie les plus utilisés comme MSN et Google Talk."
+"messagerie les plus utilisés comme Jabber et Google Talk."
 
-#: C/introduction.page:28(page/p)
+#. (itstool) path: page/p
+#: C/introduction.page:28
 msgid ""
 "<app>Empathy</app> includes features that help you better collaborate while "
 "at work, and that let you easily keep in touch with your friends."
@@ -2066,7 +2145,8 @@ msgstr ""
 "collaborer au travail et qui vous permettent de rester facilement en contact "
 "avec vos amis."
 
-#: C/introduction.page:32(page/p)
+#. (itstool) path: page/p
+#: C/introduction.page:32
 msgid ""
 "Using <app>Empathy</app>, you can group all the conversations in a single "
 "window, have multiple windows for different kind of conversations, easily "
@@ -2078,27 +2158,33 @@ msgstr ""
 "différents types de conversations, faire facilement une recherche dans vos "
 "conversations précédentes et partager votre bureau en seulement deux clics."
 
-#: C/introduction.page:39(figure/title)
+#. (itstool) path: figure/title
+#: C/introduction.page:39
 msgid "<gui>Contact List</gui> window"
 msgstr "Fenêtre <gui>Liste des contacts</gui>"
 
-#: C/introduction.page:40(figure/desc)
+#. (itstool) path: figure/desc
+#: C/introduction.page:40
 msgid "<app>Empathy</app> main window"
 msgstr "Fenêtre principale d'<app>Empathy</app>"
 
-#: C/introduction.page:42(media/p)
+#. (itstool) path: media/p
+#: C/introduction.page:42
 msgid "<app>Empathy</app> main window."
 msgstr "Fenêtre principale d' <app>Empathy</app>."
 
-#: C/irc-commands.page:7(info/desc)
+#. (itstool) path: info/desc
+#: C/irc-commands.page:7
 msgid "The supported IRC commands."
 msgstr "Les commandes IRC prises en charge."
 
-#: C/irc-commands.page:18(page/title)
+#. (itstool) path: page/title
+#: C/irc-commands.page:18
 msgid "Supported IRC commands"
 msgstr "Commandes IRC prises en charge"
 
-#: C/irc-commands.page:19(page/p)
+#. (itstool) path: page/p
+#: C/irc-commands.page:19
 msgid ""
 "To see the list of the supported IRC commands, in a chat room type <input>/"
 "help</input> and press <key>Enter</key>."
@@ -2106,21 +2192,25 @@ msgstr ""
 "Pour voir la liste des commandes IRC prises en charge dans un salon de "
 "discussion, saisissez <input>/help</input> et appuyez sur <key>Entrée</key>."
 
-#: C/irc-commands.page:24(note/p)
+#. (itstool) path: note/p
+#: C/irc-commands.page:24
 msgid "All commands available have a small description on their usage."
 msgstr ""
 "Toutes les commandes disponibles disposent d'une courte description de leur "
 "mode d'emploi."
 
-#: C/irc-join-pwd.page:9(info/desc)
+#. (itstool) path: info/desc
+#: C/irc-join-pwd.page:9
 msgid "Enter password-protected IRC chat rooms."
 msgstr "Entrer dans les salons de discussions IRC protégés par mot de passe."
 
-#: C/irc-join-pwd.page:25(page/title)
+#. (itstool) path: page/title
+#: C/irc-join-pwd.page:25
 msgid "Join a protected IRC chat room"
 msgstr "Rejoindre un salon de discussion protégé IRC"
 
-#: C/irc-join-pwd.page:27(page/p)
+#. (itstool) path: page/p
+#: C/irc-join-pwd.page:27
 msgid ""
 "On some IRC networks, private IRC rooms may be protected with a password. If "
 "you know the password, use the following steps to join:"
@@ -2129,12 +2219,14 @@ msgstr ""
 "mot de passe. Si vous connaissez le mot de passe, suivez les étapes "
 "suivantes pour le rejoindre :"
 
-#: C/irc-join-pwd.page:33(item/p)
+#. (itstool) path: item/p
+#: C/irc-join-pwd.page:33
 msgid "<link xref=\"irc-join-room\">Join the room</link> as normal."
 msgstr ""
 "<link xref=\"irc-join-room\">Rejoindre le salon</link> comme d'habitude."
 
-#: C/irc-join-pwd.page:38(item/p)
+#. (itstool) path: item/p
+#: C/irc-join-pwd.page:38
 msgid ""
 "Empathy will prompt you for a password. Enter the password for the IRC chat "
 "room and click <gui style=\"button\">Join</gui>."
@@ -2142,15 +2234,18 @@ msgstr ""
 "Empathy vous demandera un mot de passe. Saisissez le mot de passe du salon "
 "de discussion IRC et cliquez sur <gui style=\"button\">Rejoindre</gui>."
 
-#: C/irc-join-room.page:8(info/desc)
+#. (itstool) path: info/desc
+#: C/irc-join-room.page:8
 msgid "Join an IRC channel."
 msgstr "Rejoindre un salon IRC."
 
-#: C/irc-join-room.page:31(page/title)
+#. (itstool) path: page/title
+#: C/irc-join-room.page:31
 msgid "Join an IRC chat room"
 msgstr "Rejoindre un salon de discussion IRC"
 
-#: C/irc-join-room.page:33(page/p)
+#. (itstool) path: page/p
+#: C/irc-join-room.page:33
 msgid ""
 "You can join IRC chat rooms (also known as IRC channels) on any IRC network "
 "you’re connected to. To connect to an IRC network, see <link xref=\"add-"
@@ -2161,7 +2256,8 @@ msgstr ""
 "connecter à un réseau IRC, consultez <link xref=\"add-account\"/> et <link "
 "xref=\"account-irc\"/>."
 
-#: C/irc-join-room.page:45(item/p)
+#. (itstool) path: item/p
+#: C/irc-join-room.page:45
 msgid ""
 "From the <gui>Account</gui> drop-down list, select the IRC account that "
 "corresponds to the network you want to use."
@@ -2169,7 +2265,8 @@ msgstr ""
 "À partir de la liste déroulante <gui>Compte</gui>, sélectionnez le compte "
 "IRC qui correspond au réseau que vous voulez utiliser."
 
-#: C/irc-join-room.page:51(item/p)
+#. (itstool) path: item/p
+#: C/irc-join-room.page:51
 msgid ""
 "In the <gui>Room</gui> text box, type the name of the channel you want to "
 "join. IRC channel names start with the hash character (<sys>#</sys>)."
@@ -2178,30 +2275,36 @@ msgstr ""
 "voulez rejoindre. Les noms d'un salon IRC commencent par un caractère dièse "
 "(<sys>#</sys>)."
 
-#: C/irc-join-room.page:57(item/p)
+#. (itstool) path: item/p
+#: C/irc-join-room.page:57
 msgid "Click <gui>Join</gui> to enter the room."
 msgstr "Cliquez sur <gui>Rejoindre</gui> pour entrer dans le salon."
 
-#: C/irc-join-room.page:64(note/p)
+#. (itstool) path: note/p
+#: C/irc-join-room.page:64
 msgid ""
 "To join multiple rooms, you need to repeat the steps above for each room."
 msgstr ""
 "Pour rejoindre plusieurs salons, vous devez reproduire les étapes ci-dessus "
 "pour chaque salon."
 
-#: C/irc-manage.page:9(info/desc)
+#. (itstool) path: info/desc
+#: C/irc-manage.page:9
 msgid "How to use IRC with <app>Empathy</app>."
 msgstr "Comment utiliser IRC avec <app>Empathy</app>."
 
-#: C/irc-manage.page:23(credit/name)
+#. (itstool) path: credit/name
+#: C/irc-manage.page:23
 msgid "Sindhu S"
 msgstr "Sindhu S"
 
-#: C/irc-manage.page:39(page/title)
+#. (itstool) path: page/title
+#: C/irc-manage.page:39
 msgid "Internet Relay Chat (IRC)"
 msgstr "Relais de discussion internet (IRC)"
 
-#: C/irc-manage.page:47(when/p)
+#. (itstool) path: when/p
+#: C/irc-manage.page:47
 msgid ""
 "<link action=\"install:telepathy-idle\" xref=\"index\"> Install telepathy-"
 "idle</link>"
@@ -2209,31 +2312,37 @@ msgstr ""
 "<link action=\"install:telepathy-idle\" xref=\"index\"> Installer telepathy-"
 "idle</link>"
 
-#: C/irc-manage.page:55(info/title)
+#. (itstool) path: info/title
+#: C/irc-manage.page:55
 msgctxt "link"
 msgid "IRC Chat Rooms and Conversations"
 msgstr "Salons de discussions et conversations IRC"
 
-#: C/irc-manage.page:57(section/title)
+#. (itstool) path: section/title
+#: C/irc-manage.page:57
 msgid "Chat Rooms and Conversations"
 msgstr "Salons de discussions et conversations"
 
-#: C/irc-manage.page:62(info/title)
+#. (itstool) path: info/title
+#: C/irc-manage.page:62
 msgctxt "link"
 msgid "Common IRC Problems"
 msgstr "Problèmes IRC courants"
 
-#: C/irc-nick-password.page:10(info/desc)
+#. (itstool) path: info/desc
+#: C/irc-nick-password.page:10
 msgid "Protect your nickname to prevent other IRC users from using it."
 msgstr ""
 "Protéger votre pseudonyme pour éviter son utilisation par d'autres "
 "utilisateurs IRC."
 
-#: C/irc-nick-password.page:33(page/title)
+#. (itstool) path: page/title
+#: C/irc-nick-password.page:33
 msgid "Use a nickname password on IRC"
 msgstr "Utilisation d'un mot de passe de pseudonyme sur IRC"
 
-#: C/irc-nick-password.page:35(page/p)
+#. (itstool) path: page/p
+#: C/irc-nick-password.page:35
 msgid ""
 "On some IRC networks, you can register your nickname with a service called "
 "NickServ. By sending special messages to NickServ, you can set your password "
@@ -2246,7 +2355,8 @@ msgstr ""
 "Certains salons de discussion IRC ne vous autorisent pas à les rejoindre "
 "sans pseudonyme enregistré."
 
-#: C/irc-nick-password.page:40(page/p)
+#. (itstool) path: page/p
+#: C/irc-nick-password.page:40
 msgid ""
 "<app>Empathy</app> does not currently support nickname registration. Some "
 "IRC networks, however, will automatically forward a <em>server password</em> "
@@ -2261,16 +2371,19 @@ msgstr ""
 "NickServ. Le réseau très répandu freenode est connu pour posséder cette "
 "fonctionnalité."
 
-#: C/irc-nick-password.page:46(page/p)
+#. (itstool) path: page/p
+#: C/irc-nick-password.page:46
 msgid "To set an IRC server password:"
 msgstr "Pour définir un mot de passe de serveur IRC :"
 
-#: C/irc-nick-password.page:54(item/p)
+#. (itstool) path: item/p
+#: C/irc-nick-password.page:54
 msgid "Select the IRC account from the list on the left of the dialog."
 msgstr ""
 "Sélectionnez le compte IRC dans la liste à gauche dans la boîte de dialogue,"
 
-#: C/irc-nick-password.page:57(item/p)
+#. (itstool) path: item/p
+#: C/irc-nick-password.page:57
 msgid ""
 "In the <gui>Password</gui> field, type the password you used to register "
 "your nikcname."
@@ -2278,7 +2391,8 @@ msgstr ""
 "dans le champ <gui>Mot de Passe</gui>, saisissez le mot de passe que vous "
 "avez utilisé pour enregistrer votre pseudonyme."
 
-#: C/irc-nick-password.page:69(note/p)
+#. (itstool) path: note/p
+#: C/irc-nick-password.page:69
 msgid ""
 "These instructions only allow you to use a password-protected nickname on "
 "certain IRC networks. It is not currently possible to register an IRC "
@@ -2289,30 +2403,36 @@ msgstr ""
 "d'enregistrer un pseudonyme IRC ou de modifier le mot de passe de votre "
 "pseudonyme avec <app>Empathy</app>."
 
-#: C/irc-send-file.page:9(info/desc)
+#. (itstool) path: info/desc
+#: C/irc-send-file.page:9
 msgid "<app>Empathy</app> does not currently support sending files using IRC."
 msgstr ""
 "<app>Empathy</app> ne prend pas pour l'instant en charge l'envoi de fichiers "
 "par IRC."
 
-#: C/irc-send-file.page:31(page/title)
+#. (itstool) path: page/title
+#: C/irc-send-file.page:31
 msgid "Send files over IRC"
 msgstr "Envoi de fichiers sur IRC"
 
-#: C/irc-send-file.page:33(page/p)
+#. (itstool) path: page/p
+#: C/irc-send-file.page:33
 msgid "It is not currently possible to send files using IRC."
 msgstr ""
 "Il est actuellement impossible d'envoyer des fichiers en utilisant IRC."
 
-#: C/irc-start-conversation.page:8(info/desc)
+#. (itstool) path: info/desc
+#: C/irc-start-conversation.page:8
 msgid "Start a conversation with an IRC contact."
 msgstr "Démarrer une conversation avec un contact IRC."
 
-#: C/irc-start-conversation.page:30(page/title)
+#. (itstool) path: page/title
+#: C/irc-start-conversation.page:30
 msgid "Chat with somebody on IRC"
 msgstr "Discussion avec quelqu'un sur IRC"
 
-#: C/irc-start-conversation.page:32(page/p)
+#. (itstool) path: page/p
+#: C/irc-start-conversation.page:32
 msgid ""
 "You can hold private conversations with other IRC users, outside of the "
 "public IRC chat rooms. To start a conversation with another IRC user:"
@@ -2321,7 +2441,8 @@ msgstr ""
 "IRC, en dehors des salons de discussions publics IRC. Pour démarrer une "
 "conversation avec un autre utilisateur IRC :"
 
-#: C/irc-start-conversation.page:37(item/p)
+#. (itstool) path: item/p
+#: C/irc-start-conversation.page:37
 msgid ""
 "In the contact list for an IRC chat room, double click the name of the user "
 "you want to chat with. Alternatively, right click the name of the user and "
@@ -2332,7 +2453,8 @@ msgstr ""
 "faire un clic droit sur le nom de l'utilisateur et sélectionner "
 "<gui>Discuter</gui>."
 
-#: C/irc-start-conversation.page:45(item/p)
+#. (itstool) path: item/p
+#: C/irc-start-conversation.page:45
 msgid ""
 "The IRC room contact list is not the same as <app>Empathy</app> contact "
 "list. It contains a list of users in the IRC chat room you joined. Different "
@@ -2343,7 +2465,8 @@ msgstr ""
 "vous avez rejoint. Des salons de discussion différents peuvent avoir "
 "différents contacts répertoriés."
 
-#: C/irc-start-conversation.page:52(item/p)
+#. (itstool) path: item/p
+#: C/irc-start-conversation.page:52
 msgid ""
 "The IRC room contact list is usually on the right side of the IRC room "
 "window. If you do not see it, choose <guiseq><gui>Conversation</"
@@ -2354,15 +2477,18 @@ msgstr ""
 "<guiseq><gui>Conversation</gui><gui>Afficher la liste des contacts</gui></"
 "guiseq>."
 
-#: C/license.page:8(info/desc)
+#. (itstool) path: info/desc
+#: C/license.page:8
 msgid "Legal information."
 msgstr "Informations légales."
 
-#: C/license.page:11(page/title)
+#. (itstool) path: page/title
+#: C/license.page:11
 msgid "License"
 msgstr "Licence"
 
-#: C/license.page:12(page/p)
+#. (itstool) path: page/p
+#: C/license.page:12
 msgid ""
 "This work is distributed under a CreativeCommons Attribution-Share Alike 3.0 "
 "Unported license."
@@ -2370,35 +2496,43 @@ msgstr ""
 "Cette œuvre est distribuée sous licence Creative Commons Paternité-Partage "
 "des Conditions Initiales à l'Identique 3.0 Unported."
 
-#: C/license.page:20(page/p)
+#. (itstool) path: page/p
+#: C/license.page:20
 msgid "You are free:"
 msgstr "Vous êtes libre :"
 
-#: C/license.page:25(item/title)
+#. (itstool) path: item/title
+#: C/license.page:25
 msgid "<em>To share</em>"
 msgstr "<em>de partager</em>"
 
-#: C/license.page:26(item/p)
+#. (itstool) path: item/p
+#: C/license.page:26
 msgid "To copy, distribute and transmit the work."
 msgstr "de reproduire, distribuer et communiquer cette création."
 
-#: C/license.page:29(item/title)
+#. (itstool) path: item/title
+#: C/license.page:29
 msgid "<em>To remix</em>"
 msgstr "<em>de modifier</em>"
 
-#: C/license.page:30(item/p)
+#. (itstool) path: item/p
+#: C/license.page:30
 msgid "To adapt the work."
 msgstr "d'adapter cette création,"
 
-#: C/license.page:33(page/p)
+#. (itstool) path: page/p
+#: C/license.page:33
 msgid "Under the following conditions:"
 msgstr "selon les conditions suivantes :"
 
-#: C/license.page:38(item/title)
+#. (itstool) path: item/title
+#: C/license.page:38
 msgid "<em>Attribution</em>"
 msgstr "<em>Paternité</em>"
 
-#: C/license.page:39(item/p)
+#. (itstool) path: item/p
+#: C/license.page:39
 msgid ""
 "You must attribute the work in the manner specified by the author or "
 "licensor (but not in any way that suggests that they endorse you or your use "
@@ -2409,11 +2543,13 @@ msgstr ""
 "autorisation (mais pas d'une manière qui suggérerait qu'ils vous soutiennent "
 "ou approuvent votre utilisation de l'œuvre)."
 
-#: C/license.page:46(item/title)
+#. (itstool) path: item/title
+#: C/license.page:46
 msgid "<em>Share Alike</em>"
 msgstr "<em>Partage des conditions initiales à l'identique</em>"
 
-#: C/license.page:47(item/p)
+#. (itstool) path: item/p
+#: C/license.page:47
 msgid ""
 "If you alter, transform, or build upon this work, you may distribute the "
 "resulting work only under the same, similar or a compatible license."
@@ -2422,7 +2558,8 @@ msgstr ""
 "droit de distribuer la création qui en résulte que sous un contrat identique "
 "à celui-ci."
 
-#: C/license.page:53(page/p)
+#. (itstool) path: page/p
+#: C/license.page:53
 msgid ""
 "For the full text of the license, see the <link href=\"http://"
 "creativecommons.org/licenses/by-sa/3.0/legalcode\">CreativeCommons website</"
@@ -2434,19 +2571,23 @@ msgstr ""
 "CreativeCommons</link> ou lisez in extenso le <link href=\"http://"
 "creativecommons.org/licenses/by-sa/3.0/\">contrat Commons</link>."
 
-#: C/link-contacts.page:11(info/desc)
+#. (itstool) path: info/desc
+#: C/link-contacts.page:11
 msgid "Merge and separate different contacts into a single one."
 msgstr "Lier et séparer différents contacts en un seul."
 
-#: C/link-contacts.page:19(credit/name)
+#. (itstool) path: credit/name
+#: C/link-contacts.page:19
 msgid "Shobha Tyagi"
 msgstr "Shobha Tyagi"
 
-#: C/link-contacts.page:29(page/title)
+#. (itstool) path: page/title
+#: C/link-contacts.page:29
 msgid "Link and unlink contacts"
 msgstr "Association, séparation de contacts"
 
-#: C/link-contacts.page:30(page/p)
+#. (itstool) path: page/p
+#: C/link-contacts.page:30
 msgid ""
 "If one or more of your contacts has multiple accounts with different "
 "messaging services, you can combine these accounts into a single contact."
@@ -2454,7 +2595,8 @@ msgstr ""
 "Si un ou plusieurs de vos contacts ont plusieurs comptes de différents "
 "services de messagerie, vous pouvez lier ces contacts en un seul."
 
-#: C/link-contacts.page:34(page/p)
+#. (itstool) path: page/p
+#: C/link-contacts.page:34
 msgid ""
 "The resulting contact is called a <em>meta-contact</em>: a contact composed "
 "from different single contacts."
@@ -2462,7 +2604,8 @@ msgstr ""
 "La liaison crée un contact appelé <em>méta-contact</em> : un contact composé "
 "de plusieurs contacts distincts."
 
-#: C/link-contacts.page:38(page/p)
+#. (itstool) path: page/p
+#: C/link-contacts.page:38
 msgid ""
 "Suppose you have a contact called Jane Smith who is using three different "
 "messaging services like:"
@@ -2470,31 +2613,38 @@ msgstr ""
 "Supposons que vous ayez un contact Jean Bonneau qui utilise trois services "
 "de messagerie différents comme :"
 
-#: C/link-contacts.page:44(item/p)
-msgid "janes@facebook"
-msgstr "jean@facebook"
-
-#: C/link-contacts.page:49(item/p)
+#. (itstool) path: item/p
+#: C/link-contacts.page:44
 msgid "jane.smith@gmail"
 msgstr "jean.bonneau@gmail"
 
-#: C/link-contacts.page:54(item/p)
+#. (itstool) path: item/p
+#: C/link-contacts.page:49
 msgid "jane_smith@hotmail"
 msgstr "jean_bonneau@hotmail"
 
-#: C/link-contacts.page:59(page/p)
+#. (itstool) path: item/p
+#: C/link-contacts.page:54
+msgid "janes@yahoo"
+msgstr "jean@yahoo"
+
+#. (itstool) path: page/p
+#: C/link-contacts.page:59
 msgid "You can combine these contacts into a single Jane Smith one."
 msgstr "vous pouvez lier ces contacts en un seul Jean Bonneau."
 
-#: C/link-contacts.page:63(section/title)
+#. (itstool) path: section/title
+#: C/link-contacts.page:63
 msgid "Link contacts"
 msgstr "Association de contacts"
 
-#: C/link-contacts.page:64(section/p)
+#. (itstool) path: section/p
+#: C/link-contacts.page:64
 msgid "The way you can link your contacts is as follows:"
 msgstr "Pour associer vos contacts :"
 
-#: C/link-contacts.page:69(item/p)
+#. (itstool) path: item/p
+#: C/link-contacts.page:69
 msgid ""
 "Press the tick button to select entries you want to link. This will enable "
 "<em>selection mode</em> and you can see a checkbox for each entry."
@@ -2503,7 +2653,8 @@ msgstr ""
 "associer. Ceci active le <em>mode sélection</em> et ajoute une case à cocher "
 "à chaque entrée,"
 
-#: C/link-contacts.page:75(item/p)
+#. (itstool) path: item/p
+#: C/link-contacts.page:75
 msgid ""
 "Tick the checkboxes that correspond to the <app>Contacts</app> entries which "
 "belong to the same contact."
@@ -2511,27 +2662,33 @@ msgstr ""
 "cochez les cases correspondant aux entrées <app>Contacts</app> qui "
 "appartiennent au même contact,"
 
-#: C/link-contacts.page:81(item/p)
+#. (itstool) path: item/p
+#: C/link-contacts.page:81
 msgid "Press <gui style=\"button\">Link</gui>."
 msgstr "appuyez sur <gui style=\"button\">Lier</gui>."
 
-#: C/link-contacts.page:86(section/p)
+#. (itstool) path: section/p
+#: C/link-contacts.page:86
 msgid "Repeat steps 3 and 4 in order to link other contacts."
 msgstr "Répéter les étapes 3 et 4 dans l'ordre pour lier d'autres contacts."
 
-#: C/link-contacts.page:92(section/title)
+#. (itstool) path: section/title
+#: C/link-contacts.page:92
 msgid "Unlink contacts"
 msgstr "Dissocier des contacts"
 
-#: C/link-contacts.page:93(section/p)
+#. (itstool) path: section/p
+#: C/link-contacts.page:93
 msgid "To unlink a linked contact:"
 msgstr "Pour dissocier un contact lié :"
 
-#: C/link-contacts.page:98(item/p)
+#. (itstool) path: item/p
+#: C/link-contacts.page:98
 msgid "Select the contact from your list."
 msgstr "sélectionnez le contact dans votre liste,"
 
-#: C/link-contacts.page:103(item/p)
+#. (itstool) path: item/p
+#: C/link-contacts.page:103
 msgid ""
 "Press <gui style=\"button\">Edit</gui> in the top-right corner of "
 "<app>Contacts</app>."
@@ -2539,11 +2696,13 @@ msgstr ""
 "appuyez sur <gui style=\"button\">Édition</gui> dans le coin en haut à "
 "droite de <app>Contacts</app>,"
 
-#: C/link-contacts.page:108(item/p)
+#. (itstool) path: item/p
+#: C/link-contacts.page:108
 msgid "Press <gui style=\"button\">Linked Contacts</gui>."
 msgstr "cliquez sur <gui style=\"button\">Contacts liés</gui>,"
 
-#: C/link-contacts.page:113(item/p)
+#. (itstool) path: item/p
+#: C/link-contacts.page:113
 msgid ""
 "Press <gui style=\"button\">Remove</gui> to unlink an entry from the linked "
 "contact."
@@ -2551,7 +2710,8 @@ msgstr ""
 "appuyez sur <gui style=\"button\">Supprimer</gui> pour dissocier une entrée "
 "du contact lié,"
 
-#: C/link-contacts.page:118(item/p)
+#. (itstool) path: item/p
+#: C/link-contacts.page:118
 msgid ""
 "Press <gui style=\"button\">Close</gui> if you do not want to unlink any "
 "more contacts."
@@ -2559,64 +2719,30 @@ msgstr ""
 "appuyez sur <gui style=\"button\">Fermer</gui> si vous ne voulez pas "
 "dissocier d'autres contacts,"
 
-#: C/link-contacts.page:123(item/p)
+#. (itstool) path: item/p
+#: C/link-contacts.page:123
 msgid "Finally, press <gui style=\"button\">Done</gui> to finish editing."
 msgstr ""
 "enfin, appuyez sur <gui style=\"button\">Fait</gui> pour finir la "
 "modification."
 
-#. This is a reference to an external file such as an image or video. When
-#. the file changes, the md5 hash will change to let you know you need to
-#. update your localized copy. The msgstr is not used at all. Set it to
-#. whatever you like once you have updated your copy of the file.
-#: C/overview.page:38(media)
-msgctxt "_"
-msgid ""
-"external ref='figures/video_overview.png' "
-"md5='6cfcfbd833bf2234537d402185c40596'"
-msgstr ""
-"external ref='figures/video_overview.png' "
-"md5='6cfcfbd833bf2234537d402185c40596'"
-
-#. This is a reference to an external file such as an image or video. When
-#. the file changes, the md5 hash will change to let you know you need to
-#. update your localized copy. The msgstr is not used at all. Set it to
-#. whatever you like once you have updated your copy of the file.
-#: C/overview.page:39(media)
-msgctxt "_"
-msgid ""
-"external ref='figures/conf_overview.png' "
-"md5='74c58668fe89c84060f12f6b70a6b903'"
-msgstr ""
-"external ref='figures/conf_overview.png' "
-"md5='74c58668fe89c84060f12f6b70a6b903'"
-
-#. This is a reference to an external file such as an image or video. When
-#. the file changes, the md5 hash will change to let you know you need to
-#. update your localized copy. The msgstr is not used at all. Set it to
-#. whatever you like once you have updated your copy of the file.
-#: C/overview.page:40(media)
-msgctxt "_"
-msgid ""
-"external ref='figures/croom_overview.png' "
-"md5='e9619d2c8420bc48a880c03dbc1ae084'"
-msgstr ""
-"external ref='figures/croom_overview.png' "
-"md5='e9619d2c8420bc48a880c03dbc1ae084'"
-
-#: C/overview.page:9(info/desc)
+#. (itstool) path: info/desc
+#: C/overview.page:9
 msgid "What instant messaging is and how you can use it."
 msgstr "Qu'est-ce qu'une messagerie instantanée et comment l'utiliser ?"
 
-#: C/overview.page:13(credit/name)
+#. (itstool) path: credit/name
+#: C/overview.page:13
 msgid "Aruna S"
 msgstr "Aruna S"
 
-#: C/overview.page:25(page/title)
+#. (itstool) path: page/title
+#: C/overview.page:25
 msgid "Overview of instant messaging"
 msgstr "Présentation de la messagerie instantanée"
 
-#: C/overview.page:27(page/p)
+#. (itstool) path: page/p
+#: C/overview.page:27
 msgid ""
 "Instant messaging, sometimes abbreviated to IM, is a text-based means to "
 "communicate instantly over the internet and the local network. While some IM "
@@ -2633,19 +2759,23 @@ msgstr ""
 "account\">comptes</link> de différents fournisseurs de services. Certains "
 "d'entre eux prennent même en charge les appels audio et vidéo."
 
-#: C/overview.page:43(td/p)
+#. (itstool) path: td/p
+#: C/overview.page:43
 msgid "Video Conference"
 msgstr "Visioconférence"
 
-#: C/overview.page:44(td/p)
+#. (itstool) path: td/p
+#: C/overview.page:44
 msgid "Group chats"
 msgstr "Groupes de discussion"
 
-#: C/overview.page:45(td/p)
+#. (itstool) path: td/p
+#: C/overview.page:45
 msgid "Chat rooms"
 msgstr "Salons de discussion"
 
-#: C/overview.page:49(page/p)
+#. (itstool) path: page/p
+#: C/overview.page:49
 msgid ""
 "Some instant messaging applications can be used to connect to chat rooms, "
 "online places where like-minded people meet to talk. One popular means to "
@@ -2665,15 +2795,18 @@ msgstr ""
 "discussion privés qui sont <link xref=\"irc-join-pwd\">protégés par un mot "
 "de passe</link> et ouverts uniquement à certains privilégiés."
 
-#: C/prev-conv.page:8(info/desc)
+#. (itstool) path: info/desc
+#: C/prev-conv.page:8
 msgid "Browse or search your previous conversations."
 msgstr "Parcourir ou rechercher ses conversations précédentes."
 
-#: C/prev-conv.page:36(page/title)
+#. (itstool) path: page/title
+#: C/prev-conv.page:36
 msgid "View previous conversations"
 msgstr "Affichage des conversations précédentes"
 
-#: C/prev-conv.page:38(page/p)
+#. (itstool) path: page/p
+#: C/prev-conv.page:38
 msgid ""
 "<app>Empathy</app> automatically saves all your text conversations you have "
 "with your contacts. You can <link xref=\"#search\">search through all of "
@@ -2686,7 +2819,8 @@ msgstr ""
 "<link xref=\"#browse\">consultez vos conversations précédentes</link> par "
 "contact et par date."
 
-#: C/prev-conv.page:46(note/p)
+#. (itstool) path: note/p
+#: C/prev-conv.page:46
 msgid ""
 "You do not need to be connected to the Internet to view and search your "
 "previous conversations."
@@ -2694,11 +2828,13 @@ msgstr ""
 "Vous n'avez pas besoin d'être connecté à Internet pour afficher et "
 "rechercher parmi vos conversations précédentes."
 
-#: C/prev-conv.page:53(section/title)
+#. (itstool) path: section/title
+#: C/prev-conv.page:53
 msgid "Search previous conversations"
 msgstr "Recherche de conversations précédentes"
 
-#: C/prev-conv.page:55(section/p)
+#. (itstool) path: section/p
+#: C/prev-conv.page:55
 msgid ""
 "You can perform a full-text search through all of your previous "
 "conversations."
@@ -2706,7 +2842,8 @@ msgstr ""
 "Vous pouvez lancer une recherche textuelle dans toutes vos conversations "
 "précédentes."
 
-#: C/prev-conv.page:59(item/p) C/prev-conv.page:87(item/p)
+#. (itstool) path: item/p
+#: C/prev-conv.page:59 C/prev-conv.page:87
 msgid ""
 "From the <gui>Contact List</gui> window, choose <guiseq><gui>View</gui> "
 "<gui>Previous Conversations</gui></guiseq>. Alternatively, press <key>F3</"
@@ -2716,7 +2853,8 @@ msgstr ""
 "<guiseq><gui>Affichage</gui> <gui>Conversations précédentes</gui></guiseq>, "
 "ou appuyez sur <key>F3</key>."
 
-#: C/prev-conv.page:63(item/p)
+#. (itstool) path: item/p
+#: C/prev-conv.page:63
 msgid ""
 "Select an account from the drop-down list in the top. A list of contacts and "
 "chat room for that account will be shown below."
@@ -2725,14 +2863,16 @@ msgstr ""
 "fenêtre. Une liste des contacts et des salons de discussion pour ce compte "
 "s'affiche en dessous."
 
-#: C/prev-conv.page:67(item/p)
+#. (itstool) path: item/p
+#: C/prev-conv.page:67
 msgid ""
 "Type the text you want to search for in the <gui>Search</gui> text field."
 msgstr ""
 "Saisissez le texte que vous voulez rechercher dans le champ <gui>Rechercher</"
 "gui>."
 
-#: C/prev-conv.page:71(item/p)
+#. (itstool) path: item/p
+#: C/prev-conv.page:71
 msgid ""
 "Any conversations that matched your search terms will be shown. By default, "
 "conversations are ordered by date."
@@ -2740,11 +2880,13 @@ msgstr ""
 "Toutes les conversations qui correspondent à vos critères de recherche "
 "s'affichent. Par défaut, elles sont classées par date."
 
-#: C/prev-conv.page:80(section/title)
+#. (itstool) path: section/title
+#: C/prev-conv.page:80
 msgid "Browse previous conversations"
 msgstr "Consultation des conversations précédentes"
 
-#: C/prev-conv.page:82(section/p)
+#. (itstool) path: section/p
+#: C/prev-conv.page:82
 msgid ""
 "You can browse your previous conversations with your contacts or in chat "
 "rooms by date."
@@ -2752,7 +2894,8 @@ msgstr ""
 "Vous pouvez parcourir vos conversations précédentes avec vos contacts ou "
 "dans les salons de discussion en fonction de la date."
 
-#: C/prev-conv.page:91(item/p)
+#. (itstool) path: item/p
+#: C/prev-conv.page:91
 msgid ""
 "Select an account from the drop-down list in the top left. A list of "
 "contacts and chat room for that account will be shown below."
@@ -2761,7 +2904,8 @@ msgstr ""
 "fenêtre. Une liste de contacts et salon de discussion pour ce compte "
 "s'affichent en dessous."
 
-#: C/prev-conv.page:95(item/p)
+#. (itstool) path: item/p
+#: C/prev-conv.page:95
 msgid ""
 "Select a contact or chat room to view your previous conversations from. By "
 "default the most recent conversation will be shown."
@@ -2770,7 +2914,8 @@ msgstr ""
 "conversations précédentes. La conversation la plus récente s'affiche par "
 "défaut."
 
-#: C/prev-conv.page:99(item/p)
+#. (itstool) path: item/p
+#: C/prev-conv.page:99
 msgid ""
 "You can browse your conversations by date. Days on which you had a "
 "conversation with the selected contact will be shown in bold text. Click a "
@@ -2782,7 +2927,8 @@ msgstr ""
 "sur une date pour la sélectionner. Cliquez sur les flèches à côté du mois et "
 "de l'année pour parcourir des dates antérieures."
 
-#: C/prev-conv.page:105(section/p)
+#. (itstool) path: section/p
+#: C/prev-conv.page:105
 msgid ""
 "You can search for text in the conversations by typing into the search field "
 "at the top. The matching conversations will be showed."
@@ -2790,7 +2936,8 @@ msgstr ""
 "Pour rechercher du texte dans les conversations, saisissez-le dans le champ "
 "de recherche en haut. Les conversations correspondantes s'affichent."
 
-#: C/prev-conv.page:111(note/p)
+#. (itstool) path: note/p
+#: C/prev-conv.page:111
 msgid ""
 "You can quickly view the previous conversations with one of your contacts "
 "from the <gui>Contact List</gui> window. Simply right click the contact and "
@@ -2803,7 +2950,8 @@ msgstr ""
 "La fenêtre <gui>Conversations Précédentes</gui> s'ouvre avec ce contact déjà "
 "sélectionné."
 
-#: C/prob-conn-acctdisabled.page:7(info/desc)
+#. (itstool) path: info/desc
+#: C/prob-conn-acctdisabled.page:7
 msgid ""
 "The instant messaging account that you want to use is not enabled in the "
 "list of accounts."
@@ -2811,11 +2959,13 @@ msgstr ""
 "Le compte de messagerie instantanée que vous souhaitez utiliser est "
 "désactivé dans la liste des comptes."
 
-#: C/prob-conn-acctdisabled.page:34(page/title)
+#. (itstool) path: page/title
+#: C/prob-conn-acctdisabled.page:34
 msgid "My account is not enabled"
 msgstr "Mon compte est désactivé"
 
-#: C/prob-conn-acctdisabled.page:36(page/p)
+#. (itstool) path: page/p
+#: C/prob-conn-acctdisabled.page:36
 msgid ""
 "If the instant messaging account that you want to use is not enabled in the "
 "drop-down account list when you try to start a new conversation or join a "
@@ -2826,13 +2976,15 @@ msgstr ""
 "démarrer une nouvelle conversation ou de rejoindre un salon, il se peut que "
 "les détails de votre compte soient incorrects."
 
-#: C/prob-conn-acctdisabled.page:44(item/p) C/prob-conn-auth.page:46(item/p)
-#: C/prob-conn-neterror.page:54(item/p)
+#. (itstool) path: item/p
+#: C/prob-conn-acctdisabled.page:44 C/prob-conn-auth.page:46
+#: C/prob-conn-neterror.page:54
 msgid ""
 "Make sure that you are connected to the Internet, or to a local area network."
 msgstr "Assurez-vous d'être connecté à Internet ou à un réseau local."
 
-#: C/prob-conn-acctdisabled.page:49(item/p)
+#. (itstool) path: item/p
+#: C/prob-conn-acctdisabled.page:49
 msgid ""
 "Choose <guiseq><gui>Edit</gui><gui>Accounts</gui></guiseq> and select the "
 "account that is not working."
@@ -2840,15 +2992,16 @@ msgstr ""
 "Choisissez <guiseq><gui>Édition</gui><gui>Comptes</gui></guiseq> et "
 "sélectionnez le compte qui ne fonctionne pas."
 
-#: C/prob-conn-acctdisabled.page:55(item/p) C/prob-conn-auth.page:62(item/p)
+#. (itstool) path: item/p
+#: C/prob-conn-acctdisabled.page:55 C/prob-conn-auth.page:62
 msgid ""
 "Type your username and password again to make sure that they are correct."
 msgstr ""
 "Saisissez de nouveau votre identifiant de connexion et votre mot de passe "
 "pour vous assurer qu'ils sont corrects."
 
-#: C/prob-conn-acctdisabled.page:60(item/p)
-#: C/prob-conn-neterror.page:63(item/p)
+#. (itstool) path: item/p
+#: C/prob-conn-acctdisabled.page:60 C/prob-conn-neterror.page:63
 msgid ""
 "Check in the <gui>Advanced</gui> section that all the details are correct. "
 "You should be able to find these details from the website of the messaging "
@@ -2858,11 +3011,13 @@ msgstr ""
 "corrects. Vous devriez être en mesure de trouver ces détails sur le site Web "
 "du service de messagerie."
 
-#: C/prob-conn-acctdisabled.page:66(item/p)
+#. (itstool) path: item/p
+#: C/prob-conn-acctdisabled.page:66
 msgid "Check that the account is switched on."
 msgstr "Vérifiez que le compte est activé."
 
-#: C/prob-conn-auth.page:9(info/desc)
+#. (itstool) path: info/desc
+#: C/prob-conn-auth.page:9
 msgid ""
 "An error message which says “<gui>Authentication failed</gui>” appears in "
 "the main window."
@@ -2870,11 +3025,13 @@ msgstr ""
 "Le message d'erreur <gui>L'authentification a échoué</gui> apparaît dans la "
 "fenêtre principale."
 
-#: C/prob-conn-auth.page:37(page/title)
+#. (itstool) path: page/title
+#: C/prob-conn-auth.page:37
 msgid "I get a message that says “Authentication failed”"
 msgstr "Affichage du message « L'authentification a échoué »"
 
-#: C/prob-conn-auth.page:39(page/p)
+#. (itstool) path: page/p
+#: C/prob-conn-auth.page:39
 msgid ""
 "This kind of error happens when your instant messaging service is not "
 "allowing you to connect because it does not recognize your username or "
@@ -2884,7 +3041,8 @@ msgstr ""
 "ne vous autorise pas à vous connecter parce qu'il ne reconnaît pas votre "
 "identifiant de connexion ou votre mot de passe pour une certaine raison."
 
-#: C/prob-conn-auth.page:51(item/p)
+#. (itstool) path: item/p
+#: C/prob-conn-auth.page:51
 msgid ""
 "Make sure that you have registered an account with the service you are "
 "trying to connect to. If you do not have an account, most services will not "
@@ -2894,17 +3052,20 @@ msgstr ""
 "essayez de vous connecter. Si vous n'avez pas de compte, la plupart des "
 "services ne vous permettent pas de vous connecter."
 
-#: C/prob-conn-auth.page:58(media/span) C/prob-conn-name.page:44(media/span)
-#: C/prob-conn-neterror.page:59(media/span)
+#. (itstool) path: media/span
+#: C/prob-conn-auth.page:58 C/prob-conn-name.page:44
+#: C/prob-conn-neterror.page:59
 msgid "edit"
 msgstr "edit"
 
-#: C/prob-conn-auth.page:58(item/p) C/prob-conn-name.page:44(item/p)
-#: C/prob-conn-neterror.page:59(item/p)
+#. (itstool) path: item/p
+#: C/prob-conn-auth.page:58 C/prob-conn-name.page:44
+#: C/prob-conn-neterror.page:59
 msgid "Click the <_:media-1/> icon in the error message."
 msgstr "Cliquer sur l' <_:media-1/> icône dans le message d'erreur."
 
-#: C/prob-conn-auth.page:67(item/p)
+#. (itstool) path: item/p
+#: C/prob-conn-auth.page:67
 msgid ""
 "Deselect the <gui>Enabled</gui>, and then select it again to try to "
 "reconnect to the service."
@@ -2912,12 +3073,14 @@ msgstr ""
 "Déconnectez puis reconnectez-vous pour essayer de vous reconnecter au "
 "service."
 
-#: C/prob-conn-name.page:10(info/title)
+#. (itstool) path: info/title
+#: C/prob-conn-name.page:10
 msgctxt "link:error-msg"
 msgid "“Name in use”"
 msgstr "« Nom déjà utilisé »"
 
-#: C/prob-conn-name.page:11(info/desc)
+#. (itstool) path: info/desc
+#: C/prob-conn-name.page:11
 msgid ""
 "An error message which says “<gui>Name in use</gui>” appears in the main "
 "window."
@@ -2925,11 +3088,13 @@ msgstr ""
 "Le message d'erreur <gui>Nom déjà utilisé</gui> s'affiche dans la fenêtre "
 "principale."
 
-#: C/prob-conn-name.page:34(page/title)
+#. (itstool) path: page/title
+#: C/prob-conn-name.page:34
 msgid "I get a message that says “Name in use”"
 msgstr "Affichage du message « Nom utilisé »"
 
-#: C/prob-conn-name.page:36(page/p)
+#. (itstool) path: page/p
+#: C/prob-conn-name.page:36
 msgid ""
 "This kind of error happens when you try to connect to your IRC account and "
 "you are using a nickname that is already being used by someone else on that "
@@ -2939,11 +3104,13 @@ msgstr ""
 "compte IRC avec un pseudonyme déjà utilisé par quelqu'un d'autre sur ce "
 "réseau."
 
-#: C/prob-conn-name.page:50(item/p)
+#. (itstool) path: item/p
+#: C/prob-conn-name.page:50
 msgid "In the <gui>Nickname</gui> text box, type a new nickname."
 msgstr "Saisissez un nouveau <gui>Pseudonyme</gui> dans le champ texte."
 
-#: C/prob-conn-name.page:55(item/p)
+#. (itstool) path: item/p
+#: C/prob-conn-name.page:55
 msgid ""
 "If you have registered that nickname within the network you are using, set "
 "the password for that nickname. For more information, see <link xref=\"irc-"
@@ -2953,7 +3120,8 @@ msgstr ""
 "passe adéquat. Consultez <link xref=\"irc-nick-password\"/> pour plus "
 "d'informations."
 
-#: C/prob-conn-name.page:64(item/p) C/prob-conn-neterror.page:78(item/p)
+#. (itstool) path: item/p
+#: C/prob-conn-name.page:64 C/prob-conn-neterror.page:78
 msgid ""
 "Switch the account off, and then switch it on to try to reconnect to the "
 "service."
@@ -2961,7 +3129,8 @@ msgstr ""
 "Déconnectez puis reconnectez-vous pour essayer de vous reconnecter au "
 "service."
 
-#: C/prob-conn-neterror.page:8(info/desc)
+#. (itstool) path: info/desc
+#: C/prob-conn-neterror.page:8
 msgid ""
 "An error message which says “<gui>Network error</gui>” appears in the main "
 "window."
@@ -2969,11 +3138,13 @@ msgstr ""
 "Le message d'erreur <gui>Erreur réseau</gui> s'affiche dans la fenêtre "
 "principale."
 
-#: C/prob-conn-neterror.page:35(page/title)
+#. (itstool) path: page/title
+#: C/prob-conn-neterror.page:35
 msgid "I get a message that says “Network error”"
 msgstr "Affichage du message « Erreur réseau »"
 
-#: C/prob-conn-neterror.page:43(page/p)
+#. (itstool) path: page/p
+#: C/prob-conn-neterror.page:43
 msgid ""
 "This kind of error happens when <app>Empathy</app> cannot communicate with "
 "the instant messaging service for some reason."
@@ -2982,7 +3153,8 @@ msgstr ""
 "communiquer avec le service de messagerie instantanée pour une quelconque "
 "raison."
 
-#: C/prob-conn-neterror.page:47(page/p)
+#. (itstool) path: page/p
+#: C/prob-conn-neterror.page:47
 msgid ""
 "Also, this kind of error happens when you try to use an IRC account without "
 "setting a nickname."
@@ -2990,36 +3162,43 @@ msgstr ""
 "Ce type d'erreur se produit également lorsque vous essayez d'utiliser un "
 "compte IRC sans définir un pseudonyme."
 
-#: C/prob-conn-neterror.page:86(section/title)
+#. (itstool) path: section/title
+#: C/prob-conn-neterror.page:86
 msgid "Proxy support"
 msgstr "Prise en charge d'un serveur mandataire"
 
-#: C/prob-conn-neterror.page:87(section/p)
+#. (itstool) path: section/p
+#: C/prob-conn-neterror.page:87
 msgid ""
 "At the moment <app>Empathy</app> can not be configured to work with a proxy."
 msgstr ""
 "Pour le moment, <app>Empathy</app> ne peut pas être configuré pour "
 "fonctionner avec un serveur mandataire."
 
-#: C/prob-conn.page:7(info/desc)
+#. (itstool) path: info/desc
+#: C/prob-conn.page:7
 msgid "Diagnose common problems connecting to an instant messaging service."
 msgstr ""
 "Diagnostiquer les problèmes de connexion à un service de messagerie "
 "instantanée."
 
-#: C/prob-conn.page:29(page/title)
+#. (itstool) path: page/title
+#: C/prob-conn.page:29
 msgid "Problems connecting to an instant messaging service"
 msgstr "Problèmes de connexion à un service de messagerie instantanée"
 
-#: C/remove-account.page:8(info/desc)
+#. (itstool) path: info/desc
+#: C/remove-account.page:8
 msgid "Completely remove an account from <app>Empathy</app>."
 msgstr "Supprimer complètement un compte d'<app>Empathy</app>."
 
-#: C/remove-account.page:34(page/title)
+#. (itstool) path: page/title
+#: C/remove-account.page:34
 msgid "Remove an account"
 msgstr "Suppression d'un compte"
 
-#: C/remove-account.page:36(page/p)
+#. (itstool) path: page/p
+#: C/remove-account.page:36
 msgid ""
 "You can completely remove an account from <app>Empathy</app> if you no "
 "longer wish to use the account. If you wish to use the account in "
@@ -3030,7 +3209,8 @@ msgstr ""
 "souhaitez plus l'utiliser. Si vous souhaitez l'utiliser de nouveau sur "
 "<app>Empathy</app> à l'avenir, vous devrez l'ajouter à nouveau."
 
-#: C/remove-account.page:47(item/p)
+#. (itstool) path: item/p
+#: C/remove-account.page:47
 msgid ""
 "Select the account you wish to remove from the accounts list on the left "
 "side of the window."
@@ -3038,11 +3218,13 @@ msgstr ""
 "Sélectionnez le compte que vous souhaitez supprimer de la liste des comptes "
 "dans la partie gauche de la fenêtre."
 
-#: C/remove-account.page:51(item/p)
+#. (itstool) path: item/p
+#: C/remove-account.page:51
 msgid "Click <gui style=\"button\">-</gui>."
 msgstr "Cliquez sur <gui style=\"button\">-</gui>."
 
-#: C/remove-account.page:54(item/p)
+#. (itstool) path: item/p
+#: C/remove-account.page:54
 msgid ""
 "A dialog will be shown asking for confirmation. Click the <gui>Remove</gui> "
 "button to permanently remove the account."
@@ -3050,7 +3232,8 @@ msgstr ""
 "Une boîte de dialogue s'affiche pour vous demander confirmation. Cliquez sur "
 "le bouton <gui>Supprimer</gui> pour supprimer définitivement le compte."
 
-#: C/remove-account.page:60(note/p)
+#. (itstool) path: note/p
+#: C/remove-account.page:60
 msgid ""
 "Even after removing an account, <app>Empathy</app> does not delete your "
 "conversation history for that account."
@@ -3058,15 +3241,18 @@ msgstr ""
 "Même après la suppression d'un compte, <app>Empathy</app> ne supprime pas "
 "les historiques de conversation qui lui sont associés."
 
-#: C/salut-protocol.page:8(info/desc)
+#. (itstool) path: info/desc
+#: C/salut-protocol.page:8
 msgid "Understanding the People Nearby feature."
 msgstr "Comprendre la fonction « Personnes à proximité »."
 
-#: C/salut-protocol.page:33(page/title)
+#. (itstool) path: page/title
+#: C/salut-protocol.page:33
 msgid "What is People Nearby?"
 msgstr "Personnes à proximité"
 
-#: C/salut-protocol.page:40(page/p)
+#. (itstool) path: page/p
+#: C/salut-protocol.page:40
 msgid ""
 "The People Nearby service is a serverless communication service: you do not "
 "need to connect and authenticate to a central server in order to use it."
@@ -3075,7 +3261,8 @@ msgstr ""
 "serveur : vous n'avez pas besoin de vous connecter et de vous authentifier "
 "auprès d'un serveur central pour l'utiliser."
 
-#: C/salut-protocol.page:45(page/p)
+#. (itstool) path: page/p
+#: C/salut-protocol.page:45
 msgid ""
 "This kind of serverless messaging system is restricted to a local area "
 "network and an active Internet connection is not necessary."
@@ -3083,7 +3270,8 @@ msgstr ""
 "Ce type de système de messagerie sans serveur est limité à un réseau local "
 "et donc une connexion active à Internet n'est pas nécessaire."
 
-#: C/salut-protocol.page:49(page/p)
+#. (itstool) path: page/p
+#: C/salut-protocol.page:49
 msgid ""
 "The people that use this service inside the same local area network will be "
 "auto-discovered, and it will be possible to send them messages and files as "
@@ -3093,7 +3281,8 @@ msgstr ""
 "découvertes automatiquement et il est possible de leur envoyer des messages "
 "et des fichiers comme avec d'autres services."
 
-#: C/salut-protocol.page:54(page/p)
+#. (itstool) path: page/p
+#: C/salut-protocol.page:54
 msgid ""
 "All the modern local area networks should be able to support this kind of "
 "service."
@@ -3101,15 +3290,18 @@ msgstr ""
 "Tous les réseaux locaux modernes devraient être en mesure de prendre en "
 "charge ce genre de service."
 
-#: C/send-file.page:8(info/desc)
+#. (itstool) path: info/desc
+#: C/send-file.page:8
 msgid "Send a file from your computer to one of your contacts."
 msgstr "Envoyer un fichier de votre ordinateur à l'un de vos contacts."
 
-#: C/send-file.page:36(page/title)
+#. (itstool) path: page/title
+#: C/send-file.page:36
 msgid "Send files"
 msgstr "Envoi de fichiers"
 
-#: C/send-file.page:45(item/p)
+#. (itstool) path: item/p
+#: C/send-file.page:45
 msgid ""
 "Right click on the contact you want to send a file to, and choose <gui>Send "
 "file</gui>."
@@ -3117,7 +3309,8 @@ msgstr ""
 "Faites un clic droit sur le contact à qui vous voulez envoyer un fichier et "
 "sélectionnez <gui>Envoyer un fichier</gui>."
 
-#: C/send-file.page:50(item/p)
+#. (itstool) path: item/p
+#: C/send-file.page:50
 msgid ""
 "Click on the contact you want to send a file, and choose <guiseq><gui>Edit</"
 "gui> <gui>Contact</gui><gui>Send file</gui></guiseq>."
@@ -3126,15 +3319,18 @@ msgstr ""
 "<guiseq><gui>Édition</gui><gui>Contact</gui><gui>Envoyer un fichier</gui></"
 "guiseq>."
 
-#: C/send-file.page:58(item/p)
+#. (itstool) path: item/p
+#: C/send-file.page:58
 msgid "Select the file to send, and click on <gui>Send</gui>."
 msgstr "Sélectionnez le fichier à envoyer et cliquez sur <gui>Envoyer</gui>."
 
-#: C/send-file.page:63(item/p)
+#. (itstool) path: item/p
+#: C/send-file.page:63
 msgid "The <gui>File Transfers</gui> window will appear."
 msgstr "La fenêtre <gui>Transferts de fichiers</gui> s'affiche."
 
-#: C/send-file.page:66(item/p)
+#. (itstool) path: item/p
+#: C/send-file.page:66
 msgid ""
 "Wait for your contact to accept the file transfer, or click <gui>Stop</gui> "
 "to halt the transfer."
@@ -3142,7 +3338,8 @@ msgstr ""
 "Attendez que votre contact accepte le transfert de fichier, ou cliquez sur "
 "<gui>Arrêter</gui> pour stopper le transfert."
 
-#: C/send-file.page:72(item/p)
+#. (itstool) path: item/p
+#: C/send-file.page:72
 msgid ""
 "Once the transfer is finished, it is possible to close the <gui>File "
 "Transfers</gui> window."
@@ -3150,7 +3347,8 @@ msgstr ""
 "Une fois que le transfert est terminé, vous pouvez fermer la fenêtre "
 "<gui>Transferts de fichiers</gui>."
 
-#: C/send-file.page:80(note/p)
+#. (itstool) path: note/p
+#: C/send-file.page:80
 msgid ""
 "If you have multiple finished transfers listed in the window, click on "
 "<gui>Clear</gui> to empty the list. This will only remove the files from the "
@@ -3160,7 +3358,8 @@ msgstr ""
 "sur <gui>Effacer</gui> pour vider la liste. Cela supprimera les fichiers "
 "uniquement dans la liste mais pas de votre ordinateur."
 
-#: C/send-file.page:87(note/p)
+#. (itstool) path: note/p
+#: C/send-file.page:87
 msgid ""
 "It is possible to send files only using the following services: <em>Jabber</"
 "em>, <em>Google Talk</em> and <em>People Nearby</em>."
@@ -3169,7 +3368,8 @@ msgstr ""
 "suivants : <em>Jabber</em>, <em>Google Talk</em> et <em>Personnes à "
 "proximité</em>."
 
-#: C/send-file.page:93(note/p)
+#. (itstool) path: note/p
+#: C/send-file.page:93
 msgid ""
 "In order to send a file to someone, you need to be connected to the "
 "Internet, or to a local area network."
@@ -3177,15 +3377,18 @@ msgstr ""
 "Pour envoyer un fichier à quelqu'un, vous devez être connecté à Internet ou "
 "à un réseau local."
 
-#: C/send-message.page:8(info/desc)
+#. (itstool) path: info/desc
+#: C/send-message.page:8
 msgid "Send a message to one of your contacts."
 msgstr "Envoyer un message à l'un de ses contacts."
 
-#: C/send-message.page:32(page/title)
+#. (itstool) path: page/title
+#: C/send-message.page:32
 msgid "Send a message to someone"
 msgstr "Envoi d'un message à quelqu'un"
 
-#: C/send-message.page:36(item/p)
+#. (itstool) path: item/p
+#: C/send-message.page:36
 msgid ""
 "From the <gui>Contact List</gui> window, double-click the name of the "
 "contact that you want to have a conversation with."
@@ -3193,7 +3396,8 @@ msgstr ""
 "Dans la fenêtre <gui>Liste des contacts</gui>, faites un double clic sur le "
 "nom du contact avec qui vous voulez entamer une conversation."
 
-#: C/send-message.page:42(item/p)
+#. (itstool) path: item/p
+#: C/send-message.page:42
 msgid ""
 "A new window will open. Type a message into the box at the bottom of the "
 "window and press <key>Enter</key> to send it."
@@ -3201,11 +3405,13 @@ msgstr ""
 "Une nouvelle fenêtre s'ouvre. Saisissez le message dans la boîte de dialogue "
 "en bas de la fenêtre et appuyez sur <key>Entrée</key> pour l'envoyer."
 
-#: C/send-message.page:50(section/title)
+#. (itstool) path: section/title
+#: C/send-message.page:50
 msgid "Send a message to a meta-contact"
 msgstr "Envoi d'un message à un méta-contact"
 
-#: C/send-message.page:58(item/p)
+#. (itstool) path: item/p
+#: C/send-message.page:58
 msgid ""
 "Select the contact you want to have the conversation, and from the menu "
 "select <gui style=\"menuitem\">Chat</gui>."
@@ -3213,20 +3419,24 @@ msgstr ""
 "Sélectionnez le contact avec qui vous voulez entamer une conversation et à "
 "partir du menu, sélectionnez <gui style=\"menuitem\">Discussion</gui>."
 
-#: C/set-custom-status.page:9(info/desc)
+#. (itstool) path: info/desc
+#: C/set-custom-status.page:9
 msgid "Add, edit or delete personal messages for your status."
 msgstr ""
 "Ajouter, modifier ou supprimer les messages personnalisés pour votre état."
 
-#: C/set-custom-status.page:15(credit/name)
+#. (itstool) path: credit/name
+#: C/set-custom-status.page:15
 msgid "Jim Campbell"
 msgstr "Jim Campbell"
 
-#: C/set-custom-status.page:34(page/title)
+#. (itstool) path: page/title
+#: C/set-custom-status.page:34
 msgid "Set a custom message"
 msgstr "Définition d'un message personnalisé"
 
-#: C/set-custom-status.page:36(page/p)
+#. (itstool) path: page/p
+#: C/set-custom-status.page:36
 msgid ""
 "Sometimes you may want to set a custom message for your status, for example "
 "to let people know that you will be unavailable for a certain period of time."
@@ -3235,14 +3445,16 @@ msgstr ""
 "exemple pour que les gens sachent que vous ne serez pas disponible pendant "
 "une certaine période de temps."
 
-#: C/set-custom-status.page:40(page/p)
+#. (itstool) path: page/p
+#: C/set-custom-status.page:40
 msgid ""
 "It is possible to set a custom message based on the different statuses "
 "available."
 msgstr ""
 "Il est possible d'associer un message personnalisé à chaque état disponible."
 
-#: C/set-custom-status.page:46(item/p) C/set-custom-status.page:82(item/p)
+#. (itstool) path: item/p
+#: C/set-custom-status.page:46 C/set-custom-status.page:82
 msgid ""
 "From the <gui>Contact List</gui> window, click on the drop-down list at the "
 "top."
@@ -3250,7 +3462,8 @@ msgstr ""
 "Dans la fenêtre <gui>Liste des contacts</gui>, cliquez sur la liste "
 "déroulante du haut."
 
-#: C/set-custom-status.page:52(item/p)
+#. (itstool) path: item/p
+#: C/set-custom-status.page:52
 msgid ""
 "Select the status you want to add a custom message to. You have to select "
 "the one identified with the label <gui>Custom Message</gui>."
@@ -3259,7 +3472,8 @@ msgstr ""
 "devez sélectionner celui qui est identifié par l'étiquette <gui>Message "
 "personnalisé</gui>."
 
-#: C/set-custom-status.page:58(item/p)
+#. (itstool) path: item/p
+#: C/set-custom-status.page:58
 msgid ""
 "Enter your custom message in the text box at the top of the window, and "
 "press <key>Enter</key> to set the message."
@@ -3267,7 +3481,8 @@ msgstr ""
 "Saisissez votre message personnalisé dans la boîte de dialogue en haut de la "
 "fenêtre et appuyez sur <key>Entrée</key> pour définir le message."
 
-#: C/set-custom-status.page:64(item/p)
+#. (itstool) path: item/p
+#: C/set-custom-status.page:64
 msgid ""
 "If you want to set the custom message as a favorite, saving it in order to "
 "use it again, click on the little heart on the right of the text box where "
@@ -3277,7 +3492,8 @@ msgstr ""
 "l'enregistrer pour pouvoir le réutiliser, cliquez sur le petit cœur à droite "
 "de la boîte de dialogue où vous avez saisi votre message personnalisé."
 
-#: C/set-custom-status.page:69(item/p)
+#. (itstool) path: item/p
+#: C/set-custom-status.page:69
 msgid ""
 "If you do not do it, the custom message will not be available the next time "
 "you use <app>Empathy</app>. It will be saved only for the current session."
@@ -3286,19 +3502,23 @@ msgstr ""
 "la prochaine ouverture d'<app>Empathy</app>. Il n'est conservé que pour la "
 "session actuelle."
 
-#: C/set-custom-status.page:78(section/title)
+#. (itstool) path: section/title
+#: C/set-custom-status.page:78
 msgid "Edit and remove a custom message"
 msgstr "Modification et suppression d'un message personnalisé"
 
-#: C/set-custom-status.page:88(item/p)
+#. (itstool) path: item/p
+#: C/set-custom-status.page:88
 msgid "Select <gui>Edit Custom Message</gui>."
 msgstr "Sélectionnez <gui>Édition des messages personnalisés</gui>."
 
-#: C/set-custom-status.page:95(item/p)
+#. (itstool) path: item/p
+#: C/set-custom-status.page:95
 msgid "To edit a custom message:"
 msgstr "Pour modifier un message personnalisé :"
 
-#: C/set-custom-status.page:100(item/p)
+#. (itstool) path: item/p
+#: C/set-custom-status.page:100
 msgid ""
 "From the <gui>Saved Presets</gui> box, select the status message you want to "
 "edit and double-click on it."
@@ -3306,17 +3526,20 @@ msgstr ""
 "Dans la fenêtre <gui>Édition des messages personnalisés</gui>, sélectionnez "
 "le message d'état que vous voulez modifier et faites un double clic dessus."
 
-#: C/set-custom-status.page:106(item/p)
+#. (itstool) path: item/p
+#: C/set-custom-status.page:106
 msgid "Type the new custom message and press <key>Enter</key> to modify it."
 msgstr ""
 "Saisissez le nouveau message personnalisé et appuyez sur <key>Entrée</key> "
 "pour le modifier."
 
-#: C/set-custom-status.page:113(item/p)
+#. (itstool) path: item/p
+#: C/set-custom-status.page:113
 msgid "To remove a custom message:"
 msgstr "Pour supprimer un message personnalisé :"
 
-#: C/set-custom-status.page:118(item/p)
+#. (itstool) path: item/p
+#: C/set-custom-status.page:118
 msgid ""
 "From the <gui>Saved Presets</gui> box, select the status message you want to "
 "remove."
@@ -3324,15 +3547,18 @@ msgstr ""
 "Dans la fenêtre <gui>Édition des messages personnalisés</gui>, sélectionnez "
 "le message d'état que vous voulez supprimer."
 
-#: C/set-custom-status.page:124(item/p)
+#. (itstool) path: item/p
+#: C/set-custom-status.page:124
 msgid "Click on the <gui>Remove</gui> button."
 msgstr "Cliquez sur le bouton <gui>Enlever</gui>."
 
-#: C/set-custom-status.page:133(item/p)
+#. (itstool) path: item/p
+#: C/set-custom-status.page:133
 msgid "When finished, click on <gui>Close</gui>."
 msgstr "Quand vous avez terminé, cliquez sur <gui>Fermer</gui>."
 
-#: C/set-custom-status.page:140(note/p)
+#. (itstool) path: note/p
+#: C/set-custom-status.page:140
 msgid ""
 "When you edit a custom message, it will not be set as the current status "
 "message. You will need to select it from the <gui>Contact List</gui> window."
@@ -3341,15 +3567,18 @@ msgstr ""
 "message de l'état actuel. Vous devez le sélectionner à partir de la fenêtre "
 "<gui>Liste des contacts</gui>."
 
-#: C/share-desktop.page:7(info/desc)
+#. (itstool) path: info/desc
+#: C/share-desktop.page:7
 msgid "Show your desktop to your contacts."
 msgstr "Montrer son bureau à ses contacts."
 
-#: C/share-desktop.page:33(page/title)
+#. (itstool) path: page/title
+#: C/share-desktop.page:33
 msgid "Share your desktop"
 msgstr "Partage de votre bureau"
 
-#: C/share-desktop.page:35(page/p)
+#. (itstool) path: page/p
+#: C/share-desktop.page:35
 msgid ""
 "It is possible to share your desktop with some of your contacts. You can use "
 "this functionality to show your desktop to your contacts to, for example, "
@@ -3360,7 +3589,8 @@ msgstr ""
 "contacts pour, par exemple, demander de l'aide ou aider vos contacts à "
 "résoudre un problème."
 
-#: C/share-desktop.page:42(note/p)
+#. (itstool) path: note/p
+#: C/share-desktop.page:42
 msgid ""
 "To be able to share your desktop, you need to have a VNC server, which has "
 "support for the feature, installed on your system. <app>Vino</app>, the "
@@ -3370,13 +3600,15 @@ msgstr ""
 "prend en charge cette fonctionnalité, installé sur votre système. <app>Vino</"
 "app>, le serveur VNC de GNOME, dispose du support nécessaire."
 
-#: C/share-desktop.page:51(item/p)
+#. (itstool) path: item/p
+#: C/share-desktop.page:51
 msgid "From the <gui>Contact List</gui> window, do one of the following:"
 msgstr ""
 "Dans la fenêtre <gui>Liste des contacts</gui>, faites l'une des actions "
 "suivantes :"
 
-#: C/share-desktop.page:56(item/p)
+#. (itstool) path: item/p
+#: C/share-desktop.page:56
 msgid ""
 "Select the contact you want to share your desktop with and choose "
 "<guiseq><gui>Edit</gui><gui>Contact</gui> <gui>Share My Desktop</gui></"
@@ -3386,7 +3618,8 @@ msgstr ""
 "choisissez <guiseq><gui>Édition</gui><gui>Contact</gui><gui>Partager mon "
 "bureau</gui></guiseq>."
 
-#: C/share-desktop.page:63(item/p)
+#. (itstool) path: item/p
+#: C/share-desktop.page:63
 msgid ""
 "Right-click on the name of the contact you want to share your desktop with "
 "and select <gui>Share My Desktop</gui>."
@@ -3394,7 +3627,8 @@ msgstr ""
 "Faites un clic droit sur le nom du contact avec qui vous voulez partager "
 "votre bureau et sélectionnez <gui>Partager mon bureau</gui>."
 
-#: C/share-desktop.page:71(item/p)
+#. (itstool) path: item/p
+#: C/share-desktop.page:71
 msgid ""
 "An invitation to view your desktop will be sent to the contact you have "
 "selected. To view your desktop, they will need to accept it."
@@ -3402,7 +3636,8 @@ msgstr ""
 "Une invitation à voir votre bureau est envoyée au contact que vous avez "
 "sélectionné. Pour afficher votre bureau, il doit accepter l'invitation."
 
-#: C/share-desktop.page:77(item/p)
+#. (itstool) path: item/p
+#: C/share-desktop.page:77
 msgid ""
 "You can disconnect the contact from your computer using your desktop sharing "
 "application."
@@ -3410,7 +3645,8 @@ msgstr ""
 "Vous pouvez déconnecter le contact depuis votre ordinateur en utilisant "
 "votre application de partage de bureau."
 
-#: C/share-desktop.page:82(note/p)
+#. (itstool) path: note/p
+#: C/share-desktop.page:82
 msgid ""
 "For more information about how to use the remote desktop sharing "
 "application, refer to its help."
@@ -3418,7 +3654,8 @@ msgstr ""
 "Pour plus d'informations sur la façon d'utiliser l'application de partage de "
 "bureau distant, référez-vous à son manuel d'aide."
 
-#: C/share-desktop.page:90(page/p)
+#. (itstool) path: page/p
+#: C/share-desktop.page:90
 msgid ""
 "When you share your desktop with someone else, it is possible to experience "
 "system performance slowdown and low Internet speed."
@@ -3426,7 +3663,8 @@ msgstr ""
 "Lorsque vous partagez votre bureau avec quelqu'un d'autre, il est possible "
 "de constater un ralentissement des performances du système et du réseau."
 
-#: C/share-desktop.page:96(note/p)
+#. (itstool) path: note/p
+#: C/share-desktop.page:96
 msgid ""
 "Some of your contacts may not be able to use this feature. It is necessary "
 "for them to have version 2.28, or newer, of <app>Empathy</app> and a "
@@ -3437,68 +3675,28 @@ msgstr ""
 "2.28 d'<app>Empathy</app> et d'une application compatible avec l'affichage "
 "de bureau distant, installée sur leur système."
 
-#. This is a reference to an external file such as an image or video. When
-#. the file changes, the md5 hash will change to let you know you need to
-#. update your localized copy. The msgstr is not used at all. Set it to
-#. whatever you like once you have updated your copy of the file.
-#: C/status-icons.page:40(media)
-msgctxt "_"
-msgid ""
-"external ref='figures/available.png' md5='2196b2f0ad4ce26fdb7b9d48e75d1947'"
-msgstr ""
-"external ref='figures/available.png' md5='2196b2f0ad4ce26fdb7b9d48e75d1947'"
-
-#. This is a reference to an external file such as an image or video. When
-#. the file changes, the md5 hash will change to let you know you need to
-#. update your localized copy. The msgstr is not used at all. Set it to
-#. whatever you like once you have updated your copy of the file.
-#: C/status-icons.page:46(media)
-msgctxt "_"
-msgid "external ref='figures/busy.png' md5='15eb2adff5faedf97b0cb9105d09410a'"
-msgstr "external ref='figures/busy.png' md5='15eb2adff5faedf97b0cb9105d09410a'"
-
-#. This is a reference to an external file such as an image or video. When
-#. the file changes, the md5 hash will change to let you know you need to
-#. update your localized copy. The msgstr is not used at all. Set it to
-#. whatever you like once you have updated your copy of the file.
-#: C/status-icons.page:54(media)
-msgctxt "_"
-msgid "external ref='figures/away.png' md5='9c504d6ffa0cf1a9cc8933d16e1bea33'"
-msgstr "external ref='figures/away.png' md5='9c504d6ffa0cf1a9cc8933d16e1bea33'"
-
-#. This is a reference to an external file such as an image or video. When
-#. the file changes, the md5 hash will change to let you know you need to
-#. update your localized copy. The msgstr is not used at all. Set it to
-#. whatever you like once you have updated your copy of the file.
-#.
-#. This is a reference to an external file such as an image or video. When
-#. the file changes, the md5 hash will change to let you know you need to
-#. update your localized copy. The msgstr is not used at all. Set it to
-#. whatever you like once you have updated your copy of the file.
-#: C/status-icons.page:63(media) C/status-icons.page:70(media)
-msgctxt "_"
-msgid ""
-"external ref='figures/offline.png' md5='c5b0c21181cbd6e13f8909243c0fa964'"
-msgstr ""
-"external ref='figures/offline.png' md5='c5b0c21181cbd6e13f8909243c0fa964'"
-
-#: C/status-icons.page:8(info/desc)
+#. (itstool) path: info/desc
+#: C/status-icons.page:8
 msgid "Understanding the various statuses and status icons."
 msgstr "Comprendre les différents états et leurs icônes respectives."
 
-#: C/status-icons.page:36(page/title)
+#. (itstool) path: page/title
+#: C/status-icons.page:36
 msgid "Status Types and Icons"
 msgstr "Types d'états et icônes"
 
-#: C/status-icons.page:40(media/span)
+#. (itstool) path: media/span
+#: C/status-icons.page:40
 msgid "Available icon"
 msgstr "icône disponible"
 
-#: C/status-icons.page:40(item/title)
+#. (itstool) path: item/title
+#: C/status-icons.page:40
 msgid "<_:media-1/> <gui>Available</gui>"
 msgstr "<_:media-1/> <gui>Disponible</gui>"
 
-#: C/status-icons.page:42(item/p)
+#. (itstool) path: item/p
+#: C/status-icons.page:42
 msgid ""
 "Use the <em>Available</em> status when you are at your computer and able to "
 "chat with your contacts. You can set a custom message for this status."
@@ -3507,15 +3705,18 @@ msgstr ""
 "enclin à discuter avec vos contacts. Vous pouvez définir un message "
 "personnalisé pour cet état."
 
-#: C/status-icons.page:46(media/span)
+#. (itstool) path: media/span
+#: C/status-icons.page:46
 msgid "Busy icon"
 msgstr "icône occupé"
 
-#: C/status-icons.page:46(item/title)
+#. (itstool) path: item/title
+#: C/status-icons.page:46
 msgid "<_:media-1/> <gui>Busy</gui>"
 msgstr "<_:media-1/> <gui>Occupé</gui>"
 
-#: C/status-icons.page:48(item/p)
+#. (itstool) path: item/p
+#: C/status-icons.page:48
 msgid ""
 "Use the <em>Busy</em> status to let your contacts know that you don’t want "
 "to chat right now. They can still contact you, for instance if they have "
@@ -3530,15 +3731,18 @@ msgstr ""
 "notification et de sons lorsque vous êtes occupé. Vous pouvez définir un "
 "message personnalisé pour cet état."
 
-#: C/status-icons.page:54(media/span)
+#. (itstool) path: media/span
+#: C/status-icons.page:54
 msgid "Away icon"
 msgstr "icône absent"
 
-#: C/status-icons.page:54(item/title)
+#. (itstool) path: item/title
+#: C/status-icons.page:54
 msgid "<_:media-1/> <gui>Away</gui>"
 msgstr "<_:media-1/> <gui>Absent</gui>"
 
-#: C/status-icons.page:56(item/p)
+#. (itstool) path: item/p
+#: C/status-icons.page:56
 msgid ""
 "Use the <em>Away</em> status when you are going away from your computer. "
 "<app>Empathy</app> automatically sets your status to Away if you do not use "
@@ -3553,15 +3757,18 @@ msgstr ""
 "de bulles de notification et de sons lorsque vous êtes absent. Vous pouvez "
 "définir un message personnalisé pour cet état."
 
-#: C/status-icons.page:63(media/span) C/status-icons.page:70(media/span)
+#. (itstool) path: media/span
+#: C/status-icons.page:63 C/status-icons.page:70
 msgid "Offline icon"
 msgstr "icône hors-ligne"
 
-#: C/status-icons.page:63(item/title)
+#. (itstool) path: item/title
+#: C/status-icons.page:63
 msgid "<_:media-1/> <gui>Invisible</gui>"
 msgstr "<_:media-1/> <gui>Invisible</gui>"
 
-#: C/status-icons.page:65(item/p)
+#. (itstool) path: item/p
+#: C/status-icons.page:65
 msgid ""
 "When you set your status to <em>Invisible</em>, you will appear as offline "
 "to your contacts. You will still be connected to your accounts, and you "
@@ -3572,11 +3779,13 @@ msgstr ""
 "vous pouvez encore voir les états de vos contacts et engager des "
 "conversations avec eux."
 
-#: C/status-icons.page:70(item/title)
+#. (itstool) path: item/title
+#: C/status-icons.page:70
 msgid "<_:media-1/> <gui>Offline</gui>"
 msgstr "<_:media-1/> <gui>Hors-ligne</gui>"
 
-#: C/status-icons.page:72(item/p)
+#. (itstool) path: item/p
+#: C/status-icons.page:72
 msgid ""
 "Setting your status to <em>Offline</em> disconnects you from all of your "
 "accounts."
@@ -3584,15 +3793,18 @@ msgstr ""
 "Définissez votre état à <em>Déconnecté</em> pour vous déconnecter de tous "
 "vos comptes."
 
-#: C/video-call.page:11(info/desc)
+#. (itstool) path: info/desc
+#: C/video-call.page:11
 msgid "Start a video conversation with one of your contacts."
 msgstr "Démarrer une conversation vidéo avec l'un de ses contacts."
 
-#: C/video-call.page:37(page/title)
+#. (itstool) path: page/title
+#: C/video-call.page:37
 msgid "Start a video conversation"
 msgstr "Démarrage d'une conversation vidéo"
 
-#: C/video-call.page:39(page/p)
+#. (itstool) path: page/p
+#: C/video-call.page:39
 msgid ""
 "If you have a webcam, you can call your contacts and have a video "
 "conversation with them. This feature only works with certain types of "
@@ -3604,15 +3816,17 @@ msgstr ""
 "certains types de compte et il est nécessaire que l'autre personne possède "
 "également une application qui prenne en charge les appels vidéo."
 
-#: C/video-call.page:46(item/p)
+#. (itstool) path: item/p
+#: C/video-call.page:46
 msgid ""
 "Right-click on the contact that you want to call and select <gui style="
 "\"menuitem\">Video Call</gui>."
 msgstr ""
-"Clique-droit sur le contact que vous voulez appeler, et sélectionnez "
-"<gui style=\"menuitem\">Appel vidéo</gui>."
+"Clique-droit sur le contact que vous voulez appeler, et sélectionnez <gui "
+"style=\"menuitem\">Appel vidéo</gui>."
 
-#: C/video-call.page:54(item/p)
+#. (itstool) path: item/p
+#: C/video-call.page:54
 msgid ""
 "To end the conversation, click on the <gui style=\"button\">hang up</gui> "
 "button."
@@ -3620,7 +3834,8 @@ msgstr ""
 "Pour terminer la conversation, cliquez sur <gui style=\"button\">Raccrocher</"
 "gui>."
 
-#: C/video-call.page:60(note/p)
+#. (itstool) path: note/p
+#: C/video-call.page:60
 msgid ""
 "To turn a video conversation into an audio conversation, choose <guiseq><gui "
 "style=\"menu\">Video</gui><gui style=\"menuitem\">Video Off</gui></guiseq>."
@@ -3629,17 +3844,184 @@ msgstr ""
 "<guiseq><gui style=\"menu\">Vidéo</gui><gui style=\"menuitem\">Vidéo "
 "désactivée</gui></guiseq>."
 
-#: C/video-call.page:65(section/title)
+#. (itstool) path: section/title
+#: C/video-call.page:65
 msgid "Start a video conversation with a meta-contact"
 msgstr "Démarrage d'une conversation vidéo avec un méta-contact"
 
-#: C/video-call.page:73(item/p)
+#. (itstool) path: item/p
+#: C/video-call.page:73
 msgid ""
 "Select the contact you want to have the conversation, and from the menu "
 "select <gui style=\"menuitem\">Video Call</gui>."
 msgstr ""
 "Sélectionnez le contact avec qui vous voulez avoir la conversation, et "
 "sélectionnez <gui style=\"menuitem\">Appel vidéo</gui> dans le menu."
+
+#~ msgctxt "_"
+#~ msgid ""
+#~ "external ref='figures/empathy-logo.png' "
+#~ "md5='1afc419a644e90b16393807e35cb5cb2'"
+#~ msgstr ""
+#~ "external ref='figures/empathy-logo.png' "
+#~ "md5='1afc419a644e90b16393807e35cb5cb2'"
+
+#~ msgctxt "_"
+#~ msgid ""
+#~ "external ref='figures/gtk-add.png' md5='a856b499d8d4681b70b5ce6f25bc5c6d'"
+#~ msgstr ""
+#~ "external ref='figures/gtk-add.png' md5='a856b499d8d4681b70b5ce6f25bc5c6d'"
+
+#~ msgctxt "_"
+#~ msgid ""
+#~ "external ref='figures/gtk-edit.png' md5='4f21b451732817be0604fe3e2c8da98b'"
+#~ msgstr ""
+#~ "external ref='figures/gtk-edit.png' md5='4f21b451732817be0604fe3e2c8da98b'"
+
+#~ msgctxt "_"
+#~ msgid ""
+#~ "external ref='figures/gtk-remove.png' "
+#~ "md5='215e3a325a3dd619874e35c30a018bb6'"
+#~ msgstr ""
+#~ "external ref='figures/gtk-remove.png' "
+#~ "md5='215e3a325a3dd619874e35c30a018bb6'"
+
+#~ msgid ""
+#~ "Some Jabber servers may encrypt data using invalid certificates, or using "
+#~ "certificates from unknown authorities. If you trust the server you are "
+#~ "connecting to, you can select <gui>Ignore SSL certificate errors</gui> to "
+#~ "allow encrypted communication with invalid certificates."
+#~ msgstr ""
+#~ "Certains serveurs Jabber peuvent chiffrer les données en utilisant des "
+#~ "certificats non valides ou provenant d'autorités non reconnues. Si vous "
+#~ "faites confiance au serveur sur lequel vous êtes connecté, vous pouvez "
+#~ "sélectionner <gui>Ignorer les erreurs de certificat SSL</gui> pour "
+#~ "autoriser les communications chiffrées avec des certificats non valides."
+
+#~ msgid ""
+#~ "If you do not already have a registered account, select <gui>Create a new "
+#~ "account on the server</gui>. This feature is not available for all "
+#~ "account types, and may not work with some account providers. See <link "
+#~ "xref=\"create-account\"/> for more information."
+#~ msgstr ""
+#~ "Si vous n'avez pas encore de compte enregistré, sélectionnez <gui>Créer "
+#~ "un nouveau compte sur le serveur</gui>. Cette fonction n'est pas "
+#~ "disponible pour tous les types de compte et peut ne pas fonctionner avec "
+#~ "certains fournisseurs de comptes. Consultez <link xref=\"create-account\"/"
+#~ "> pour plus d'informations."
+
+#~ msgctxt "_"
+#~ msgid "external ref='figures/audio-input-microphone.png' md5='__failed__'"
+#~ msgstr "external ref='figures/audio-input-microphone.png' md5='__failed__'"
+
+#~ msgctxt "_"
+#~ msgid "external ref='figures/camera-web.png' md5='__failed__'"
+#~ msgstr "external ref='figures/camera-web.png' md5='__failed__'"
+
+#~ msgid "Icon"
+#~ msgstr "Icône"
+
+#~ msgid "Description"
+#~ msgstr "Description"
+
+#~ msgid ""
+#~ "<media type=\"image\" mime=\"image/png\" src=\"figures/audio-input-"
+#~ "microphone.png\"> Icon for audio conversation </media>"
+#~ msgstr ""
+#~ "<media type=\"image\" mime=\"image/png\" src=\"figures/audio-input-"
+#~ "microphone.png\"> Icône de conversation audio </media>"
+
+#~ msgid "The contact is able to have an audio conversation."
+#~ msgstr "Le contact est en mesure d'avoir une conversation audio."
+
+#~ msgid ""
+#~ "<media type=\"image\" mime=\"image/png\" src=\"figures/camera-web.png\"> "
+#~ "Icon for video conversation </media>"
+#~ msgstr ""
+#~ "<media type=\"image\" mime=\"image/png\" src=\"figures/camera-web.png\"> "
+#~ "Icône de conversation vidéo </media>"
+
+#~ msgid "The contact is able to have a video conversation."
+#~ msgstr "Le contact est en mesure d'avoir une conversation vidéo."
+
+#~ msgid "Facebook Chat"
+#~ msgstr "Discussion Facebook"
+
+#~ msgid "MSN"
+#~ msgstr "MSN"
+
+#~ msgid "Facebook"
+#~ msgstr "Facebook"
+
+#~ msgid ""
+#~ "Facebook is one of the more popular social networks. It allows users to "
+#~ "create their own profile and to communicate with their friends."
+#~ msgstr ""
+#~ "Facebook est l'un des réseaux sociaux les plus populaires. Il permet aux "
+#~ "utilisateurs de créer leur propre profil et de communiquer avec leurs "
+#~ "amis."
+
+#~ msgid ""
+#~ "To use Facebook to communicate with your friends, you will need to create "
+#~ "a new account from the website: <link href=\"https://www.facebook.com"
+#~ "\">www.facebook.com</link>."
+#~ msgstr ""
+#~ "Pour communiquer avec vos amis en utilisant Facebook, vous devrez créer "
+#~ "un nouveau compte sur leur site Web : <link href=\"https://www.facebook."
+#~ "com\">www.facebook.com</link>."
+
+#~ msgid "<link href=\"https://accountservices.passport.net\">MSN</link>"
+#~ msgstr "<link href=\"https://accountservices.passport.net\">MSN</link>"
+
+#~ msgctxt "_"
+#~ msgid ""
+#~ "external ref='figures/video_overview.png' "
+#~ "md5='6cfcfbd833bf2234537d402185c40596'"
+#~ msgstr ""
+#~ "external ref='figures/video_overview.png' "
+#~ "md5='6cfcfbd833bf2234537d402185c40596'"
+
+#~ msgctxt "_"
+#~ msgid ""
+#~ "external ref='figures/conf_overview.png' "
+#~ "md5='74c58668fe89c84060f12f6b70a6b903'"
+#~ msgstr ""
+#~ "external ref='figures/conf_overview.png' "
+#~ "md5='74c58668fe89c84060f12f6b70a6b903'"
+
+#~ msgctxt "_"
+#~ msgid ""
+#~ "external ref='figures/croom_overview.png' "
+#~ "md5='e9619d2c8420bc48a880c03dbc1ae084'"
+#~ msgstr ""
+#~ "external ref='figures/croom_overview.png' "
+#~ "md5='e9619d2c8420bc48a880c03dbc1ae084'"
+
+#~ msgctxt "_"
+#~ msgid ""
+#~ "external ref='figures/available.png' "
+#~ "md5='2196b2f0ad4ce26fdb7b9d48e75d1947'"
+#~ msgstr ""
+#~ "external ref='figures/available.png' "
+#~ "md5='2196b2f0ad4ce26fdb7b9d48e75d1947'"
+
+#~ msgctxt "_"
+#~ msgid ""
+#~ "external ref='figures/busy.png' md5='15eb2adff5faedf97b0cb9105d09410a'"
+#~ msgstr ""
+#~ "external ref='figures/busy.png' md5='15eb2adff5faedf97b0cb9105d09410a'"
+
+#~ msgctxt "_"
+#~ msgid ""
+#~ "external ref='figures/away.png' md5='9c504d6ffa0cf1a9cc8933d16e1bea33'"
+#~ msgstr ""
+#~ "external ref='figures/away.png' md5='9c504d6ffa0cf1a9cc8933d16e1bea33'"
+
+#~ msgctxt "_"
+#~ msgid ""
+#~ "external ref='figures/offline.png' md5='c5b0c21181cbd6e13f8909243c0fa964'"
+#~ msgstr ""
+#~ "external ref='figures/offline.png' md5='c5b0c21181cbd6e13f8909243c0fa964'"
 
 #~ msgctxt "link"
 #~ msgid "Empathy Internet Messenger"
