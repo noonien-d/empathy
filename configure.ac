@@ -91,6 +91,8 @@ MC_PLUGINS_REQUIRED=5.13.1
 #ifelse(empathy_released, 1, [], [enable_maintainer_mode="yes"])
 #GNOME_MAINTAINER_MODE_DEFINES
 
+PKG_PROG_PKG_CONFIG([0.25])
+
 # tp-account-widgets
 prev_top_build_prefix=$ac_top_build_prefix
 prev_ac_configure_args=$ac_configure_args
@@ -107,7 +109,7 @@ ac_configure_args=$prev_ac_configure_args
 export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:"$ac_top_build_prefix"telepathy-account-widgets/
 PKG_CHECK_MODULES(TPAW, telepathy-account-widgets)
 
-EMPATHY_UOA_PROVIDER=`pkg-config --variable=uoa_provider telepathy-account-widgets`
+EMPATHY_UOA_PROVIDER=`$PKG_CONFIG --variable=uoa_provider telepathy-account-widgets`
 AC_DEFINE_UNQUOTED(EMPATHY_UOA_PROVIDER, "$EMPATHY_UOA_PROVIDER",
    [Name of provider for accounts imported from libaccounts])
 
@@ -391,7 +393,7 @@ if test "x$enable_location" != "xno"; then
    ], have_geoclue="yes", have_geoclue="no")
 
    if test "x$have_geoclue" = "xyes"; then
-      GEOCLUE_XML_FILE=`pkg-config --variable=dbus_interface geoclue-2.0`
+      GEOCLUE_XML_FILE=`$PKG_CONFIG --variable=dbus_interface geoclue-2.0`
       if test "x$GEOCLUE_XML_FILE" = "x"; then
         echo "Can't find dbus_interface variable in geoclue-2.0.pc"
         have_geoclue="no"
@@ -515,35 +517,35 @@ if test "x$enable_ubuntu_online_accounts" != "xno"; then
 
    # provider plugin dir
    AC_MSG_CHECKING([Accounts provider plugin dir])
-   ACCOUNTS_PROVIDER_PLUGIN_DIR=`pkg-config --variable=provider_plugindir account-plugin`
+   ACCOUNTS_PROVIDER_PLUGIN_DIR=`$PKG_CONFIG --variable=provider_plugindir account-plugin`
 
    AC_MSG_RESULT([$ACCOUNTS_PROVIDER_PLUGIN_DIR])
    AC_SUBST(ACCOUNTS_PROVIDER_PLUGIN_DIR)
 
    # app plugin dir
    AC_MSG_CHECKING([Accounts provider app plugin dir])
-   ACCOUNTS_APP_PLUGIN_DIR=`pkg-config --variable=application_plugindir account-plugin`
+   ACCOUNTS_APP_PLUGIN_DIR=`$PKG_CONFIG --variable=application_plugindir account-plugin`
 
    AC_MSG_RESULT([$ACCOUNTS_APP_PLUGIN_DIR])
    AC_SUBST(ACCOUNTS_APP_PLUGIN_DIR)
 
    # provider files dir
    AC_MSG_CHECKING([Accounts provider files dir])
-   ACCOUNTS_PROVIDER_FILES_DIR=`pkg-config --variable=providerfilesdir libaccounts-glib`
+   ACCOUNTS_PROVIDER_FILES_DIR=`$PKG_CONFIG --variable=providerfilesdir libaccounts-glib`
 
    AC_MSG_RESULT([$ACCOUNTS_PROVIDER_FILES_DIR])
    AC_SUBST(ACCOUNTS_PROVIDER_FILES_DIR)
 
    # service files dir
    AC_MSG_CHECKING([Accounts service files dir])
-   ACCOUNTS_SERVICE_FILES_DIR=`pkg-config --variable=servicefilesdir libaccounts-glib`
+   ACCOUNTS_SERVICE_FILES_DIR=`$PKG_CONFIG --variable=servicefilesdir libaccounts-glib`
 
    AC_MSG_RESULT([$ACCOUNTS_SERVICE_FILES_DIR])
    AC_SUBST(ACCOUNTS_SERVICE_FILES_DIR)
 
    # application files dir
    AC_MSG_CHECKING([Accounts applications files dir])
-   ACCOUNTS_APPLICATION_FILES_DIR=`pkg-config --variable=applicationfilesdir libaccounts-glib`
+   ACCOUNTS_APPLICATION_FILES_DIR=`$PKG_CONFIG --variable=applicationfilesdir libaccounts-glib`
 
    AC_MSG_RESULT([$ACCOUNTS_APPLICATION_FILES_DIR])
    AC_SUBST(ACCOUNTS_APPLICATION_FILES_DIR)
@@ -566,7 +568,7 @@ AM_CONDITIONAL(HAVE_UOA, test "x$have_uoa" = "xyes")
 
 if test "x$have_uoa" = "xyes" -o "x$have_goa" = "xyes"; then
    AC_MSG_CHECKING([Mission Control plugins dir])
-   MISSION_CONTROL_PLUGINS_DIR=`pkg-config --define-variable=libdir='${libdir}' --variable=plugindir mission-control-plugins`
+   MISSION_CONTROL_PLUGINS_DIR=`$PKG_CONFIG --define-variable=libdir='${libdir}' --variable=plugindir mission-control-plugins`
 
    AC_MSG_RESULT([$MISSION_CONTROL_PLUGINS_DIR])
    AC_SUBST(MISSION_CONTROL_PLUGINS_DIR)
