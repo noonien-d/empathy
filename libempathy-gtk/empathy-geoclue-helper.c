@@ -293,8 +293,8 @@ client_cb (GObject *source,
   EmpathyGeoclueHelper *self = g_task_get_source_object (task);
   GError *error = NULL;
 
-  self->priv->client = gclue_client_proxy_new_finish (result, &error);
-  if (!gclue_client_proxy_new_for_bus_finish (result, &error))
+  self->priv->client = gclue_client_proxy_new_for_bus_finish (result, &error);
+  if (self->priv->client == NULL)
     {
       DEBUG ("Failed to create Geoclue client: %s", error->message);
       g_task_return_error (task, error);
