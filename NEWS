@@ -1,3 +1,30 @@
+NEW in 3.12.11 (14/10/2015)
+==============
+
+Bugs fixed:
+ - Fixed #729282, Fix opening contact list after launching empathy -h (Balló György)
+ - Fixed #752938, Leak fixes for telepathy-accounts-widgets (Christophe Fergeau)
+ - Fixed #755707, Don't hard code the name of the pkg-config binary (Saleem Abdulrasool)
+ - Fixed #756165, Call the finish method only once (Pranav Kant)
+
+Translations:
+ - Updated ar Translation (Khaled Hosny)
+ - Updated eo Translation (Kristjan SCHMIDT)
+ - Updated ja Translation (Hajime Taira)
+ - Updated oc Translation (Cédric Valmary)
+ - Updated pl Translation (Piotr Drąg)
+ - Updated pt Translation (Pedro Albuquerque)
+ - Updated sv Translation (Anders Jonsson)
+ - Updated tg Translation (Victor Ibragimov)
+ - Updated zh_TW Translation (Chao-Hsiung Liao)
+
+Documentation translations:
+ - Updated ca Documentation translation (Jordi Mas)
+ - Updated de Documentation translation (Christian Kirbach)
+ - Updated el Documentation translation (Tom Tryfonidis)
+ - Updated es Documentation translation (Daniel Mustieles)
+ - Updated fr Documentation translation (Alexandre Franke)
+
 NEW in 3.12.10 (13/05/2015)
 ==============
 
