@@ -204,7 +204,7 @@ enum
   COL_EVENTS_COUNT
 };
 
-#define CALENDAR_ICON "stock_calendar"
+#define CALENDAR_ICON "x-office-calendar"
 
 /* Seconds between two messages to be considered one conversation */
 #define MAX_GAP 30*60
