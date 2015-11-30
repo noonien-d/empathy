@@ -248,7 +248,7 @@ PKG_CHECK_MODULES(EMPATHY_CALL,
    telepathy-farstream >= $TP_FS_REQUIRED
    clutter-1.0 >= $CLUTTER_REQUIRED
    clutter-gtk-1.0 >= $CLUTTER_GTK_REQUIRED
-   clutter-gst-2.0
+   clutter-gst-3.0
    gstreamer-1.0
    gstreamer-audio-1.0
    gstreamer-video-1.0

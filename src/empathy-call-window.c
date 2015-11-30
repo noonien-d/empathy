@@ -22,6 +22,7 @@
 #include "empathy-call-window.h"
 
 #include <glib/gi18n.h>
+#include <clutter-gst/clutter-gst.h>
 #include <telepathy-farstream/telepathy-farstream.h>
 #include <farstream/fs-element-added-notifier.h>
 #include <farstream/fs-utils.h>
@@ -391,19 +392,17 @@ create_video_output_widget (EmpathyCallWindow *self)
   g_assert (priv->video_output == NULL);
   g_assert (priv->pipeline != NULL);
 
-  priv->video_output = clutter_texture_new ();
-
-  clutter_texture_set_keep_aspect_ratio (CLUTTER_TEXTURE (priv->video_output),
-      TRUE);
-
-  priv->video_output_sink = gst_element_factory_make ("cluttersink", NULL);
-  if (priv->video_output_sink == NULL)
-    g_error ("Missing cluttersink");
-  else
-    g_object_set (priv->video_output_sink, "texture", priv->video_output, NULL);
+  priv->video_output_sink = GST_ELEMENT (clutter_gst_video_sink_new ());
+  priv->video_output = g_object_new (CLUTTER_TYPE_ACTOR,
+      "content", g_object_new (CLUTTER_GST_TYPE_ASPECTRATIO,
+                               "sink", priv->video_output_sink,
+                               NULL),
+      NULL);
 
   clutter_container_add_actor (CLUTTER_CONTAINER (priv->video_box),
       priv->video_output);
+  clutter_actor_add_constraint (priv->video_output,
+      clutter_bind_constraint_new (priv->video_box, CLUTTER_BIND_SIZE, 0));
 
   gtk_widget_add_events (priv->video_container,
       GDK_BUTTON_PRESS_MASK | GDK_POINTER_MOTION_MASK);
@@ -1077,10 +1076,7 @@ create_video_preview (EmpathyCallWindow *self)
   clutter_actor_set_size (preview,
       SELF_VIDEO_SECTION_WIDTH, SELF_VIDEO_SECTION_HEIGHT);
 
-  priv->video_preview_sink = gst_element_factory_make ("cluttersink", NULL);
-  if (priv->video_preview_sink == NULL)
-      g_error ("Missing cluttersink, check your clutter-gst installation");
-  g_object_set (priv->video_preview_sink, "texture", preview, NULL);
+  priv->video_preview_sink = GST_ELEMENT (clutter_gst_video_sink_new ());
   g_object_add_weak_pointer (G_OBJECT (priv->video_preview_sink), (gpointer) &priv->video_preview_sink);
 
   /* Add a little offset to the video preview */
@@ -1090,6 +1086,10 @@ create_video_preview (EmpathyCallWindow *self)
   clutter_actor_set_size (priv->video_preview,
       SELF_VIDEO_SECTION_WIDTH + 2 * SELF_VIDEO_SECTION_MARGIN,
       SELF_VIDEO_SECTION_HEIGHT + 2 * SELF_VIDEO_SECTION_MARGIN);
+  clutter_actor_set_content (priv->video_preview,
+      g_object_new (CLUTTER_GST_TYPE_ASPECTRATIO,
+                    "sink", priv->video_preview,
+                    NULL));
 
   /* Spinner for when changing the camera device */
   priv->preview_spinner_widget = gtk_spinner_new ();
