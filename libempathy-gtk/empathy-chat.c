@@ -3196,6 +3196,8 @@ save_paned_pos_timeout (gpointer data)
 	EmpathyChat *self = data;
 	gint hpaned_pos;
 
+	self->priv->save_paned_pos_id = 0;
+
 	hpaned_pos = gtk_paned_get_position (GTK_PANED (self->priv->hpaned));
 
 	g_settings_set_int (self->priv->gsettings_ui,
