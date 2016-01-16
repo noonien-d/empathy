@@ -330,9 +330,13 @@ cell_renderer_text_update_text (EmpathyCellRendererText *cell,
 
 	attr_list = pango_attr_list_new ();
 
+	gtk_style_context_save (style);
+
+	gtk_style_context_set_state (style, GTK_STATE_FLAG_NORMAL);
 	gtk_style_context_get (style, GTK_STATE_FLAG_NORMAL,
 		"font", &font_desc,
 		NULL);
+
 	font_size = pango_font_description_get_size (font_desc);
 	pango_font_description_free (font_desc);
 	attr_size = pango_attr_size_new (font_size / 1.2);
@@ -343,7 +347,7 @@ cell_renderer_text_update_text (EmpathyCellRendererText *cell,
 	if (!selected) {
 		GdkRGBA color;
 
-		gtk_style_context_get_color (style, 0, &color);
+		gtk_style_context_get_color (style, GTK_STATE_FLAG_NORMAL, &color);
 
 		attr_color = pango_attr_foreground_new (color.red * 0xffff,
 							color.green * 0xffff,
@@ -352,6 +356,8 @@ cell_renderer_text_update_text (EmpathyCellRendererText *cell,
 		attr_color->end_index = -1;
 		pango_attr_list_insert (attr_list, attr_color);
 	}
+
+	gtk_style_context_restore (style);
 
 	if (priv->compact) {
 		if (TPAW_STR_EMPTY (priv->status)) {

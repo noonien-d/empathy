@@ -1102,8 +1102,11 @@ individual_view_cell_set_background (EmpathyIndividualView *view,
 
       style = gtk_widget_get_style_context (GTK_WIDGET (view));
 
+      gtk_style_context_save (style);
+      gtk_style_context_set_state (style, GTK_STATE_FLAG_SELECTED);
       gtk_style_context_get_background_color (style, GTK_STATE_FLAG_SELECTED,
           &color);
+      gtk_style_context_restore (style);
 
       /* Here we take the current theme colour and add it to
        * the colour for white and average the two. This
