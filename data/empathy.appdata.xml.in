@@ -16,4 +16,5 @@
   </screenshots>
   <updatecontact>telepathy@lists.freedesktop.org</updatecontact>
   <project_group>GNOME</project_group>
+  <translation type="gettext">empathy</translation>
 </application>
