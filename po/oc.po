@@ -22,15 +22,16 @@
 # Pablo Martin-Gomez <pablo.martin-gomez@laposte.net>, 2009-2010.
 # Alexandre Daubois <alex.daubois@gmail.com>, 2011
 # Cédric Valmary (Tot en òc) <cvalmary@yahoo.fr>, 2015.
+# Cédric Valmary (totenoc.eu) <cvalmary@yahoo.fr>, 2016.
 msgid ""
 msgstr ""
 "Project-Id-Version: empathy HEAD\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=empathy&keywords=I18N+L10N&component=General\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=empathy"
+"&keywords=I18N+L10N&component=General\n"
 "POT-Creation-Date: 2015-05-17 15:29+0000\n"
-"PO-Revision-Date: 2015-05-17 09:26+0200\n"
-"Last-Translator: Cédric Valmary (Tot en òc) <cvalmary@yahoo.fr>\n"
-"Language-Team: Tot en òc (totenoc.eu)\n"
+"PO-Revision-Date: 2016-02-23 19:04+0200\n"
+"Last-Translator: Cédric Valmary (totenoc.eu) <cvalmary@yahoo.fr>\n"
+"Language-Team: Tot En Òc\n"
 "Language: oc\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -61,7 +62,6 @@ msgstr ""
 "discussion;messatjariá instantanèa;irc;voip;téléphonie;gtalk;facebook;jabber;"
 
 #: ../data/empathy.appdata.xml.in.h:1
-#, fuzzy
 #| msgid ""
 #| "Empathy is the official instant messaging application of the GNOME "
 #| "desktop environment.  Empathy can connect to AIM, MSN, Jabber (including "
@@ -83,7 +83,6 @@ msgstr ""
 "correspondant autoriza."
 
 #: ../data/empathy.appdata.xml.in.h:2
-#, fuzzy
 #| msgid ""
 #| "Empathy provides integrated messaging for the GNOME desktop, so you’ll "
 #| "never miss a message.  You can respond to your contacts without even "
