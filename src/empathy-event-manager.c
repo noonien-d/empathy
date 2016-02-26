@@ -798,7 +798,7 @@ approve_text_channel (EmpathyEventManager *self,
         {
           /* We are invited to a room */
           DEBUG ("Have been invited to %s. Ask user if he wants to accept",
-              tp_channel_get_identifier (TP_CHANNEL_GROUP_CHANGE_REASON_NONE));
+              tp_channel_get_identifier (TP_CHANNEL (tp_chat)));
 
           if (inviter != NULL)
             {
