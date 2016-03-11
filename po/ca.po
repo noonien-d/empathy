@@ -706,7 +706,7 @@ msgstr "S'ha revocat el certificat"
 msgid ""
 "Certificate uses an insecure cipher algorithm or is cryptographically weak"
 msgstr ""
-"El certificat utilitza un algorisme criptògraf no segur o la seva fortalesa "
+"El certificat utilitza un algorisme criptogràfic no segur o la seva fortalesa "
 "criptogràfica és feble"
 
 #: ../libempathy/empathy-utils.c:316
@@ -2159,7 +2159,7 @@ msgstr ""
 
 #: ../src/empathy-accounts.c:171
 msgid "Don't display any dialogs; do any work (eg, importing) and exit"
-msgstr "No mostris cap diàleg, realitza la tasca (p .ex. importar) i surt"
+msgstr "No mostris cap diàleg, realitza la tasca (p. ex. importar) i surt"
 
 #: ../src/empathy-accounts.c:175
 msgid ""
@@ -2170,7 +2170,7 @@ msgstr ""
 #: ../src/empathy-accounts.c:179
 msgid "Initially select given account (eg, gabble/jabber/foo_40example_2eorg0)"
 msgstr ""
-"Selecciona inicialment el compte especificat (p .ex. gabble/jabber/exemple)"
+"Selecciona inicialment el compte especificat (p. ex. gabble/jabber/exemple)"
 
 #: ../src/empathy-accounts.c:181
 msgid "<account-id>"
