@@ -3,12 +3,12 @@
 # This file is distributed under the same license as the empathy package.
 #
 # Viesturs Ružāns <viesty@exs.lv> 2011.
-# Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>, 2012, 2013.
+# Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>, 2012, 2013, 2016.
 msgid ""
 msgstr ""
 "Project-Id-Version: empathy master\n"
-"POT-Creation-Date: 2013-10-10 14:36+0000\n"
-"PO-Revision-Date: 2013-10-19 16:06+0300\n"
+"POT-Creation-Date: 2016-03-13 04:38+0000\n"
+"PO-Revision-Date: 2016-03-13 11:01+0200\n"
 "Last-Translator: Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>\n"
 "Language-Team: Latvian <lata-l10n@googlegroups.com>\n"
 "Language: lv\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
 "2);\n"
-"X-Generator: Lokalize 1.5\n"
+"X-Generator: Lokalize 2.0\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -26,119 +26,38 @@ msgstr ""
 "Viesturs Ružāns <viesty@exs.lv> 2011\n"
 "Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>"
 
-#. (itstool) path: credit/name
-#: C/index.page:20 C/add-account.page:21 C/audio-call.page:22
-#: C/audio-video.page:17 C/create-account.page:20 C/disable-account.page:21
-#: C/favorite-rooms.page:14 C/geolocation.page:17
-#: C/geolocation-not-showing.page:17 C/geolocation-privacy.page:17
-#: C/geolocation-supported.page:16 C/geolocation-turn.page:18
-#: C/geolocation-what-is.page:18 C/group-conversations.page:19
-#: C/hide-contacts.page:11 C/import-account.page:23 C/introduction.page:13
-#: C/irc-commands.page:10 C/irc-join-pwd.page:17 C/irc-join-room.page:16
-#: C/irc-manage.page:19 C/irc-nick-password.page:18 C/irc-send-file.page:16
-#: C/irc-start-conversation.page:15 C/link-contacts.page:15
-#: C/prev-conv.page:17 C/prob-conn-acctdisabled.page:19
-#: C/prob-conn-auth.page:22 C/prob-conn-name.page:19
-#: C/prob-conn-neterror.page:20 C/remove-account.page:19
-#: C/salut-protocol.page:18 C/send-file.page:21 C/set-custom-status.page:19
-#: C/share-desktop.page:14 C/status-icons.page:17 C/video-call.page:25
-msgid "Milo Casagrande"
-msgstr "Milo Casagrande"
-
-#. (itstool) path: license/p
-#: C/index.page:25 C/account-irc.page:21 C/account-jabber.page:18
-#: C/accounts-window.page:21 C/add-account.page:29 C/add-contact.page:22
-#: C/audio-call.page:31 C/audio-video.page:21 C/change-status.page:28
-#: C/create-account.page:29 C/disable-account.page:29 C/favorite-rooms.page:18
-#: C/geolocation.page:21 C/geolocation-not-showing.page:21
-#: C/geolocation-privacy.page:21 C/geolocation-supported.page:20
-#: C/geolocation-turn.page:22 C/geolocation-what-is.page:22
-#: C/group-conversations.page:23 C/hide-contacts.page:15
-#: C/import-account.page:31 C/introduction.page:17 C/irc-commands.page:14
-#: C/irc-join-pwd.page:21 C/irc-join-room.page:20 C/irc-manage.page:28
-#: C/irc-nick-password.page:22 C/irc-send-file.page:20
-#: C/irc-start-conversation.page:19 C/link-contacts.page:23 C/overview.page:21
-#: C/prev-conv.page:25 C/prob-conn-acctdisabled.page:23
-#: C/prob-conn-auth.page:26 C/prob-conn-name.page:23
-#: C/prob-conn-neterror.page:24 C/prob-conn.page:18 C/remove-account.page:23
-#: C/salut-protocol.page:22 C/send-file.page:25 C/send-message.page:21
-#: C/set-custom-status.page:23 C/share-desktop.page:22 C/status-icons.page:25
-#: C/video-call.page:34
-msgid "Creative Commons Share Alike 3.0"
-msgstr "Creative Commons Share Alike 3.0 licence."
-
-#. (itstool) path: info/desc
-#: C/index.page:28
-#| msgid ""
-#| "<app>Empathy</app> is an instant messaging application for the GNOME "
-#| "Desktop. It supports text messaging, voice &amp; video calls, file "
-#| "transfers, and all the most used messaging systems such as MSN and Google "
-#| "Talk."
-msgid ""
-"Empathy is the instant messenging application for GNOME. It supports text, "
-"voice and video chat over many protocols."
-msgstr ""
-"Empathy ir tūlītējās ziņojumapmaiņas lietotne  GNOME videi. Tā atbalsta "
-"teksta ziņojumus, balss un video zvanus daudzos protokolos."
-
-#. (itstool) path: info/title
-#: C/index.page:30
-msgctxt "link"
-msgid "Empathy"
-msgstr "Empathy"
-
-#. (itstool) path: info/title
-#: C/index.page:31
-msgctxt "text"
-msgid "Empathy"
-msgstr "Empathy"
-
-#. (itstool) path: page/title
-#: C/index.page:34
-msgid "<_:media-1/> Empathy"
-msgstr "<_:media-1/> Empathy"
-
-#. (itstool) path: section/title
-#: C/index.page:40
-msgid "Account Management"
-msgstr "Kontu pārvaldnieks"
-
-#. (itstool) path: section/title
-#: C/index.page:44
-msgid "Contact Management"
-msgstr "Kontaktu pārvaldnieks"
-
-#. (itstool) path: section/title
-#: C/index.page:48
-msgid "Text Conversations"
-msgstr "Teksta sarunas"
-
-#. (itstool) path: section/title
-#: C/index.page:52
-msgid "Audio and Video Conversations"
-msgstr "Audio un video sarunas"
-
-#. (itstool) path: section/title
-#: C/index.page:56
-msgid "Advanced Actions"
-msgstr "Darbības lietpratējiem"
-
-#. (itstool) path: section/title
-#: C/index.page:60 C/irc-manage.page:64
-msgid "Common Problems"
-msgstr "Biežākās problēmas"
-
 #. (itstool) path: info/desc
 #: C/account-irc.page:9
 msgid "Additional information necessary for connecting to IRC networks."
 msgstr "Papildu informācija, lai pieslēgtos IRC tīkliem."
 
 #. (itstool) path: credit/name
-#: C/account-irc.page:17 C/account-jabber.page:14 C/accounts-window.page:17
-#: C/add-account.page:25 C/disable-account.page:25 C/import-account.page:27
+#: C/account-irc.page:17 C/account-jabber.page:15 C/accounts-window.page:17
+#: C/add-account.page:26 C/disable-account.page:25 C/import-account.page:27
 #: C/prev-conv.page:21 C/status-icons.page:21
 msgid "Shaun McCance"
 msgstr "Shaun McCance"
+
+#. (itstool) path: license/p
+#: C/account-irc.page:21 C/account-jabber.page:19 C/accounts-window.page:21
+#: C/add-account.page:30 C/add-contact.page:22 C/audio-call.page:31
+#: C/audio-video.page:21 C/change-status.page:28 C/create-account.page:29
+#: C/disable-account.page:29 C/favorite-rooms.page:18 C/geolocation.page:21
+#: C/geolocation-not-showing.page:21 C/geolocation-privacy.page:21
+#: C/geolocation-supported.page:20 C/geolocation-turn.page:22
+#: C/geolocation-what-is.page:22 C/group-conversations.page:23
+#: C/hide-contacts.page:15 C/import-account.page:31 C/index.page:25
+#: C/introduction.page:17 C/irc-commands.page:14 C/irc-join-pwd.page:21
+#: C/irc-join-room.page:20 C/irc-manage.page:28 C/irc-nick-password.page:22
+#: C/irc-send-file.page:20 C/irc-start-conversation.page:19
+#: C/link-contacts.page:23 C/overview.page:21 C/prev-conv.page:25
+#: C/prob-conn-acctdisabled.page:23 C/prob-conn-auth.page:26
+#: C/prob-conn-name.page:23 C/prob-conn-neterror.page:24 C/prob-conn.page:18
+#: C/remove-account.page:23 C/salut-protocol.page:22 C/send-file.page:25
+#: C/send-message.page:21 C/set-custom-status.page:23 C/share-desktop.page:22
+#: C/status-icons.page:25 C/video-call.page:34
+msgid "Creative Commons Share Alike 3.0"
+msgstr "Creative Commons Share Alike 3.0 licence."
 
 #. (itstool) path: page/title
 #: C/account-irc.page:32
@@ -308,10 +227,6 @@ msgstr "Rediģēt"
 
 #. (itstool) path: item/p
 #: C/account-irc.page:109
-#| msgid ""
-#| "To modify a network in the list, select the network and click <media type="
-#| "\"image\" mime=\"image/png\" src=\"figures/gtk-edit.png\" width=\"16\" "
-#| "height=\"16\">Edit</media>."
 msgid ""
 "To modify a network in the list, select the network and click <_:media-1/>."
 msgstr "Lai rediģētu tīklu no saraksta, izvēlies to un spiediet <_:media-1/>."
@@ -323,10 +238,6 @@ msgstr "Izņemt"
 
 #. (itstool) path: item/p
 #: C/account-irc.page:113
-#| msgid ""
-#| "To remove a network from the list, select the network and click <media "
-#| "type=\"image\" mime=\"image/png\" src=\"figures/gtk-remove.png\" width="
-#| "\"16\" height=\"16\">Remove</media>."
 msgid ""
 "To remove a network from the list, select the network and click <_:media-1/>."
 msgstr ""
@@ -424,12 +335,12 @@ msgid "Advanced options for Jabber and Google Talk accounts."
 msgstr "Paplašinātas iespējas Jabber un Google Talk kontiem."
 
 #. (itstool) path: page/title
-#: C/account-jabber.page:29
+#: C/account-jabber.page:30
 msgid "Jabber account details"
 msgstr "Jabber konta informācija"
 
 #. (itstool) path: page/p
-#: C/account-jabber.page:31
+#: C/account-jabber.page:32
 msgid ""
 "Most Jabber accounts will require only a login ID and a password to connect. "
 "For some accounts or on certain types of networks, you may need to enter "
@@ -444,7 +355,7 @@ msgstr ""
 "instrukcijām kontu pievienošanā, skaties <link xref=\"add-account\"/>."
 
 #. (itstool) path: note/p
-#: C/account-jabber.page:39
+#: C/account-jabber.page:40
 msgid ""
 "Google Talk is a type of Jabber account. These instructions hold for Google "
 "Talk accounts as well."
@@ -453,17 +364,17 @@ msgstr ""
 "kontiem."
 
 #. (itstool) path: item/title
-#: C/account-jabber.page:45
+#: C/account-jabber.page:46
 msgid "<gui>Encryption required (TLS/SSL)</gui>"
 msgstr "<gui>Vajadzīga šifrēšana (TLS/SSL)</gui>"
 
 #. (itstool) path: item/title
-#: C/account-jabber.page:46
+#: C/account-jabber.page:47
 msgid "<gui>Ignore SSL certificate errors</gui>"
 msgstr "<gui>Ignorēt SSL sertifikāta kļūdas</gui>"
 
 #. (itstool) path: item/p
-#: C/account-jabber.page:47
+#: C/account-jabber.page:48
 msgid ""
 "Whenever possible, communication between <app>Empathy</app> and the Jabber "
 "server is encrypted. If encrypted communication is not possible, messages "
@@ -478,31 +389,36 @@ msgstr ""
 "šifrēšana nav iespējama."
 
 #. (itstool) path: item/p
-#: C/account-jabber.page:52
+#: C/account-jabber.page:53
 msgid ""
 "Some Jabber servers may encrypt data using invalid certificates, or using "
-"certificates from unknown authorities. If you trust the server you are "
-"connecting to, you can select <gui>Ignore SSL certificate errors</gui> to "
-"allow encrypted communication with invalid certificates."
+"certificates signed by unknown authorities. You can select <gui>Ignore SSL "
+"certificate errors</gui> to allow encrypted communication with invalid "
+"certificates, but this allows an attacker to intercept your communication "
+"with the server (including your password). You might want to use this option "
+"for testing purposes, or if your server is broken and you do not care about "
+"the security of your communication."
 msgstr ""
-"Daži Jabber serveri var iešifrēt datus, izmantojot nederīgus sertifikātus, "
-"vai izmantojot sertifikātus no neatpazīstamiem veidotājiem. Ja tu uzticies "
-"serverim, kuram pieslēdzies, vari izvēlēties <gui>Ignorēt SSL sertifikāta "
-"kļūdas</gui>, lai atļautu iešifrētu saziņu, izmantojot nederīgus "
-"sertifikātus."
+"Daži Jabber serveri var šifrēt datus, izmantojot nederīgus sertifikātus, vai "
+"izmantojot sertifikātus, ko ir parakstījušas nezināmas institūcijas. Jūs "
+"varat izvēlēties <gui>Ignorēt SSL sertifikātu kļūdas</gui>, lai ļautu šifrēt "
+"komunikāciju, izmantojot nederīgus sertifikātus, bet tas ļaus uzbrucējam "
+"pārtvert komunikāciju ar serveriem (tai skaitā paroles). Šo opciju varat "
+"izmantot testēšanas nolūkiem, vai ja serveris is salauzts un jūs neuztrauc "
+"komunikāciju drošība."
 
 #. (itstool) path: item/title
-#: C/account-jabber.page:59
+#: C/account-jabber.page:62
 msgid "<gui>Resource</gui>"
 msgstr "<gui>Resurss</gui>"
 
 #. (itstool) path: item/title
-#: C/account-jabber.page:60
+#: C/account-jabber.page:63
 msgid "<gui>Priority</gui>"
 msgstr "<gui>Prioritāte</gui>"
 
 #. (itstool) path: item/p
-#: C/account-jabber.page:61
+#: C/account-jabber.page:64
 msgid ""
 "If you have multiple applications (for instance, on separate computers) "
 "connected to your account at the same time, you can set a resource to "
@@ -515,7 +431,7 @@ msgstr ""
 "izmantos <input>Telepathy</input> kā resursu."
 
 #. (itstool) path: item/p
-#: C/account-jabber.page:65
+#: C/account-jabber.page:68
 msgid ""
 "You can set the priority to specify which application should receive "
 "incoming messages from your contacts. New messages will be sent to the "
@@ -526,12 +442,12 @@ msgstr ""
 "augstāko uzstādīto prioritāti."
 
 #. (itstool) path: item/title
-#: C/account-jabber.page:70
+#: C/account-jabber.page:73
 msgid "<gui>Override server settings</gui>"
 msgstr "<gui>Aizstāt servera iestatījumus</gui>"
 
 #. (itstool) path: item/p
-#: C/account-jabber.page:71
+#: C/account-jabber.page:74
 msgid ""
 "<app>Empathy</app> will use default settings to connect to the Jabber server "
 "based on your login ID. For some Jabber servers, you will need to enter "
@@ -580,13 +496,32 @@ msgstr ""
 msgid "Add a new account to <app>Empathy</app>."
 msgstr "Pievienot jaunu kontu <app>Empathy</app> lietotnei."
 
+#. (itstool) path: credit/name
+#: C/add-account.page:22 C/audio-call.page:22 C/audio-video.page:16
+#: C/create-account.page:20 C/disable-account.page:21 C/favorite-rooms.page:14
+#: C/geolocation.page:17 C/geolocation-not-showing.page:17
+#: C/geolocation-privacy.page:17 C/geolocation-supported.page:16
+#: C/geolocation-turn.page:18 C/geolocation-what-is.page:18
+#: C/group-conversations.page:19 C/hide-contacts.page:11
+#: C/import-account.page:23 C/index.page:20 C/introduction.page:13
+#: C/irc-commands.page:10 C/irc-join-pwd.page:17 C/irc-join-room.page:16
+#: C/irc-manage.page:19 C/irc-nick-password.page:18 C/irc-send-file.page:16
+#: C/irc-start-conversation.page:15 C/link-contacts.page:15 C/prev-conv.page:17
+#: C/prob-conn-acctdisabled.page:19 C/prob-conn-auth.page:22
+#: C/prob-conn-name.page:19 C/prob-conn-neterror.page:20
+#: C/remove-account.page:19 C/salut-protocol.page:18 C/send-file.page:21
+#: C/set-custom-status.page:19 C/share-desktop.page:14 C/status-icons.page:17
+#: C/video-call.page:25
+msgid "Milo Casagrande"
+msgstr "Milo Casagrande"
+
 #. (itstool) path: page/title
-#: C/add-account.page:40
+#: C/add-account.page:41
 msgid "Add a new account"
 msgstr "Pievienot jaunu kontu"
 
 #. (itstool) path: page/p
-#: C/add-account.page:42
+#: C/add-account.page:43
 msgid ""
 "You can add instant messaging accounts from any supported service to "
 "communicate with all of your contacts in <app>Empathy</app>. For some "
@@ -599,43 +534,36 @@ msgstr ""
 "lasi <link xref=\"create-account\"/>."
 
 #. (itstool) path: item/p
-#: C/add-account.page:49 C/disable-account.page:49 C/irc-nick-password.page:50
-#: C/remove-account.page:43
+#: C/add-account.page:50
+#| msgid ""
+#| "From the <gui>Contact List</gui> window, choose <guiseq><gui>Edit</gui> "
+#| "<gui>Accounts</gui></guiseq>, or press <key>F4</key>."
 msgid ""
-"From the <gui>Contact List</gui> window, choose <guiseq><gui>Edit</gui> "
-"<gui>Accounts</gui></guiseq>, or press <key>F4</key>."
+"Click <guiseq><gui>Empathy</gui><gui>Accounts</gui></guiseq>, or press "
+"<key>F4</key>."
 msgstr ""
-"<gui>Kontaktu saraksta</gui> logā izvēlies <guiseq><gui>Rediģēt </"
-"gui><gui>Konti</gui></guiseq>, vai nospied <key>F4</key>."
+"Klikšķiniet <guiseq><gui>Empathy</gui><gui>Konti</gui></guiseq>, vai spiediet "
+"<key>F4</key>."
 
 #. (itstool) path: item/p
-#: C/add-account.page:53
+#: C/add-account.page:54
 msgid "Click <gui style=\"button\">+</gui>."
-msgstr "Spied <gui style=\"button\">+</gui>."
+msgstr "Spiediet <gui style=\"button\">+</gui>."
 
 #. (itstool) path: item/p
-#: C/add-account.page:58
+#: C/add-account.page:59
+#| msgid ""
+#| "From the <gui>Protocol</gui> drop-down list, select the type of account "
+#| "you wish to add."
 msgid ""
-"From the <gui>Protocol</gui> drop-down list, select the type of account you "
-"wish to add."
+"From the <gui>What kind of chat account do you have?</gui> drop-down list, "
+"select the type of account you wish to add."
 msgstr ""
-"<gui>Protokola</gui> sarakstā, izvēlies konta tipu, kuru vēlies pievienot."
+"<gui>Kāda veida tērzēšanas konts jums ir?</gui> sarakstā, izvēlies konta "
+"tipu, kuru vēlies pievienot."
 
 #. (itstool) path: item/p
-#: C/add-account.page:62
-msgid ""
-"If you do not already have a registered account, select <gui>Create a new "
-"account on the server</gui>. This feature is not available for all account "
-"types, and may not work with some account providers. See <link xref=\"create-"
-"account\"/> for more information."
-msgstr ""
-"Ja tev vēl nav izveidots konts, izvēlies <gui>Izveidot jaunu kontu uz šī "
-"servera</gui>. Šī iespēja nav pieejama visiem kontu tipiem un var "
-"nedarboties ar dažiem kontu sniedzējiem. Plašākai informācijai, lasi <link "
-"xref=\"create-account\"/>."
-
-#. (itstool) path: item/p
-#: C/add-account.page:69
+#: C/add-account.page:63
 msgid ""
 "Enter the required information. For most accounts, you will only need a "
 "login ID and a password. Some accounts may require additional information. "
@@ -646,19 +574,26 @@ msgstr ""
 "xref=\"accounts-window#details\"/>, lai uzzinātu vairāk."
 
 #. (itstool) path: item/p
-#: C/add-account.page:74 C/import-account.page:61 C/irc-nick-password.page:63
-msgid "Click <gui style=\"button\">Apply</gui>."
-msgstr "Spied <gui style=\"button\">Pielietot</gui>."
+#: C/add-account.page:68
+#| msgid "Click <gui style=\"button\">+</gui>."
+msgid "Click <gui style=\"button\">Add</gui>."
+msgstr "Spiediet <gui style=\"button\">Pievienot</gui>."
 
 #. (itstool) path: note/p
-#: C/add-account.page:81
+#: C/add-account.page:73
+#| msgid ""
+#| "To change the name that identifies the account in the <gui>Accounts</gui> "
+#| "window, select the account from the list on the left and either click on "
+#| "the name or press the space bar. Edit the account name and press "
+#| "<key>Enter</key> when you’re finished."
 msgid ""
-"To change the name that identifies the account in the <gui>Accounts</gui> "
-"window, select the account from the list on the left and either click on the "
-"name or press the space bar. Edit the account name and press <key>Enter</"
-"key> when you’re finished."
+"To change the name that identifies the account in the <gui>Messaging and "
+"VoIP Accounts</gui> window, select the account from the list on the left and "
+"either click on the name or press the space bar. Edit the account name and "
+"press <key>Enter</key> when you’re finished."
 msgstr ""
-"Lai nomainītu vārdu, kurš identificē kontu, <gui>Kontu</gui> logā, izvēlies "
+"Lai nomainītu vārdu, kurš identificē kontu, <gui>Ziņojumapmaiņas un IP balss "
+"pārraides kontu</gui> logā, izvēlies "
 "kontu no saraksta kreisajā pusē un vai nu nospied uz vārda, vai nospied "
 "atstarpes taustiņu. Rediģē konta vārdu un spied <key>Enter</key>, kad esi "
 "pabeidzis."
@@ -749,10 +684,6 @@ msgstr "Sākt audio saziņu"
 
 #. (itstool) path: page/p
 #: C/audio-call.page:37
-#| msgid ""
-#| "You can call your contacts and have an audio conversation with them. This "
-#| "features only works with certain types of accounts, and it requires the "
-#| "other person to have an application that supports audio calls."
 msgid ""
 "You can call your contacts and have an audio conversation with them. This "
 "features only works with certain types of accounts and it requires the other "
@@ -764,22 +695,15 @@ msgstr ""
 
 #. (itstool) path: item/p
 #: C/audio-call.page:43
-#| msgid ""
-#| "Select the contact you want to have the conversation, and from the menu "
-#| "select <gui style=\"menuitem\">Audio Call</gui>."
 msgid ""
 "Right-click on the contact that you want to call and select <gui style="
 "\"menuitem\">Audio Call</gui>."
 msgstr ""
-"Spiediet labo peles pogu uz kontakta, kuram vēlaties zvanīt un izvēlieties <"
-"gui style=\"menuitem\">Audio zvans</gui>."
+"Spiediet labo peles pogu uz kontakta, kuram vēlaties zvanīt un izvēlieties "
+"<gui style=\"menuitem\">Audio zvans</gui>."
 
 #. (itstool) path: item/p
 #: C/audio-call.page:49 C/video-call.page:50
-#| msgid ""
-#| "A new window will open. When the connection is established, you will see "
-#| "<gui>Connected</gui> at the bottom of the window, along with the total "
-#| "conversation time."
 msgid ""
 "A new window will open. When the connection is established, you will see the "
 "total conversation time at the bottom of the window."
@@ -789,8 +713,6 @@ msgstr ""
 
 #. (itstool) path: item/p
 #: C/audio-call.page:55
-#| msgid ""
-#| "To end the conversation, click on <gui style=\"button\">Hang up</gui>."
 msgid ""
 "To end the conversation, click the <gui style=\"button\">hand up</gui> "
 "button."
@@ -841,98 +763,33 @@ msgstr ""
 "tajā vietā uz pāris sekundēm, pēc šīm pāris sekundēm, neliela uzlecoša ziņa "
 "parādīsies un parādīs kontaktu skaitu, kurš veido meta-kontaktu."
 
-#. (itstool) path: media
-#. This is a reference to an external file such as an image or video. When
-#. the file changes, the md5 hash will change to let you know you need to
-#. update your localized copy. The msgstr is not used at all. Set it to
-#. whatever you like once you have updated your copy of the file.
-#: C/audio-video.page:58
-#| msgctxt "_"
-#| msgid ""
-#| "external ref='figures/audio-input-microphone.png' "
-#| "md5='8d89026b66a263a3bc5b1f0665948567'"
-msgctxt "_"
-msgid "external ref='figures/audio-input-microphone.png' md5='__failed__'"
-msgstr "external ref='figures/audio-input-microphone.png' md5='__failed__'"
-
-#. (itstool) path: media
-#. This is a reference to an external file such as an image or video. When
-#. the file changes, the md5 hash will change to let you know you need to
-#. update your localized copy. The msgstr is not used at all. Set it to
-#. whatever you like once you have updated your copy of the file.
-#: C/audio-video.page:70
-#| msgctxt "_"
-#| msgid ""
-#| "external ref='figures/camera-web.png' "
-#| "md5='8166b4372f25b78cbf5a64fe2eac2ce5'"
-msgctxt "_"
-msgid "external ref='figures/camera-web.png' md5='__failed__'"
-msgstr "external ref='figures/camera-web.png' md5='__failed__'"
-
 #. (itstool) path: info/desc
-#: C/audio-video.page:8
+#: C/audio-video.page:30
 msgid ""
 "Information on when it is possible to have an audio or video conversation."
 msgstr "Informācija par to, kad ir iespējama audio vai video saziņa."
 
 #. (itstool) path: page/title
-#: C/audio-video.page:32
+#: C/audio-video.page:35
 msgid "Audio and video support"
 msgstr "Audio un video atbalsts"
 
 #. (itstool) path: page/p
-#: C/audio-video.page:34
+#: C/audio-video.page:37
+#| msgid ""
+#| "You can only have audio and video conversation with contacts who are "
+#| "using an application which also supports this feature. When your contacts "
+#| "support audio or video conversations, you will see the following icons "
+#| "next to their names in the contact list:"
 msgid ""
 "You can only have audio and video conversation with contacts who are using "
-"an application which also supports this feature. When your contacts support "
-"audio or video conversations, you will see the following icons next to their "
-"names in the contact list:"
+"an application which also supports this feature."
 msgstr ""
 "Audio on video sarunas ir iespējamas tikai starp kontaktiem, kuri izmanto "
-"lietotni, kura atbalsta šo iespēju. Ja tavi kontakti ir pieejami audio vai "
-"video zvanam, pie viņu vārdiem kontaktu sarakstā jūs redzēsiet sekojošas "
-"ikonas:"
-
-#. (itstool) path: td/p
-#: C/audio-video.page:43
-msgid "Icon"
-msgstr "Ikona"
-
-#. (itstool) path: td/p
-#: C/audio-video.page:48
-msgid "Description"
-msgstr "Apraksts"
-
-#. (itstool) path: td/p
-#: C/audio-video.page:57
-msgid ""
-"<media type=\"image\" mime=\"image/png\" src=\"figures/audio-input-"
-"microphone.png\"> Icon for audio conversation </media>"
-msgstr ""
-"<media type=\"image\" mime=\"image/png\" src=\"figures/audio-input-"
-"microphone.png\"> Ikona audio sarunai </media>"
-
-#. (itstool) path: td/p
-#: C/audio-video.page:64
-msgid "The contact is able to have an audio conversation."
-msgstr "Šis kontakts ir pieejams audio sarunai."
-
-#. (itstool) path: td/p
-#: C/audio-video.page:69
-msgid ""
-"<media type=\"image\" mime=\"image/png\" src=\"figures/camera-web.png\"> "
-"Icon for video conversation </media>"
-msgstr ""
-"<media type=\"image\" mime=\"image/png\" src=\"figures/camera-web.png\"> "
-"Ikona video sarunai </media>"
-
-#. (itstool) path: td/p
-#: C/audio-video.page:76
-msgid "The contact is able to have a video conversation."
-msgstr "Šis kontakts ir pieejams video sarunai."
+"lietotni, kura atbalsta šo iespēju."
 
 #. (itstool) path: note/p
-#: C/audio-video.page:83
+#: C/audio-video.page:41
 msgid ""
 "In order to have an audio conversation, you need to have a sound card that "
 "is supported by your operating system, and a working microphone."
@@ -942,7 +799,7 @@ msgstr ""
 "mikrofons."
 
 #. (itstool) path: note/p
-#: C/audio-video.page:87
+#: C/audio-video.page:43
 msgid ""
 "In order to have a video conversation, you need to have a webcam that is "
 "supported by your operating system, and a working microphone."
@@ -951,12 +808,12 @@ msgstr ""
 "atbalsta tava operētājsistēma, kā arī strādājošs mikrofons."
 
 #. (itstool) path: section/title
-#: C/audio-video.page:95
+#: C/audio-video.page:49
 msgid "Supported Account Types"
 msgstr "Atbalstītie kontu veidi"
 
 #. (itstool) path: section/p
-#: C/audio-video.page:97
+#: C/audio-video.page:51
 msgid ""
 "You can only have audio and video conversations using accounts on certain "
 "supported services. The following table lists whether audio and video is "
@@ -967,7 +824,7 @@ msgstr ""
 "saziņa ir pieejama katram kontu tipam: "
 
 #. (itstool) path: note/p
-#: C/audio-video.page:102
+#: C/audio-video.page:56
 msgid ""
 "Account types are provided by plugins. Your system may not have all of the "
 "following types available, or it may have types not listed here. Updated "
@@ -980,126 +837,114 @@ msgstr ""
 "kontu tipiem, kuri ir uzskaitīti kā neatbalstīti."
 
 #. (itstool) path: td/p
-#: C/audio-video.page:128
+#: C/audio-video.page:74
 msgid "Service"
 msgstr "Serviss"
 
 #. (itstool) path: td/p
-#: C/audio-video.page:129
+#: C/audio-video.page:75
 msgid "Audio"
 msgstr "Audio"
 
 #. (itstool) path: td/p
-#: C/audio-video.page:130
+#: C/audio-video.page:76
 msgid "Video"
 msgstr "Video "
 
 #. (itstool) path: td/p
-#: C/audio-video.page:135
+#: C/audio-video.page:81
 msgid "AIM"
 msgstr "AIM"
 
 #. (itstool) path: td/p
-#: C/audio-video.page:136 C/audio-video.page:137 C/audio-video.page:141
-#: C/audio-video.page:142 C/audio-video.page:146 C/audio-video.page:147
-#: C/audio-video.page:156 C/audio-video.page:157 C/audio-video.page:161
-#: C/audio-video.page:162 C/audio-video.page:166 C/audio-video.page:167
-#: C/audio-video.page:181 C/audio-video.page:182 C/audio-video.page:186
-#: C/audio-video.page:187 C/audio-video.page:191 C/audio-video.page:192
-#: C/audio-video.page:196 C/audio-video.page:197 C/audio-video.page:201
-#: C/audio-video.page:202 C/audio-video.page:211 C/audio-video.page:212
-#: C/audio-video.page:216 C/audio-video.page:217
+#: C/audio-video.page:82 C/audio-video.page:83 C/audio-video.page:87
+#: C/audio-video.page:88 C/audio-video.page:97 C/audio-video.page:98
+#: C/audio-video.page:102 C/audio-video.page:103 C/audio-video.page:107
+#: C/audio-video.page:108 C/audio-video.page:117 C/audio-video.page:118
+#: C/audio-video.page:122 C/audio-video.page:123 C/audio-video.page:127
+#: C/audio-video.page:128 C/audio-video.page:132 C/audio-video.page:133
+#: C/audio-video.page:137 C/audio-video.page:138 C/audio-video.page:147
+#: C/audio-video.page:148 C/audio-video.page:152 C/audio-video.page:153
 msgid "No"
 msgstr "Nē"
 
 #. (itstool) path: td/p
-#: C/audio-video.page:140
-msgid "Facebook Chat"
-msgstr "Facebook tērzēšana"
-
-#. (itstool) path: td/p
-#: C/audio-video.page:145
+#: C/audio-video.page:86
 msgid "gadugadu"
 msgstr "gadugadu"
 
 #. (itstool) path: td/p
-#: C/audio-video.page:150
+#: C/audio-video.page:91
 msgid "Google Talk"
 msgstr "Google Talk"
 
 #. (itstool) path: td/p
-#: C/audio-video.page:151 C/audio-video.page:152 C/audio-video.page:171
-#: C/audio-video.page:172 C/audio-video.page:176 C/audio-video.page:177
-#: C/audio-video.page:206 C/audio-video.page:207
+#: C/audio-video.page:92 C/audio-video.page:93 C/audio-video.page:112
+#: C/audio-video.page:113 C/audio-video.page:142 C/audio-video.page:143
 msgid "Yes"
 msgstr "Jā"
 
 #. (itstool) path: td/p
-#: C/audio-video.page:155
+#: C/audio-video.page:96
 msgid "Groupwise"
 msgstr "Groupwise"
 
 #. (itstool) path: td/p
-#: C/audio-video.page:160
+#: C/audio-video.page:101
 msgid "ICQ"
 msgstr "ICQ"
 
 #. (itstool) path: td/p
 #. (itstool) path: section/title
-#: C/audio-video.page:165 C/create-account.page:49
+#: C/audio-video.page:106 C/create-account.page:49
 msgid "IRC"
 msgstr "IRC"
 
 #. (itstool) path: td/p
 #. (itstool) path: section/title
-#: C/audio-video.page:170 C/create-account.page:79
+#: C/audio-video.page:111 C/create-account.page:68
 msgid "Jabber"
 msgstr "Jabber"
 
 #. (itstool) path: td/p
-#: C/audio-video.page:175
-msgid "MSN"
-msgstr "MSN"
-
-#. (itstool) path: td/p
-#: C/audio-video.page:180
+#: C/audio-video.page:116
 msgid "myspace"
 msgstr "myspace"
 
 #. (itstool) path: td/p
-#: C/audio-video.page:185
+#: C/audio-video.page:121
 msgid "qq"
 msgstr "qq"
 
 #. (itstool) path: td/p
 #. (itstool) path: section/title
-#: C/audio-video.page:190 C/create-account.page:97
+#: C/audio-video.page:126 C/create-account.page:86
 msgid "People Nearby"
 msgstr "People Nearby (cilvēki tuvumā)"
 
 #. (itstool) path: td/p
-#: C/audio-video.page:195
+#: C/audio-video.page:131
 msgid "sametime"
 msgstr "sametime"
 
 #. (itstool) path: td/p
-#: C/audio-video.page:200
+#: C/audio-video.page:136
 msgid "silc"
 msgstr "silc"
 
 #. (itstool) path: td/p
 #. (itstool) path: section/title
-#: C/audio-video.page:205 C/create-account.page:110
+#: C/audio-video.page:141 C/create-account.page:99
 msgid "SIP"
 msgstr "SIP"
 
 #. (itstool) path: td/p
-#: C/audio-video.page:210
+#: C/audio-video.page:146
 msgid "Yahoo!"
 msgstr "Yahoo!"
 
 #. (itstool) path: td/p
-#: C/audio-video.page:215
+#: C/audio-video.page:151
 msgid "zephyr"
 msgstr "zephyr"
 
@@ -1158,25 +1003,16 @@ msgstr ""
 
 #. (itstool) path: info/desc
 #: C/create-account.page:32
-#| msgid ""
-#| "Register for an account with one of the supported messaging services."
 msgid "Create an account for one of the supported messaging services."
 msgstr "Izveido kontu, izmantojot vienu no atbalstītajiem ziņojumu servisiem."
 
 #. (itstool) path: page/title
 #: C/create-account.page:36
-#| msgid "Register for a new account"
 msgid "Register a new account"
 msgstr "Reģistrēt jaunu kontu"
 
 #. (itstool) path: page/p
 #: C/create-account.page:38
-#| msgid ""
-#| "Most account types require you to create an account with a account "
-#| "provider before you can connect using instant messaging applications like "
-#| "<app>Empathy</app>. With some account providers, you can use "
-#| "<app>Empathy</app> to register for a new account, using the same steps as "
-#| "you would to <link xref=\"add-account\">add an account</link>."
 msgid ""
 "Most account types require you to create an account with a service provider "
 "before you can use that account with instant messaging applications. You can "
@@ -1187,16 +1023,11 @@ msgstr ""
 "Vairums kontu tipu pieprasa tos reģistrēt pie pakalpojuma sniedzēja, pirms "
 "tos var sākt izmantot TZ lietotnēs. Pie dažiem kontu sniedzējiem, varat "
 "izmantot <app>Empathy</app> lietotni, lai reģistrētu jaunu kontu, izmantojot "
-"tos pašus soļus, kurus tu izmantotu, lai <link xref=\"add-account\">"
-"pievienotu kontu</link>."
+"tos pašus soļus, kurus tu izmantotu, lai <link xref=\"add-account"
+"\">pievienotu kontu</link>."
 
 #. (itstool) path: page/p
 #: C/create-account.page:44
-#| msgid ""
-#| "This page provides information on creating a new account for various "
-#| "types of accounts. Your account provider should give you a login ID and a "
-#| "password, as well as any additional information you need to connect using "
-#| "<app>Empathy</app>."
 msgid ""
 "Once you create a new account, your account provider should give you a login "
 "or a username and a password, as well as any additional information you need "
@@ -1215,8 +1046,8 @@ msgid ""
 "did not register your nick or are unable to do so and another user is using "
 "it, then you will need to choose a different one."
 msgstr ""
-"IRC tīklos, savienojoties ar serveri, jānorāda segvārds jeb iesauka. Daži IRC "
-"tīkli izmanto servisu, piemēram NickServ, lai ļautu lietotājiem <link "
+"IRC tīklos, savienojoties ar serveri, jānorāda segvārds jeb iesauka. Daži "
+"IRC tīkli izmanto servisu, piemēram NickServ, lai ļautu lietotājiem <link "
 "xref=\"irc-nick-password\">aizsargāt savus segvārdus</link>. Ja neesat "
 "reģistrējuši savu segvārdu vai nevarat to izdarīt un kāds cits lietotājs to "
 "izmanto, jums būs jāizvēlas cits segvārds."
@@ -1239,39 +1070,8 @@ msgstr ""
 "Daudzi GNOME projekti izmanto <code>irc.gnome.org</code> sarunām, kas "
 "saistītas ar projektu."
 
-#. (itstool) path: section/title
-#: C/create-account.page:68
-msgid "Facebook"
-msgstr "Facebook"
-
 #. (itstool) path: section/p
 #: C/create-account.page:70
-#| msgid ""
-#| "Facebook is one of the most-used social networks. It allows users to "
-#| "create their own profile and to communicate with their friends."
-msgid ""
-"Facebook is one of the more popular social networks. It allows users to "
-"create their own profile and to communicate with their friends."
-msgstr ""
-"Facebook ir viens no populārākajiem sociālajiem tīkliem. Tas ļauj "
-"lietotājiem izveidot pašiem savu profilu un sazināties ar saviem draugiem."
-
-#. (itstool) path: section/p
-#: C/create-account.page:73
-#| msgid ""
-#| "To use Facebook to communicate with your friends, you will need to create "
-#| "a new account from the website: <link href=\"http://www.facebook.com"
-#| "\">www.facebook.com</link>."
-msgid ""
-"To use Facebook to communicate with your friends, you will need to create a "
-"new account from the website: <link href=\"https://www.facebook.com\">www."
-"facebook.com</link>."
-msgstr ""
-"Lai izmantotu Facebook, tev būs jāizveido jauns konts viņu mājaslapā: <link "
-"href=\"https://www.facebook.com\">www.facebook.com</link>."
-
-#. (itstool) path: section/p
-#: C/create-account.page:81
 msgid ""
 "Jabber is an open instant messaging system. Like email, Jabber allows you to "
 "choose your account provider and communicate with all other Jabber users, "
@@ -1282,11 +1082,7 @@ msgstr ""
 "neatkarīgi no viņu konta sniedzēja."
 
 #. (itstool) path: section/p
-#: C/create-account.page:85
-#| msgid ""
-#| "You will need to create a new account with a Jabber provider. There are "
-#| "many free providers; one popular provider is <link href=\"http://register."
-#| "jabber.org/\">Jabber.org</link>."
+#: C/create-account.page:74
 msgid ""
 "You will need to create a new account with a Jabber provider. There are many "
 "free providers; one popular provider is <link href=\"http://register.jabber."
@@ -1298,11 +1094,7 @@ msgstr ""
 "link>."
 
 #. (itstool) path: note/p
-#: C/create-account.page:90
-#| msgid ""
-#| "If you use Google Mail or Google Talk, you already have a Jabber account. "
-#| "Google Talk is a Jabber service. Simply use your Google Mail address and "
-#| "password in <app>Empathy</app> to connect."
+#: C/create-account.page:79
 msgid ""
 "If you use Gmail or Google+ Hangouts, you already have a Jabber account. Use "
 "your Gmail address and password in <app>Empathy</app> to connect."
@@ -1312,12 +1104,7 @@ msgstr ""
 "savienotos."
 
 #. (itstool) path: section/p
-#: C/create-account.page:99
-#| msgid ""
-#| "You do not need to create an account with a service provider to use this "
-#| "feature. This service works whenever you are connected to a local "
-#| "network, such as a wireless hotspot. It automatically finds all other "
-#| "users on the network who are also using this service."
+#: C/create-account.page:88
 msgid ""
 "This service works whenever you are connected to a local network, such as a "
 "wireless hotspot, you do not need to create an account with service "
@@ -1327,21 +1114,21 @@ msgid ""
 msgstr ""
 "Šis pakalpojums strādā jebkad, kad vien esat savienojies ar lokālo tīklu, "
 "piemēram bezvadu pieejas punktam. Jums nevajag veidot kontu pie pakalpojuma "
-"sniedzēja, vienkārši jāizveido konts caur <app>Empathy</app>. Tas automātiski "
-"atradīs visus lietotājus tajā pašā tīklā, kuri izmanto šo servisu."
+"sniedzēja, vienkārši jāizveido konts caur <app>Empathy</app>. Tas "
+"automātiski atradīs visus lietotājus tajā pašā tīklā, kuri izmanto šo "
+"servisu."
 
 #. (itstool) path: section/p
-#: C/create-account.page:105
-#| msgid "For more information, see <link xref=\"salut-protocol\"/>."
+#: C/create-account.page:94
 msgid ""
 "For more information, see the <link xref=\"salut-protocol\">salut protocol</"
 "link>."
 msgstr ""
-"Lai uzzinātu vairāk, skaties <link xref=\"salut-protocol\">salut protokolu<"
-"/link>."
+"Lai uzzinātu vairāk, skaties <link xref=\"salut-protocol\">salut protokolu</"
+"link>."
 
 #. (itstool) path: section/p
-#: C/create-account.page:112
+#: C/create-account.page:101
 msgid ""
 "SIP is an open system which allows users to have audio and video "
 "conversations over the Internet. You need to create an account with a SIP "
@@ -1354,7 +1141,7 @@ msgstr ""
 "kādu SIP pakalpojumu sniedzēju viņš/-a izmanto."
 
 #. (itstool) path: section/p
-#: C/create-account.page:117
+#: C/create-account.page:106
 msgid ""
 "Some SIP providers allow you to call normal phones from your computer. "
 "Generally, you will need to subscribe to a paid service for this feature."
@@ -1364,18 +1151,12 @@ msgstr ""
 "pakalpojumu."
 
 #. (itstool) path: section/title
-#: C/create-account.page:123
+#: C/create-account.page:112
 msgid "Proprietary Services"
 msgstr "Īpašnieka servisi"
 
 #. (itstool) path: section/p
-#: C/create-account.page:125
-#| msgid ""
-#| "There are many proprietary instant messaging services that have been "
-#| "developed by different companies or organizations. <app>Empathy</app> "
-#| "allows you to connect to an existing account for most popular services. "
-#| "To create a new account with one of these services, you will need to "
-#| "visit the service’s web site and agree to its terms of use."
+#: C/create-account.page:114
 msgid ""
 "There are many proprietary instant messaging services that have been "
 "developed by different companies or organizations. <app>Empathy</app> allows "
@@ -1385,26 +1166,21 @@ msgid ""
 msgstr ""
 "Pastāv vairāki īpašnieka TZ servisi kurus ir izstrādājušas dažādas "
 "kompānijas vai organizācijas. <app>Empathy</app> ļauj tev savienoties ar jau "
-"esošu kontu kādā no šiem servisu. Lai izveidotu jaunu kontu ar kādu "
-"no šiem servisiem, tev vajadzēs apmeklēt attiecīgā servisa tīmekļa vietni."
+"esošu kontu kādā no šiem servisu. Lai izveidotu jaunu kontu ar kādu no šiem "
+"servisiem, tev vajadzēs apmeklēt attiecīgā servisa tīmekļa vietni."
 
 #. (itstool) path: item/p
-#: C/create-account.page:133
+#: C/create-account.page:122
 msgid "<link href=\"http://dashboard.aim.com/aim\">AIM</link>"
 msgstr "<link href=\"http://dashboard.aim.com/aim\">AIM</link>"
 
 #. (itstool) path: item/p
-#: C/create-account.page:136
+#: C/create-account.page:125
 msgid "<link href=\"https://www.icq.com/register/\">ICQ</link>"
 msgstr "<link href=\"https://www.icq.com/register/\">ICQ</link>"
 
 #. (itstool) path: item/p
-#: C/create-account.page:139
-msgid "<link href=\"https://accountservices.passport.net\">MSN</link>"
-msgstr "<link href=\"https://accountservices.passport.net\">MSN</link>"
-
-#. (itstool) path: item/p
-#: C/create-account.page:142
+#: C/create-account.page:128
 msgid "<link href=\"https://login.yahoo.com/config/login\">Yahoo!</link>"
 msgstr "<link href=\"https://login.yahoo.com/config/login\">Yahoo!</link>"
 
@@ -1430,6 +1206,16 @@ msgstr ""
 "ierakstīties, neizdzēšot kontu pavisam. Tu vari deaktivēt un atkal aktivēt "
 "kontu, ja tajā vēlies ieiet tikai noteiktos brīžos, bet vēlies izmantot "
 "<app>Empathy</app> citiem kontiem."
+
+#. (itstool) path: item/p
+#: C/disable-account.page:49 C/irc-nick-password.page:50
+#: C/remove-account.page:43
+msgid ""
+"From the <gui>Contact List</gui> window, choose <guiseq><gui>Edit</gui> "
+"<gui>Accounts</gui></guiseq>, or press <key>F4</key>."
+msgstr ""
+"<gui>Kontaktu saraksta</gui> logā izvēlies <guiseq><gui>Rediģēt </"
+"gui><gui>Konti</gui></guiseq>, vai nospied <key>F4</key>."
 
 #. (itstool) path: item/p
 #: C/disable-account.page:53
@@ -2183,6 +1969,11 @@ msgstr ""
 msgid "Select the check box next to each account you wish to import."
 msgstr "Atzīmē katru kontu, kuru vēlies importēt."
 
+#. (itstool) path: item/p
+#: C/import-account.page:61 C/irc-nick-password.page:63
+msgid "Click <gui style=\"button\">Apply</gui>."
+msgstr "Spied <gui style=\"button\">Pielietot</gui>."
+
 #. (itstool) path: note/p
 #: C/import-account.page:66
 msgid ""
@@ -2191,6 +1982,65 @@ msgid ""
 msgstr ""
 "Pagaidām nevar importēt kontus pēc tam, kad esi pabeidzis pirmās palaišanas "
 "palīgu."
+
+#. (itstool) path: info/desc
+#: C/index.page:28
+#| msgid ""
+#| "Empathy is the instant messenging application for GNOME. It supports "
+#| "text, voice and video chat over many protocols."
+msgid ""
+"Empathy is the instant messaging application for GNOME. It supports text, "
+"voice and video chat over many protocols."
+msgstr ""
+"Empathy ir tūlītējās ziņojumapmaiņas lietotne  GNOME videi. Tā atbalsta "
+"teksta ziņojumus, balss un video zvanus daudzos protokolos."
+
+#. (itstool) path: info/title
+#: C/index.page:30
+msgctxt "link"
+msgid "Empathy"
+msgstr "Empathy"
+
+#. (itstool) path: info/title
+#: C/index.page:31
+msgctxt "text"
+msgid "Empathy"
+msgstr "Empathy"
+
+#. (itstool) path: page/title
+#: C/index.page:34
+msgid "<_:media-1/> Empathy"
+msgstr "<_:media-1/> Empathy"
+
+#. (itstool) path: section/title
+#: C/index.page:40
+msgid "Account Management"
+msgstr "Kontu pārvaldnieks"
+
+#. (itstool) path: section/title
+#: C/index.page:44
+msgid "Contact Management"
+msgstr "Kontaktu pārvaldnieks"
+
+#. (itstool) path: section/title
+#: C/index.page:48
+msgid "Text Conversations"
+msgstr "Teksta sarunas"
+
+#. (itstool) path: section/title
+#: C/index.page:52
+msgid "Audio and Video Conversations"
+msgstr "Audio un video sarunas"
+
+#. (itstool) path: section/title
+#: C/index.page:56
+msgid "Advanced Actions"
+msgstr "Darbības lietpratējiem"
+
+#. (itstool) path: section/title
+#: C/index.page:60 C/irc-manage.page:64
+msgid "Common Problems"
+msgstr "Biežākās problēmas"
 
 #. (itstool) path: media
 #. This is a reference to an external file such as an image or video. When
@@ -2218,15 +2068,20 @@ msgstr "Ievads"
 
 #. (itstool) path: page/p
 #: C/introduction.page:23
+#| msgid ""
+#| "<app>Empathy</app> is an instant messaging application for the GNOME "
+#| "Desktop. It supports text messaging, voice &amp; video calls, file "
+#| "transfers, and all the most used messaging systems such as MSN and Google "
+#| "Talk."
 msgid ""
 "<app>Empathy</app> is an instant messaging application for the GNOME "
 "Desktop. It supports text messaging, voice &amp; video calls, file "
-"transfers, and all the most used messaging systems such as MSN and Google "
+"transfers, and all the most used messaging systems such as Jabber and Google "
 "Talk."
 msgstr ""
 "<app>Empathy</app> ir tūlītējās ziņojumapmaiņas lietotne, izveidota GNOME "
 "darbvirsmai. Tā atbalsta teksta ziņojumus, balss un video zvanus, failu "
-"sūtīšanu un visas visbiežāk izmantotās ziņojumu sistēmas, piemēram MSN un "
+"sūtīšanu un visas visbiežāk izmantotās ziņojumu sistēmas, piemēram Jabber un "
 "Google Talk."
 
 #. (itstool) path: page/p
@@ -2394,15 +2249,12 @@ msgstr "Internet Relay Chat (IRC)"
 
 #. (itstool) path: when/p
 #: C/irc-manage.page:47
-#| msgid ""
-#| "<link action=\"install:telepathy-idle\" xref=\"index\" style=\"button"
-#| "\">Install telepathy-idle</link>"
 msgid ""
 "<link action=\"install:telepathy-idle\" xref=\"index\"> Install telepathy-"
 "idle</link>"
 msgstr ""
-"<link action=\"install:telepathy-idle\" xref=\"index\">Instalēt "
-"telepathy-idle</link>"
+"<link action=\"install:telepathy-idle\" xref=\"index\">Instalēt telepathy-"
+"idle</link>"
 
 #. (itstool) path: info/title
 #: C/irc-manage.page:55
@@ -2660,15 +2512,11 @@ msgstr "Shobha Tyagi"
 
 #. (itstool) path: page/title
 #: C/link-contacts.page:29
-#| msgid "Hide offline contacts"
 msgid "Link and unlink contacts"
 msgstr "Saistīt un atsaistīt kontaktus"
 
 #. (itstool) path: page/p
 #: C/link-contacts.page:30
-#| msgid ""
-#| "If one, or more, of your contacts has multiple accounts with different "
-#| "messaging services, you can combine these contacts into a single one."
 msgid ""
 "If one or more of your contacts has multiple accounts with different "
 "messaging services, you can combine these accounts into a single contact."
@@ -2687,9 +2535,6 @@ msgstr ""
 
 #. (itstool) path: page/p
 #: C/link-contacts.page:38
-#| msgid ""
-#| "If you have a Jane Smith contact that is using three different messaging "
-#| "services like:"
 msgid ""
 "Suppose you have a contact called Jane Smith who is using three different "
 "messaging services like:"
@@ -2699,18 +2544,19 @@ msgstr ""
 
 #. (itstool) path: item/p
 #: C/link-contacts.page:44
-msgid "janes@facebook"
-msgstr "ilze@facebook"
-
-#. (itstool) path: item/p
-#: C/link-contacts.page:49
 msgid "jane.smith@gmail"
 msgstr "ilze.priede@gmail"
 
 #. (itstool) path: item/p
-#: C/link-contacts.page:54
+#: C/link-contacts.page:49
 msgid "jane_smith@hotmail"
 msgstr "ilze_priede@hotmail"
+
+#. (itstool) path: item/p
+#: C/link-contacts.page:54
+#| msgid "janes@facebook"
+msgid "janes@yahoo"
+msgstr "ilzep@yahoo"
 
 #. (itstool) path: page/p
 #: C/link-contacts.page:59
@@ -2719,7 +2565,6 @@ msgstr "Tu vari apvienot šos kontaktus vienā vienīgā Ilzes Priedes kontaktā
 
 #. (itstool) path: section/title
 #: C/link-contacts.page:63
-#| msgid "Combining contacts"
 msgid "Link contacts"
 msgstr "Saistīt kontaktus"
 
@@ -2749,7 +2594,6 @@ msgstr ""
 
 #. (itstool) path: item/p
 #: C/link-contacts.page:81
-#| msgid "Click <gui style=\"button\">Link</gui>."
 msgid "Press <gui style=\"button\">Link</gui>."
 msgstr "Spiediet <gui style=\"button\">Saistīt</gui>."
 
@@ -2760,7 +2604,6 @@ msgstr "Atkārtojiet soļus 3 un 4, lai saistītu citus kontaktus."
 
 #. (itstool) path: section/title
 #: C/link-contacts.page:92
-#| msgid "Combining contacts"
 msgid "Unlink contacts"
 msgstr "Atsaistīt kontaktus"
 
@@ -2771,7 +2614,6 @@ msgstr "Lai atsaistītu vai saistītu kontaktu:"
 
 #. (itstool) path: item/p
 #: C/link-contacts.page:98
-#| msgid "Select a status from the list."
 msgid "Select the contact from your list."
 msgstr "No kontaktu saraksta izvēlieties kontaktu."
 
@@ -2786,7 +2628,6 @@ msgstr ""
 
 #. (itstool) path: item/p
 #: C/link-contacts.page:108
-#| msgid "Click <gui style=\"button\">Link</gui>."
 msgid "Press <gui style=\"button\">Linked Contacts</gui>."
 msgstr "Spiediet <gui style=\"button\">Piesaistīt kontaktus</gui>."
 
@@ -2842,8 +2683,8 @@ msgid ""
 msgstr ""
 "Tūlītēja ziņojumapmaiņa, dažkārt saīsināta kā TZ, ir teksta saziņas "
 "līdzeklis, kas darbojas nekavējoties pa internetu vai lokālo tīklu. Dažas TZ "
-"lietotnes strādā tikai ar viena veida kontiem, citi, tai skaitā <link "
-"xref=\"introduction\">Empathy</link>, sniedz TZ pakalpojumu, izmantojot <link "
+"lietotnes strādā tikai ar viena veida kontiem, citi, tai skaitā <link xref="
+"\"introduction\">Empathy</link>, sniedz TZ pakalpojumu, izmantojot <link "
 "xref=\"add-account\">kontus</link> no dažādiem pakalpojumu sniedzējiem. Daži "
 "no tiem atbalsta pat audio un video zvanīšanu."
 
@@ -2854,13 +2695,11 @@ msgstr "Video konferences"
 
 #. (itstool) path: td/p
 #: C/overview.page:44
-#| msgid "Group conversations"
 msgid "Group chats"
 msgstr "Grupu tērzēšana"
 
 #. (itstool) path: td/p
 #: C/overview.page:45
-#| msgid "Favorite rooms"
 msgid "Chat rooms"
 msgstr "Tērzēšanas istabas"
 
@@ -2878,8 +2717,8 @@ msgstr ""
 "Dažas tūlītējās ziņojumapmaiņas lietotnes var izmantot, lai savienotos ar "
 "tērzēšanas istabām — tiešsaistes vietas, kur cilvēki ar līdzīgām interesēm "
 "satiekas, lai runātos. Viens populārs veids, kā savienoties ar vairākām "
-"tērzēšanas istabām, ir tērzēšanas retranslēšana internetā jeb <link "
-"xref=\"irc-manage\">IRC</link>. IRC nodrošina <link xref=\"irc-join-room"
+"tērzēšanas istabām, ir tērzēšanas retranslēšana internetā jeb <link xref="
+"\"irc-manage\">IRC</link>. IRC nodrošina <link xref=\"irc-join-room"
 "\">publiskas</link> tērzēšanas istabas, kas ir pieejamas visiem, kas var "
 "izveidot kontu IRC serverī, un privātās tērzēšanas istabas, kas ir <link "
 "xref=\"irc-join-pwd\">aizsargātas ar paroli</link> un ir pieejamas tikai "
@@ -3867,26 +3706,21 @@ msgstr ""
 
 #. (itstool) path: item/p
 #: C/video-call.page:46
-#| msgid ""
-#| "Select the contact you want to have the conversation, and from the menu "
-#| "select <gui style=\"menuitem\">Video Call</gui>."
 msgid ""
 "Right-click on the contact that you want to call and select <gui style="
 "\"menuitem\">Video Call</gui>."
 msgstr ""
-"Spiediet labo peles pogu uz kontakta, kuram vēlaties zvanīt un izvēlieties <"
-"gui style=\"menuitem\">Video zvans</gui>."
+"Spiediet labo peles pogu uz kontakta, kuram vēlaties zvanīt un izvēlieties "
+"<gui style=\"menuitem\">Video zvans</gui>."
 
 #. (itstool) path: item/p
 #: C/video-call.page:54
-#| msgid ""
-#| "To end the conversation, click on <gui style=\"button\">Hang up</gui>."
 msgid ""
 "To end the conversation, click on the <gui style=\"button\">hang up</gui> "
 "button."
 msgstr ""
-"Lai sarunu beigtu, spiediet uz pogas <gui style=\"button\">Nolikt klausuli<"
-"/gui>."
+"Lai sarunu beigtu, spiediet uz pogas <gui style=\"button\">Nolikt klausuli</"
+"gui>."
 
 #. (itstool) path: note/p
 #: C/video-call.page:60
@@ -3910,351 +3744,3 @@ msgid ""
 msgstr ""
 "Izvēlies kontaktu, ar kuru vēlies sazināties un izvēlnē izvēlies <gui style="
 "\"menuitem\">Video zvans</gui>."
-
-#~| msgid ""
-#~| "@@image: 'figures/empathy-logo.png'; md5=1afc419a644e90b16393807e35cb5cb2"
-#~ msgctxt "_"
-#~ msgid ""
-#~ "external ref='figures/empathy-logo.png' "
-#~ "md5='1afc419a644e90b16393807e35cb5cb2'"
-#~ msgstr ""
-#~ "external ref='figures/empathy-logo.png' "
-#~ "md5='1afc419a644e90b16393807e35cb5cb2'"
-
-#~| msgid "Empathy Internet Messenger"
-#~ msgctxt "link"
-#~ msgid "Empathy Internet Messenger"
-#~ msgstr "Empathy Interneta ziņotājs"
-
-#~| msgid "Empathy Internet Messenger"
-#~ msgctxt "text"
-#~ msgid "Empathy Internet Messenger"
-#~ msgstr "Empathy Interneta ziņotājs"
-
-#~ msgid ""
-#~ "<media type=\"image\" mime=\"image/png\" src=\"figures/empathy-logo.png"
-#~ "\"> Empathy Internet Messenger logo </media> Empathy Internet Messenger"
-#~ msgstr ""
-#~ "<media type=\"image\" mime=\"image/png\" src=\"figures/empathy-logo.png"
-#~ "\"> Empathy Interneta ziņotāja logo </media> Empathy Interneta ziņotājs"
-
-#~| msgid ""
-#~| "@@image: 'figures/gtk-add.png'; md5=a856b499d8d4681b70b5ce6f25bc5c6d"
-#~ msgctxt "_"
-#~ msgid ""
-#~ "external ref='figures/gtk-add.png' md5='a856b499d8d4681b70b5ce6f25bc5c6d'"
-#~ msgstr ""
-#~ "external ref='figures/gtk-add.png' md5='a856b499d8d4681b70b5ce6f25bc5c6d'"
-
-#~| msgid ""
-#~| "@@image: 'figures/gtk-edit.png'; md5=4f21b451732817be0604fe3e2c8da98b"
-#~ msgctxt "_"
-#~ msgid ""
-#~ "external ref='figures/gtk-edit.png' md5='4f21b451732817be0604fe3e2c8da98b'"
-#~ msgstr ""
-#~ "external ref='figures/gtk-edit.png' md5='4f21b451732817be0604fe3e2c8da98b'"
-
-#~| msgid ""
-#~| "@@image: 'figures/gtk-remove.png'; md5=215e3a325a3dd619874e35c30a018bb6"
-#~ msgctxt "_"
-#~ msgid ""
-#~ "external ref='figures/gtk-remove.png' "
-#~ "md5='215e3a325a3dd619874e35c30a018bb6'"
-#~ msgstr ""
-#~ "external ref='figures/gtk-remove.png' "
-#~ "md5='215e3a325a3dd619874e35c30a018bb6'"
-
-#~ msgid ""
-#~ "To add a network to the list, click <media type=\"image\" mime=\"image/png"
-#~ "\" src=\"figures/gtk-add.png\" width=\"16\" height=\"16\">Add</media>."
-#~ msgstr ""
-#~ "Lai pievienotu tīklu sarakstam, spied uz <media type=\"image\" mime="
-#~ "\"image/png\" src=\"figures/gtk-add.png\" width=\"16\" height="
-#~ "\"16\">Pievienot</media>."
-
-#~ msgid ""
-#~ "From the <gui>Contact List</gui> window, click the <media type=\"image\" "
-#~ "mime=\"image/png\" src=\"figures/camera-web.png\">video call</media> icon "
-#~ "next to the name of the contact you wish to call and choose <gui style="
-#~ "\"menuitem\">Audio Call</gui>."
-#~ msgstr ""
-#~ "<gui>Kontaktu saraksta</gui> logā nospied uz <media type=\"image\" mime="
-#~ "\"image/png\" src=\"figures/camera-web.png\">video zvans</media> ikonas "
-#~ "pie kontakta vārda, ar kuru tu vēlies sazināties, un izvēlies <gui style="
-#~ "\"menuitem\">Audio zvans</gui>."
-
-#~ msgid ""
-#~ "Due to technical differences, the free <link href=\"https://www.ekiga.net/"
-#~ "index.php?page=register\">Ekiga.net</link> service does not currently "
-#~ "work with <app>Empathy</app>."
-#~ msgstr ""
-#~ "Sakarā ar tehniskām atšķirībām, bezmaksas pieejamais <link href=\"https://"
-#~ "www.ekiga.net/index.php?page=register\">Ekiga.net</link> pakalpojums nav "
-#~ "savienojams ar <app>Empathy</app>."
-
-#~ msgid ""
-#~ "You do not need to register for an account to use IRC. Although you "
-#~ "specify a nickname when you add an IRC account to <app>Empathy</app>, "
-#~ "this nickname is only established each time you connect. If another user "
-#~ "is using the nickname, you will need to choose a new nickname."
-#~ msgstr ""
-#~ "Tev nevajag reģistrēt kontu, lai izmantotu IRC. Tomēr tu vari norādīt sev "
-#~ "tīkamu lietotājvārdu, kad pievieno IRC kontu <app>Empathy</app> "
-#~ "lietotnei. Šis lietotājvārds tiek izveidots tikai katru reizi, kamēr tu "
-#~ "esi pieslēdzies. Ja kāds cits jau izmanto tavu lietotājvārdu, tev nāksies "
-#~ "izvēlēties kādu citu."
-
-#~ msgid ""
-#~ "Some IRC networks use a service called NickServ to allow users to protect "
-#~ "their nicknames. See <link xref=\"irc-nick-password\"/> for more "
-#~ "information."
-#~ msgstr ""
-#~ "Daži IRC kanāli izmanto pakalpojumu, sauktu par NickServ, lai ļautu "
-#~ "lietotājiem aizsargāt viņu lietotājvārdus. Lasi <link xref=\"irc-nick-"
-#~ "password\"/>, lai uzzinātu vairāk."
-
-#~ msgid "Combine and separate contacts"
-#~ msgstr "Apvienot un sadalīt kontaktus"
-
-#~ msgid ""
-#~ "From the <gui>Contact List</gui> window, right-click one of the contact "
-#~ "that has different accounts, and select <gui style=\"menuitem\">Link "
-#~ "Contacts...</gui>."
-#~ msgstr ""
-#~ "No <gui>Kontaktu saraksta</gui> loga, spiež labo peles pogu uz kontakta "
-#~ "ar dažādiem kontiem un izvēlies <gui style=\"menuitem\">Saistīt "
-#~ "kontaktus...</gui>."
-
-#~ msgid ""
-#~ "From the left pane in the <gui>Link Contacts</gui> window, select the "
-#~ "contacts you want to combine."
-#~ msgstr ""
-#~ "No kreisā paneļa, <gui>Saistīt kontaktus</gui> logā, izvēlies kontaktus, "
-#~ "kurus vēlies apvienot."
-
-#~ msgid ""
-#~ "When a meta-contact has been created, the default contact that will be "
-#~ "used to have a conversation with when you double-click on it, is the "
-#~ "contact with the highest presence on-line."
-#~ msgstr ""
-#~ "Kad ir izveidots meta-kontakts, noklusētais kontakts, kurš tiks "
-#~ "izmantots, lai sazinātos, kad uz tā veic dubultklikšķi, būs kontakts ar "
-#~ "augstāko klātbūtnes laiku."
-
-#~ msgid "Separating contacts"
-#~ msgstr "Kontaktu atdalīšana"
-
-#~ msgid ""
-#~ "From the <gui>Contact List</gui>, right-click the contact to separate, "
-#~ "and select <gui style=\"menuitem\">Link Contacts...</gui>."
-#~ msgstr ""
-#~ "<gui>Kontaktu saraksts</gui> logā spiež labo peles pogu uz kontakta, kuru "
-#~ "vēlies atdalīt un izvēlies <gui style=\"menuitem\">Saistīt kontaktus...</"
-#~ "gui>."
-
-#~ msgid "Click <gui style=\"button\">Unlink</gui>."
-#~ msgstr "Spied uz <gui style=\"button\">Atsaistīt</gui>."
-
-#~ msgid ""
-#~ "Click the <media type=\"image\" mime=\"image/png\" src=\"figures/gtk-edit."
-#~ "png\">edit</media> icon in the error message."
-#~ msgstr ""
-#~ "Nospied uz <media type=\"image\" mime=\"image/png\" src=\"figures/gtk-"
-#~ "edit.png\">rediģēt</media> ikonas, kļūdas paziņojumā."
-
-#~| msgid ""
-#~| "@@image: 'figures/available.png'; md5=2196b2f0ad4ce26fdb7b9d48e75d1947"
-#~ msgctxt "_"
-#~ msgid ""
-#~ "external ref='figures/available.png' "
-#~ "md5='2196b2f0ad4ce26fdb7b9d48e75d1947'"
-#~ msgstr ""
-#~ "external ref='figures/available.png' "
-#~ "md5='2196b2f0ad4ce26fdb7b9d48e75d1947'"
-
-#~| msgid "@@image: 'figures/busy.png'; md5=15eb2adff5faedf97b0cb9105d09410a"
-#~ msgctxt "_"
-#~ msgid ""
-#~ "external ref='figures/busy.png' md5='15eb2adff5faedf97b0cb9105d09410a'"
-#~ msgstr ""
-#~ "external ref='figures/busy.png' md5='15eb2adff5faedf97b0cb9105d09410a'"
-
-#~| msgid "@@image: 'figures/away.png'; md5=9c504d6ffa0cf1a9cc8933d16e1bea33"
-#~ msgctxt "_"
-#~ msgid ""
-#~ "external ref='figures/away.png' md5='9c504d6ffa0cf1a9cc8933d16e1bea33'"
-#~ msgstr ""
-#~ "external ref='figures/away.png' md5='9c504d6ffa0cf1a9cc8933d16e1bea33'"
-
-#~| msgid ""
-#~| "@@image: 'figures/offline.png'; md5=c5b0c21181cbd6e13f8909243c0fa964"
-#~ msgctxt "_"
-#~ msgid ""
-#~ "external ref='figures/offline.png' md5='c5b0c21181cbd6e13f8909243c0fa964'"
-#~ msgstr ""
-#~ "external ref='figures/offline.png' md5='c5b0c21181cbd6e13f8909243c0fa964'"
-
-#~| msgid ""
-#~| "Click the <media type=\"image\" mime=\"image/png\" src=\"figures/gtk-"
-#~| "edit.png\">edit</media> icon in the error message."
-#~ msgid ""
-#~ "<media type=\"image\" mime=\"image/png\" src=\"figures/available.png"
-#~ "\">Available icon</media> <gui>Available</gui>"
-#~ msgstr ""
-#~ "<media type=\"image\" mime=\"image/png\" src=\"figures/available.png\">"
-#~ "\"Pieejams\" ikona</media> <gui>Pieejams</gui>"
-
-#~| msgid ""
-#~| "Click the <media type=\"image\" mime=\"image/png\" src=\"figures/gtk-"
-#~| "edit.png\">edit</media> icon in the error message."
-#~ msgid ""
-#~ "<media type=\"image\" mime=\"image/png\" src=\"figures/busy.png\">Busy "
-#~ "icon</media> <gui>Busy</gui>"
-#~ msgstr ""
-#~ "<media type=\"image\" mime=\"image/png\" src=\"figures/busy.png\">"
-#~ "\"Aizņemts\" ikona</media> <gui>Aizņemts</gui>"
-
-#~| msgid ""
-#~| "Click the <media type=\"image\" mime=\"image/png\" src=\"figures/gtk-"
-#~| "edit.png\">edit</media> icon in the error message."
-#~ msgid ""
-#~ "<media type=\"image\" mime=\"image/png\" src=\"figures/away.png\">Away "
-#~ "icon</media> <gui>Away</gui>"
-#~ msgstr ""
-#~ "<media type=\"image\" mime=\"image/png\" src=\"figures/away.png\">\"Prom"
-#~ "\" ikona</media> <gui>Prom</gui>"
-
-#~| msgid ""
-#~| "Click the <media type=\"image\" mime=\"image/png\" src=\"figures/gtk-"
-#~| "edit.png\">edit</media> icon in the error message."
-#~ msgid ""
-#~ "<media type=\"image\" mime=\"image/png\" src=\"figures/offline.png"
-#~ "\">Offline icon</media> <gui>Invisible</gui>"
-#~ msgstr ""
-#~ "<media type=\"image\" mime=\"image/png\" src=\"figures/offline.png\">"
-#~ "\"Nesaistē\" ikona</media> <gui>Neredzams</gui>"
-
-#~| msgid ""
-#~| "Click the <media type=\"image\" mime=\"image/png\" src=\"figures/gtk-"
-#~| "edit.png\">edit</media> icon in the error message."
-#~ msgid ""
-#~ "<media type=\"image\" mime=\"image/png\" src=\"figures/offline.png"
-#~ "\">Offline icon</media> <gui>Offline</gui>"
-#~ msgstr ""
-#~ "<media type=\"image\" mime=\"image/png\" src=\"figures/offline.png\">"
-#~ "\"Nesaistē\" ikona</media> <gui>Nesaistē</gui>"
-
-#~ msgid ""
-#~ "From the <gui>Contact List</gui> window, click the <media type=\"image\" "
-#~ "mime=\"image/png\" src=\"figures/camera-web.png\">video call</media> icon "
-#~ "next to the name of the contact you wish to call and choose <gui style="
-#~ "\"menuitem\">Video Call</gui>."
-#~ msgstr ""
-#~ "<gui>Kontaktu saraksta</gui> logā spied uz <media type=\"image\" mime="
-#~ "\"image/png\" src=\"figures/camera-web.png\">video zvans</media> ikonas "
-#~ "pretī kontakta vārdam, kuram vēlies zvanīt un izvēlies <gui style="
-#~ "\"menuitem\">Video zvans</gui>."
-
-#~ msgid "milo@ubuntu.com"
-#~ msgstr "milo@ubuntu.com"
-
-#~ msgid "shaunm@gnome.org"
-#~ msgstr "shaunm@gnome.org"
-
-#~ msgid "Available"
-#~ msgstr "Pieejams"
-
-#~ msgid "Busy"
-#~ msgstr "Aizņemts"
-
-#~ msgid "Away"
-#~ msgstr "Prom"
-
-#~ msgid "Invisible"
-#~ msgstr "Neredzams"
-
-#~ msgid "Offline"
-#~ msgstr "Nesaistē"
-
-#~ msgid "kittykat3756@gmail.com"
-#~ msgstr "kittykat3756@gmail.com"
-
-#~ msgid "jwcampbell@gmail.com"
-#~ msgstr "jwcampbell@gmail.com"
-
-#~ msgid "philbull@gmail.com"
-#~ msgstr "philbull@gmail.com"
-
-#~ msgid "I'd like to see this played up a bit more."
-#~ msgstr "Es gribētu redzēt šeit vairāk informācijas."
-
-#~ msgid "shaunm"
-#~ msgstr "shaunm"
-
-#~ msgid ""
-#~ "Empathy no longer allows you to create an IRC account without a valid "
-#~ "nick. I've removed the guide link. Remove the text."
-#~ msgstr ""
-#~ "Empathy vairāk neatļauj izveidot IRC kontu bez derīga segvārda. Esmu "
-#~ "izņēmis pamācības saiti. Izņemiet tekstu."
-
-#~ msgid "Install telepathy-idle"
-#~ msgstr "Instalēt telepathy-idle"
-
-#~ msgid "peter.haslam@freenet.de"
-#~ msgstr "peter.haslam@freenet.de"
-
-#~ msgid "Icon for audio conversation"
-#~ msgstr "Ikona audio sarunai"
-
-#~ msgid "Icon for video conversation"
-#~ msgstr "Ikona video sarunai"
-
-#, fuzzy
-#~ msgid ""
-#~ "I'd like to do tables like this using nothing for No and ✔ for Yes, but "
-#~ "we need to look at the accessibility impact. I've <link href=\"http://"
-#~ "mail.gnome.org/archives/gnome-doc-list/2009-September/msg00006.html"
-#~ "\">asked the accessibility team</link> for input."
-#~ msgstr ""
-#~ "Es vēlētos veidot šāda veida tabulas, neizmantojot neko Nē vietā un ✔ Jā "
-#~ "vietā, taču mums jāņem vērā, ka tas var ieteikmēt pieejamību. Es esmu "
-#~ "<link href=\"http://mail.gnome.org/archives/gnome-doc-list/2009-September/"
-#~ "msg00006.html\">pajautājis pieejamības komandai</link> par so gadījumu."
-
-#, fuzzy
-#~ msgid ""
-#~ "There's recent work on telepathy-butterfly and papyon to support audio "
-#~ "and video for MSN. It might be released in time for 2.28, but since it "
-#~ "doesn't follow the Gnome release schedule, I can't be sure. If it looks "
-#~ "like it's going to ship, let's mark it Yes."
-#~ msgstr ""
-#~ "Pēdējā laikā tiek strādāts pie telepathy-butterfy un papyon, lai tie "
-#~ "atbalstītu audio saziņu, un pie MSN, lai tas atbalstītu video saziņu. Šis "
-#~ "darbs varētu tikt pabeigts laikā, lai palaistu to kopā ar 2.28 versiju, "
-#~ "taču tā, kā tas neseko Gnome palaišanas grafikiem, es neesmu par to "
-#~ "pārliecināts. Ja tas izskatās, ka būs gatavs, atzīmēsim to kā Jā."
-
-#~ msgid "Resource"
-#~ msgstr "Resurss"
-
-#~ msgid "Priority"
-#~ msgstr "Prioritāte"
-
-#~ msgid "Network"
-#~ msgstr "Tīkls"
-
-#~ msgid "Nickname"
-#~ msgstr "Iesauka"
-
-#~ msgid "Password"
-#~ msgstr "Parole"
-
-#~ msgid "Quit message"
-#~ msgstr "Iziešanas ziņa"
-
-#~ msgid "Charset"
-#~ msgstr "Rakstzīmju kopa"
-
-#~ msgid "Servers"
-#~ msgstr "Serveri"
