@@ -5,12 +5,13 @@
 # Daniel Șerbănescu <cyber19rider@gmail.com>, 2010.
 # Simion Ruxandra <ruxy.simion@gmail.com>, 2010.
 # Răpițeanu Viorel-Cătălin <rapiteanu.catalin@gmail.com>, 2013, 2014.
+# Jobava <jobaval10n@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Empathy\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=empathy&keywords=I18N+L10N&component=General\n"
-"POT-Creation-Date: 2014-04-23 15:27+0000\n"
+"POT-Creation-Date: 2016-03-18 16:37+0000\n"
 "PO-Revision-Date: 2014-01-31 04:00+0300\n"
 "Last-Translator: Răpițeanu Viorel-Cătălin <rapiteanu.catalin@gmail.com>\n"
 "Language-Team: Romanian Gnome Team <gnomero-list@lists.sourceforge.net>\n"
@@ -55,6 +56,11 @@ msgid ""
 "text, make audio and video calls, or even transfer files, depending on what "
 "your contact’s chat application allows."
 msgstr ""
+"Empathy este aplicația de mesagerie instant implicită pentru mediul de desktop"
+" GNOME. Empathy se poate conecta la AIM, MSN, Jabber (inclusiv Facebook și "
+"Google talk), IRC și multe alte rețele de mesagerie. Puteți conversa prin text"
+", apeluri audio și video sau chiar să transferați fișiere, în funcție de "
+"ce permite programul folosit de contactul dumneavoastră."
 
 #: ../data/empathy.appdata.xml.in.h:2
 msgid ""
@@ -62,18 +68,20 @@ msgid ""
 "miss a message.  You can respond to your contacts without even having to "
 "open Empathy!"
 msgstr ""
+"Empathy oferă mesagerie integrată pentru desktopul Gnome. Nu ratați niciun "
+"un mesaj.  Puteți răspunde contactelor fără să deschideți Empathy!"
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:1
 msgid "Connection managers should be used"
-msgstr "Ar trebui folosiți administratori de conexiune"
+msgstr "Ar trebui să folosiți gestionari de conexiune"
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:2
 msgid ""
 "Whether connectivity managers should be used to automatically disconnect/"
 "reconnect."
 msgstr ""
-"Dacă administratorii conexiunilor de rețea ar trebui folosiți pentru "
-"deconectare/reconectare automată."
+"Dacă gestionarii de conexiuni ar trebui folosiți pentru deconectare/"
+"reconectare automată."
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:3
 msgid "Empathy should auto-connect on startup"
@@ -117,8 +125,7 @@ msgid ""
 "should be executed or not. Users should not change this key manually."
 msgstr ""
 
-#: ../data/org.gnome.Empathy.gschema.xml.h:12
-#: ../src/empathy-preferences.ui.h:1
+#: ../data/org.gnome.Empathy.gschema.xml.h:12 ../src/empathy-preferences.ui.h:1
 msgid "Show offline contacts"
 msgstr "Arată contactele deconectate"
 
@@ -128,11 +135,11 @@ msgstr "Dacă să fie afișate contactele deconectate în lista de contacte."
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:14
 msgid "Show Balance in contact list"
-msgstr "Arată soldul curent în lista de contacte"
+msgstr "Arată creditul în lista de contacte"
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:15
 msgid "Whether to show account balances in the contact list."
-msgstr "Dacă să fie afișat soldul curent în lista de contacte."
+msgstr "Dacă să fie afișate creditele în lista de contacte."
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:16
 msgid "Hide main window"
@@ -373,13 +380,15 @@ msgstr ""
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:68
 msgid "Inform other users when you are typing to them"
-msgstr ""
+msgstr "Informați alți utilizatori atunci când tastați"
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:69
 msgid ""
 "Whether to send the 'composing' or 'paused' chat states. Does not currently "
 "affect the 'gone' state."
 msgstr ""
+"Dacă să trimită stările de conversație „compunere” și „pauză”. Nu afectează "
+"momentan starea „plecat”."
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:70
 msgid "Use theme for chat rooms"
@@ -707,11 +716,11 @@ msgstr "Programul este prea vechi"
 msgid "Internal error"
 msgstr "Eroare internă"
 
-#: ../libempathy-gtk/empathy-account-chooser.c:683
+#: ../libempathy-gtk/empathy-account-chooser.c:687
 msgid "All accounts"
 msgstr "Toate conturile"
 
-#: ../libempathy-gtk/empathy-avatar-image.c:320
+#: ../libempathy-gtk/empathy-avatar-image.c:353
 msgid "Click to enlarge"
 msgstr "Clic pentru mărire"
 
@@ -721,7 +730,7 @@ msgid "Authentication failed for account <b>%s</b>"
 msgstr "Autentificarea pentru contul <b>%s</b> a eșuat"
 
 #: ../libempathy-gtk/empathy-bad-password-dialog.c:140
-#: ../libempathy-gtk/empathy-chat.c:3828
+#: ../libempathy-gtk/empathy-chat.c:3830
 msgid "Retry"
 msgstr "Încercați din nou"
 
@@ -859,7 +868,7 @@ msgstr ""
 
 #: ../libempathy-gtk/empathy-chat.c:1533
 msgid "insufficient balance to send message"
-msgstr "sold insuficient pentru a trimite mesajul"
+msgstr "credit insuficient pentru a trimite mesajul"
 
 #: ../libempathy-gtk/empathy-chat.c:1537 ../libempathy-gtk/empathy-chat.c:1551
 #: ../libempathy-gtk/empathy-chat.c:1614
@@ -878,7 +887,7 @@ msgstr "Eroare la trimiterea mesajului : %s"
 #: ../libempathy-gtk/empathy-chat.c:1545
 #, c-format
 msgid "insufficient balance to send message. <a href='%s'>Top up</a>."
-msgstr "sold insuficient pentru a trimite mesajul. <a href='%s'>Încărcați</a>."
+msgstr "credit insuficient pentru a trimite mesajul. <a href='%s'>Încărcați</a>."
 
 #: ../libempathy-gtk/empathy-chat.c:1585
 msgid "not capable"
@@ -908,7 +917,7 @@ msgstr "neimplementat"
 msgid "unknown"
 msgstr "necunoscut"
 
-#: ../libempathy-gtk/empathy-chat.c:1675 ../src/empathy-chat-window.c:973
+#: ../libempathy-gtk/empathy-chat.c:1675 ../src/empathy-chat-window.c:978
 msgid "Topic:"
 msgstr "Subiect:"
 
@@ -1029,43 +1038,43 @@ msgid "Disconnected"
 msgstr "Deconectat"
 
 #. Add message
-#: ../libempathy-gtk/empathy-chat.c:3768
+#: ../libempathy-gtk/empathy-chat.c:3770
 msgid "Would you like to store this password?"
 msgstr "Doriți să se stocheze această parolă?"
 
-#: ../libempathy-gtk/empathy-chat.c:3774
+#: ../libempathy-gtk/empathy-chat.c:3776
 msgid "Remember"
 msgstr "Reține"
 
-#: ../libempathy-gtk/empathy-chat.c:3784
+#: ../libempathy-gtk/empathy-chat.c:3786
 msgid "Not now"
 msgstr "Nu acum"
 
-#: ../libempathy-gtk/empathy-chat.c:3832
+#: ../libempathy-gtk/empathy-chat.c:3834
 msgid "Wrong password; please try again:"
 msgstr "Parolă incorectă; încercați din nou:"
 
 #. Add message
-#: ../libempathy-gtk/empathy-chat.c:3956
+#: ../libempathy-gtk/empathy-chat.c:3958
 msgid "This room is protected by a password:"
 msgstr "Acest canal este protejat de o parolă:"
 
-#: ../libempathy-gtk/empathy-chat.c:3983
+#: ../libempathy-gtk/empathy-chat.c:3985
 #: ../src/empathy-new-chatroom-dialog.c:787
 msgid "Join"
 msgstr "Alăturare"
 
-#: ../libempathy-gtk/empathy-chat.c:4175 ../src/empathy-event-manager.c:1162
+#: ../libempathy-gtk/empathy-chat.c:4177 ../src/empathy-event-manager.c:1162
 msgid "Connected"
 msgstr "Conectat"
 
-#: ../libempathy-gtk/empathy-chat.c:4227
+#: ../libempathy-gtk/empathy-chat.c:4229
 msgid "Conversation"
 msgstr "Conversație"
 
 #. Translators: this string is a something like
 #. * "Escher Cat (SMS)"
-#: ../libempathy-gtk/empathy-chat.c:4232
+#: ../libempathy-gtk/empathy-chat.c:4234
 #, c-format
 msgid "%s (SMS)"
 msgstr "%s (SMS)"
@@ -1109,8 +1118,7 @@ msgstr "Contacte blocate"
 
 #: ../libempathy-gtk/empathy-contact-blocking-dialog.ui.h:3
 #: ../libempathy-gtk/empathy-status-preset-dialog.ui.h:1
-#: ../src/empathy-accounts-dialog.ui.h:2
-#: ../src/empathy-chatrooms-window.ui.h:3
+#: ../src/empathy-accounts-dialog.ui.h:2 ../src/empathy-chatrooms-window.ui.h:3
 msgid "Remove"
 msgstr "Elimină"
 
@@ -1132,9 +1140,8 @@ msgid "No contacts found"
 msgstr "Nu s-a găsit niciun contact"
 
 #: ../libempathy-gtk/empathy-contact-search-dialog.c:660
-#, fuzzy
 msgid "Contact search is not supported on this account"
-msgstr "Această conversație nu are un subiect definit"
+msgstr "Căutarea contactelor nu este suportată pentru acest cont"
 
 #: ../libempathy-gtk/empathy-contact-search-dialog.c:666
 msgid "Your message introducing yourself:"
@@ -1282,7 +1289,7 @@ msgstr "gnome-contacts nu este instalat"
 
 #: ../libempathy-gtk/empathy-individual-information-dialog.c:325
 msgid "Please install gnome-contacts to access contacts details."
-msgstr ""
+msgstr "Vă rugăm instalați Contacte Gnome pentru a accesa detaliile de contact."
 
 #. Translators: this is used in the context menu for a contact. The first
 #. * parameter is a contact ID (e.g. foo@jabber.org) and the second is one
@@ -1292,60 +1299,60 @@ msgstr ""
 msgid "%s (%s)"
 msgstr "%s (%s)"
 
-#: ../libempathy-gtk/empathy-individual-menu.c:363
+#: ../libempathy-gtk/empathy-individual-menu.c:342
 msgid "Select account to use to place the call"
 msgstr "Selectați contul pe care doriți să îl utilizați pentru a apela"
 
-#: ../libempathy-gtk/empathy-individual-menu.c:367
+#: ../libempathy-gtk/empathy-individual-menu.c:346
 #: ../libempathy-gtk/empathy-log-window.ui.h:6
 #: ../src/empathy-call-window.ui.h:20
 msgid "Call"
 msgstr "Apel"
 
-#: ../libempathy-gtk/empathy-individual-menu.c:433
+#: ../libempathy-gtk/empathy-individual-menu.c:412
 msgid "Mobile"
 msgstr "Telefon mobil"
 
-#: ../libempathy-gtk/empathy-individual-menu.c:435
+#: ../libempathy-gtk/empathy-individual-menu.c:414
 msgid "Work"
 msgstr "Muncă"
 
-#: ../libempathy-gtk/empathy-individual-menu.c:437
+#: ../libempathy-gtk/empathy-individual-menu.c:416
 msgid "HOME"
 msgstr "ACASĂ"
 
 #. translators: first argument is a phone number like +32123456 and
 #. * the second one is something like 'home' or 'work'.
-#: ../libempathy-gtk/empathy-individual-menu.c:478
-#, fuzzy, c-format
+#: ../libempathy-gtk/empathy-individual-menu.c:457
+#, c-format
 msgid "Call %s (%s)"
-msgstr "%s (%s)"
+msgstr "Apelează %s (%s)"
 
 #. translators: argument is a phone number like +32123456
-#: ../libempathy-gtk/empathy-individual-menu.c:483
-#, fuzzy, c-format
+#: ../libempathy-gtk/empathy-individual-menu.c:462
+#, c-format
 msgid "Call %s"
-msgstr "Ați sunat pe %s"
+msgstr "Apel %s"
 
-#: ../libempathy-gtk/empathy-individual-menu.c:695
+#: ../libempathy-gtk/empathy-individual-menu.c:674
 msgid "_Block Contact"
 msgstr "_Blochează un contact"
 
-#: ../libempathy-gtk/empathy-individual-menu.c:750
+#: ../libempathy-gtk/empathy-individual-menu.c:729
 #, c-format
 msgid "Remove from _Group '%s'"
 msgstr "Elimină din _grupul „%s”"
 
-#: ../libempathy-gtk/empathy-individual-menu.c:771
+#: ../libempathy-gtk/empathy-individual-menu.c:750
 msgid "Delete and _Block"
 msgstr "Șterge și _blochează"
 
-#: ../libempathy-gtk/empathy-individual-menu.c:859
+#: ../libempathy-gtk/empathy-individual-menu.c:838
 #, c-format
 msgid "Do you really want to remove the contact '%s'?"
 msgstr "Sigur doriți să eliminați contactul „%s”?"
 
-#: ../libempathy-gtk/empathy-individual-menu.c:868
+#: ../libempathy-gtk/empathy-individual-menu.c:847
 #, c-format
 msgid ""
 "Do you really want to remove the linked contact '%s'? Note that this will "
@@ -1355,90 +1362,90 @@ msgstr ""
 "elimina toate contactele care alcătuiesc acest contact îmbinat."
 
 # LG: aici e vorba de titlul unui dialog
-#: ../libempathy-gtk/empathy-individual-menu.c:879
+#: ../libempathy-gtk/empathy-individual-menu.c:858
 msgid "Removing contact"
 msgstr "Eliminare contact"
 
-#: ../libempathy-gtk/empathy-individual-menu.c:955
-#: ../libempathy-gtk/empathy-individual-view.c:2442
+#: ../libempathy-gtk/empathy-individual-menu.c:934
+#: ../libempathy-gtk/empathy-individual-view.c:2447
 msgid "_Remove"
 msgstr "_Elimină"
 
 #. add chat button
-#: ../libempathy-gtk/empathy-individual-menu.c:1374
+#: ../libempathy-gtk/empathy-individual-menu.c:1351
 #: ../libempathy-gtk/empathy-new-message-dialog.c:308
 msgid "_Chat"
 msgstr "Dis_cuție"
 
 #. add SMS button
-#: ../libempathy-gtk/empathy-individual-menu.c:1413
+#: ../libempathy-gtk/empathy-individual-menu.c:1418
 #: ../libempathy-gtk/empathy-new-message-dialog.c:302
 msgid "_SMS"
 msgstr "_SMS"
 
-#: ../libempathy-gtk/empathy-individual-menu.c:1449
+#: ../libempathy-gtk/empathy-individual-menu.c:1484
 msgctxt "menu item"
 msgid "_Audio Call"
 msgstr "Apel _audio"
 
-#: ../libempathy-gtk/empathy-individual-menu.c:1485
+#: ../libempathy-gtk/empathy-individual-menu.c:1550
 msgctxt "menu item"
 msgid "_Video Call"
 msgstr "Apel _video"
 
-#: ../libempathy-gtk/empathy-individual-menu.c:1527
+#: ../libempathy-gtk/empathy-individual-menu.c:1632
 #: ../src/empathy-roster-window-menubar.ui.h:11
 msgid "_Previous Conversations"
 msgstr "Conversații an_terioare"
 
-#: ../libempathy-gtk/empathy-individual-menu.c:1559
+#: ../libempathy-gtk/empathy-individual-menu.c:1689
 msgid "Send File"
 msgstr "Trimite un fișier"
 
-#: ../libempathy-gtk/empathy-individual-menu.c:1593
+#: ../libempathy-gtk/empathy-individual-menu.c:1751
 msgid "Share My Desktop"
 msgstr "Partajează desktopul"
 
-#: ../libempathy-gtk/empathy-individual-menu.c:1620
+#: ../libempathy-gtk/empathy-individual-menu.c:1809
 #: ../libempathy-gtk/empathy-individual-widget.c:1423
 msgid "Favorite"
 msgstr "Favorite"
 
-#: ../libempathy-gtk/empathy-individual-menu.c:1649
+#: ../libempathy-gtk/empathy-individual-menu.c:1838
 msgid "Infor_mation"
 msgstr "Infor_mații"
 
-#: ../libempathy-gtk/empathy-individual-menu.c:1698
+#: ../libempathy-gtk/empathy-individual-menu.c:1887
 msgctxt "Edit individual (contextual menu)"
 msgid "_Edit"
 msgstr "_Editare"
 
 #. send invitation
-#: ../libempathy-gtk/empathy-individual-menu.c:1814
-#: ../src/empathy-chat-window.c:1274
+#: ../libempathy-gtk/empathy-individual-menu.c:2003
+#: ../src/empathy-chat-window.c:1279
 msgid "Inviting you to this room"
 msgstr "Sunteți invitat în acest canal de discuții"
 
-#: ../libempathy-gtk/empathy-individual-menu.c:1860
+#: ../libempathy-gtk/empathy-individual-menu.c:2049
 msgid "_Invite to Chat Room"
 msgstr "_Invită într-un canal de discuții"
 
-#: ../libempathy-gtk/empathy-individual-menu.c:2056
+#: ../libempathy-gtk/empathy-individual-menu.c:2245
 #: ../src/empathy-roster-window.ui.h:4
 msgid "_Add Contact…"
 msgstr "_Adaugă un contact…"
 
-#: ../libempathy-gtk/empathy-individual-view.c:2362
+#: ../libempathy-gtk/empathy-individual-view.c:2367
 #, c-format
 msgid "Do you really want to remove the group '%s'?"
 msgstr "Sigur doriți să eliminați grupul „%s”?"
 
 # LG: aici e titlul unui dialog, deși nu pare :)
-#: ../libempathy-gtk/empathy-individual-view.c:2365
+#: ../libempathy-gtk/empathy-individual-view.c:2370
 msgid "Removing group"
 msgstr "Eliminare grup"
 
-#: ../libempathy-gtk/empathy-individual-view.c:2433
+#: ../libempathy-gtk/empathy-individual-view.c:2438
 msgid "Re_name"
 msgstr "Nume real:"
 
@@ -1594,11 +1601,11 @@ msgstr ""
 "aceeași rețea ca dumneavoastră. Dacă doriți să utilizați această facilitate, "
 "verificați dacă detaliile de mai jos sunt corecte."
 
-#: ../libempathy-gtk/empathy-local-xmpp-assistant-widget.c:102
+#: ../libempathy-gtk/empathy-local-xmpp-assistant-widget.c:103
 msgid "People nearby"
 msgstr "Persoane din apropiere"
 
-#: ../libempathy-gtk/empathy-local-xmpp-assistant-widget.c:117
+#: ../libempathy-gtk/empathy-local-xmpp-assistant-widget.c:118
 msgid ""
 "You can change these details later or disable this feature by choosing <span "
 "style=\"italic\">Edit → Accounts</span> in the Contact List."
@@ -1759,7 +1766,7 @@ msgid "Profile"
 msgstr "Profil"
 
 #: ../libempathy-gtk/empathy-log-window.ui.h:5
-#: ../src/empathy-chat-window.c:1490 ../src/empathy-preferences.ui.h:11
+#: ../src/empathy-chat-window.c:1495 ../src/empathy-preferences.ui.h:11
 msgid "Chat"
 msgstr "Discută"
 
@@ -1888,13 +1895,15 @@ msgid ""
 "<b>Current message: %s</b>\n"
 "<small><i>Press Enter to set the new message or Esc to cancel.</i></small>"
 msgstr ""
+"<b>Mesaj curent: %s</b>\n"
+"<small><i>Apăsați Enter pentru a stabili noul mesaj sau Esc pentru a anula.</i></small>"
 
 #: ../libempathy-gtk/empathy-presence-chooser.c:387
 msgid "Set status"
 msgstr "Setează mesajul de status"
 
 #. Custom messages
-#: ../libempathy-gtk/empathy-presence-chooser.c:1095
+#: ../libempathy-gtk/empathy-presence-chooser.c:1098
 msgid "Custom messages…"
 msgstr "Mesaje personalizate…"
 
@@ -2059,7 +2068,7 @@ msgstr "C_ontinuă"
 
 #: ../libempathy-gtk/empathy-tls-dialog.c:284
 msgid "Untrusted connection"
-msgstr ""
+msgstr "Conexiune nesecurizată"
 
 #: ../libempathy-gtk/empathy-tls-dialog.c:285
 msgid "This connection is untrusted. Would you like to continue anyway?"
@@ -2112,12 +2121,11 @@ msgstr "_Deschide legătura"
 #. Inspector
 #: ../libempathy-gtk/empathy-webkit-utils.c:306
 msgid "Inspect HTML"
-msgstr ""
+msgstr "Inspectează HTML"
 
 #: ../libempathy-gtk/empathy-roster-model.h:27
-#, fuzzy
 msgid "Top Contacts"
-msgstr "Contact"
+msgstr "Contacte de top"
 
 #: ../libempathy-gtk/empathy-roster-model.h:28
 msgid "People Nearby"
@@ -2153,7 +2161,8 @@ msgstr ""
 "  Bogan Silviu https://launchpad.net/~silviubogan\n"
 "  Chisu Vasile Marius https://launchpad.net/~111979vasile\n"
 "  Ic3-T https://launchpad.net/~mazilu59\n"
-"  Lucian Adrian Grijincu https://launchpad.net/~lucian.grijincu"
+"  Lucian Adrian Grijincu https://launchpad.net/~lucian.grijincu\n"
+"  Jobava <jobaval10n@gmail.com>"
 
 #: ../src/empathy-accounts.c:171
 msgid "Don't display any dialogs; do any work (eg, importing) and exit"
@@ -2178,7 +2187,7 @@ msgstr "<account-id>"
 msgid "- Empathy Accounts"
 msgstr "- Conturi Empathy"
 
-#: ../src/empathy-accounts.c:239
+#: ../src/empathy-accounts.c:240
 msgid "Empathy Accounts"
 msgstr "Conturi Empathy"
 
@@ -2223,6 +2232,9 @@ msgid ""
 "backend. Please install telepathy-haze and restart your session to migrate "
 "the account."
 msgstr ""
+"Acest cont a fost dezactivat deoarece se bazează pe un suport vechi ce nu mai "
+"este întreținut. Vă rugăm să instalați telepathy-haze și reporniți sesiunea "
+"pentru a migra contul."
 
 #: ../src/empathy-accounts-dialog.c:485
 msgid "Offline — Account Disabled"
@@ -2305,9 +2317,8 @@ msgstr ""
 "fiecare protocol pe care doriți să-l folosiți."
 
 #: ../src/empathy-accounts-dialog.ui.h:6
-#, fuzzy
 msgid "No protocol backends installed"
-msgstr "Niciun protocol instalat"
+msgstr "Nu sunt instalate suporturi pentru protocol"
 
 #: ../src/empathy-auth-client.c:285
 msgid " - Empathy authentication client"
@@ -2317,23 +2328,23 @@ msgstr " - Client de autentificare Empathy"
 msgid "Empathy authentication client"
 msgstr "Client de autentificare Empathy"
 
-#: ../src/empathy.c:407
+#: ../src/empathy.c:411
 msgid "Don't connect on startup"
 msgstr "Nu conecta la pornire"
 
-#: ../src/empathy.c:411
+#: ../src/empathy.c:415
 msgid "Don't display the contact list or any other dialogs on startup"
 msgstr "Nu arăta lista de contacte sau orice alt dialog la pornire"
 
-#: ../src/empathy.c:440
+#: ../src/empathy.c:444
 msgid "- Empathy IM Client"
 msgstr "- Mesagerie instant Empathy"
 
-#: ../src/empathy.c:626
+#: ../src/empathy.c:630
 msgid "Error contacting the Account Manager"
 msgstr "Eroare la contactarea managerului de conturi"
 
-#: ../src/empathy.c:628
+#: ../src/empathy.c:632
 #, c-format
 msgid ""
 "There was an error while trying to connect to the Telepathy Account Manager. "
@@ -2346,15 +2357,15 @@ msgstr ""
 "\n"
 "%s"
 
-#: ../src/empathy-call.c:115
+#: ../src/empathy-call.c:116
 msgid "In a call"
 msgstr "Într-un apel"
 
-#: ../src/empathy-call.c:223
+#: ../src/empathy-call.c:226
 msgid "- Empathy Audio/Video Client"
 msgstr "- Client audio/video Empathy"
 
-#: ../src/empathy-call.c:247
+#: ../src/empathy-call.c:250
 msgid "Empathy Audio/Video Client"
 msgstr "Client audio/video Empathy"
 
@@ -2450,7 +2461,7 @@ msgid ""
 "%s's software does not understand any of the audio formats supported by your "
 "computer"
 msgstr ""
-"Software-ul utilizatorului %s nu înțelege niciunul dintre formatele audio "
+"Programul utilizatorului %s nu înțelege niciunul dintre formatele audio "
 "suportate de calculatorul dumneavoastră"
 
 #: ../src/empathy-call-window.c:3101
@@ -2459,7 +2470,7 @@ msgid ""
 "%s's software does not understand any of the video formats supported by your "
 "computer"
 msgstr ""
-"Software-ul utilizatorului %s nu înțelege niciunul dintre formatele video "
+"Programul utilizatorului %s nu înțelege niciunul dintre formatele video "
 "suportate de calculatorul dumneavoastră"
 
 #: ../src/empathy-call-window.c:3107
@@ -2520,7 +2531,7 @@ msgstr "Nu s-a putut realiza fluxul video"
 #: ../src/empathy-call-window.c:3231
 #, c-format
 msgid "Your current balance is %s."
-msgstr "Soldul curent este %s."
+msgstr "Creditul curent este %s."
 
 #: ../src/empathy-call-window.c:3235
 msgid "Sorry, you don’t have enough credit for that call."
@@ -2672,6 +2683,8 @@ msgid ""
 "Closing this window will leave %s. You will not receive any further messages "
 "until you rejoin it."
 msgstr ""
+"Închiderea acestei ferestre vă va scoate din %s. Nu veți mai primi alte mesaje până "
+"ce nu reintrați."
 
 #: ../src/empathy-chat-window.c:297
 #, c-format
@@ -2681,20 +2694,21 @@ msgid ""
 msgid_plural ""
 "Closing this window will leave %u chat rooms. You will not receive any "
 "further messages until you rejoin them."
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Închiderea acestei ferestre vă va scoate din canal. Nu veți mai putea primi mesaje până ce nu reintrați."
+msgstr[1] "Închiderea acestei ferestre vă va scoate din %u canale. Nu veți mai putea primi mesaje până ce nu reintrați."
+msgstr[2] "Închiderea acestei ferestre vă va scoate din %u de canale. Nu veți mai putea primi mesaje până ce nu reintrați."
 
 #: ../src/empathy-chat-window.c:308
 #, c-format
 msgid "Leave %s?"
-msgstr ""
+msgstr "Părăsiți %s?"
 
 #: ../src/empathy-chat-window.c:310
 msgid ""
 "You will not receive any further messages from this chat room until you "
 "rejoin it."
 msgstr ""
+"Nu veți mai primi alte mesaje din această conversație până ce nu reintrați."
 
 #: ../src/empathy-chat-window.c:329
 msgid "Close window"
@@ -2704,7 +2718,7 @@ msgstr "Închide fereastra"
 msgid "Leave room"
 msgstr "Părăsește canalul"
 
-#: ../src/empathy-chat-window.c:671 ../src/empathy-chat-window.c:694
+#: ../src/empathy-chat-window.c:676 ../src/empathy-chat-window.c:699
 #, c-format
 msgid "%s (%d unread)"
 msgid_plural "%s (%d unread)"
@@ -2712,7 +2726,7 @@ msgstr[0] "%s (%d necitit)"
 msgstr[1] "%s (%d necitite)"
 msgstr[2] "%s (%d necitite)"
 
-#: ../src/empathy-chat-window.c:686
+#: ../src/empathy-chat-window.c:691
 #, c-format
 msgid "%s (and %u other)"
 msgid_plural "%s (and %u others)"
@@ -2720,7 +2734,7 @@ msgstr[0] "%s (și %u altul)"
 msgstr[1] "%s (și altele %u)"
 msgstr[2] "%s (și altele %u)"
 
-#: ../src/empathy-chat-window.c:702
+#: ../src/empathy-chat-window.c:707
 #, c-format
 msgid "%s (%d unread from others)"
 msgid_plural "%s (%d unread from others)"
@@ -2728,7 +2742,7 @@ msgstr[0] "%s (%d necitit de la alții)"
 msgstr[1] "%s (%d necitite de la alții)"
 msgstr[2] "%s (%d necitite de la alții)"
 
-#: ../src/empathy-chat-window.c:711
+#: ../src/empathy-chat-window.c:716
 #, c-format
 msgid "%s (%d unread from all)"
 msgid_plural "%s (%d unread from all)"
@@ -2736,11 +2750,11 @@ msgstr[0] "%s (%d necitit de la toți)"
 msgstr[1] "%s (%d necitite de la toți)"
 msgstr[2] "%s (%d necitite de la toți)"
 
-#: ../src/empathy-chat-window.c:948
+#: ../src/empathy-chat-window.c:953
 msgid "SMS:"
 msgstr "SMS:"
 
-#: ../src/empathy-chat-window.c:956
+#: ../src/empathy-chat-window.c:961
 #, c-format
 msgid "Sending %d message"
 msgid_plural "Sending %d messages"
@@ -2748,7 +2762,7 @@ msgstr[0] "Trimite %d mesaj"
 msgstr[1] "Trimite %d mesaje"
 msgstr[2] "Trimite %d de mesaje"
 
-#: ../src/empathy-chat-window.c:976
+#: ../src/empathy-chat-window.c:981
 msgid "Typing a message."
 msgstr "Tastează un mesaj."
 
@@ -2842,11 +2856,11 @@ msgstr "Legătură Pastebin"
 
 #: ../src/empathy-debug-window.c:1633
 msgid "Pastebin response"
-msgstr ""
+msgstr "Răspuns pastebin"
 
 #: ../src/empathy-debug-window.c:1640
 msgid "Data too large for a single paste. Please save logs to file."
-msgstr ""
+msgstr "Datele sunt prea mari pentru o singură lipire. Vă rugăm salvați înregistrările într-un fișier."
 
 #: ../src/empathy-debug-window.c:1822
 msgid "Debug Window"
@@ -2854,7 +2868,7 @@ msgstr "Fereastră de depanare"
 
 #: ../src/empathy-debug-window.c:1882
 msgid "Send to pastebin"
-msgstr ""
+msgstr "Trimite la pastebin"
 
 #: ../src/empathy-debug-window.c:1926
 msgid "Pause"
@@ -2898,6 +2912,13 @@ msgid ""
 "when reporting it by displaying the advanced fields in the <a href=\"https://"
 "bugzilla.gnome.org/enter_bug.cgi?product=empathy\">bug report</a>."
 msgstr ""
+"Chiar dacă acestea nu afișează parolele, înregistrările pot conține informații"
+" confidențiale cum ar fi lista de contacte sau mesajele trimise sau primite "
+"recent.\n"
+"Dacă nu doriți ca aceste informații să fie disponibile într-o raportare de "
+"defect publică, puteți alege să limitați vizibilitatea raportului doar la "
+"dezvoltatorii Empathy prin afișarea câmpurilor avansate în <a href=\"https://"
+"bugzilla.gnome.org/enter_bug.cgi?product=empathy\">raportul de defect</a>."
 
 #: ../src/empathy-debug-window.c:2027
 msgid "Time"
@@ -2920,7 +2941,7 @@ msgid ""
 "The selected connection manager does not support the remote debugging "
 "extension."
 msgstr ""
-"Administratorul de conexiuni ales nu suportă extensia de depanare la "
+"Gestionarul de conexiuni ales nu suportă extensia de depanare la "
 "distanță."
 
 #: ../src/empathy-event-manager.c:474
@@ -3200,7 +3221,6 @@ msgid "_Room:"
 msgstr "Cana_l:"
 
 #: ../src/empathy-new-chatroom-dialog.ui.h:3
-#, fuzzy
 msgid ""
 "Enter the server which hosts the room, or leave it empty if the room is on "
 "the current account&apos;s server"
@@ -3334,11 +3354,10 @@ msgid "Show groups"
 msgstr "Arată grupurile"
 
 #: ../src/empathy-preferences.ui.h:3
-#, fuzzy
 msgid "Show account balances"
-msgstr "Arată asistentul de contacte"
+msgstr "Arată creditele pentru cont"
 
-#: ../src/empathy-preferences.ui.h:4 ../src/empathy-roster-window.c:2302
+#: ../src/empathy-preferences.ui.h:4 ../src/empathy-roster-window.c:2301
 msgid "Contact List"
 msgstr "Listă de contacte"
 
@@ -3425,8 +3444,7 @@ msgstr "Sunete"
 #: ../src/empathy-preferences.ui.h:26
 msgid "Use _echo cancellation to improve call quality"
 msgstr ""
-"Utilizați funcția de reducere a _ecoului pentru a îmbunătăți calitatea "
-"apelului"
+"Utilizează reducerea _ecoului pentru a îmbunătăți calitatea apelului"
 
 #: ../src/empathy-preferences.ui.h:27
 msgid ""
@@ -3501,7 +3519,7 @@ msgstr "Deconectează"
 
 #: ../src/empathy-roster-window.c:494
 msgid "You need to set up an account to see contacts here."
-msgstr ""
+msgstr "Trebuie să configurați un cont pentru a vedea contactele aici."
 
 #: ../src/empathy-roster-window.c:570
 #, c-format
@@ -3549,33 +3567,32 @@ msgid "Close"
 msgstr "Închide"
 
 #: ../src/empathy-roster-window.c:905
-#, fuzzy
 msgid "Top up account"
 msgstr "Încarcă creditul contului"
 
-#: ../src/empathy-roster-window.c:1627
+#: ../src/empathy-roster-window.c:1626
 msgid "You need to enable one of your accounts to see contacts here."
-msgstr ""
+msgstr "Trebuie să activați unul din conturi pentru a vedea contactele aici."
 
 #. translators: argument is an account name
-#: ../src/empathy-roster-window.c:1635
+#: ../src/empathy-roster-window.c:1634
 #, c-format
 msgid "You need to enable %s to see contacts here."
-msgstr ""
+msgstr "Trebuie să activați %s pentru a vedea contacte aici."
 
-#: ../src/empathy-roster-window.c:1713
+#: ../src/empathy-roster-window.c:1712
 msgid "Change your presence to see contacts here"
-msgstr ""
+msgstr "Schimbați prezența pentru a vedea contacte aici."
 
-#: ../src/empathy-roster-window.c:1722
+#: ../src/empathy-roster-window.c:1721
 msgid "No match found"
-msgstr "Nicio potrivire"
+msgstr "Nimic găsit"
 
-#: ../src/empathy-roster-window.c:1729
+#: ../src/empathy-roster-window.c:1728
 msgid "You haven't added any contacts yet"
 msgstr "Nu ați adăugat nici un contact încă"
 
-#: ../src/empathy-roster-window.c:1732
+#: ../src/empathy-roster-window.c:1731
 msgid "No online contacts"
 msgstr "Niciun contact conectat"
 
@@ -3652,7 +3669,7 @@ msgstr "Setările contului"
 
 #: ../src/empathy-roster-window.ui.h:2
 msgid "Go _Online"
-msgstr ""
+msgstr "Mergeți _Online"
 
 #: ../src/empathy-roster-window.ui.h:3
 msgid "Show _Offline Contacts"
@@ -3665,7 +3682,7 @@ msgstr "Stare"
 #: ../ubuntu-online-accounts/cc-plugins/account-plugins/empathy-accounts-plugin-widget.c:183
 #: ../ubuntu-online-accounts/cc-plugins/app-plugin/empathy-app-plugin-widget.c:126
 msgid "Done"
-msgstr ""
+msgstr "Gata"
 
 #: ../ubuntu-online-accounts/cc-plugins/account-plugins/empathy-accounts-plugin-widget.c:214
 msgid "Please enter your account details"
@@ -3674,12 +3691,11 @@ msgstr "Introduceți detaliile contului"
 #: ../ubuntu-online-accounts/cc-plugins/app-plugin/empathy-app-plugin-widget.c:160
 #, c-format
 msgid "Edit %s account options"
-msgstr ""
+msgstr "Editează opțiunile contului %s"
 
 #: ../ubuntu-online-accounts/empathy.application.in.h:1
-#, fuzzy
 msgid "Integrate your IM accounts"
-msgstr "Introduceți detaliile contului"
+msgstr "Integrați conturile de mesagerie"
 
 #~ msgid ""
 #~ "Empathy is free software; you can redistribute it and/or modify it under "
