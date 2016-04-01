@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=empathy&keywords=I18N+L10N&component=General\n"
 "POT-Creation-Date: 2016-03-31 15:40+0000\n"
-"PO-Revision-Date: 2016-04-01 18:34+0200\n"
+"PO-Revision-Date: 2016-04-01 18:55+0200\n"
 "Language-Team: Friulian <fur@li.org>\n"
 "Language: fur\n"
 "MIME-Version: 1.0\n"
@@ -768,77 +768,79 @@ msgstr "Al è vignût fûr un erôr tal tacâ la clamade"
 
 #: ../libempathy-gtk/empathy-call-utils.c:44
 msgid "The specified contact doesn't support calls"
-msgstr ""
+msgstr "Il contat specificât nol supuarte clamadis"
 
 #: ../libempathy-gtk/empathy-call-utils.c:46
 msgid "The specified contact is offline"
-msgstr ""
+msgstr "Il contat specificât al è fûr rêt"
 
 #: ../libempathy-gtk/empathy-call-utils.c:48
 msgid "The specified contact is not valid"
-msgstr ""
+msgstr "Il contat specificât nol è valit"
 
 #: ../libempathy-gtk/empathy-call-utils.c:50
 msgid "Emergency calls are not supported on this protocol"
-msgstr ""
+msgstr "Lis clamadis di emergjence no son supuartadis da chest protocol"
 
 #: ../libempathy-gtk/empathy-call-utils.c:52
 msgid "You don't have enough credit in order to place this call"
-msgstr ""
+msgstr "No tu âs avonde credit par fâ cheste clamade"
 
 #: ../libempathy-gtk/empathy-chat.c:729
 msgid "Failed to open private chat"
-msgstr ""
+msgstr "Falît tal vierzi la conversazion privade"
 
 #: ../libempathy-gtk/empathy-chat.c:787
 msgid "Topic not supported on this conversation"
-msgstr ""
+msgstr "Argoment no supuartât in cheste conversazion"
 
 #: ../libempathy-gtk/empathy-chat.c:793
 msgid "You are not allowed to change the topic"
-msgstr ""
+msgstr "No tu puedis cambiâ l'argoment"
 
 #: ../libempathy-gtk/empathy-chat.c:964
 msgid "Invalid contact ID"
-msgstr ""
+msgstr "ID contat no valit"
 
 #: ../libempathy-gtk/empathy-chat.c:1051
 msgid "/clear: clear all messages from the current conversation"
-msgstr ""
+msgstr "/clear: al nete ducj i messaçs de conversazion atuâl"
 
 #: ../libempathy-gtk/empathy-chat.c:1054
 msgid "/topic <topic>: set the topic of the current conversation"
-msgstr ""
+msgstr "/topic <argoment>: al met l'argoment de conversazion atuâl"
 
 #: ../libempathy-gtk/empathy-chat.c:1057
 msgid "/join <chat room ID>: join a new chat room"
-msgstr ""
+msgstr "/join <ID stanzie>: al jentre intune gnove stanzie"
 
 #: ../libempathy-gtk/empathy-chat.c:1060
 msgid "/j <chat room ID>: join a new chat room"
-msgstr ""
+msgstr "/j <ID stanzie>: al jentre intune gnove stanzie"
 
 #: ../libempathy-gtk/empathy-chat.c:1064
 msgid ""
 "/part [<chat room ID>] [<reason>]: leave the chat room, by default the "
 "current one"
 msgstr ""
+"/part [<ID stanzie>] [<motîf>]: al jes de stanzie, in mût predefinît chê "
+"atuâl"
 
 #: ../libempathy-gtk/empathy-chat.c:1068
 msgid "/query <contact ID> [<message>]: open a private chat"
-msgstr ""
+msgstr "/query <ID contat> [<messaç>]: al vierç une conversazion privade"
 
 #: ../libempathy-gtk/empathy-chat.c:1071
 msgid "/msg <contact ID> <message>: open a private chat"
-msgstr ""
+msgstr "/msg <ID contat> <messaç>: al vierç une conversazion privade"
 
 #: ../libempathy-gtk/empathy-chat.c:1074
 msgid "/nick <nickname>: change your nickname on the current server"
-msgstr ""
+msgstr "/nick <sorenon>: al cambie il to sorenon su chest servidôr"
 
 #: ../libempathy-gtk/empathy-chat.c:1077
 msgid "/me <message>: send an ACTION message to the current conversation"
-msgstr ""
+msgstr "/me <messaç>: al invie un messaç AZION ae conversazion atuâl"
 
 #: ../libempathy-gtk/empathy-chat.c:1080
 msgid ""
@@ -846,33 +848,38 @@ msgid ""
 "send a message starting with a '/'. For example: \"/say /join is used to "
 "join a new chat room\""
 msgstr ""
+"/say <messaç>: al invie <messaç> ae conversazion atuâl. Chest al ven doprât "
+"par mandâ messaçs che a tachin cun \"/\". Par esempli: \"/say /join al ven "
+"doprât par jentrâ intune gnove stanzie\""
 
 #: ../libempathy-gtk/empathy-chat.c:1085
 msgid "/whois <contact ID>: display information about a contact"
-msgstr ""
+msgstr "/whois <ID contat>: al mostre informazion di un contat"
 
 #: ../libempathy-gtk/empathy-chat.c:1088
 msgid ""
 "/help [<command>]: show all supported commands. If <command> is defined, "
 "show its usage."
 msgstr ""
+"/help [<comant>]: al mostre ducj i comants supuartâts. Se <comant> al ven "
+"specificât alore al ven mostrât il so mût di doprâlu."
 
 #: ../libempathy-gtk/empathy-chat.c:1107
 #, c-format
 msgid "Usage: %s"
-msgstr ""
+msgstr "Ûs: %s"
 
 #: ../libempathy-gtk/empathy-chat.c:1152
 msgid "Unknown command"
-msgstr ""
+msgstr "Comant no cognossût"
 
 #: ../libempathy-gtk/empathy-chat.c:1278
 msgid "Unknown command; see /help for the available commands"
-msgstr ""
+msgstr "Comant no cognossût; prove scrîf /help pai comants disponibii"
 
 #: ../libempathy-gtk/empathy-chat.c:1533
 msgid "insufficient balance to send message"
-msgstr ""
+msgstr "cont no suficient par inviâ messaçs"
 
 #: ../libempathy-gtk/empathy-chat.c:1537 ../libempathy-gtk/empathy-chat.c:1551
 #: ../libempathy-gtk/empathy-chat.c:1614
@@ -2127,7 +2134,7 @@ msgstr ""
 
 #: ../src/empathy-about-dialog.c:88
 msgid "translator-credits"
-msgstr ""
+msgstr "Fabio Tomat <f.t.public@gmail.com>"
 
 #: ../src/empathy-accounts.c:171
 msgid "Don't display any dialogs; do any work (eg, importing) and exit"
