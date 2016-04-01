@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=empathy&keywords=I18N+L10N&component=General\n"
 "POT-Creation-Date: 2016-03-31 15:40+0000\n"
-"PO-Revision-Date: 2016-04-01 16:11+0200\n"
+"PO-Revision-Date: 2016-04-01 16:40+0200\n"
 "Language-Team: Friulian <fur@li.org>\n"
 "Language: fur\n"
 "MIME-Version: 1.0\n"
@@ -127,12 +127,11 @@ msgstr ""
 #: ../data/org.gnome.Empathy.gschema.xml.h:12
 #: ../src/empathy-preferences.ui.h:1
 msgid "Show offline contacts"
-msgstr "Mostre contats fûr linie"
+msgstr "Mostre contats fûr rêt"
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:13
 msgid "Whether to show contacts that are offline in the contact list."
-msgstr ""
-"Indiche se mostrâ i contats che a son fûr linie inte liste dai contats."
+msgstr "Indiche se mostrâ i contats che a son fûr rêt inte liste dai contats."
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:14
 msgid "Show Balance in contact list"
@@ -423,184 +422,201 @@ msgstr "Abilite control ortografic"
 msgid ""
 "Whether to check words typed against the languages you want to check with."
 msgstr ""
+"Indiche se controlâ o mancul lis peraulis scritis cun la lenghe selezionade."
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:76
 msgid "Nick completed character"
-msgstr ""
+msgstr "Caratar sorenon complet"
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:77
 msgid ""
 "Character to add after nickname when using nick completion (tab) in group "
 "chat."
 msgstr ""
+"Caratar di zontâ dopo il sorenon cuant che al ven doprât il completament dal "
+"sorenon (cun tab) intes conversazions di grup."
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:78
 msgid "Empathy should use the avatar of the contact as the chat window icon"
 msgstr ""
+"Indiche se Empathy al à di doprâ la imagjin dal contat come icone dal barcon "
+"di conversazion"
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:79
 msgid ""
 "Whether Empathy should use the avatar of the contact as the chat window icon."
 msgstr ""
+"Indiche se Empathy al à di doprâ o mancul la imagjin dal contat come icone "
+"dal barcon di conversazion."
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:80
 msgid "Last account selected in Join Room dialog"
-msgstr ""
+msgstr "L'ultin account selezionât intal dialic \"Jentre te stanzie\""
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:81
 msgid "D-Bus object path of the last account selected to join a room."
 msgstr ""
+"Percors ogjet D-Bus dal ultin account selezionât par jentrâ intune stanzie."
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:82
 msgid "Camera device"
-msgstr ""
+msgstr "Dispositîf de videocjamare"
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:83
 msgid "Default camera device to use in video calls, e.g. /dev/video0."
 msgstr ""
+"Dispositîf de videocjamare predefinît di doprâ intes clamadis video, p.e. /"
+"dev/video0."
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:84
 msgid "Camera position"
-msgstr ""
+msgstr "Posizion de videocjamare"
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:85
 msgid "Position the camera preview should be during a call."
-msgstr ""
+msgstr "La posizion de anteprime de videocjamare dilunc une clamade."
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:86
 msgid "Echo cancellation support"
-msgstr ""
+msgstr "Supuart sopression eco"
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:87
 msgid "Whether to enable Pulseaudio's echo cancellation filter."
-msgstr ""
+msgstr "Indiche se abilitâ o mancul il filtri di sopression eco di Pulseaudio."
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:88
 msgid "Show hint about closing the main window"
-msgstr ""
+msgstr "Mostre sugjeriment in rivuart de sieradure dal barcon principâl"
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:89
 msgid ""
 "Whether to show the message dialog about closing the main window with the "
 "'x' button in the title bar."
 msgstr ""
+"Indiche se mostrâ o mancul un dialic a rivuart de sieradure dal barcon "
+"principâl cul pulsant 'x' te sbare dal titul."
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:90
 msgid "Empathy can publish the user's location"
-msgstr ""
+msgstr "Indiche se Empathy al pues publicâ la posizion gjeografiche dal utent"
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:91
 msgid "Whether Empathy can publish the user's location to their contacts."
 msgstr ""
+"Indiche se Empathy al pues publicâ o mancul la posizion gjeografiche dal "
+"utent ai siei contats."
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:92
 msgid "Empathy should reduce the location's accuracy"
 msgstr ""
+"Indiche se Empathy al à di ridusi la precision de posizion gjeografiche"
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:93
 msgid ""
 "Whether Empathy should reduce the location's accuracy for privacy reasons."
 msgstr ""
+"Indiche se Empathy al à di ridusi la precision de posizion gjeografiche par "
+"resons di privacy."
 
 #: ../libempathy/empathy-ft-handler.c:730
 msgid "No reason was specified"
-msgstr ""
+msgstr "Nissun motîf specificât"
 
 #: ../libempathy/empathy-ft-handler.c:733
 msgid "The change in state was requested"
-msgstr ""
+msgstr "E je stade domandade la modifiche dal stât"
 
 #: ../libempathy/empathy-ft-handler.c:736
 msgid "You canceled the file transfer"
-msgstr ""
+msgstr "Tu âs anulât il trasferiment dal file"
 
 #: ../libempathy/empathy-ft-handler.c:739
 msgid "The other participant canceled the file transfer"
-msgstr ""
+msgstr "Chel altri utent al à anulât il trasferiment dal file"
 
 #: ../libempathy/empathy-ft-handler.c:742
 msgid "Error while trying to transfer the file"
-msgstr ""
+msgstr "Erôr tal cirî di trasferî il file"
 
 #: ../libempathy/empathy-ft-handler.c:745
 msgid "The other participant is unable to transfer the file"
-msgstr ""
+msgstr "Chel altri utent nol è in podê di trasferî il file"
 
 #: ../libempathy/empathy-ft-handler.c:748 ../libempathy/empathy-utils.c:260
 msgid "Unknown reason"
-msgstr ""
+msgstr "Motîf no cognossût"
 
 #: ../libempathy/empathy-ft-handler.c:895
 msgid "File transfer completed, but the file was corrupted"
-msgstr ""
+msgstr "Trasferiment file completât, ma il file al jere ruvinât"
 
 #: ../libempathy/empathy-ft-handler.c:1176
 msgid "File transfer not supported by remote contact"
-msgstr ""
+msgstr "Il trasferiment dai file nol è supuartât dal contat rimot"
 
 #: ../libempathy/empathy-ft-handler.c:1232
 msgid "The selected file is not a regular file"
-msgstr ""
+msgstr "Il file selezionât nol è un file regolâr"
 
 #: ../libempathy/empathy-ft-handler.c:1241
 msgid "The selected file is empty"
-msgstr ""
+msgstr "Il file sielzût al è vueit"
 
 #: ../libempathy/empathy-message.c:385 ../src/empathy-call-observer.c:108
 #, c-format
 msgid "Missed call from %s"
-msgstr ""
+msgstr "Clamade pierdude di %s"
 
 #. Translators: this is an outgoing call, e.g. 'Called Alice'
 #: ../libempathy/empathy-message.c:389
 #, c-format
 msgid "Called %s"
-msgstr ""
+msgstr "Tu clamis %s"
 
 #: ../libempathy/empathy-message.c:392
 #, c-format
 msgid "Call from %s"
-msgstr ""
+msgstr "Clamade di %s"
 
 #: ../libempathy/empathy-utils.c:180
 msgid "Available"
-msgstr ""
+msgstr "Disponibil"
 
 #: ../libempathy/empathy-utils.c:182
 msgid "Busy"
-msgstr ""
+msgstr "Impegnât"
 
 #: ../libempathy/empathy-utils.c:185
 msgid "Away"
-msgstr ""
+msgstr "Assent"
 
 #: ../libempathy/empathy-utils.c:187
 msgid "Invisible"
-msgstr ""
+msgstr "Invisibil"
 
 #: ../libempathy/empathy-utils.c:189
 msgid "Offline"
-msgstr ""
+msgstr "Fûr rêt"
 
 #. translators: presence type is unknown
 #: ../libempathy/empathy-utils.c:192
 msgctxt "presence"
 msgid "Unknown"
-msgstr ""
+msgstr "No cognossût"
 
 #: ../libempathy/empathy-utils.c:232
 msgid "No reason specified"
-msgstr ""
+msgstr "Nissun motîf specificât"
 
 #: ../libempathy/empathy-utils.c:234 ../libempathy/empathy-utils.c:290
 msgid "Status is set to offline"
-msgstr ""
+msgstr "Il stât al è metût a \"fûr rêt\""
 
 #: ../libempathy/empathy-utils.c:236 ../libempathy/empathy-utils.c:270
 #: ../libempathy-gtk/empathy-call-utils.c:42
 #: ../libempathy-gtk/empathy-new-message-dialog.c:70
 msgid "Network error"
-msgstr ""
+msgstr "Erôr di rêt"
 
 #: ../libempathy/empathy-utils.c:238 ../libempathy/empathy-utils.c:272
 msgid "Authentication failed"
