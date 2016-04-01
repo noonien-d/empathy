@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=empathy&keywords=I18N+L10N&component=General\n"
 "POT-Creation-Date: 2016-03-31 15:40+0000\n"
-"PO-Revision-Date: 2016-04-01 16:40+0200\n"
+"PO-Revision-Date: 2016-04-01 18:34+0200\n"
 "Language-Team: Friulian <fur@li.org>\n"
 "Language: fur\n"
 "MIME-Version: 1.0\n"
@@ -620,125 +620,131 @@ msgstr "Erôr di rêt"
 
 #: ../libempathy/empathy-utils.c:238 ../libempathy/empathy-utils.c:272
 msgid "Authentication failed"
-msgstr ""
+msgstr "Autenticazion falide"
 
 #: ../libempathy/empathy-utils.c:240 ../libempathy/empathy-utils.c:274
 msgid "Encryption error"
-msgstr ""
+msgstr "Erôr di Cifradure"
 
 #: ../libempathy/empathy-utils.c:242
 msgid "Name in use"
-msgstr ""
+msgstr "Non in ûs"
 
 #: ../libempathy/empathy-utils.c:244 ../libempathy/empathy-utils.c:276
 msgid "Certificate not provided"
-msgstr ""
+msgstr "Certificât no furnît"
 
 #: ../libempathy/empathy-utils.c:246 ../libempathy/empathy-utils.c:278
 msgid "Certificate untrusted"
-msgstr ""
+msgstr "Certificât no fidât"
 
 #: ../libempathy/empathy-utils.c:248 ../libempathy/empathy-utils.c:280
 msgid "Certificate expired"
-msgstr ""
+msgstr "Certificât scjadût"
 
 #: ../libempathy/empathy-utils.c:250 ../libempathy/empathy-utils.c:282
 msgid "Certificate not activated"
-msgstr ""
+msgstr "Certificât no ativât"
 
 #: ../libempathy/empathy-utils.c:252 ../libempathy/empathy-utils.c:284
 msgid "Certificate hostname mismatch"
-msgstr ""
+msgstr "Corispuindince sbaliade tal non dal host dal certificât"
 
 #: ../libempathy/empathy-utils.c:254 ../libempathy/empathy-utils.c:286
 msgid "Certificate fingerprint mismatch"
-msgstr ""
+msgstr "Corispuindince sbaliade te impronte dal certificât"
 
 #: ../libempathy/empathy-utils.c:256 ../libempathy/empathy-utils.c:288
 msgid "Certificate self-signed"
-msgstr ""
+msgstr "Certificât firmât di se stes"
 
 #: ../libempathy/empathy-utils.c:258
 msgid "Certificate error"
-msgstr ""
+msgstr "Erôr tal certificât"
 
 #: ../libempathy/empathy-utils.c:292
 msgid "Encryption is not available"
-msgstr ""
+msgstr "La cifradure no je disponibil"
 
 #: ../libempathy/empathy-utils.c:294
 msgid "Certificate is invalid"
-msgstr ""
+msgstr "Il certificât nol è valit"
 
 #: ../libempathy/empathy-utils.c:296
 msgid "Connection has been refused"
-msgstr ""
+msgstr "La conession e je stade refudade"
 
 #: ../libempathy/empathy-utils.c:298
 msgid "Connection can't be established"
-msgstr ""
+msgstr "Impussibil stabilî la conession"
 
 #: ../libempathy/empathy-utils.c:300
 msgid "Connection has been lost"
-msgstr ""
+msgstr "La conession e je stade pierdude"
 
 #: ../libempathy/empathy-utils.c:302
 msgid "This account is already connected to the server"
-msgstr ""
+msgstr "Chest account al è za conetût al servidôr"
 
 #: ../libempathy/empathy-utils.c:304
 msgid ""
 "Connection has been replaced by a new connection using the same resource"
 msgstr ""
+"La conession e je stade sostituide da une gnove conession doprant la stesse "
+"risorse"
 
 #: ../libempathy/empathy-utils.c:307
 msgid "The account already exists on the server"
-msgstr ""
+msgstr "L'account al esist za tal servidôr"
 
 #: ../libempathy/empathy-utils.c:309
 msgid "Server is currently too busy to handle the connection"
-msgstr ""
+msgstr "Il servidôr al è atualmentri masse cjariât par gjestî la conession"
 
 #: ../libempathy/empathy-utils.c:311
 msgid "Certificate has been revoked"
-msgstr ""
+msgstr "Il certificât al è stât revocât"
 
 #: ../libempathy/empathy-utils.c:313
 msgid ""
 "Certificate uses an insecure cipher algorithm or is cryptographically weak"
 msgstr ""
+"Il certificât al dopre un algoritmi di cifradure no sigûr o al à une "
+"cifradure debule"
 
 #: ../libempathy/empathy-utils.c:316
 msgid ""
 "The length of the server certificate, or the depth of the server certificate "
 "chain, exceed the limits imposed by the cryptography library"
 msgstr ""
+"La lungjece dal certificât o la profonditât de cjadene dal certificât dal "
+"servidôr e supere i limits imponûts de librarie di cifradure"
 
 #: ../libempathy/empathy-utils.c:320
 msgid "Your software is too old"
-msgstr ""
+msgstr "Il to software al è masse vecjo"
 
 #: ../libempathy/empathy-utils.c:322
 msgid "Internal error"
-msgstr ""
+msgstr "Erôr interni"
 
 #: ../libempathy-gtk/empathy-account-chooser.c:687
 msgid "All accounts"
-msgstr ""
+msgstr "Ducj i account"
 
 #: ../libempathy-gtk/empathy-avatar-image.c:353
 msgid "Click to enlarge"
-msgstr ""
+msgstr "Cliche par slargjâ"
 
 #: ../libempathy-gtk/empathy-bad-password-dialog.c:128
 #, c-format
 msgid "Authentication failed for account <b>%s</b>"
-msgstr ""
+msgstr "Autenticazion falide pal account <b>%s</b>"
 
 #: ../libempathy-gtk/empathy-bad-password-dialog.c:140
 #: ../libempathy-gtk/empathy-chat.c:3830
 msgid "Retry"
-msgstr ""
+msgstr "Torne prove"
 
 #: ../libempathy-gtk/empathy-base-password-dialog.c:225
 #: ../libempathy-gtk/empathy-password-dialog.c:134
@@ -747,16 +753,18 @@ msgid ""
 "Enter your password for account\n"
 "<b>%s</b>"
 msgstr ""
+"Scrîf la tô password pal account\n"
+"<b>%s</b>"
 
 #. remember password ticky box
 #: ../libempathy-gtk/empathy-base-password-dialog.c:262
 msgid "Remember password"
-msgstr ""
+msgstr "Visâsi la password"
 
 #: ../libempathy-gtk/empathy-call-utils.c:37
 #: ../libempathy-gtk/empathy-call-utils.c:55
 msgid "There was an error starting the call"
-msgstr ""
+msgstr "Al è vignût fûr un erôr tal tacâ la clamade"
 
 #: ../libempathy-gtk/empathy-call-utils.c:44
 msgid "The specified contact doesn't support calls"
