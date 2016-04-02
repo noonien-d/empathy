@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=empathy&keywords=I18N+L10N&component=General\n"
 "POT-Creation-Date: 2016-03-31 15:40+0000\n"
-"PO-Revision-Date: 2016-04-02 19:01+0200\n"
+"PO-Revision-Date: 2016-04-02 22:46+0200\n"
 "Language-Team: Friulian <fur@li.org>\n"
 "Language: fur\n"
 "MIME-Version: 1.0\n"
@@ -710,7 +710,7 @@ msgid ""
 "Certificate uses an insecure cipher algorithm or is cryptographically weak"
 msgstr ""
 "Il certificât al dopre un algoritmi di cifradure no sigûr o al à une "
-"cifradure debule"
+"cifradure debile"
 
 #: ../libempathy/empathy-utils.c:316
 msgid ""
@@ -734,7 +734,7 @@ msgstr "Ducj i account"
 
 #: ../libempathy-gtk/empathy-avatar-image.c:353
 msgid "Click to enlarge"
-msgstr "Cliche par slargjâ"
+msgstr "Fâs clic par slargjâ"
 
 #: ../libempathy-gtk/empathy-bad-password-dialog.c:128
 #, c-format
@@ -1743,6 +1743,7 @@ msgstr "Ce"
 #: ../libempathy-gtk/empathy-log-window.c:3757
 msgid "Are you sure you want to delete all logs of previous conversations?"
 msgstr ""
+"Sigûr di eliminâ dutis lis regjistrazions des conversazions precedentis?"
 
 #: ../libempathy-gtk/empathy-log-window.c:3761
 msgid "Clear All"
@@ -1785,11 +1786,11 @@ msgstr "pagjine 2"
 
 #: ../libempathy-gtk/empathy-log-window.ui.h:9
 msgid "<span size=\"x-large\">Loading…</span>"
-msgstr ""
+msgstr "<span size=\"x-large\">Daûr a cjariâ…</span>"
 
 #: ../libempathy-gtk/empathy-new-account-dialog.c:130
 msgid "What kind of chat account do you have?"
-msgstr ""
+msgstr "Ce gjenar di account âstu?"
 
 #: ../libempathy-gtk/empathy-new-account-dialog.c:152
 msgid "Add new account"
@@ -1798,7 +1799,7 @@ msgstr "Zonte gnûf account"
 #: ../libempathy-gtk/empathy-new-call-dialog.c:189
 #: ../libempathy-gtk/empathy-new-message-dialog.c:279
 msgid "Enter a contact identifier or phone number:"
-msgstr ""
+msgstr "Inserìs un identificatôr di contat o un numar di telefon:"
 
 #. add video button
 #: ../libempathy-gtk/empathy-new-call-dialog.c:212
@@ -1821,19 +1822,19 @@ msgstr "Il contat al è fûr rêt"
 
 #: ../libempathy-gtk/empathy-new-message-dialog.c:74
 msgid "The specified contact is either invalid or unknown"
-msgstr ""
+msgstr "Il contat specificât nol è valit o nol è cognossût"
 
 #: ../libempathy-gtk/empathy-new-message-dialog.c:76
 msgid "The contact does not support this kind of conversation"
-msgstr ""
+msgstr "Il contat nol supuarte chest gjenar di conversazion"
 
 #: ../libempathy-gtk/empathy-new-message-dialog.c:78
 msgid "The requested functionality is not implemented for this protocol"
-msgstr ""
+msgstr "La funzionalitât domandade no je implementade par chest protocol"
 
 #: ../libempathy-gtk/empathy-new-message-dialog.c:84
 msgid "Could not start a conversation with the given contact"
-msgstr ""
+msgstr "Impussibil tacâ une conversazion cul contat furnît"
 
 #: ../libempathy-gtk/empathy-new-message-dialog.c:86
 msgid "You are banned from this channel"
@@ -1849,7 +1850,7 @@ msgstr "Tu âs di sedi invidât par jentrâ ta chest canâl"
 
 #: ../libempathy-gtk/empathy-new-message-dialog.c:92
 msgid "Can't proceed while disconnected"
-msgstr ""
+msgstr "Impussibil continuâ se si è fûr rêt"
 
 #: ../libempathy-gtk/empathy-new-message-dialog.c:94
 msgid "Permission denied"
@@ -1857,7 +1858,7 @@ msgstr "Permès dineât"
 
 #: ../libempathy-gtk/empathy-new-message-dialog.c:100
 msgid "There was an error starting the conversation"
-msgstr ""
+msgstr "Al è vignût fûr un erôr tal tacâ la conversazion"
 
 #. Tweak the dialog
 #: ../libempathy-gtk/empathy-new-message-dialog.c:322
@@ -1866,7 +1867,7 @@ msgstr "Gnove conversazion"
 
 #: ../libempathy-gtk/empathy-password-dialog.c:132
 msgid "Password Required"
-msgstr ""
+msgstr "Password domandade"
 
 #. COL_STATUS_TEXT
 #. COL_STATE_ICON_NAME
@@ -1877,20 +1878,20 @@ msgstr ""
 #: ../libempathy-gtk/empathy-presence-chooser.c:158
 #: ../libempathy-gtk/empathy-presence-chooser.c:194
 msgid "Custom Message…"
-msgstr ""
+msgstr "Messaç personalizât..."
 
 #: ../libempathy-gtk/empathy-presence-chooser.c:211
 #: ../libempathy-gtk/empathy-presence-chooser.c:213
 msgid "Edit Custom Messages…"
-msgstr ""
+msgstr "Modifiche messaç personalizât..."
 
 #: ../libempathy-gtk/empathy-presence-chooser.c:335
 msgid "Click to remove this status as a favorite"
-msgstr ""
+msgstr "Fâs clic par gjavâ chest stât dai preferîts"
 
 #: ../libempathy-gtk/empathy-presence-chooser.c:344
 msgid "Click to make this status a favorite"
-msgstr ""
+msgstr "Fâs clic par fâ deventâ chest stât un preferît"
 
 #. Translators: %s is a status message like 'At the pub' for example
 #: ../libempathy-gtk/empathy-presence-chooser.c:378
@@ -1907,11 +1908,11 @@ msgstr "Met il stât"
 #. Custom messages
 #: ../libempathy-gtk/empathy-presence-chooser.c:1098
 msgid "Custom messages…"
-msgstr ""
+msgstr "Messaçs personalizâts..."
 
 #: ../libempathy-gtk/empathy-search-bar.c:239
 msgid "_Match case"
-msgstr ""
+msgstr "Corispuindince _maiusculis"
 
 #: ../libempathy-gtk/empathy-search-bar.ui.h:1
 msgid "Find:"
@@ -1927,65 +1928,65 @@ msgstr "_Prossim"
 
 #: ../libempathy-gtk/empathy-search-bar.ui.h:4
 msgid "Mat_ch case"
-msgstr ""
+msgstr "_Corispuindince maiusculis"
 
 #: ../libempathy-gtk/empathy-search-bar.ui.h:5
 msgid "Phrase not found"
-msgstr ""
+msgstr "Locuzion no cjatade"
 
 #: ../libempathy-gtk/empathy-sound-manager.c:50
 msgid "Received an instant message"
-msgstr ""
+msgstr "Messaç istantani ricevût"
 
 #: ../libempathy-gtk/empathy-sound-manager.c:52
 msgid "Sent an instant message"
-msgstr ""
+msgstr "Messaç istantani inviât"
 
 #: ../libempathy-gtk/empathy-sound-manager.c:54
 msgid "Incoming chat request"
-msgstr ""
+msgstr "Daûr a rivâ une domande di conversazion"
 
 #: ../libempathy-gtk/empathy-sound-manager.c:56
 msgid "Contact connected"
-msgstr ""
+msgstr "Contat tacât"
 
 #: ../libempathy-gtk/empathy-sound-manager.c:58
 msgid "Contact disconnected"
-msgstr ""
+msgstr "Contat distacât"
 
 #: ../libempathy-gtk/empathy-sound-manager.c:60
 msgid "Connected to server"
-msgstr ""
+msgstr "Tacât al servidôr"
 
 #: ../libempathy-gtk/empathy-sound-manager.c:62
 msgid "Disconnected from server"
-msgstr ""
+msgstr "Distacât dal servidôr"
 
 #: ../libempathy-gtk/empathy-sound-manager.c:64
 msgid "Incoming voice call"
-msgstr ""
+msgstr "Clamade vocâl in jentrade"
 
 #: ../libempathy-gtk/empathy-sound-manager.c:66
 msgid "Outgoing voice call"
-msgstr ""
+msgstr "Clamade vocâl in jessude"
 
 #: ../libempathy-gtk/empathy-sound-manager.c:68
 msgid "Voice call ended"
-msgstr ""
+msgstr "Clamade vocâl finide"
 
 #: ../libempathy-gtk/empathy-status-preset-dialog.c:295
 msgid "Edit Custom Messages"
-msgstr ""
+msgstr "Modifiche messaçs personalizâts"
 
 #: ../libempathy-gtk/empathy-subscription-dialog.c:234
 msgid "Subscription Request"
-msgstr ""
+msgstr "Domande di sotscrizion"
 
 #: ../libempathy-gtk/empathy-subscription-dialog.c:240
 #: ../src/empathy-event-manager.c:1079
 #, c-format
 msgid "%s would like permission to see when you are online"
-msgstr ""
+msgstr "%s al varès voie di podê viodi la to presince in rêt"
 
 #: ../libempathy-gtk/empathy-subscription-dialog.c:281
 #: ../src/empathy-event-manager.c:694
@@ -1999,7 +2000,7 @@ msgstr "_Acete"
 #: ../libempathy-gtk/empathy-theme-adium.c:1218
 #, c-format
 msgid "Message edited at %s"
-msgstr ""
+msgstr "Messaç modificât as %s"
 
 #: ../libempathy-gtk/empathy-theme-adium.c:1920
 msgid "Normal"
@@ -2008,10 +2009,11 @@ msgstr "Normâl"
 #: ../libempathy-gtk/empathy-tls-dialog.c:147
 msgid "The identity provided by the chat server cannot be verified."
 msgstr ""
+"La identitât furnide dal servidôr di conversazion no pues sedi verificade."
 
 #: ../libempathy-gtk/empathy-tls-dialog.c:154
 msgid "The certificate is not signed by a Certification Authority."
-msgstr ""
+msgstr "Il certificât nol è firmât di une Autoritât di Certificazion."
 
 #: ../libempathy-gtk/empathy-tls-dialog.c:158
 msgid "The certificate has expired."
@@ -2019,15 +2021,16 @@ msgstr "Il certificât al è scjadût."
 
 #: ../libempathy-gtk/empathy-tls-dialog.c:161
 msgid "The certificate hasn't yet been activated."
-msgstr ""
+msgstr "Il certificât nol è stât ancjemò ativât."
 
 #: ../libempathy-gtk/empathy-tls-dialog.c:164
 msgid "The certificate does not have the expected fingerprint."
-msgstr ""
+msgstr "Il certificât nol ten la impronte digjitâl spietade."
 
 #: ../libempathy-gtk/empathy-tls-dialog.c:167
 msgid "The hostname verified by the certificate doesn't match the server name."
 msgstr ""
+"Il non host verificât dal certificât nol corispuint al non dal servidôr."
 
 #: ../libempathy-gtk/empathy-tls-dialog.c:171
 msgid "The certificate is self-signed."
@@ -2036,29 +2039,29 @@ msgstr "Il certificât firmât di se stes."
 #: ../libempathy-gtk/empathy-tls-dialog.c:174
 msgid ""
 "The certificate has been revoked by the issuing Certification Authority."
-msgstr ""
+msgstr "Il certificât al è stât revocât de Autoritât di Certificazion."
 
 #: ../libempathy-gtk/empathy-tls-dialog.c:178
 msgid "The certificate is cryptographically weak."
-msgstr ""
+msgstr "Il certificât al è stât cifrât cuntune clâf debile."
 
 #: ../libempathy-gtk/empathy-tls-dialog.c:181
 msgid "The certificate length exceeds verifiable limits."
-msgstr ""
+msgstr "La lungjece dal certificât e supere i limits verificabii."
 
 #: ../libempathy-gtk/empathy-tls-dialog.c:185
 msgid "The certificate is malformed."
-msgstr ""
+msgstr "Il certificât nol è coret."
 
 #: ../libempathy-gtk/empathy-tls-dialog.c:203
 #, c-format
 msgid "Expected hostname: %s"
-msgstr ""
+msgstr "Non host spietât: %s"
 
 #: ../libempathy-gtk/empathy-tls-dialog.c:206
 #, c-format
 msgid "Certificate hostname: %s"
-msgstr ""
+msgstr "Non host dal certificât: %s"
 
 #: ../libempathy-gtk/empathy-tls-dialog.c:278
 msgid "C_ontinue"
@@ -2066,23 +2069,23 @@ msgstr "C_ontinue"
 
 #: ../libempathy-gtk/empathy-tls-dialog.c:284
 msgid "Untrusted connection"
-msgstr ""
+msgstr "Conession no sigure"
 
 #: ../libempathy-gtk/empathy-tls-dialog.c:285
 msgid "This connection is untrusted. Would you like to continue anyway?"
-msgstr ""
+msgstr "Cheste conession no je sigure. Continuâ distès?"
 
 #: ../libempathy-gtk/empathy-tls-dialog.c:295
 msgid "Remember this choice for future connections"
-msgstr ""
+msgstr "Visiti cheste sielte pes futuris conessions"
 
 #: ../libempathy-gtk/empathy-tls-dialog.c:301
 msgid "Certificate Details"
-msgstr ""
+msgstr "Detais certificât"
 
 #: ../libempathy-gtk/empathy-ui-utils.c:679
 msgid "Unable to open URI"
-msgstr ""
+msgstr "Impussibil vierzi il URI"
 
 #: ../libempathy-gtk/empathy-ui-utils.c:803
 msgid "Select a file"
@@ -2090,7 +2093,7 @@ msgstr "Selezione un file"
 
 #: ../libempathy-gtk/empathy-ui-utils.c:877
 msgid "Insufficient free space to save file"
-msgstr ""
+msgstr "Spazi libar insuficient par salvâ il file"
 
 #: ../libempathy-gtk/empathy-ui-utils.c:885
 #, c-format
@@ -2098,11 +2101,13 @@ msgid ""
 "%s of free space are required to save this file, but only %s is available. "
 "Please choose another location."
 msgstr ""
+"A son necessaris %s di spazi libar par salvâ chest file, ma a son disponibii "
+"nome %s. Sielç une altre posizion."
 
 #: ../libempathy-gtk/empathy-ui-utils.c:931
 #, c-format
 msgid "Incoming file from %s"
-msgstr ""
+msgstr "File daûr a rivâ di %s"
 
 #. Copy Link Address menu item
 #: ../libempathy-gtk/empathy-webkit-utils.c:285
@@ -2117,11 +2122,11 @@ msgstr "_Vierç Link"
 #. Inspector
 #: ../libempathy-gtk/empathy-webkit-utils.c:306
 msgid "Inspect HTML"
-msgstr ""
+msgstr "Ispezione HTML"
 
 #: ../libempathy-gtk/empathy-roster-model.h:27
 msgid "Top Contacts"
-msgstr ""
+msgstr "Contats principâi"
 
 #: ../libempathy-gtk/empathy-roster-model.h:28
 msgid "People Nearby"
@@ -2129,18 +2134,18 @@ msgstr "Int tes vicinancis"
 
 #: ../libempathy-gtk/empathy-roster-model.h:29
 msgid "Ungrouped"
-msgstr ""
+msgstr "Cence grup"
 
 #. Add a prefix explaining that something goes wrong when trying to
 #. * fetch contact's presence.
 #: ../libempathy-gtk/empathy-roster-contact.c:202
 #, c-format
 msgid "Server cannot find contact: %s"
-msgstr ""
+msgstr "Il servidôr nol pues cjatâ il contat: %s"
 
 #: ../src/empathy-about-dialog.c:82
 msgid "An Instant Messaging client for GNOME"
-msgstr ""
+msgstr "Un client par Messaçs Istantanis par GNOME"
 
 #: ../src/empathy-about-dialog.c:88
 msgid "translator-credits"
@@ -2149,40 +2154,46 @@ msgstr "Fabio Tomat <f.t.public@gmail.com>"
 #: ../src/empathy-accounts.c:171
 msgid "Don't display any dialogs; do any work (eg, importing) and exit"
 msgstr ""
+"No stâ mostrâ nissun dialic; eseguìs cualsisei operazion (p.e. impuartâ) e "
+"jes"
 
 #: ../src/empathy-accounts.c:175
 msgid ""
 "Don't display any dialogs unless there are only \"People Nearby\" accounts"
 msgstr ""
+"No stâ mostrâ nissun dialic se a son account diviers di \"Int tes vicinancis"
+"\""
 
 #: ../src/empathy-accounts.c:179
 msgid "Initially select given account (eg, gabble/jabber/foo_40example_2eorg0)"
 msgstr ""
+"Tal inprin selezione l'account furnît (p.e. gabble/jabber/"
+"foo_40example_2eorg0)"
 
 #: ../src/empathy-accounts.c:181
 msgid "<account-id>"
-msgstr ""
+msgstr "<account-id>"
 
 #: ../src/empathy-accounts.c:186
 msgid "- Empathy Accounts"
-msgstr ""
+msgstr "- Account Empathy"
 
 #: ../src/empathy-accounts.c:240
 msgid "Empathy Accounts"
-msgstr ""
+msgstr "Account Empathy"
 
 #. The primary text of the dialog shown to the user when he is about to lose
 #. * unsaved changes
 #: ../src/empathy-accounts-dialog.c:55
 #, c-format
 msgid "There are unsaved modifications to your %.50s account."
-msgstr ""
+msgstr "A son presintis des modifichis no salvadis pal to account %.50s."
 
 #. The primary text of the dialog shown to the user when he is about to lose
 #. * an unsaved new account
 #: ../src/empathy-accounts-dialog.c:59
 msgid "Your new account has not been saved yet."
-msgstr ""
+msgstr "Il to gnûf account nol è stât acjemò salvât."
 
 #: ../src/empathy-accounts-dialog.c:387 ../src/empathy-call-window.c:1267
 msgid "Connecting…"
@@ -2191,16 +2202,16 @@ msgstr "Daûr a coneti..."
 #: ../src/empathy-accounts-dialog.c:428
 #, c-format
 msgid "Offline — %s"
-msgstr ""
+msgstr "Fûr rêt — %s"
 
 #: ../src/empathy-accounts-dialog.c:440
 #, c-format
 msgid "Disconnected — %s"
-msgstr ""
+msgstr "Distacâts — %s"
 
 #: ../src/empathy-accounts-dialog.c:451
 msgid "Offline — No Network Connection"
-msgstr ""
+msgstr "Fûr rêt — Nissune conession di rêt"
 
 #: ../src/empathy-accounts-dialog.c:458
 msgid "Unknown Status"
