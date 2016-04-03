@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=empathy&keywords=I18N+L10N&component=General\n"
 "POT-Creation-Date: 2016-03-31 15:40+0000\n"
-"PO-Revision-Date: 2016-04-04 01:21+0200\n"
+"PO-Revision-Date: 2016-04-04 01:37+0200\n"
 "Language-Team: Friulian <fur@li.org>\n"
 "Language: fur\n"
 "MIME-Version: 1.0\n"
@@ -2936,6 +2936,7 @@ msgid ""
 "The selected connection manager does not support the remote debugging "
 "extension."
 msgstr ""
+"Il gjestôr di conession selezionât nol supuarte la estension pal debug rimot."
 
 #: ../src/empathy-event-manager.c:474
 msgid "Incoming video call"
@@ -3062,25 +3063,25 @@ msgstr "Erôr tal ricevi un file"
 #: ../src/empathy-ft-manager.c:341
 #, c-format
 msgid "Error sending \"%s\" to %s"
-msgstr ""
+msgstr "Erôr tal inviâ \"%s\" a %s"
 
 #: ../src/empathy-ft-manager.c:344
 msgid "Error sending a file"
-msgstr ""
+msgstr "Erôr tal inviâ un file"
 
 #. translators: first %s is filename, second %s
 #. * is the contact name
 #: ../src/empathy-ft-manager.c:483
 #, c-format
 msgid "\"%s\" received from %s"
-msgstr ""
+msgstr "\"%s\" ricevût di %s"
 
 #. translators: first %s is filename, second %s
 #. * is the contact name
 #: ../src/empathy-ft-manager.c:488
 #, c-format
 msgid "\"%s\" sent to %s"
-msgstr ""
+msgstr "\"%s\" inviât a %s"
 
 #: ../src/empathy-ft-manager.c:491
 msgid "File transfer completed"
@@ -3088,17 +3089,17 @@ msgstr "Trasferiment file completât"
 
 #: ../src/empathy-ft-manager.c:610 ../src/empathy-ft-manager.c:774
 msgid "Waiting for the other participant's response"
-msgstr ""
+msgstr "In spiete de rispueste di chel altri partecipant"
 
 #: ../src/empathy-ft-manager.c:636 ../src/empathy-ft-manager.c:674
 #, c-format
 msgid "Checking integrity of \"%s\""
-msgstr ""
+msgstr "Control integritât di \"%s\""
 
 #: ../src/empathy-ft-manager.c:639 ../src/empathy-ft-manager.c:677
 #, c-format
 msgid "Hashing \"%s\""
-msgstr ""
+msgstr "Calcul codiç di control di \"%s\""
 
 #: ../src/empathy-ft-manager.c:1020
 msgid "%"
@@ -3110,7 +3111,7 @@ msgstr "File"
 
 #: ../src/empathy-ft-manager.c:1054
 msgid "Remaining"
-msgstr ""
+msgstr "Restant"
 
 #: ../src/empathy-ft-manager.ui.h:1
 msgid "File Transfers"
@@ -3118,7 +3119,7 @@ msgstr "Trasferiments file"
 
 #: ../src/empathy-ft-manager.ui.h:2
 msgid "Remove completed, canceled and failed file transfers from the list"
-msgstr ""
+msgstr "Gjave de liste i trasferiments di file completâts, anulâts e falîts"
 
 #: ../src/empathy-import-dialog.c:70
 msgid "_Import"
@@ -3129,6 +3130,8 @@ msgid ""
 "No accounts to import could be found. Empathy currently only supports "
 "importing accounts from Pidgin."
 msgstr ""
+"Nol è stât cjatât nissun account di impuartâ. Empathy par cumò al supuarte "
+"nome la importazion di account di Pidgin."
 
 #: ../src/empathy-import-dialog.c:203
 msgid "Import Accounts"
@@ -3154,7 +3157,7 @@ msgstr "Invide partecipant"
 
 #: ../src/empathy-invite-participant-dialog.c:198
 msgid "Choose a contact to invite into the conversation:"
-msgstr ""
+msgstr "Sielç un contat di invidâ te conversazion:"
 
 #: ../src/empathy-invite-participant-dialog.c:221
 msgid "Invite"
@@ -3170,7 +3173,7 @@ msgstr "Membris"
 
 #: ../src/empathy-new-chatroom-dialog.c:402
 msgid "Failed to list rooms"
-msgstr ""
+msgstr "Faliment tal otignî la liste des stanziis"
 
 #: ../src/empathy-new-chatroom-dialog.c:437
 #, c-format
@@ -3180,6 +3183,10 @@ msgid ""
 "Password required: %s\n"
 "Members: %s"
 msgstr ""
+"%s\n"
+"Invît domandât: %s\n"
+"Password domandade: %s\n"
+"Membris: %s"
 
 #: ../src/empathy-new-chatroom-dialog.c:439
 #: ../src/empathy-new-chatroom-dialog.c:440
@@ -3199,6 +3206,8 @@ msgstr "Jentre te stanzie"
 msgid ""
 "Enter the room name to join here or click on one or more rooms in the list."
 msgstr ""
+"Scrîf il non de stanzie dulà jentrâ opûr fâs clic suntune o plui stanziis "
+"inte liste."
 
 #: ../src/empathy-new-chatroom-dialog.ui.h:2
 msgid "_Room:"
@@ -3209,12 +3218,16 @@ msgid ""
 "Enter the server which hosts the room, or leave it empty if the room is on "
 "the current account&apos;s server"
 msgstr ""
+"Inserìs il servidôr che al ospite la stanzie o lasse vueit se la stanzie si "
+"cjate sul servidôr di chest account"
 
 #: ../src/empathy-new-chatroom-dialog.ui.h:4
 msgid ""
 "Enter the server which hosts the room, or leave it empty if the room is on "
 "the current account's server"
 msgstr ""
+"Inserìs il servidôr che al ospite la stanzie o lasse vueit se la stanzie si "
+"cjate sul servidôr di chest account"
 
 #: ../src/empathy-new-chatroom-dialog.ui.h:5
 msgid "_Server:"
