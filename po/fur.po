@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=empathy&keywords=I18N+L10N&component=General\n"
 "POT-Creation-Date: 2016-03-31 15:40+0000\n"
-"PO-Revision-Date: 2016-04-03 19:33+0200\n"
+"PO-Revision-Date: 2016-04-04 01:21+0200\n"
 "Language-Team: Friulian <fur@li.org>\n"
 "Language: fur\n"
 "MIME-Version: 1.0\n"
@@ -1570,7 +1570,7 @@ msgstr "%s, %s"
 
 #: ../libempathy-gtk/empathy-individual-widget.c:716
 msgid "%B %e, %Y at %R UTC"
-msgstr "%e di %B dal %Y as %H.%M UTC"
+msgstr "%e di %B dal %Y aes %H.%M UTC"
 
 #. Alias
 #: ../libempathy-gtk/empathy-individual-widget.c:1359
@@ -1646,7 +1646,7 @@ msgstr "Conversazion cun %s"
 #: ../libempathy-gtk/empathy-log-window.c:1348
 msgctxt "A date with the time"
 msgid "%A, %e %B %Y %X"
-msgstr "%A, %e di %B dal %Y as %X"
+msgstr "%A, %e di %B dal %Y aes %X"
 
 #. Translators: this is an emote: '* Danielle waves'
 #: ../libempathy-gtk/empathy-log-window.c:1291
@@ -1678,7 +1678,7 @@ msgstr[1] "%s minûts"
 #: ../libempathy-gtk/empathy-log-window.c:1387
 #, c-format
 msgid "Call took %s, ended at %s"
-msgstr "Durade de clamade %s, terminade as %s"
+msgstr "Durade de clamade %s, terminade aes %s"
 
 #: ../libempathy-gtk/empathy-log-window.c:1718
 msgid "Today"
@@ -2003,7 +2003,7 @@ msgstr "_Acete"
 #: ../libempathy-gtk/empathy-theme-adium.c:1218
 #, c-format
 msgid "Message edited at %s"
-msgstr "Messaç modificât as %s"
+msgstr "Messaç modificât aes %s"
 
 #: ../libempathy-gtk/empathy-theme-adium.c:1920
 msgid "Normal"
@@ -2226,7 +2226,7 @@ msgid ""
 "backend. Please install telepathy-haze and restart your session to migrate "
 "the account."
 msgstr ""
-"Chest account al è stât disabilitât parce che al dopre un backend vecjo e no "
+"Chest account al è stât disabilitât parcè che al dopre un backend vecjo e no "
 "supuartât. Instale telepathy-haze e torne invie la tô session o migre "
 "l'account."
 
@@ -2906,6 +2906,14 @@ msgid ""
 "when reporting it by displaying the advanced fields in the <a href=\"https://"
 "bugzilla.gnome.org/enter_bug.cgi?product=empathy\">bug report</a>."
 msgstr ""
+"Ancje se no mostrin password, i regjistris a puedin vê informazions "
+"sensibilis come la liste dai contats o i messaçs che tu âs di resint inviât "
+"o ricevût.\n"
+"Par fâ in mût che chest gjenar di informazions no sedin mostradis intune "
+"segnalazion di erôr in public, al è pussibil limitâ la visibilitât dal erôr "
+"ai svilupadôrs di Empathy. Par fâ chest, dopre il cjamp des opzions "
+"avanzadis presint inte <a href=\"https://bugzilla.gnome.org/enter_bug.cgi?"
+"product=empathy\">segnalazion</a>."
 
 #: ../src/empathy-debug-window.c:2027
 msgid "Time"
@@ -2957,17 +2965,17 @@ msgstr "_Rispuint cun video"
 
 #: ../src/empathy-event-manager.c:677
 msgid "Room invitation"
-msgstr ""
+msgstr "Invît intune stanzie"
 
 #: ../src/empathy-event-manager.c:679
 #, c-format
 msgid "Invitation to join %s"
-msgstr ""
+msgstr "Invît par jentrâ in %s"
 
 #: ../src/empathy-event-manager.c:686
 #, c-format
 msgid "%s is inviting you to join %s"
-msgstr ""
+msgstr "%s ti invide a jentrâ in %s"
 
 #: ../src/empathy-event-manager.c:699
 msgid "_Join"
@@ -2976,12 +2984,12 @@ msgstr "_Jentre"
 #: ../src/empathy-event-manager.c:725
 #, c-format
 msgid "%s invited you to join %s"
-msgstr ""
+msgstr "%s ti à invidât a jentrâ in %s"
 
 #: ../src/empathy-event-manager.c:731
 #, c-format
 msgid "You have been invited to join %s"
-msgstr ""
+msgstr "Tu sês stât invidât a jentrâ in %s"
 
 #: ../src/empathy-event-manager.c:920
 #, c-format
@@ -3005,13 +3013,13 @@ msgstr ""
 #: ../src/empathy-ft-manager.c:94
 #, c-format
 msgid "%u:%02u.%02u"
-msgstr ""
+msgstr "%u:%02u.%02u"
 
 #. Translators: time left, when is is less than one hour
 #: ../src/empathy-ft-manager.c:97
 #, c-format
 msgid "%02u.%02u"
-msgstr ""
+msgstr "%02u.%02u"
 
 #: ../src/empathy-ft-manager.c:173
 msgctxt "file transfer percent"
@@ -3021,7 +3029,7 @@ msgstr "No cognossude"
 #: ../src/empathy-ft-manager.c:268
 #, c-format
 msgid "%s of %s at %s/s"
-msgstr ""
+msgstr "%s di %s a %s/s"
 
 #: ../src/empathy-ft-manager.c:269
 #, c-format
@@ -3032,24 +3040,24 @@ msgstr "%s di %s"
 #: ../src/empathy-ft-manager.c:300
 #, c-format
 msgid "Receiving \"%s\" from %s"
-msgstr ""
+msgstr "Ricevint \"%s\" di %s"
 
 #. translators: first %s is filename, second %s is the contact name
 #: ../src/empathy-ft-manager.c:303
 #, c-format
 msgid "Sending \"%s\" to %s"
-msgstr ""
+msgstr "Inviant \"%s\" a %s"
 
 #. translators: first %s is filename, second %s
 #. * is the contact name
 #: ../src/empathy-ft-manager.c:333
 #, c-format
 msgid "Error receiving \"%s\" from %s"
-msgstr ""
+msgstr "Erôr tal ricevi \"%s\" di %s"
 
 #: ../src/empathy-ft-manager.c:336
 msgid "Error receiving a file"
-msgstr ""
+msgstr "Erôr tal ricevi un file"
 
 #: ../src/empathy-ft-manager.c:341
 #, c-format
