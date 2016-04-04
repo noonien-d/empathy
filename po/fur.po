@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=empathy&keywords=I18N+L10N&component=General\n"
 "POT-Creation-Date: 2016-03-31 15:40+0000\n"
-"PO-Revision-Date: 2016-04-04 01:37+0200\n"
+"PO-Revision-Date: 2016-04-04 15:24+0200\n"
 "Language-Team: Friulian <fur@li.org>\n"
 "Language: fur\n"
 "MIME-Version: 1.0\n"
@@ -3396,23 +3396,23 @@ msgstr "Gjenerâl"
 
 #: ../src/empathy-preferences.ui.h:16
 msgid "_Enable bubble notifications"
-msgstr ""
+msgstr "_Abilitâ lis notifichis visivis"
 
 #: ../src/empathy-preferences.ui.h:17
 msgid "Disable notifications when _away or busy"
-msgstr ""
+msgstr "Disabilitâ lis notifichis cuant che si è _assents o impegnâts"
 
 #: ../src/empathy-preferences.ui.h:18
 msgid "Enable notifications when the _chat is not focused"
-msgstr ""
+msgstr "Abilitâ lis notifichis cuant che la conversazion no à il focus"
 
 #: ../src/empathy-preferences.ui.h:19
 msgid "Enable notifications when a contact comes online"
-msgstr ""
+msgstr "Abilitâ lis notifichis cuant che un contat al jentre in rêt"
 
 #: ../src/empathy-preferences.ui.h:20
 msgid "Enable notifications when a contact goes offline"
-msgstr ""
+msgstr "Abilitâ lis notifichis cuant che un contat al va fûr rêt"
 
 #: ../src/empathy-preferences.ui.h:21
 msgid "Notifications"
@@ -3436,7 +3436,7 @@ msgstr "Suns"
 
 #: ../src/empathy-preferences.ui.h:26
 msgid "Use _echo cancellation to improve call quality"
-msgstr ""
+msgstr "Dopre la sopression dal _eco par miorâ la cualitât de clamade"
 
 #: ../src/empathy-preferences.ui.h:27
 msgid ""
@@ -3445,10 +3445,14 @@ msgid ""
 "hear strange noises or glitches during calls, try turning echo cancellation "
 "off and restarting the call."
 msgstr ""
+"La sopression dal eco ti jude a vê une vôs plui clare par cui che ti scolte, "
+"ma a pues causâ problemis in cualchi computer. Se tu o chel altri o sintîs "
+"rumôrs o si verifichin problemis intes clamadis, prove stude la sopression "
+"dal eco e torne clame."
 
 #: ../src/empathy-preferences.ui.h:30
 msgid "_Publish location to my contacts"
-msgstr ""
+msgstr "_Publiche la mê posizion ai miei contats"
 
 #: ../src/empathy-preferences.ui.h:31
 msgid ""
@@ -3456,11 +3460,14 @@ msgid ""
 "state and country will be published.  GPS coordinates will be accurate to 1 "
 "decimal place."
 msgstr ""
+"Ridusi la precision gjeografiche a significhe nie di plui precîs de tô "
+"citât, regjon e Paîs al vegnarà publicât. Lis coordinadis e saran di une "
+"posizion decimâl."
 
 #. To translators: The longitude and latitude are rounded to closest 0,1 degrees, so for example 146,2345° is rounded to round(146,2345*10)/10 = 146,2 degrees.
 #: ../src/empathy-preferences.ui.h:33
 msgid "_Reduce location accuracy"
-msgstr ""
+msgstr "_Ridûs precision gjeografiche"
 
 #: ../src/empathy-preferences.ui.h:34
 msgid "Privacy"
@@ -3471,10 +3478,11 @@ msgid ""
 "The list of languages reflects only the languages for which you have a "
 "dictionary installed."
 msgstr ""
+"La liste des lenghis a corispuint nome ai dizionaris che tu âs instalât."
 
 #: ../src/empathy-preferences.ui.h:37
 msgid "Enable spell checking for languages:"
-msgstr ""
+msgstr "Abilite il control ortografic pes lenghis:"
 
 #: ../src/empathy-preferences.ui.h:38
 msgid "Spell Checking"
@@ -3482,7 +3490,7 @@ msgstr "Control ortografic"
 
 #: ../src/empathy-preferences.ui.h:39
 msgid "Chat Th_eme:"
-msgstr ""
+msgstr "T_eme conversazion:"
 
 #: ../src/empathy-preferences.ui.h:40
 msgid "Variant:"
@@ -3502,7 +3510,7 @@ msgstr "Disconet"
 
 #: ../src/empathy-roster-window.c:494
 msgid "You need to set up an account to see contacts here."
-msgstr ""
+msgstr "Tu scugnis configurâ un account par podê viodi i contats culì."
 
 #: ../src/empathy-roster-window.c:570
 #, c-format
