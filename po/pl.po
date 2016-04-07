@@ -7,16 +7,16 @@
 # Artur Flinta <aflinta@at.kernel.pl>, 2003.
 # Tomasz Dominikowski <dominikowski@gmail.com>, 2007-2009.
 # Wadim Dziedzic <wdziedzic@aviary.pl>, 2008.
-# Piotr Drąg <piotrdrag@gmail.com>, 2009-2015.
+# Piotr Drąg <piotrdrag@gmail.com>, 2009-2016.
 # Asia Słowik <asiaslowik@gmail.com>, 2011.
 # Paweł Żołnowski <pawel@zolnowski.name>, 2014.
-# Aviary.pl <gnomepl@aviary.pl>, 2007-2015.
+# Aviary.pl <gnomepl@aviary.pl>, 2007-2016.
 msgid ""
 msgstr ""
 "Project-Id-Version: empathy\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-08-24 21:52+0200\n"
-"PO-Revision-Date: 2014-08-24 21:53+0200\n"
+"POT-Creation-Date: 2016-04-07 20:14+0200\n"
+"PO-Revision-Date: 2016-04-07 20:15+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "Language: pl\n"
@@ -127,8 +127,7 @@ msgstr ""
 "wykonać zadania czyszczenia. Użytkownicy nie powinni ręcznie zmieniać tego "
 "klucza."
 
-#: ../data/org.gnome.Empathy.gschema.xml.h:12
-#: ../src/empathy-preferences.ui.h:1
+#: ../data/org.gnome.Empathy.gschema.xml.h:12 ../src/empathy-preferences.ui.h:1
 msgid "Show offline contacts"
 msgstr "Wyświetlanie kontaktów w trybie offline"
 
@@ -733,7 +732,7 @@ msgid "Authentication failed for account <b>%s</b>"
 msgstr "Uwierzytelnienie konta <b>%s</b> się nie powiodło"
 
 #: ../libempathy-gtk/empathy-bad-password-dialog.c:140
-#: ../libempathy-gtk/empathy-chat.c:3828
+#: ../libempathy-gtk/empathy-chat.c:3830
 msgid "Retry"
 msgstr "Ponów"
 
@@ -921,7 +920,7 @@ msgstr "niezaimplementowane"
 msgid "unknown"
 msgstr "nieznany"
 
-#: ../libempathy-gtk/empathy-chat.c:1675 ../src/empathy-chat-window.c:973
+#: ../libempathy-gtk/empathy-chat.c:1675 ../src/empathy-chat-window.c:978
 msgid "Topic:"
 msgstr "Temat:"
 
@@ -1042,43 +1041,43 @@ msgid "Disconnected"
 msgstr "Rozłączony"
 
 #. Add message
-#: ../libempathy-gtk/empathy-chat.c:3768
+#: ../libempathy-gtk/empathy-chat.c:3770
 msgid "Would you like to store this password?"
 msgstr "Zachować hasło?"
 
-#: ../libempathy-gtk/empathy-chat.c:3774
+#: ../libempathy-gtk/empathy-chat.c:3776
 msgid "Remember"
 msgstr "Zapamiętaj"
 
-#: ../libempathy-gtk/empathy-chat.c:3784
+#: ../libempathy-gtk/empathy-chat.c:3786
 msgid "Not now"
 msgstr "Nie teraz"
 
-#: ../libempathy-gtk/empathy-chat.c:3832
+#: ../libempathy-gtk/empathy-chat.c:3834
 msgid "Wrong password; please try again:"
 msgstr "Błędne hasło. Proszę spróbować ponownie:"
 
 #. Add message
-#: ../libempathy-gtk/empathy-chat.c:3956
+#: ../libempathy-gtk/empathy-chat.c:3958
 msgid "This room is protected by a password:"
 msgstr "Ten pokój jest chroniony hasłem:"
 
-#: ../libempathy-gtk/empathy-chat.c:3983
+#: ../libempathy-gtk/empathy-chat.c:3985
 #: ../src/empathy-new-chatroom-dialog.c:787
 msgid "Join"
 msgstr "Dołącz"
 
-#: ../libempathy-gtk/empathy-chat.c:4175 ../src/empathy-event-manager.c:1162
+#: ../libempathy-gtk/empathy-chat.c:4177 ../src/empathy-event-manager.c:1162
 msgid "Connected"
 msgstr "Połączony"
 
-#: ../libempathy-gtk/empathy-chat.c:4227
+#: ../libempathy-gtk/empathy-chat.c:4229
 msgid "Conversation"
 msgstr "Rozmowa"
 
 #. Translators: this string is a something like
 #. * "Escher Cat (SMS)"
-#: ../libempathy-gtk/empathy-chat.c:4232
+#: ../libempathy-gtk/empathy-chat.c:4234
 #, c-format
 msgid "%s (SMS)"
 msgstr "%s (SMS)"
@@ -1122,8 +1121,7 @@ msgstr "Zablokowane kontakty"
 
 #: ../libempathy-gtk/empathy-contact-blocking-dialog.ui.h:3
 #: ../libempathy-gtk/empathy-status-preset-dialog.ui.h:1
-#: ../src/empathy-accounts-dialog.ui.h:2
-#: ../src/empathy-chatrooms-window.ui.h:3
+#: ../src/empathy-accounts-dialog.ui.h:2 ../src/empathy-chatrooms-window.ui.h:3
 msgid "Remove"
 msgstr "Usuń"
 
@@ -1373,7 +1371,7 @@ msgid "Removing contact"
 msgstr "Usuwanie kontaktu"
 
 #: ../libempathy-gtk/empathy-individual-menu.c:934
-#: ../libempathy-gtk/empathy-individual-view.c:2444
+#: ../libempathy-gtk/empathy-individual-view.c:2447
 msgid "_Remove"
 msgstr "_Usuń"
 
@@ -1412,7 +1410,7 @@ msgstr "Wyślij plik"
 # to jest w menu
 #: ../libempathy-gtk/empathy-individual-menu.c:1751
 msgid "Share My Desktop"
-msgstr "Współdziel pulpit"
+msgstr "Udostępnij pulpit"
 
 #: ../libempathy-gtk/empathy-individual-menu.c:1809
 #: ../libempathy-gtk/empathy-individual-widget.c:1423
@@ -1430,7 +1428,7 @@ msgstr "_Modyfikuj"
 
 #. send invitation
 #: ../libempathy-gtk/empathy-individual-menu.c:2003
-#: ../src/empathy-chat-window.c:1274
+#: ../src/empathy-chat-window.c:1279
 msgid "Inviting you to this room"
 msgstr "Zapraszanie do tego pokoju"
 
@@ -1443,16 +1441,16 @@ msgstr "_Zaproś do pokoju rozmowy"
 msgid "_Add Contact…"
 msgstr "_Dodaj kontakt…"
 
-#: ../libempathy-gtk/empathy-individual-view.c:2364
+#: ../libempathy-gtk/empathy-individual-view.c:2367
 #, c-format
 msgid "Do you really want to remove the group '%s'?"
 msgstr "Na pewno usunąć grupę „%s”?"
 
-#: ../libempathy-gtk/empathy-individual-view.c:2367
+#: ../libempathy-gtk/empathy-individual-view.c:2370
 msgid "Removing group"
 msgstr "Usuwanie grupy"
 
-#: ../libempathy-gtk/empathy-individual-view.c:2435
+#: ../libempathy-gtk/empathy-individual-view.c:2438
 msgid "Re_name"
 msgstr "Zmień _nazwę"
 
@@ -1772,7 +1770,7 @@ msgid "Profile"
 msgstr "Profil"
 
 #: ../libempathy-gtk/empathy-log-window.ui.h:5
-#: ../src/empathy-chat-window.c:1490 ../src/empathy-preferences.ui.h:11
+#: ../src/empathy-chat-window.c:1495 ../src/empathy-preferences.ui.h:11
 msgid "Chat"
 msgstr "Rozmowa"
 
@@ -2158,10 +2156,10 @@ msgstr ""
 "Artur Flinta <aflinta@at.kernel.pl>, 2003\n"
 "Tomasz Dominikowski <dominikowski@gmail.com>, 2007-2009\n"
 "Wadim Dziedzic <wdziedzic@aviary.pl>, 2008\n"
-"Piotr Drąg <piotrdrag@gmail.com>, 2009-2015\n"
+"Piotr Drąg <piotrdrag@gmail.com>, 2009-2016\n"
 "Asia Słowik <asiaslowik@gmail.com>, 2011\n"
 "Paweł Żołnowski <pawel@zolnowski.name>, 2014\n"
-"Aviary.pl <gnomepl@aviary.pl>, 2007-2015"
+"Aviary.pl <gnomepl@aviary.pl>, 2007-2016"
 
 #: ../src/empathy-accounts.c:171
 msgid "Don't display any dialogs; do any work (eg, importing) and exit"
@@ -2358,15 +2356,15 @@ msgstr ""
 "\n"
 "%s"
 
-#: ../src/empathy-call.c:115
+#: ../src/empathy-call.c:116
 msgid "In a call"
 msgstr "W czasie rozmowy"
 
-#: ../src/empathy-call.c:223
+#: ../src/empathy-call.c:226
 msgid "- Empathy Audio/Video Client"
 msgstr "— klient dźwięku/wideo komunikatora Empathy"
 
-#: ../src/empathy-call.c:247
+#: ../src/empathy-call.c:250
 msgid "Empathy Audio/Video Client"
 msgstr "Klient dźwięku/wideo komunikatora Empathy"
 
@@ -2725,7 +2723,7 @@ msgstr "Zamknij okno"
 msgid "Leave room"
 msgstr "Opuść pokój"
 
-#: ../src/empathy-chat-window.c:671 ../src/empathy-chat-window.c:694
+#: ../src/empathy-chat-window.c:676 ../src/empathy-chat-window.c:699
 #, c-format
 msgid "%s (%d unread)"
 msgid_plural "%s (%d unread)"
@@ -2733,7 +2731,7 @@ msgstr[0] "%s (%d nieprzeczytana)"
 msgstr[1] "%s (%d nieprzeczytane)"
 msgstr[2] "%s (%d nieprzeczytanych)"
 
-#: ../src/empathy-chat-window.c:686
+#: ../src/empathy-chat-window.c:691
 #, c-format
 msgid "%s (and %u other)"
 msgid_plural "%s (and %u others)"
@@ -2741,7 +2739,7 @@ msgstr[0] "%s (i %u inna)"
 msgstr[1] "%s (i %u inne)"
 msgstr[2] "%s (i %u innych)"
 
-#: ../src/empathy-chat-window.c:702
+#: ../src/empathy-chat-window.c:707
 #, c-format
 msgid "%s (%d unread from others)"
 msgid_plural "%s (%d unread from others)"
@@ -2749,7 +2747,7 @@ msgstr[0] "%s (%d nieprzeczytana od innych)"
 msgstr[1] "%s (%d nieprzeczytane od innych)"
 msgstr[2] "%s (%d nieprzeczytanych od innych)"
 
-#: ../src/empathy-chat-window.c:711
+#: ../src/empathy-chat-window.c:716
 #, c-format
 msgid "%s (%d unread from all)"
 msgid_plural "%s (%d unread from all)"
@@ -2757,11 +2755,11 @@ msgstr[0] "%s (%d nieprzeczytana od wszystkich)"
 msgstr[1] "%s (%d nieprzeczytane od wszystkich)"
 msgstr[2] "%s (%d nieprzeczytanych od wszystkich)"
 
-#: ../src/empathy-chat-window.c:948
+#: ../src/empathy-chat-window.c:953
 msgid "SMS:"
 msgstr "SMS:"
 
-#: ../src/empathy-chat-window.c:956
+#: ../src/empathy-chat-window.c:961
 #, c-format
 msgid "Sending %d message"
 msgid_plural "Sending %d messages"
@@ -2769,7 +2767,7 @@ msgstr[0] "Wysyłanie %d wiadomości"
 msgstr[1] "Wysyłanie %d wiadomości"
 msgstr[2] "Wysyłanie %d wiadomości"
 
-#: ../src/empathy-chat-window.c:976
+#: ../src/empathy-chat-window.c:981
 msgid "Typing a message."
 msgstr "Pisze wiadomość."
 
