@@ -772,7 +772,7 @@ theme_adium_remove_focus_marks (EmpathyThemeAdium *self,
   for (i = 0; i < webkit_dom_node_list_get_length (nodes); i++)
     {
       WebKitDOMNode *node = webkit_dom_node_list_item (nodes, i);
-      WebKitDOMHTMLElement *element = WEBKIT_DOM_HTML_ELEMENT (node);
+      WebKitDOMElement *element = WEBKIT_DOM_ELEMENT (node);
       gchar *class_name;
       gchar **classes, **iter;
       GString *new_class_name;
@@ -781,7 +781,7 @@ theme_adium_remove_focus_marks (EmpathyThemeAdium *self,
       if (element == NULL)
         continue;
 
-      class_name = webkit_dom_html_element_get_class_name (element);
+      class_name = webkit_dom_element_get_class_name (element);
       classes = g_strsplit (class_name, " ", -1);
       new_class_name = g_string_sized_new (strlen (class_name));
 
@@ -798,7 +798,7 @@ theme_adium_remove_focus_marks (EmpathyThemeAdium *self,
             }
         }
 
-      webkit_dom_html_element_set_class_name (element, new_class_name->str);
+      webkit_dom_element_set_class_name (element, new_class_name->str);
 
       g_free (class_name);
       g_strfreev (classes);
