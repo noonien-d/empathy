@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: empathy master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=empathy&keywords=I18N+L10N&component=General\n"
-"POT-Creation-Date: 2016-03-31 15:40+0000\n"
-"PO-Revision-Date: 2016-04-04 15:24+0200\n"
+"POT-Creation-Date: 2016-04-15 15:37+0000\n"
+"PO-Revision-Date: 2016-04-16 01:26+0200\n"
+"Last-Translator: Fabio Tomat <f.t.public@gmail.com>\n"
 "Language-Team: Friulian <fur@li.org>\n"
 "Language: fur\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"Last-Translator: Fabio Tomat <f.t.public@gmail.com>\n"
 "X-Generator: Poedit 1.8.5\n"
 
 #: ../data/empathy.desktop.in.in.h:1
@@ -1256,7 +1256,7 @@ msgstr "Blocâ %s?"
 #: ../libempathy-gtk/empathy-subscription-dialog.c:125
 #, c-format
 msgid "Are you sure you want to block '%s' from contacting you again?"
-msgstr "Sigûr di blocâ '%s' par che no ti torni a contatâ ancjemò?"
+msgstr "Sigûrs di blocâ '%s' par che no ti torni a contatâ ancjemò?"
 
 #: ../libempathy-gtk/empathy-individual-dialogs.c:244
 msgid "The following identity will be blocked:"
@@ -1359,7 +1359,7 @@ msgstr "Elimine e _bloche"
 #: ../libempathy-gtk/empathy-individual-menu.c:838
 #, c-format
 msgid "Do you really want to remove the contact '%s'?"
-msgstr "Sigûr di gjavâ il contat '%s'?"
+msgstr "Sigûrs di gjavâ il contat '%s'?"
 
 #: ../libempathy-gtk/empathy-individual-menu.c:847
 #, c-format
@@ -1367,7 +1367,7 @@ msgid ""
 "Do you really want to remove the linked contact '%s'? Note that this will "
 "remove all the contacts which make up this linked contact."
 msgstr ""
-"Sigûr di gjavâ il contat leât '%s'? Cheste operazion e gjavarà ducj i "
+"Sigûrs di gjavâ il contat leât '%s'? Cheste operazion e gjavarà ducj i "
 "contats che al è componût."
 
 #: ../libempathy-gtk/empathy-individual-menu.c:858
@@ -1446,7 +1446,7 @@ msgstr "_Zonte contat..."
 #: ../libempathy-gtk/empathy-individual-view.c:2367
 #, c-format
 msgid "Do you really want to remove the group '%s'?"
-msgstr "Sigûr di gjavâ il grup '%s'?"
+msgstr "Sigûrs di gjavâ il grup '%s'?"
 
 #: ../libempathy-gtk/empathy-individual-view.c:2370
 msgid "Removing group"
@@ -1743,7 +1743,7 @@ msgstr "Ce"
 #: ../libempathy-gtk/empathy-log-window.c:3757
 msgid "Are you sure you want to delete all logs of previous conversations?"
 msgstr ""
-"Sigûr di eliminâ dutis lis regjistrazions des conversazions precedentis?"
+"Sigûrs di eliminâ dutis lis regjistrazions des conversazions precedentis?"
 
 #: ../libempathy-gtk/empathy-log-window.c:3761
 msgid "Clear All"
@@ -2257,7 +2257,7 @@ msgid ""
 "your changes. Are you sure you want to proceed?"
 msgstr ""
 "Tu stâs par selezionâ un altri account e lis modifichis fatis\n"
-"a laran pierdudis. Sigûr di continuâ?"
+"a laran pierdudis. Sigûrs di continuâ?"
 
 #. Menu item: to enabled/disable the account
 #: ../src/empathy-accounts-dialog.c:1648
@@ -2283,7 +2283,7 @@ msgid ""
 "your changes. Are you sure you want to proceed?"
 msgstr ""
 "Tu stâs par sierâ il barcon e lis modifichis fatis\n"
-"a laran pierdudis. Sigûr di continuâ?"
+"a laran pierdudis. Sigûrs di continuâ?"
 
 #. Tweak the dialog
 #: ../src/empathy-accounts-dialog.c:2400
