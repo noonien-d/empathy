@@ -250,7 +250,7 @@ main (int argc,
   g_set_application_name (_("Empathy Audio/Video Client"));
 
   /* Make empathy and empathy-call appear as the same app in gnome-shell */
-  gdk_set_program_class ("Empathy");
+  g_set_prgname ("empathy");
   gtk_window_set_default_icon_name ("empathy");
 
   gtk_settings = gtk_settings_get_default ();

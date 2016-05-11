@@ -240,7 +240,7 @@ main (int argc, char *argv[])
   g_set_application_name (_("Empathy Accounts"));
 
   /* Make empathy and empathy-accounts appear as the same app in gnome-shell */
-  gdk_set_program_class ("Empathy");
+  g_set_prgname ("empathy");
   gtk_window_set_default_icon_name ("empathy");
 
   app = gtk_application_new (EMPATHY_ACCOUNTS_BUS_NAME, G_APPLICATION_FLAGS_NONE);
