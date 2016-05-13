@@ -1,3 +1,45 @@
+NEW in 3.12.12 (13/05/2016)
+==============
+
+This new version improve Wayland support.
+
+Bugs fixed:
+ - Fixed #761000, fix pkg-config usage (Saleem Abdulrasool)
+ - Fixed #762735, The minimum value of an uint64_t is 0, not G_MININT32 (Ting-Wei Lan)
+ - Fixed #762737, Hardcoding #!/usr/bin/python is not portable (Ting-Wei Lan)
+ - Fixed #762738, Fix -Werror build for clang (Ting-Wei Lan)
+ - Fixed #764438, Add the Rizon IRC network to the list of IRC networks (Niek Visser)
+ - Fixed #765022, GCC 5 generates a type-limits warning in tpaw-account-settings.c (Diane Trout)
+ - Fixed #765024, Empathy uses deprecated webkit functions (Diane Trout)
+ - Fixed #766285, gnome-shell Wayland application tracking broken for Empathy (Florian Müllner)
+ - Fixed #708170, Empathy dumps core when running on Wayland compositor (Michael Catanzaro)
+
+Translations:
+ - Updated ar Translation (Khaled Hosny)
+ - Updated ca Translation (Jordi Mas)
+ - Updated eo Translation (Kristjan SCHMIDT)
+ - Updated fur Translation (Fabio Tomat)
+ - Updated gl Translation (Marcos Lans)
+ - Updated is Translation (Sveinn í Felli)
+ - Updated ja Translation (Hajime Taira)
+ - Updated lt Translation (Aurimas Černius)
+ - Updated oc Translation (Cédric Valmary)
+ - Updated pl Translation (Piotr Drąg)
+ - Updated pt Translation (Duarte Loreto, Pedro Albuquerque)
+ - Updated ro Translation (Daniel Șerbănescu)
+ - Updated sv Translation (Anders Jonsson)
+ - Updated tg Translation (Victor Ibragimov)
+ - Updated zh_TW Translation (Chao-Hsiung Liao)
+
+Documentation translations:
+ - Updated ca Documentation translation (Jordi Mas)
+ - Updated de Documentation translation (Christian Kirbach)
+ - Updated el Documentation translation (Tom Tryfonidis)
+ - Updated es Documentation translation (Daniel Mustieles)
+ - Updated fr Documentation translation (Alexandre Franke)
+ - Updated lv Documentation translation (Rūdolfs Mazurs)
+ - Updated sv Documentation translation (Anders Jonsson)
+
 NEW in 3.12.11 (14/10/2015)
 ==============
 

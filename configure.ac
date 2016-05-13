@@ -1,9 +1,9 @@
 dnl If not 1, append datestamp to the version number
-m4_define(empathy_released, 0)
+m4_define(empathy_released, 1)
 
 m4_define([empathy_major_version], [3])
 m4_define([empathy_minor_version], [12])
-m4_define([empathy_micro_version], [11])
+m4_define([empathy_micro_version], [12])
 m4_define([empathy_nano_version], [0])
 
 dnl Display the nano_version only if it's not '0'
