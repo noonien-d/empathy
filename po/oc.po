@@ -8,9 +8,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: oc\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=empathy"
-"&keywords=I18N+L10N&component=General\n"
-"POT-Creation-Date: 2016-05-19 15:37+0000\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=empathy&keywords=I18N+L10N&component=General\n"
+"POT-Creation-Date: 2016-05-30 16:09+0000\n"
 "PO-Revision-Date: 2016-05-29 20:34+0200\n"
 "Last-Translator: Cédric Valmary (totenoc.eu) <cvalmary@yahoo.fr>\n"
 "Language-Team: Tot En Òc\n"
@@ -47,7 +47,7 @@ msgstr ""
 #: ../data/empathy.appdata.xml.in.h:1
 msgid ""
 "Empathy is the official instant messaging application of the GNOME desktop "
-"environment.  Empathy can connect to AIM, MSN, Jabber (including Facebook "
+"environment.  Empathy can connect to AIM, MSN, Jabber (including Facebook "
 "and Google Talk), IRC, and many other messaging networks. You can chat with "
 "text, make audio and video calls, or even transfer files, depending on what "
 "your contact’s chat application allows."
@@ -56,7 +56,7 @@ msgstr ""
 #: ../data/empathy.appdata.xml.in.h:2
 msgid ""
 "Empathy provides integrated messaging for the GNOME desktop, so you’ll never "
-"miss a message.  You can respond to your contacts without even having to "
+"miss a message.  You can respond to your contacts without even having to "
 "open Empathy!"
 msgstr ""
 
@@ -937,7 +937,7 @@ msgstr "desconegut"
 
 #: ../libempathy-gtk/empathy-chat.c:1675 ../src/empathy-chat-window.c:978
 msgid "Topic:"
-msgstr "Subjècte :"
+msgstr "Subjècte :"
 
 #: ../libempathy-gtk/empathy-chat.c:1690
 #, c-format
@@ -1128,7 +1128,7 @@ msgstr "Modificar los contactes blocats"
 #: ../src/empathy-chatrooms-window.ui.h:2
 #: ../src/empathy-new-chatroom-dialog.ui.h:6
 msgid "Account:"
-msgstr "Compte :"
+msgstr "Compte :"
 
 #: ../libempathy-gtk/empathy-contact-blocking-dialog.ui.h:2
 msgid "Blocked Contacts"
@@ -1256,7 +1256,7 @@ msgstr "Contacte novèl"
 #: ../libempathy-gtk/empathy-subscription-dialog.c:121
 #, c-format
 msgid "Block %s?"
-msgstr "Blocar %s ?"
+msgstr "Blocar %s ?"
 
 #: ../libempathy-gtk/empathy-individual-dialogs.c:239
 #: ../libempathy-gtk/empathy-subscription-dialog.c:125
@@ -1312,7 +1312,7 @@ msgstr "Installez gnome-contacts per accedir als detalhs dels contactes."
 #: ../libempathy-gtk/empathy-individual-menu.c:181
 #, c-format
 msgid "%s (%s)"
-msgstr "%s (%s)"
+msgstr "%s (%s)"
 
 #: ../libempathy-gtk/empathy-individual-menu.c:342
 msgid "Select account to use to place the call"
@@ -1341,7 +1341,7 @@ msgstr "OSTAL"
 #: ../libempathy-gtk/empathy-individual-menu.c:457
 #, c-format
 msgid "Call %s (%s)"
-msgstr "Sonar %s (%s)"
+msgstr "Sonar %s (%s)"
 
 #. translators: argument is a phone number like +32123456
 #: ../libempathy-gtk/empathy-individual-menu.c:462
@@ -1465,7 +1465,7 @@ msgstr "Re_nomenar"
 
 #: ../libempathy-gtk/empathy-individual-widget.c:361
 msgid "Channels:"
-msgstr "Canals :"
+msgstr "Canals :"
 
 #: ../libempathy-gtk/empathy-individual-widget.c:512
 msgid "Country ISO Code:"
@@ -1473,27 +1473,27 @@ msgstr "Còdi ISO del país :"
 
 #: ../libempathy-gtk/empathy-individual-widget.c:514
 msgid "Country:"
-msgstr "País :"
+msgstr "País :"
 
 #: ../libempathy-gtk/empathy-individual-widget.c:516
 msgid "State:"
-msgstr "Estat :"
+msgstr "Estat :"
 
 #: ../libempathy-gtk/empathy-individual-widget.c:518
 msgid "City:"
-msgstr "Vila :"
+msgstr "Vila :"
 
 #: ../libempathy-gtk/empathy-individual-widget.c:520
 msgid "Area:"
-msgstr "Zòna :"
+msgstr "Zòna :"
 
 #: ../libempathy-gtk/empathy-individual-widget.c:522
 msgid "Postal Code:"
-msgstr "Còdi postal :"
+msgstr "Còdi postal :"
 
 #: ../libempathy-gtk/empathy-individual-widget.c:524
 msgid "Street:"
-msgstr "Carrièra :"
+msgstr "Carrièra :"
 
 #: ../libempathy-gtk/empathy-individual-widget.c:526
 msgid "Building:"
@@ -1509,15 +1509,15 @@ msgstr "Sala :"
 
 #: ../libempathy-gtk/empathy-individual-widget.c:532
 msgid "Text:"
-msgstr "Tèxte :"
+msgstr "Tèxte :"
 
 #: ../libempathy-gtk/empathy-individual-widget.c:534
 msgid "Description:"
-msgstr "Descripcion :"
+msgstr "Descripcion :"
 
 #: ../libempathy-gtk/empathy-individual-widget.c:536
 msgid "URI:"
-msgstr "URI :"
+msgstr "URI :"
 
 #: ../libempathy-gtk/empathy-individual-widget.c:538
 msgid "Accuracy Level:"
@@ -1525,7 +1525,7 @@ msgstr "Nivèl de precision :"
 
 #: ../libempathy-gtk/empathy-individual-widget.c:540
 msgid "Error:"
-msgstr "Error :"
+msgstr "Error :"
 
 #: ../libempathy-gtk/empathy-individual-widget.c:542
 msgid "Vertical Error (meters):"
@@ -1537,7 +1537,7 @@ msgstr "Error orizontala (mètres) :"
 
 #: ../libempathy-gtk/empathy-individual-widget.c:546
 msgid "Speed:"
-msgstr "Velocitat :"
+msgstr "Velocitat :"
 
 # http://fr.wikipedia.org/wiki/Rel%C3%A8vement
 #: ../libempathy-gtk/empathy-individual-widget.c:548
@@ -1554,15 +1554,15 @@ msgstr "Darrièra mesa a jorn lo :"
 
 #: ../libempathy-gtk/empathy-individual-widget.c:554
 msgid "Longitude:"
-msgstr "Longitud :"
+msgstr "Longitud :"
 
 #: ../libempathy-gtk/empathy-individual-widget.c:556
 msgid "Latitude:"
-msgstr "Latitud :"
+msgstr "Latitud :"
 
 #: ../libempathy-gtk/empathy-individual-widget.c:558
 msgid "Altitude:"
-msgstr "Altitud :"
+msgstr "Altitud :"
 
 #: ../libempathy-gtk/empathy-individual-widget.c:650
 #: ../libempathy-gtk/empathy-individual-widget.c:665
@@ -1583,12 +1583,12 @@ msgstr "%e %B %Y a %R UTC"
 #. Alias
 #: ../libempathy-gtk/empathy-individual-widget.c:1359
 msgid "Alias:"
-msgstr "Aliàs :"
+msgstr "Aliàs :"
 
 #. Translators: Identifier to connect to Instant Messaging network
 #: ../libempathy-gtk/empathy-individual-widget.c:1568
 msgid "Identifier:"
-msgstr "Identificant :"
+msgstr "Identificant :"
 
 #: ../libempathy-gtk/empathy-individual-widget.c:1707
 #, c-format
@@ -1929,7 +1929,7 @@ msgstr "_Respectar la cassa"
 
 #: ../libempathy-gtk/empathy-search-bar.ui.h:1
 msgid "Find:"
-msgstr "Recercar :"
+msgstr "Recercar :"
 
 #: ../libempathy-gtk/empathy-search-bar.ui.h:2
 msgid "_Previous"
@@ -2263,7 +2263,7 @@ msgstr "_Modificar los paramètres de la connexion…"
 #: ../src/empathy-accounts-dialog.c:1248
 #, c-format
 msgid "Do you want to remove %.50s from your computer?"
-msgstr "Volètz suprimir %.50s de vòstre ordenador ?"
+msgstr "Volètz suprimir %.50s de vòstre ordenador ?"
 
 #: ../src/empathy-accounts-dialog.c:1252
 msgid "This will not remove your account on the server."
@@ -3252,7 +3252,7 @@ msgstr ""
 
 #: ../src/empathy-new-chatroom-dialog.ui.h:5
 msgid "_Server:"
-msgstr "_Servidor :"
+msgstr "_Servidor :"
 
 #: ../src/empathy-new-chatroom-dialog.ui.h:7
 msgid "Couldn't load room list"
@@ -3518,7 +3518,7 @@ msgstr "_Tèma de la fenèstra de discussion :"
 
 #: ../src/empathy-preferences.ui.h:40
 msgid "Variant:"
-msgstr "Varianta :"
+msgstr "Varianta :"
 
 #: ../src/empathy-preferences.ui.h:41
 msgid "Themes"
@@ -3834,10 +3834,10 @@ msgstr "Integratz vòstres comptes de messatjariá instantanèa"
 #~ msgstr "%s"
 
 #~ msgid "%s:"
-#~ msgstr "%s :"
+#~ msgstr "%s :"
 
 #~ msgid "Username:"
-#~ msgstr "Nom d'utilizaire :"
+#~ msgstr "Nom d'utilizaire :"
 
 #~ msgid "A_pply"
 #~ msgstr "A_plicar"
@@ -4092,7 +4092,7 @@ msgstr "Integratz vòstres comptes de messatjariá instantanèa"
 #~ msgstr "Quin es vòstre senhal de compte SIP ?"
 
 #~ msgid "Pass_word:"
-#~ msgstr "_Senhal :"
+#~ msgstr "_Senhal :"
 
 #~ msgid "Yahoo! I_D:"
 #~ msgstr "I_dentificant Yahoo! :"
@@ -4107,7 +4107,7 @@ msgstr "Integratz vòstres comptes de messatjariá instantanèa"
 #~ msgstr "Jòc de c_aractèrs :"
 
 #~ msgid "_Port:"
-#~ msgstr "_Pòrt :"
+#~ msgstr "_Pòrt :"
 
 #~ msgid "What is your Yahoo! ID?"
 #~ msgstr "Quin es vòstre identificant Yahoo! ?"
@@ -4166,13 +4166,13 @@ msgstr "Integratz vòstres comptes de messatjariá instantanèa"
 #~ msgstr "Darrièra consultacion :"
 
 #~ msgid "Server:"
-#~ msgstr "Servidor :"
+#~ msgstr "Servidor :"
 
 #~ msgid "Connected from:"
 #~ msgstr "Connectat de :"
 
 #~ msgid "Away message:"
-#~ msgstr "Messatges d'abséncia :"
+#~ msgstr "Messatges d'abséncia :"
 
 #~ msgid "work"
 #~ msgstr "trabalh"
@@ -4354,7 +4354,7 @@ msgstr "Integratz vòstres comptes de messatjariá instantanèa"
 #~ msgstr "_Modificar los paramètres de la connexion..."
 
 #~ msgid "%s is sending you a file. Do you want to accept it?"
-#~ msgstr "%s vos manda un fichièr. L'acceptatz ?"
+#~ msgstr "%s vos manda un fichièr. L'acceptatz ?"
 
 #~ msgid "_GPS"
 #~ msgstr "_GPS"
@@ -4391,3 +4391,4 @@ msgstr "Integratz vòstres comptes de messatjariá instantanèa"
 
 #~ msgid "No error message"
 #~ msgstr "Pas de messatge d'error"
+
