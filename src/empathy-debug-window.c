@@ -1695,7 +1695,7 @@ debug_window_send_to_pastebin (EmpathyDebugWindow *self,
       "&api_paste_name=%s&api_paste_format=text&api_option=paste",
       api_dev_key, api_paste_code, api_paste_name);
 
-  session = soup_session_async_new ();
+  session = soup_session_new ();
 
   msg = soup_message_new ("POST", "http://pastebin.com/api/api_post.php");
   soup_message_set_request (msg,
