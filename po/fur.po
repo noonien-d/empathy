@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: empathy master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=empathy&keywords=I18N+L10N&component=General\n"
-"POT-Creation-Date: 2016-04-15 15:37+0000\n"
-"PO-Revision-Date: 2016-04-16 01:26+0200\n"
+"POT-Creation-Date: 2016-05-19 15:37+0000\n"
+"PO-Revision-Date: 2016-07-07 17:02+0200\n"
 "Last-Translator: Fabio Tomat <f.t.public@gmail.com>\n"
 "Language-Team: Friulian <fur@li.org>\n"
 "Language: fur\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.8.5\n"
+"X-Generator: Poedit 1.8.8\n"
 
 #: ../data/empathy.desktop.in.in.h:1
 msgid "Empathy"
@@ -124,8 +124,7 @@ msgstr ""
 "operazions di mondece a scugnin sedi eseguidis o no. I utents no varessin di "
 "cambiâ chest numar a man."
 
-#: ../data/org.gnome.Empathy.gschema.xml.h:12
-#: ../src/empathy-preferences.ui.h:1
+#: ../data/org.gnome.Empathy.gschema.xml.h:12 ../src/empathy-preferences.ui.h:1
 msgid "Show offline contacts"
 msgstr "Mostre contats fûr rêt"
 
@@ -1129,8 +1128,7 @@ msgstr "Contats blocâts"
 
 #: ../libempathy-gtk/empathy-contact-blocking-dialog.ui.h:3
 #: ../libempathy-gtk/empathy-status-preset-dialog.ui.h:1
-#: ../src/empathy-accounts-dialog.ui.h:2
-#: ../src/empathy-chatrooms-window.ui.h:3
+#: ../src/empathy-accounts-dialog.ui.h:2 ../src/empathy-chatrooms-window.ui.h:3
 msgid "Remove"
 msgstr "Gjave"
 
@@ -3301,37 +3299,37 @@ msgstr "Lenghe"
 #. translators: Contact name for the chat theme preview
 #: ../src/empathy-preferences.c:620
 msgid "Juliet"
-msgstr ""
+msgstr "Juliute"
 
 #. translators: Contact name for the chat theme preview
 #: ../src/empathy-preferences.c:627
 msgid "Romeo"
-msgstr ""
+msgstr "Romeo"
 
 #. translators: Quote from Romeo & Julier, for chat theme preview
 #: ../src/empathy-preferences.c:633
 msgid "O Romeo, Romeo, wherefore art thou Romeo?"
-msgstr ""
+msgstr "O Romeo, Romeo, parcè sêstu tu Romeo?"
 
 #. translators: Quote from Romeo & Julier, for chat theme preview
 #: ../src/empathy-preferences.c:637
 msgid "Deny thy father and refuse thy name;"
-msgstr ""
+msgstr "Dinee to pari e refude il to non;"
 
 #. translators: Quote from Romeo & Julier, for chat theme preview
 #: ../src/empathy-preferences.c:640
 msgid "Or if thou wilt not, be but sworn my love"
-msgstr ""
+msgstr "Se no, se no tu vûs, leiti nome in zurament amôr gno"
 
 #. translators: Quote from Romeo & Julier, for chat theme preview
 #: ../src/empathy-preferences.c:643
 msgid "And I'll no longer be a Capulet."
-msgstr ""
+msgstr "E jo no sarai plui une Capuleti."
 
 #. translators: Quote from Romeo & Julier, for chat theme preview
 #: ../src/empathy-preferences.c:646
 msgid "Shall I hear more, or shall I speak at this?"
-msgstr ""
+msgstr "Aio di sintî di plui, o scugnio fevelâ di chest?"
 
 #. translators: Quote from Romeo & Julier, for chat theme preview
 #: ../src/empathy-preferences.c:649
