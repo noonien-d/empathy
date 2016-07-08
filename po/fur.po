@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=empathy&keywords=I18N+L10N&component=General\n"
 "POT-Creation-Date: 2016-05-19 15:37+0000\n"
-"PO-Revision-Date: 2016-07-08 01:42+0200\n"
+"PO-Revision-Date: 2016-07-08 08:58+0200\n"
 "Last-Translator: Fabio Tomat <f.t.public@gmail.com>\n"
 "Language-Team: Friulian <fur@li.org>\n"
 "Language: fur\n"
@@ -3299,7 +3299,7 @@ msgstr "Lenghe"
 #. translators: Contact name for the chat theme preview
 #: ../src/empathy-preferences.c:620
 msgid "Juliet"
-msgstr "Juliute"
+msgstr "Gjuliute"
 
 #. translators: Contact name for the chat theme preview
 #: ../src/empathy-preferences.c:627
@@ -3334,7 +3334,7 @@ msgstr "Aio di sintî di plui, o scugnio fevelâ di chest?"
 #. translators: Quote from Romeo & Julier, for chat theme preview
 #: ../src/empathy-preferences.c:649
 msgid "Juliet has disconnected"
-msgstr "Juliute si è distacade"
+msgstr "Gjuliute si è distacade"
 
 #: ../src/empathy-preferences.c:1015
 msgid "Preferences"
