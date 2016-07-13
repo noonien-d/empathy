@@ -2513,17 +2513,30 @@ empathy_call_window_conference_added_cb (EmpathyCallHandler *handler,
 }
 
 static void
+empathy_call_window_add_notifier_remove (gpointer data, gpointer user_data)
+{
+  EmpathyCallWindow *self = EMPATHY_CALL_WINDOW (user_data);
+  EmpathyCallWindowPriv *priv = GET_PRIV (self);
+  FsElementAddedNotifier *notifier = data;
+
+  fs_element_added_notifier_remove (notifier, GST_BIN (priv->pipeline));
+}
+
+static void
 empathy_call_window_conference_removed_cb (EmpathyCallHandler *handler,
   GstElement *conference, gpointer user_data)
 {
   EmpathyCallWindow *self = EMPATHY_CALL_WINDOW (user_data);
   EmpathyCallWindowPriv *priv = GET_PRIV (self);
 
-  g_list_free_full (priv->notifiers, g_object_unref);
-  priv->notifiers = NULL;
-
   gst_bin_remove (GST_BIN (priv->pipeline), conference);
   gst_element_set_state (conference, GST_STATE_NULL);
+
+  g_list_foreach (priv->notifiers,
+    empathy_call_window_add_notifier_remove, user_data);
+
+  g_list_free_full (priv->notifiers, g_object_unref);
+  priv->notifiers = NULL;
 }
 
 static gboolean
