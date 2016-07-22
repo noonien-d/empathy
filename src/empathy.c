@@ -116,14 +116,8 @@ empathy_app_dispose (GObject *object)
   void (*dispose) (GObject *) =
     G_OBJECT_CLASS (empathy_app_parent_class)->dispose;
 
-  /* Only set our presence to offline when exiting if GNOME Shell is not
-   * running */
-  if (self->presence_mgr != NULL &&
-      !self->shell_running)
-    {
-      empathy_presence_manager_set_state (self->presence_mgr,
-          TP_CONNECTION_PRESENCE_TYPE_OFFLINE);
-    }
+  empathy_presence_manager_set_state (self->presence_mgr,
+      TP_CONNECTION_PRESENCE_TYPE_OFFLINE);
 
 #ifdef ENABLE_DEBUG
   tp_clear_object (&self->debug_sender);
