@@ -245,29 +245,13 @@ out:
     {
       DEBUG ("GNOME Shell is running, don't create status icon");
 
-      /* Rely on GNOME Shell to watch session state */
-      empathy_presence_manager_set_auto_away (self->presence_mgr, FALSE);
-
       empathy_roster_window_set_shell_running (
           EMPATHY_ROSTER_WINDOW (self->window), TRUE);
     }
   else
     {
-      gboolean autoaway;
-
       self->icon = empathy_status_icon_new (GTK_WINDOW (self->window),
           self->start_hidden);
-
-      /* Allow Empathy to watch session state */
-      autoaway = g_settings_get_boolean (self->gsettings,
-          EMPATHY_PREFS_AUTOAWAY);
-
-      g_signal_connect (self->gsettings,
-          "changed::" EMPATHY_PREFS_AUTOAWAY,
-          G_CALLBACK (empathy_presence_manager_set_auto_away_cb),
-          self->presence_mgr);
-
-      empathy_presence_manager_set_auto_away (self->presence_mgr, autoaway);
     }
 
   /* Now that we have been started, reset this flag so future invocation will
@@ -284,6 +268,7 @@ empathy_app_activate (GApplication *app)
     {
       GError *error = NULL;
       TpDBusDaemon *dbus;
+      gboolean autoaway;
 
       empathy_gtk_init ();
 
@@ -315,6 +300,17 @@ empathy_app_activate (GApplication *app)
           "<Primary>h",
           "win." EMPATHY_PREFS_UI_SHOW_OFFLINE,
           NULL);
+
+      /* Allow Empathy to watch session state */
+      autoaway = g_settings_get_boolean (self->gsettings,
+          EMPATHY_PREFS_AUTOAWAY);
+
+      g_signal_connect (self->gsettings,
+          "changed::" EMPATHY_PREFS_AUTOAWAY,
+          G_CALLBACK (empathy_presence_manager_set_auto_away_cb),
+          self->presence_mgr);
+
+      empathy_presence_manager_set_auto_away (self->presence_mgr, autoaway);
 
       /* check if Shell is running */
       dbus = tp_dbus_daemon_dup (&error);
