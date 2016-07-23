@@ -343,8 +343,8 @@ setup_geoclue (EmpathyLocationManager *self)
 
 static void
 publish_cb (GSettings *gsettings_loc,
-            const gchar *key,
-            gpointer user_data)
+    const gchar *key,
+    gpointer user_data)
 {
   EmpathyLocationManager *self = EMPATHY_LOCATION_MANAGER (user_data);
 
@@ -369,8 +369,8 @@ publish_cb (GSettings *gsettings_loc,
 
 static void
 reduce_accuracy_cb (GSettings *gsettings_loc,
-                    const gchar *key,
-                    gpointer user_data)
+    const gchar *key,
+    gpointer user_data)
 {
   EmpathyLocationManager *self = EMPATHY_LOCATION_MANAGER (user_data);
 
