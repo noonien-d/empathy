@@ -217,6 +217,7 @@ empathy_presence_manager_set_auto_away_cb (GSettings *gsettings,
 }
 
 #define GNOME_SHELL_BUS_NAME "org.gnome.Shell"
+#define GNOME_FLASHBACK_BUS_NAME "org.gnome.Flashback"
 
 static void
 list_names_cb (TpDBusDaemon *bus_daemon,
@@ -226,18 +227,14 @@ list_names_cb (TpDBusDaemon *bus_daemon,
         GObject *weak_object)
 {
   EmpathyApp *self = (EmpathyApp *) weak_object;
-  guint i;
 
   if (error != NULL)
       goto out;
 
-  for (i = 0; names[i] != NULL; i++)
+  if (g_strv_contains (names, GNOME_SHELL_BUS_NAME) &&
+      !g_strv_contains (names, GNOME_FLASHBACK_BUS_NAME))
     {
-      if (!tp_strdiff (names[i], GNOME_SHELL_BUS_NAME))
-        {
-          self->shell_running = TRUE;
-          break;
-        }
+      self->shell_running = TRUE;
     }
 
 out:
