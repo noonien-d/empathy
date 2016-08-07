@@ -1,3 +1,12 @@
+NEW in 3.
+=========
+
+This release assumes the use of GNU Make. See the following links for details
+on why you probably do not want to attempt to use an alternative implementation:
+
+https://bugzilla.gnome.org/show_bug.cgi?id=685837
+https://www.gnu.org/software/automake/manual/automake.html#Multiple-Outputs
+
 NEW in 3.12.12 (13/05/2016)
 ==============
 
