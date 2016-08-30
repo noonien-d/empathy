@@ -69,7 +69,7 @@
       <description>Always open a separate chat window for new chats.</description>
     </key>
     <key name="events-notify-area" type="b">
-      <default>true</default>
+      <default>false</default>
       <summary>Display incoming events in the status area</summary>
       <description>Display incoming events in the status area. If false,
 present them to the user immediately.</description>
