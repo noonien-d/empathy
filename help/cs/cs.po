@@ -3,13 +3,13 @@
 # Lucas Lommer <llommer@svn.gnome.org>, 2008.
 # Martin Picek <picek.martin@gnome-cesko.cz>, 2009.
 # Tomáš Karger <tomkarger@gmail.com>, 2013.
-# Marek Černocký <marek@manet.cz>, 2014, 2015.
+# Marek Černocký <marek@manet.cz>, 2014, 2015, 2016.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: empathy\n"
-"POT-Creation-Date: 2015-04-14 03:29+0000\n"
-"PO-Revision-Date: 2015-04-14 11:40+0200\n"
+"POT-Creation-Date: 2016-08-19 20:35+0000\n"
+"PO-Revision-Date: 2016-09-04 22:33+0200\n"
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
 "Language: cs\n"
@@ -507,12 +507,12 @@ msgstr "Jak přidat nový účet do <app>Empathy</app>."
 #: C/import-account.page:23 C/index.page:20 C/introduction.page:13
 #: C/irc-commands.page:10 C/irc-join-pwd.page:17 C/irc-join-room.page:16
 #: C/irc-manage.page:19 C/irc-nick-password.page:18 C/irc-send-file.page:16
-#: C/irc-start-conversation.page:15 C/link-contacts.page:15
-#: C/prev-conv.page:17 C/prob-conn-acctdisabled.page:19
-#: C/prob-conn-auth.page:22 C/prob-conn-name.page:19
-#: C/prob-conn-neterror.page:20 C/remove-account.page:19
-#: C/salut-protocol.page:18 C/send-file.page:21 C/set-custom-status.page:19
-#: C/share-desktop.page:14 C/status-icons.page:17 C/video-call.page:25
+#: C/irc-start-conversation.page:15 C/link-contacts.page:15 C/prev-conv.page:17
+#: C/prob-conn-acctdisabled.page:19 C/prob-conn-auth.page:22
+#: C/prob-conn-name.page:19 C/prob-conn-neterror.page:20
+#: C/remove-account.page:19 C/salut-protocol.page:18 C/send-file.page:21
+#: C/set-custom-status.page:19 C/share-desktop.page:14 C/status-icons.page:17
+#: C/video-call.page:25
 msgid "Milo Casagrande"
 msgstr "Milo Casagrande"
 
@@ -2018,10 +2018,10 @@ msgstr "Běžné problémy"
 msgctxt "_"
 msgid ""
 "external ref='figures/empathy-main-window.png' "
-"md5='54908dcb2588beddb15ef0968d2c2582'"
+"md5='6f5e0ccab794dce0c9fba09c903d4ff8'"
 msgstr ""
 "external ref='figures/empathy-main-window.png' "
-"md5='54908dcb2588beddb15ef0968d2c2582'"
+"md5='6f5e0ccab794dce0c9fba09c903d4ff8'"
 
 #. (itstool) path: info/desc
 #: C/introduction.page:9
