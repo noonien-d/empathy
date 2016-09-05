@@ -4,29 +4,29 @@
 # documentation package.
 #
 # Philipp Kerling <k.philipp@gmail.com>, 2008.
-# Mario Blättermann <mario.blaettermann@gmail.com>, 2008-2013.
+# Mario Blättermann <mario.blaettermann@gmail.com>, 2008-2013, 2016.
 # Christian Kirbach <christian.kirbach@gmail.com>, 2009-2013, 2013.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: empathy help master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-08-19 03:31+0000\n"
-"PO-Revision-Date: 2015-08-19 15:13+0200\n"
-"Last-Translator: Christian Kirbach <christian.kirbach@gmail.com>\n"
+"POT-Creation-Date: 2016-08-19 20:35+0000\n"
+"PO-Revision-Date: 2016-09-05 13:58+0200\n"
+"Last-Translator: Mario Blättermann <mario.blaettermann@gmail.com>\n"
 "Language-Team: Deutsch <gnome-de@gnome.org>\n"
 "Language: de_DE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.8.4\n"
+"X-Generator: Poedit 1.8.9\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
 msgid "translator-credits"
 msgstr ""
-"Mario Blättermann <mario.blaettermann@gmail.com>, 2008-2013\n"
+"Mario Blättermann <mario.blaettermann@gmail.com>, 2008-2013, 2016\n"
 "Philipp Kerling <k.philipp@gmail.com>, 2008\n"
 "Christian Kirbach <Christian.Kirbach@gmail.com>, 2010-2015"
 
@@ -535,12 +535,12 @@ msgstr "Einen neuen Kontakt zu <app>Empathy</app> hinzufügen."
 #: C/import-account.page:23 C/index.page:20 C/introduction.page:13
 #: C/irc-commands.page:10 C/irc-join-pwd.page:17 C/irc-join-room.page:16
 #: C/irc-manage.page:19 C/irc-nick-password.page:18 C/irc-send-file.page:16
-#: C/irc-start-conversation.page:15 C/link-contacts.page:15
-#: C/prev-conv.page:17 C/prob-conn-acctdisabled.page:19
-#: C/prob-conn-auth.page:22 C/prob-conn-name.page:19
-#: C/prob-conn-neterror.page:20 C/remove-account.page:19
-#: C/salut-protocol.page:18 C/send-file.page:21 C/set-custom-status.page:19
-#: C/share-desktop.page:14 C/status-icons.page:17 C/video-call.page:25
+#: C/irc-start-conversation.page:15 C/link-contacts.page:15 C/prev-conv.page:17
+#: C/prob-conn-acctdisabled.page:19 C/prob-conn-auth.page:22
+#: C/prob-conn-name.page:19 C/prob-conn-neterror.page:20
+#: C/remove-account.page:19 C/salut-protocol.page:18 C/send-file.page:21
+#: C/set-custom-status.page:19 C/share-desktop.page:14 C/status-icons.page:17
+#: C/video-call.page:25
 msgid "Milo Casagrande"
 msgstr "Milo Casagrande"
 
@@ -2093,7 +2093,7 @@ msgstr "Häufig auftretende Probleme"
 msgctxt "_"
 msgid ""
 "external ref='figures/empathy-main-window.png' "
-"md5='54908dcb2588beddb15ef0968d2c2582'"
+"md5='6f5e0ccab794dce0c9fba09c903d4ff8'"
 msgstr "ok"
 
 #. (itstool) path: info/desc
@@ -2610,7 +2610,6 @@ msgstr "Janina_Schmitt@hotmail"
 
 #. (itstool) path: item/p
 #: C/link-contacts.page:54
-#| msgid "janes@facebook"
 msgid "janes@yahoo"
 msgstr "janes@yahoo"
 
