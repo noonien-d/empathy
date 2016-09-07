@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: empathy master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=empathy&keywords=I18N+L10N&component=General\n"
-"POT-Creation-Date: 2016-05-19 15:37+0000\n"
-"PO-Revision-Date: 2016-07-08 08:58+0200\n"
+"POT-Creation-Date: 2016-08-19 20:34+0000\n"
+"PO-Revision-Date: 2016-09-07 16:36+0200\n"
 "Last-Translator: Fabio Tomat <f.t.public@gmail.com>\n"
 "Language-Team: Friulian <fur@li.org>\n"
 "Language: fur\n"
@@ -1042,8 +1042,8 @@ msgstr "%s al è cumò cognossût come %s"
 #. * assume it hasn't and if it has, we'll set the proper status when
 #. * we get the new handler.
 #: ../libempathy-gtk/empathy-chat.c:3079 ../src/empathy-call-window.c:1526
-#: ../src/empathy-call-window.c:1576 ../src/empathy-call-window.c:2655
-#: ../src/empathy-call-window.c:2954 ../src/empathy-event-manager.c:1141
+#: ../src/empathy-call-window.c:1576 ../src/empathy-call-window.c:2668
+#: ../src/empathy-call-window.c:2967 ../src/empathy-event-manager.c:1141
 msgid "Disconnected"
 msgstr "Distacâts"
 
@@ -2003,7 +2003,7 @@ msgstr "_Acete"
 msgid "Message edited at %s"
 msgstr "Messaç modificât aes %s"
 
-#: ../libempathy-gtk/empathy-theme-adium.c:1920
+#: ../libempathy-gtk/empathy-theme-adium.c:1921
 msgid "Normal"
 msgstr "Normâl"
 
@@ -2320,25 +2320,25 @@ msgstr " - client autenticazion Empathy"
 msgid "Empathy authentication client"
 msgstr "Client"
 
-#: ../src/empathy.c:411
+#: ../src/empathy.c:401
 msgid "Don't connect on startup"
 msgstr "No sta tacâti al inviament dal sisteme"
 
-#: ../src/empathy.c:415
+#: ../src/empathy.c:405
 msgid "Don't display the contact list or any other dialogs on startup"
 msgstr ""
 "No sta mostrâ la liste dai contats o cualsisei altri dialic tal inviament "
 "dal sisteme"
 
-#: ../src/empathy.c:444
+#: ../src/empathy.c:434
 msgid "- Empathy IM Client"
 msgstr "- Client pai messaçs istantanis Empathy"
 
-#: ../src/empathy.c:630
+#: ../src/empathy.c:620
 msgid "Error contacting the Account Manager"
 msgstr "Erôr tal contatâ il gjestôr di account"
 
-#: ../src/empathy.c:632
+#: ../src/empathy.c:622
 #, c-format
 msgid ""
 "There was an error while trying to connect to the Telepathy Account Manager. "
@@ -2351,15 +2351,15 @@ msgstr ""
 "\n"
 "%s"
 
-#: ../src/empathy-call.c:116
+#: ../src/empathy-call.c:115
 msgid "In a call"
 msgstr "Intune clamade"
 
-#: ../src/empathy-call.c:226
+#: ../src/empathy-call.c:223
 msgid "- Empathy Audio/Video Client"
 msgstr "- Client audio/video Empathy"
 
-#: ../src/empathy-call.c:250
+#: ../src/empathy-call.c:247
 msgid "Empathy Audio/Video Client"
 msgstr "Client Audio/Video Empathy"
 
@@ -2421,35 +2421,35 @@ msgstr "La direzion IP di un servidôr di deviazion"
 msgid "The IP address of the multicast group"
 msgstr "La direzion IP dal grup multicast"
 
-#: ../src/empathy-call-window.c:2598 ../src/empathy-call-window.c:2599
-#: ../src/empathy-call-window.c:2600 ../src/empathy-call-window.c:2601
+#: ../src/empathy-call-window.c:2611 ../src/empathy-call-window.c:2612
+#: ../src/empathy-call-window.c:2613 ../src/empathy-call-window.c:2614
 #: ../src/empathy-call-window.ui.h:28
 msgid "Unknown"
 msgstr "No cognossût"
 
-#: ../src/empathy-call-window.c:2952
+#: ../src/empathy-call-window.c:2965
 msgid "On hold"
 msgstr "In spiete"
 
-#: ../src/empathy-call-window.c:2956
+#: ../src/empathy-call-window.c:2969
 msgid "Mute"
 msgstr "Cidin"
 
-#: ../src/empathy-call-window.c:2958
+#: ../src/empathy-call-window.c:2971
 msgid "Duration"
 msgstr "Durade"
 
 #. Translators: 'status - minutes:seconds' the caller has been connected
-#: ../src/empathy-call-window.c:2961
+#: ../src/empathy-call-window.c:2974
 #, c-format
 msgid "%s — %d:%02dm"
 msgstr "%s — %d.%02dm"
 
-#: ../src/empathy-call-window.c:3057
+#: ../src/empathy-call-window.c:3070
 msgid "Technical Details"
 msgstr "Detais tecnics"
 
-#: ../src/empathy-call-window.c:3096
+#: ../src/empathy-call-window.c:3109
 #, c-format
 msgid ""
 "%s's software does not understand any of the audio formats supported by your "
@@ -2458,7 +2458,7 @@ msgstr ""
 "Il program di %s nol rive a capî nissun dai formâts audio supuartâts di "
 "chest computer"
 
-#: ../src/empathy-call-window.c:3101
+#: ../src/empathy-call-window.c:3114
 #, c-format
 msgid ""
 "%s's software does not understand any of the video formats supported by your "
@@ -2467,7 +2467,7 @@ msgstr ""
 "Il program di %s nol rive a capî nissun dai formâts video supuartâts di "
 "chest computer"
 
-#: ../src/empathy-call-window.c:3107
+#: ../src/empathy-call-window.c:3120
 #, c-format
 msgid ""
 "Can't establish a connection to %s. One of you might be on a network that "
@@ -2476,25 +2476,25 @@ msgstr ""
 "Impussibil stabilî une conession cun %s. Un dai doi al podarès sedi intune "
 "rêt che no permet conessions diretis."
 
-#: ../src/empathy-call-window.c:3113
+#: ../src/empathy-call-window.c:3126
 msgid "There was a failure on the network"
 msgstr "Al è vignût fûr un vuast te rêt"
 
-#: ../src/empathy-call-window.c:3117
+#: ../src/empathy-call-window.c:3130
 msgid ""
 "The audio formats necessary for this call are not installed on your computer"
 msgstr ""
 "I formâts audio necessaris par cheste clamade no son instalâts tal to "
 "computer"
 
-#: ../src/empathy-call-window.c:3120
+#: ../src/empathy-call-window.c:3133
 msgid ""
 "The video formats necessary for this call are not installed on your computer"
 msgstr ""
 "I formâts video necessaris par cheste clamade no son instalâts tal to "
 "computer"
 
-#: ../src/empathy-call-window.c:3132
+#: ../src/empathy-call-window.c:3145
 #, c-format
 msgid ""
 "Something unexpected happened in a Telepathy component. Please <a href=\"%s"
@@ -2505,32 +2505,32 @@ msgstr ""
 "\"%s\">Segnalâ un probleme</a> e zontâ lis informazions tiradis sù dal "
 "barcon \"Debug\" intal menù Jutori."
 
-#: ../src/empathy-call-window.c:3141
+#: ../src/empathy-call-window.c:3154
 msgid "There was a failure in the call engine"
 msgstr "Al è vignût fûr un vuast tal motôr de clamade"
 
-#: ../src/empathy-call-window.c:3144
+#: ../src/empathy-call-window.c:3157
 msgid "The end of the stream was reached"
 msgstr "Si è rivât ae fin dal flus"
 
-#: ../src/empathy-call-window.c:3184
+#: ../src/empathy-call-window.c:3197
 msgid "Can't establish audio stream"
 msgstr "Impussibil stabilî il flus audio"
 
-#: ../src/empathy-call-window.c:3194
+#: ../src/empathy-call-window.c:3207
 msgid "Can't establish video stream"
 msgstr "Impussibil stabilî il flus video"
 
-#: ../src/empathy-call-window.c:3231
+#: ../src/empathy-call-window.c:3244
 #, c-format
 msgid "Your current balance is %s."
 msgstr "Il to cont atuâl al è di %s."
 
-#: ../src/empathy-call-window.c:3235
+#: ../src/empathy-call-window.c:3248
 msgid "Sorry, you don’t have enough credit for that call."
 msgstr "No tu âs vonde credit par fâ che clamade."
 
-#: ../src/empathy-call-window.c:3237
+#: ../src/empathy-call-window.c:3250
 msgid "Top Up"
 msgstr "Ricjarie"
 
@@ -3508,7 +3508,7 @@ msgstr "Disconet"
 
 #: ../src/empathy-roster-window.c:494
 msgid "You need to set up an account to see contacts here."
-msgstr "Tu scugnis configurâ un account par podê viodi i contats culì."
+msgstr "Tu scugnis configurâ un account par podê viodi i contats achì."
 
 #: ../src/empathy-roster-window.c:570
 #, c-format
@@ -3560,7 +3560,7 @@ msgstr "Ricjarie account"
 
 #: ../src/empathy-roster-window.c:1626
 msgid "You need to enable one of your accounts to see contacts here."
-msgstr "Tu scugnis abilitâ un dai tiei account par viodi contats culì."
+msgstr "Tu scugnis abilitâ un dai tiei account par viodi contats achì."
 
 #. translators: argument is an account name
 #: ../src/empathy-roster-window.c:1634
@@ -3570,7 +3570,7 @@ msgstr "Tu scugnis abilitâ %s par viodi i contats chi."
 
 #: ../src/empathy-roster-window.c:1712
 msgid "Change your presence to see contacts here"
-msgstr "Cambie la tô presince par viodi i contats culì"
+msgstr "Cambie la tô presince par viodi i contats achì"
 
 #: ../src/empathy-roster-window.c:1721
 msgid "No match found"
