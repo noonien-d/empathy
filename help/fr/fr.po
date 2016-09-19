@@ -18,8 +18,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: empathy 3.2.2\n"
-"POT-Creation-Date: 2015-09-20 03:32+0000\n"
-"PO-Revision-Date: 2015-09-20 17:07+0200\n"
+"POT-Creation-Date: 2016-08-19 20:35+0000\n"
+"PO-Revision-Date: 2016-09-19 10:21+0200\n"
 "Last-Translator: Alain Lojewski <allomervan@gmail.com>\n"
 "Language-Team: GNOME French Team <gnomefr@traduc.org>\n"
 "Language: \n"
@@ -588,8 +588,9 @@ msgid ""
 "From the <gui>What kind of chat account do you have?</gui> drop-down list, "
 "select the type of account you wish to add."
 msgstr ""
-"À partir de la liste déroulante <gui>Quel type de compte de discussion possédez-vous ?</gui>, sélectionnez le type "
-"de compte que vous souhaitez ajouter."
+"À partir de la liste déroulante <gui>Quel type de compte de discussion "
+"possédez-vous ?</gui>, sélectionnez le type de compte que vous souhaitez "
+"ajouter."
 
 #. (itstool) path: item/p
 #: C/add-account.page:63
@@ -617,9 +618,10 @@ msgid ""
 "press <key>Enter</key> when you’re finished."
 msgstr ""
 "Pour modifier le nom qui identifie le compte dans la fenêtre des "
-"<gui>Comptes de messagerie et VoIP</gui>, sélectionnez le compte à partir de la liste de gauche et "
-"cliquez sur le nom ou appuyez sur la barre d'espace. Modifiez le nom du "
-"compte et appuyez sur <key>Entrée</key> lorsque vous avez terminé."
+"<gui>Comptes de messagerie et VoIP</gui>, sélectionnez le compte à partir de "
+"la liste de gauche et cliquez sur le nom ou appuyez sur la barre d'espace. "
+"Modifiez le nom du compte et appuyez sur <key>Entrée</key> lorsque vous avez "
+"terminé."
 
 #. (itstool) path: info/desc
 #: C/add-contact.page:9
@@ -2107,10 +2109,10 @@ msgstr "Problèmes courants"
 msgctxt "_"
 msgid ""
 "external ref='figures/empathy-main-window.png' "
-"md5='54908dcb2588beddb15ef0968d2c2582'"
+"md5='6f5e0ccab794dce0c9fba09c903d4ff8'"
 msgstr ""
 "external ref='figures/empathy-main-window.png' "
-"md5='54908dcb2588beddb15ef0968d2c2582'"
+"md5='6f5e0ccab794dce0c9fba09c903d4ff8'"
 
 #. (itstool) path: info/desc
 #: C/introduction.page:9
