@@ -18,15 +18,16 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: empathy 3.2.2\n"
-"POT-Creation-Date: 2016-08-19 20:35+0000\n"
-"PO-Revision-Date: 2016-09-19 10:21+0200\n"
+"POT-Creation-Date: 2016-09-19 08:22+0000\n"
+"PO-Revision-Date: 2016-09-22 15:27+0200\n"
 "Last-Translator: Alain Lojewski <allomervan@gmail.com>\n"
 "Language-Team: GNOME French Team <gnomefr@traduc.org>\n"
-"Language: \n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 1.8.9\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -437,6 +438,13 @@ msgid ""
 "for testing purposes, or if your server is broken and you do not care about "
 "the security of your communication."
 msgstr ""
+"Certains serveurs Jabber chiffrent en utilisant des certificats non-valides, "
+"ou signés par des autorités de certification inconnues. Vous pouvez cocher "
+"<gui>Ignorer les erreurs SSL</gui> pour permettre le chiffrement par des "
+"certificats non-valides, ceci peut permettre à un attaquant d'intercepter "
+"vos communications avec le serveur (y compris vos mots de passe). Cette "
+"option ne devrait être utilisée qu'à des fins de tests, ou si vous ne vous "
+"souciez pas de la sécurité de vos communications."
 
 #. (itstool) path: item/title
 #: C/account-jabber.page:62
