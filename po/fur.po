@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: empathy master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=empathy&keywords=I18N+L10N&component=General\n"
-"POT-Creation-Date: 2016-08-19 20:34+0000\n"
-"PO-Revision-Date: 2016-09-07 16:36+0200\n"
+"POT-Creation-Date: 2016-09-07 14:36+0000\n"
+"PO-Revision-Date: 2016-10-17 16:54+0200\n"
 "Last-Translator: Fabio Tomat <f.t.public@gmail.com>\n"
 "Language-Team: Friulian <fur@li.org>\n"
 "Language: fur\n"
@@ -121,8 +121,8 @@ msgid ""
 "should be executed or not. Users should not change this key manually."
 msgstr ""
 "empathy-sanity-cleaning.c al dopre chest numar par verificâ se lis "
-"operazions di mondece a scugnin sedi eseguidis o no. I utents no varessin di "
-"cambiâ chest numar a man."
+"operazions di mondece a scugnin jessi eseguidis o no. I utents no varessin "
+"di cambiâ chest numar a man."
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:12 ../src/empathy-preferences.ui.h:1
 msgid "Show offline contacts"
@@ -1265,7 +1265,7 @@ msgstr[1] "Chestis identitâts a vegnaran blocadis:"
 #: ../libempathy-gtk/empathy-individual-dialogs.c:251
 msgid "The following identity can not be blocked:"
 msgid_plural "The following identities can not be blocked:"
-msgstr[0] "Cheste identitât no pues sedi blocade:"
+msgstr[0] "Cheste identitât no pues jessi blocade:"
 msgstr[1] "Chestis identitâts no puedin jessi blocadis:"
 
 #: ../libempathy-gtk/empathy-individual-dialogs.c:261
@@ -1844,7 +1844,7 @@ msgstr "Chest canâl al è plen"
 
 #: ../libempathy-gtk/empathy-new-message-dialog.c:90
 msgid "You must be invited to join this channel"
-msgstr "Tu âs di sedi invidât par jentrâ ta chest canâl"
+msgstr "Tu âs di jessi invidât par jentrâ ta chest canâl"
 
 #: ../libempathy-gtk/empathy-new-message-dialog.c:92
 msgid "Can't proceed while disconnected"
@@ -2010,7 +2010,7 @@ msgstr "Normâl"
 #: ../libempathy-gtk/empathy-tls-dialog.c:147
 msgid "The identity provided by the chat server cannot be verified."
 msgstr ""
-"La identitât furnide dal servidôr di conversazion no pues sedi verificade."
+"La identitât furnide dal servidôr di conversazion no pues jessi verificade."
 
 #: ../libempathy-gtk/empathy-tls-dialog.c:154
 msgid "The certificate is not signed by a Certification Authority."
@@ -2473,7 +2473,7 @@ msgid ""
 "Can't establish a connection to %s. One of you might be on a network that "
 "does not allow direct connections."
 msgstr ""
-"Impussibil stabilî une conession cun %s. Un dai doi al podarès sedi intune "
+"Impussibil stabilî une conession cun %s. Un dai doi al podarès jessi intune "
 "rêt che no permet conessions diretis."
 
 #: ../src/empathy-call-window.c:3126
@@ -3514,7 +3514,7 @@ msgstr "Tu scugnis configurâ un account par podê viodi i contats achì."
 #, c-format
 msgid "Sorry, %s accounts can’t be used until your %s software is updated."
 msgstr ""
-"L'account %s nol pues sedi doprât fintant che no tu inzornis il software %s."
+"L'account %s nol pues jessi doprât fintant che no tu inzornis il software %s."
 
 #: ../src/empathy-roster-window.c:671
 msgid "Windows Live"
