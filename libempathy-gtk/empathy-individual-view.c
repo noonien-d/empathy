@@ -2364,7 +2364,7 @@ individual_view_group_remove_activate_cb (GtkMenuItem *menuitem,
       GtkWindow *parent;
 
       text =
-          g_strdup_printf (_("Do you really want to remove the group '%s'?"),
+          g_strdup_printf (_("Do you really want to remove the group “%s”?"),
           group);
       parent = tpaw_get_toplevel_window (GTK_WIDGET (view));
       if (individual_view_remove_dialog_show (parent, _("Removing group"),

@@ -91,7 +91,7 @@ ft_manager_format_interval (guint interval)
 
   if (hours > 0)
     /* Translators: time left, when it is more than one hour */
-    return g_strdup_printf (_("%u:%02u.%02u"), hours, mins, secs);
+    return g_strdup_printf (_("%u∶%02u.%02u"), hours, mins, secs);
   else
     /* Translators: time left, when is is less than one hour */
     return g_strdup_printf (_("%02u.%02u"), mins, secs);
@@ -297,10 +297,10 @@ ft_manager_format_contact_info (EmpathyFTHandler *handler)
 
   if (incoming)
     /* translators: first %s is filename, second %s is the contact name */
-    first_line_format = _("Receiving \"%s\" from %s");
+    first_line_format = _("Receiving “%s” from %s");
   else
     /* translators: first %s is filename, second %s is the contact name */
-    first_line_format = _("Sending \"%s\" to %s");
+    first_line_format = _("Sending “%s” to %s");
 
   retval = g_strdup_printf (first_line_format, filename, contact_name);
 
@@ -330,7 +330,7 @@ ft_manager_format_error_message (EmpathyFTHandler *handler,
     if (filename && contact_name)
       /* translators: first %s is filename, second %s
        * is the contact name */
-      first_line = g_strdup_printf (_("Error receiving \"%s\" from %s"), filename,
+      first_line = g_strdup_printf (_("Error receiving “%s” from %s"), filename,
           contact_name);
     else
       first_line = g_strdup (_("Error receiving a file"));
@@ -338,7 +338,7 @@ ft_manager_format_error_message (EmpathyFTHandler *handler,
     /* translators: first %s is filename, second %s
      * is the contact name */
     if (filename && contact_name)
-      first_line = g_strdup_printf (_("Error sending \"%s\" to %s"), filename,
+      first_line = g_strdup_printf (_("Error sending “%s” to %s"), filename,
           contact_name);
     else
       first_line = g_strdup (_("Error sending a file"));
@@ -480,12 +480,12 @@ do_real_transfer_done (EmpathyFTManager *manager,
   if (incoming)
     /* translators: first %s is filename, second %s
      * is the contact name */
-    first_line = g_strdup_printf (_("\"%s\" received from %s"), filename,
+    first_line = g_strdup_printf (_("“%s” received from %s"), filename,
         contact_name);
   else
     /* translators: first %s is filename, second %s
      * is the contact name */
-    first_line = g_strdup_printf (_("\"%s\" sent to %s"), filename,
+    first_line = g_strdup_printf (_("“%s” sent to %s"), filename,
         contact_name);
 
   second_line = g_strdup (_("File transfer completed"));
@@ -607,7 +607,7 @@ ft_handler_hashing_done_cb (EmpathyFTHandler *handler,
   g_return_if_fail (row_ref != NULL);
 
   first_line = ft_manager_format_contact_info (handler);
-  second_line = g_strdup (_("Waiting for the other participant's response"));
+  second_line = g_strdup (_("Waiting for the other participant’s response"));
   message = g_strdup_printf ("%s\n%s", first_line, second_line);
 
   ft_manager_update_handler_message (manager, row_ref, message);
@@ -633,10 +633,10 @@ ft_handler_hashing_progress_cb (EmpathyFTHandler *handler,
   g_return_if_fail (row_ref != NULL);
 
   if (empathy_ft_handler_is_incoming (handler))
-      first_line = g_strdup_printf (_("Checking integrity of \"%s\""),
+      first_line = g_strdup_printf (_("Checking integrity of “%s”"),
           empathy_ft_handler_get_filename (handler));
   else
-      first_line =  g_strdup_printf (_("Hashing \"%s\""),
+      first_line =  g_strdup_printf (_("Hashing “%s”"),
           empathy_ft_handler_get_filename (handler));
 
   second_line = ft_manager_format_progress_bytes_and_percentage
@@ -671,10 +671,10 @@ ft_handler_hashing_started_cb (EmpathyFTHandler *handler,
   first_line = ft_manager_format_contact_info (handler);
 
   if (empathy_ft_handler_is_incoming (handler))
-      second_line = g_strdup_printf (_("Checking integrity of \"%s\""),
+      second_line = g_strdup_printf (_("Checking integrity of “%s”"),
           empathy_ft_handler_get_filename (handler));
   else
-      second_line = g_strdup_printf (_("Hashing \"%s\""),
+      second_line = g_strdup_printf (_("Hashing “%s”"),
           empathy_ft_handler_get_filename (handler));
 
   message = g_strdup_printf ("%s\n%s", first_line, second_line);
@@ -771,7 +771,7 @@ ft_manager_add_handler_to_list (EmpathyFTManager *manager,
   if (empathy_ft_handler_is_incoming (handler) ||
       !empathy_ft_handler_get_use_hash (handler)) {
     first_line = ft_manager_format_contact_info (handler);
-    second_line = _("Waiting for the other participant's response");
+    second_line = _("Waiting for the other participant’s response");
     message = g_strdup_printf ("%s\n%s", first_line, second_line);
 
     ft_manager_update_handler_message (manager, row_ref, message);

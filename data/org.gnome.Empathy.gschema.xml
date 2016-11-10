@@ -145,7 +145,7 @@ present them to the user immediately.</description>
     </key>
     <key name="notifications-focus" type="b">
       <default>true</default>
-      <summary>Pop up notifications if the chat isn't focused</summary>
+      <summary>Pop up notifications if the chat isn’t focused</summary>
       <description>Whether to show a popup notification when receiving a new message even if the chat is already opened, but not focused.</description>
     </key>
     <key name="notifications-contact-signin" type="b">
@@ -193,7 +193,7 @@ present them to the user immediately.</description>
     <key name="send-chat-states" type="b">
       <default>true</default>
       <summary>Inform other users when you are typing to them</summary>
-      <description>Whether to send the 'composing' or 'paused' chat states. Does not currently affect the 'gone' state.</description>
+      <description>Whether to send the “composing” or “paused” chat states. Does not currently affect the “gone” state.</description>
     </key>
     <key name="theme-chat-room" type="b">
       <default>true</default>
@@ -203,7 +203,7 @@ present them to the user immediately.</description>
     <key name="spell-checker-languages" type="s">
       <default>'en'</default>
       <summary>Spell checking languages</summary>
-      <description>Comma-separated list of spell checker languages to use (e.g. "en, fr, nl").</description>
+      <description>Comma-separated list of spell checker languages to use (e.g. “en, fr, nl”).</description>
     </key>
     <key name="spell-checker-enabled" type="b">
       <default>true</default>
@@ -240,26 +240,26 @@ present them to the user immediately.</description>
     <key name="echo-cancellation" type="b">
       <default>true</default>
       <summary>Echo cancellation support</summary>
-      <description>Whether to enable Pulseaudio's echo cancellation filter.</description>
+      <description>Whether to enable PulseAudio’s echo cancellation filter.</description>
     </key>
   </schema>
   <schema id="org.gnome.Empathy.hints" path="/org/gnome/empathy/hints/">
     <key name="close-main-window" type="b">
       <default>true</default>
       <summary>Show hint about closing the main window</summary>
-      <description>Whether to show the message dialog about closing the main window with the 'x' button in the title bar.</description>
+      <description>Whether to show the message dialog about closing the main window with the “x” button in the title bar.</description>
     </key>
   </schema>
   <schema id="org.gnome.Empathy.location" path="/org/gnome/empathy/location/">
     <key name="publish" type="b">
       <default>false</default>
-      <summary>Empathy can publish the user's location</summary>
-      <description>Whether Empathy can publish the user's location to their contacts.</description>
+      <summary>Empathy can publish the user’s location</summary>
+      <description>Whether Empathy can publish the user’s location to their contacts.</description>
     </key>
     <key name="reduce-accuracy" type="b">
       <default>true</default>
-      <summary>Empathy should reduce the location's accuracy</summary>
-      <description>Whether Empathy should reduce the location's accuracy for privacy reasons.</description>
+      <summary>Empathy should reduce the location’s accuracy</summary>
+      <description>Whether Empathy should reduce the location’s accuracy for privacy reasons.</description>
     </key>
   </schema>
 </schemalist>

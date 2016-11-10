@@ -168,11 +168,11 @@ local_cmdline (GApplication *app,
   GOptionEntry options[] = {
       { "hidden", 'h',
         0, G_OPTION_ARG_NONE, &hidden,
-        N_("Don't display any dialogs; do any work (eg, importing) and exit"),
+        N_("Don’t display any dialogs; do any work (e.g. importing) and exit"),
         NULL },
       { "if-needed", 'n',
         0, G_OPTION_ARG_NONE, &only_if_needed,
-        N_("Don't display any dialogs unless there are only \"People Nearby\" accounts"),
+        N_("Don’t display any dialogs unless there are only “People Nearby” accounts"),
         NULL },
       { "select-account", 's',
         G_OPTION_FLAG_IN_MAIN, G_OPTION_ARG_STRING, &selected_account_name,
@@ -183,7 +183,7 @@ local_cmdline (GApplication *app,
       { NULL }
   };
 
-  optcontext = g_option_context_new (N_("- Empathy Accounts"));
+  optcontext = g_option_context_new (N_("— Empathy Accounts"));
   g_option_context_add_group (optcontext, gtk_get_option_group (FALSE));
   g_option_context_add_main_entries (optcontext, options, GETTEXT_PACKAGE);
   g_option_context_set_translation_domain (optcontext, GETTEXT_PACKAGE);

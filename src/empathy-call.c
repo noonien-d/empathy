@@ -220,7 +220,7 @@ main (int argc,
   XInitThreads ();
 #endif
 
-  optcontext = g_option_context_new (N_("- Empathy Audio/Video Client"));
+  optcontext = g_option_context_new (N_("— Empathy Audio/Video Client"));
   g_option_context_add_group (optcontext, gst_init_get_option_group ());
   g_option_context_add_group (optcontext, gtk_get_option_group (TRUE));
   g_option_context_add_group (optcontext, cogl_get_option_group ());

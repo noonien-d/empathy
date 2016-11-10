@@ -158,13 +158,13 @@ reason_to_string (EmpathyTLSDialog *self)
       reason_str = _("The certificate has expired.");
       break;
     case TP_TLS_CERTIFICATE_REJECT_REASON_NOT_ACTIVATED:
-      reason_str = _("The certificate hasn't yet been activated.");
+      reason_str = _("The certificate hasn’t yet been activated.");
       break;
     case TP_TLS_CERTIFICATE_REJECT_REASON_FINGERPRINT_MISMATCH:
       reason_str = _("The certificate does not have the expected fingerprint.");
       break;
     case TP_TLS_CERTIFICATE_REJECT_REASON_HOSTNAME_MISMATCH:
-      reason_str = _("The hostname verified by the certificate doesn't match "
+      reason_str = _("The hostname verified by the certificate doesn’t match "
           "the server name.");
       break;
     case TP_TLS_CERTIFICATE_REJECT_REASON_SELF_SIGNED:

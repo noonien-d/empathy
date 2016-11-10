@@ -2970,8 +2970,8 @@ empathy_call_window_update_timer (gpointer user_data)
   else
     status = _("Duration");
 
-  /* Translators: 'status - minutes:seconds' the caller has been connected */
-  str = g_strdup_printf (_("%s — %d:%02dm"),
+  /* Translators: 'status — minutes∶seconds' the caller has been connected */
+  str = g_strdup_printf (_("%s — %d∶%02dm"),
       status,
       (int) time_ / 60, (int) time_ % 60);
   empathy_call_window_status_message (self, str);
@@ -3106,18 +3106,18 @@ media_stream_error_to_txt (EmpathyCallWindow *self,
       case TP_MEDIA_STREAM_ERROR_CODEC_NEGOTIATION_FAILED:
         if (audio)
           return g_strdup_printf (
-              _("%s's software does not understand any of the audio formats "
+              _("%s’s software does not understand any of the audio formats "
                 "supported by your computer"),
             empathy_contact_get_alias (priv->contact));
         else
           return g_strdup_printf (
-              _("%s's software does not understand any of the video formats "
+              _("%s’s software does not understand any of the video formats "
                 "supported by your computer"),
             empathy_contact_get_alias (priv->contact));
 
       case TP_MEDIA_STREAM_ERROR_CONNECTION_FAILED:
         return g_strdup_printf (
-            _("Can't establish a connection to %s. "
+            _("Can’t establish a connection to %s. "
               "One of you might be on a network that does not allow "
               "direct connections."),
           empathy_contact_get_alias (priv->contact));
@@ -3144,7 +3144,7 @@ media_stream_error_to_txt (EmpathyCallWindow *self,
         result = g_strdup_printf (
             _("Something unexpected happened in a Telepathy component. "
               "Please <a href=\"%s\">report this bug</a> and attach "
-              "logs gathered from the 'Debug' window in the Help menu."), url);
+              "logs gathered from the “Debug” window in the Help menu."), url);
 
         g_free (url);
         g_free (cm);
@@ -3194,7 +3194,7 @@ empathy_call_window_audio_stream_error (TpCallChannel *call,
     EmpathyCallWindow *self)
 {
   empathy_call_window_stream_error (self, call, TRUE, code, msg,
-      "gnome-stock-mic", _("Can't establish audio stream"));
+      "gnome-stock-mic", _("Can’t establish audio stream"));
 }
 
 static void
@@ -3204,7 +3204,7 @@ empathy_call_window_video_stream_error (TpCallChannel *call,
     EmpathyCallWindow *self)
 {
   empathy_call_window_stream_error (self, call, FALSE, code, msg,
-      "camera-web", _("Can't establish video stream"));
+      "camera-web", _("Can’t establish video stream"));
 }
 #endif
 

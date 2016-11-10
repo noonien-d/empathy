@@ -726,7 +726,7 @@ remove_dialog_show (const gchar *message,
   if (show_remove_from_group)
     {
       GtkWidget *button;
-      gchar *button_text = g_strdup_printf (_("Remove from _Group \'%s\'"),
+      gchar *button_text = g_strdup_printf (_("Remove from _Group “%s”"),
           active_group);
 
       /* gtk_dialog_add_button() doesn't allow us to pass a string with a
@@ -835,7 +835,7 @@ remove_got_avatar (GObject *source_object,
       /* Not a meta-contact */
       text =
           g_strdup_printf (
-              _("Do you really want to remove the contact '%s'?"),
+              _("Do you really want to remove the contact “%s”?"),
               folks_alias_details_get_alias (
                   FOLKS_ALIAS_DETAILS (individual)));
     }
@@ -844,7 +844,7 @@ remove_got_avatar (GObject *source_object,
       /* Meta-contact */
       text =
           g_strdup_printf (
-              _("Do you really want to remove the linked contact '%s'? "
+              _("Do you really want to remove the linked contact “%s”? "
                 "Note that this will remove all the contacts which make up "
                 "this linked contact."),
               folks_alias_details_get_alias (

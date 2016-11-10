@@ -122,7 +122,7 @@ block_contact_dialog_show (GtkWindow *parent,
       empathy_contact_get_alias (contact));
 
   gtk_message_dialog_format_secondary_text (GTK_MESSAGE_DIALOG (dialog),
-      _("Are you sure you want to block '%s' from contacting you again?"),
+      _("Are you sure you want to block “%s” from contacting you again?"),
       empathy_contact_get_alias (contact));
 
   gtk_dialog_add_buttons (GTK_DIALOG (dialog),

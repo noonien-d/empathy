@@ -295,7 +295,7 @@ create_errors_to_message_hash (void)
   g_hash_table_insert (errors, TP_ERROR_STR_CONNECTION_REFUSED,
     _("Connection has been refused"));
   g_hash_table_insert (errors, TP_ERROR_STR_CONNECTION_FAILED,
-    _("Connection can't be established"));
+    _("Connection can’t be established"));
   g_hash_table_insert (errors, TP_ERROR_STR_CONNECTION_LOST,
     _("Connection has been lost"));
   g_hash_table_insert (errors, TP_ERROR_STR_ALREADY_CONNECTED,

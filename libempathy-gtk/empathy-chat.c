@@ -1078,8 +1078,8 @@ static ChatCommandItem commands[] = {
 
 	{"say", 2, 2, chat_command_say, NULL,
 	 N_("/say <message>: send <message> to the current conversation. "
-	    "This is used to send a message starting with a '/'. For example: "
-	    "\"/say /join is used to join a new chat room\"")},
+	    "This is used to send a message starting with a “/”. For example: "
+	    "“/say /join is used to join a new chat room”")},
 
 	{"whois", 2, 2, chat_command_whois, NULL,
 	 N_("/whois <contact ID>: display information about a contact")},
@@ -1534,7 +1534,7 @@ append_balance_error (EmpathyChat *chat,
 	gchar *str, *str_markup = NULL;
 
 	if (message_body != NULL) {
-		str = g_strdup_printf (_("Error sending message '%s': %s"), message_body, error);
+		str = g_strdup_printf (_("Error sending message “%s”: %s"), message_body, error);
 	} else {
 		str = g_strdup_printf (_("Error sending message: %s"), error);
 	}
@@ -1548,7 +1548,7 @@ append_balance_error (EmpathyChat *chat,
 		if (message_body != NULL) {
 			gchar *escaped_body = g_markup_escape_text (message_body, -1);
 
-			str_markup = g_strdup_printf (_("Error sending message '%s': %s"),
+			str_markup = g_strdup_printf (_("Error sending message “%s”: %s"),
 				escaped_body, markup_error);
 
 			g_free (escaped_body);
@@ -1611,7 +1611,7 @@ chat_send_error_cb (EmpathyTpChat          *tp_chat,
 	}
 
 	if (message_body != NULL) {
-			str = g_strdup_printf (_("Error sending message '%s': %s"),
+			str = g_strdup_printf (_("Error sending message “%s”: %s"),
 				message_body, error);
 	}
 	else {
@@ -2280,7 +2280,7 @@ chat_spelling_build_add_to_dictionary_item (EmpathyChatSpell *chat_spell)
 	g_assert (codes != NULL);
 	if (g_list_length (codes) > 1) {
 		/* translators: %s is the selected word */
-		label = g_strdup_printf (_("Add '%s' to Dictionary"),
+		label = g_strdup_printf (_("Add “%s” to Dictionary"),
 					chat_spell->word);
 		item = gtk_image_menu_item_new_with_mnemonic (label);
 		g_free (label);
@@ -2317,7 +2317,7 @@ chat_spelling_build_add_to_dictionary_item (EmpathyChatSpell *chat_spell)
 		g_assert (name != NULL);
 		/* translators: first %s is the selected word,
 		 * second %s is the language name of the target dictionary */
-		label = g_strdup_printf (_("Add '%s' to %s Dictionary"),
+		label = g_strdup_printf (_("Add “%s” to %s Dictionary"),
 					chat_spell->word, name);
 		item = gtk_image_menu_item_new_with_mnemonic (label);
 		g_free (label);

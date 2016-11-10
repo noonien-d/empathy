@@ -398,11 +398,11 @@ empathy_app_local_command_line (GApplication *app,
   GOptionEntry options[] = {
       { "no-connect", 'n',
         0, G_OPTION_ARG_NONE, &no_connect,
-        N_("Don't connect on startup"),
+        N_("Don’t connect on startup"),
         NULL },
       { "start-hidden", 'h',
         0, G_OPTION_ARG_NONE, &start_hidden,
-        N_("Don't display the contact list or any other dialogs on startup"),
+        N_("Don’t display the contact list or any other dialogs on startup"),
         NULL },
       { "show-preferences", 'p',
         G_OPTION_FLAG_OPTIONAL_ARG, G_OPTION_ARG_CALLBACK, &preferences_cb,
@@ -431,7 +431,7 @@ empathy_app_local_command_line (GApplication *app,
   g_option_group_set_translation_domain (group, GETTEXT_PACKAGE);
   g_option_group_add_entries (group, options);
 
-  optcontext = g_option_context_new (N_("- Empathy IM Client"));
+  optcontext = g_option_context_new (N_("— Empathy IM Client"));
   g_option_context_add_group (optcontext, gtk_get_option_group (FALSE));
   g_option_context_set_main_group (optcontext, group);
   g_option_context_set_translation_domain (optcontext, GETTEXT_PACKAGE);

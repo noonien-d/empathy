@@ -236,7 +236,7 @@ while_finish:
   g_clear_object (&iter);
 
   g_string_append_printf (text,
-      _("Are you sure you want to block '%s' from contacting you again?"),
+      _("Are you sure you want to block “%s” from contacting you again?"),
       folks_alias_details_get_alias (FOLKS_ALIAS_DETAILS (individual)));
 
   if (npersonas_blocked > 0)

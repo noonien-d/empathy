@@ -41,7 +41,7 @@ get_error_display_message (GError *error)
       case TP_ERROR_NETWORK_ERROR:
         return _("Network error");
       case TP_ERROR_NOT_CAPABLE:
-        return _("The specified contact doesn't support calls");
+        return _("The specified contact doesn’t support calls");
       case TP_ERROR_OFFLINE:
         return _("The specified contact is offline");
       case TP_ERROR_INVALID_HANDLE:
@@ -49,7 +49,7 @@ get_error_display_message (GError *error)
       case TP_ERROR_EMERGENCY_CALLS_NOT_SUPPORTED:
         return _("Emergency calls are not supported on this protocol");
       case TP_ERROR_INSUFFICIENT_BALANCE:
-        return _("You don't have enough credit in order to place this call");
+        return _("You don’t have enough credit in order to place this call");
     }
 
   return _("There was an error starting the call");

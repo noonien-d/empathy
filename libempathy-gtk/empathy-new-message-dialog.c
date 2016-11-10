@@ -89,7 +89,7 @@ get_error_display_message (GError *error)
       case TP_ERROR_CHANNEL_INVITE_ONLY:
         return _("You must be invited to join this channel");
       case TP_ERROR_DISCONNECTED:
-        return _("Can't proceed while disconnected");
+        return _("Can’t proceed while disconnected");
       case TP_ERROR_PERMISSION_DENIED:
         return _("Permission denied");
       default:

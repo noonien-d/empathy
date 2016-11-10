@@ -671,7 +671,7 @@ empathy_contact_search_dialog_init (EmpathyContactSearchDialog *self)
       GTK_WRAP_WORD_CHAR);
   gtk_text_buffer_set_text (
       gtk_text_view_get_buffer (GTK_TEXT_VIEW (priv->message)),
-      _("Please let me see when you're online. Thanks!"), -1);
+      _("Please let me see when you’re online. Thanks!"), -1);
 
   priv->message_window = gtk_scrolled_window_new (NULL, NULL);
   gtk_scrolled_window_set_shadow_type (

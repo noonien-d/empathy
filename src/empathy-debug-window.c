@@ -1992,9 +1992,9 @@ am_prepared_cb (GObject *am,
   gtk_info_bar_set_message_type (GTK_INFO_BAR (infobar), GTK_MESSAGE_INFO);
 
   label = gtk_label_new (
-        _("Even if they don't display passwords, logs can contain sensitive "
+        _("Even if they don’t display passwords, logs can contain sensitive "
           "information such as your list of contacts or the messages you "
-          "recently sent or received.\nIf you don't want to see such "
+          "recently sent or received.\nIf you don’t want to see such "
           "information available in a public bug report, you "
           "can choose to limit the visibility of your bug to "
           "Empathy developers when reporting it by displaying "

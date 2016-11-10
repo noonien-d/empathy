@@ -640,7 +640,7 @@ preferences_preview_theme_changed_cb (EmpathyThemeManager *manager,
 		juliet, romeo, _("Or if thou wilt not, be but sworn my love"), FALSE);
 	preferences_preview_theme_append_message (priv->chat_theme_preview,
 		/* translators: Quote from Romeo & Julier, for chat theme preview */
-		juliet, romeo, _("And I'll no longer be a Capulet."), FALSE);
+		juliet, romeo, _("And I’ll no longer be a Capulet."), FALSE);
 	preferences_preview_theme_append_message (priv->chat_theme_preview,
 		/* translators: Quote from Romeo & Julier, for chat theme preview */
 		romeo, juliet, _("Shall I hear more, or shall I speak at this?"), FALSE);
