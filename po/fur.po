@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: empathy master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=empathy&keywords=I18N+L10N&component=General\n"
-"POT-Creation-Date: 2016-11-10 19:05+0000\n"
-"PO-Revision-Date: 2016-11-10 22:03+0100\n"
+"POT-Creation-Date: 2016-11-10 21:09+0000\n"
+"PO-Revision-Date: 2016-11-15 09:31+0100\n"
 "Last-Translator: Fabio Tomat <f.t.public@gmail.com>\n"
 "Language-Team: Friulian <fur@li.org>\n"
 "Language: fur\n"
@@ -1987,7 +1987,7 @@ msgstr "Domande di sotscrizion"
 #: ../src/empathy-event-manager.c:1079
 #, c-format
 msgid "%s would like permission to see when you are online"
-msgstr "%s al varès voie di podê viodi la to presince in rêt"
+msgstr "%s al volarès podê viodi la to presince in rêt"
 
 #: ../libempathy-gtk/empathy-subscription-dialog.c:281
 #: ../src/empathy-event-manager.c:694
