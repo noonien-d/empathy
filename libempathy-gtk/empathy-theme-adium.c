@@ -1660,6 +1660,10 @@ theme_adium_constructed (GObject *object)
         EMPATHY_PREFS_DESKTOP_INTERFACE_DOCUMENT_FONT_NAME);
     }
 
+    g_object_set (webkit_web_view_get_settings (webkit_view),
+        "default-encoding", "utf8",
+        NULL);
+
   /* Setup webkit inspector */
   webkit_inspector = webkit_web_view_get_inspector (webkit_view);
   g_signal_connect (webkit_inspector, "inspect-web-view",

@@ -752,6 +752,10 @@ empathy_log_window_init (EmpathyLogWindow *self)
       self->priv->gsettings_desktop,
       EMPATHY_PREFS_DESKTOP_INTERFACE_FONT_NAME);
 
+    g_object_set (webkit_web_view_get_settings (self->priv->webview),
+        "default-encoding", "utf8",
+        NULL);
+
   filename = empathy_file_lookup ("empathy-log-window.html", "data");
   gfile = g_file_new_for_path (filename);
   g_free (filename);
