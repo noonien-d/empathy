@@ -47,7 +47,7 @@
 #include "empathy-request-util.h"
 #include "empathy-rounded-actor.h"
 #include "empathy-rounded-rectangle.h"
-#include "empathy-rounded-texture.h"
+#include "empathy-rounded-effect.h"
 #include "empathy-sound-manager.h"
 #include "empathy-ui-utils.h"
 #include "empathy-utils.h"
@@ -146,6 +146,7 @@ struct _EmpathyCallWindowPriv
   ClutterActor *preview_rectangle3;
   ClutterActor *preview_rectangle4;
   ClutterActor *preview_spinner_actor;
+  ClutterContent *preview_content;
   GtkWidget *preview_spinner_widget;
   GtkWidget *video_container;
   GtkWidget *remote_user_avatar_widget;
@@ -1072,9 +1073,10 @@ create_video_preview (EmpathyCallWindow *self)
 
   pos = g_settings_get_enum (priv->settings, "camera-position");
 
-  preview = empathy_rounded_texture_new ();
+  preview = clutter_actor_new ();
   clutter_actor_set_size (preview,
       SELF_VIDEO_SECTION_WIDTH, SELF_VIDEO_SECTION_HEIGHT);
+  clutter_actor_add_effect (preview, empathy_rounded_effect_new ());
 
   priv->video_preview_sink = GST_ELEMENT (clutter_gst_video_sink_new ());
   g_object_add_weak_pointer (G_OBJECT (priv->video_preview_sink), (gpointer) &priv->video_preview_sink);
@@ -1086,10 +1088,9 @@ create_video_preview (EmpathyCallWindow *self)
   clutter_actor_set_size (priv->video_preview,
       SELF_VIDEO_SECTION_WIDTH + 2 * SELF_VIDEO_SECTION_MARGIN,
       SELF_VIDEO_SECTION_HEIGHT + 2 * SELF_VIDEO_SECTION_MARGIN);
-  clutter_actor_set_content (priv->video_preview,
-      g_object_new (CLUTTER_GST_TYPE_ASPECTRATIO,
-                    "sink", priv->video_preview,
-                    NULL));
+  priv->preview_content = clutter_gst_content_new_with_sink (
+      CLUTTER_GST_VIDEO_SINK (priv->video_preview_sink));
+  clutter_actor_set_content (preview, priv->preview_content);
 
   /* Spinner for when changing the camera device */
   priv->preview_spinner_widget = gtk_spinner_new ();
@@ -2575,6 +2576,10 @@ empathy_call_window_reset_pipeline (EmpathyCallWindow *self)
       if (priv->video_preview != NULL)
         clutter_actor_destroy (priv->video_preview);
       priv->video_preview = NULL;
+
+      if (priv->preview_content != NULL)
+        g_object_unref (priv->preview_content);
+      priv->preview_content = NULL;
 
       /* If we destroy the preview while it's being dragged, we won't
        * get the ::drag-end signal, so manually destroy the clone */

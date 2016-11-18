@@ -1,5 +1,5 @@
 /*
- * empathy-rounded-texture.c - Source for EmpathyRoundedTexture
+ * empathy-rounded-effect.c - Source for EmpathyRoundedEffect
  * Copyright (C) 2011 Collabora Ltd.
  * @author Emilio Pozuelo Monfort <emilio.pozuelo@collabora.co.uk>
  *
@@ -19,19 +19,23 @@
  */
 
 #include "config.h"
-#include "empathy-rounded-texture.h"
+#include "empathy-rounded-effect.h"
 
-G_DEFINE_TYPE (EmpathyRoundedTexture,
-    empathy_rounded_texture,
-    CLUTTER_TYPE_TEXTURE)
+G_DEFINE_TYPE (EmpathyRoundedEffect,
+    empathy_rounded_effect,
+    CLUTTER_TYPE_EFFECT)
 
 static void
-empathy_rounded_texture_paint (ClutterActor *texture)
+empathy_rounded_effect_paint (ClutterEffect *effect,
+    ClutterEffectPaintFlags flags)
 {
+  EmpathyRoundedEffect *self = EMPATHY_ROUNDED_EFFECT (effect);
+  ClutterActor *actor;
   ClutterActorBox allocation = { 0, };
   gfloat width, height;
 
-  clutter_actor_get_allocation_box (texture, &allocation);
+  actor = clutter_actor_meta_get_actor (CLUTTER_ACTOR_META (self));
+  clutter_actor_get_allocation_box (actor, &allocation);
   clutter_actor_box_get_size (&allocation, &width, &height);
 
   cogl_path_new ();
@@ -41,31 +45,33 @@ empathy_rounded_texture_paint (ClutterActor *texture)
 
   cogl_clip_push_from_path ();
 
-  CLUTTER_ACTOR_CLASS (empathy_rounded_texture_parent_class)->paint (texture);
-
   /* Flip */
-  cogl_rectangle_with_texture_coords (0, 0, width, height,
-      1., 0., 0., 1.);
+  cogl_push_matrix ();
+  cogl_translate (width, 0, 0);
+  cogl_scale (-1, 1, 1);
 
+  clutter_actor_continue_paint (actor);
+
+  cogl_pop_matrix ();
   cogl_clip_pop ();
 }
 
 static void
-empathy_rounded_texture_init (EmpathyRoundedTexture *self)
+empathy_rounded_effect_init (EmpathyRoundedEffect *self)
 {
 }
 
 static void
-empathy_rounded_texture_class_init (EmpathyRoundedTextureClass *klass)
+empathy_rounded_effect_class_init (EmpathyRoundedEffectClass *klass)
 {
-  ClutterActorClass *actor_class = CLUTTER_ACTOR_CLASS (klass);
+  ClutterEffectClass *effect_class = CLUTTER_EFFECT_CLASS (klass);
 
-  actor_class->paint = empathy_rounded_texture_paint;
+  effect_class->paint = empathy_rounded_effect_paint;
 }
 
-ClutterActor *
-empathy_rounded_texture_new (void)
+ClutterEffect *
+empathy_rounded_effect_new (void)
 {
-  return CLUTTER_ACTOR (
-    g_object_new (EMPATHY_TYPE_ROUNDED_TEXTURE, NULL));
+  return CLUTTER_EFFECT (
+    g_object_new (EMPATHY_TYPE_ROUNDED_EFFECT, NULL));
 }
