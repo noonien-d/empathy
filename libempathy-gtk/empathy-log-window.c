@@ -752,7 +752,7 @@ empathy_log_window_init (EmpathyLogWindow *self)
       self->priv->gsettings_desktop,
       EMPATHY_PREFS_DESKTOP_INTERFACE_FONT_NAME);
 
-    g_object_set (webkit_web_view_get_settings (self->priv->webview),
+    g_object_set (webkit_web_view_get_settings (WEBKIT_WEB_VIEW (self->priv->webview)),
         "default-encoding", "utf8",
         NULL);
 
