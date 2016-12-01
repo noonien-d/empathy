@@ -5,12 +5,12 @@
       <section>
         <item>
           <attribute translatable="yes" name="label">_New Conversation…</attribute>
-          <attribute name="action">win.chat_new_message</attribute>
+          <attribute name="action">win.chat-new-message</attribute>
           <attribute name="accel">&lt;Primary&gt;n</attribute>
         </item>
         <item>
           <attribute translatable="yes" name="label">New _Call…</attribute>
-          <attribute name="action">win.chat_new_call</attribute>
+          <attribute name="action">win.chat-new-call</attribute>
           <attribute name="accel">&lt;Primary&gt;m</attribute>
         </item>
       </section>
@@ -19,17 +19,17 @@
         <section>
           <item>
             <attribute translatable="yes" name="label">_Add Contacts…</attribute>
-            <attribute name="action">win.chat_add_contact</attribute>
+            <attribute name="action">win.chat-add-contact</attribute>
           </item>
           <item>
             <attribute translatable="yes" name="label">_Search for Contacts…</attribute>
-            <attribute name="action">win.chat_search_contacts</attribute>
+            <attribute name="action">win.chat-search-contacts</attribute>
           </item>
         </section>
         <section>
           <item>
             <attribute translatable="yes" name="label">_Blocked Contacts</attribute>
-            <attribute name="action">win.edit_blocked_contacts</attribute>
+            <attribute name="action">win.edit-blocked-contacts</attribute>
           </item>
         </section>
       </submenu>
@@ -38,12 +38,12 @@
         <section>
           <item>
             <attribute translatable="yes" name="label">_Join…</attribute>
-            <attribute name="action">win.room_join_new</attribute>
+            <attribute name="action">win.room-join-new</attribute>
             <attribute name="accel">&lt;Primary&gt;j</attribute>
           </item>
           <item>
             <attribute translatable="yes" name="label">Join _Favorites</attribute>
-            <attribute name="action">win.room_join_favorites</attribute>
+            <attribute name="action">win.room-join-favorites</attribute>
             <attribute name="accel">F5</attribute>
           </item>
         </section>
@@ -53,45 +53,45 @@
         <section>
           <item>
             <attribute translatable="yes" name="label">_Manage Favorites</attribute>
-            <attribute name="action">win.room_manage_favorites</attribute>
+            <attribute name="action">win.room-manage-favorites</attribute>
           </item>
         </section>
       </submenu>
       <section>
         <item>
           <attribute translatable="yes" name="label">_Previous Conversations</attribute>
-          <attribute name="action">win.view_history</attribute>
+          <attribute name="action">win.view-history</attribute>
           <attribute name="accel">F3</attribute>
         </item>
         <item>
           <attribute translatable="yes" name="label">_File Transfers</attribute>
-          <attribute name="action">win.view_show_ft_manager</attribute>
+          <attribute name="action">win.view-show-ft-manager</attribute>
         </item>
       </section>
       <section>
         <item>
           <attribute translatable="yes" name="label">_Accounts</attribute>
-          <attribute name="action">win.edit_accounts</attribute>
+          <attribute name="action">win.edit-accounts</attribute>
           <attribute name="accel">F4</attribute>
         </item>
         <item>
           <attribute translatable="yes" name="label">P_references</attribute>
-          <attribute name="action">win.edit_preferences</attribute>
+          <attribute name="action">win.edit-preferences</attribute>
         </item>
       </section>
       <section>
         <item>
           <attribute translatable="yes" name="label">Help</attribute>
-          <attribute name="action">win.help_contents</attribute>
+          <attribute name="action">win.help-contents</attribute>
           <attribute name="accel">F1</attribute>
         </item>
         <item>
           <attribute translatable="yes" name="label">About</attribute>
-          <attribute name="action">win.help_about</attribute>
+          <attribute name="action">win.help-about</attribute>
         </item>
       	<item>
           <attribute translatable="yes" name="label">_Quit</attribute>
-          <attribute name="action">win.chat_quit</attribute>
+          <attribute name="action">win.chat-quit</attribute>
           <attribute name="accel">&lt;Primary&gt;q</attribute>
       	</item>
       </section>

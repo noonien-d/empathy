@@ -789,7 +789,7 @@ roster_window_update_status (EmpathyRosterWindow *self)
   for (l = self->priv->actions_connected; l; l = l->next)
     g_simple_action_set_enabled (l->data, connected);
 
-  action = g_action_map_lookup_action (G_ACTION_MAP (self), "chat_add_contact");
+  action = g_action_map_lookup_action (G_ACTION_MAP (self), "chat-add-contact");
   if (!can_add_contact (self))
     g_simple_action_set_enabled (G_SIMPLE_ACTION (action), FALSE);
 }
@@ -1759,13 +1759,13 @@ roster_window_connection_items_setup (EmpathyRosterWindow *self)
 {
   guint i;
   const gchar *actions_connected[] = {
-      "room_join_new",
-      "room_join_favorites",
-      "chat_new_message",
-      "chat_new_call",
-      "chat_search_contacts",
-      "chat_add_contact",
-      "edit_blocked_contacts",
+      "room-join-new",
+      "room-join-favorites",
+      "chat-new-message",
+      "chat-new-call",
+      "chat-search-contacts",
+      "chat-add-contact",
+      "edit-blocked-contacts",
   };
 
   for (i = 0; i < G_N_ELEMENTS (actions_connected); i++)
@@ -1876,26 +1876,26 @@ empathy_roster_window_constructor (GType type,
 }
 
 static GActionEntry menubar_entries[] = {
-  { "chat_new_message", roster_window_chat_new_message_cb, NULL, NULL, NULL },
-  { "chat_new_call", roster_window_chat_new_call_cb, NULL, NULL, NULL },
-  { "chat_add_contact", roster_window_chat_add_contact_cb, NULL, NULL, NULL },
-  { "chat_search_contacts", roster_window_chat_search_contacts_cb, NULL, NULL, NULL },
-  { "chat_quit", roster_window_chat_quit_cb, NULL, NULL, NULL },
+  {"chat-new-message", roster_window_chat_new_message_cb},
+  {"chat-new-call", roster_window_chat_new_call_cb},
+  {"chat-add-contact", roster_window_chat_add_contact_cb},
+  {"chat-search-contacts", roster_window_chat_search_contacts_cb},
+  {"chat-quit", roster_window_chat_quit_cb},
 
-  { "edit_accounts", roster_window_edit_accounts_cb, NULL, NULL, NULL },
-  { "edit_blocked_contacts", roster_window_edit_blocked_contacts_cb, NULL, NULL, NULL },
-  { "edit_preferences", roster_window_edit_preferences_cb, NULL, NULL, NULL },
+  {"edit-accounts", roster_window_edit_accounts_cb},
+  {"edit-blocked-contacts", roster_window_edit_blocked_contacts_cb},
+  {"edit-preferences", roster_window_edit_preferences_cb},
 
-  { "view_history", roster_window_view_history_cb, NULL, NULL, NULL },
-  { "view_show_ft_manager", roster_window_view_show_ft_manager, NULL, NULL, NULL },
+  {"view-history", roster_window_view_history_cb},
+  {"view-show-ft-manager", roster_window_view_show_ft_manager},
 
-  { "room_join_new", roster_window_room_join_new_cb, NULL, NULL, NULL },
-  { "room_join_favorites", roster_window_room_join_favorites_cb, NULL, NULL, NULL },
-  { "join", roster_window_join_chatroom_menu_activate_cb, "(ss)", NULL, NULL },
-  { "room_manage_favorites", roster_window_room_manage_favorites_cb, NULL, NULL, NULL },
+  {"room-join-new", roster_window_room_join_new_cb},
+  {"room-join-favorites", roster_window_room_join_favorites_cb},
+  {"join", roster_window_join_chatroom_menu_activate_cb, "(ss)"},
+  {"room-manage-favorites", roster_window_room_manage_favorites_cb},
 
-  { "help_contents", roster_window_help_contents_cb, NULL, NULL, NULL },
-  { "help_about", roster_window_help_about_cb, NULL, NULL, NULL },
+  {"help-contents", roster_window_help_contents_cb},
+  {"help-about", roster_window_help_about_cb},
 };
 
 static void
