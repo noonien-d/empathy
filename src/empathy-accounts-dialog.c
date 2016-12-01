@@ -2399,10 +2399,9 @@ accounts_dialog_build_ui (EmpathyAccountsDialog *dialog)
   /* Tweak the dialog */
   gtk_window_set_title (GTK_WINDOW (dialog), _("Messaging and VoIP Accounts"));
   gtk_window_set_role (GTK_WINDOW (dialog), "accounts");
-
   gtk_window_set_default_size (GTK_WINDOW (dialog), 640, 450);
-
   gtk_window_set_type_hint (GTK_WINDOW (dialog), GDK_WINDOW_TYPE_HINT_DIALOG);
+  gtk_container_set_border_width (GTK_CONTAINER (dialog), 12);
 
   /* join the add/remove toolbar to the treeview */
   context = gtk_widget_get_style_context (sw);
@@ -2412,6 +2411,7 @@ accounts_dialog_build_ui (EmpathyAccountsDialog *dialog)
   gtk_style_context_set_junction_sides (context, GTK_JUNCTION_TOP);
 
   /* add dialog buttons */
+  gtk_widget_set_margin_top (action_area, 18);
   gtk_button_box_set_layout (GTK_BUTTON_BOX (action_area), GTK_BUTTONBOX_END);
 
   gtk_dialog_add_buttons (GTK_DIALOG (dialog),
