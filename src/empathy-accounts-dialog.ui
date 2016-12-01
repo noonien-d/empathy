@@ -5,6 +5,7 @@
   <object class="GtkHBox" id="accounts_dialog_hbox">
     <property name="visible">True</property>
     <property name="spacing">18</property>
+    <property name="border-width">12</property>
     <child>
       <object class="GtkVBox" id="vbox195">
         <property name="visible">True</property>
