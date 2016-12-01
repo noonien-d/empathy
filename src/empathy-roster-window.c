@@ -785,12 +785,13 @@ roster_window_update_status (EmpathyRosterWindow *self)
       gtk_widget_hide (self->priv->throbber);
     }
 
-  /* Update sensitivities of actions */
+  /* Update widgets sensibility */
   for (l = self->priv->actions_connected; l; l = l->next)
     g_simple_action_set_enabled (l->data, connected);
 
   action = g_action_map_lookup_action (G_ACTION_MAP (self), "chat-add-contact");
-  g_simple_action_set_enabled (G_SIMPLE_ACTION (action), can_add_contact (self));
+  if (!can_add_contact (self))
+    g_simple_action_set_enabled (G_SIMPLE_ACTION (action), FALSE);
 }
 
 static void
