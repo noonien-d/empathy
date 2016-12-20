@@ -40,8 +40,12 @@ empathy_rounded_effect_paint (ClutterEffect *effect,
 
   cogl_path_new ();
 
-  /* create and store a path describing a rounded rectangle */
-  cogl_path_round_rectangle (0, 0, width, height, height / 16., 0.1);
+  /* Create and store a path describing a rounded rectangle. The small
+   * size of the preview window makes the radius of the rounded corners
+   * very small too, so we can safely use a very coarse angle step
+   * without loosing rendering accuracy. It also significantly reduces
+   * the time spent in the underlying internal cogl path functions */
+  cogl_path_round_rectangle (0, 0, width, height, height / 16., 15);
 
   cogl_clip_push_from_path ();
 
