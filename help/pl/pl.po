@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: empathy-help\n"
-"POT-Creation-Date: 2016-08-19 20:35+0000\n"
+"POT-Creation-Date: 2017-01-25 11:20+0000\n"
 "PO-Revision-Date: 2010-03-15 21:39+0100\n"
 "Last-Translator: Aleksander Łukasiewicz <aleksander@lukasiewicz.net>\n"
 "Language-Team: Polish <community-poland@mozilla.org>\n"
@@ -186,8 +186,8 @@ msgid ""
 "and to all the users you’re having a private conversation with. Use this "
 "field to provide a custom quit message."
 msgstr ""
-"Po przejściu do trybu offline zostanie wysłany komunikat przy zakończeniu "
-"do wszystkich pokojów, w których przebywa użytkownik oraz do wszystkich "
+"Po przejściu do trybu offline zostanie wysłany komunikat przy zakończeniu do "
+"wszystkich pokojów, w których przebywa użytkownik oraz do wszystkich "
 "użytkowników, z którymi prowadzone są rozmowy prywatne. Należy użyć tego "
 "pola do wpisania własnego komunikatu wysyłanego przy zakończeniu."
 
@@ -1912,7 +1912,7 @@ msgid ""
 msgstr ""
 "W oknie <gui>Listy kontaktów</gui> należy wybrać <guiseq><gui>Widok</"
 "gui><gui>Kontakty w trybie offline</gui></guiseq> lub nacisnąć "
-"<keyseq><key>Ctrl</key><key>H</key</keyseq>."
+"<keyseq><key>Ctrl</key><key>H</key></keyseq>."
 
 #. (itstool) path: item/p
 #: C/hide-contacts.page:36
@@ -3200,8 +3200,8 @@ msgid ""
 "Click on the contact you want to send a file, and choose <guiseq><gui>Edit</"
 "gui> <gui>Contact</gui><gui>Send file</gui></guiseq>."
 msgstr ""
-"Kliknąć kontakt, do którego chcemy wysłać plik i wybrać "
-"<guiseq><gui>Edycja</gui> <gui>Kontakt</gui><gui>Wyślij plik</gui></guiseq>."
+"Kliknąć kontakt, do którego chcemy wysłać plik i wybrać <guiseq><gui>Edycja</"
+"gui> <gui>Kontakt</gui><gui>Wyślij plik</gui></guiseq>."
 
 #. (itstool) path: item/p
 #: C/send-file.page:58
