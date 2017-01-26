@@ -21,7 +21,7 @@
 #ifndef __EMPATHY_THEME_ADIUM_H__
 #define __EMPATHY_THEME_ADIUM_H__
 
-#include <webkit/webkitwebview.h>
+#include <webkit2/webkit2.h>
 
 #include "empathy-message.h"
 
@@ -99,19 +99,20 @@ void empathy_theme_adium_scroll (EmpathyThemeAdium *self,
 
 void empathy_theme_adium_scroll_down (EmpathyThemeAdium *self);
 
-gboolean empathy_theme_adium_get_has_selection (EmpathyThemeAdium *self);
+void empathy_theme_adium_can_copy (EmpathyThemeAdium *self,
+    GCancellable* cancellable,
+    GAsyncReadyCallback callback,
+    gpointer user_data);
+
+gboolean empathy_theme_adium_can_copy_finish (EmpathyThemeAdium *self,
+    GAsyncResult* result,
+    GError** error);
 
 void empathy_theme_adium_clear (EmpathyThemeAdium *self);
 
-gboolean empathy_theme_adium_find_previous (EmpathyThemeAdium *self,
-    const gchar *search_criteria,
-    gboolean new_search,
-    gboolean match_case);
+void empathy_theme_adium_find_previous (EmpathyThemeAdium *self);
 
-gboolean empathy_theme_adium_find_next (EmpathyThemeAdium *self,
-    const gchar *search_criteria,
-    gboolean new_search,
-    gboolean match_case);
+void empathy_theme_adium_find_next (EmpathyThemeAdium *self);
 
 void empathy_theme_adium_find_abilities (EmpathyThemeAdium *self,
     const gchar *search_criteria,
@@ -119,7 +120,7 @@ void empathy_theme_adium_find_abilities (EmpathyThemeAdium *self,
     gboolean *can_do_previous,
     gboolean *can_do_next);
 
-void empathy_theme_adium_highlight (EmpathyThemeAdium *self,
+void empathy_theme_adium_search (EmpathyThemeAdium *self,
     const gchar *text,
     gboolean match_case);
 

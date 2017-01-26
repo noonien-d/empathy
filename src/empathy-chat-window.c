@@ -1318,6 +1318,15 @@ chat_window_close_activate_cb (GtkAction *action,
 }
 
 static void
+theme_adium_can_copy_cb (EmpathyThemeAdium *view,
+    GAsyncResult *result,
+    EmpathyChatWindow *self)
+{
+  gtk_action_set_sensitive (self->priv->menu_edit_copy,
+      empathy_theme_adium_can_copy_finish (view, result, NULL));
+}
+
+static void
 chat_window_edit_activate_cb (GtkAction *action,
     EmpathyChatWindow *self)
 {
@@ -1345,13 +1354,9 @@ chat_window_edit_activate_cb (GtkAction *action,
     }
   else
     {
-      gboolean selection;
-
-      selection = empathy_theme_adium_get_has_selection (
-          self->priv->current_chat->view);
-
+      empathy_theme_adium_can_copy (self->priv->current_chat->view, NULL,
+          (GAsyncReadyCallback)theme_adium_can_copy_cb, self);
       gtk_action_set_sensitive (self->priv->menu_edit_cut, FALSE);
-      gtk_action_set_sensitive (self->priv->menu_edit_copy, selection);
     }
 
   clipboard = gtk_clipboard_get (GDK_SELECTION_CLIPBOARD);

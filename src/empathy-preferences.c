@@ -601,8 +601,18 @@ preferences_preview_theme_changed_cb (EmpathyThemeManager *manager,
 		gtk_widget_destroy (GTK_WIDGET (priv->chat_theme_preview));
 	}
 	priv->chat_theme_preview = empathy_theme_manager_create_view (manager);
-	gtk_container_add (GTK_CONTAINER (priv->sw_chat_theme_preview),
-			   GTK_WIDGET (priv->chat_theme_preview));
+	if (GTK_IS_SCROLLABLE (priv->chat_theme_preview))
+	  {
+	    gtk_container_add (GTK_CONTAINER (priv->sw_chat_theme_preview),
+			       GTK_WIDGET (priv->chat_theme_preview));
+	  }
+	else
+	  {
+	    gtk_widget_hide (priv->sw_chat_theme_preview);
+	    gtk_box_pack_start (GTK_BOX (priv->vbox_chat_theme),
+				GTK_WIDGET (priv->chat_theme_preview),
+				TRUE, TRUE, 0);
+	  }
 	gtk_widget_show (GTK_WIDGET (priv->chat_theme_preview));
 
 	/* FIXME: It is ugly to add a fake conversation like that.

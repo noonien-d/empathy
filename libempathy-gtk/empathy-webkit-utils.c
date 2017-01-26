@@ -123,27 +123,23 @@ webkit_get_font_size (GValue *value,
 {
   PangoFontDescription *font = pango_font_description_from_string (
       g_variant_get_string (variant, NULL));
+  GdkScreen *screen = gdk_screen_get_default ();
+  double dpi;
   int size;
 
   if (font == NULL)
     return FALSE;
 
-  size = pango_font_description_get_size (font) / PANGO_SCALE;
+  size = pango_font_description_get_size (font);
+  if (!pango_font_description_get_size_is_absolute (font))
+    size /= PANGO_SCALE;
 
-  if (pango_font_description_get_size_is_absolute (font))
-    {
-      GdkScreen *screen = gdk_screen_get_default ();
-      double dpi;
+  if (screen != NULL)
+    dpi = gdk_screen_get_resolution (screen);
+  else
+    dpi = BORING_DPI_DEFAULT;
 
-      if (screen != NULL)
-        dpi = gdk_screen_get_resolution (screen);
-      else
-        dpi = BORING_DPI_DEFAULT;
-
-      size = (gint) (size / (dpi / 72));
-    }
-
-  g_value_set_int (value, size);
+  g_value_set_uint (value, size / 72. * dpi);
   pango_font_description_free (font);
 
   return TRUE;
@@ -154,7 +150,7 @@ empathy_webkit_bind_font_setting (WebKitWebView *webview,
     GSettings *gsettings,
     const char *key)
 {
-  WebKitWebSettings *settings = webkit_web_view_get_settings (webview);
+  WebKitSettings *settings = webkit_web_view_get_settings (webview);
 
   g_settings_bind_with_mapping (gsettings, key,
       settings, "default-font-family",
@@ -172,177 +168,126 @@ empathy_webkit_bind_font_setting (WebKitWebView *webview,
 }
 
 static void
-empathy_webkit_copy_address_cb (GtkMenuItem *menuitem,
-    gpointer user_data)
+can_copy_callback (WebKitWebView *web_view,
+    GAsyncResult *result,
+    WebKitContextMenuItem *item)
 {
-  WebKitHitTestResult *hit_test_result = WEBKIT_HIT_TEST_RESULT (user_data);
-  gchar *uri;
-  GtkClipboard *clipboard;
+  gboolean can_copy;
 
-  g_object_get (G_OBJECT (hit_test_result),
-      "link-uri", &uri,
-      NULL);
-
-  clipboard = gtk_clipboard_get (GDK_SELECTION_CLIPBOARD);
-  gtk_clipboard_set_text (clipboard, uri, -1);
-
-  clipboard = gtk_clipboard_get (GDK_SELECTION_PRIMARY);
-  gtk_clipboard_set_text (clipboard, uri, -1);
-
-  g_free (uri);
+  can_copy = webkit_web_view_can_execute_editing_command_finish (web_view, result, NULL);
+  gtk_action_set_visible (webkit_context_menu_item_get_action (item), can_copy);
+  g_object_unref (item);
 }
 
-static void
-empathy_webkit_open_address_cb (GtkMenuItem *menuitem,
-    gpointer     user_data)
-{
-  WebKitHitTestResult *hit_test_result = WEBKIT_HIT_TEST_RESULT (user_data);
-  gchar *uri;
-
-  g_object_get (G_OBJECT (hit_test_result),
-      "link-uri", &uri,
-      NULL);
-
-  empathy_url_show (GTK_WIDGET (menuitem), uri);
-
-  g_free (uri);
-}
-
-static void
-empathy_webkit_inspect_cb (GtkMenuItem *menuitem,
-    WebKitWebView *view)
-{
-  empathy_webkit_show_inspector (view);
-}
-
-static void
-empathy_webkit_context_menu_selection_done_cb (GtkMenuShell *menu,
-    gpointer user_data)
-{
-  WebKitHitTestResult *hit_test_result = WEBKIT_HIT_TEST_RESULT (user_data);
-
-  g_object_unref (hit_test_result);
-}
-
-GtkWidget *
-empathy_webkit_create_context_menu (WebKitWebView *view,
+void
+empathy_webkit_populate_context_menu (WebKitWebView *web_view,
+    WebKitContextMenu *context_menu,
     WebKitHitTestResult *hit_test_result,
     EmpathyWebKitMenuFlags flags)
 {
-  WebKitHitTestResultContext context;
-  GtkWidget *menu;
-  GtkWidget *item;
+  WebKitContextMenuItem *item;
 
-  g_object_get (G_OBJECT (hit_test_result),
-      "context", &context,
-      NULL);
-
-  /* The menu */
-  menu = empathy_context_menu_new (GTK_WIDGET (view));
+  webkit_context_menu_remove_all (context_menu);
 
   /* Select all item */
-  item = gtk_image_menu_item_new_from_stock (GTK_STOCK_SELECT_ALL, NULL);
-  gtk_menu_shell_prepend (GTK_MENU_SHELL (menu), item);
-
-  g_signal_connect_swapped (item, "activate",
-      G_CALLBACK (webkit_web_view_select_all),
-      view);
+  webkit_context_menu_append (context_menu,
+      webkit_context_menu_item_new_from_stock_action (WEBKIT_CONTEXT_MENU_ACTION_SELECT_ALL));
 
   /* Copy menu item */
-  if (webkit_web_view_can_copy_clipboard (view))
-    {
-      item = gtk_image_menu_item_new_from_stock (GTK_STOCK_COPY, NULL);
-      gtk_menu_shell_prepend (GTK_MENU_SHELL (menu), item);
-
-      g_signal_connect_swapped (item, "activate",
-          G_CALLBACK (webkit_web_view_copy_clipboard),
-          view);
-    }
+  item = webkit_context_menu_item_new_from_stock_action (WEBKIT_CONTEXT_MENU_ACTION_COPY);
+  webkit_context_menu_append (context_menu, item);
+  webkit_web_view_can_execute_editing_command (web_view,
+      WEBKIT_EDITING_COMMAND_COPY, NULL,
+      (GAsyncReadyCallback)can_copy_callback,
+      g_object_ref (item));
 
   /* Clear menu item */
   if (flags & EMPATHY_WEBKIT_MENU_CLEAR)
     {
-      item = gtk_separator_menu_item_new ();
-      gtk_menu_shell_append (GTK_MENU_SHELL (menu), item);
+      GtkAction *action;
 
-      item = gtk_image_menu_item_new_from_stock (GTK_STOCK_CLEAR, NULL);
-      gtk_menu_shell_append (GTK_MENU_SHELL (menu), item);
-
-      g_signal_connect_swapped (item, "activate",
+      webkit_context_menu_append (context_menu, webkit_context_menu_item_new_separator ());
+      action = gtk_action_new ("clear", NULL, NULL, GTK_STOCK_CLEAR);
+      g_signal_connect_swapped (action, "activate",
           G_CALLBACK (empathy_theme_adium_clear),
-          view);
+          web_view);
+      webkit_context_menu_append (context_menu, webkit_context_menu_item_new (action));
+      g_object_unref (action);
     }
 
   /* We will only add the following menu items if we are
    * right-clicking a link */
-  if (context & WEBKIT_HIT_TEST_RESULT_CONTEXT_LINK)
+  if (webkit_hit_test_result_context_is_link (hit_test_result))
     {
       /* Separator */
-      item = gtk_separator_menu_item_new ();
-      gtk_menu_shell_prepend (GTK_MENU_SHELL (menu), item);
+      webkit_context_menu_append (context_menu, webkit_context_menu_item_new_separator ());
 
       /* Copy Link Address menu item */
-      item = gtk_menu_item_new_with_mnemonic (_("_Copy Link Address"));
-      g_signal_connect (item, "activate",
-          G_CALLBACK (empathy_webkit_copy_address_cb),
-          hit_test_result);
-      gtk_menu_shell_prepend (GTK_MENU_SHELL (menu), item);
+      webkit_context_menu_append (context_menu,
+          webkit_context_menu_item_new_from_stock_action (WEBKIT_CONTEXT_MENU_ACTION_COPY_LINK_TO_CLIPBOARD));
 
       /* Open Link menu item */
-      item = gtk_menu_item_new_with_mnemonic (_("_Open Link"));
-      g_signal_connect (item, "activate",
-          G_CALLBACK (empathy_webkit_open_address_cb),
-          hit_test_result);
-      gtk_menu_shell_prepend (GTK_MENU_SHELL (menu), item);
-    }
+      webkit_context_menu_append (context_menu,
+          webkit_context_menu_item_new_from_stock_action (WEBKIT_CONTEXT_MENU_ACTION_OPEN_LINK));
+     }
 
   if ((flags & EMPATHY_WEBKIT_MENU_INSPECT) != 0)
     {
       /* Separator */
-      item = gtk_separator_menu_item_new ();
-      gtk_menu_shell_append (GTK_MENU_SHELL (menu), item);
+      webkit_context_menu_append (context_menu, webkit_context_menu_item_new_separator ());
 
       /* Inspector */
-      item = gtk_menu_item_new_with_mnemonic (_("Inspect HTML"));
-      g_signal_connect (item, "activate",
-          G_CALLBACK (empathy_webkit_inspect_cb), view);
-      gtk_menu_shell_append (GTK_MENU_SHELL (menu), item);
+      webkit_context_menu_append (context_menu,
+          webkit_context_menu_item_new_from_stock_action (WEBKIT_CONTEXT_MENU_ACTION_INSPECT_ELEMENT));
+    }
+}
+
+gboolean
+empathy_webkit_handle_navigation (WebKitWebView *web_view,
+    WebKitNavigationPolicyDecision *decision)
+{
+  WebKitNavigationAction *action;
+  const char *requested_uri;
+
+  action = webkit_navigation_policy_decision_get_navigation_action (decision);
+  requested_uri = webkit_uri_request_get_uri (webkit_navigation_action_get_request (action));
+  if (g_strcmp0 (webkit_web_view_get_uri (web_view), requested_uri) == 0)
+    return FALSE;
+
+  empathy_url_show (GTK_WIDGET (web_view), requested_uri);
+  webkit_policy_decision_ignore (WEBKIT_POLICY_DECISION (decision));
+
+  return TRUE;
+}
+
+WebKitWebContext *
+empathy_webkit_get_web_context (void)
+{
+  static WebKitWebContext *web_context = NULL;
+
+  if (!web_context)
+    {
+      web_context = webkit_web_context_get_default ();
+      webkit_web_context_set_cache_model (web_context, WEBKIT_CACHE_MODEL_DOCUMENT_VIEWER);
+      webkit_web_context_set_process_model (web_context, WEBKIT_PROCESS_MODEL_SHARED_SECONDARY_PROCESS);
     }
 
-  g_signal_connect (GTK_MENU_SHELL (menu), "selection-done",
-      G_CALLBACK (empathy_webkit_context_menu_selection_done_cb),
-      g_object_ref (hit_test_result));
-
-  return menu;
+  return web_context;
 }
 
-void
-empathy_webkit_context_menu_for_event (WebKitWebView *view,
-    GdkEventButton *event,
-    EmpathyWebKitMenuFlags flags)
+WebKitSettings *
+empathy_webkit_get_web_settings (void)
 {
-  GtkWidget *menu;
-  WebKitHitTestResult *hit_test_result;
+  static WebKitSettings *settings = NULL;
 
-  hit_test_result = webkit_web_view_get_hit_test_result (view, event);
+  if (!settings)
+    {
+      settings = webkit_settings_new_with_settings (
+          "enable-page-cache", FALSE,
+          "enable-plugins", FALSE,
+          "enable-developer-extras", TRUE,
+          NULL);
+    }
 
-  menu = empathy_webkit_create_context_menu (view, hit_test_result, flags);
-
-  gtk_widget_show_all (menu);
-  gtk_menu_popup (GTK_MENU (menu), NULL, NULL, NULL, NULL,
-      event->button, event->time);
-
-  g_object_unref (hit_test_result);
-}
-
-void
-empathy_webkit_show_inspector (WebKitWebView *view)
-{
-  WebKitWebInspector *inspector;
-
-  g_object_set (G_OBJECT (webkit_web_view_get_settings (view)),
-      "enable-developer-extras", TRUE, NULL);
-
-  inspector = webkit_web_view_get_inspector (view);
-  webkit_web_inspector_show (inspector);
+  return settings;
 }

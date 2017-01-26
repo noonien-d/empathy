@@ -398,15 +398,15 @@ insert_or_change_row (EmpathyLogWindow *self,
       g_string_append_c (escaped_text, c);
     }
 
-  script = g_strdup_printf ("javascript:%s([%s], '%s', '%s', '%s');",
+  script = g_strdup_printf ("%s([%s], '%s', '%s', '%s');",
       method,
       g_strdelimit (str, ":", ','),
       escaped_text->str,
       icon != NULL ? icon : "",
       date);
 
-  webkit_web_view_execute_script (WEBKIT_WEB_VIEW (self->priv->webview),
-      script);
+  webkit_web_view_run_javascript (WEBKIT_WEB_VIEW (self->priv->webview),
+      script, NULL, NULL, NULL);
 
   g_string_free (escaped_text, TRUE);
   g_free (str);
@@ -443,11 +443,11 @@ store_events_row_deleted (GtkTreeModel *model,
   char *str = gtk_tree_path_to_string (path);
   char *script;
 
-  script = g_strdup_printf ("javascript:deleteRow([%s]);",
+  script = g_strdup_printf ("deleteRow([%s]);",
       g_strdelimit (str, ":", ','));
 
-  webkit_web_view_execute_script (WEBKIT_WEB_VIEW (self->priv->webview),
-      script);
+  webkit_web_view_run_javascript (WEBKIT_WEB_VIEW (self->priv->webview),
+      script, NULL, NULL, NULL);
 
   g_free (str);
   g_free (script);
@@ -462,12 +462,12 @@ store_events_has_child_rows (GtkTreeModel *model,
   char *str = gtk_tree_path_to_string (path);
   char *script;
 
-  script = g_strdup_printf ("javascript:hasChildRows([%s], %u);",
+  script = g_strdup_printf ("hasChildRows([%s], %u);",
       g_strdelimit (str, ":", ','),
       gtk_tree_model_iter_has_child (model, iter));
 
-  webkit_web_view_execute_script (WEBKIT_WEB_VIEW (self->priv->webview),
-      script);
+  webkit_web_view_run_javascript (WEBKIT_WEB_VIEW (self->priv->webview),
+      script, NULL, NULL, NULL);
 
   g_free (str);
   g_free (script);
@@ -492,12 +492,12 @@ store_events_rows_reordered (GtkTreeModel *model,
 
   new_order_s = g_strjoinv (",", new_order_strv);
 
-  script = g_strdup_printf ("javascript:reorderRows([%s], [%s]);",
+  script = g_strdup_printf ("reorderRows([%s], [%s]);",
       str == NULL ? "" : g_strdelimit (str, ":", ','),
       new_order_s);
 
-  webkit_web_view_execute_script (WEBKIT_WEB_VIEW (self->priv->webview),
-      script);
+  webkit_web_view_run_javascript (WEBKIT_WEB_VIEW (self->priv->webview),
+      script, NULL, NULL, NULL);
 
   g_free (str);
   g_free (script);
@@ -507,17 +507,65 @@ store_events_rows_reordered (GtkTreeModel *model,
 
 static gboolean
 events_webview_handle_navigation (WebKitWebView *webview,
-    WebKitWebFrame *frame,
-    WebKitNetworkRequest *request,
-    WebKitWebNavigationAction *navigation_action,
-    WebKitWebPolicyDecision *policy_decision,
+    WebKitPolicyDecision *decision,
+    WebKitPolicyDecisionType decision_type,
     EmpathyLogWindow *window)
 {
-  empathy_url_show (GTK_WIDGET (webview),
-      webkit_network_request_get_uri (request));
+  if (decision_type != WEBKIT_POLICY_DECISION_TYPE_NAVIGATION_ACTION)
+    return FALSE;
 
-  webkit_web_policy_decision_ignore (policy_decision);
-  return TRUE;
+  return empathy_webkit_handle_navigation (webview, WEBKIT_NAVIGATION_POLICY_DECISION (decision));
+}
+
+static void
+events_webview_load_changed (WebKitWebView *web_view,
+    WebKitLoadEvent event,
+    EmpathyLogWindow *window)
+{
+  if (event != WEBKIT_LOAD_FINISHED)
+    return;
+
+  if (window->priv->store_events)
+    return;
+
+  /* Contacts */
+  log_window_events_setup (window);
+  log_window_who_setup (window);
+  log_window_what_setup (window);
+  log_window_when_setup (window);
+
+  log_window_create_observer (window);
+
+  log_window_who_populate (window);
+
+  g_signal_connect (window->priv->account_chooser, "changed",
+      G_CALLBACK (log_window_chats_accounts_changed_cb),
+      window);
+
+  /* listen to changes to the treemodel */
+  g_signal_connect (window->priv->store_events, "row-inserted",
+      G_CALLBACK (store_events_row_inserted), window);
+  g_signal_connect (window->priv->store_events, "row-changed",
+      G_CALLBACK (store_events_row_changed), window);
+  g_signal_connect (window->priv->store_events, "row-deleted",
+      G_CALLBACK (store_events_row_deleted), window);
+  g_signal_connect (window->priv->store_events, "rows-reordered",
+      G_CALLBACK (store_events_rows_reordered), window);
+  g_signal_connect (window->priv->store_events, "row-has-child-toggled",
+      G_CALLBACK (store_events_has_child_rows), window);
+
+  log_window_update_buttons_sensitivity (window);
+}
+
+static gboolean
+events_webview_context_menu (WebKitWebView *web_view,
+    WebKitContextMenu *context_menu,
+    GdkEvent *event,
+    WebKitHitTestResult *hit_test_result,
+    EmpathyLogWindow *window)
+{
+  empathy_webkit_populate_context_menu (web_view, context_menu, hit_test_result, 0);
+  return FALSE;
 }
 
 static GObject *
@@ -612,7 +660,6 @@ empathy_log_window_init (EmpathyLogWindow *self)
   gchar *filename;
   GFile *gfile;
   GtkWidget *vbox, *accounts, *search, *label, *closeitem;
-  GtkWidget *scrolledwindow_events;
   gchar *uri;
 
   self->priv = G_TYPE_INSTANCE_GET_PRIVATE (self,
@@ -645,7 +692,6 @@ empathy_log_window_init (EmpathyLogWindow *self)
       "treeview_who", &self->priv->treeview_who,
       "treeview_what", &self->priv->treeview_what,
       "treeview_when", &self->priv->treeview_when,
-      "scrolledwindow_events", &scrolledwindow_events,
       "notebook", &self->priv->notebook,
       "spinner", &self->priv->spinner,
       NULL);
@@ -678,10 +724,6 @@ empathy_log_window_init (EmpathyLogWindow *self)
 
   gtk_style_context_add_class (gtk_widget_get_style_context (self->priv->account_chooser),
                                GTK_STYLE_CLASS_RAISED);
-
-  g_signal_connect (self->priv->account_chooser, "changed",
-      G_CALLBACK (log_window_chats_accounts_changed_cb),
-      self);
 
   label = gtk_label_new (_("Show"));
 
@@ -730,27 +772,26 @@ empathy_log_window_init (EmpathyLogWindow *self)
       G_CALLBACK (log_window_search_entry_icon_pressed_cb),
       self);
 
-  /* Contacts */
-  log_window_events_setup (self);
-  log_window_who_setup (self);
-  log_window_what_setup (self);
-  log_window_when_setup (self);
-
-  log_window_create_observer (self);
-
-  log_window_who_populate (self);
-
   /* events */
-  self->priv->webview = webkit_web_view_new ();
-  gtk_scrolled_window_set_policy (GTK_SCROLLED_WINDOW (scrolledwindow_events),
-      GTK_POLICY_NEVER, GTK_POLICY_AUTOMATIC);
-  gtk_container_add (GTK_CONTAINER (scrolledwindow_events),
-      self->priv->webview);
+  self->priv->webview = g_object_new (WEBKIT_TYPE_WEB_VIEW,
+      "web-context", empathy_webkit_get_web_context (),
+      "settings", empathy_webkit_get_web_settings (),
+      NULL);
+  gtk_notebook_prepend_page (GTK_NOTEBOOK (self->priv->notebook),
+      self->priv->webview, NULL);
   gtk_widget_show (self->priv->webview);
 
   empathy_webkit_bind_font_setting (WEBKIT_WEB_VIEW (self->priv->webview),
       self->priv->gsettings_desktop,
       EMPATHY_PREFS_DESKTOP_INTERFACE_FONT_NAME);
+
+  /* handle all navigation externally */
+  g_signal_connect (self->priv->webview, "decide-policy",
+      G_CALLBACK (events_webview_handle_navigation), self);
+  g_signal_connect (self->priv->webview, "load-changed",
+      G_CALLBACK (events_webview_load_changed), self);
+  g_signal_connect (self->priv->webview, "context-menu",
+      G_CALLBACK (events_webview_context_menu), self);
 
     g_object_set (webkit_web_view_get_settings (WEBKIT_WEB_VIEW (self->priv->webview)),
         "default-encoding", "utf8",
@@ -765,27 +806,10 @@ empathy_log_window_init (EmpathyLogWindow *self)
   g_object_unref (gfile);
   g_free (uri);
 
-  /* handle all navigation externally */
-  g_signal_connect (self->priv->webview, "navigation-policy-decision-requested",
-      G_CALLBACK (events_webview_handle_navigation), self);
-
-  /* listen to changes to the treemodel */
-  g_signal_connect (self->priv->store_events, "row-inserted",
-      G_CALLBACK (store_events_row_inserted), self);
-  g_signal_connect (self->priv->store_events, "row-changed",
-      G_CALLBACK (store_events_row_changed), self);
-  g_signal_connect (self->priv->store_events, "row-deleted",
-      G_CALLBACK (store_events_row_deleted), self);
-  g_signal_connect (self->priv->store_events, "rows-reordered",
-      G_CALLBACK (store_events_rows_reordered), self);
-  g_signal_connect (self->priv->store_events, "row-has-child-toggled",
-      G_CALLBACK (store_events_has_child_rows), self);
-
   /* track clicked row */
   g_signal_connect (self->priv->webview, "button-press-event",
       G_CALLBACK (log_window_events_button_press_event), self);
 
-  log_window_update_buttons_sensitivity (self);
   gtk_widget_show (GTK_WIDGET (self));
 
   empathy_geometry_bind (GTK_WINDOW (self), "log-window");
@@ -2011,8 +2035,9 @@ log_window_find_populate (EmpathyLogWindow *self,
   if (TPAW_STR_EMPTY (search_criteria))
     {
       tp_clear_pointer (&self->priv->hits, tpl_log_manager_search_free);
-      webkit_web_view_set_highlight_text_matches (
-          WEBKIT_WEB_VIEW (self->priv->webview), FALSE);
+      webkit_find_controller_search_finish (
+          webkit_web_view_get_find_controller (WEBKIT_WEB_VIEW (self->priv->webview)));
+
       log_window_who_populate (self);
       return;
     }
@@ -2022,8 +2047,9 @@ log_window_find_populate (EmpathyLogWindow *self,
       self);
 
   /* highlight the search text */
-  webkit_web_view_mark_text_matches (WEBKIT_WEB_VIEW (self->priv->webview),
-      search_criteria, FALSE, 0);
+  webkit_find_controller_search (
+      webkit_web_view_get_find_controller (WEBKIT_WEB_VIEW (self->priv->webview)),
+      search_criteria, WEBKIT_FIND_OPTIONS_CASE_INSENSITIVE, G_MAXUINT);
 
   tpl_log_manager_search_async (self->priv->log_manager,
       search_criteria, TPL_EVENT_MASK_ANY,
@@ -2577,6 +2603,16 @@ static void
 log_window_find_row (EmpathyLogWindow *self,
     GdkEventButton *event)
 {
+  /* FIXME: We can't do this in this way in WebKit2, but I'm not sure we really want
+   * to port this, it took me a while to figure out what this was for, and I find it
+   * quite confusing. When you click in the web view the clicked contact is stored
+   * as selected contact even when there's no visual selection at all. So, for example
+   * if you select multiple people the video and call buttons are unsensitive, then
+   * you click on the web view and the buttons become sensitive if the capabilities
+   * are available for the internally selected contact, but the contwaxct list still have
+   * multiple people selected and nothing is selected in the web view.
+   */
+#if 0
   WebKitHitTestResult *hit = webkit_web_view_get_hit_test_result (
       WEBKIT_WEB_VIEW (self->priv->webview), event);
   WebKitDOMNode *inner_node;
@@ -2633,6 +2669,7 @@ log_window_find_row (EmpathyLogWindow *self,
   g_object_unref (hit);
 
   log_window_update_buttons_sensitivity (self);
+#endif
 }
 
 static gboolean
@@ -2645,11 +2682,6 @@ log_window_events_button_press_event (GtkWidget *webview,
       case 1:
         log_window_find_row (self, event);
         break;
-
-      case 3:
-        empathy_webkit_context_menu_for_event (
-            WEBKIT_WEB_VIEW (webview), event, 0);
-        return TRUE;
 
       default:
         break;
@@ -3145,9 +3177,9 @@ log_window_maybe_expand_events (void)
 
   /* If there's only one result, expand it */
   if (gtk_tree_model_iter_n_children (model, NULL) == 1)
-    webkit_web_view_execute_script (
+    webkit_web_view_run_javascript (
         WEBKIT_WEB_VIEW (log_window->priv->webview),
-        "javascript:expandAll()");
+        "expandAll()", NULL, NULL, NULL);
 }
 
 static gboolean
@@ -3285,12 +3317,12 @@ log_window_got_messages_for_date_cb (GObject *manager,
       path = gtk_tree_model_get_path (model, &iter);
       str = gtk_tree_path_to_string (path);
 
-      script = g_strdup_printf ("javascript:scrollToRow([%s]);",
+      script = g_strdup_printf ("scrollToRow([%s]);",
           g_strdelimit (str, ":", ','));
 
-      webkit_web_view_execute_script (
+      webkit_web_view_run_javascript (
           WEBKIT_WEB_VIEW (log_window->priv->webview),
-          script);
+          script, NULL, NULL, NULL);
 
       gtk_tree_path_free (path);
       g_free (str);

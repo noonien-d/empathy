@@ -168,28 +168,15 @@ free_queued_item (QueuedItem *item)
 }
 
 static gboolean
-theme_adium_navigation_policy_decision_requested_cb (WebKitWebView *view,
-    WebKitWebFrame *web_frame,
-    WebKitNetworkRequest *request,
-    WebKitWebNavigationAction *action,
-    WebKitWebPolicyDecision *decision,
+theme_adium_policy_decision_requested_cb (WebKitWebView *view,
+    WebKitPolicyDecision *decision,
+    WebKitPolicyDecisionType decision_type,
     gpointer data)
 {
-  const gchar *uri;
+  if (decision_type != WEBKIT_POLICY_DECISION_TYPE_NAVIGATION_ACTION)
+    return FALSE;
 
-  /* Only call url_show on clicks */
-  if (webkit_web_navigation_action_get_reason (action) !=
-      WEBKIT_WEB_NAVIGATION_REASON_LINK_CLICKED)
-    {
-      webkit_web_policy_decision_use (decision);
-      return TRUE;
-    }
-
-  uri = webkit_network_request_get_uri (request);
-  empathy_url_show (GTK_WIDGET (view), uri);
-
-  webkit_web_policy_decision_ignore (decision);
-  return TRUE;
+  return empathy_webkit_handle_navigation (view, WEBKIT_NAVIGATION_POLICY_DECISION (decision));
 }
 
 /* Replace each %@ in format with string passed in args */
@@ -238,7 +225,7 @@ theme_adium_load_template (EmpathyThemeAdium *self)
   template = string_with_format (self->priv->data->template_html,
     variant_path, NULL);
 
-  webkit_web_view_load_html_string (WEBKIT_WEB_VIEW (self),
+  webkit_web_view_load_html (WEBKIT_WEB_VIEW (self),
       template, basedir_uri);
 
   g_free (basedir_uri);
@@ -741,7 +728,7 @@ theme_adium_add_html (EmpathyThemeAdium *self,
     }
 
   script = g_string_free (string, FALSE);
-  webkit_web_view_execute_script (WEBKIT_WEB_VIEW (self), script);
+  webkit_web_view_run_javascript (WEBKIT_WEB_VIEW (self), script, NULL, NULL, NULL);
   g_free (script);
 }
 
@@ -761,7 +748,8 @@ theme_adium_append_event_escaped (EmpathyThemeAdium *self,
       self->priv->last_contact = NULL;
     }
 }
-
+#if 0
+/* FIXME: check what this is for and port to WebKit2 */
 static void
 theme_adium_remove_focus_marks (EmpathyThemeAdium *self,
     WebKitDOMNodeList *nodes)
@@ -805,10 +793,12 @@ theme_adium_remove_focus_marks (EmpathyThemeAdium *self,
       g_string_free (new_class_name, TRUE);
     }
 }
-
+#endif
 static void
 theme_adium_remove_all_focus_marks (EmpathyThemeAdium *self)
 {
+#if 0
+  /* FIXME: check what this is for and port to WebKit2 */
   WebKitDOMDocument *dom;
   WebKitDOMNodeList *nodes;
   GError *error = NULL;
@@ -834,6 +824,7 @@ theme_adium_remove_all_focus_marks (EmpathyThemeAdium *self)
     }
 
   theme_adium_remove_focus_marks (self, nodes);
+#endif
 }
 
 enum
@@ -1164,6 +1155,8 @@ void
 empathy_theme_adium_edit_message (EmpathyThemeAdium *self,
     EmpathyMessage *message)
 {
+#if 0
+  /* FIXME: this needs to be ported to WebKit2, but I have no idea what this is for */
   WebKitDOMDocument *doc;
   WebKitDOMElement *span;
   gchar *id, *parsed_body;
@@ -1261,6 +1254,7 @@ except:
 finally:
   g_free (id);
   g_free (parsed_body);
+#endif
 }
 
 void
@@ -1276,19 +1270,47 @@ empathy_theme_adium_scroll (EmpathyThemeAdium *self,
 void
 empathy_theme_adium_scroll_down (EmpathyThemeAdium *self)
 {
-  webkit_web_view_execute_script (WEBKIT_WEB_VIEW (self), "alignChat(true);");
+  webkit_web_view_run_javascript (WEBKIT_WEB_VIEW (self), "alignChat(true);", NULL, NULL, NULL);
+}
+
+static void
+can_copy_cb (WebKitWebView *web_view,
+    GAsyncResult *result,
+    GTask *task)
+{
+  g_task_return_boolean (task,
+      webkit_web_view_can_execute_editing_command_finish (web_view, result, NULL));
+  g_object_unref (task);
+}
+
+void
+empathy_theme_adium_can_copy (EmpathyThemeAdium *self,
+    GCancellable* cancellable,
+    GAsyncReadyCallback callback,
+    gpointer user_data)
+{
+  GTask *task;
+
+  task = g_task_new (self, cancellable, callback, user_data);
+  webkit_web_view_can_execute_editing_command (WEBKIT_WEB_VIEW (self), WEBKIT_EDITING_COMMAND_COPY,
+      cancellable, (GAsyncReadyCallback)can_copy_cb, task);
 }
 
 gboolean
-empathy_theme_adium_get_has_selection (EmpathyThemeAdium *self)
+empathy_theme_adium_can_copy_finish (EmpathyThemeAdium *self,
+    GAsyncResult* result,
+    GError** error)
 {
-  return webkit_web_view_has_selection (WEBKIT_WEB_VIEW (self));
+  if (!g_task_is_valid (result, self))
+    return FALSE;
+
+  return g_task_propagate_boolean (G_TASK (result), error);
 }
 
 void
 empathy_theme_adium_clear (EmpathyThemeAdium *self)
 {
-  webkit_web_view_execute_script (WEBKIT_WEB_VIEW (self), "clearPage()");
+  webkit_web_view_run_javascript (WEBKIT_WEB_VIEW (self), "clearPage()", NULL, NULL, NULL);
   empathy_theme_adium_scroll_down (self);
 
   /* Clear last contact to avoid trying to add a 'joined'
@@ -1300,26 +1322,16 @@ empathy_theme_adium_clear (EmpathyThemeAdium *self)
     }
 }
 
-gboolean
-empathy_theme_adium_find_previous (EmpathyThemeAdium *self,
-    const gchar *search_criteria,
-    gboolean new_search,
-    gboolean match_case)
+void
+empathy_theme_adium_find_previous (EmpathyThemeAdium *self)
 {
-  /* FIXME: Doesn't respect new_search */
-  return webkit_web_view_search_text (WEBKIT_WEB_VIEW (self),
-      search_criteria, match_case, FALSE, TRUE);
+  webkit_find_controller_search_previous (webkit_web_view_get_find_controller (WEBKIT_WEB_VIEW (self)));
 }
 
-gboolean
-empathy_theme_adium_find_next (EmpathyThemeAdium *self,
-    const gchar *search_criteria,
-    gboolean new_search,
-    gboolean match_case)
+void
+empathy_theme_adium_find_next (EmpathyThemeAdium *self)
 {
-  /* FIXME: Doesn't respect new_search */
-  return webkit_web_view_search_text (WEBKIT_WEB_VIEW (self),
-      search_criteria, match_case, TRUE, TRUE);
+  webkit_find_controller_search_next (webkit_web_view_get_find_controller (WEBKIT_WEB_VIEW (self)));
 }
 
 void
@@ -1338,27 +1350,39 @@ empathy_theme_adium_find_abilities (EmpathyThemeAdium *self,
 }
 
 void
-empathy_theme_adium_highlight (EmpathyThemeAdium *self,
+empathy_theme_adium_search (EmpathyThemeAdium *self,
     const gchar *text,
     gboolean match_case)
 {
-  webkit_web_view_unmark_text_matches (WEBKIT_WEB_VIEW (self));
-  webkit_web_view_mark_text_matches (WEBKIT_WEB_VIEW (self),
-      text, match_case, 0);
-  webkit_web_view_set_highlight_text_matches (WEBKIT_WEB_VIEW (self),
-      TRUE);
+  WebKitFindController *find_controller;
+  WebKitFindOptions options = WEBKIT_FIND_OPTIONS_NONE;
+
+  find_controller = webkit_web_view_get_find_controller (WEBKIT_WEB_VIEW (self));
+  if (!text || !*text)
+    {
+      webkit_find_controller_search_finish (find_controller);
+      return;
+    }
+
+  if (!match_case)
+    options |= WEBKIT_FIND_OPTIONS_CASE_INSENSITIVE;
+
+  webkit_find_controller_search (find_controller, text, options, G_MAXUINT);
 }
 
 void
 empathy_theme_adium_copy_clipboard (EmpathyThemeAdium *self)
 {
-  webkit_web_view_copy_clipboard (WEBKIT_WEB_VIEW (self));
+  webkit_web_view_execute_editing_command (WEBKIT_WEB_VIEW (self),
+      WEBKIT_EDITING_COMMAND_COPY);
 }
 
 static void
 theme_adium_remove_mark_from_message (EmpathyThemeAdium *self,
     guint32 id)
 {
+#if 0
+  /* FIXME: check what this is for and port to WebKit2 */
   WebKitDOMDocument *dom;
   WebKitDOMNodeList *nodes;
   gchar *class;
@@ -1383,6 +1407,7 @@ theme_adium_remove_mark_from_message (EmpathyThemeAdium *self,
     }
 
   theme_adium_remove_focus_marks (self, nodes);
+#endif
 }
 
 static void
@@ -1448,27 +1473,19 @@ empathy_theme_adium_message_acknowledged (EmpathyThemeAdium *self,
 
 static gboolean
 theme_adium_context_menu_cb (EmpathyThemeAdium *self,
-    GtkWidget *default_menu,
+    WebKitContextMenu *context_menu,
+    GdkEvent *event,
     WebKitHitTestResult *hit_test_result,
-    gboolean triggered_with_keyboard,
     gpointer user_data)
 {
-  GtkWidget *menu;
   EmpathyWebKitMenuFlags flags = EMPATHY_WEBKIT_MENU_CLEAR;
 
   if (g_settings_get_boolean (self->priv->gsettings_chat,
         EMPATHY_PREFS_CHAT_WEBKIT_DEVELOPER_TOOLS))
     flags |= EMPATHY_WEBKIT_MENU_INSPECT;
 
-  menu = empathy_webkit_create_context_menu (
-    WEBKIT_WEB_VIEW (self), hit_test_result, flags);
-
-  gtk_widget_show_all (menu);
-
-  gtk_menu_popup (GTK_MENU (menu), NULL, NULL, NULL, NULL, 3,
-      gtk_get_current_event_time ());
-
-  return TRUE;
+  empathy_webkit_populate_context_menu (WEBKIT_WEB_VIEW (self), context_menu, hit_test_result, flags);
+  return FALSE;
 }
 
 void
@@ -1479,12 +1496,15 @@ empathy_theme_adium_set_show_avatars (EmpathyThemeAdium *self,
 }
 
 static void
-theme_adium_load_finished_cb (WebKitWebView *view,
-    WebKitWebFrame *frame,
+theme_adium_load_changed_cb (WebKitWebView *view,
+    WebKitLoadEvent event,
     gpointer user_data)
 {
   EmpathyThemeAdium *self = EMPATHY_THEME_ADIUM (view);
   GList *l;
+
+  if (event != WEBKIT_LOAD_FINISHED)
+    return;
 
   DEBUG ("Page loaded");
   self->priv->pages_loading--;
@@ -1567,72 +1587,6 @@ theme_adium_dispose (GObject *object)
   G_OBJECT_CLASS (empathy_theme_adium_parent_class)->dispose (object);
 }
 
-static gboolean
-theme_adium_inspector_show_window_cb (WebKitWebInspector *inspector,
-    EmpathyThemeAdium *self)
-{
-  if (self->priv->inspector_window)
-    {
-      gtk_widget_show_all (self->priv->inspector_window);
-    }
-
-  return TRUE;
-}
-
-static gboolean
-theme_adium_inspector_close_window_cb (WebKitWebInspector *inspector,
-    EmpathyThemeAdium *self)
-{
-  if (self->priv->inspector_window)
-    {
-      gtk_widget_hide (self->priv->inspector_window);
-    }
-
-  return TRUE;
-}
-
-static WebKitWebView *
-theme_adium_inspect_web_view_cb (WebKitWebInspector *inspector,
-    WebKitWebView *web_view,
-    EmpathyThemeAdium *self)
-{
-  GtkWidget *scrolled_window;
-  GtkWidget *inspector_web_view;
-
-  if (!self->priv->inspector_window)
-    {
-      /* Create main window */
-      self->priv->inspector_window = gtk_window_new (GTK_WINDOW_TOPLEVEL);
-
-      gtk_window_set_default_size (GTK_WINDOW (self->priv->inspector_window),
-                 800, 600);
-
-      g_signal_connect (self->priv->inspector_window, "delete-event",
-            G_CALLBACK (gtk_widget_hide_on_delete), NULL);
-
-      /* Pack a scrolled window */
-      scrolled_window = gtk_scrolled_window_new (NULL, NULL);
-
-      gtk_scrolled_window_set_policy (GTK_SCROLLED_WINDOW (scrolled_window),
-              GTK_POLICY_AUTOMATIC,
-              GTK_POLICY_AUTOMATIC);
-      gtk_container_add (GTK_CONTAINER (self->priv->inspector_window),
-             scrolled_window);
-      gtk_widget_show (scrolled_window);
-
-      /* Pack a webview in the scrolled window. That webview will be
-       * used to render the inspector tool. */
-      inspector_web_view = webkit_web_view_new ();
-      gtk_container_add (GTK_CONTAINER (scrolled_window),
-             inspector_web_view);
-      gtk_widget_show (scrolled_window);
-
-      return WEBKIT_WEB_VIEW (inspector_web_view);
-    }
-
-  return NULL;
-}
-
 static void
 theme_adium_constructed (GObject *object)
 {
@@ -1640,7 +1594,8 @@ theme_adium_constructed (GObject *object)
   const gchar *font_family = NULL;
   gint font_size = 0;
   WebKitWebView *webkit_view = WEBKIT_WEB_VIEW (object);
-  WebKitWebInspector *webkit_inspector;
+
+  G_OBJECT_CLASS (empathy_theme_adium_parent_class)->constructed (object);
 
   /* Set default settings */
   font_family = tp_asv_get_string (self->priv->data->info, "DefaultFontFamily");
@@ -1663,15 +1618,6 @@ theme_adium_constructed (GObject *object)
     g_object_set (webkit_web_view_get_settings (webkit_view),
         "default-encoding", "utf8",
         NULL);
-
-  /* Setup webkit inspector */
-  webkit_inspector = webkit_web_view_get_inspector (webkit_view);
-  g_signal_connect (webkit_inspector, "inspect-web-view",
-      G_CALLBACK (theme_adium_inspect_web_view_cb), object);
-  g_signal_connect (webkit_inspector, "show-window",
-      G_CALLBACK (theme_adium_inspector_show_window_cb), object);
-  g_signal_connect (webkit_inspector, "close-window",
-      G_CALLBACK (theme_adium_inspector_close_window_cb), object);
 
   /* Load template */
   theme_adium_load_template (EMPATHY_THEME_ADIUM (object));
@@ -1769,11 +1715,10 @@ empathy_theme_adium_init (EmpathyThemeAdium *self)
 
   /* Show avatars by default. */
   self->priv->show_avatars = TRUE;
-
-  g_signal_connect (self, "load-finished",
-      G_CALLBACK (theme_adium_load_finished_cb), NULL);
-  g_signal_connect (self, "navigation-policy-decision-requested",
-        G_CALLBACK (theme_adium_navigation_policy_decision_requested_cb), NULL);
+  g_signal_connect (self, "load-changed",
+      G_CALLBACK (theme_adium_load_changed_cb), NULL);
+  g_signal_connect (self, "decide-policy",
+        G_CALLBACK (theme_adium_policy_decision_requested_cb), NULL);
   g_signal_connect (self, "context-menu",
       G_CALLBACK (theme_adium_context_menu_cb), NULL);
 
@@ -1789,6 +1734,8 @@ empathy_theme_adium_new (EmpathyAdiumData *data,
   g_return_val_if_fail (data != NULL, NULL);
 
   return g_object_new (EMPATHY_TYPE_THEME_ADIUM,
+      "web-context", empathy_webkit_get_web_context (),
+      "settings", empathy_webkit_get_web_settings (),
       "adium-data", data,
       "variant", variant,
       NULL);
@@ -1816,7 +1763,7 @@ empathy_theme_adium_set_variant (EmpathyThemeAdium *self,
   script = g_strdup_printf ("setStylesheet(\"mainStyle\",\"%s\");",
       variant_path);
 
-  webkit_web_view_execute_script (WEBKIT_WEB_VIEW (self), script);
+  webkit_web_view_run_javascript (WEBKIT_WEB_VIEW (self), script, NULL, NULL, NULL);
 
   g_free (variant_path);
   g_free (script);
@@ -1827,9 +1774,7 @@ empathy_theme_adium_set_variant (EmpathyThemeAdium *self,
 void
 empathy_theme_adium_show_inspector (EmpathyThemeAdium *self)
 {
-  WebKitWebView *web_view = WEBKIT_WEB_VIEW (self);
-
-  empathy_webkit_show_inspector (web_view);
+  webkit_web_inspector_show (webkit_web_view_get_inspector (WEBKIT_WEB_VIEW (self)));
 }
 
 gboolean

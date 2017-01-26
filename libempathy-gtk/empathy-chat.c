@@ -198,7 +198,10 @@ static guint signals[LAST_SIGNAL] = { 0 };
 
 G_DEFINE_TYPE (EmpathyChat, empathy_chat, GTK_TYPE_BOX);
 
+#if 0
+/* FIXME: We need to figure out how to fill backlog automatically with WebKit2 */
 static gboolean chat_scrollable_connect (gpointer user_data);
+#endif
 static gboolean update_misspelled_words (gpointer data);
 
 static void
@@ -2532,6 +2535,8 @@ show_pending_messages (EmpathyChat *chat) {
 	}
 }
 
+#if 0
+/* FIXME: We need to figure out how to fill backlog automatically with WebKit2 */
 static gboolean
 chat_scrollable_set_value (gpointer user_data)
 {
@@ -2551,6 +2556,7 @@ chat_scrollable_set_value (gpointer user_data)
 
 	return G_SOURCE_REMOVE;
 }
+#endif
 
 static void
 got_filtered_messages_cb (GObject *walker,
@@ -2621,6 +2627,8 @@ out:
 	/* Turn back on scrolling */
 	empathy_theme_adium_scroll (chat->view, TRUE);
 
+#if 0
+	/* FIXME: We need to figure out how to fill backlog automatically with WebKit2 */
 	/* We start watching the scrolling movements only after the first
 	 * batch of logs have been fetched. Otherwise, if the
 	 * chat->view's page size is too small the scrollbar might hit
@@ -2653,7 +2661,7 @@ out:
 		g_idle_add_full (G_PRIORITY_LOW, chat_scrollable_set_value,
 		    g_object_ref (chat), g_object_unref);
 	}
-
+#endif
 	g_object_unref (chat);
 }
 
@@ -2675,6 +2683,8 @@ chat_add_logs (EmpathyChat *chat)
 	return G_SOURCE_REMOVE;
 }
 
+#if 0
+/* FIXME: We need to figure out how to fill backlog automatically with WebKit2 */
 static void
 chat_schedule_logs (EmpathyChat *chat)
 {
@@ -2757,6 +2767,7 @@ chat_scrollable_connect (gpointer user_data)
 
 	return G_SOURCE_REMOVE;
 }
+#endif
 
 static gint
 chat_contacts_completion_func (const gchar *s1,
@@ -3268,8 +3279,20 @@ chat_create_ui (EmpathyChat *chat)
 	g_signal_connect (chat->view, "focus_in_event",
 			  G_CALLBACK (chat_text_view_focus_in_event_cb),
 			  chat);
-	gtk_container_add (GTK_CONTAINER (priv->scrolled_window_chat),
-			   GTK_WIDGET (chat->view));
+	if (GTK_IS_SCROLLABLE (chat->view))
+	  {
+	    gtk_container_add (GTK_CONTAINER (priv->scrolled_window_chat),
+			       GTK_WIDGET (chat->view));
+	  }
+	else
+	  {
+	    gtk_widget_hide (priv->scrolled_window_chat);
+	    gtk_box_pack_start (GTK_BOX (priv->vbox_left),
+				GTK_WIDGET (chat->view),
+				TRUE, TRUE, 0);
+	    gtk_box_reorder_child (GTK_BOX (priv->vbox_left),
+				   GTK_WIDGET (chat->view), 0);
+	  }
 	gtk_widget_show (GTK_WIDGET (chat->view));
 
 	/* Add input GtkTextView */
@@ -4323,16 +4346,6 @@ empathy_chat_cut (EmpathyChat *chat)
 }
 
 static gboolean
-copy_from_chat_view (EmpathyChat *chat)
-{
-	if (!empathy_theme_adium_get_has_selection (chat->view))
-		return FALSE;
-
-	empathy_theme_adium_copy_clipboard (chat->view);
-	return TRUE;
-}
-
-static gboolean
 copy_from_input (EmpathyChat *chat)
 {
 	GtkTextBuffer *buffer;
@@ -4376,18 +4389,30 @@ copy_from_topic (EmpathyChat *chat)
 	return TRUE;
 }
 
-void
-empathy_chat_copy (EmpathyChat *chat)
+static void
+theme_adium_can_copy_cb (EmpathyThemeAdium *view,
+			 GAsyncResult *result,
+			 EmpathyChat *chat)
 {
-	g_return_if_fail (EMPATHY_IS_CHAT (chat));
-
-	if (copy_from_chat_view (chat))
+	if (empathy_theme_adium_can_copy_finish (view, result, NULL)) {
+		empathy_theme_adium_copy_clipboard (chat->view);
 		return;
+	}
 
 	if (copy_from_input (chat))
 		return;
 
 	copy_from_topic (chat);
+}
+
+void
+empathy_chat_copy (EmpathyChat *chat)
+{
+	g_return_if_fail (EMPATHY_IS_CHAT (chat));
+
+	empathy_theme_adium_can_copy (chat->view, NULL,
+				      (GAsyncReadyCallback)theme_adium_can_copy_cb,
+				      chat);
 }
 
 void

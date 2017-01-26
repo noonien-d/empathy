@@ -22,7 +22,7 @@
 #define _EMPATHY_WEBKIT_UTILS__H_
 
 #include <tp-account-widgets/tpaw-string-parser.h>
-#include <webkit/webkit.h>
+#include <webkit2/webkit2.h>
 
 G_BEGIN_DECLS
 
@@ -37,15 +37,20 @@ void empathy_webkit_bind_font_setting (WebKitWebView *webview,
     GSettings *gsettings,
     const char *key);
 
-GtkWidget * empathy_webkit_create_context_menu (WebKitWebView *view,
+void empathy_webkit_populate_context_menu (WebKitWebView *web_view,
+    WebKitContextMenu *context_menu,
     WebKitHitTestResult *hit_test_result,
     EmpathyWebKitMenuFlags flags);
 
-void empathy_webkit_context_menu_for_event (WebKitWebView *view,
-    GdkEventButton *event,
-    EmpathyWebKitMenuFlags flags);
+gboolean
+empathy_webkit_handle_navigation (WebKitWebView *web_view,
+    WebKitNavigationPolicyDecision *decision);
 
-void empathy_webkit_show_inspector (WebKitWebView *view);
+WebKitWebContext *
+empathy_webkit_get_web_context (void);
+
+WebKitSettings *
+empathy_webkit_get_web_settings (void);
 
 G_END_DECLS
 
