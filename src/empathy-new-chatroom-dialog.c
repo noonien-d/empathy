@@ -431,9 +431,9 @@ new_chatroom_dialog_got_room_cb (TpRoomList *room_list,
         room, NULL));
   tmp = g_strdup_printf ("<b>%s</b>", tp_room_info_get_name (room));
 
-  /* Translators: Room/Join's roomlist tooltip. Parameters are a channel name,
-  yes/no, yes/no and a number. */
   tooltip = g_strdup_printf (
+      /* Translators: Room/Join's roomlist tooltip. Parameters are a channel name,
+      yes/no, yes/no and a number. */
       _("%s\nInvite required: %s\nPassword required: %s\nMembers: %s"),
       tmp,
       tp_room_info_get_invite_only (room, NULL) ? _("Yes") : _("No"),

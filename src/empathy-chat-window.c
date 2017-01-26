@@ -290,10 +290,10 @@ confirm_close (EmpathyChatWindow *self,
       else
         {
           secondary = g_strdup_printf (
-            /* Note to translators: the number of chats will
-             * always be at least 2.
-             */
             ngettext (
+              /* Note to translators: the number of chats will
+               * always be at least 2.
+               */
               "Closing this window will leave a chat room. You will "
               "not receive any further messages until you rejoin it.",
               "Closing this window will leave %u chat rooms. You will "

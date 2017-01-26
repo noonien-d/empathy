@@ -262,9 +262,9 @@ ft_manager_format_progress_bytes_and_percentage (guint64 current,
   if (speed > 0)
     speed_str = g_format_size ((goffset) speed);
 
-  /* translators: first %s is the currently processed size, second %s is
-   * the total file size */
   retval = speed_str ?
+    /* translators: first %s is the currently processed size, second %s is
+     * the total file size */
     g_strdup_printf (_("%s of %s at %s/s"), current_str, total_str, speed_str) :
     g_strdup_printf (_("%s of %s"), current_str, total_str);
 
@@ -335,9 +335,9 @@ ft_manager_format_error_message (EmpathyFTHandler *handler,
     else
       first_line = g_strdup (_("Error receiving a file"));
   else
-    /* translators: first %s is filename, second %s
-     * is the contact name */
     if (filename && contact_name)
+      /* translators: first %s is filename, second %s
+       * is the contact name */
       first_line = g_strdup_printf (_("Error sending “%s” to %s"), filename,
           contact_name);
     else

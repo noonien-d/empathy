@@ -1701,9 +1701,9 @@ individual_grid_set_up (EmpathyIndividualWidget *self)
         }
       g_clear_object (&iter);
 
-      /* Translators: the plurality applies to both instances of the word
-       * "contact" */
       message = g_strdup_printf (
+          /* Translators: the plurality applies to both instances of the word
+           * "contact" */
           ngettext ("Linked contact containing %u contact",
               "Linked contacts containing %u contacts", num_personas),
           num_personas);
