@@ -18,6 +18,7 @@ libempathy-gtk/empathy-chat.c
 [type: gettext/glade]libempathy-gtk/empathy-chat.ui
 libempathy-gtk/empathy-contact-blocking-dialog.c
 [type: gettext/glade]libempathy-gtk/empathy-contact-blocking-dialog.ui
+libempathy-gtk/empathy-contact-chooser.c
 libempathy-gtk/empathy-contact-search-dialog.c
 libempathy-gtk/empathy-contact-widget.c
 [type: gettext/glade]libempathy-gtk/empathy-contact-widget.ui
