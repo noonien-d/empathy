@@ -1616,7 +1616,7 @@ theme_adium_constructed (GObject *object)
     }
 
     g_object_set (webkit_web_view_get_settings (webkit_view),
-        "default-encoding", "utf8",
+        "default-charset", "utf8",
         NULL);
 
   /* Load template */

@@ -794,7 +794,7 @@ empathy_log_window_init (EmpathyLogWindow *self)
       G_CALLBACK (events_webview_context_menu), self);
 
     g_object_set (webkit_web_view_get_settings (WEBKIT_WEB_VIEW (self->priv->webview)),
-        "default-encoding", "utf8",
+        "default-charset", "utf8",
         NULL);
 
   filename = empathy_file_lookup ("empathy-log-window.html", "data");
