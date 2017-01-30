@@ -1316,7 +1316,7 @@ msgstr "Sales preferides"
 
 #: C/favorite-rooms.page:32(section/title)
 msgid "Set a room as a favorite"
-msgstr "Establiu un sala com a preferida"
+msgstr "Establiu una sala com a preferida"
 
 #: C/favorite-rooms.page:35(item/p)
 msgid "Join a room."
@@ -1510,7 +1510,7 @@ msgid ""
 msgstr ""
 "Les dades que es poden enviar són: el país, la regió, la població, l'àrea, "
 "el carrer, l'edifici, la planta, la porta, el codi postal, la longitud, la "
-"latitud, l'alçada, la velocitat i la orientació."
+"latitud, l'alçada, la velocitat i l'orientació."
 
 #: C/geolocation-privacy.page:40(section/p)
 msgid ""
@@ -2219,7 +2219,7 @@ msgstr "Encara no és possible enviar fitxers a través de l'IRC."
 
 #: C/irc-start-conversation.page:8(info/desc)
 msgid "Start a conversation with an IRC contact."
-msgstr "Inicieu un conversa amb un contacte de l'IRC."
+msgstr "Inicieu una conversa amb un contacte de l'IRC."
 
 #: C/irc-start-conversation.page:30(page/title)
 msgid "Chat with somebody on IRC"
