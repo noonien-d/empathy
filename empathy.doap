@@ -6,6 +6,9 @@
          xmlns="http://usefulinc.com/ns/doap#">
   <name xml:lang="en">empathy</name>
   <shortdesc xml:lang="en">Send and receive messages</shortdesc>
+  <description>Empathy is a messaging program which supports text, voice, video chat, and file transfers over many different protocols. You can tell it about your accounts on all those services and do all your chatting within one application.
+
+Empathy uses Telepathy for protocol support and has a user interface based on Gossip. Empathy is the default chat client in current versions of GNOME, making it easier for other GNOME applications to integrate collaboration functionality using Telepathy.</description>
   <category rdf:resource="http://api.gnome.org/doap-extensions#core-apps" />
 
   <homepage rdf:resource="https://wiki.gnome.org/Apps/Empathy" />
@@ -19,13 +22,6 @@
       <foaf:name>Xavier Claessens</foaf:name>
       <foaf:mbox rdf:resource="mailto:xclaesse@gmail.com" />
       <gnome:userid>xclaesse</gnome:userid>
-    </foaf:Person>
-  </maintainer>
-  <maintainer>
-    <foaf:Person>
-      <foaf:name>Guillaume Desmottes</foaf:name>
-      <foaf:mbox rdf:resource="mailto:gdesmott@gnome.org" />
-      <gnome:userid>gdesmott</gnome:userid>
     </foaf:Person>
   </maintainer>
 </Project>
