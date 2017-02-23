@@ -10,8 +10,8 @@ msgstr ""
 "Project-Id-Version: empathy 3.3.92\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=empathy&keywords=I18N+L10N&component=General\n"
-"POT-Creation-Date: 2017-01-26 02:23+0000\n"
-"PO-Revision-Date: 2017-02-06 06:48+0800\n"
+"POT-Creation-Date: 2017-02-18 07:01+0000\n"
+"PO-Revision-Date: 2017-02-23 08:23+0800\n"
 "Last-Translator: Chao-Hsiung Liao <j_h_liau@yahoo.com.tw>\n"
 "Language-Team: Chinese (traditional) <chinese-l10n@googlegroups.com>\n"
 "Language: zh_TW\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 1.8.11\n"
+"X-Generator: Poedit 1.8.12\n"
 
 #: ../data/empathy.desktop.in.in.h:1
 msgid "Empathy"
@@ -123,11 +123,11 @@ msgstr "是否在連絡人列表中顯示離線的連絡人。"
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:14
 msgid "Show Balance in contact list"
-msgstr "於聯絡人列表內顯示餘額"
+msgstr "於連絡人列表內顯示餘額"
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:15
 msgid "Whether to show account balances in the contact list."
-msgstr "是否要在聯絡人列表內顯示帳戶餘額。"
+msgstr "是否要在連絡人列表內顯示帳戶餘額。"
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:16
 msgid "Hide main window"
@@ -177,7 +177,7 @@ msgstr "顯示連絡人群組"
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:27
 msgid "Whether to show groups in the contact list."
-msgstr "是否要在聯絡人列表內顯示群組。"
+msgstr "是否要在連絡人列表內顯示群組。"
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:28
 msgid "Use notification sounds"
@@ -706,15 +706,15 @@ msgstr "啟動通話時發生錯誤"
 
 #: ../libempathy-gtk/empathy-call-utils.c:44
 msgid "The specified contact doesn’t support calls"
-msgstr "指定的聯絡人不支援通話功能"
+msgstr "指定的連絡人不支援通話功能"
 
 #: ../libempathy-gtk/empathy-call-utils.c:46
 msgid "The specified contact is offline"
-msgstr "指定的聯絡人已經離線"
+msgstr "指定的連絡人已經離線"
 
 #: ../libempathy-gtk/empathy-call-utils.c:48
 msgid "The specified contact is not valid"
-msgstr "指定的聯絡人無效"
+msgstr "指定的連絡人無效"
 
 #: ../libempathy-gtk/empathy-call-utils.c:50
 msgid "Emergency calls are not supported on this protocol"
@@ -764,11 +764,11 @@ msgstr "/part [<聊天室 ID>] [<原因>]：離開聊天室，預設為目前的
 
 #: ../libempathy-gtk/empathy-chat.c:1071
 msgid "/query <contact ID> [<message>]: open a private chat"
-msgstr "/query <聯絡人 ID> [<訊息>]：開啟私人聊天"
+msgstr "/query <連絡人 ID> [<訊息>]：開啟私人聊天"
 
 #: ../libempathy-gtk/empathy-chat.c:1074
 msgid "/msg <contact ID> <message>: open a private chat"
-msgstr "/msg <聯絡人 ID> <訊息>：開啟私人聊天"
+msgstr "/msg <連絡人 ID> <訊息>：開啟私人聊天"
 
 #: ../libempathy-gtk/empathy-chat.c:1077
 msgid "/nick <nickname>: change your nickname on the current server"
@@ -789,7 +789,7 @@ msgstr ""
 
 #: ../libempathy-gtk/empathy-chat.c:1088
 msgid "/whois <contact ID>: display information about a contact"
-msgstr "/whois <聯絡人 ID>：顯示聯絡人的相關資訊"
+msgstr "/whois <連絡人 ID>：顯示連絡人的相關資訊"
 
 #: ../libempathy-gtk/empathy-chat.c:1091
 msgid ""
@@ -863,7 +863,7 @@ msgstr "未實作"
 msgid "unknown"
 msgstr "不明"
 
-#: ../libempathy-gtk/empathy-chat.c:1678 ../src/empathy-chat-window.c:978
+#: ../libempathy-gtk/empathy-chat.c:1678 ../src/empathy-chat-window.c:982
 msgid "Topic:"
 msgstr "主題："
 
@@ -1031,11 +1031,11 @@ msgstr "未知或無效的識別身分"
 
 #: ../libempathy-gtk/empathy-contact-blocking-dialog.c:265
 msgid "Contact blocking temporarily unavailable"
-msgstr "聯絡人封鎖暫時無法使用"
+msgstr "連絡人封鎖暫時無法使用"
 
 #: ../libempathy-gtk/empathy-contact-blocking-dialog.c:267
 msgid "Contact blocking unavailable"
-msgstr "聯絡人封鎖無法使用"
+msgstr "連絡人封鎖無法使用"
 
 #: ../libempathy-gtk/empathy-contact-blocking-dialog.c:269
 msgid "Permission Denied"
@@ -1043,11 +1043,11 @@ msgstr "已拒絕授權"
 
 #: ../libempathy-gtk/empathy-contact-blocking-dialog.c:273
 msgid "Could not block contact"
-msgstr "無法封鎖聯絡人"
+msgstr "無法封鎖連絡人"
 
 #: ../libempathy-gtk/empathy-contact-blocking-dialog.c:612
 msgid "Edit Blocked Contacts"
-msgstr "編輯封鎖的聯絡人"
+msgstr "編輯封鎖的連絡人"
 
 #. Account and Identifier
 #: ../libempathy-gtk/empathy-contact-blocking-dialog.ui.h:1
@@ -1060,13 +1060,17 @@ msgstr "帳號："
 
 #: ../libempathy-gtk/empathy-contact-blocking-dialog.ui.h:2
 msgid "Blocked Contacts"
-msgstr "被封鎖的聯絡人"
+msgstr "被封鎖的連絡人"
 
 #: ../libempathy-gtk/empathy-contact-blocking-dialog.ui.h:3
 #: ../libempathy-gtk/empathy-status-preset-dialog.ui.h:1
 #: ../src/empathy-accounts-dialog.ui.h:2 ../src/empathy-chatrooms-window.ui.h:3
 msgid "Remove"
 msgstr "移除"
+
+#: ../libempathy-gtk/empathy-contact-chooser.c:416
+msgid "Type to search a contact…"
+msgstr "打字以搜尋連絡人..."
 
 #. Title
 #: ../libempathy-gtk/empathy-contact-search-dialog.c:552
@@ -1079,11 +1083,11 @@ msgstr "搜尋："
 
 #: ../libempathy-gtk/empathy-contact-search-dialog.c:640
 msgid "_Add Contact"
-msgstr "加入聯絡人(_A)"
+msgstr "加入連絡人(_A)"
 
 #: ../libempathy-gtk/empathy-contact-search-dialog.c:659
 msgid "No contacts found"
-msgstr "找不到聯絡人"
+msgstr "找不到連絡人"
 
 #: ../libempathy-gtk/empathy-contact-search-dialog.c:660
 msgid "Contact search is not supported on this account"
@@ -1211,7 +1215,7 @@ msgstr "封鎖(_B)"
 #: ../libempathy-gtk/empathy-subscription-dialog.c:150
 msgid "_Report this contact as abusive"
 msgid_plural "_Report these contacts as abusive"
-msgstr[0] "回報這些聯絡人濫用帳號(_R)"
+msgstr[0] "回報這些連絡人濫用帳號(_R)"
 
 #: ../libempathy-gtk/empathy-individual-edit-dialog.c:237
 msgid "Edit Contact Information"
@@ -1228,7 +1232,7 @@ msgstr "gnome-contacts 尚未安裝"
 
 #: ../libempathy-gtk/empathy-individual-information-dialog.c:325
 msgid "Please install gnome-contacts to access contacts details."
-msgstr "請安裝 gnome-contacts 來存取聯絡人細節。"
+msgstr "請安裝 gnome-contacts 來存取連絡人細節。"
 
 #. Translators: this is used in the context menu for a contact. The first
 #. * parameter is a contact ID (e.g. foo@jabber.org) and the second is one
@@ -1275,7 +1279,7 @@ msgstr "撥打 %s"
 
 #: ../libempathy-gtk/empathy-individual-menu.c:674
 msgid "_Block Contact"
-msgstr "封鎖聯絡人(_B)"
+msgstr "封鎖連絡人(_B)"
 
 #: ../libempathy-gtk/empathy-individual-menu.c:729
 #, c-format
@@ -1297,7 +1301,7 @@ msgid ""
 "Do you really want to remove the linked contact “%s”? Note that this will "
 "remove all the contacts which make up this linked contact."
 msgstr ""
-"您真的想要移除連結聯絡人「%s」嗎？請注意這會移除所有構成此連結聯絡群的聯絡"
+"您真的想要移除連結連絡人「%s」嗎？請注意這會移除所有構成此連結聯絡群的連絡"
 "人。"
 
 #: ../libempathy-gtk/empathy-individual-menu.c:858
@@ -1309,15 +1313,13 @@ msgstr "正在移除連絡人"
 msgid "_Remove"
 msgstr "移除(_R)"
 
-#. add chat button
 #: ../libempathy-gtk/empathy-individual-menu.c:1351
-#: ../libempathy-gtk/empathy-new-message-dialog.c:308
 msgid "_Chat"
 msgstr "聊天(_C)"
 
 #. add SMS button
 #: ../libempathy-gtk/empathy-individual-menu.c:1418
-#: ../libempathy-gtk/empathy-new-message-dialog.c:302
+#: ../libempathy-gtk/empathy-new-message-dialog.c:300
 msgid "_SMS"
 msgstr "_SMS"
 
@@ -1360,7 +1362,7 @@ msgstr "編輯(_E)"
 
 #. send invitation
 #: ../libempathy-gtk/empathy-individual-menu.c:2003
-#: ../src/empathy-chat-window.c:1279
+#: ../src/empathy-chat-window.c:1283
 msgid "Inviting you to this room"
 msgstr "邀請您到這個聊天室"
 
@@ -1371,7 +1373,7 @@ msgstr "邀請到聊天室(_I)"
 #: ../libempathy-gtk/empathy-individual-menu.c:2245
 #: ../src/empathy-roster-window.ui.h:4
 msgid "_Add Contact…"
-msgstr "加入聯絡人(_A)…"
+msgstr "加入連絡人(_A)…"
 
 #: ../libempathy-gtk/empathy-individual-view.c:2367
 #, c-format
@@ -1512,11 +1514,13 @@ msgstr "別名："
 msgid "Identifier:"
 msgstr "識別身分："
 
+#. Translators: the plurality applies to both instances of the word
+#. * "contact"
 #: ../libempathy-gtk/empathy-individual-widget.c:1707
 #, c-format
 msgid "Linked contact containing %u contact"
 msgid_plural "Linked contacts containing %u contacts"
-msgstr[0] "連結聯絡群包含 %u 位聯絡人"
+msgstr[0] "連結聯絡群包含 %u 位連絡人"
 
 #: ../libempathy-gtk/empathy-individual-widget.ui.h:1
 msgid "<b>Location</b> at (date)"
@@ -1544,7 +1548,7 @@ msgid ""
 "You can change these details later or disable this feature by choosing <span "
 "style=\"italic\">Edit → Accounts</span> in the Contact List."
 msgstr ""
-"您可以稍候變更這些細節，或藉由選擇「聯絡人列表」中的 <span style=\"italic\">"
+"您可以稍候變更這些細節，或藉由選擇「連絡人列表」中的 <span style=\"italic\">"
 "編輯 → 帳號</span> 停用這個功能。"
 
 #: ../libempathy-gtk/empathy-log-window.c:678
@@ -1695,7 +1699,7 @@ msgid "Profile"
 msgstr "個人檔案"
 
 #: ../libempathy-gtk/empathy-log-window.ui.h:5
-#: ../src/empathy-chat-window.c:1500 ../src/empathy-preferences.ui.h:11
+#: ../src/empathy-preferences.ui.h:11
 msgid "Chat"
 msgstr "聊天"
 
@@ -1721,9 +1725,8 @@ msgid "Add new account"
 msgstr "新增帳號"
 
 #: ../libempathy-gtk/empathy-new-call-dialog.c:189
-#: ../libempathy-gtk/empathy-new-message-dialog.c:279
 msgid "Enter a contact identifier or phone number:"
-msgstr "請輸入聯絡人辨識身份或電話號碼："
+msgstr "請輸入連絡人辨識身份或電話號碼："
 
 #. add video button
 #: ../libempathy-gtk/empathy-new-call-dialog.c:212
@@ -1742,15 +1745,15 @@ msgstr "新增通話"
 
 #: ../libempathy-gtk/empathy-new-message-dialog.c:72
 msgid "The contact is offline"
-msgstr "聯絡人已經離線"
+msgstr "連絡人已經離線"
 
 #: ../libempathy-gtk/empathy-new-message-dialog.c:74
 msgid "The specified contact is either invalid or unknown"
-msgstr "指定的聯絡人無效或未知"
+msgstr "指定的連絡人無效或未知"
 
 #: ../libempathy-gtk/empathy-new-message-dialog.c:76
 msgid "The contact does not support this kind of conversation"
-msgstr "該聯絡人不支援這類談話"
+msgstr "該連絡人不支援這類談話"
 
 #: ../libempathy-gtk/empathy-new-message-dialog.c:78
 msgid "The requested functionality is not implemented for this protocol"
@@ -1758,7 +1761,7 @@ msgstr "請求的功能尚未在此協定中實作"
 
 #: ../libempathy-gtk/empathy-new-message-dialog.c:84
 msgid "Could not start a conversation with the given contact"
-msgstr "無法啟動與給定聯絡人的談話"
+msgstr "無法啟動與給定連絡人的談話"
 
 #: ../libempathy-gtk/empathy-new-message-dialog.c:86
 msgid "You are banned from this channel"
@@ -1784,8 +1787,14 @@ msgstr "許可被拒絕"
 msgid "There was an error starting the conversation"
 msgstr "啟動談話時發生錯誤"
 
+#. add chat button
+#: ../libempathy-gtk/empathy-new-message-dialog.c:307
+msgid "_Done"
+msgstr "完成(_D)"
+
 #. Tweak the dialog
-#: ../libempathy-gtk/empathy-new-message-dialog.c:322
+#: ../libempathy-gtk/empathy-new-message-dialog.c:323
+#: ../src/empathy-roster-window.c:2367
 msgid "New Conversation"
 msgstr "新增談話"
 
@@ -2045,10 +2054,10 @@ msgstr "未群組"
 
 #. Add a prefix explaining that something goes wrong when trying to
 #. * fetch contact's presence.
-#: ../libempathy-gtk/empathy-roster-contact.c:202
+#: ../libempathy-gtk/empathy-roster-contact.c:252
 #, c-format
 msgid "Server cannot find contact: %s"
-msgstr "伺服器找不到聯絡人：%s"
+msgstr "伺服器找不到連絡人：%s"
 
 #: ../src/empathy-about-dialog.c:82
 msgid "An Instant Messaging client for GNOME"
@@ -2225,23 +2234,23 @@ msgstr "— Empathy 認證用戶端"
 msgid "Empathy authentication client"
 msgstr "Empathy 認證用戶端"
 
-#: ../src/empathy.c:401
+#: ../src/empathy.c:402
 msgid "Don’t connect on startup"
 msgstr "啟動時不要自動連線"
 
-#: ../src/empathy.c:405
+#: ../src/empathy.c:406
 msgid "Don’t display the contact list or any other dialogs on startup"
 msgstr "啟動時不顯示連絡人列表或任何其他對話窗"
 
-#: ../src/empathy.c:434
+#: ../src/empathy.c:435
 msgid "— Empathy IM Client"
 msgstr "— Empathy 即時通用戶端"
 
-#: ../src/empathy.c:620
+#: ../src/empathy.c:621
 msgid "Error contacting the Account Manager"
 msgstr "聯絡帳號管理員時發生錯誤"
 
-#: ../src/empathy.c:622
+#: ../src/empathy.c:623
 #, c-format
 msgid ""
 "There was an error while trying to connect to the Telepathy Account Manager. "
@@ -2537,7 +2546,7 @@ msgstr "本機候選："
 msgid "Audio"
 msgstr "音訊"
 
-#: ../src/empathy-chat.c:100
+#: ../src/empathy-chat.c:102
 msgid "— Empathy Chat Client"
 msgstr "— Empathy 聊天用戶端"
 
@@ -2557,18 +2566,21 @@ msgstr "自動連線"
 msgid "Manage Favorite Rooms"
 msgstr "管理喜好的聊天室"
 
-#: ../src/empathy-chat-window.c:278
+#: ../src/empathy-chat-window.c:279
 msgid "Close this window?"
 msgstr "要關閉這個視窗？"
 
-#: ../src/empathy-chat-window.c:284
+#: ../src/empathy-chat-window.c:285
 #, c-format
 msgid ""
 "Closing this window will leave %s. You will not receive any further messages "
 "until you rejoin it."
 msgstr "關閉此視窗會離開 %s。您將無法接收到之後的訊息，除非您再次參與。"
 
-#: ../src/empathy-chat-window.c:297
+#. Note to translators: the number of chats will
+#. * always be at least 2.
+#.
+#: ../src/empathy-chat-window.c:298
 #, c-format
 msgid ""
 "Closing this window will leave a chat room. You will not receive any further "
@@ -2579,60 +2591,60 @@ msgid_plural ""
 msgstr[0] ""
 "關閉此視窗會離開 %u 個聊天室。您將無法接收到之後的訊息，除非您再次參與。"
 
-#: ../src/empathy-chat-window.c:308
+#: ../src/empathy-chat-window.c:309
 #, c-format
 msgid "Leave %s?"
 msgstr "離開 %s？"
 
-#: ../src/empathy-chat-window.c:310
+#: ../src/empathy-chat-window.c:311
 msgid ""
 "You will not receive any further messages from this chat room until you "
 "rejoin it."
 msgstr "您將無法接收到此聊天室之後的訊息，除非您再次參與。"
 
-#: ../src/empathy-chat-window.c:329
+#: ../src/empathy-chat-window.c:330
 msgid "Close window"
 msgstr "關閉視窗"
 
-#: ../src/empathy-chat-window.c:329
+#: ../src/empathy-chat-window.c:330
 msgid "Leave room"
 msgstr "離開聊天室"
 
-#: ../src/empathy-chat-window.c:676 ../src/empathy-chat-window.c:699
+#: ../src/empathy-chat-window.c:680 ../src/empathy-chat-window.c:703
 #, c-format
 msgid "%s (%d unread)"
 msgid_plural "%s (%d unread)"
 msgstr[0] "%s (%d 個未讀)"
 
-#: ../src/empathy-chat-window.c:691
+#: ../src/empathy-chat-window.c:695
 #, c-format
 msgid "%s (and %u other)"
 msgid_plural "%s (and %u others)"
 msgstr[0] "%s (與其他 %u 個)"
 
-#: ../src/empathy-chat-window.c:707
+#: ../src/empathy-chat-window.c:711
 #, c-format
 msgid "%s (%d unread from others)"
 msgid_plural "%s (%d unread from others)"
 msgstr[0] "%s (來自其他人的 %d 個未讀)"
 
-#: ../src/empathy-chat-window.c:716
+#: ../src/empathy-chat-window.c:720
 #, c-format
 msgid "%s (%d unread from all)"
 msgid_plural "%s (%d unread from all)"
 msgstr[0] "%s (來自所有人的 %d 個未讀)"
 
-#: ../src/empathy-chat-window.c:953
+#: ../src/empathy-chat-window.c:957
 msgid "SMS:"
 msgstr "SMS："
 
-#: ../src/empathy-chat-window.c:961
+#: ../src/empathy-chat-window.c:965
 #, c-format
 msgid "Sending %d message"
 msgid_plural "Sending %d messages"
 msgstr[0] "正在傳送 %d 個訊息"
 
-#: ../src/empathy-chat-window.c:981
+#: ../src/empathy-chat-window.c:985
 msgid "Typing a message."
 msgstr "正在輸入訊息。"
 
@@ -2782,7 +2794,7 @@ msgid ""
 "when reporting it by displaying the advanced fields in the <a href=\"https://"
 "bugzilla.gnome.org/enter_bug.cgi?product=empathy\">bug report</a>."
 msgstr ""
-"即使它們沒有顯示密碼，記錄也可能包含敏感資訊，像是您的聯絡人列表，或是您最近"
+"即使它們沒有顯示密碼，記錄也可能包含敏感資訊，像是您的連絡人列表，或是您最近"
 "傳送或接收的訊息等。\n"
 "如果您不想看見這樣的資訊公開在臭蟲回報記錄中，您可以在<a href=\"https://"
 "bugzilla.gnome.org/enter_bug.cgi?product=empathy\">回報臭蟲</a>時點開「Show "
@@ -2869,7 +2881,7 @@ msgstr "您被邀請參加 %s"
 msgid "Incoming file transfer from %s"
 msgstr "收到來自 %s 的檔案傳輸"
 
-#: ../src/empathy-event-manager.c:948 ../src/empathy-roster-window.c:214
+#: ../src/empathy-event-manager.c:948 ../src/empathy-roster-window.c:220
 msgid "Password required"
 msgstr "需要密碼"
 
@@ -2899,6 +2911,8 @@ msgctxt "file transfer percent"
 msgid "Unknown"
 msgstr "不明"
 
+#. translators: first %s is the currently processed size, second %s is
+#. * the total file size
 #: ../src/empathy-ft-manager.c:268
 #, c-format
 msgid "%s of %s at %s/s"
@@ -2932,6 +2946,8 @@ msgstr "從 %2$s 接收「%1$s」時發生錯誤"
 msgid "Error receiving a file"
 msgstr "接收檔案時發生錯誤"
 
+#. translators: first %s is filename, second %s
+#. * is the contact name
 #: ../src/empathy-ft-manager.c:341
 #, c-format
 msgid "Error sending “%s” to %s"
@@ -3027,7 +3043,7 @@ msgstr "邀請參與"
 
 #: ../src/empathy-invite-participant-dialog.c:198
 msgid "Choose a contact to invite into the conversation:"
-msgstr "選擇想要邀請進入談話的聯絡人："
+msgstr "選擇想要邀請進入談話的連絡人："
 
 #: ../src/empathy-invite-participant-dialog.c:221
 msgid "Invite"
@@ -3045,6 +3061,8 @@ msgstr "成員"
 msgid "Failed to list rooms"
 msgstr "無法列出聊天室"
 
+#. Translators: Room/Join's roomlist tooltip. Parameters are a channel name,
+#. yes/no, yes/no and a number.
 #: ../src/empathy-new-chatroom-dialog.c:437
 #, c-format
 msgid ""
@@ -3216,7 +3234,7 @@ msgstr "顯示群組"
 msgid "Show account balances"
 msgstr "顯示帳號餘額"
 
-#: ../src/empathy-preferences.ui.h:4 ../src/empathy-roster-window.c:2301
+#: ../src/empathy-preferences.ui.h:4 ../src/empathy-roster-window.c:2330
 msgid "Contact List"
 msgstr "連絡人列表"
 
@@ -3363,90 +3381,94 @@ msgstr "樣式："
 msgid "Themes"
 msgstr "佈景主題"
 
-#: ../src/empathy-roster-window.c:231
+#: ../src/empathy-roster-window.c:237
 msgid "Provide Password"
 msgstr "提供密碼"
 
-#: ../src/empathy-roster-window.c:237
+#: ../src/empathy-roster-window.c:243
 msgid "Disconnect"
 msgstr "斷線"
 
-#: ../src/empathy-roster-window.c:494
+#: ../src/empathy-roster-window.c:500
 msgid "You need to set up an account to see contacts here."
-msgstr "您需要設置一個帳號才能在這裡查看聯絡人。"
+msgstr "您需要設置一個帳號才能在這裡查看連絡人。"
 
-#: ../src/empathy-roster-window.c:570
+#: ../src/empathy-roster-window.c:576
 #, c-format
 msgid "Sorry, %s accounts can’t be used until your %s software is updated."
 msgstr "很抱歉，%s 帳號無法使用，除非您的 %s 軟體已更新。"
 
-#: ../src/empathy-roster-window.c:671
+#: ../src/empathy-roster-window.c:677
 msgid "Windows Live"
 msgstr "Windows Live"
 
-#: ../src/empathy-roster-window.c:673
+#: ../src/empathy-roster-window.c:679
 msgid "Google Talk"
 msgstr "Google Talk"
 
-#: ../src/empathy-roster-window.c:675
+#: ../src/empathy-roster-window.c:681
 msgid "Facebook"
 msgstr "Facebook"
 
 #. translators: %s is an account name like 'Facebook' or 'Google Talk'
-#: ../src/empathy-roster-window.c:690
+#: ../src/empathy-roster-window.c:696
 #, c-format
 msgid "%s account requires authorisation"
 msgstr "%s 帳號需要批准授權"
 
-#: ../src/empathy-roster-window.c:701
+#: ../src/empathy-roster-window.c:707
 msgid "Online Accounts"
 msgstr "線上帳號"
 
-#: ../src/empathy-roster-window.c:748
+#: ../src/empathy-roster-window.c:754
 msgid "Update software…"
 msgstr "更新軟體..."
 
-#: ../src/empathy-roster-window.c:754
+#: ../src/empathy-roster-window.c:760
 msgid "Reconnect"
 msgstr "重新連接"
 
-#: ../src/empathy-roster-window.c:758
+#: ../src/empathy-roster-window.c:764
 msgid "Edit Account"
 msgstr "編輯帳號"
 
-#: ../src/empathy-roster-window.c:763
+#: ../src/empathy-roster-window.c:769
 msgid "Close"
 msgstr "關閉"
 
-#: ../src/empathy-roster-window.c:905
+#: ../src/empathy-roster-window.c:911
 msgid "Top up account"
 msgstr "加值帳號存額"
 
-#: ../src/empathy-roster-window.c:1626
+#: ../src/empathy-roster-window.c:1653
 msgid "You need to enable one of your accounts to see contacts here."
-msgstr "您需要啟用您其中之一的帳號之才能在這裡查看聯絡人。"
+msgstr "您需要啟用您其中之一的帳號之才能在這裡查看連絡人。"
 
 #. translators: argument is an account name
-#: ../src/empathy-roster-window.c:1634
+#: ../src/empathy-roster-window.c:1661
 #, c-format
 msgid "You need to enable %s to see contacts here."
-msgstr "您需要啟用 %s 才能在這裡查看聯絡人。"
+msgstr "您需要啟用 %s 才能在這裡查看連絡人。"
 
-#: ../src/empathy-roster-window.c:1712
+#: ../src/empathy-roster-window.c:1739
 msgid "Change your presence to see contacts here"
-msgstr "請變更您的上線狀態才能在這裡查看聯絡人"
+msgstr "請變更您的上線狀態才能在這裡查看連絡人"
 
-#: ../src/empathy-roster-window.c:1721
+#: ../src/empathy-roster-window.c:1748
 msgid "No match found"
 msgstr "找不到符合項目"
 
-#: ../src/empathy-roster-window.c:1728
+#: ../src/empathy-roster-window.c:1755
 msgid "You haven’t added any contacts yet"
-msgstr "您尚未加入任何聯絡人"
+msgstr "您尚未加入任何連絡人"
 
-#: ../src/empathy-roster-window.c:1731
+#: ../src/empathy-roster-window.c:1758
 msgid "No online contacts"
 msgstr "無上線連絡人"
+
+#: ../src/empathy-roster-window.c:2359
+msgid "Conversations"
+msgstr "談話"
 
 #: ../src/empathy-roster-window-menubar.ui.h:1
 #: ../src/empathy-status-icon.ui.h:2
@@ -3464,15 +3486,15 @@ msgstr "連絡人"
 
 #: ../src/empathy-roster-window-menubar.ui.h:4
 msgid "_Add Contacts…"
-msgstr "加入聯絡人(_A)…"
+msgstr "加入連絡人(_A)…"
 
 #: ../src/empathy-roster-window-menubar.ui.h:5
 msgid "_Search for Contacts…"
-msgstr "搜尋聯絡人(_S)..."
+msgstr "搜尋連絡人(_S)..."
 
 #: ../src/empathy-roster-window-menubar.ui.h:6
 msgid "_Blocked Contacts"
-msgstr "被封鎖的聯絡人"
+msgstr "被封鎖的連絡人"
 
 #: ../src/empathy-roster-window-menubar.ui.h:7
 msgid "_Rooms"
@@ -4672,9 +4694,6 @@ msgstr "整合您的即時通帳號"
 
 #~ msgid "Date"
 #~ msgstr "日期"
-
-#~ msgid "Conversations"
-#~ msgstr "談話"
 
 #~ msgid "Previous Conversations"
 #~ msgstr "上一次談話"
