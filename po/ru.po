@@ -13,10 +13,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: empathy trunk\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
 "product=empathy&keywords=I18N+L10N&component=General\n"
-"POT-Creation-Date: 2014-03-11 16:28+0000\n"
-"PO-Revision-Date: 2014-04-09 00:13+0400\n"
+"POT-Creation-Date: 2017-02-23 11:00+0000\n"
+"PO-Revision-Date: 2017-03-12 19:08+0400\n"
 "Last-Translator: Yuri Myasoedov <ymyasoedov@yandex.ru>\n"
 "Language-Team: русский <gnome-cyr@gnome.org>\n"
 "Language: ru\n"
@@ -25,7 +25,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Poedit 1.6.4\n"
+"X-Generator: Poedit 1.8.7.1\n"
 
 #: ../data/empathy.desktop.in.in.h:1
 msgid "Empathy"
@@ -291,7 +291,7 @@ msgstr ""
 "беспокоить»."
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:50
-msgid "Pop up notifications if the chat isn't focused"
+msgid "Pop up notifications if the chat isn’t focused"
 msgstr "Показывать всплывающие уведомления, если беседа находится не в фокусе"
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:51
@@ -384,8 +384,8 @@ msgstr "Уведомлять пользователей о наборе сооб
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:69
 msgid ""
-"Whether to send the 'composing' or 'paused' chat states. Does not currently "
-"affect the 'gone' state."
+"Whether to send the “composing” or “paused” chat states. Does not currently "
+"affect the “gone” state."
 msgstr ""
 "Посылать ли уведомления о наборе сообщений. Не используется при статусе "
 "«Отошёл»."
@@ -404,7 +404,7 @@ msgstr "Языки для проверки орфографии"
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:73
 msgid ""
-"Comma-separated list of spell checker languages to use (e.g. \"en, fr, nl\")."
+"Comma-separated list of spell checker languages to use (e.g. “en, fr, nl”)."
 msgstr ""
 "Список языков, используемых при проверке орфографии, разделённых запятыми "
 "(например «en, fr, ru»)."
@@ -472,7 +472,7 @@ msgid "Echo cancellation support"
 msgstr "Поддержка подавления эха"
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:87
-msgid "Whether to enable Pulseaudio's echo cancellation filter."
+msgid "Whether to enable PulseAudio’s echo cancellation filter."
 msgstr "Включить ли фильтр подавления эха Pulseaudio."
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:88
@@ -482,30 +482,30 @@ msgstr "Показывать подсказку о закрытии главно
 #: ../data/org.gnome.Empathy.gschema.xml.h:89
 msgid ""
 "Whether to show the message dialog about closing the main window with the "
-"'x' button in the title bar."
+"“x” button in the title bar."
 msgstr ""
 "Показывать ли диалоговое окно при закрытии главного окна с помощью кнопки "
 "«x» в строке заголовка."
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:90
-msgid "Empathy can publish the user's location"
+msgid "Empathy can publish the user’s location"
 msgstr "Empathy может публиковать местоположение пользователя"
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:91
-msgid "Whether Empathy can publish the user's location to their contacts."
+msgid "Whether Empathy can publish the user’s location to their contacts."
 msgstr ""
 "Может ли Empathy публиковать местоположение пользователя для его "
 "собеседников."
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:92
-msgid "Empathy should reduce the location's accuracy"
+msgid "Empathy should reduce the location’s accuracy"
 msgstr "Empathy должен снижать точность местоположения"
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:93
 msgid ""
-"Whether Empathy should reduce the location's accuracy for privacy reasons."
+"Whether Empathy should reduce the location’s accuracy for privacy reasons."
 msgstr ""
-"Должен ли Empathy уменьшать точность определения местоположения по причинам "
+"Должен ли Empathy снижать точность определения местоположения по причинам "
 "приватности."
 
 #: ../libempathy/empathy-ft-handler.c:730
@@ -665,7 +665,7 @@ msgid "Connection has been refused"
 msgstr "Запрос на подключение отклонён"
 
 #: ../libempathy/empathy-utils.c:298
-msgid "Connection can't be established"
+msgid "Connection can’t be established"
 msgstr "Не удалось установить соединение"
 
 #: ../libempathy/empathy-utils.c:300
@@ -716,11 +716,11 @@ msgstr "Слишком старая версия приложения"
 msgid "Internal error"
 msgstr "Внутренняя ошибка"
 
-#: ../libempathy-gtk/empathy-account-chooser.c:683
+#: ../libempathy-gtk/empathy-account-chooser.c:687
 msgid "All accounts"
 msgstr "Все учётные записи"
 
-#: ../libempathy-gtk/empathy-avatar-image.c:320
+#: ../libempathy-gtk/empathy-avatar-image.c:353
 msgid "Click to enlarge"
 msgstr "Щёлкните для увеличения"
 
@@ -730,7 +730,7 @@ msgid "Authentication failed for account <b>%s</b>"
 msgstr "Сбой проверки подлинности учётной записи <b>%s</b>"
 
 #: ../libempathy-gtk/empathy-bad-password-dialog.c:140
-#: ../libempathy-gtk/empathy-chat.c:3840
+#: ../libempathy-gtk/empathy-chat.c:3853
 msgid "Retry"
 msgstr "Повторить"
 
@@ -755,7 +755,7 @@ msgid "There was an error starting the call"
 msgstr "Во время вызова произошла ошибка"
 
 #: ../libempathy-gtk/empathy-call-utils.c:44
-msgid "The specified contact doesn't support calls"
+msgid "The specified contact doesn’t support calls"
 msgstr "Указанный контакт не поддерживает звонки"
 
 #: ../libempathy-gtk/empathy-call-utils.c:46
@@ -771,7 +771,7 @@ msgid "Emergency calls are not supported on this protocol"
 msgstr "Срочные телефонные звонки не поддерживаются этим протоколом"
 
 #: ../libempathy-gtk/empathy-call-utils.c:52
-msgid "You don't have enough credit in order to place this call"
+msgid "You don’t have enough credit in order to place this call"
 msgstr "Недостаточно средств, чтобы сделать этот звонок"
 
 #: ../libempathy-gtk/empathy-chat.c:732
@@ -832,8 +832,8 @@ msgstr "/me <сообщение>: отправить сообщение о ДЕ�
 #: ../libempathy-gtk/empathy-chat.c:1083
 msgid ""
 "/say <message>: send <message> to the current conversation. This is used to "
-"send a message starting with a '/'. For example: \"/say /join is used to "
-"join a new chat room\""
+"send a message starting with a “/”. For example: “/say /join is used to join "
+"a new chat room”"
 msgstr ""
 "/say <сообщение>: отправить <сообщение> в текущей беседе. Используется для "
 "отправки сообщения, начинающегося с «/». Например: «/say /join используется "
@@ -871,7 +871,7 @@ msgstr "недостаточно средств для отправки сооб
 #: ../libempathy-gtk/empathy-chat.c:1540 ../libempathy-gtk/empathy-chat.c:1554
 #: ../libempathy-gtk/empathy-chat.c:1617
 #, c-format
-msgid "Error sending message '%s': %s"
+msgid "Error sending message “%s”: %s"
 msgstr "Ошибка при отправке сообщения «%s»: %s"
 
 #: ../libempathy-gtk/empathy-chat.c:1542 ../libempathy-gtk/empathy-chat.c:1559
@@ -916,7 +916,7 @@ msgstr "эта возможность не санкционирована"
 msgid "unknown"
 msgstr "неизвестно"
 
-#: ../libempathy-gtk/empathy-chat.c:1678 ../src/empathy-chat-window.c:973
+#: ../libempathy-gtk/empathy-chat.c:1678 ../src/empathy-chat-window.c:982
 msgid "Topic:"
 msgstr "Тема:"
 
@@ -942,14 +942,14 @@ msgstr "(Нет предположений)"
 #. translators: %s is the selected word
 #: ../libempathy-gtk/empathy-chat.c:2286
 #, c-format
-msgid "Add '%s' to Dictionary"
+msgid "Add “%s” to Dictionary"
 msgstr "Добавить «%s» в словарь"
 
 #. translators: first %s is the selected word,
 #. * second %s is the language name of the target dictionary
 #: ../libempathy-gtk/empathy-chat.c:2323
 #, c-format
-msgid "Add '%s' to %s Dictionary"
+msgid "Add “%s” to %s Dictionary"
 msgstr "Добавить «%s» в словарь «%s»"
 
 #: ../libempathy-gtk/empathy-chat.c:2393
@@ -967,11 +967,11 @@ msgstr "От_править"
 msgid "_Spelling Suggestions"
 msgstr "_Варианты правописания"
 
-#: ../libempathy-gtk/empathy-chat.c:2579
+#: ../libempathy-gtk/empathy-chat.c:2576
 msgid "Failed to retrieve recent logs"
 msgstr "Не удалось получить последние журналы"
 
-#: ../libempathy-gtk/empathy-chat.c:2822
+#: ../libempathy-gtk/empathy-chat.c:2819
 #, c-format
 msgid "%s has disconnected"
 msgstr "%s отключился"
@@ -979,12 +979,12 @@ msgstr "%s отключился"
 #. translators: reverse the order of these arguments
 #. * if the kicked should come before the kicker in your locale.
 #.
-#: ../libempathy-gtk/empathy-chat.c:2829
+#: ../libempathy-gtk/empathy-chat.c:2826
 #, c-format
 msgid "%1$s was kicked by %2$s"
 msgstr "%2$s выгнал %1$s"
 
-#: ../libempathy-gtk/empathy-chat.c:2832
+#: ../libempathy-gtk/empathy-chat.c:2829
 #, c-format
 msgid "%s was kicked"
 msgstr "%s выгнали"
@@ -992,17 +992,17 @@ msgstr "%s выгнали"
 #. translators: reverse the order of these arguments
 #. * if the banned should come before the banner in your locale.
 #.
-#: ../libempathy-gtk/empathy-chat.c:2840
+#: ../libempathy-gtk/empathy-chat.c:2837
 #, c-format
 msgid "%1$s was banned by %2$s"
 msgstr "%2$s забанил %1$s"
 
-#: ../libempathy-gtk/empathy-chat.c:2843
+#: ../libempathy-gtk/empathy-chat.c:2840
 #, c-format
 msgid "%s was banned"
 msgstr "%s забанили"
 
-#: ../libempathy-gtk/empathy-chat.c:2847
+#: ../libempathy-gtk/empathy-chat.c:2844
 #, c-format
 msgid "%s has left the room"
 msgstr "%s покинул беседу"
@@ -1012,17 +1012,17 @@ msgstr "%s покинул беседу"
 #. * given by the user living the room. If this poses a problem,
 #. * please let us know. :-)
 #.
-#: ../libempathy-gtk/empathy-chat.c:2856
+#: ../libempathy-gtk/empathy-chat.c:2853
 #, c-format
 msgid " (%s)"
 msgstr " (%s)"
 
-#: ../libempathy-gtk/empathy-chat.c:2881
+#: ../libempathy-gtk/empathy-chat.c:2878
 #, c-format
 msgid "%s has joined the room"
 msgstr "%s присоединился к беседе"
 
-#: ../libempathy-gtk/empathy-chat.c:2906
+#: ../libempathy-gtk/empathy-chat.c:2903
 #, c-format
 msgid "%s is now known as %s"
 msgstr "%s теперь известен как %s"
@@ -1030,50 +1030,50 @@ msgstr "%s теперь известен как %s"
 #. We don't know if the incoming call has been accepted or not, so we
 #. * assume it hasn't and if it has, we'll set the proper status when
 #. * we get the new handler.
-#: ../libempathy-gtk/empathy-chat.c:3093 ../src/empathy-call-window.c:1526
-#: ../src/empathy-call-window.c:1576 ../src/empathy-call-window.c:2655
-#: ../src/empathy-call-window.c:2954 ../src/empathy-event-manager.c:1141
+#: ../libempathy-gtk/empathy-chat.c:3090 ../src/empathy-call-window.c:1527
+#: ../src/empathy-call-window.c:1577 ../src/empathy-call-window.c:2673
+#: ../src/empathy-call-window.c:2972 ../src/empathy-event-manager.c:1141
 msgid "Disconnected"
 msgstr "Отсоединён"
 
 #. Add message
-#: ../libempathy-gtk/empathy-chat.c:3780
+#: ../libempathy-gtk/empathy-chat.c:3793
 msgid "Would you like to store this password?"
 msgstr "Хотите запомнить этот пароль?"
 
-#: ../libempathy-gtk/empathy-chat.c:3786
+#: ../libempathy-gtk/empathy-chat.c:3799
 msgid "Remember"
 msgstr "Запомнить"
 
-#: ../libempathy-gtk/empathy-chat.c:3796
+#: ../libempathy-gtk/empathy-chat.c:3809
 msgid "Not now"
 msgstr "Не сейчас"
 
-#: ../libempathy-gtk/empathy-chat.c:3844
+#: ../libempathy-gtk/empathy-chat.c:3857
 msgid "Wrong password; please try again:"
 msgstr "Неправильный пароль. Попробуйте снова:"
 
 #. Add message
-#: ../libempathy-gtk/empathy-chat.c:3968
+#: ../libempathy-gtk/empathy-chat.c:3981
 msgid "This room is protected by a password:"
 msgstr "Эта комната защищена паролем:"
 
-#: ../libempathy-gtk/empathy-chat.c:3995
+#: ../libempathy-gtk/empathy-chat.c:4008
 #: ../src/empathy-new-chatroom-dialog.c:787
 msgid "Join"
 msgstr "Войти"
 
-#: ../libempathy-gtk/empathy-chat.c:4187 ../src/empathy-event-manager.c:1162
+#: ../libempathy-gtk/empathy-chat.c:4200 ../src/empathy-event-manager.c:1162
 msgid "Connected"
 msgstr "Соединён"
 
-#: ../libempathy-gtk/empathy-chat.c:4242
+#: ../libempathy-gtk/empathy-chat.c:4252
 msgid "Conversation"
 msgstr "Беседа"
 
 #. Translators: this string is a something like
 #. * "Escher Cat (SMS)"
-#: ../libempathy-gtk/empathy-chat.c:4247
+#: ../libempathy-gtk/empathy-chat.c:4257
 #, c-format
 msgid "%s (SMS)"
 msgstr "%s (SMS)"
@@ -1122,6 +1122,10 @@ msgstr "Заблокированные собеседники"
 msgid "Remove"
 msgstr "Удалить"
 
+#: ../libempathy-gtk/empathy-contact-chooser.c:416
+msgid "Type to search a contact…"
+msgstr "Поиск контакта…"
+
 #. Title
 #: ../libempathy-gtk/empathy-contact-search-dialog.c:552
 msgid "Search contacts"
@@ -1148,7 +1152,7 @@ msgid "Your message introducing yourself:"
 msgstr "Ваше сообщение, несколько слов о себе:"
 
 #: ../libempathy-gtk/empathy-contact-search-dialog.c:674
-msgid "Please let me see when you're online. Thanks!"
+msgid "Please let me see when you’re online. Thanks!"
 msgstr "Разрешите мне видеть, когда вы находитесь в сети. Спасибо!"
 
 #: ../libempathy-gtk/empathy-contact-widget.c:158
@@ -1243,7 +1247,7 @@ msgstr "Заблокировать %s?"
 #: ../libempathy-gtk/empathy-individual-dialogs.c:239
 #: ../libempathy-gtk/empathy-subscription-dialog.c:125
 #, c-format
-msgid "Are you sure you want to block '%s' from contacting you again?"
+msgid "Are you sure you want to block “%s” from contacting you again?"
 msgstr "Уверены, что хотите заблокировать «%s»?"
 
 #: ../libempathy-gtk/empathy-individual-dialogs.c:244
@@ -1300,151 +1304,149 @@ msgstr ""
 msgid "%s (%s)"
 msgstr "%s (%s)"
 
-#: ../libempathy-gtk/empathy-individual-menu.c:363
+#: ../libempathy-gtk/empathy-individual-menu.c:342
 msgid "Select account to use to place the call"
 msgstr "Выберите учётную запись для вызова"
 
-#: ../libempathy-gtk/empathy-individual-menu.c:367
+#: ../libempathy-gtk/empathy-individual-menu.c:346
 #: ../libempathy-gtk/empathy-log-window.ui.h:6
 #: ../src/empathy-call-window.ui.h:20
 msgid "Call"
 msgstr "Вызов"
 
-#: ../libempathy-gtk/empathy-individual-menu.c:433
+#: ../libempathy-gtk/empathy-individual-menu.c:412
 msgid "Mobile"
 msgstr "Мобильный"
 
-#: ../libempathy-gtk/empathy-individual-menu.c:435
+#: ../libempathy-gtk/empathy-individual-menu.c:414
 msgid "Work"
 msgstr "Рабочий"
 
-#: ../libempathy-gtk/empathy-individual-menu.c:437
+#: ../libempathy-gtk/empathy-individual-menu.c:416
 msgid "HOME"
 msgstr "ДОМАШНИЙ"
 
 #. translators: first argument is a phone number like +32123456 and
 #. * the second one is something like 'home' or 'work'.
-#: ../libempathy-gtk/empathy-individual-menu.c:478
+#: ../libempathy-gtk/empathy-individual-menu.c:457
 #, c-format
 msgid "Call %s (%s)"
 msgstr "Вызов %s (%s)"
 
 #. translators: argument is a phone number like +32123456
-#: ../libempathy-gtk/empathy-individual-menu.c:483
+#: ../libempathy-gtk/empathy-individual-menu.c:462
 #, c-format
 msgid "Call %s"
 msgstr "Вызов %s"
 
-#: ../libempathy-gtk/empathy-individual-menu.c:695
+#: ../libempathy-gtk/empathy-individual-menu.c:674
 msgid "_Block Contact"
 msgstr "_Заблокировать собеседника"
 
-#: ../libempathy-gtk/empathy-individual-menu.c:750
+#: ../libempathy-gtk/empathy-individual-menu.c:729
 #, c-format
-msgid "Remove from _Group '%s'"
+msgid "Remove from _Group “%s”"
 msgstr "Удалить из _группы «%s»"
 
-#: ../libempathy-gtk/empathy-individual-menu.c:771
+#: ../libempathy-gtk/empathy-individual-menu.c:750
 msgid "Delete and _Block"
 msgstr "Удалить и _заблокировать"
 
-#: ../libempathy-gtk/empathy-individual-menu.c:859
+#: ../libempathy-gtk/empathy-individual-menu.c:838
 #, c-format
-msgid "Do you really want to remove the contact '%s'?"
+msgid "Do you really want to remove the contact “%s”?"
 msgstr "Действительно хотите удалить собеседника «%s»?"
 
-#: ../libempathy-gtk/empathy-individual-menu.c:868
+#: ../libempathy-gtk/empathy-individual-menu.c:847
 #, c-format
 msgid ""
-"Do you really want to remove the linked contact '%s'? Note that this will "
+"Do you really want to remove the linked contact “%s”? Note that this will "
 "remove all the contacts which make up this linked contact."
 msgstr ""
 "Действительно удалить связанный контакт «%s»? Это приведёт к удалению всех "
 "контактов, которые являются частью этого связанного контакта."
 
-#: ../libempathy-gtk/empathy-individual-menu.c:879
+#: ../libempathy-gtk/empathy-individual-menu.c:858
 msgid "Removing contact"
 msgstr "Удаление собеседника"
 
-#: ../libempathy-gtk/empathy-individual-menu.c:955
-#: ../libempathy-gtk/empathy-individual-view.c:2442
+#: ../libempathy-gtk/empathy-individual-menu.c:934
+#: ../libempathy-gtk/empathy-individual-view.c:2447
 msgid "_Remove"
 msgstr "_Удалить"
 
-#. add chat button
-#: ../libempathy-gtk/empathy-individual-menu.c:1374
-#: ../libempathy-gtk/empathy-new-message-dialog.c:308
+#: ../libempathy-gtk/empathy-individual-menu.c:1351
 msgid "_Chat"
 msgstr "_Разговор"
 
 #. add SMS button
-#: ../libempathy-gtk/empathy-individual-menu.c:1413
-#: ../libempathy-gtk/empathy-new-message-dialog.c:302
+#: ../libempathy-gtk/empathy-individual-menu.c:1418
+#: ../libempathy-gtk/empathy-new-message-dialog.c:300
 msgid "_SMS"
 msgstr "_SMS"
 
-#: ../libempathy-gtk/empathy-individual-menu.c:1449
+#: ../libempathy-gtk/empathy-individual-menu.c:1484
 msgctxt "menu item"
 msgid "_Audio Call"
 msgstr "_Аудиовызов"
 
-#: ../libempathy-gtk/empathy-individual-menu.c:1485
+#: ../libempathy-gtk/empathy-individual-menu.c:1550
 msgctxt "menu item"
 msgid "_Video Call"
 msgstr "_Видеовызов"
 
-#: ../libempathy-gtk/empathy-individual-menu.c:1527
+#: ../libempathy-gtk/empathy-individual-menu.c:1632
 #: ../src/empathy-roster-window-menubar.ui.h:11
 msgid "_Previous Conversations"
 msgstr "Предыдущие _беседы"
 
-#: ../libempathy-gtk/empathy-individual-menu.c:1559
+#: ../libempathy-gtk/empathy-individual-menu.c:1689
 msgid "Send File"
 msgstr "Отправить файл"
 
-#: ../libempathy-gtk/empathy-individual-menu.c:1593
+#: ../libempathy-gtk/empathy-individual-menu.c:1751
 msgid "Share My Desktop"
 msgstr "Предоставить доступ к моему рабочему столу"
 
-#: ../libempathy-gtk/empathy-individual-menu.c:1620
+#: ../libempathy-gtk/empathy-individual-menu.c:1809
 #: ../libempathy-gtk/empathy-individual-widget.c:1423
 msgid "Favorite"
 msgstr "Избранный"
 
-#: ../libempathy-gtk/empathy-individual-menu.c:1649
+#: ../libempathy-gtk/empathy-individual-menu.c:1838
 msgid "Infor_mation"
 msgstr "Информ_ация"
 
-#: ../libempathy-gtk/empathy-individual-menu.c:1698
+#: ../libempathy-gtk/empathy-individual-menu.c:1887
 msgctxt "Edit individual (contextual menu)"
 msgid "_Edit"
 msgstr "_Изменить"
 
 #. send invitation
-#: ../libempathy-gtk/empathy-individual-menu.c:1814
-#: ../src/empathy-chat-window.c:1274
+#: ../libempathy-gtk/empathy-individual-menu.c:2003
+#: ../src/empathy-chat-window.c:1283
 msgid "Inviting you to this room"
 msgstr "Приглашение в комнату"
 
-#: ../libempathy-gtk/empathy-individual-menu.c:1860
+#: ../libempathy-gtk/empathy-individual-menu.c:2049
 msgid "_Invite to Chat Room"
 msgstr "_Пригласить в комнату"
 
-#: ../libempathy-gtk/empathy-individual-menu.c:2056
+#: ../libempathy-gtk/empathy-individual-menu.c:2245
 #: ../src/empathy-roster-window.ui.h:4
 msgid "_Add Contact…"
 msgstr "_Добавить собеседника…"
 
-#: ../libempathy-gtk/empathy-individual-view.c:2362
+#: ../libempathy-gtk/empathy-individual-view.c:2367
 #, c-format
-msgid "Do you really want to remove the group '%s'?"
+msgid "Do you really want to remove the group “%s”?"
 msgstr "Действительно удалить группу «%s»?"
 
-#: ../libempathy-gtk/empathy-individual-view.c:2365
+#: ../libempathy-gtk/empathy-individual-view.c:2370
 msgid "Removing group"
 msgstr "Удаление группы"
 
-#: ../libempathy-gtk/empathy-individual-view.c:2433
+#: ../libempathy-gtk/empathy-individual-view.c:2438
 msgid "Re_name"
 msgstr "Пере_именовать"
 
@@ -1574,6 +1576,8 @@ msgstr "Псевдоним:"
 msgid "Identifier:"
 msgstr "Идентификатор:"
 
+#. Translators: the plurality applies to both instances of the word
+#. * "contact"
 #: ../libempathy-gtk/empathy-individual-widget.c:1707
 #, c-format
 msgid "Linked contact containing %u contact"
@@ -1600,11 +1604,11 @@ msgstr ""
 "вы. Если вы хотите использовать эту возможность, отметьте, что информация, "
 "представленная ниже является корректной."
 
-#: ../libempathy-gtk/empathy-local-xmpp-assistant-widget.c:102
+#: ../libempathy-gtk/empathy-local-xmpp-assistant-widget.c:103
 msgid "People nearby"
 msgstr "Люди поблизости"
 
-#: ../libempathy-gtk/empathy-local-xmpp-assistant-widget.c:117
+#: ../libempathy-gtk/empathy-local-xmpp-assistant-widget.c:118
 msgid ""
 "You can change these details later or disable this feature by choosing <span "
 "style=\"italic\">Edit → Accounts</span> in the Contact List."
@@ -1612,48 +1616,48 @@ msgstr ""
 "Вы можете отключить эту возможность или изменить информацию о себе, выбрав в "
 "списке собеседников <span style=\"italic\">Правка → Учётные записи</span>."
 
-#: ../libempathy-gtk/empathy-log-window.c:631
+#: ../libempathy-gtk/empathy-log-window.c:678
 msgid "History"
 msgstr "История"
 
-#: ../libempathy-gtk/empathy-log-window.c:686
+#: ../libempathy-gtk/empathy-log-window.c:728
 msgid "Show"
 msgstr "Показывать"
 
-#: ../libempathy-gtk/empathy-log-window.c:708
+#: ../libempathy-gtk/empathy-log-window.c:750
 msgid "Search"
 msgstr "Поиск"
 
-#: ../libempathy-gtk/empathy-log-window.c:1152
+#: ../libempathy-gtk/empathy-log-window.c:1180
 #, c-format
 msgid "Chat in %s"
 msgstr "Разговор в %s"
 
-#: ../libempathy-gtk/empathy-log-window.c:1154
+#: ../libempathy-gtk/empathy-log-window.c:1182
 #, c-format
 msgid "Chat with %s"
 msgstr "Разговор с %s"
 
-#: ../libempathy-gtk/empathy-log-window.c:1204
-#: ../libempathy-gtk/empathy-log-window.c:1348
+#: ../libempathy-gtk/empathy-log-window.c:1232
+#: ../libempathy-gtk/empathy-log-window.c:1376
 msgctxt "A date with the time"
 msgid "%A, %e %B %Y %X"
 msgstr "%A, %e %B %Y %X"
 
 #. Translators: this is an emote: '* Danielle waves'
-#: ../libempathy-gtk/empathy-log-window.c:1291
+#: ../libempathy-gtk/empathy-log-window.c:1319
 #, c-format
 msgid "<i>* %s %s</i>"
 msgstr "<i>* %s %s</i>"
 
 #. Translators: this is a message: 'Danielle: hello'
 #. * The string in bold is the sender's name
-#: ../libempathy-gtk/empathy-log-window.c:1297
+#: ../libempathy-gtk/empathy-log-window.c:1325
 #, c-format
 msgid "<b>%s:</b> %s"
 msgstr "<b>%s:</b> %s"
 
-#: ../libempathy-gtk/empathy-log-window.c:1372
+#: ../libempathy-gtk/empathy-log-window.c:1400
 #, c-format
 msgid "%s second"
 msgid_plural "%s seconds"
@@ -1661,7 +1665,7 @@ msgstr[0] "%s секунда"
 msgstr[1] "%s секунды"
 msgstr[2] "%s секунд"
 
-#: ../libempathy-gtk/empathy-log-window.c:1379
+#: ../libempathy-gtk/empathy-log-window.c:1407
 #, c-format
 msgid "%s minute"
 msgid_plural "%s minutes"
@@ -1669,80 +1673,80 @@ msgstr[0] "%s минута"
 msgstr[1] "%s минуты"
 msgstr[2] "%s минут"
 
-#: ../libempathy-gtk/empathy-log-window.c:1387
+#: ../libempathy-gtk/empathy-log-window.c:1415
 #, c-format
 msgid "Call took %s, ended at %s"
 msgstr "Вызов продолжался %s, закончился %s"
 
-#: ../libempathy-gtk/empathy-log-window.c:1718
+#: ../libempathy-gtk/empathy-log-window.c:1746
 msgid "Today"
 msgstr "Сегодня"
 
-#: ../libempathy-gtk/empathy-log-window.c:1722
+#: ../libempathy-gtk/empathy-log-window.c:1750
 msgid "Yesterday"
 msgstr "Вчера"
 
 #. Translators: A date such as '23 May 2010' (strftime format)
-#: ../libempathy-gtk/empathy-log-window.c:1737
+#: ../libempathy-gtk/empathy-log-window.c:1765
 msgid "%e %B %Y"
 msgstr "%e %B %Y"
 
-#: ../libempathy-gtk/empathy-log-window.c:1841
-#: ../libempathy-gtk/empathy-log-window.c:3464
+#: ../libempathy-gtk/empathy-log-window.c:1869
+#: ../libempathy-gtk/empathy-log-window.c:3500
 msgid "Anytime"
 msgstr "За всё время"
 
-#: ../libempathy-gtk/empathy-log-window.c:1940
-#: ../libempathy-gtk/empathy-log-window.c:2399
+#: ../libempathy-gtk/empathy-log-window.c:1968
+#: ../libempathy-gtk/empathy-log-window.c:2429
 msgid "Anyone"
 msgstr "Все"
 
-#: ../libempathy-gtk/empathy-log-window.c:2712
+#: ../libempathy-gtk/empathy-log-window.c:2748
 msgid "Who"
 msgstr "Кто"
 
-#: ../libempathy-gtk/empathy-log-window.c:2921
+#: ../libempathy-gtk/empathy-log-window.c:2957
 msgid "When"
 msgstr "Когда"
 
-#: ../libempathy-gtk/empathy-log-window.c:3039
+#: ../libempathy-gtk/empathy-log-window.c:3075
 msgid "Anything"
 msgstr "Всё"
 
-#: ../libempathy-gtk/empathy-log-window.c:3041
+#: ../libempathy-gtk/empathy-log-window.c:3077
 msgid "Text chats"
 msgstr "Текстовые чаты"
 
-#: ../libempathy-gtk/empathy-log-window.c:3042
+#: ../libempathy-gtk/empathy-log-window.c:3078
 #: ../src/empathy-preferences.ui.h:29
 msgid "Calls"
 msgstr "Вызовы"
 
-#: ../libempathy-gtk/empathy-log-window.c:3046
+#: ../libempathy-gtk/empathy-log-window.c:3082
 msgid "Incoming calls"
 msgstr "Входящие вызовы"
 
-#: ../libempathy-gtk/empathy-log-window.c:3047
+#: ../libempathy-gtk/empathy-log-window.c:3083
 msgid "Outgoing calls"
 msgstr "Исходящие вызовы"
 
-#: ../libempathy-gtk/empathy-log-window.c:3048
+#: ../libempathy-gtk/empathy-log-window.c:3084
 msgid "Missed calls"
 msgstr "Пропущенные вызовы"
 
-#: ../libempathy-gtk/empathy-log-window.c:3068
+#: ../libempathy-gtk/empathy-log-window.c:3104
 msgid "What"
 msgstr "Что"
 
-#: ../libempathy-gtk/empathy-log-window.c:3757
+#: ../libempathy-gtk/empathy-log-window.c:3793
 msgid "Are you sure you want to delete all logs of previous conversations?"
 msgstr "Действительно хотите удалить все журналы предыдущих бесед?"
 
-#: ../libempathy-gtk/empathy-log-window.c:3761
+#: ../libempathy-gtk/empathy-log-window.c:3797
 msgid "Clear All"
 msgstr "Очистить всё"
 
-#: ../libempathy-gtk/empathy-log-window.c:3768
+#: ../libempathy-gtk/empathy-log-window.c:3804
 msgid "Delete from:"
 msgstr "Удалить из:"
 
@@ -1764,7 +1768,7 @@ msgid "Profile"
 msgstr "Профиль"
 
 #: ../libempathy-gtk/empathy-log-window.ui.h:5
-#: ../src/empathy-chat-window.c:1490 ../src/empathy-preferences.ui.h:11
+#: ../src/empathy-preferences.ui.h:11
 msgid "Chat"
 msgstr "Разговор"
 
@@ -1790,7 +1794,6 @@ msgid "Add new account"
 msgstr "Создать новую учётную запись"
 
 #: ../libempathy-gtk/empathy-new-call-dialog.c:189
-#: ../libempathy-gtk/empathy-new-message-dialog.c:279
 msgid "Enter a contact identifier or phone number:"
 msgstr "Введите идентификатор собеседника или номер телефона:"
 
@@ -1842,7 +1845,7 @@ msgid "You must be invited to join this channel"
 msgstr "Чтобы присоединиться к данному каналу, необходимо приглашение"
 
 #: ../libempathy-gtk/empathy-new-message-dialog.c:92
-msgid "Can't proceed while disconnected"
+msgid "Can’t proceed while disconnected"
 msgstr "Продолжение невозможно, так как отсутствует подключение"
 
 #: ../libempathy-gtk/empathy-new-message-dialog.c:94
@@ -1853,8 +1856,14 @@ msgstr "Отказано в доступе"
 msgid "There was an error starting the conversation"
 msgstr "Во время вызова произошла ошибка"
 
+#. add chat button
+#: ../libempathy-gtk/empathy-new-message-dialog.c:307
+msgid "_Done"
+msgstr "_Готово"
+
 #. Tweak the dialog
-#: ../libempathy-gtk/empathy-new-message-dialog.c:322
+#: ../libempathy-gtk/empathy-new-message-dialog.c:323
+#: ../src/empathy-roster-window.c:2367
 msgid "New Conversation"
 msgstr "Новая беседа"
 
@@ -1902,11 +1911,11 @@ msgid "Set status"
 msgstr "Установить статус"
 
 #. Custom messages
-#: ../libempathy-gtk/empathy-presence-chooser.c:1095
+#: ../libempathy-gtk/empathy-presence-chooser.c:1098
 msgid "Custom messages…"
 msgstr "Мои сообщения…"
 
-#: ../libempathy-gtk/empathy-search-bar.c:239
+#: ../libempathy-gtk/empathy-search-bar.c:214
 msgid "_Match case"
 msgstr "_Учитывать регистр"
 
@@ -1993,12 +2002,12 @@ msgstr "_Отклонить"
 msgid "_Accept"
 msgstr "_Принять"
 
-#: ../libempathy-gtk/empathy-theme-adium.c:1218
+#: ../libempathy-gtk/empathy-theme-adium.c:1211
 #, c-format
 msgid "Message edited at %s"
 msgstr "Сообщение изменено %s"
 
-#: ../libempathy-gtk/empathy-theme-adium.c:1920
+#: ../libempathy-gtk/empathy-theme-adium.c:1870
 msgid "Normal"
 msgstr "Обычная"
 
@@ -2015,7 +2024,7 @@ msgid "The certificate has expired."
 msgstr "Сертификат устарел."
 
 #: ../libempathy-gtk/empathy-tls-dialog.c:161
-msgid "The certificate hasn't yet been activated."
+msgid "The certificate hasn’t yet been activated."
 msgstr "Сертификат ещё не активирован."
 
 #: ../libempathy-gtk/empathy-tls-dialog.c:164
@@ -2023,7 +2032,7 @@ msgid "The certificate does not have the expected fingerprint."
 msgstr "Сертификат не содержит ожидаемого отпечатка."
 
 #: ../libempathy-gtk/empathy-tls-dialog.c:167
-msgid "The hostname verified by the certificate doesn't match the server name."
+msgid "The hostname verified by the certificate doesn’t match the server name."
 msgstr "Имя узла, подтверждённое сертификатом, не совпадает с именем сервера."
 
 #: ../libempathy-gtk/empathy-tls-dialog.c:171
@@ -2103,21 +2112,6 @@ msgstr ""
 msgid "Incoming file from %s"
 msgstr "Входящий файл от %s"
 
-#. Copy Link Address menu item
-#: ../libempathy-gtk/empathy-webkit-utils.c:285
-msgid "_Copy Link Address"
-msgstr "_Копировать адрес ссылки"
-
-#. Open Link menu item
-#: ../libempathy-gtk/empathy-webkit-utils.c:292
-msgid "_Open Link"
-msgstr "_Открыть ссылку"
-
-#. Inspector
-#: ../libempathy-gtk/empathy-webkit-utils.c:306
-msgid "Inspect HTML"
-msgstr "Просмотреть HTML"
-
 #: ../libempathy-gtk/empathy-roster-model.h:27
 msgid "Top Contacts"
 msgstr "Основные собеседники"
@@ -2132,7 +2126,7 @@ msgstr "Без группы"
 
 #. Add a prefix explaining that something goes wrong when trying to
 #. * fetch contact's presence.
-#: ../libempathy-gtk/empathy-roster-contact.c:202
+#: ../libempathy-gtk/empathy-roster-contact.c:252
 #, c-format
 msgid "Server cannot find contact: %s"
 msgstr "Сервер не может найти контакт: %s"
@@ -2150,14 +2144,14 @@ msgstr ""
 "Валёк Филиппов"
 
 #: ../src/empathy-accounts.c:171
-msgid "Don't display any dialogs; do any work (eg, importing) and exit"
+msgid "Don’t display any dialogs; do any work (e.g. importing) and exit"
 msgstr ""
 "Не показывать диалоговые окна; выполнить работу (напр., импортирование) и "
 "выйти"
 
 #: ../src/empathy-accounts.c:175
 msgid ""
-"Don't display any dialogs unless there are only \"People Nearby\" accounts"
+"Don’t display any dialogs unless there are only “People Nearby” accounts"
 msgstr ""
 "Не показывать диалоговые окна до тех пор, пока используются только уч. "
 "записи «Люди поблизости»"
@@ -2173,10 +2167,10 @@ msgid "<account-id>"
 msgstr "<account-id>"
 
 #: ../src/empathy-accounts.c:186
-msgid "- Empathy Accounts"
+msgid "— Empathy Accounts"
 msgstr "— Учётные записи Empathy"
 
-#: ../src/empathy-accounts.c:239
+#: ../src/empathy-accounts.c:240
 msgid "Empathy Accounts"
 msgstr "Учётные записи Empathy"
 
@@ -2193,7 +2187,7 @@ msgstr "В учётной записи %.50s имеются несохранён
 msgid "Your new account has not been saved yet."
 msgstr "Ваша новая учётная запись ещё не была сохранена."
 
-#: ../src/empathy-accounts-dialog.c:387 ../src/empathy-call-window.c:1267
+#: ../src/empathy-accounts-dialog.c:387 ../src/empathy-call-window.c:1268
 msgid "Connecting…"
 msgstr "Подключение…"
 
@@ -2310,30 +2304,30 @@ msgid "No protocol backends installed"
 msgstr "Нет установленных драйверов протоколов"
 
 #: ../src/empathy-auth-client.c:285
-msgid " - Empathy authentication client"
+msgid " — Empathy authentication client"
 msgstr " — клиент аутентификации Empathy"
 
 #: ../src/empathy-auth-client.c:301
 msgid "Empathy authentication client"
 msgstr "Клиент аутентификации Empathy"
 
-#: ../src/empathy.c:407
-msgid "Don't connect on startup"
+#: ../src/empathy.c:402
+msgid "Don’t connect on startup"
 msgstr "Не подключаться при запуске"
 
-#: ../src/empathy.c:411
-msgid "Don't display the contact list or any other dialogs on startup"
+#: ../src/empathy.c:406
+msgid "Don’t display the contact list or any other dialogs on startup"
 msgstr "Не показывать список собеседников и диалоговые окна при запуске"
 
-#: ../src/empathy.c:440
-msgid "- Empathy IM Client"
+#: ../src/empathy.c:435
+msgid "— Empathy IM Client"
 msgstr " — клиент обмена мгновенными сообщениями Empathy"
 
-#: ../src/empathy.c:626
+#: ../src/empathy.c:621
 msgid "Error contacting the Account Manager"
 msgstr "Ошибка связи с диспетчером учётных записей"
 
-#: ../src/empathy.c:628
+#: ../src/empathy.c:623
 #, c-format
 msgid ""
 "There was an error while trying to connect to the Telepathy Account Manager. "
@@ -2351,7 +2345,7 @@ msgid "In a call"
 msgstr "Имеется активный вызов"
 
 #: ../src/empathy-call.c:223
-msgid "- Empathy Audio/Video Client"
+msgid "— Empathy Audio/Video Client"
 msgstr " — клиент Empathy для аудио и видео"
 
 #: ../src/empathy-call.c:247
@@ -2364,27 +2358,27 @@ msgid "%s just tried to call you, but you were in another call."
 msgstr ""
 "Собеседник %s попытался до вас дозвониться, но вы принимали другой вызов."
 
-#: ../src/empathy-call-window.c:1543 ../src/empathy-event-manager.c:474
+#: ../src/empathy-call-window.c:1544 ../src/empathy-event-manager.c:474
 msgid "Incoming call"
 msgstr "Входящий вызов"
 
-#: ../src/empathy-call-window.c:1549 ../src/empathy-event-manager.c:877
+#: ../src/empathy-call-window.c:1550 ../src/empathy-event-manager.c:877
 #, c-format
 msgid "Incoming video call from %s"
 msgstr "Входящий видеовызов от %s"
 
-#: ../src/empathy-call-window.c:1549 ../src/empathy-event-manager.c:482
+#: ../src/empathy-call-window.c:1550 ../src/empathy-event-manager.c:482
 #: ../src/empathy-event-manager.c:877
 #, c-format
 msgid "Incoming call from %s"
 msgstr "Входящий вызов от %s"
 
-#: ../src/empathy-call-window.c:1553
+#: ../src/empathy-call-window.c:1554
 #: ../src/empathy-notifications-approver.c:191
 msgid "Reject"
 msgstr "Отказать"
 
-#: ../src/empathy-call-window.c:1554
+#: ../src/empathy-call-window.c:1555
 #: ../src/empathy-notifications-approver.c:196
 #: ../src/empathy-notifications-approver.c:201
 msgid "Answer"
@@ -2392,141 +2386,141 @@ msgstr "Ответить"
 
 #. translators: Call is a noun and %s is the contact name. This string
 #. * is used in the window title
-#: ../src/empathy-call-window.c:1924
+#: ../src/empathy-call-window.c:1925
 #, c-format
 msgid "Call with %s"
 msgstr "Разговор с %s"
 
-#: ../src/empathy-call-window.c:2176
+#: ../src/empathy-call-window.c:2177
 msgid "The IP address as seen by the machine"
 msgstr "IP-адрес, определённый машиной"
 
-#: ../src/empathy-call-window.c:2178
+#: ../src/empathy-call-window.c:2179
 msgid "The IP address as seen by a server on the Internet"
 msgstr "IP-адрес, определённый сервером в Интернете"
 
-#: ../src/empathy-call-window.c:2180
+#: ../src/empathy-call-window.c:2181
 msgid "The IP address of the peer as seen by the other side"
 msgstr "IP-адрес точки, определённый с другой стороны"
 
-#: ../src/empathy-call-window.c:2182
+#: ../src/empathy-call-window.c:2183
 msgid "The IP address of a relay server"
 msgstr "IP-адрес ретранслирующего сервера"
 
-#: ../src/empathy-call-window.c:2184
+#: ../src/empathy-call-window.c:2185
 msgid "The IP address of the multicast group"
 msgstr "Широковещательный IP-адрес группы"
 
-#: ../src/empathy-call-window.c:2598 ../src/empathy-call-window.c:2599
-#: ../src/empathy-call-window.c:2600 ../src/empathy-call-window.c:2601
+#: ../src/empathy-call-window.c:2616 ../src/empathy-call-window.c:2617
+#: ../src/empathy-call-window.c:2618 ../src/empathy-call-window.c:2619
 #: ../src/empathy-call-window.ui.h:28
 msgid "Unknown"
 msgstr "Неизвестно"
 
-#: ../src/empathy-call-window.c:2952
+#: ../src/empathy-call-window.c:2970
 msgid "On hold"
 msgstr "Удержание"
 
-#: ../src/empathy-call-window.c:2956
+#: ../src/empathy-call-window.c:2974
 msgid "Mute"
 msgstr "Приглушить"
 
-#: ../src/empathy-call-window.c:2958
+#: ../src/empathy-call-window.c:2976
 msgid "Duration"
 msgstr "Длительность"
 
-#. Translators: 'status - minutes:seconds' the caller has been connected
-#: ../src/empathy-call-window.c:2961
+#. Translators: 'status — minutes∶seconds' the caller has been connected
+#: ../src/empathy-call-window.c:2979
 #, c-format
-msgid "%s — %d:%02dm"
+msgid "%s — %d∶%02dm"
 msgstr "%s — %d:%02dm"
 
-#: ../src/empathy-call-window.c:3057
+#: ../src/empathy-call-window.c:3075
 msgid "Technical Details"
 msgstr "Информация о собеседнике"
 
-#: ../src/empathy-call-window.c:3096
+#: ../src/empathy-call-window.c:3114
 #, c-format
 msgid ""
-"%s's software does not understand any of the audio formats supported by your "
+"%s’s software does not understand any of the audio formats supported by your "
 "computer"
 msgstr ""
 "Программное обеспечение %s не понимает аудиоформаты, поддерживаемые вашим "
 "компьютером"
 
-#: ../src/empathy-call-window.c:3101
+#: ../src/empathy-call-window.c:3119
 #, c-format
 msgid ""
-"%s's software does not understand any of the video formats supported by your "
+"%s’s software does not understand any of the video formats supported by your "
 "computer"
 msgstr ""
 "Программное обеспечение %s не понимает видеоформаты, поддерживаемые вашим "
 "компьютером"
 
-#: ../src/empathy-call-window.c:3107
+#: ../src/empathy-call-window.c:3125
 #, c-format
 msgid ""
-"Can't establish a connection to %s. One of you might be on a network that "
+"Can’t establish a connection to %s. One of you might be on a network that "
 "does not allow direct connections."
 msgstr ""
 "Не удалось установить соединение с %s. Кто-то из вас может находиться в "
 "сети, которая запрещает прямые соединения."
 
-#: ../src/empathy-call-window.c:3113
+#: ../src/empathy-call-window.c:3131
 msgid "There was a failure on the network"
 msgstr "Сбой сети"
 
-#: ../src/empathy-call-window.c:3117
+#: ../src/empathy-call-window.c:3135
 msgid ""
 "The audio formats necessary for this call are not installed on your computer"
 msgstr ""
 "Аудиоформаты, необходимые для этого вызова, не установлены на вашем "
 "компьютере"
 
-#: ../src/empathy-call-window.c:3120
+#: ../src/empathy-call-window.c:3138
 msgid ""
 "The video formats necessary for this call are not installed on your computer"
 msgstr ""
 "Видеоформаты, необходимые для этого вызова, не установлены на вашем "
 "компьютере"
 
-#: ../src/empathy-call-window.c:3132
+#: ../src/empathy-call-window.c:3150
 #, c-format
 msgid ""
 "Something unexpected happened in a Telepathy component. Please <a href=\"%s"
-"\">report this bug</a> and attach logs gathered from the 'Debug' window in "
+"\">report this bug</a> and attach logs gathered from the “Debug” window in "
 "the Help menu."
 msgstr ""
 "Что-то неожиданное случилось с компонентом Telepathy. <a href=\"%s"
 "\">Сообщите об этой ошибке</a> и прикрепите журналы, собранные из окна "
 "отладки в меню «Справка»."
 
-#: ../src/empathy-call-window.c:3141
+#: ../src/empathy-call-window.c:3159
 msgid "There was a failure in the call engine"
 msgstr "Сбой в движке вызова"
 
-#: ../src/empathy-call-window.c:3144
+#: ../src/empathy-call-window.c:3162
 msgid "The end of the stream was reached"
 msgstr "Достигнут конец потока"
 
-#: ../src/empathy-call-window.c:3184
-msgid "Can't establish audio stream"
+#: ../src/empathy-call-window.c:3202
+msgid "Can’t establish audio stream"
 msgstr "Не удалось установить аудиопоток"
 
-#: ../src/empathy-call-window.c:3194
-msgid "Can't establish video stream"
+#: ../src/empathy-call-window.c:3212
+msgid "Can’t establish video stream"
 msgstr "Не удалось установить видеопоток"
 
-#: ../src/empathy-call-window.c:3231
+#: ../src/empathy-call-window.c:3249
 #, c-format
 msgid "Your current balance is %s."
 msgstr "Текущий баланс: %s."
 
-#: ../src/empathy-call-window.c:3235
+#: ../src/empathy-call-window.c:3253
 msgid "Sorry, you don’t have enough credit for that call."
 msgstr "Недостаточно средств для совершения звонка."
 
-#: ../src/empathy-call-window.c:3237
+#: ../src/empathy-call-window.c:3255
 msgid "Top Up"
 msgstr "Пополнить"
 
@@ -2642,8 +2636,8 @@ msgstr "Локальный кандидат:"
 msgid "Audio"
 msgstr "Аудио"
 
-#: ../src/empathy-chat.c:100
-msgid "- Empathy Chat Client"
+#: ../src/empathy-chat.c:102
+msgid "— Empathy Chat Client"
 msgstr " — клиент обмена мгновенными сообщениями Empathy"
 
 #: ../src/empathy-chatrooms-window.c:244
@@ -2662,11 +2656,11 @@ msgstr "Автоматическое соединение"
 msgid "Manage Favorite Rooms"
 msgstr "Управление избранными комнатами"
 
-#: ../src/empathy-chat-window.c:278
+#: ../src/empathy-chat-window.c:279
 msgid "Close this window?"
 msgstr "Закрыть это окно?"
 
-#: ../src/empathy-chat-window.c:284
+#: ../src/empathy-chat-window.c:285
 #, c-format
 msgid ""
 "Closing this window will leave %s. You will not receive any further messages "
@@ -2675,7 +2669,10 @@ msgstr ""
 "Если вы закроете окно, то выйдете из комнаты %s. Вы не будете получать "
 "сообщения, пока не войдёте в комнату."
 
-#: ../src/empathy-chat-window.c:297
+#. Note to translators: the number of chats will
+#. * always be at least 2.
+#.
+#: ../src/empathy-chat-window.c:298
 #, c-format
 msgid ""
 "Closing this window will leave a chat room. You will not receive any further "
@@ -2693,12 +2690,12 @@ msgstr[2] ""
 "Если вы закроете окно, то выйдете из %u комнат. Вы не будете получать "
 "сообщения, пока не войдёте в комнаты."
 
-#: ../src/empathy-chat-window.c:308
+#: ../src/empathy-chat-window.c:309
 #, c-format
 msgid "Leave %s?"
 msgstr "Уйти из %s?"
 
-#: ../src/empathy-chat-window.c:310
+#: ../src/empathy-chat-window.c:311
 msgid ""
 "You will not receive any further messages from this chat room until you "
 "rejoin it."
@@ -2706,15 +2703,15 @@ msgstr ""
 "Вы не будете получать сообщения из этой комнаты, пока повторно не войдёте в "
 "комнату."
 
-#: ../src/empathy-chat-window.c:329
+#: ../src/empathy-chat-window.c:330
 msgid "Close window"
 msgstr "Закрыть окно"
 
-#: ../src/empathy-chat-window.c:329
+#: ../src/empathy-chat-window.c:330
 msgid "Leave room"
 msgstr "Уйти из комнаты"
 
-#: ../src/empathy-chat-window.c:671 ../src/empathy-chat-window.c:694
+#: ../src/empathy-chat-window.c:680 ../src/empathy-chat-window.c:703
 #, c-format
 msgid "%s (%d unread)"
 msgid_plural "%s (%d unread)"
@@ -2722,7 +2719,7 @@ msgstr[0] "%s (%d непрочитанное)"
 msgstr[1] "%s (%d непрочитанных)"
 msgstr[2] "%s (%d непрочитанных)"
 
-#: ../src/empathy-chat-window.c:686
+#: ../src/empathy-chat-window.c:695
 #, c-format
 msgid "%s (and %u other)"
 msgid_plural "%s (and %u others)"
@@ -2730,7 +2727,7 @@ msgstr[0] "%s (и ещё %u собеседник)"
 msgstr[1] "%s (и ещё %u собеседника)"
 msgstr[2] "%s (и ещё %u собеседников)"
 
-#: ../src/empathy-chat-window.c:702
+#: ../src/empathy-chat-window.c:711
 #, c-format
 msgid "%s (%d unread from others)"
 msgid_plural "%s (%d unread from others)"
@@ -2738,7 +2735,7 @@ msgstr[0] "%s (%d непрочитанное от других)"
 msgstr[1] "%s (%d непрочитанных от других)"
 msgstr[2] "%s (%d непрочитанных от других)"
 
-#: ../src/empathy-chat-window.c:711
+#: ../src/empathy-chat-window.c:720
 #, c-format
 msgid "%s (%d unread from all)"
 msgid_plural "%s (%d unread from all)"
@@ -2746,11 +2743,11 @@ msgstr[0] "%s (%d непрочитанное ото всех)"
 msgstr[1] "%s (%d непрочитанных ото всех)"
 msgstr[2] "%s (%d непрочитанных ото всех)"
 
-#: ../src/empathy-chat-window.c:948
+#: ../src/empathy-chat-window.c:957
 msgid "SMS:"
 msgstr "SMS:"
 
-#: ../src/empathy-chat-window.c:956
+#: ../src/empathy-chat-window.c:965
 #, c-format
 msgid "Sending %d message"
 msgid_plural "Sending %d messages"
@@ -2758,7 +2755,7 @@ msgstr[0] "Отправка %d сообщения"
 msgstr[1] "Отправка %d сообщений"
 msgstr[2] "Отправка %d сообщений"
 
-#: ../src/empathy-chat-window.c:976
+#: ../src/empathy-chat-window.c:985
 msgid "Typing a message."
 msgstr "Набирает сообщение."
 
@@ -2835,7 +2832,7 @@ msgid "Show a particular service"
 msgstr "Показать определённую службу"
 
 #: ../src/empathy-debugger.c:81
-msgid "- Empathy Debugger"
+msgid "— Empathy Debugger"
 msgstr "— Отладчик Empathy"
 
 #: ../src/empathy-debugger.c:141
@@ -2900,10 +2897,10 @@ msgstr "Ошибка"
 
 #: ../src/empathy-debug-window.c:1995
 msgid ""
-"Even if they don't display passwords, logs can contain sensitive information "
+"Even if they don’t display passwords, logs can contain sensitive information "
 "such as your list of contacts or the messages you recently sent or "
 "received.\n"
-"If you don't want to see such information available in a public bug report, "
+"If you don’t want to see such information available in a public bug report, "
 "you can choose to limit the visibility of your bug to Empathy developers "
 "when reporting it by displaying the advanced fields in the <a href=\"https://"
 "bugzilla.gnome.org/enter_bug.cgi?product=empathy\">bug report</a>."
@@ -2997,7 +2994,7 @@ msgstr "Вам предложили присоединиться к %s"
 msgid "Incoming file transfer from %s"
 msgstr "Входящий файл от %s"
 
-#: ../src/empathy-event-manager.c:948 ../src/empathy-roster-window.c:214
+#: ../src/empathy-event-manager.c:948 ../src/empathy-roster-window.c:220
 msgid "Password required"
 msgstr "Требуется пароль"
 
@@ -3013,7 +3010,7 @@ msgstr ""
 #. Translators: time left, when it is more than one hour
 #: ../src/empathy-ft-manager.c:94
 #, c-format
-msgid "%u:%02u.%02u"
+msgid "%u∶%02u.%02u"
 msgstr "%u:%02u.%02u"
 
 #. Translators: time left, when is is less than one hour
@@ -3027,6 +3024,8 @@ msgctxt "file transfer percent"
 msgid "Unknown"
 msgstr "Неизвестен"
 
+#. translators: first %s is the currently processed size, second %s is
+#. * the total file size
 #: ../src/empathy-ft-manager.c:268
 #, c-format
 msgid "%s of %s at %s/s"
@@ -3040,29 +3039,31 @@ msgstr "%s из %s"
 #. translators: first %s is filename, second %s is the contact name
 #: ../src/empathy-ft-manager.c:300
 #, c-format
-msgid "Receiving \"%s\" from %s"
+msgid "Receiving “%s” from %s"
 msgstr "Получение «%s» от %s"
 
 #. translators: first %s is filename, second %s is the contact name
 #: ../src/empathy-ft-manager.c:303
 #, c-format
-msgid "Sending \"%s\" to %s"
+msgid "Sending “%s” to %s"
 msgstr "Отправка «%s» %s"
 
 #. translators: first %s is filename, second %s
 #. * is the contact name
 #: ../src/empathy-ft-manager.c:333
 #, c-format
-msgid "Error receiving \"%s\" from %s"
+msgid "Error receiving “%s” from %s"
 msgstr "Ошибка получения «%s» от %s"
 
 #: ../src/empathy-ft-manager.c:336
 msgid "Error receiving a file"
 msgstr "Ошибка получения файла"
 
+#. translators: first %s is filename, second %s
+#. * is the contact name
 #: ../src/empathy-ft-manager.c:341
 #, c-format
-msgid "Error sending \"%s\" to %s"
+msgid "Error sending “%s” to %s"
 msgstr "Ошибка отправки «%s» %s"
 
 #: ../src/empathy-ft-manager.c:344
@@ -3073,14 +3074,14 @@ msgstr "Ошибка отправки файла"
 #. * is the contact name
 #: ../src/empathy-ft-manager.c:483
 #, c-format
-msgid "\"%s\" received from %s"
-msgstr "Получен «%s» от %s"
+msgid "“%s” received from %s"
+msgstr "«%s» получен от %s"
 
 #. translators: first %s is filename, second %s
 #. * is the contact name
 #: ../src/empathy-ft-manager.c:488
 #, c-format
-msgid "\"%s\" sent to %s"
+msgid "“%s” sent to %s"
 msgstr "«%s» отправлен %s"
 
 #: ../src/empathy-ft-manager.c:491
@@ -3088,17 +3089,17 @@ msgid "File transfer completed"
 msgstr "Передача файла завершена"
 
 #: ../src/empathy-ft-manager.c:610 ../src/empathy-ft-manager.c:774
-msgid "Waiting for the other participant's response"
+msgid "Waiting for the other participant’s response"
 msgstr "Ожидание ответа от других участников"
 
 #: ../src/empathy-ft-manager.c:636 ../src/empathy-ft-manager.c:674
 #, c-format
-msgid "Checking integrity of \"%s\""
+msgid "Checking integrity of “%s”"
 msgstr "Проверка целостности «%s»"
 
 #: ../src/empathy-ft-manager.c:639 ../src/empathy-ft-manager.c:677
 #, c-format
-msgid "Hashing \"%s\""
+msgid "Hashing “%s”"
 msgstr "Хэширование «%s»"
 
 #: ../src/empathy-ft-manager.c:1020
@@ -3176,6 +3177,8 @@ msgstr "Участники"
 msgid "Failed to list rooms"
 msgstr "Не удалось получить список комнат"
 
+#. Translators: Room/Join's roomlist tooltip. Parameters are a channel name,
+#. yes/no, yes/no and a number.
 #: ../src/empathy-new-chatroom-dialog.c:437
 #, c-format
 msgid ""
@@ -3225,17 +3228,17 @@ msgstr ""
 #: ../src/empathy-new-chatroom-dialog.ui.h:4
 msgid ""
 "Enter the server which hosts the room, or leave it empty if the room is on "
-"the current account's server"
+"the current account’s server"
 msgstr ""
-"Введите сервер комнаты, или оставьте пустым, если комната находится на "
-"сервере текущей учётной записи"
+"Введите сервер, на котором расположена комната, или оставьте пустым, если "
+"комната находится на сервере текущей учётной записи"
 
 #: ../src/empathy-new-chatroom-dialog.ui.h:5
 msgid "_Server:"
 msgstr "_Сервер:"
 
 #: ../src/empathy-new-chatroom-dialog.ui.h:7
-msgid "Couldn't load room list"
+msgid "Couldn’t load room list"
 msgstr "Не удалось загрузить список комнат"
 
 #: ../src/empathy-new-chatroom-dialog.ui.h:8
@@ -3300,46 +3303,46 @@ msgid "Language"
 msgstr "Язык"
 
 #. translators: Contact name for the chat theme preview
-#: ../src/empathy-preferences.c:620
+#: ../src/empathy-preferences.c:630
 msgid "Juliet"
 msgstr "Джульета"
 
 #. translators: Contact name for the chat theme preview
-#: ../src/empathy-preferences.c:627
+#: ../src/empathy-preferences.c:637
 msgid "Romeo"
 msgstr "Ромео"
 
 #. translators: Quote from Romeo & Julier, for chat theme preview
-#: ../src/empathy-preferences.c:633
+#: ../src/empathy-preferences.c:643
 msgid "O Romeo, Romeo, wherefore art thou Romeo?"
 msgstr "Ромео, о зачем же ты Ромео!"
 
 #. translators: Quote from Romeo & Julier, for chat theme preview
-#: ../src/empathy-preferences.c:637
+#: ../src/empathy-preferences.c:647
 msgid "Deny thy father and refuse thy name;"
 msgstr "Покинь отца и отрекись навеки"
 
 #. translators: Quote from Romeo & Julier, for chat theme preview
-#: ../src/empathy-preferences.c:640
+#: ../src/empathy-preferences.c:650
 msgid "Or if thou wilt not, be but sworn my love"
 msgstr "От имени родного, а не хочешь —"
 
 #. translators: Quote from Romeo & Julier, for chat theme preview
-#: ../src/empathy-preferences.c:643
-msgid "And I'll no longer be a Capulet."
+#: ../src/empathy-preferences.c:653
+msgid "And I’ll no longer be a Capulet."
 msgstr "Так поклянись, что любишь ты меня, —"
 
 #. translators: Quote from Romeo & Julier, for chat theme preview
-#: ../src/empathy-preferences.c:646
+#: ../src/empathy-preferences.c:656
 msgid "Shall I hear more, or shall I speak at this?"
 msgstr "И больше я не буду Капулетти."
 
 #. translators: Quote from Romeo & Julier, for chat theme preview
-#: ../src/empathy-preferences.c:649
+#: ../src/empathy-preferences.c:659
 msgid "Juliet has disconnected"
 msgstr "Джульета отключилась"
 
-#: ../src/empathy-preferences.c:1015
+#: ../src/empathy-preferences.c:1025
 msgid "Preferences"
 msgstr "Параметры"
 
@@ -3351,7 +3354,7 @@ msgstr "Показывать группы"
 msgid "Show account balances"
 msgstr "Показывать остаток на счёте"
 
-#: ../src/empathy-preferences.ui.h:4 ../src/empathy-roster-window.c:2302
+#: ../src/empathy-preferences.ui.h:4 ../src/empathy-roster-window.c:2330
 msgid "Contact List"
 msgstr "Список собеседников"
 
@@ -3502,95 +3505,98 @@ msgstr "Вариант:"
 msgid "Themes"
 msgstr "Темы"
 
-#: ../src/empathy-roster-window.c:231
+#: ../src/empathy-roster-window.c:237
 msgid "Provide Password"
 msgstr "Указать пароль"
 
-#: ../src/empathy-roster-window.c:237
+#: ../src/empathy-roster-window.c:243
 msgid "Disconnect"
 msgstr "Разъединить"
 
-#: ../src/empathy-roster-window.c:494
+#: ../src/empathy-roster-window.c:500
 msgid "You need to set up an account to see contacts here."
 msgstr "Чтобы увидеть контакты, необходимо настроить учётную запись."
 
-#: ../src/empathy-roster-window.c:570
+#: ../src/empathy-roster-window.c:576
 #, c-format
 msgid "Sorry, %s accounts can’t be used until your %s software is updated."
 msgstr ""
 "Учётные записи %s нельзя использовать до тех пор, пока не будет обновлено "
 "приложение %s."
 
-#: ../src/empathy-roster-window.c:671
+#: ../src/empathy-roster-window.c:677
 msgid "Windows Live"
 msgstr "Windows Live"
 
-#: ../src/empathy-roster-window.c:673
+#: ../src/empathy-roster-window.c:679
 msgid "Google Talk"
 msgstr "Google Talk"
 
-#: ../src/empathy-roster-window.c:675
+#: ../src/empathy-roster-window.c:681
 msgid "Facebook"
 msgstr "Facebook"
 
 #. translators: %s is an account name like 'Facebook' or 'Google Talk'
-#: ../src/empathy-roster-window.c:690
+#: ../src/empathy-roster-window.c:696
 #, c-format
 msgid "%s account requires authorisation"
 msgstr "Учётная запись %s требует авторизации"
 
-#: ../src/empathy-roster-window.c:701
+#: ../src/empathy-roster-window.c:707
 msgid "Online Accounts"
 msgstr "Сетевые учётные записи"
 
-#: ../src/empathy-roster-window.c:748
+#: ../src/empathy-roster-window.c:754
 msgid "Update software…"
 msgstr "Обновить приложение…"
 
-#: ../src/empathy-roster-window.c:754
+#: ../src/empathy-roster-window.c:760
 msgid "Reconnect"
 msgstr "Переподключиться"
 
-#: ../src/empathy-roster-window.c:758
+#: ../src/empathy-roster-window.c:764
 msgid "Edit Account"
 msgstr "Правка учётной записи"
 
-#: ../src/empathy-roster-window.c:763
+#: ../src/empathy-roster-window.c:769
 msgid "Close"
 msgstr "Закрыть"
 
-#: ../src/empathy-roster-window.c:905
+#: ../src/empathy-roster-window.c:911
 msgid "Top up account"
 msgstr "Пополнить счёт"
 
-#: ../src/empathy-roster-window.c:1627
+#: ../src/empathy-roster-window.c:1653
 msgid "You need to enable one of your accounts to see contacts here."
 msgstr ""
 "Чтобы увидеть собеседников, необходимо включить одну из ваших учётных "
 "записей."
 
 #. translators: argument is an account name
-#: ../src/empathy-roster-window.c:1635
+#: ../src/empathy-roster-window.c:1661
 #, c-format
 msgid "You need to enable %s to see contacts here."
 msgstr "Чтобы увидеть собеседников, необходимо включить учётную запись %s."
 
-#: ../src/empathy-roster-window.c:1713
+#: ../src/empathy-roster-window.c:1739
 msgid "Change your presence to see contacts here"
 msgstr "Измените своё присутствие, что увидеть здесь контакты"
 
-#: ../src/empathy-roster-window.c:1722
+#: ../src/empathy-roster-window.c:1748
 msgid "No match found"
 msgstr "Нет совпадений"
 
-#: ../src/empathy-roster-window.c:1729
-#| msgid "You haven't added any contact yet"
-msgid "You haven't added any contacts yet"
-msgstr "Вы пока не добавили ни одного контакта"
+#: ../src/empathy-roster-window.c:1755
+msgid "You haven’t added any contacts yet"
+msgstr "Вы не добавили ни одного контакта"
 
-#: ../src/empathy-roster-window.c:1732
+#: ../src/empathy-roster-window.c:1758
 msgid "No online contacts"
 msgstr "Нет собеседников в сети"
+
+#: ../src/empathy-roster-window.c:2359
+msgid "Conversations"
+msgstr "Беседы"
 
 #: ../src/empathy-roster-window-menubar.ui.h:1
 #: ../src/empathy-status-icon.ui.h:2
@@ -3692,44 +3698,3 @@ msgstr "Изменить параметры учётной записи %s"
 #: ../ubuntu-online-accounts/empathy.application.in.h:1
 msgid "Integrate your IM accounts"
 msgstr "Интегрируйте учётные записи систем обмена мгновенными сообщениями"
-
-#~ msgid "No error message"
-#~ msgstr "Сообщение об ошибке отсутствует"
-
-#~ msgid "Instant Message (Empathy)"
-#~ msgstr "Мгновенное сообщение (Empathy)"
-
-#~ msgid ""
-#~ "Empathy is free software; you can redistribute it and/or modify it under "
-#~ "the terms of the GNU General Public License as published by the Free "
-#~ "Software Foundation; either version 2 of the License, or (at your option) "
-#~ "any later version."
-#~ msgstr ""
-#~ "Empathy — свободная программа, вы можете распространять и/или "
-#~ "модифицировать её на условиях, указанных в GNU General Public License "
-#~ "опубликованой Free Software Foundation; либо в версии 2 или (по вашему "
-#~ "выбору) любой более поздней версии."
-
-#~ msgid ""
-#~ "Empathy is distributed in the hope that it will be useful, but WITHOUT "
-#~ "ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
-#~ "FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
-#~ "more details."
-#~ msgstr ""
-#~ "Программа Empathy распространяется в расчёте на то, что будет полезной, "
-#~ "однако БЕЗ КАКИХ ЛИБО ГАРАНТИЙ в том числе подразумеваемых гарантий "
-#~ "ПОЛЕЗНОСТИ или ПРИГОДНОСТИ ДЛЯ КАКИХ_ЛИБО ЦЕЛЕЙ. Смотрите GNU General "
-#~ "Public License."
-
-#~ msgid ""
-#~ "You should have received a copy of the GNU General Public License along "
-#~ "with Empathy; if not, write to the Free Software Foundation, Inc., 51 "
-#~ "Franklin Street, Fifth Floor, Boston, MA 02110-130159 USA"
-#~ msgstr ""
-#~ "Вы должны были получить копию GNU General Public License вместе с "
-#~ "программой Empathy. Если этого не произошло, напишите в Фонд Свободного "
-#~ "Программного Обеспечения: Free Software Foundation, Inc., 51 Franklin "
-#~ "Street, Fifth Floor, Boston, MA 02110-130159 USA"
-
-#~ msgid "About Empathy"
-#~ msgstr "Об Empathy"
