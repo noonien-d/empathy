@@ -98,6 +98,8 @@ verification_output_to_reason (gint res,
         *reason = TP_TLS_CERTIFICATE_REJECT_REASON_NOT_ACTIVATED;
       else if (verify_output & GNUTLS_CERT_EXPIRED)
         *reason = TP_TLS_CERTIFICATE_REJECT_REASON_EXPIRED;
+      else if (verify_output & GNUTLS_CERT_REVOKED)
+        *reason = TP_TLS_CERTIFICATE_REJECT_REASON_REVOKED;
       else
         *reason = TP_TLS_CERTIFICATE_REJECT_REASON_UNKNOWN;
 
