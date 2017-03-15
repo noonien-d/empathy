@@ -270,6 +270,7 @@ mock_tls_certificate_new_and_register (TpDBusDaemon *dbus,
 
 typedef struct {
   GMainLoop *loop;
+  GTlsDatabase *database;
   TpDBusDaemon *dbus;
   const gchar *dbus_name;
   MockTLSCertificate *mock;
@@ -283,8 +284,17 @@ setup (Test *test, gconstpointer data)
   GError *error = NULL;
   GckModule *module;
   const gchar *trust_uris[2] = { MOCK_SLOT_ONE_URI, NULL };
+  gchar *path = NULL;
 
   test->loop = g_main_loop_new (NULL, FALSE);
+
+  path = g_build_filename (g_getenv ("EMPATHY_SRCDIR"),
+      "tests",
+      "certificates",
+      "certificate-authority.pem",
+      NULL);
+  test->database = g_tls_file_database_new (path, &error);
+  g_assert_no_error (error);
 
   test->dbus = tp_dbus_daemon_dup (&error);
   g_assert_no_error (error);
@@ -301,6 +311,8 @@ setup (Test *test, gconstpointer data)
   gcr_pkcs11_set_modules (NULL);
   gcr_pkcs11_add_module (module);
   gcr_pkcs11_set_trust_lookup_uris (trust_uris);
+
+  g_free (path);
 }
 
 static void
@@ -324,6 +336,8 @@ teardown (Test *test, gconstpointer data)
   if (test->cert)
     g_object_unref (test->cert);
   test->cert = NULL;
+
+  g_clear_object (&test->database);
 
   g_main_loop_unref (test->loop);
   test->loop = NULL;
@@ -418,6 +432,8 @@ test_certificate_mock_basics (Test *test,
   g_assert (test->mock->state == TP_TLS_CERTIFICATE_STATE_ACCEPTED);
 }
 
+#if 0
+
 static void
 test_certificate_verify_success_with_pkcs11_lookup (Test *test,
         gconstpointer data G_GNUC_UNUSED)
@@ -459,6 +475,8 @@ test_certificate_verify_success_with_pkcs11_lookup (Test *test,
   g_object_unref (verifier);
 }
 
+#endif
+
 static void
 test_certificate_verify_success_with_full_chain (Test *test,
         gconstpointer data G_GNUC_UNUSED)
@@ -486,6 +504,7 @@ test_certificate_verify_success_with_full_chain (Test *test,
 
   verifier = empathy_tls_verifier_new (test->cert, "test-server.empathy.gnome.org",
       reference_identities);
+  empathy_tls_verifier_set_database (verifier, test->database);
   empathy_tls_verifier_verify_async (verifier, fetch_callback_result, test);
   g_main_loop_run (test->loop);
   empathy_tls_verifier_verify_finish (verifier, test->result, &reason,
@@ -525,9 +544,9 @@ test_certificate_verify_root_not_found (Test *test,
   empathy_tls_verifier_verify_finish (verifier, test->result, &reason,
       NULL, &error);
 
-  /* And it should say we're self-signed (oddly enough) */
+  /* And it should say we're untrusted */
   g_assert_error (error, G_IO_ERROR,
-      TP_TLS_CERTIFICATE_REJECT_REASON_SELF_SIGNED);
+      TP_TLS_CERTIFICATE_REJECT_REASON_UNTRUSTED);
 
   g_clear_error (&error);
   g_object_unref (verifier);
@@ -560,9 +579,9 @@ test_certificate_verify_root_not_anchored (Test *test,
   empathy_tls_verifier_verify_finish (verifier, test->result, &reason,
       NULL, &error);
 
-  /* And it should say we're self-signed (oddly enough) */
+  /* And it should say we're untrusted */
   g_assert_error (error, G_IO_ERROR,
-      TP_TLS_CERTIFICATE_REJECT_REASON_SELF_SIGNED);
+      TP_TLS_CERTIFICATE_REJECT_REASON_UNTRUSTED);
 
   g_clear_error (&error);
   g_object_unref (verifier);
@@ -590,6 +609,7 @@ test_certificate_verify_identities_invalid (Test *test,
 
   verifier = empathy_tls_verifier_new (test->cert, "invalid.host.name",
       reference_identities);
+  empathy_tls_verifier_set_database (verifier, test->database);
   empathy_tls_verifier_verify_async (verifier, fetch_callback_result, test);
   g_main_loop_run (test->loop);
 
@@ -627,6 +647,7 @@ test_certificate_verify_uses_reference_identities (Test *test,
   /* Should be using the reference_identities and not host name for checks */
   verifier = empathy_tls_verifier_new (test->cert, "test-server.empathy.gnome.org",
       reference_identities);
+  empathy_tls_verifier_set_database (verifier, test->database);
   empathy_tls_verifier_verify_async (verifier, fetch_callback_result, test);
   g_main_loop_run (test->loop);
 
@@ -708,9 +729,9 @@ test_certificate_verify_pinned_wrong_host (Test *test,
   empathy_tls_verifier_verify_finish (verifier, test->result, &reason,
       NULL, &error);
 
-  /* And it should say we're self-signed */
+  /* And it should say we're untrusted */
   g_assert_error (error, G_IO_ERROR,
-      TP_TLS_CERTIFICATE_REJECT_REASON_SELF_SIGNED);
+      TP_TLS_CERTIFICATE_REJECT_REASON_UNTRUSTED);
 
   g_clear_error (&error);
   g_object_unref (verifier);
@@ -727,8 +748,10 @@ main (int argc,
 
   g_test_add ("/tls/certificate_basics", Test, NULL,
           setup, test_certificate_mock_basics, teardown);
+#if 0
   g_test_add ("/tls/certificate_verify_success_with_pkcs11_lookup", Test, NULL,
           setup, test_certificate_verify_success_with_pkcs11_lookup, teardown);
+#endif
   g_test_add ("/tls/certificate_verify_success_with_full_chain", Test, NULL,
           setup, test_certificate_verify_success_with_full_chain, teardown);
   g_test_add ("/tls/certificate_verify_root_not_found", Test, NULL,

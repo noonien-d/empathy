@@ -1,7 +1,9 @@
 /*
  * empathy-tls-verifier.c - Source for EmpathyTLSVerifier
  * Copyright (C) 2010 Collabora Ltd.
+ * Copyright (C) 2017 Red Hat, Inc.
  * @author Cosimo Cecchi <cosimo.cecchi@collabora.co.uk>
+ * @author Debarshi Ray <debarshir@gnome.org>
  * @author Stef Walter <stefw@collabora.co.uk>
  *
  * This library is free software; you can redistribute it and/or
@@ -43,6 +45,8 @@ enum {
 };
 
 typedef struct {
+  GTlsCertificate *g_certificate;
+  GTlsDatabase *database;
   TpTLSCertificate *certificate;
   gchar *hostname;
   gchar **reference_identities;
@@ -53,135 +57,86 @@ typedef struct {
   gboolean dispose_run;
 } EmpathyTLSVerifierPriv;
 
-static gboolean
-verification_output_to_reason (gint res,
-    guint verify_output,
-    TpTLSCertificateRejectReason *reason)
+static GTlsCertificate *
+tls_certificate_new_from_der (GPtrArray *data, GError **error)
 {
-  gboolean retval = TRUE;
+  GTlsBackend *tls_backend;
+  GTlsCertificate *cert = NULL;
+  GTlsCertificate *issuer = NULL;
+  GTlsCertificate *retval = NULL;
+  GType tls_certificate_type;
+  gint i;
 
-  g_assert (reason != NULL);
+  g_return_val_if_fail (error == NULL || *error == NULL, NULL);
 
-  if (res != GNUTLS_E_SUCCESS)
+  tls_backend = g_tls_backend_get_default ();
+  tls_certificate_type = g_tls_backend_get_certificate_type (tls_backend);
+
+  for (i = (gint) data->len - 1; i >= 0; --i)
     {
-      retval = FALSE;
+      GArray *cert_data;
 
-      /* the certificate is not structurally valid */
-      switch (res)
-        {
-        case GNUTLS_E_INSUFFICIENT_CREDENTIALS:
-          *reason = TP_TLS_CERTIFICATE_REJECT_REASON_UNTRUSTED;
-          break;
-        case GNUTLS_E_CONSTRAINT_ERROR:
-          *reason = TP_TLS_CERTIFICATE_REJECT_REASON_LIMIT_EXCEEDED;
-          break;
-        default:
-          *reason = TP_TLS_CERTIFICATE_REJECT_REASON_UNKNOWN;
-          break;
-        }
+      cert_data = g_ptr_array_index (data, i);
+      cert = g_initable_new (tls_certificate_type,
+          NULL,
+          error,
+          "certificate", (GByteArray *) cert_data,
+          "issuer", issuer,
+          NULL);
 
-      goto out;
+      if (cert == NULL)
+        goto out;
+
+      g_clear_object (&issuer);
+      issuer = g_object_ref (cert);
+      g_clear_object (&cert);
     }
 
-  /* the certificate is structurally valid, check for other errors. */
-  if (verify_output & GNUTLS_CERT_INVALID)
-    {
-      retval = FALSE;
+  g_assert_null (cert);
+  g_assert_true (G_IS_TLS_CERTIFICATE (issuer));
 
-      if (verify_output & GNUTLS_CERT_SIGNER_NOT_FOUND)
-        *reason = TP_TLS_CERTIFICATE_REJECT_REASON_SELF_SIGNED;
-      else if (verify_output & GNUTLS_CERT_SIGNER_NOT_CA)
-        *reason = TP_TLS_CERTIFICATE_REJECT_REASON_UNTRUSTED;
-      else if (verify_output & GNUTLS_CERT_INSECURE_ALGORITHM)
-        *reason = TP_TLS_CERTIFICATE_REJECT_REASON_INSECURE;
-      else if (verify_output & GNUTLS_CERT_NOT_ACTIVATED)
-        *reason = TP_TLS_CERTIFICATE_REJECT_REASON_NOT_ACTIVATED;
-      else if (verify_output & GNUTLS_CERT_EXPIRED)
-        *reason = TP_TLS_CERTIFICATE_REJECT_REASON_EXPIRED;
-      else if (verify_output & GNUTLS_CERT_REVOKED)
-        *reason = TP_TLS_CERTIFICATE_REJECT_REASON_REVOKED;
-      else
-        *reason = TP_TLS_CERTIFICATE_REJECT_REASON_UNKNOWN;
-
-      goto out;
-    }
+  retval = g_object_ref (issuer);
 
  out:
+  g_clear_object (&cert);
+  g_clear_object (&issuer);
   return retval;
 }
 
-static void
-build_certificate_list_for_gnutls (GcrCertificateChain *chain,
-        gnutls_x509_crt_t **list,
-        guint *n_list,
-        gnutls_x509_crt_t **anchors,
-        guint *n_anchors)
+static TpTLSCertificateRejectReason
+verification_output_to_reason (GTlsCertificateFlags flags)
 {
-  GcrCertificate *cert;
-  guint idx, length;
-  gnutls_x509_crt_t *retval;
-  gnutls_x509_crt_t gcert;
-  gnutls_datum_t datum;
-  gsize n_data;
+  TpTLSCertificateRejectReason retval;
 
-  g_assert (list);
-  g_assert (n_list);
-  g_assert (anchors);
-  g_assert (n_anchors);
+  g_assert (flags != 0);
 
-  *list = *anchors = NULL;
-  *n_list = *n_anchors = 0;
-
-  length = gcr_certificate_chain_get_length (chain);
-  retval = g_malloc0 (sizeof (gnutls_x509_crt_t) * length);
-
-  /* Convert the main body of the chain to gnutls */
-  for (idx = 0; idx < length; ++idx)
+  switch (flags)
     {
-      cert = gcr_certificate_chain_get_certificate (chain, idx);
-      datum.data = (gpointer)gcr_certificate_get_der_data (cert, &n_data);
-      datum.size = n_data;
-
-      gnutls_x509_crt_init (&gcert);
-      if (gnutls_x509_crt_import (gcert, &datum, GNUTLS_X509_FMT_DER) < 0)
-        g_return_if_reached ();
-
-      retval[idx] = gcert;
+      case G_TLS_CERTIFICATE_UNKNOWN_CA:
+        retval = TP_TLS_CERTIFICATE_REJECT_REASON_UNTRUSTED;
+        break;
+      case G_TLS_CERTIFICATE_BAD_IDENTITY:
+        retval = TP_TLS_CERTIFICATE_REJECT_REASON_HOSTNAME_MISMATCH;
+        break;
+      case G_TLS_CERTIFICATE_NOT_ACTIVATED:
+        retval = TP_TLS_CERTIFICATE_REJECT_REASON_NOT_ACTIVATED;
+        break;
+      case G_TLS_CERTIFICATE_EXPIRED:
+        retval = TP_TLS_CERTIFICATE_REJECT_REASON_EXPIRED;
+        break;
+      case G_TLS_CERTIFICATE_REVOKED:
+        retval = TP_TLS_CERTIFICATE_REJECT_REASON_REVOKED;
+        break;
+      case G_TLS_CERTIFICATE_INSECURE:
+        retval = TP_TLS_CERTIFICATE_REJECT_REASON_INSECURE;
+        break;
+      case G_TLS_CERTIFICATE_GENERIC_ERROR:
+      default:
+        retval = TP_TLS_CERTIFICATE_REJECT_REASON_UNKNOWN;
+        break;
     }
 
-  *list = retval;
-  *n_list = length;
-
-  /* See if we have an anchor */
-  if (gcr_certificate_chain_get_status (chain) ==
-          GCR_CERTIFICATE_CHAIN_ANCHORED)
-    {
-      cert = gcr_certificate_chain_get_anchor (chain);
-      g_return_if_fail (cert);
-
-      datum.data = (gpointer)gcr_certificate_get_der_data (cert, &n_data);
-      datum.size = n_data;
-
-      gnutls_x509_crt_init (&gcert);
-      if (gnutls_x509_crt_import (gcert, &datum, GNUTLS_X509_FMT_DER) < 0)
-        g_return_if_reached ();
-
-      retval = g_malloc0 (sizeof (gnutls_x509_crt_t) * 1);
-      retval[0] = gcert;
-      *anchors = retval;
-      *n_anchors = 1;
-    }
-}
-
-static void
-free_certificate_list_for_gnutls (gnutls_x509_crt_t *list,
-        guint n_list)
-{
-  guint idx;
-
-  for (idx = 0; idx < n_list; idx++)
-    gnutls_x509_crt_deinit (list[idx]);
-  g_free (list);
+  return retval;
 }
 
 static void
@@ -193,6 +148,7 @@ complete_verification (EmpathyTLSVerifier *self)
 
   g_simple_async_result_complete_in_idle (priv->verify_result);
 
+  g_clear_object (&priv->g_certificate);
   tp_clear_object (&priv->verify_result);
 }
 
@@ -209,6 +165,7 @@ abort_verification (EmpathyTLSVerifier *self,
       reason);
   g_simple_async_result_complete_in_idle (priv->verify_result);
 
+  g_clear_object (&priv->g_certificate);
   tp_clear_object (&priv->verify_result);
 }
 
@@ -221,142 +178,137 @@ debug_certificate (GcrCertificate *cert)
 }
 
 static void
-debug_certificate_chain (GcrCertificateChain *chain)
-{
-    GEnumClass *enum_class;
-    GEnumValue *enum_value;
-    gint idx, length;
-    GcrCertificate *cert;
-
-    enum_class = G_ENUM_CLASS
-            (g_type_class_peek (GCR_TYPE_CERTIFICATE_CHAIN_STATUS));
-    enum_value = g_enum_get_value (enum_class,
-            gcr_certificate_chain_get_status (chain));
-    length = gcr_certificate_chain_get_length (chain);
-    DEBUG ("Certificate chain: length %u status %s",
-            length, enum_value ? enum_value->value_nick : "XXX");
-
-    for (idx = 0; idx < length; ++idx)
-      {
-        cert = gcr_certificate_chain_get_certificate (chain, idx);
-        debug_certificate (cert);
-      }
-}
-
-static void
-perform_verification (EmpathyTLSVerifier *self,
-        GcrCertificateChain *chain)
-{
-  gboolean ret = FALSE;
-  TpTLSCertificateRejectReason reason =
-    TP_TLS_CERTIFICATE_REJECT_REASON_UNKNOWN;
-  gnutls_x509_crt_t *list, *anchors;
-  guint n_list, n_anchors;
-  guint verify_output;
-  gint res;
-  gint i;
-  gboolean matched = FALSE;
-  EmpathyTLSVerifierPriv *priv = GET_PRIV (self);
-
-  DEBUG ("Performing verification");
-  debug_certificate_chain (chain);
-
-  list = anchors = NULL;
-  n_list = n_anchors = 0;
-
-  /*
-   * If the first certificate is an pinned certificate then we completely
-   * ignore the rest of the verification process.
-   */
-  if (gcr_certificate_chain_get_status (chain) == GCR_CERTIFICATE_CHAIN_PINNED)
-    {
-      DEBUG ("Found pinned certificate for %s", priv->hostname);
-      complete_verification (self);
-      goto out;
-  }
-
-  build_certificate_list_for_gnutls (chain, &list, &n_list,
-          &anchors, &n_anchors);
-  if (list == NULL || n_list == 0) {
-      g_warn_if_reached ();
-      abort_verification (self, TP_TLS_CERTIFICATE_REJECT_REASON_UNKNOWN);
-      goto out;
-  }
-
-  verify_output = 0;
-  res = gnutls_x509_crt_list_verify (list, n_list, anchors, n_anchors,
-           NULL, 0, 0, &verify_output);
-  ret = verification_output_to_reason (res, verify_output, &reason);
-
-  DEBUG ("Certificate verification gave result %d with reason %u", ret,
-          reason);
-
-  if (!ret) {
-      abort_verification (self, reason);
-      goto out;
-  }
-
-  /* now check if the certificate matches one of the reference identities. */
-  if (priv->reference_identities != NULL)
-    {
-      for (i = 0, matched = FALSE; priv->reference_identities[i] != NULL; ++i)
-        {
-          if (gnutls_x509_crt_check_hostname (list[0],
-                  priv->reference_identities[i]) == 1)
-            {
-              matched = TRUE;
-              break;
-            }
-        }
-    }
-
-  if (!matched)
-    {
-      gchar *certified_hostname;
-
-      certified_hostname = empathy_get_x509_certificate_hostname (list[0]);
-      tp_asv_set_string (priv->details,
-          "expected-hostname", priv->hostname);
-      tp_asv_set_string (priv->details,
-          "certificate-hostname", certified_hostname);
-
-      DEBUG ("Hostname mismatch: got %s but expected %s",
-          certified_hostname, priv->hostname);
-
-      g_free (certified_hostname);
-      abort_verification (self,
-              TP_TLS_CERTIFICATE_REJECT_REASON_HOSTNAME_MISMATCH);
-      goto out;
-    }
-
-  DEBUG ("Hostname matched");
-  complete_verification (self);
-
- out:
-  free_certificate_list_for_gnutls (list, n_list);
-  free_certificate_list_for_gnutls (anchors, n_anchors);
-}
-
-static void
-perform_verification_cb (GObject *object,
+verify_chain_cb (GObject *object,
         GAsyncResult *res,
         gpointer user_data)
 {
   GError *error = NULL;
 
-  GcrCertificateChain *chain = GCR_CERTIFICATE_CHAIN (object);
+  GTlsCertificateFlags flags;
+  GTlsDatabase *tls_database = G_TLS_DATABASE (object);
+  gint i;
   EmpathyTLSVerifier *self = EMPATHY_TLS_VERIFIER (user_data);
+  EmpathyTLSVerifierPriv *priv = GET_PRIV (self);
 
-  /* Even if building the chain fails, try verifying what we have */
-  if (!gcr_certificate_chain_build_finish (chain, res, &error))
+  /* FIXME: g_tls_database_verify_chain doesn't set the GError if the
+   * certificate chain couldn't be verified. See:
+   * https://bugzilla.gnome.org/show_bug.cgi?id=780310
+   */
+  flags = g_tls_database_verify_chain_finish (tls_database, res, &error);
+  if (flags != 0)
     {
-      DEBUG ("Building of certificate chain failed: %s", error->message);
+      TpTLSCertificateRejectReason reason;
+
+      /* We don't pass the identity to g_tls_database_verify. */
+      g_assert_false (flags & G_TLS_CERTIFICATE_BAD_IDENTITY);
+
+      reason = verification_output_to_reason (flags);
+      DEBUG ("Certificate verification gave flags %d with reason %u",
+          (gint) flags,
+          reason);
+
+      abort_verification (self, reason);
+      g_clear_error (&error);
+      goto out;
+    }
+
+  for (i = 0; priv->reference_identities[i] != NULL; i++)
+    {
+      GSocketConnectable *identity = NULL;
+
+      identity = g_network_address_new (priv->reference_identities[i], 0);
+      flags = g_tls_certificate_verify (priv->g_certificate, identity, NULL);
+
+      g_object_unref (identity);
+      if (flags == 0)
+        break;
+    }
+
+  if (flags != 0)
+    {
+      TpTLSCertificateRejectReason reason;
+
+      g_assert_cmpint (flags, ==, G_TLS_CERTIFICATE_BAD_IDENTITY);
+
+      reason = verification_output_to_reason (flags);
+      DEBUG ("Certificate verification gave flags %d with reason %u",
+          (gint) flags,
+          reason);
+
+      /* FIXME: We don't set "certificate-hostname" because
+       * GTlsCertificate doesn't expose the hostname used in the
+       * certificate. We will temporarily lose some verbosity in
+       * EmpathyTLSDialog, but that's balanced by no longer
+       * relying on a specific encryption library.
+       */
+      tp_asv_set_string (priv->details, "expected-hostname", priv->hostname);
+
+      DEBUG ("Hostname mismatch: expected %s", priv->hostname);
+
+      abort_verification (self, reason);
+      goto out;
+    }
+
+  DEBUG ("Verified certificate chain");
+  complete_verification (self);
+
+out:
+  /* Matches ref when starting verify chain */
+  g_object_unref (self);
+}
+
+static void
+is_certificate_pinned_cb (GObject *object,
+    GAsyncResult *res,
+    gpointer user_data)
+{
+  GError *error = NULL;
+  GPtrArray *cert_data;
+  EmpathyTLSVerifier *self = EMPATHY_TLS_VERIFIER (user_data);
+  EmpathyTLSVerifierPriv *priv = GET_PRIV (self);
+
+  if (gcr_trust_is_certificate_pinned_finish (res, &error))
+    {
+      DEBUG ("Found pinned certificate for %s", priv->hostname);
+      complete_verification (self);
+      goto out;
+    }
+
+  /* error is set only when there is an actual failure. It won't be
+   * set, if it successfully determined that the ceritificate was not
+   * pinned. */
+  if (error != NULL)
+    {
+      DEBUG ("Failed to determine if certificate is pinned: %s",
+          error->message);
       g_clear_error (&error);
     }
 
-  perform_verification (self, chain);
+  cert_data = tp_tls_certificate_get_cert_data (priv->certificate);
+  priv->g_certificate = tls_certificate_new_from_der (cert_data, &error);
+  if (error != NULL)
+    {
+      DEBUG ("Verification of certificate chain failed: %s", error->message);
 
-  /* Matches ref when staring chain build */
+      abort_verification (self, TP_TLS_CERTIFICATE_REJECT_REASON_UNKNOWN);
+      g_clear_error (&error);
+      goto out;
+    }
+
+  DEBUG ("Performing verification");
+
+  g_tls_database_verify_chain_async (priv->database,
+      priv->g_certificate,
+      G_TLS_DATABASE_PURPOSE_AUTHENTICATE_SERVER,
+      NULL,
+      NULL,
+      G_TLS_DATABASE_VERIFY_NONE,
+      NULL,
+      verify_chain_cb,
+      g_object_ref (self));
+
+out:
+  /* Matches ref when starting is certificate pinned */
   g_object_unref (self);
 }
 
@@ -420,6 +372,8 @@ empathy_tls_verifier_dispose (GObject *object)
 
   priv->dispose_run = TRUE;
 
+  g_clear_object (&priv->g_certificate);
+  g_clear_object (&priv->database);
   tp_clear_object (&priv->certificate);
 
   G_OBJECT_CLASS (empathy_tls_verifier_parent_class)->dispose (object);
@@ -443,10 +397,14 @@ static void
 empathy_tls_verifier_init (EmpathyTLSVerifier *self)
 {
   EmpathyTLSVerifierPriv *priv;
+  GTlsBackend *tls_backend;
 
   priv = self->priv = G_TYPE_INSTANCE_GET_PRIVATE (self,
       EMPATHY_TYPE_TLS_VERIFIER, EmpathyTLSVerifierPriv);
   priv->details = tp_asv_new (NULL, NULL);
+
+  tls_backend = g_tls_backend_get_default ();
+  priv->database = g_tls_backend_get_default_database (tls_backend);
 }
 
 static void
@@ -503,16 +461,15 @@ empathy_tls_verifier_verify_async (EmpathyTLSVerifier *self,
     GAsyncReadyCallback callback,
     gpointer user_data)
 {
-  GcrCertificateChain *chain;
   GcrCertificate *cert;
   GPtrArray *cert_data;
   GArray *data;
-  guint idx;
   EmpathyTLSVerifierPriv *priv = GET_PRIV (self);
 
   DEBUG ("Starting verification");
 
   g_return_if_fail (priv->verify_result == NULL);
+  g_return_if_fail (priv->g_certificate == NULL);
 
   cert_data = tp_tls_certificate_get_cert_data (priv->certificate);
   g_return_if_fail (cert_data);
@@ -520,19 +477,22 @@ empathy_tls_verifier_verify_async (EmpathyTLSVerifier *self,
   priv->verify_result = g_simple_async_result_new (G_OBJECT (self),
       callback, user_data, NULL);
 
-  /* Create a certificate chain */
-  chain = gcr_certificate_chain_new ();
-  for (idx = 0; idx < cert_data->len; ++idx) {
-    data = g_ptr_array_index (cert_data, idx);
-    cert = gcr_simple_certificate_new ((guchar *) data->data, data->len);
-    gcr_certificate_chain_add (chain, cert);
-    g_object_unref (cert);
-  }
+  /* The first certificate in the chain is for the host */
+  data = g_ptr_array_index (cert_data, 0);
+  cert = gcr_simple_certificate_new ((gpointer) data->data,
+      (gsize) data->len);
 
-  gcr_certificate_chain_build_async (chain, GCR_PURPOSE_SERVER_AUTH, priv->hostname, 0,
-          NULL, perform_verification_cb, g_object_ref (self));
+  DEBUG ("Checking if certificate is pinned:");
+  debug_certificate (cert);
 
-  g_object_unref (chain);
+  gcr_trust_is_certificate_pinned_async (cert,
+      GCR_PURPOSE_SERVER_AUTH,
+      priv->hostname,
+      NULL,
+      is_certificate_pinned_cb,
+      g_object_ref (self));
+
+  g_object_unref (cert);
 }
 
 gboolean
@@ -565,6 +525,21 @@ empathy_tls_verifier_verify_finish (EmpathyTLSVerifier *self,
     *reason = TP_TLS_CERTIFICATE_REJECT_REASON_UNKNOWN;
 
   return TRUE;
+}
+
+void empathy_tls_verifier_set_database (EmpathyTLSVerifier *self,
+    GTlsDatabase *database)
+{
+  EmpathyTLSVerifierPriv *priv = GET_PRIV (self);
+
+  g_return_if_fail (EMPATHY_IS_TLS_VERIFIER (self));
+  g_return_if_fail (G_IS_TLS_DATABASE (database));
+
+  if (database == priv->database)
+    return;
+
+  g_clear_object (&priv->database);
+  priv->database = g_object_ref (database);
 }
 
 void

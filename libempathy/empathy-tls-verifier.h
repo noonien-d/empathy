@@ -72,6 +72,9 @@ gboolean empathy_tls_verifier_verify_finish (EmpathyTLSVerifier *self,
     GHashTable **details,
     GError **error);
 
+void empathy_tls_verifier_set_database (EmpathyTLSVerifier *self,
+    GTlsDatabase *database);
+
 void empathy_tls_verifier_store_exception (EmpathyTLSVerifier *self);
 
 G_END_DECLS
