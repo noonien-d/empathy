@@ -20,10 +20,6 @@
  * Authors: Richard Hult <richard@imendio.com>
  *          Martyn Russell <martyn@imendio.com>
  *          Xavier Claessens <xclaesse@gmail.com>
- *
- * Some snippets are taken from GnuTLS 2.8.6, which is distributed under the
- * same GNU Lesser General Public License 2.1 (or later) version. See
- * empathy_get_x509_certified_hostname ().
  */
 
 #include "config.h"
@@ -646,37 +642,6 @@ empathy_folks_persona_is_interesting (FolksPersona *persona)
     }
 
   return TRUE;
-}
-
-gchar *
-empathy_get_x509_certificate_hostname (gnutls_x509_crt_t cert)
-{
-  gchar dns_name[256];
-  gsize dns_name_size;
-  gint idx;
-  gint res = 0;
-
-  /* this snippet is taken from GnuTLS.
-   * see gnutls/lib/x509/rfc2818_hostname.c
-   */
-  for (idx = 0; res >= 0; idx++)
-    {
-      dns_name_size = sizeof (dns_name);
-      res = gnutls_x509_crt_get_subject_alt_name (cert, idx,
-          dns_name, &dns_name_size, NULL);
-
-      if (res == GNUTLS_SAN_DNSNAME || res == GNUTLS_SAN_IPADDRESS)
-        return g_strndup (dns_name, dns_name_size);
-    }
-
-  dns_name_size = sizeof (dns_name);
-  res = gnutls_x509_crt_get_dn_by_oid (cert, GNUTLS_OID_X520_COMMON_NAME,
-      0, 0, dns_name, &dns_name_size);
-
-  if (res >= 0)
-    return g_strndup (dns_name, dns_name_size);
-
-  return NULL;
 }
 
 gchar *

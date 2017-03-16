@@ -27,7 +27,6 @@
 
 #include <glib.h>
 #include <glib-object.h>
-#include <gnutls/x509.h>
 #include <libxml/tree.h>
 #include <folks/folks.h>
 #include <folks/folks-telepathy.h>
@@ -84,8 +83,6 @@ gboolean empathy_connection_can_alias_personas (TpConnection *connection,
 gboolean empathy_connection_can_group_personas (TpConnection *connection,
 						FolksIndividual *individual);
 gboolean empathy_folks_persona_is_interesting (FolksPersona *persona);
-
-gchar * empathy_get_x509_certificate_hostname (gnutls_x509_crt_t cert);
 
 gchar *empathy_format_currency (gint amount,
     guint scale,

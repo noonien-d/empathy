@@ -1,6 +1,5 @@
 #include "config.h"
 
-#include <gnutls/gnutls.h>
 #include <telepathy-glib/telepathy-glib.h>
 #include <telepathy-glib/telepathy-glib-dbus.h>
 
@@ -744,7 +743,6 @@ main (int argc,
   int result;
 
   test_init (argc, argv);
-  gnutls_global_init ();
 
   g_test_add ("/tls/certificate_basics", Test, NULL,
           setup, test_certificate_mock_basics, teardown);

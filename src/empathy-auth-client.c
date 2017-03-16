@@ -22,7 +22,6 @@
 #include "config.h"
 
 #include <glib/gi18n.h>
-#include <gnutls/gnutls.h>
 
 #include "empathy-auth-factory.h"
 #include "empathy-bad-password-dialog.h"
@@ -297,7 +296,6 @@ main (int argc,
   g_option_context_free (context);
 
   empathy_gtk_init ();
-  gnutls_global_init ();
   g_set_application_name (_("Empathy authentication client"));
 
   /* Make empathy and empathy-auth-client appear as the same app in

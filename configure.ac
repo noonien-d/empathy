@@ -35,7 +35,6 @@ AC_COPYRIGHT([
 
 # Hardp deps
 FOLKS_REQUIRED=0.9.5
-GNUTLS_REQUIRED=2.8.5
 
 GLIB_REQUIRED=2.48.0
 AC_DEFINE(GLIB_VERSION_MIN_REQUIRED, GLIB_VERSION_2_48, [Ignore post 2.48 deprecations])
@@ -220,7 +219,6 @@ PKG_CHECK_MODULES(EMPATHY,
    gio-2.0 >= $GLIB_REQUIRED
    gio-unix-2.0 >= $GLIB_REQUIRED
    libsecret-1 >= $LIBSECRET_REQUIRED
-   gnutls >= $GNUTLS_REQUIRED
    gmodule-export-2.0
    gobject-2.0
    gsettings-desktop-schemas
