@@ -19,5 +19,4 @@ rebuild-certs:
 		-CA certificate-authority.pem -CAkey certificate-authority.key \
 		-set_serial 888 -out server-cert.cer -outform DER
 	rm certificate-authority.key
-	rm certificate-authority.pem
 	rm server-cert.req
