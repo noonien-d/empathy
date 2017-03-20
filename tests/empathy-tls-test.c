@@ -695,7 +695,8 @@ test_certificate_verify_pinned_wrong_host (Test *test,
   test->mock = mock_tls_certificate_new_and_register (test->dbus,
           "server-cert.cer", NULL);
 
-  /* Note that we're not adding any place to find root certs */
+  /* We add the collabora directory with the collabora root */
+  add_certificate_to_mock (test, "server-cert.cer", "test-server.empathy.gnome.org");
 
   ensure_certificate_proxy (test);
 
