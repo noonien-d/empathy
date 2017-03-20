@@ -654,8 +654,8 @@ test_certificate_verify_success_with_pinned (Test *test,
   };
 
   /*
-   * In this test the mock TLS connection has a full certificate
-   * chain. We look for an anchor certificate in the chain.
+   * In this test the mock TLS connection has a certificate that has
+   * been pinned for the test-server.empathy.gnome.org peer.
    */
 
   test->mock = mock_tls_certificate_new_and_register (test->dbus,
