@@ -13,8 +13,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: empathy\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-01-30 02:49+0100\n"
-"PO-Revision-Date: 2017-01-30 02:50+0100\n"
+"POT-Creation-Date: 2017-03-27 21:00+0200\n"
+"PO-Revision-Date: 2017-03-27 21:01+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <community-poland@mozilla.org>\n"
 "Language: pl\n"
@@ -529,7 +529,7 @@ msgstr "Błąd podczas próby przesłania pliku"
 msgid "The other participant is unable to transfer the file"
 msgstr "Druga strona nie może odebrać pliku"
 
-#: ../libempathy/empathy-ft-handler.c:748 ../libempathy/empathy-utils.c:260
+#: ../libempathy/empathy-ft-handler.c:748 ../libempathy/empathy-utils.c:256
 msgid "Unknown reason"
 msgstr "Nieznany powód"
 
@@ -565,140 +565,140 @@ msgstr "Rozmowa głosowa z użytkownikiem %s"
 msgid "Call from %s"
 msgstr "Rozmowa głosowa od użytkownika %s"
 
-#: ../libempathy/empathy-utils.c:180
+#: ../libempathy/empathy-utils.c:176
 msgid "Available"
 msgstr "Dostępny"
 
-#: ../libempathy/empathy-utils.c:182
+#: ../libempathy/empathy-utils.c:178
 msgid "Busy"
 msgstr "Zajęty"
 
-#: ../libempathy/empathy-utils.c:185
+#: ../libempathy/empathy-utils.c:181
 msgid "Away"
 msgstr "Nieobecny"
 
-#: ../libempathy/empathy-utils.c:187
+#: ../libempathy/empathy-utils.c:183
 msgid "Invisible"
 msgstr "Niewidoczny"
 
-#: ../libempathy/empathy-utils.c:189
+#: ../libempathy/empathy-utils.c:185
 msgid "Offline"
 msgstr "Offline"
 
 #. translators: presence type is unknown
-#: ../libempathy/empathy-utils.c:192
+#: ../libempathy/empathy-utils.c:188
 msgctxt "presence"
 msgid "Unknown"
 msgstr "Nieznany"
 
-#: ../libempathy/empathy-utils.c:232
+#: ../libempathy/empathy-utils.c:228
 msgid "No reason specified"
 msgstr "Nie podano powodu"
 
-#: ../libempathy/empathy-utils.c:234 ../libempathy/empathy-utils.c:290
+#: ../libempathy/empathy-utils.c:230 ../libempathy/empathy-utils.c:286
 msgid "Status is set to offline"
 msgstr "Stan został zmieniony na offline"
 
-#: ../libempathy/empathy-utils.c:236 ../libempathy/empathy-utils.c:270
+#: ../libempathy/empathy-utils.c:232 ../libempathy/empathy-utils.c:266
 #: ../libempathy-gtk/empathy-call-utils.c:42
 #: ../libempathy-gtk/empathy-new-message-dialog.c:70
 msgid "Network error"
 msgstr "Błąd sieci"
 
-#: ../libempathy/empathy-utils.c:238 ../libempathy/empathy-utils.c:272
+#: ../libempathy/empathy-utils.c:234 ../libempathy/empathy-utils.c:268
 msgid "Authentication failed"
 msgstr "Uwierzytelnienie się nie powiodło"
 
-#: ../libempathy/empathy-utils.c:240 ../libempathy/empathy-utils.c:274
+#: ../libempathy/empathy-utils.c:236 ../libempathy/empathy-utils.c:270
 msgid "Encryption error"
 msgstr "Błąd szyfrowania"
 
-#: ../libempathy/empathy-utils.c:242
+#: ../libempathy/empathy-utils.c:238
 msgid "Name in use"
 msgstr "Pseudonim jest już używany"
 
-#: ../libempathy/empathy-utils.c:244 ../libempathy/empathy-utils.c:276
+#: ../libempathy/empathy-utils.c:240 ../libempathy/empathy-utils.c:272
 msgid "Certificate not provided"
 msgstr "Nie dostarczono certyfikatu"
 
-#: ../libempathy/empathy-utils.c:246 ../libempathy/empathy-utils.c:278
+#: ../libempathy/empathy-utils.c:242 ../libempathy/empathy-utils.c:274
 msgid "Certificate untrusted"
 msgstr "Niezaufany certyfikat"
 
-#: ../libempathy/empathy-utils.c:248 ../libempathy/empathy-utils.c:280
+#: ../libempathy/empathy-utils.c:244 ../libempathy/empathy-utils.c:276
 msgid "Certificate expired"
 msgstr "Certyfikat wygasł"
 
-#: ../libempathy/empathy-utils.c:250 ../libempathy/empathy-utils.c:282
+#: ../libempathy/empathy-utils.c:246 ../libempathy/empathy-utils.c:278
 msgid "Certificate not activated"
 msgstr "Certyfikat nieaktywny"
 
-#: ../libempathy/empathy-utils.c:252 ../libempathy/empathy-utils.c:284
+#: ../libempathy/empathy-utils.c:248 ../libempathy/empathy-utils.c:280
 msgid "Certificate hostname mismatch"
 msgstr "Nazwa komputera w certyfikacie się nie zgadza"
 
-#: ../libempathy/empathy-utils.c:254 ../libempathy/empathy-utils.c:286
+#: ../libempathy/empathy-utils.c:250 ../libempathy/empathy-utils.c:282
 msgid "Certificate fingerprint mismatch"
 msgstr "Odcisk palca certyfikatu się nie zgadza"
 
-#: ../libempathy/empathy-utils.c:256 ../libempathy/empathy-utils.c:288
+#: ../libempathy/empathy-utils.c:252 ../libempathy/empathy-utils.c:284
 msgid "Certificate self-signed"
 msgstr "Certyfikat został samodzielnie podpisany"
 
-#: ../libempathy/empathy-utils.c:258
+#: ../libempathy/empathy-utils.c:254
 msgid "Certificate error"
 msgstr "Błąd certyfikatu"
 
-#: ../libempathy/empathy-utils.c:292
+#: ../libempathy/empathy-utils.c:288
 msgid "Encryption is not available"
 msgstr "Szyfrowanie nie jest dostępne"
 
-#: ../libempathy/empathy-utils.c:294
+#: ../libempathy/empathy-utils.c:290
 msgid "Certificate is invalid"
 msgstr "Certyfikat jest nieprawidłowy"
 
-#: ../libempathy/empathy-utils.c:296
+#: ../libempathy/empathy-utils.c:292
 msgid "Connection has been refused"
 msgstr "Połączenie zostało odrzucone"
 
-#: ../libempathy/empathy-utils.c:298
+#: ../libempathy/empathy-utils.c:294
 msgid "Connection can’t be established"
 msgstr "Nie można ustanowić połączenia"
 
-#: ../libempathy/empathy-utils.c:300
+#: ../libempathy/empathy-utils.c:296
 msgid "Connection has been lost"
 msgstr "Połączenie zostało utracone"
 
-#: ../libempathy/empathy-utils.c:302
+#: ../libempathy/empathy-utils.c:298
 msgid "This account is already connected to the server"
 msgstr "To konto jest już połączone z serwerem"
 
-#: ../libempathy/empathy-utils.c:304
+#: ../libempathy/empathy-utils.c:300
 msgid ""
 "Connection has been replaced by a new connection using the same resource"
 msgstr ""
 "Połączenie zostało zastąpione nowym połączeniem używając tego samego zasobu"
 
-#: ../libempathy/empathy-utils.c:307
+#: ../libempathy/empathy-utils.c:303
 msgid "The account already exists on the server"
 msgstr "Konto już istnieje na serwerze"
 
-#: ../libempathy/empathy-utils.c:309
+#: ../libempathy/empathy-utils.c:305
 msgid "Server is currently too busy to handle the connection"
 msgstr "Serwer jest obecnie zbyt zajęty, aby obsłużyć połączenie"
 
-#: ../libempathy/empathy-utils.c:311
+#: ../libempathy/empathy-utils.c:307
 msgid "Certificate has been revoked"
 msgstr "Certyfikat został unieważniony"
 
-#: ../libempathy/empathy-utils.c:313
+#: ../libempathy/empathy-utils.c:309
 msgid ""
 "Certificate uses an insecure cipher algorithm or is cryptographically weak"
 msgstr ""
 "Certyfikat używa niebezpiecznego algorytmu szyfrowania lub jest "
 "kryptograficznie słaby"
 
-#: ../libempathy/empathy-utils.c:316
+#: ../libempathy/empathy-utils.c:312
 msgid ""
 "The length of the server certificate, or the depth of the server certificate "
 "chain, exceed the limits imposed by the cryptography library"
@@ -706,11 +706,11 @@ msgstr ""
 "Długość certyfikatu serwera lub głębokość łańcucha certyfikatu serwera "
 "przekracza ograniczenie wymuszane przez bibliotekę kryptograficzną"
 
-#: ../libempathy/empathy-utils.c:320
+#: ../libempathy/empathy-utils.c:316
 msgid "Your software is too old"
 msgstr "Oprogramowanie jest za stare"
 
-#: ../libempathy/empathy-utils.c:322
+#: ../libempathy/empathy-utils.c:318
 msgid "Internal error"
 msgstr "Wewnętrzny błąd"
 
@@ -1293,8 +1293,8 @@ msgstr "Program gnome-contacts nie jest zainstalowany"
 #: ../libempathy-gtk/empathy-individual-information-dialog.c:325
 msgid "Please install gnome-contacts to access contacts details."
 msgstr ""
-"Proszę zainstalować program gnome-contacts, aby uzyskać dostęp do szczegółów "
-"kontaktów."
+"Proszę zainstalować program gnome-contacts, aby uzyskać dostęp do informacji "
+"o kontaktach."
 
 #. Translators: this is used in the context menu for a contact. The first
 #. * parameter is a contact ID (e.g. foo@jabber.org) and the second is one
@@ -1566,7 +1566,7 @@ msgstr "%s, %s"
 
 #: ../libempathy-gtk/empathy-individual-widget.c:716
 msgid "%B %e, %Y at %R UTC"
-msgstr "%e %B %Y o %H∶%M UTC"
+msgstr "%-d %B %Y o %H∶%M UTC"
 
 #. Alias
 #: ../libempathy-gtk/empathy-individual-widget.c:1359
@@ -1644,7 +1644,7 @@ msgstr "Rozmowa z użytkownikiem %s"
 #: ../libempathy-gtk/empathy-log-window.c:1376
 msgctxt "A date with the time"
 msgid "%A, %e %B %Y %X"
-msgstr "%A %e %B %Y, %X"
+msgstr "%A, %-d %B %Y, %X"
 
 #. Translators: this is an emote: '* Danielle waves'
 #: ../libempathy-gtk/empathy-log-window.c:1319
@@ -1691,7 +1691,7 @@ msgstr "Wczoraj"
 #. Translators: A date such as '23 May 2010' (strftime format)
 #: ../libempathy-gtk/empathy-log-window.c:1765
 msgid "%e %B %Y"
-msgstr "%e %B %Y"
+msgstr "%-d %B %Y"
 
 #: ../libempathy-gtk/empathy-log-window.c:1869
 #: ../libempathy-gtk/empathy-log-window.c:3500
@@ -1781,7 +1781,7 @@ msgstr "Wideo"
 
 #: ../libempathy-gtk/empathy-log-window.ui.h:8
 msgid "page 2"
-msgstr "strona 2"
+msgstr "2. strona"
 
 #: ../libempathy-gtk/empathy-log-window.ui.h:9
 msgid "<span size=\"x-large\">Loading…</span>"
@@ -2309,31 +2309,31 @@ msgstr ""
 msgid "No protocol backends installed"
 msgstr "Brak zainstalowanych mechanizmów protokołów"
 
-#: ../src/empathy-auth-client.c:285
+#: ../src/empathy-auth-client.c:284
 msgid " — Empathy authentication client"
 msgstr " — klient uwierzytelniania komunikatora Empathy"
 
-#: ../src/empathy-auth-client.c:301
+#: ../src/empathy-auth-client.c:299
 msgid "Empathy authentication client"
 msgstr "Klient uwierzytelniania komunikatora Empathy"
 
-#: ../src/empathy.c:405
+#: ../src/empathy.c:402
 msgid "Don’t connect on startup"
 msgstr "Bez łączenia podczas uruchamiania"
 
-#: ../src/empathy.c:409
+#: ../src/empathy.c:406
 msgid "Don’t display the contact list or any other dialogs on startup"
 msgstr "Bez wyświetlania listy kontaktów lub innych okien podczas uruchamiania"
 
-#: ../src/empathy.c:438
+#: ../src/empathy.c:435
 msgid "— Empathy IM Client"
 msgstr "— komunikator Empathy"
 
-#: ../src/empathy.c:624
+#: ../src/empathy.c:621
 msgid "Error contacting the Account Manager"
 msgstr "Błąd podczas nawiązywania połączenia z menedżerem kont"
 
-#: ../src/empathy.c:626
+#: ../src/empathy.c:623
 #, c-format
 msgid ""
 "There was an error while trying to connect to the Telepathy Account Manager. "
@@ -2440,7 +2440,7 @@ msgstr "Czas trwania"
 #: ../src/empathy-call-window.c:2979
 #, c-format
 msgid "%s — %d∶%02dm"
-msgstr "%s — %d∶%02dm"
+msgstr "%s — %d∶%02d"
 
 #: ../src/empathy-call-window.c:3075
 msgid "Technical Details"
@@ -3016,13 +3016,13 @@ msgstr ""
 #: ../src/empathy-ft-manager.c:94
 #, c-format
 msgid "%u∶%02u.%02u"
-msgstr "%u∶%02u.%02u"
+msgstr "%u∶%02u∶%02u"
 
 #. Translators: time left, when is is less than one hour
 #: ../src/empathy-ft-manager.c:97
 #, c-format
 msgid "%02u.%02u"
-msgstr "%02u.%02u"
+msgstr "%02u∶%02u"
 
 #: ../src/empathy-ft-manager.c:173
 msgctxt "file transfer percent"
