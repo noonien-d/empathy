@@ -6,10 +6,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: empathy master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
 "product=empathy&keywords=I18N+L10N&component=General\n"
-"POT-Creation-Date: 2017-01-27 21:42+0000\n"
-"PO-Revision-Date: 2017-01-28 10:14+0100\n"
+"POT-Creation-Date: 2017-03-21 14:36+0000\n"
+"PO-Revision-Date: 2017-04-23 17:27+0200\n"
 "Last-Translator: Fabio Tomat <f.t.public@gmail.com>\n"
 "Language-Team: Friulian <fur@li.org>\n"
 "Language: fur\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.8.11\n"
+"X-Generator: Poedit 1.8.12\n"
 
 #: ../data/empathy.desktop.in.in.h:1
 msgid "Empathy"
@@ -689,7 +689,7 @@ msgstr "Chest account al è za conetût al servidôr"
 msgid ""
 "Connection has been replaced by a new connection using the same resource"
 msgstr ""
-"La conession e je stade sostituide da une gnove conession doprant la stesse "
+"La conession e je stade sostituide di une gnove conession doprant la stesse "
 "risorse"
 
 #: ../libempathy/empathy-utils.c:307
@@ -779,7 +779,7 @@ msgstr "Il contat specificât nol è valit"
 
 #: ../libempathy-gtk/empathy-call-utils.c:50
 msgid "Emergency calls are not supported on this protocol"
-msgstr "Lis clamadis di emergjence no son supuartadis da chest protocol"
+msgstr "Chest protocol nol supuarte lis clamadis di emergjence"
 
 #: ../libempathy-gtk/empathy-call-utils.c:52
 msgid "You don’t have enough credit in order to place this call"
@@ -1155,7 +1155,7 @@ msgstr "Nissun contat cjatât"
 
 #: ../libempathy-gtk/empathy-contact-search-dialog.c:660
 msgid "Contact search is not supported on this account"
-msgstr "La ricercje dai contats no je supuartade da chest account"
+msgstr "Chest account nol supuarte la ricercje dai contats"
 
 #: ../libempathy-gtk/empathy-contact-search-dialog.c:666
 msgid "Your message introducing yourself:"
@@ -2313,25 +2313,25 @@ msgstr " — client autenticazion Empathy"
 msgid "Empathy authentication client"
 msgstr "Client"
 
-#: ../src/empathy.c:405
+#: ../src/empathy.c:402
 msgid "Don’t connect on startup"
 msgstr "No sta tacâti al inviament dal sisteme"
 
-#: ../src/empathy.c:409
+#: ../src/empathy.c:406
 msgid "Don’t display the contact list or any other dialogs on startup"
 msgstr ""
 "No sta mostrâ la liste dai contats o cualsisei altri dialic tal inviament "
 "dal sisteme"
 
-#: ../src/empathy.c:438
+#: ../src/empathy.c:435
 msgid "— Empathy IM Client"
 msgstr "— Client pai messaçs istantanis Empathy"
 
-#: ../src/empathy.c:624
+#: ../src/empathy.c:621
 msgid "Error contacting the Account Manager"
 msgstr "Erôr tal contatâ il gjestôr di account"
 
-#: ../src/empathy.c:626
+#: ../src/empathy.c:623
 #, c-format
 msgid ""
 "There was an error while trying to connect to the Telepathy Account Manager. "
@@ -2400,7 +2400,7 @@ msgstr "La direzion IP come che e je viodude de machine "
 
 #: ../src/empathy-call-window.c:2179
 msgid "The IP address as seen by a server on the Internet"
-msgstr "La direzion IP come che e je viodude da un servidôr su Internet"
+msgstr "La direzion IP cussì come che e je viodude di un servidôr su Internet"
 
 #: ../src/empathy-call-window.c:2181
 msgid "The IP address of the peer as seen by the other side"
