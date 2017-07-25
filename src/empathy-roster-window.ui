@@ -259,7 +259,7 @@
                       <class name="chat-status-area"/>
                     </style>
                     <child>
-                      <object class="GtkGrid" id="status_area_box0">
+                      <object class="GtkGrid" id="status_area_grid0">
                         <property name="can_focus">False</property>
                         <property name="hexpand">True</property>
                         <property name="orientation">horizontal</property>
