@@ -1927,8 +1927,8 @@ static GActionEntry menubar_entries[] = {
 
 static GActionEntry app_entries[] =
 {
-  { "tab_next", next_tab_cb, NULL, NULL, NULL },
-  { "tab_prev", prev_tab_cb, NULL, NULL, NULL }
+  { "tab-next", next_tab_cb },
+  { "tab-prev", prev_tab_cb }
 };
 
 

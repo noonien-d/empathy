@@ -298,9 +298,9 @@ empathy_app_activate (GApplication *app)
           "win." EMPATHY_PREFS_UI_SHOW_OFFLINE,
           NULL);
       gtk_application_add_accelerator (GTK_APPLICATION (app),
-          "<Control>Page_Up", "win.tab_prev", NULL);
+          "<Control>Page_Up", "win.tab-prev", NULL);
       gtk_application_add_accelerator (GTK_APPLICATION (app),
-          "<Control>Page_Down", "win.tab_next", NULL);
+          "<Control>Page_Down", "win.tab-next", NULL);
 
       /* Allow Empathy to watch session state */
       autoaway = g_settings_get_boolean (self->gsettings,
