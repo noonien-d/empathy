@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: empathy master\n"
 "Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
 "product=empathy&keywords=I18N+L10N&component=General\n"
-"POT-Creation-Date: 2017-04-23 15:28+0000\n"
-"PO-Revision-Date: 2017-05-05 17:58+0200\n"
+"POT-Creation-Date: 2017-08-04 00:44+0000\n"
+"PO-Revision-Date: 2017-08-06 16:46+0200\n"
 "Last-Translator: Fabio Tomat <f.t.public@gmail.com>\n"
 "Language-Team: Friulian <f.t.public@gmail.com>\n"
 "Language: fur\n"
@@ -17,9 +17,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Gtranslator 2.91.7\n"
+"X-Generator: Poedit 2.0.2\n"
 
-#: ../data/empathy.desktop.in.in.h:1
+#: ../data/empathy.desktop.in.in.h:1 ../data/empathy.appdata.xml.in.h:1
 msgid "Empathy"
 msgstr "Empathy"
 
@@ -31,7 +31,7 @@ msgstr "Client di Messaçs Istantanis"
 msgid "Empathy Internet Messaging"
 msgstr "Sisteme pai Messaçs Internet Empathy"
 
-#: ../data/empathy.desktop.in.in.h:4
+#: ../data/empathy.desktop.in.in.h:4 ../data/empathy.appdata.xml.in.h:2
 msgid "Chat on Google Talk, Facebook, MSN and many other chat services"
 msgstr ""
 "Cjacare su Google Talk, Facebook, MSN e une vore di altris servizis par "
@@ -42,29 +42,33 @@ msgid "chat;talk;im;message;irc;voip;gtalk;facebook;jabber;"
 msgstr ""
 "chat;talk;im;messaç;messaçs;irc;voip;gtalk;facebook;jabber;cjacarâ;tabaiâ;"
 
-#: ../data/empathy.appdata.xml.in.h:1
+#: ../data/empathy.appdata.xml.in.h:3
 msgid ""
 "Empathy is the official instant messaging application of the GNOME desktop "
-"environment.  Empathy can connect to AIM, MSN, Jabber (including Facebook "
-"and Google Talk), IRC, and many other messaging networks. You can chat with "
-"text, make audio and video calls, or even transfer files, depending on what "
-"your contact’s chat application allows."
+"environment. Empathy can connect to AIM, MSN, Jabber (including Facebook and "
+"Google Talk), IRC, and many other messaging networks."
 msgstr ""
 "Empathy e je la aplicazion uficiâl pai messaçs istantanis dal ambient grafic "
 "GNOME. Empaty al pues conetisi a AIM, MSN, Jabber (includût Facebook e "
-"Google Talk), IRC e une vore di altris rêts di conversazion. Tu puedis "
-"cjacarâ cul test, fâ clamadis sonoris e video o ancje trasferî file, dut al "
-"dipent di ce che la aplicazion dal to contat a permet."
+"Google Talk), IRC e une vore di altris rêts di conversazion."
 
-#: ../data/empathy.appdata.xml.in.h:2
+#: ../data/empathy.appdata.xml.in.h:4
+msgid ""
+"You can chat with text, make audio and video calls, or even transfer files, "
+"depending on what your contact’s chat application allows."
+msgstr ""
+"Si pues chatâ cul test, fâ clamadis sonoris e video o ancje trasferî file, "
+"dut al dipent di ce che la aplicazion di chat dal contat e permet di fâ."
+
+#: ../data/empathy.appdata.xml.in.h:5
 msgid ""
 "Empathy provides integrated messaging for the GNOME desktop, so you’ll never "
-"miss a message.  You can respond to your contacts without even having to "
-"open Empathy!"
+"miss a message. You can respond to your contacts without even having to open "
+"Empathy!"
 msgstr ""
 "Empathy al furnìs un sisteme par mandâ messaçs, integrât cul scritori GNOME, "
-"cussì no tu podarâs mai pierdi un messaç. Tu puedi rispuindi ai tiei contats "
-"cence nancje vierzi Empathy!"
+"cussì no si podarà mai pierdi un messaç. Si pues rispuindi ai contats cence "
+"nancje vierzi Empathy!"
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:1
 msgid "Connection managers should be used"
