@@ -11,8 +11,8 @@ msgstr ""
 "Project-Id-Version: empathy master\n"
 "Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
 "product=empathy&keywords=I18N+L10N&component=General\n"
-"POT-Creation-Date: 2017-04-23 15:28+0000\n"
-"PO-Revision-Date: 2017-05-02 13:48+0700\n"
+"POT-Creation-Date: 2017-08-04 00:44+0000\n"
+"PO-Revision-Date: 2017-08-04 09:41+0700\n"
 "Last-Translator: Kukuh Syafaat <syafaatkukuh@gmail.com>\n"
 "Language-Team: Indonesian <gnome-l10n-id@googlegroups.com>\n"
 "Language: id\n"
@@ -20,9 +20,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 1.8.11\n"
+"X-Generator: Poedit 2.0.3\n"
 
-#: ../data/empathy.desktop.in.in.h:1
+#: ../data/empathy.desktop.in.in.h:1 ../data/empathy.appdata.xml.in.h:1
 msgid "Empathy"
 msgstr "Empathy"
 
@@ -34,7 +34,7 @@ msgstr "Klien IM"
 msgid "Empathy Internet Messaging"
 msgstr "Perpesanan Internet Empathy"
 
-#: ../data/empathy.desktop.in.in.h:4
+#: ../data/empathy.desktop.in.in.h:4 ../data/empathy.appdata.xml.in.h:2
 msgid "Chat on Google Talk, Facebook, MSN and many other chat services"
 msgstr ""
 "Mengobrol pada Google Talk, Facebook, MSN, dan banyak layanan obrolan lain"
@@ -43,30 +43,34 @@ msgstr ""
 msgid "chat;talk;im;message;irc;voip;gtalk;facebook;jabber;"
 msgstr "mengobrol;bicara;im;pesan;irc;voip;gtalk;facebook;jabber;"
 
-#: ../data/empathy.appdata.xml.in.h:1
+#: ../data/empathy.appdata.xml.in.h:3
 msgid ""
 "Empathy is the official instant messaging application of the GNOME desktop "
-"environment.  Empathy can connect to AIM, MSN, Jabber (including Facebook "
-"and Google Talk), IRC, and many other messaging networks. You can chat with "
-"text, make audio and video calls, or even transfer files, depending on what "
-"your contact’s chat application allows."
+"environment. Empathy can connect to AIM, MSN, Jabber (including Facebook and "
+"Google Talk), IRC, and many other messaging networks."
 msgstr ""
-"Empathy adalah aplikasi perpesanan instan resmi dari lingkungan desktop "
+"Empathy adalah aplikasi perpesanan instan resmi dari lingkungan destop "
 "GNOME. Empathy bisa menyambung ke AIM, MSN, Jabber (termasuk Facebook dan "
-"Google Talk), IRC, dan banyak jaringan perpesanan lain. Anda bisa mengobrol "
-"dengan teks, membuat panggilan audio dan video, atau bahkan mentransfer "
-"berkas, bergantung kepada apa yang diizinkan oleh aplikasi obrolan kontak "
-"Anda."
+"Google Talk), IRC, dan banyak jaringan perpesanan lain."
 
-#: ../data/empathy.appdata.xml.in.h:2
+#: ../data/empathy.appdata.xml.in.h:4
+msgid ""
+"You can chat with text, make audio and video calls, or even transfer files, "
+"depending on what your contact’s chat application allows."
+msgstr ""
+"Anda dapat mengobrol dengan teks, membuat panggilan audio dan video, atau "
+"bahkan mentransfer berkas, tergantung pada aplikasi obrolan kontak Anda yang "
+"memungkinkan."
+
+#: ../data/empathy.appdata.xml.in.h:5
 msgid ""
 "Empathy provides integrated messaging for the GNOME desktop, so you’ll never "
-"miss a message.  You can respond to your contacts without even having to "
-"open Empathy!"
+"miss a message. You can respond to your contacts without even having to open "
+"Empathy!"
 msgstr ""
-"Empathy menyediakan perpesanan terintegrasi bagi desktop GNOME, sehingga "
-"Anda tak akan pernah kehilangan suatu pesan. Anda dapat merespon ke kontak "
-"Anda bahkan tanpa perlu membuka Empathy!"
+"Empathy menyediakan perpesanan terintegrasi bagi destop GNOME, sehingga Anda "
+"tak akan pernah kehilangan suatu pesan. Anda dapat merespon ke kontak Anda "
+"bahkan tanpa perlu membuka Empathy!"
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:1
 msgid "Connection managers should be used"
