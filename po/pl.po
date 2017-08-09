@@ -13,8 +13,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: empathy\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-27 21:00+0200\n"
-"PO-Revision-Date: 2017-03-27 21:01+0200\n"
+"POT-Creation-Date: 2017-08-09 22:57+0200\n"
+"PO-Revision-Date: 2017-08-09 22:58+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <community-poland@mozilla.org>\n"
 "Language: pl\n"
@@ -24,7 +24,7 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2);\n"
 
-#: ../data/empathy.desktop.in.in.h:1
+#: ../data/empathy.desktop.in.in.h:1 ../data/empathy.appdata.xml.in.h:1
 msgid "Empathy"
 msgstr "Empathy"
 
@@ -36,7 +36,7 @@ msgstr "Komunikator"
 msgid "Empathy Internet Messaging"
 msgstr "Komunikator Empathy"
 
-#: ../data/empathy.desktop.in.in.h:4
+#: ../data/empathy.desktop.in.in.h:4 ../data/empathy.appdata.xml.in.h:2
 msgid "Chat on Google Talk, Facebook, MSN and many other chat services"
 msgstr "Rozmawianie przez Google Talk, Facebook, MSN i wiele innych usług"
 
@@ -46,25 +46,29 @@ msgstr ""
 "rozmowa;chat;czat;komunikator;im;wiadomość;gadu;irc;voip;gtalk;facebook;"
 "jabber;"
 
-#: ../data/empathy.appdata.xml.in.h:1
+#: ../data/empathy.appdata.xml.in.h:3
 msgid ""
 "Empathy is the official instant messaging application of the GNOME desktop "
-"environment.  Empathy can connect to AIM, MSN, Jabber (including Facebook "
-"and Google Talk), IRC, and many other messaging networks. You can chat with "
-"text, make audio and video calls, or even transfer files, depending on what "
-"your contact’s chat application allows."
+"environment. Empathy can connect to AIM, MSN, Jabber (including Facebook and "
+"Google Talk), IRC, and many other messaging networks."
 msgstr ""
 "Empathy to oficjalny komunikator środowiska GNOME. Program Empathy może "
 "łączyć się z sieciami AIM, MSN, Jabber (włączając w to serwisy Facebook "
-"i Google Talk), IRC i wiele innych. Można rozmawiać za pomocą tekstu, "
-"prowadzić rozmowy głosowe i wideorozmowy, a nawet przesyłać pliki, "
-"w zależności od możliwości komunikatora odbiorcy."
+"i Google Talk), IRC i wiele innych."
 
-#: ../data/empathy.appdata.xml.in.h:2
+#: ../data/empathy.appdata.xml.in.h:4
+msgid ""
+"You can chat with text, make audio and video calls, or even transfer files, "
+"depending on what your contact’s chat application allows."
+msgstr ""
+"Można rozmawiać za pomocą tekstu, prowadzić rozmowy głosowe i wideorozmowy, "
+"a nawet przesyłać pliki, w zależności od możliwości komunikatora odbiorcy."
+
+#: ../data/empathy.appdata.xml.in.h:5
 msgid ""
 "Empathy provides integrated messaging for the GNOME desktop, so you’ll never "
-"miss a message.  You can respond to your contacts without even having to "
-"open Empathy!"
+"miss a message. You can respond to your contacts without even having to open "
+"Empathy!"
 msgstr ""
 "Program Empathy dostarcza zintegrowaną obsługę wiadomości dla środowiska "
 "GNOME. Można nawet odpowiadać znajomym bez potrzeby uruchamiania programu."
@@ -933,7 +937,7 @@ msgstr "Temat ustawiony przez użytkownika %s na: %s"
 #. No need to display this 'event' is no topic can be defined anyway
 #: ../libempathy-gtk/empathy-chat.c:1700
 msgid "No topic defined"
-msgstr "Temat nie został określony"
+msgstr "Temat nie został podany"
 
 #: ../libempathy-gtk/empathy-chat.c:2218
 msgid "(No Suggestions)"
@@ -1181,7 +1185,7 @@ msgstr "Alias"
 #: ../libempathy-gtk/empathy-contact-widget.ui.h:5
 #: ../libempathy-gtk/empathy-individual-widget.ui.h:3
 msgid "Contact Details"
-msgstr "Szczegóły kontaktu"
+msgstr "Informacje o kontakcie"
 
 #: ../libempathy-gtk/empathy-contact-widget.ui.h:6
 #: ../libempathy-gtk/empathy-individual-widget.ui.h:4
@@ -2089,7 +2093,7 @@ msgstr "Zapamiętanie tego wyboru dla przyszłych połączeń"
 
 #: ../libempathy-gtk/empathy-tls-dialog.c:301
 msgid "Certificate Details"
-msgstr "Szczegóły certyfikatu"
+msgstr "Informacje o certyfikacie"
 
 #: ../libempathy-gtk/empathy-ui-utils.c:679
 msgid "Unable to open URI"
@@ -2444,7 +2448,7 @@ msgstr "%s — %d∶%02d"
 
 #: ../src/empathy-call-window.c:3075
 msgid "Technical Details"
-msgstr "Szczegóły techniczne"
+msgstr "Informacje techniczne"
 
 #: ../src/empathy-call-window.c:3114
 #, c-format
