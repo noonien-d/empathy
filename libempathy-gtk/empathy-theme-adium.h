@@ -135,6 +135,9 @@ void empathy_theme_adium_message_acknowledged (EmpathyThemeAdium *self,
 void empathy_theme_adium_set_show_avatars (EmpathyThemeAdium *self,
     gboolean show_avatars);
 
+void empathy_theme_adium_set_message_status_marker (EmpathyThemeAdium *self,
+    gchar* token, TpDeliveryStatus status);
+
 /* not methods functions */
 
 gboolean empathy_adium_path_is_valid (const gchar *path);

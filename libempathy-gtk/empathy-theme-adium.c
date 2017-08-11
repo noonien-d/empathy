@@ -2185,3 +2185,10 @@ empathy_adium_data_get_path (EmpathyAdiumData *data)
 
   return data->path;
 }
+
+void
+empathy_theme_adium_set_message_status_marker (EmpathyThemeAdium *self,
+    gchar* token, TpDeliveryStatus status)
+{
+
+}
