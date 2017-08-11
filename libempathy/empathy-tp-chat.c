@@ -72,6 +72,7 @@ enum
 enum
 {
   MESSAGE_RECEIVED,
+  MESSAGE_STATUS_UPDATE,
   SEND_ERROR,
   MESSAGE_ACKNOWLEDGED,
   SIG_MEMBER_RENAMED,
@@ -316,6 +317,9 @@ handle_delivery_report (EmpathyTpChat *self,
   delivery_token = tp_asv_get_string (header, "delivery-token");
   delivery_status = tp_asv_get_uint32 (header, "delivery-status", &valid);
 
+  if (valid)
+    g_signal_emit (self, signals[MESSAGE_STATUS_UPDATE], 0, delivery_token, delivery_status);
+
   if (!valid)
     {
       goto out;
@@ -330,6 +334,13 @@ handle_delivery_report (EmpathyTpChat *self,
   else if (delivery_status == TP_DELIVERY_STATUS_DELIVERED)
     {
       DEBUG ("Delivered %s", delivery_token);
+      tp_chat_set_delivery_status (self, delivery_token,
+        EMPATHY_DELIVERY_STATUS_NONE);
+      goto out;
+    }
+  else if (delivery_status == TP_DELIVERY_STATUS_READ)
+    {
+      DEBUG ("Read %s", delivery_token);
       tp_chat_set_delivery_status (self, delivery_token,
         EMPATHY_DELIVERY_STATUS_NONE);
       goto out;
@@ -1036,6 +1047,15 @@ empathy_tp_chat_class_init (EmpathyTpChatClass *klass)
       G_TYPE_NONE,
       1, EMPATHY_TYPE_MESSAGE);
 
+  signals[MESSAGE_STATUS_UPDATE] = g_signal_new ("message-status-update",
+      G_TYPE_FROM_CLASS (klass),
+      G_SIGNAL_RUN_LAST,
+      0,
+      NULL, NULL,
+      g_cclosure_marshal_generic,
+      G_TYPE_NONE,
+      2, G_TYPE_STRING, G_TYPE_UINT);
+
   signals[SEND_ERROR] = g_signal_new ("send-error",
       G_TYPE_FROM_CLASS (klass),
       G_SIGNAL_RUN_LAST,
@@ -1154,7 +1174,7 @@ empathy_tp_chat_send (EmpathyTpChat *self,
   DEBUG ("Sending message: %s", message_body);
 
   tp_text_channel_send_message_async (TP_TEXT_CHANNEL (self),
-    message, TP_MESSAGE_SENDING_FLAG_REPORT_DELIVERY,
+    message, TP_MESSAGE_SENDING_FLAG_REPORT_DELIVERY | TP_MESSAGE_SENDING_FLAG_REPORT_READ,
     message_send_cb, self);
 
   g_free (message_body);

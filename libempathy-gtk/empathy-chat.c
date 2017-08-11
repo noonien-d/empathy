@@ -1511,6 +1511,14 @@ chat_message_received_cb (EmpathyTpChat  *tp_chat,
 }
 
 static void
+chat_message_status_update_cb (EmpathyTpChat  *tp_chat,
+			  gchar *token,
+			  TpDeliveryStatus status,
+			  EmpathyChat    *chat)
+{
+	empathy_theme_adium_set_message_status_marker (chat->view, token, status);
+}
+
 chat_message_acknowledged_cb (EmpathyTpChat  *tp_chat,
 			      EmpathyMessage *message,
 			      EmpathyChat    *chat)
@@ -3401,6 +3409,8 @@ chat_finalize (GObject *object)
 		g_signal_handlers_disconnect_by_func (priv->tp_chat,
 			chat_message_received_cb, chat);
 		g_signal_handlers_disconnect_by_func (priv->tp_chat,
+			chat_message_status_update_cb, chat);
+		g_signal_handlers_disconnect_by_func (priv->tp_chat,
 			chat_message_acknowledged_cb, chat);
 		g_signal_handlers_disconnect_by_func (priv->tp_chat,
 			chat_send_error_cb, chat);
@@ -4149,6 +4159,9 @@ empathy_chat_set_tp_chat (EmpathyChat   *chat,
 			  chat);
 	g_signal_connect (tp_chat, "message-received-empathy",
 			  G_CALLBACK (chat_message_received_cb),
+			  chat);
+	g_signal_connect (tp_chat, "message-status-update",
+			  G_CALLBACK (chat_message_status_update_cb),
 			  chat);
 	g_signal_connect (tp_chat, "message_acknowledged",
 			  G_CALLBACK (chat_message_acknowledged_cb),
