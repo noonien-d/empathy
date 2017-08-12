@@ -2190,5 +2190,23 @@ void
 empathy_theme_adium_set_message_status_marker (EmpathyThemeAdium *self,
     gchar* token, TpDeliveryStatus status)
 {
-
+  gchar *script;
+  gchar *status_char;
+  switch (status)
+    {
+      case TP_DELIVERY_STATUS_DELIVERED:
+        status_char = "✓";
+        break;
+      case TP_DELIVERY_STATUS_READ:
+        status_char = "☑";
+        break;
+      case TP_DELIVERY_STATUS_PERMANENTLY_FAILED:
+        status_char = "✗";
+        break;
+      default:
+        status_char = "";
+    }
+  script = g_strdup_printf ("setDeliveryStatus(\"%s\", \"%s\")", token, status_char);
+  webkit_web_view_run_javascript (WEBKIT_WEB_VIEW (self), script, NULL, NULL, NULL);
+  g_free (script);
 }

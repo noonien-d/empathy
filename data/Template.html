@@ -163,6 +163,20 @@
 				node = null;
 				setShouldScroll(shouldScroll);
 			}
+
+			this.setdeliverystatus = function(token, state) {
+				if(self.isConsecutive) {
+					self.cancel();
+				}
+				self.isConsecutive = false;
+				var element = document.getElementById("message-token-"+token);
+				if (element)
+				{
+					element.textContent = element.textContent+state;
+					self.onchange();
+					self.coalesce();
+				}
+			}
 		}
 		var coalescedHTML;
 
@@ -366,6 +380,10 @@
 				rm.parentNode.removeChild(rm);
 			}
 			coalescedHTML.interdiv = undefined;
+		}
+		//Appending new content to the message view
+		function setDeliveryStatus(token, state) {
+			coalescedHTML.setdeliverystatus (token, state)
 		}
 	</script>
 
