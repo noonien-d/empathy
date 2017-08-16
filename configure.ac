@@ -157,12 +157,6 @@ EMPATHY_ARG_VALGRIND
 # Error flags
 # -----------------------------------------------------------
 AS_COMPILER_FLAG(-Wall, ERROR_CFLAGS="-Wall", ERROR_CFLAGS="")
-AS_COMPILER_FLAG(-Werror, werror=yes, werror=no)
-
-AC_ARG_ENABLE(Werror,
-  AS_HELP_STRING([--disable-Werror],
-                 [compile without -Werror (normally enabled in development builds)]),
-    werror=$enableval, :)
 
 AS_COMPILER_FLAG(-Wextra, wextra=yes, wextra=no)
 AS_COMPILER_FLAG(-Wno-missing-field-initializers,
@@ -174,9 +168,6 @@ AS_COMPILER_FLAG(-Wno-unused-parameter,
 
 ifelse(empathy_released, 1, [],
     [
-        if test x$werror = xyes; then
-            ERROR_CFLAGS="$ERROR_CFLAGS -Werror"
-        fi
         if test x$wextra = xyes -a \
             x$wno_missing_field_initializers = xyes -a \
             x$wno_unused_parameter = xyes; then
