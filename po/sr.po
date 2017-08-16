@@ -2,22 +2,22 @@
 # Courtesy of Prevod.org team (http://prevod.org/) -- 2003—2017.
 # This file is distributed under the same license as the Empathy package.
 # From Pidgin translation:
-# Danilo Segan <dsegan@gmx.net>, 2003, 2004, 2005.
-# Aleksandar Urosevic <urke@users.sourceforge.net>, 2003, 2004.
+# Danilo Segan <dsegan@gmx.net>, 2003—2005.
+# Aleksandar Urosevic <urke@users.sourceforge.net>, 2003—2004.
 # Filip Miletic <f.miletic@ewi.tudelft.nl>, 2004.
 # Nikola Kotur <kotnik@ns-linux.org>, 2006.
-# Милош Поповић <gpopac@gmail.com>, 2007, 2008, 2009, 2010.
+# Милош Поповић <gpopac@gmail.com>, 2007—2010.
 # Бранко Кокановић <branko.kokanovic@gmail.com>, 2010, 2011.
 # Мирослав Николић <miroslavnikolic@rocketmail.com>, 2011—2017.
 msgid ""
 msgstr ""
 "Project-Id-Version: empathy\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=empathy"
-"&keywords=I18N+L10N&component=General\n"
-"POT-Creation-Date: 2017-01-27 21:42+0000\n"
-"PO-Revision-Date: 2017-02-25 19:19+0200\n"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=empath"
+"y&keywords=I18N+L10N&component=General\n"
+"POT-Creation-Date: 2017-08-04 00:44+0000\n"
+"PO-Revision-Date: 2017-08-16 17:56+0200\n"
 "Last-Translator: Мирослав Николић <miroslavnikolic@rocketmail.com>\n"
-"Language-Team: Serbian <(nothing)>\n"
+"Language-Team: српски <gnome-sr@googlegroups.org>\n"
 "Language: sr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -26,7 +26,7 @@ msgstr ""
 "n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Project-Style: gnome\n"
 
-#: ../data/empathy.desktop.in.in.h:1
+#: ../data/empathy.desktop.in.in.h:1 ../data/empathy.appdata.xml.in.h:1
 msgid "Empathy"
 msgstr "Интернет писмоноша"
 
@@ -38,7 +38,7 @@ msgstr "Програм за брзе поруке"
 msgid "Empathy Internet Messaging"
 msgstr "Дописивање преко Интернет писмоноше"
 
-#: ../data/empathy.desktop.in.in.h:4
+#: ../data/empathy.desktop.in.in.h:4 ../data/empathy.appdata.xml.in.h:2
 msgid "Chat on Google Talk, Facebook, MSN and many other chat services"
 msgstr ""
 "Ћаскајте на Гугл разговору, Фејсбуку, МСН-у и на многим другим сервисима за "
@@ -48,26 +48,41 @@ msgstr ""
 msgid "chat;talk;im;message;irc;voip;gtalk;facebook;jabber;"
 msgstr "ћаскање;разговор;бп;им;порука;ирц;воип;гразговор;фејсбук;џабер;"
 
-#: ../data/empathy.appdata.xml.in.h:1
+#: ../data/empathy.appdata.xml.in.h:3
+#| msgid ""
+#| "Empathy is the official instant messaging application of the GNOME "
+#| "desktop environment.  Empathy can connect to AIM, MSN, Jabber (including "
+#| "Facebook and Google Talk), IRC, and many other messaging networks. You "
+#| "can chat with text, make audio and video calls, or even transfer files, "
+#| "depending on what your contact’s chat application allows."
 msgid ""
 "Empathy is the official instant messaging application of the GNOME desktop "
-"environment.  Empathy can connect to AIM, MSN, Jabber (including Facebook "
-"and Google Talk), IRC, and many other messaging networks. You can chat with "
-"text, make audio and video calls, or even transfer files, depending on what "
-"your contact’s chat application allows."
+"environment. Empathy can connect to AIM, MSN, Jabber (including Facebook and "
+"Google Talk), IRC, and many other messaging networks."
 msgstr ""
 "Интернет писмоноша је званични програм брзих порука за Гномово радно "
 "окружење. Интернет писмоноша може да се повеже на АИМ, МСН, Џабер ("
 "укључујући Фејсбук и Гугл разговор), ИРЦ, и на многе друге мреже за слање "
-"порука. Можете да ћаскате помоћу текста, да обављате звучне и видео позиве, "
-"или чак да преносите датотеке, у зависности шта омогућава програм за ћаскање "
-"вашег контакта."
+"порука."
 
-#: ../data/empathy.appdata.xml.in.h:2
+#: ../data/empathy.appdata.xml.in.h:4
+msgid ""
+"You can chat with text, make audio and video calls, or even transfer files, "
+"depending on what your contact’s chat application allows."
+msgstr ""
+"Можете да ћаскате помоћу текста, да обављате звучне и видео позиве, или чак "
+"да преносите датотеке, у зависности шта омогућава програм за ћаскање вашег "
+"контакта."
+
+#: ../data/empathy.appdata.xml.in.h:5
+#| msgid ""
+#| "Empathy provides integrated messaging for the GNOME desktop, so you’ll "
+#| "never miss a message.  You can respond to your contacts without even "
+#| "having to open Empathy!"
 msgid ""
 "Empathy provides integrated messaging for the GNOME desktop, so you’ll never "
-"miss a message.  You can respond to your contacts without even having to "
-"open Empathy!"
+"miss a message. You can respond to your contacts without even having to open "
+"Empathy!"
 msgstr ""
 "Интернет писмоноша обезбеђује интегрисано слање порука за Гномову радну "
 "површ, тако да никада нећете пропустити поруку. Можете да одговорите вашем "
@@ -286,7 +301,6 @@ msgid "Whether to show popup notifications when away or busy."
 msgstr "Да ли да приказује облачић обавештења када сте заузети или одсутни."
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:50
-#| msgid "Pop up notifications if the chat isn't focused"
 msgid "Pop up notifications if the chat isn’t focused"
 msgstr "Исписује обавештења ако ћаскање није у фокусу"
 
@@ -376,9 +390,6 @@ msgid "Inform other users when you are typing to them"
 msgstr "Обавештава остале кориснике када им пишете поруку"
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:69
-#| msgid ""
-#| "Whether to send the 'composing' or 'paused' chat states. Does not "
-#| "currently affect the 'gone' state."
 msgid ""
 "Whether to send the “composing” or “paused” chat states. Does not currently "
 "affect the “gone” state."
@@ -399,9 +410,6 @@ msgid "Spell checking languages"
 msgstr "Језици за проверу писања"
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:73
-#| msgid ""
-#| "Comma-separated list of spell checker languages to use (e.g. \"en, fr, nl"
-#| "\")."
 msgid ""
 "Comma-separated list of spell checker languages to use (e.g. “en, fr, nl”)."
 msgstr ""
@@ -455,8 +463,8 @@ msgstr "Уређај камерице"
 #: ../data/org.gnome.Empathy.gschema.xml.h:83
 msgid "Default camera device to use in video calls, e.g. /dev/video0."
 msgstr ""
-"Основна видео камерица која ће бити коришћена у видео позивима, нпр. "
-"„/dev/video0“."
+"Основна видео камерица која ће бити коришћена у видео позивима, нпр. „/dev/"
+"video0“."
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:84
 msgid "Camera position"
@@ -471,7 +479,6 @@ msgid "Echo cancellation support"
 msgstr "Подршка за уклањање одјека"
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:87
-#| msgid "Whether to enable Pulseaudio's echo cancellation filter."
 msgid "Whether to enable PulseAudio’s echo cancellation filter."
 msgstr "Да ли ће бити укључен филтер Пулсе аудиа за уклањање одјека."
 
@@ -480,9 +487,6 @@ msgid "Show hint about closing the main window"
 msgstr "Приказује савет у вези затварања главног прозора"
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:89
-#| msgid ""
-#| "Whether to show the message dialog about closing the main window with the "
-#| "'x' button in the title bar."
 msgid ""
 "Whether to show the message dialog about closing the main window with the "
 "“x” button in the title bar."
@@ -491,26 +495,22 @@ msgstr ""
 "„x“ дугме."
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:90
-#| msgid "Empathy can publish the user's location"
 msgid "Empathy can publish the user’s location"
 msgstr "Да ли Писмоноша сме да објављује локацију корисника"
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:91
-#| msgid "Whether Empathy can publish the user's location to their contacts."
 msgid "Whether Empathy can publish the user’s location to their contacts."
 msgstr "Да ли Писмоноша да објављује локацију корисника његовим пријатељима."
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:92
-#| msgid "Empathy should reduce the location's accuracy"
 msgid "Empathy should reduce the location’s accuracy"
 msgstr "Да ли Писмоноша да умањи прецизност локације"
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:93
-#| msgid ""
-#| "Whether Empathy should reduce the location's accuracy for privacy reasons."
 msgid ""
 "Whether Empathy should reduce the location’s accuracy for privacy reasons."
-msgstr "Да ли Писмоноша да умањи прецизност локације због повећане приватности."
+msgstr ""
+"Да ли Писмоноша да умањи прецизност локације због повећане приватности."
 
 #: ../libempathy/empathy-ft-handler.c:730
 msgid "No reason was specified"
@@ -536,7 +536,7 @@ msgstr "Грешка приликом преноса датотеке"
 msgid "The other participant is unable to transfer the file"
 msgstr "Друга страна није у могућности да пренесе датотеку"
 
-#: ../libempathy/empathy-ft-handler.c:748 ../libempathy/empathy-utils.c:260
+#: ../libempathy/empathy-ft-handler.c:748 ../libempathy/empathy-utils.c:256
 msgid "Unknown reason"
 msgstr "Непознат разлог"
 
@@ -572,139 +572,138 @@ msgstr "Позив корисника %s"
 msgid "Call from %s"
 msgstr "%s вас зове"
 
-#: ../libempathy/empathy-utils.c:180
+#: ../libempathy/empathy-utils.c:176
 msgid "Available"
 msgstr "Доступан"
 
-#: ../libempathy/empathy-utils.c:182
+#: ../libempathy/empathy-utils.c:178
 msgid "Busy"
 msgstr "Заузет"
 
-#: ../libempathy/empathy-utils.c:185
+#: ../libempathy/empathy-utils.c:181
 msgid "Away"
 msgstr "Одсутан"
 
-#: ../libempathy/empathy-utils.c:187
+#: ../libempathy/empathy-utils.c:183
 msgid "Invisible"
 msgstr "Невидљив"
 
-#: ../libempathy/empathy-utils.c:189
+#: ../libempathy/empathy-utils.c:185
 msgid "Offline"
 msgstr "Неповезан"
 
 #. translators: presence type is unknown
-#: ../libempathy/empathy-utils.c:192
+#: ../libempathy/empathy-utils.c:188
 msgctxt "presence"
 msgid "Unknown"
 msgstr "Непознато"
 
-#: ../libempathy/empathy-utils.c:232
+#: ../libempathy/empathy-utils.c:228
 msgid "No reason specified"
 msgstr "Није наведен разлог"
 
-#: ../libempathy/empathy-utils.c:234 ../libempathy/empathy-utils.c:290
+#: ../libempathy/empathy-utils.c:230 ../libempathy/empathy-utils.c:286
 msgid "Status is set to offline"
 msgstr "Стање је постављено на „неповезан“"
 
-#: ../libempathy/empathy-utils.c:236 ../libempathy/empathy-utils.c:270
+#: ../libempathy/empathy-utils.c:232 ../libempathy/empathy-utils.c:266
 #: ../libempathy-gtk/empathy-call-utils.c:42
 #: ../libempathy-gtk/empathy-new-message-dialog.c:70
 msgid "Network error"
 msgstr "Грешка мреже"
 
-#: ../libempathy/empathy-utils.c:238 ../libempathy/empathy-utils.c:272
+#: ../libempathy/empathy-utils.c:234 ../libempathy/empathy-utils.c:268
 msgid "Authentication failed"
 msgstr "Потврђивање идентитета није успело"
 
-#: ../libempathy/empathy-utils.c:240 ../libempathy/empathy-utils.c:274
+#: ../libempathy/empathy-utils.c:236 ../libempathy/empathy-utils.c:270
 msgid "Encryption error"
 msgstr "Грешка шифровања"
 
-#: ../libempathy/empathy-utils.c:242
+#: ../libempathy/empathy-utils.c:238
 msgid "Name in use"
 msgstr "Име је у употреби"
 
-#: ../libempathy/empathy-utils.c:244 ../libempathy/empathy-utils.c:276
+#: ../libempathy/empathy-utils.c:240 ../libempathy/empathy-utils.c:272
 msgid "Certificate not provided"
 msgstr "Уверење није прослеђено"
 
-#: ../libempathy/empathy-utils.c:246 ../libempathy/empathy-utils.c:278
+#: ../libempathy/empathy-utils.c:242 ../libempathy/empathy-utils.c:274
 msgid "Certificate untrusted"
 msgstr "Уверење није поверљиво"
 
-#: ../libempathy/empathy-utils.c:248 ../libempathy/empathy-utils.c:280
+#: ../libempathy/empathy-utils.c:244 ../libempathy/empathy-utils.c:276
 msgid "Certificate expired"
 msgstr "Уверење је истекло"
 
-#: ../libempathy/empathy-utils.c:250 ../libempathy/empathy-utils.c:282
+#: ../libempathy/empathy-utils.c:246 ../libempathy/empathy-utils.c:278
 msgid "Certificate not activated"
 msgstr "Уверење није активирано"
 
-#: ../libempathy/empathy-utils.c:252 ../libempathy/empathy-utils.c:284
+#: ../libempathy/empathy-utils.c:248 ../libempathy/empathy-utils.c:280
 msgid "Certificate hostname mismatch"
 msgstr "Назив домаћина уверења се не поклапа"
 
-#: ../libempathy/empathy-utils.c:254 ../libempathy/empathy-utils.c:286
+#: ../libempathy/empathy-utils.c:250 ../libempathy/empathy-utils.c:282
 msgid "Certificate fingerprint mismatch"
 msgstr "Отисак уверења се не поклапа"
 
-#: ../libempathy/empathy-utils.c:256 ../libempathy/empathy-utils.c:288
+#: ../libempathy/empathy-utils.c:252 ../libempathy/empathy-utils.c:284
 msgid "Certificate self-signed"
 msgstr "Уверење је самопотписано"
 
-#: ../libempathy/empathy-utils.c:258
+#: ../libempathy/empathy-utils.c:254
 msgid "Certificate error"
 msgstr "Грешка у уверењеу"
 
-#: ../libempathy/empathy-utils.c:292
+#: ../libempathy/empathy-utils.c:288
 msgid "Encryption is not available"
 msgstr "Шифровање није доступно"
 
-#: ../libempathy/empathy-utils.c:294
+#: ../libempathy/empathy-utils.c:290
 msgid "Certificate is invalid"
 msgstr "Уверење није исправно"
 
-#: ../libempathy/empathy-utils.c:296
+#: ../libempathy/empathy-utils.c:292
 msgid "Connection has been refused"
 msgstr "Веза је одбијена"
 
-#: ../libempathy/empathy-utils.c:298
-#| msgid "Connection can't be established"
+#: ../libempathy/empathy-utils.c:294
 msgid "Connection can’t be established"
 msgstr "Веза не може бити успостављена"
 
-#: ../libempathy/empathy-utils.c:300
+#: ../libempathy/empathy-utils.c:296
 msgid "Connection has been lost"
 msgstr "Веза је изгубљена"
 
-#: ../libempathy/empathy-utils.c:302
+#: ../libempathy/empathy-utils.c:298
 msgid "This account is already connected to the server"
 msgstr "Овај налог је већ повезан са сервером"
 
-#: ../libempathy/empathy-utils.c:304
+#: ../libempathy/empathy-utils.c:300
 msgid ""
 "Connection has been replaced by a new connection using the same resource"
 msgstr "Веза је замењена новом везом користећи исти ресурс"
 
-#: ../libempathy/empathy-utils.c:307
+#: ../libempathy/empathy-utils.c:303
 msgid "The account already exists on the server"
 msgstr "Овај налог већ постоји на серверу"
 
-#: ../libempathy/empathy-utils.c:309
+#: ../libempathy/empathy-utils.c:305
 msgid "Server is currently too busy to handle the connection"
 msgstr "Сервер је тренутно превише заузет да би руковао везом"
 
-#: ../libempathy/empathy-utils.c:311
+#: ../libempathy/empathy-utils.c:307
 msgid "Certificate has been revoked"
 msgstr "Уверење је опозвано"
 
-#: ../libempathy/empathy-utils.c:313
+#: ../libempathy/empathy-utils.c:309
 msgid ""
 "Certificate uses an insecure cipher algorithm or is cryptographically weak"
 msgstr ""
 "Уверење користи несигуран алгоритам шифровања или је криптографски слабо"
 
-#: ../libempathy/empathy-utils.c:316
+#: ../libempathy/empathy-utils.c:312
 msgid ""
 "The length of the server certificate, or the depth of the server certificate "
 "chain, exceed the limits imposed by the cryptography library"
@@ -712,11 +711,11 @@ msgstr ""
 "Дужина уверења сервера, или дубина ланца уверења сервера, премашује границе "
 "које је задала библиотека шифровања"
 
-#: ../libempathy/empathy-utils.c:320
+#: ../libempathy/empathy-utils.c:316
 msgid "Your software is too old"
 msgstr "Ваш софтвер је превише стар"
 
-#: ../libempathy/empathy-utils.c:322
+#: ../libempathy/empathy-utils.c:318
 msgid "Internal error"
 msgstr "Унутрашња грешка"
 
@@ -759,7 +758,6 @@ msgid "There was an error starting the call"
 msgstr "Дошло је до грешке приликом позивања"
 
 #: ../libempathy-gtk/empathy-call-utils.c:44
-#| msgid "The specified contact doesn't support calls"
 msgid "The specified contact doesn’t support calls"
 msgstr "Наведени контакт не подржава позиве"
 
@@ -776,7 +774,6 @@ msgid "Emergency calls are not supported on this protocol"
 msgstr "Овај протокол не подржава хитне позиве"
 
 #: ../libempathy-gtk/empathy-call-utils.c:52
-#| msgid "You don't have enough credit in order to place this call"
 msgid "You don’t have enough credit in order to place this call"
 msgstr "Немате довољно кредита да бисте могли да обавите овај позив"
 
@@ -836,10 +833,6 @@ msgid "/me <message>: send an ACTION message to the current conversation"
 msgstr "/me <порука>: шаље поруку РАДЊА на тренутни разговор"
 
 #: ../libempathy-gtk/empathy-chat.c:1083
-#| msgid ""
-#| "/say <message>: send <message> to the current conversation. This is used "
-#| "to send a message starting with a '/'. For example: \"/say /join is used "
-#| "to join a new chat room\""
 msgid ""
 "/say <message>: send <message> to the current conversation. This is used to "
 "send a message starting with a “/”. For example: “/say /join is used to join "
@@ -881,7 +874,6 @@ msgstr "нема довољно готовине за слање поруке"
 #: ../libempathy-gtk/empathy-chat.c:1540 ../libempathy-gtk/empathy-chat.c:1554
 #: ../libempathy-gtk/empathy-chat.c:1617
 #, c-format
-#| msgid "Error sending message '%s': %s"
 msgid "Error sending message “%s”: %s"
 msgstr "Грешка при слању поруке „%s“: %s"
 
@@ -952,7 +944,6 @@ msgstr "(нема предлога)"
 #. translators: %s is the selected word
 #: ../libempathy-gtk/empathy-chat.c:2286
 #, c-format
-#| msgid "Add '%s' to Dictionary"
 msgid "Add “%s” to Dictionary"
 msgstr "Додај „%s“ у речник"
 
@@ -960,7 +951,6 @@ msgstr "Додај „%s“ у речник"
 #. * second %s is the language name of the target dictionary
 #: ../libempathy-gtk/empathy-chat.c:2323
 #, c-format
-#| msgid "Add '%s' to %s Dictionary"
 msgid "Add “%s” to %s Dictionary"
 msgstr "Додај „%s“ у речник за %s језик"
 
@@ -1134,7 +1124,6 @@ msgid "Remove"
 msgstr "Уклони"
 
 #: ../libempathy-gtk/empathy-contact-chooser.c:416
-#| msgid "_Search for Contacts…"
 msgid "Type to search a contact…"
 msgstr "Тражи пријатеље…"
 
@@ -1164,7 +1153,6 @@ msgid "Your message introducing yourself:"
 msgstr "Порука која вас представља:"
 
 #: ../libempathy-gtk/empathy-contact-search-dialog.c:674
-#| msgid "Please let me see when you're online. Thanks!"
 msgid "Please let me see when you’re online. Thanks!"
 msgstr "Молим вас обавестите ме када сте на мрежи. Хвала!"
 
@@ -1260,7 +1248,6 @@ msgstr "Блокирати %s?"
 #: ../libempathy-gtk/empathy-individual-dialogs.c:239
 #: ../libempathy-gtk/empathy-subscription-dialog.c:125
 #, c-format
-#| msgid "Are you sure you want to block '%s' from contacting you again?"
 msgid "Are you sure you want to block “%s” from contacting you again?"
 msgstr ""
 "Да ли сте сигурни да желите да блокирате да вас „%s“ више не контактира?"
@@ -1362,7 +1349,6 @@ msgstr "_Блокирај контакт"
 
 #: ../libempathy-gtk/empathy-individual-menu.c:729
 #, c-format
-#| msgid "Remove from _Group '%s'"
 msgid "Remove from _Group “%s”"
 msgstr "Уклони из _групе „%s“"
 
@@ -1372,15 +1358,11 @@ msgstr "Избриши и _блокирај"
 
 #: ../libempathy-gtk/empathy-individual-menu.c:838
 #, c-format
-#| msgid "Do you really want to remove the contact '%s'?"
 msgid "Do you really want to remove the contact “%s”?"
 msgstr "Да ли сте сигурни да желите да уклоните пријатеља „%s“?"
 
 #: ../libempathy-gtk/empathy-individual-menu.c:847
 #, c-format
-#| msgid ""
-#| "Do you really want to remove the linked contact '%s'? Note that this will "
-#| "remove all the contacts which make up this linked contact."
 msgid ""
 "Do you really want to remove the linked contact “%s”? Note that this will "
 "remove all the contacts which make up this linked contact."
@@ -1461,7 +1443,6 @@ msgstr "Дод_ај пријатеља…"
 
 #: ../libempathy-gtk/empathy-individual-view.c:2367
 #, c-format
-#| msgid "Do you really want to remove the group '%s'?"
 msgid "Do you really want to remove the group “%s”?"
 msgstr "Да ли сте сигурни да желите да уклоните групу „%s“?"
 
@@ -1873,7 +1854,6 @@ msgid "You must be invited to join this channel"
 msgstr "Морате бити позвани да се придружите овом каналу"
 
 #: ../libempathy-gtk/empathy-new-message-dialog.c:92
-#| msgid "Can't proceed while disconnected"
 msgid "Can’t proceed while disconnected"
 msgstr "Не могу да наставим док је веза прекинута"
 
@@ -1887,7 +1867,6 @@ msgstr "Дошло је до грешке приликом започињања 
 
 #. add chat button
 #: ../libempathy-gtk/empathy-new-message-dialog.c:307
-#| msgid "Done"
 msgid "_Done"
 msgstr "_Обављено"
 
@@ -2054,7 +2033,6 @@ msgid "The certificate has expired."
 msgstr "Уверење је истекло."
 
 #: ../libempathy-gtk/empathy-tls-dialog.c:161
-#| msgid "The certificate hasn't yet been activated."
 msgid "The certificate hasn’t yet been activated."
 msgstr "Уверење још увек није активирано."
 
@@ -2063,8 +2041,6 @@ msgid "The certificate does not have the expected fingerprint."
 msgstr "Уверење нема очекивани отисак."
 
 #: ../libempathy-gtk/empathy-tls-dialog.c:167
-#| msgid ""
-#| "The hostname verified by the certificate doesn't match the server name."
 msgid "The hostname verified by the certificate doesn’t match the server name."
 msgstr ""
 "Име домаћина које је проверено у уверењеу се не слаже са именом сервера."
@@ -2183,13 +2159,11 @@ msgstr ""
 "Превод.орг — превод на српски језик."
 
 #: ../src/empathy-accounts.c:171
-#| msgid "Don't display any dialogs; do any work (eg, importing) and exit"
 msgid "Don’t display any dialogs; do any work (e.g. importing) and exit"
-msgstr "Не приказуј ниједно прозорче; уради посао који имаш (нпр. увоз) и изађи"
+msgstr ""
+"Не приказуј ниједно прозорче; уради посао који имаш (нпр. увоз) и изађи"
 
 #: ../src/empathy-accounts.c:175
-#| msgid ""
-#| "Don't display any dialogs unless there are only \"People Nearby\" accounts"
 msgid ""
 "Don’t display any dialogs unless there are only “People Nearby” accounts"
 msgstr ""
@@ -2205,7 +2179,6 @@ msgid "<account-id>"
 msgstr "<идентификација налога>"
 
 #: ../src/empathy-accounts.c:186
-#| msgid "- Empathy Accounts"
 msgid "— Empathy Accounts"
 msgstr "— Налози Писмоноше"
 
@@ -2342,35 +2315,32 @@ msgstr ""
 msgid "No protocol backends installed"
 msgstr "Нису инсталирани позадинци протокола"
 
-#: ../src/empathy-auth-client.c:285
-#| msgid " - Empathy authentication client"
+#: ../src/empathy-auth-client.c:284
 msgid " — Empathy authentication client"
 msgstr " — Интернет писмоноша клијент пријаве"
 
-#: ../src/empathy-auth-client.c:301
+#: ../src/empathy-auth-client.c:299
 msgid "Empathy authentication client"
 msgstr "Интернет писмоноша клијент пријаве"
 
-#: ../src/empathy.c:405
-#| msgid "Don't connect on startup"
+#: ../src/empathy.c:402
 msgid "Don’t connect on startup"
 msgstr "Не повезуј се по покретању"
 
-#: ../src/empathy.c:409
-#| msgid "Don't display the contact list or any other dialogs on startup"
+#: ../src/empathy.c:406
 msgid "Don’t display the contact list or any other dialogs on startup"
-msgstr "Не приказуј списак пријатеља нити било које друго прозорче по покретању"
+msgstr ""
+"Не приказуј списак пријатеља нити било које друго прозорче по покретању"
 
-#: ../src/empathy.c:438
-#| msgid "- Empathy IM Client"
+#: ../src/empathy.c:435
 msgid "— Empathy IM Client"
 msgstr "— Интернет писмоноша за брзе поруке"
 
-#: ../src/empathy.c:624
+#: ../src/empathy.c:621
 msgid "Error contacting the Account Manager"
 msgstr "Грешка при комуникацији са Управником налога"
 
-#: ../src/empathy.c:626
+#: ../src/empathy.c:623
 #, c-format
 msgid ""
 "There was an error while trying to connect to the Telepathy Account Manager. "
@@ -2388,7 +2358,6 @@ msgid "In a call"
 msgstr "Долазни позив"
 
 #: ../src/empathy-call.c:223
-#| msgid "- Empathy Audio/Video Client"
 msgid "— Empathy Audio/Video Client"
 msgstr "— Интернет писмоноша Аудио/Видео клијент"
 
@@ -2475,7 +2444,6 @@ msgstr "Трајање"
 #. Translators: 'status — minutes∶seconds' the caller has been connected
 #: ../src/empathy-call-window.c:2979
 #, c-format
-#| msgid "%s — %d:%02dm"
 msgid "%s — %d∶%02dm"
 msgstr "%s — %d:%02dm"
 
@@ -2485,9 +2453,6 @@ msgstr "Технички детаљи"
 
 #: ../src/empathy-call-window.c:3114
 #, c-format
-#| msgid ""
-#| "%s's software does not understand any of the audio formats supported by "
-#| "your computer"
 msgid ""
 "%s’s software does not understand any of the audio formats supported by your "
 "computer"
@@ -2495,9 +2460,6 @@ msgstr "Програм %s не разуме ниједан звучни форм
 
 #: ../src/empathy-call-window.c:3119
 #, c-format
-#| msgid ""
-#| "%s's software does not understand any of the video formats supported by "
-#| "your computer"
 msgid ""
 "%s’s software does not understand any of the video formats supported by your "
 "computer"
@@ -2505,9 +2467,6 @@ msgstr "Програм %s не разуме ниједан видео форма
 
 #: ../src/empathy-call-window.c:3125
 #, c-format
-#| msgid ""
-#| "Can't establish a connection to %s. One of you might be on a network that "
-#| "does not allow direct connections."
 msgid ""
 "Can’t establish a connection to %s. One of you might be on a network that "
 "does not allow direct connections."
@@ -2533,18 +2492,14 @@ msgstr ""
 
 #: ../src/empathy-call-window.c:3150
 #, c-format
-#| msgid ""
-#| "Something unexpected happened in a Telepathy component. Please <a href="
-#| "\"%s\">report this bug</a> and attach logs gathered from the 'Debug' "
-#| "window in the Help menu."
 msgid ""
 "Something unexpected happened in a Telepathy component. Please <a href=\"%s"
 "\">report this bug</a> and attach logs gathered from the “Debug” window in "
 "the Help menu."
 msgstr ""
-"Нешто неочекивано се десило у компоненти Телепатије. Пријавите <a href=„%s“>"
-"ову грешку</a> и прикачите дневнике покупљене из прозора „Отклањање грешака“ "
-"у изборнику „Помоћ“."
+"Нешто неочекивано се десило у компоненти Телепатије. Пријавите <a "
+"href=„%s“>ову грешку</a> и прикачите дневнике покупљене из прозора "
+"„Отклањање грешака“ у изборнику „Помоћ“."
 
 #: ../src/empathy-call-window.c:3159
 msgid "There was a failure in the call engine"
@@ -2555,12 +2510,10 @@ msgid "The end of the stream was reached"
 msgstr "Достигнут је крај тока"
 
 #: ../src/empathy-call-window.c:3202
-#| msgid "Can't establish audio stream"
 msgid "Can’t establish audio stream"
 msgstr "Не могу да успоставим звучни ток"
 
 #: ../src/empathy-call-window.c:3212
-#| msgid "Can't establish video stream"
 msgid "Can’t establish video stream"
 msgstr "Не могу да успоставим видео ток"
 
@@ -2690,7 +2643,6 @@ msgid "Audio"
 msgstr "Звук"
 
 #: ../src/empathy-chat.c:102
-#| msgid "- Empathy Chat Client"
 msgid "— Empathy Chat Client"
 msgstr "— Писмоноша програм за ћаскање"
 
@@ -2894,7 +2846,6 @@ msgid "Show a particular service"
 msgstr "Прикажи посебну услугу"
 
 #: ../src/empathy-debugger.c:81
-#| msgid "- Empathy Debugger"
 msgid "— Empathy Debugger"
 msgstr "— Отклањање грешака Писмоноше"
 
@@ -2959,15 +2910,6 @@ msgid "Error"
 msgstr "Грешка"
 
 #: ../src/empathy-debug-window.c:1995
-#| msgid ""
-#| "Even if they don't display passwords, logs can contain sensitive "
-#| "information such as your list of contacts or the messages you recently "
-#| "sent or received.\n"
-#| "If you don't want to see such information available in a public bug "
-#| "report, you can choose to limit the visibility of your bug to Empathy "
-#| "developers when reporting it by displaying the advanced fields in the <a "
-#| "href=\"https://bugzilla.gnome.org/enter_bug.cgi?product=empathy\">bug "
-#| "report</a>."
 msgid ""
 "Even if they don’t display passwords, logs can contain sensitive information "
 "such as your list of contacts or the messages you recently sent or "
@@ -2983,8 +2925,8 @@ msgstr ""
 "Ако не желите да видите такве податке доступне у јавном извештају о "
 "грешкама, можете да изаберете да ограничите видљивост ваших грешака "
 "програмерима Интернет писмоноше када извештавате о њима приказујући напредна "
-"поља у <a href=\"https://bugzilla.gnome.org/enter_bug.cgi?product=empathy\">"
-"извештају о грешци</a>."
+"поља у <a href=\"https://bugzilla.gnome.org/enter_bug.cgi?product=empathy"
+"\">извештају о грешци</a>."
 
 #: ../src/empathy-debug-window.c:2027
 msgid "Time"
@@ -3084,7 +3026,6 @@ msgstr ""
 #. Translators: time left, when it is more than one hour
 #: ../src/empathy-ft-manager.c:94
 #, c-format
-#| msgid "%u:%02u.%02u"
 msgid "%u∶%02u.%02u"
 msgstr "%u∶%02u.%02u"
 
@@ -3114,14 +3055,12 @@ msgstr "%s од %s"
 #. translators: first %s is filename, second %s is the contact name
 #: ../src/empathy-ft-manager.c:300
 #, c-format
-#| msgid "Receiving \"%s\" from %s"
 msgid "Receiving “%s” from %s"
 msgstr "Примам „%s“ од %s"
 
 #. translators: first %s is filename, second %s is the contact name
 #: ../src/empathy-ft-manager.c:303
 #, c-format
-#| msgid "Sending \"%s\" to %s"
 msgid "Sending “%s” to %s"
 msgstr "Шаљем „%s“ за %s"
 
@@ -3129,7 +3068,6 @@ msgstr "Шаљем „%s“ за %s"
 #. * is the contact name
 #: ../src/empathy-ft-manager.c:333
 #, c-format
-#| msgid "Error receiving \"%s\" from %s"
 msgid "Error receiving “%s” from %s"
 msgstr "Грешка при примању „%s“ од %s"
 
@@ -3141,7 +3079,6 @@ msgstr "Грешка при примању датотеке"
 #. * is the contact name
 #: ../src/empathy-ft-manager.c:341
 #, c-format
-#| msgid "Error sending \"%s\" to %s"
 msgid "Error sending “%s” to %s"
 msgstr "Грешка при слању „%s“ за %s"
 
@@ -3153,7 +3090,6 @@ msgstr "Грешка при слању датотеке"
 #. * is the contact name
 #: ../src/empathy-ft-manager.c:483
 #, c-format
-#| msgid "\"%s\" received from %s"
 msgid "“%s” received from %s"
 msgstr "„%s“ је примљен од %s"
 
@@ -3161,7 +3097,6 @@ msgstr "„%s“ је примљен од %s"
 #. * is the contact name
 #: ../src/empathy-ft-manager.c:488
 #, c-format
-#| msgid "\"%s\" sent to %s"
 msgid "“%s” sent to %s"
 msgstr " „%s“ је послат за %s"
 
@@ -3170,19 +3105,16 @@ msgid "File transfer completed"
 msgstr "Пренос датотеке је завршен"
 
 #: ../src/empathy-ft-manager.c:610 ../src/empathy-ft-manager.c:774
-#| msgid "Waiting for the other participant's response"
 msgid "Waiting for the other participant’s response"
 msgstr "Чекам на одговор друге стране"
 
 #: ../src/empathy-ft-manager.c:636 ../src/empathy-ft-manager.c:674
 #, c-format
-#| msgid "Checking integrity of \"%s\""
 msgid "Checking integrity of “%s”"
 msgstr "Проверавам интегритет датотеке „%s“"
 
 #: ../src/empathy-ft-manager.c:639 ../src/empathy-ft-manager.c:677
 #, c-format
-#| msgid "Hashing \"%s\""
 msgid "Hashing “%s”"
 msgstr "Тражим хеш датотеке „%s“"
 
@@ -3308,9 +3240,6 @@ msgstr ""
 "серверу на којем вам је налог"
 
 #: ../src/empathy-new-chatroom-dialog.ui.h:4
-#| msgid ""
-#| "Enter the server which hosts the room, or leave it empty if the room is "
-#| "on the current account's server"
 msgid ""
 "Enter the server which hosts the room, or leave it empty if the room is on "
 "the current account’s server"
@@ -3323,7 +3252,6 @@ msgid "_Server:"
 msgstr "_Сервер:"
 
 #: ../src/empathy-new-chatroom-dialog.ui.h:7
-#| msgid "Couldn't load room list"
 msgid "Couldn’t load room list"
 msgstr "Не могу да учитам списак соба"
 
@@ -3415,7 +3343,6 @@ msgstr "Како шта је било?? Нема је више, украли с�
 
 #. translators: Quote from Romeo & Julier, for chat theme preview
 #: ../src/empathy-preferences.c:653
-#| msgid "And I'll no longer be a Capulet."
 msgid "And I’ll no longer be a Capulet."
 msgstr "Шта су ти украли, Пајо?? Штаааа??"
 
@@ -3672,7 +3599,6 @@ msgid "No match found"
 msgstr "Нема поклапања"
 
 #: ../src/empathy-roster-window.c:1755
-#| msgid "You haven't added any contacts yet"
 msgid "You haven’t added any contacts yet"
 msgstr "Још увек нисте додали ниједан контакт"
 
@@ -3681,7 +3607,6 @@ msgid "No online contacts"
 msgstr "Нема конаката на мрежи"
 
 #: ../src/empathy-roster-window.c:2359
-#| msgid "Conversation"
 msgid "Conversations"
 msgstr "Разговори"
 
