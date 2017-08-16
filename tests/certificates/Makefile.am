@@ -1,5 +1,6 @@
 EXTRA_DIST = \
 	certificate-authority.cer \
+	certificate-authority.pem \
 	server-cert.cer
 
 # Not part of the build, but so we can easily repeat the process
