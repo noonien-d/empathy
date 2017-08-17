@@ -2332,10 +2332,6 @@ empathy_roster_window_init (EmpathyRosterWindow *self)
   gtk_window_set_role (GTK_WINDOW (self), "contact_list");
   gtk_window_set_default_size (GTK_WINDOW (self), 225, 325);
 
-  /* don't finalize the widget on delete-event, just hide it */
-  g_signal_connect (self, "delete-event",
-    G_CALLBACK (gtk_widget_hide_on_delete), NULL);
-
   /* Set up interface */
   filename = empathy_file_lookup ("empathy-roster-window.ui", "src");
   gui = tpaw_builder_get_file (filename,
