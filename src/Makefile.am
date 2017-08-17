@@ -84,21 +84,6 @@ empathy_auth_client_SOURCES =						\
 	empathy-auth-client.c \
 	$(NULL)
 
-empathy_chat_SOURCES =						\
-	chat-manager-interface.c chat-manager-interface.h \
-	empathy-about-dialog.c empathy-about-dialog.h			\
-	empathy-chat-manager.c empathy-chat-manager.h		\
-	empathy-chat-window.c empathy-chat-window.h		\
-	empathy-invite-participant-dialog.c empathy-invite-participant-dialog.h \
-	empathy-chat.c \
-	polari-fixed-size-frame.c  polari-fixed-size-frame.h \
-	$(NULL)
-
-nodist_empathy_chat_SOURCES = \
-	empathy-chat-resources.c \
-	empathy-chat-resources.h \
-	$(NULL)
-
 empathy_call_SOURCES = \
        empathy-call.c \
        empathy-call-factory.c \
@@ -175,7 +160,6 @@ check_c_sources = \
     $(empathy_accounts_SOURCES) \
     $(empathy_debugger_SOURCES) \
     $(empathy_auth_client_SOURCES) \
-    $(empathy_chat_SOURCES) \
     $(empathy_call_SOURCES)
 
 include $(top_srcdir)/tools/check-coding-style.mk
@@ -216,7 +200,6 @@ chat-manager-interface.h: Makefile.am Chat_Manager.xml
 		Chat_Manager.xml
 
 BUILT_SOURCES = \
-	$(nodist_empathy_chat_SOURCES) \
 	chat-manager-interface.c \
 	chat-manager-interface.h \
 	$(NULL)
