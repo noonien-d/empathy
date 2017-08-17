@@ -75,7 +75,7 @@
 present them to the user immediately.</description>
     </key>
     <key name="chat-window-paned-pos" type="i">
-      <default>0</default>
+      <default>400</default>
       <summary>The position for the chat window side pane</summary>
       <description>The stored position (in pixels) of the chat window side pane.</description>
     </key>

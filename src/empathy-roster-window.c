@@ -2488,7 +2488,7 @@ empathy_roster_window_init (EmpathyRosterWindow *self)
   /* Load user-defined accelerators. */
   roster_window_accels_load ();
 
-  gtk_window_set_default_size (GTK_WINDOW (self), -1, 600);
+  gtk_window_set_default_size (GTK_WINDOW (self), 900, 600);
   /* Set window size. */
   empathy_geometry_bind (GTK_WINDOW (self), GEOMETRY_NAME);
 
