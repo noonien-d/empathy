@@ -116,7 +116,7 @@ struct _EmpathyRosterWindowPriv {
   GtkWidget *notebook;
   GtkWidget *no_entry_label;
   GtkWidget *button_account_settings;
-  GtkWidget *button_online;
+  //GtkWidget *button_online;
   GtkWidget *button_show_offline;
   GtkWidget *button_add_contact;
   GtkWidget *spinner_loading;
@@ -387,7 +387,7 @@ button_account_settings_clicked_cb (GtkButton *button,
   empathy_accounts_dialog_show_application (gdk_screen_get_default (),
       NULL, FALSE, FALSE);
 }
-
+/*
 static void
 button_online_clicked_cb (GtkButton *button,
     EmpathyRosterWindow *self)
@@ -400,7 +400,7 @@ button_online_clicked_cb (GtkButton *button,
       TP_CONNECTION_PRESENCE_TYPE_AVAILABLE);
 
   g_object_unref (mgr);
-}
+}*/
 
 static void
 button_show_offline_clicked_cb (GtkButton *button,
@@ -478,8 +478,8 @@ display_page_message (EmpathyRosterWindow *self,
       (flags & PAGE_MESSAGE_FLAG_ACCOUNTS) != 0);
   gtk_widget_set_visible (self->priv->spinner_loading,
       (flags & PAGE_MESSAGE_FLAG_SPINNER) != 0);
-  gtk_widget_set_visible (self->priv->button_online,
-      (flags & PAGE_MESSAGE_FLAG_ONLINE) != 0);
+//  gtk_widget_set_visible (self->priv->button_online,
+//      (flags & PAGE_MESSAGE_FLAG_ONLINE) != 0);
   gtk_widget_set_visible (self->priv->button_show_offline,
       (flags & PAGE_MESSAGE_FLAG_SHOW_OFFLINE) != 0);
   gtk_widget_set_visible (self->priv->button_add_contact,
@@ -1735,9 +1735,10 @@ set_notebook_page (EmpathyRosterWindow *self)
 
   if (presence == TP_CONNECTION_PRESENCE_TYPE_OFFLINE)
     {
-      display_page_message (self,
-          _("Change your presence to see contacts here"),
-          PAGE_MESSAGE_FLAG_ONLINE);
+// This message shows up always. WTF telepathy?
+//      display_page_message (self,
+//          _("Change your presence to see contacts here"),
+//          PAGE_MESSAGE_FLAG_ONLINE);
       goto out;
     }
 
@@ -2348,7 +2349,7 @@ empathy_roster_window_init (EmpathyRosterWindow *self)
       "no_entry_label", &self->priv->no_entry_label,
       "roster_scrolledwindow", &sw,
       "button_account_settings", &self->priv->button_account_settings,
-      "button_online", &self->priv->button_online,
+//      "button_online", &self->priv->button_online,
       "button_show_offline", &self->priv->button_show_offline,
       "button_add_contact", &self->priv->button_add_contact,
       "spinner_loading", &self->priv->spinner_loading,
@@ -2529,8 +2530,8 @@ empathy_roster_window_init (EmpathyRosterWindow *self)
 
   g_signal_connect (self->priv->button_account_settings, "clicked",
       G_CALLBACK (button_account_settings_clicked_cb), self);
-  g_signal_connect (self->priv->button_online, "clicked",
-      G_CALLBACK (button_online_clicked_cb), self);
+//  g_signal_connect (self->priv->button_online, "clicked",
+//      G_CALLBACK (button_online_clicked_cb), self);
   g_signal_connect (self->priv->button_show_offline, "clicked",
       G_CALLBACK (button_show_offline_clicked_cb), self);
   g_signal_connect (self->priv->button_add_contact, "clicked",
