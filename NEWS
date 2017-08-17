@@ -1,11 +1,29 @@
-NEW in 3.
-=========
+NEW in 3.25.90 (16/08/2017)
+==============
 
-This release assumes the use of GNU Make. See the following links for details
-on why you probably do not want to attempt to use an alternative implementation:
+This new Empathy release is not quality engineering. But perhaps it will
+be better than the release that came before.
 
-https://bugzilla.gnome.org/show_bug.cgi?id=685837
-https://www.gnu.org/software/automake/manual/automake.html#Multiple-Outputs
+Then again, perhaps not. Empathy is abandonware. A new maintainer is
+required. In the meantime, all bug reports will continue to be ignored.
+
+Highlights of this release:
+
+ - Port to modern WebKitGTK+ API, so Empathy doesn't need to be removed
+   from operating systems that have removed WebKitGTK+ 2.4.
+
+ - Switch to single-window UI. It has rough edges, but at least the app
+   menu does not disappear anymore. Also, you can actually run it in
+   JHBuild now, so you can test changes to the source code. That's good.
+
+ - Fixed some things.
+
+Credit to some people who did particularly good work on this release:
+
+Lionel Landwerlin, Fabrice Bellet, Daniel Boles, Carlos Garcia Campos,
+György Balló, Frédéric Péters, Debarshi Ray, Tomas Popela
+
+All the bad work is by Michael Catanzaro. (Seriously.)
 
 NEW in 3.12.12 (13/05/2016)
 ==============
