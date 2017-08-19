@@ -17,10 +17,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: empathy master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
 "product=empathy&keywords=I18N+L10N&component=General\n"
-"POT-Creation-Date: 2017-02-01 22:03+0000\n"
-"PO-Revision-Date: 2017-02-04 20:48+0100\n"
+"POT-Creation-Date: 2017-08-17 00:23+0000\n"
+"PO-Revision-Date: 2017-08-19 13:57+0200\n"
 "Last-Translator: Mario Blättermann <mario.blaettermann@gmail.com>\n"
 "Language-Team: Deutsch <gnome-de@gnome.org>\n"
 "Language: de\n"
@@ -28,9 +28,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.8.11\n"
+"X-Generator: Poedit 2.0.3\n"
 
-#: ../data/empathy.desktop.in.in.h:1
+#: ../data/empathy.desktop.in.in.h:1 ../data/empathy.appdata.xml.in.h:1
 msgid "Empathy"
 msgstr "Empathy"
 
@@ -42,7 +42,7 @@ msgstr "Sofortnachrichten-Client"
 msgid "Empathy Internet Messaging"
 msgstr "Empathy Internet-Sofortnachrichtendienst"
 
-#: ../data/empathy.desktop.in.in.h:4
+#: ../data/empathy.desktop.in.in.h:4 ../data/empathy.appdata.xml.in.h:2
 msgid "Chat on Google Talk, Facebook, MSN and many other chat services"
 msgstr "Chat auf Google Talk, Facebook, MSN und vielen anderen Chat-Diensten"
 
@@ -50,30 +50,35 @@ msgstr "Chat auf Google Talk, Facebook, MSN und vielen anderen Chat-Diensten"
 msgid "chat;talk;im;message;irc;voip;gtalk;facebook;jabber;"
 msgstr "chat;gespräch;im;nachrichten;irc;voip;gtalk;facebook;jabber;"
 
-#: ../data/empathy.appdata.xml.in.h:1
+#: ../data/empathy.appdata.xml.in.h:3
 msgid ""
 "Empathy is the official instant messaging application of the GNOME desktop "
-"environment.  Empathy can connect to AIM, MSN, Jabber (including Facebook "
-"and Google Talk), IRC, and many other messaging networks. You can chat with "
-"text, make audio and video calls, or even transfer files, depending on what "
-"your contact’s chat application allows."
+"environment. Empathy can connect to AIM, MSN, Jabber (including Facebook and "
+"Google Talk), IRC, and many other messaging networks."
 msgstr ""
 "Empathy ist die offizielle Nachrichtenanwendung für die GNOME-"
 "Arbeitsumgebung. Empathy kann sich mit AIM, MSN, Jabber (Facebook und Google "
 "Talk eingeschlossen), IRC, und vielen anderen Nachrichtennetzwerken "
-"verbinden. Sie können sich mithilfe von Textnachrichten, Sprach- und "
-"Videoanrufen unterhalten, oder sogar, falls dies die Nachrichtenanwendung "
-"ihres Kontaktes erlaubt, Dateien übertragen."
+"verbinden."
 
-#: ../data/empathy.appdata.xml.in.h:2
+#: ../data/empathy.appdata.xml.in.h:4
+msgid ""
+"You can chat with text, make audio and video calls, or even transfer files, "
+"depending on what your contact’s chat application allows."
+msgstr ""
+"Sie können sich mithilfe von Textnachrichten, Sprach- und Videoanrufen "
+"unterhalten, oder sogar, falls dies die Nachrichtenanwendung ihres Kontakts "
+"erlaubt, Dateien übertragen."
+
+#: ../data/empathy.appdata.xml.in.h:5
 msgid ""
 "Empathy provides integrated messaging for the GNOME desktop, so you’ll never "
-"miss a message.  You can respond to your contacts without even having to "
-"open Empathy!"
+"miss a message. You can respond to your contacts without even having to open "
+"Empathy!"
 msgstr ""
 "Empathy stellt eine integrierte Nachrichtenanwendung für die GNOME-"
-"Arbeitsumgebung dar, sodass sie niemals eine Nachricht verpassen werden. Sie "
-"können ihren Kontakten direkt antworten, ohne dabei überhaupt Empathy zu "
+"Arbeitsumgebung dar, so dass Sie niemals eine Nachricht verpassen werden. "
+"Sie können Ihren Kontakten direkt antworten, ohne dabei überhaupt Empathy zu "
 "öffnen!"
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:1
@@ -558,7 +563,7 @@ msgstr "Fehler beim Versuch, die Datei zu übertragen"
 msgid "The other participant is unable to transfer the file"
 msgstr "Der andere Teilnehmer kann die Datei nicht übertragen"
 
-#: ../libempathy/empathy-ft-handler.c:748 ../libempathy/empathy-utils.c:260
+#: ../libempathy/empathy-ft-handler.c:748 ../libempathy/empathy-utils.c:256
 msgid "Unknown reason"
 msgstr "Unbekannter Grund"
 
@@ -594,142 +599,142 @@ msgstr "%s wurde angerufen"
 msgid "Call from %s"
 msgstr "Anruf von %s"
 
-#: ../libempathy/empathy-utils.c:180
+#: ../libempathy/empathy-utils.c:176
 msgid "Available"
 msgstr "Verfügbar"
 
-#: ../libempathy/empathy-utils.c:182
+#: ../libempathy/empathy-utils.c:178
 msgid "Busy"
 msgstr "Beschäftigt"
 
-#: ../libempathy/empathy-utils.c:185
+#: ../libempathy/empathy-utils.c:181
 msgid "Away"
 msgstr "Abwesend"
 
-#: ../libempathy/empathy-utils.c:187
+#: ../libempathy/empathy-utils.c:183
 msgid "Invisible"
 msgstr "Unsichtbar"
 
-#: ../libempathy/empathy-utils.c:189
+#: ../libempathy/empathy-utils.c:185
 msgid "Offline"
 msgstr "Abgemeldet"
 
 #. translators: presence type is unknown
-#: ../libempathy/empathy-utils.c:192
+#: ../libempathy/empathy-utils.c:188
 msgctxt "presence"
 msgid "Unknown"
 msgstr "Unbekannt"
 
-#: ../libempathy/empathy-utils.c:232
+#: ../libempathy/empathy-utils.c:228
 msgid "No reason specified"
 msgstr "Es wurde kein Grund angegeben"
 
-#: ../libempathy/empathy-utils.c:234 ../libempathy/empathy-utils.c:290
+#: ../libempathy/empathy-utils.c:230 ../libempathy/empathy-utils.c:286
 msgid "Status is set to offline"
 msgstr "Der Status ist nun »abgemeldet«"
 
-#: ../libempathy/empathy-utils.c:236 ../libempathy/empathy-utils.c:270
+#: ../libempathy/empathy-utils.c:232 ../libempathy/empathy-utils.c:266
 #: ../libempathy-gtk/empathy-call-utils.c:42
 #: ../libempathy-gtk/empathy-new-message-dialog.c:70
 msgid "Network error"
 msgstr "Netzwerk-Fehler"
 
-#: ../libempathy/empathy-utils.c:238 ../libempathy/empathy-utils.c:272
+#: ../libempathy/empathy-utils.c:234 ../libempathy/empathy-utils.c:268
 msgid "Authentication failed"
 msgstr "Legitimierung fehlgeschlagen"
 
-#: ../libempathy/empathy-utils.c:240 ../libempathy/empathy-utils.c:274
+#: ../libempathy/empathy-utils.c:236 ../libempathy/empathy-utils.c:270
 msgid "Encryption error"
 msgstr "Verschlüsselungsfehler"
 
-#: ../libempathy/empathy-utils.c:242
+#: ../libempathy/empathy-utils.c:238
 msgid "Name in use"
 msgstr "Name bereits in Verwendung"
 
-#: ../libempathy/empathy-utils.c:244 ../libempathy/empathy-utils.c:276
+#: ../libempathy/empathy-utils.c:240 ../libempathy/empathy-utils.c:272
 msgid "Certificate not provided"
 msgstr "Zertifikat wurde nicht bereitgestellt"
 
-#: ../libempathy/empathy-utils.c:246 ../libempathy/empathy-utils.c:278
+#: ../libempathy/empathy-utils.c:242 ../libempathy/empathy-utils.c:274
 msgid "Certificate untrusted"
 msgstr "Zertifikat nicht vertrauenswürdig"
 
-#: ../libempathy/empathy-utils.c:248 ../libempathy/empathy-utils.c:280
+#: ../libempathy/empathy-utils.c:244 ../libempathy/empathy-utils.c:276
 msgid "Certificate expired"
 msgstr "Zertifikat abgelaufen"
 
-#: ../libempathy/empathy-utils.c:250 ../libempathy/empathy-utils.c:282
+#: ../libempathy/empathy-utils.c:246 ../libempathy/empathy-utils.c:278
 msgid "Certificate not activated"
 msgstr "Zertifikat nicht aktiviert"
 
-#: ../libempathy/empathy-utils.c:252 ../libempathy/empathy-utils.c:284
+#: ../libempathy/empathy-utils.c:248 ../libempathy/empathy-utils.c:280
 msgid "Certificate hostname mismatch"
 msgstr "Rechnername des Zertifikats stimmt nicht überein"
 
-#: ../libempathy/empathy-utils.c:254 ../libempathy/empathy-utils.c:286
+#: ../libempathy/empathy-utils.c:250 ../libempathy/empathy-utils.c:282
 msgid "Certificate fingerprint mismatch"
 msgstr "Fingerabdruck des Zertifikats stimmt nicht überein"
 
-#: ../libempathy/empathy-utils.c:256 ../libempathy/empathy-utils.c:288
+#: ../libempathy/empathy-utils.c:252 ../libempathy/empathy-utils.c:284
 msgid "Certificate self-signed"
 msgstr "Selbstsigniertes Zertifikat"
 
-#: ../libempathy/empathy-utils.c:258
+#: ../libempathy/empathy-utils.c:254
 msgid "Certificate error"
 msgstr "Zertifikat-Fehler"
 
-#: ../libempathy/empathy-utils.c:292
+#: ../libempathy/empathy-utils.c:288
 msgid "Encryption is not available"
 msgstr "Verschlüsselung ist nicht verfügbar"
 
-#: ../libempathy/empathy-utils.c:294
+#: ../libempathy/empathy-utils.c:290
 msgid "Certificate is invalid"
 msgstr "Zertifikat ist ungültig"
 
-#: ../libempathy/empathy-utils.c:296
+#: ../libempathy/empathy-utils.c:292
 msgid "Connection has been refused"
 msgstr "Verbindungsaufbau wurde verweigert"
 
-#: ../libempathy/empathy-utils.c:298
+#: ../libempathy/empathy-utils.c:294
 msgid "Connection can’t be established"
 msgstr "Verbindung kann nicht hergestellt werden"
 
-#: ../libempathy/empathy-utils.c:300
+#: ../libempathy/empathy-utils.c:296
 msgid "Connection has been lost"
 msgstr "Verbindung wurde unterbrochen"
 
-#: ../libempathy/empathy-utils.c:302
+#: ../libempathy/empathy-utils.c:298
 msgid "This account is already connected to the server"
 msgstr "Dieses Konto ist bereits mit dem Server verbunden"
 
-#: ../libempathy/empathy-utils.c:304
+#: ../libempathy/empathy-utils.c:300
 msgid ""
 "Connection has been replaced by a new connection using the same resource"
 msgstr ""
 "Die Verbindung wurde durch eine neue Verbindung mit der gleichen Ressource "
 "ersetzt"
 
-#: ../libempathy/empathy-utils.c:307
+#: ../libempathy/empathy-utils.c:303
 msgid "The account already exists on the server"
 msgstr "Dieses Konto ist bereits auf dem Server vorhanden"
 
-#: ../libempathy/empathy-utils.c:309
+#: ../libempathy/empathy-utils.c:305
 msgid "Server is currently too busy to handle the connection"
 msgstr ""
 "Der Server ist derzeit überlastet und kann die Verbindung nicht annehmen"
 
-#: ../libempathy/empathy-utils.c:311
+#: ../libempathy/empathy-utils.c:307
 msgid "Certificate has been revoked"
 msgstr "Zertifikat wurde zurückgezogen"
 
-#: ../libempathy/empathy-utils.c:313
+#: ../libempathy/empathy-utils.c:309
 msgid ""
 "Certificate uses an insecure cipher algorithm or is cryptographically weak"
 msgstr ""
 "Das Zertifikat verwendet einen unsicheren Chiffrier-Algorithmus oder ist "
 "kryptografisch schwach"
 
-#: ../libempathy/empathy-utils.c:316
+#: ../libempathy/empathy-utils.c:312
 msgid ""
 "The length of the server certificate, or the depth of the server certificate "
 "chain, exceed the limits imposed by the cryptography library"
@@ -738,11 +743,11 @@ msgstr ""
 "überschreiten die durch die kryptografische Bibliothek gegebenen "
 "Beschränkungen"
 
-#: ../libempathy/empathy-utils.c:320
+#: ../libempathy/empathy-utils.c:316
 msgid "Your software is too old"
 msgstr "Ihr Programm ist zu alt"
 
-#: ../libempathy/empathy-utils.c:322
+#: ../libempathy/empathy-utils.c:318
 msgid "Internal error"
 msgstr "Interner Fehler"
 
@@ -1897,7 +1902,7 @@ msgstr "_Fertig"
 
 #. Tweak the dialog
 #: ../libempathy-gtk/empathy-new-message-dialog.c:323
-#: ../src/empathy-roster-window.c:2367
+#: ../src/empathy-roster-window.c:2368
 msgid "New Conversation"
 msgstr "Neue Unterhaltung"
 
@@ -2347,31 +2352,31 @@ msgstr ""
 msgid "No protocol backends installed"
 msgstr "Keine Protokoll-Backends installiert"
 
-#: ../src/empathy-auth-client.c:285
+#: ../src/empathy-auth-client.c:284
 msgid " — Empathy authentication client"
 msgstr "– Empathy Legitimierungs-Client"
 
-#: ../src/empathy-auth-client.c:301
+#: ../src/empathy-auth-client.c:299
 msgid "Empathy authentication client"
 msgstr "Empathy Legitimierungs-Client"
 
-#: ../src/empathy.c:405
+#: ../src/empathy.c:402
 msgid "Don’t connect on startup"
 msgstr "Nicht automatisch beim Start verbinden"
 
-#: ../src/empathy.c:409
+#: ../src/empathy.c:406
 msgid "Don’t display the contact list or any other dialogs on startup"
 msgstr "Kontaktliste und andere Dialoge nicht automatisch beim Start anzeigen"
 
-#: ../src/empathy.c:438
+#: ../src/empathy.c:435
 msgid "— Empathy IM Client"
 msgstr "– Empathy Sofortnachrichtenprogramm"
 
-#: ../src/empathy.c:624
+#: ../src/empathy.c:621
 msgid "Error contacting the Account Manager"
 msgstr "Fehler beim Aufruf der Kontenverwaltung"
 
-#: ../src/empathy.c:626
+#: ../src/empathy.c:623
 #, c-format
 msgid ""
 "There was an error while trying to connect to the Telepathy Account Manager. "
@@ -2680,10 +2685,6 @@ msgstr "Lokaler Kandidat:"
 #: ../src/empathy-call-window.ui.h:32 ../src/empathy-preferences.ui.h:28
 msgid "Audio"
 msgstr "Sprache"
-
-#: ../src/empathy-chat.c:102
-msgid "— Empathy Chat Client"
-msgstr "– Empathy Sofortnachrichtenprogramm"
 
 #: ../src/empathy-chatrooms-window.c:244
 msgid "Name"
@@ -3399,7 +3400,7 @@ msgstr "Gruppen anzeigen"
 msgid "Show account balances"
 msgstr "Kontenguthaben anzeigen"
 
-#: ../src/empathy-preferences.ui.h:4 ../src/empathy-roster-window.c:2330
+#: ../src/empathy-preferences.ui.h:4 ../src/empathy-roster-window.c:2331
 msgid "Contact List"
 msgstr "Kontaktliste"
 
@@ -3624,23 +3625,19 @@ msgstr ""
 msgid "You need to enable %s to see contacts here."
 msgstr "Sie müssen %s aktivieren, um hier Kontakte anzeigen zu können."
 
-#: ../src/empathy-roster-window.c:1739
-msgid "Change your presence to see contacts here"
-msgstr "Ändern Sie Ihre Sichtbarkeit, um hier die Kontakte zu sehen"
-
-#: ../src/empathy-roster-window.c:1748
+#: ../src/empathy-roster-window.c:1749
 msgid "No match found"
 msgstr "Keine Übereinstimmung gefunden"
 
-#: ../src/empathy-roster-window.c:1755
+#: ../src/empathy-roster-window.c:1756
 msgid "You haven’t added any contacts yet"
 msgstr "Sie haben noch keine Kontakte hinzugefügt"
 
-#: ../src/empathy-roster-window.c:1758
+#: ../src/empathy-roster-window.c:1759
 msgid "No online contacts"
 msgstr "Keine Online-Kontakte"
 
-#: ../src/empathy-roster-window.c:2359
+#: ../src/empathy-roster-window.c:2360
 msgid "Conversations"
 msgstr "Unterhaltungen"
 
@@ -3744,411 +3741,3 @@ msgstr "%s-Kontoeinstellungen bearbeiten"
 #: ../ubuntu-online-accounts/empathy.application.in.h:1
 msgid "Integrate your IM accounts"
 msgstr "Ihre Sofortnachrichten-Konten integrieren"
-
-#~ msgid "_Copy Link Address"
-#~ msgstr "Adresse _kopieren"
-
-#~ msgid "_Open Link"
-#~ msgstr "Adresse _öffnen"
-
-#~ msgid "Inspect HTML"
-#~ msgstr "HTML untersuchen"
-
-#~ msgid "No error message"
-#~ msgstr "Keine Fehlermeldung"
-
-#~ msgid "Instant Message (Empathy)"
-#~ msgstr "Sofortnachricht (Empathy)"
-
-#~ msgid ""
-#~ "Empathy is free software; you can redistribute it and/or modify it under "
-#~ "the terms of the GNU General Public License as published by the Free "
-#~ "Software Foundation; either version 2 of the License, or (at your option) "
-#~ "any later version."
-#~ msgstr ""
-#~ "Empathy ist freie Software, Sie können es weitergeben und/oder verändern "
-#~ "solange Sie sich an die Regeln der »GNU General Public License« halten, "
-#~ "so wie sie von der Free Software Foundation festgelegt wurden; entweder "
-#~ "in Version 2 der Lizenz oder (nach Ihrem Ermessen) in jeder neueren "
-#~ "Lizenz."
-
-#~ msgid ""
-#~ "Empathy is distributed in the hope that it will be useful, but WITHOUT "
-#~ "ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
-#~ "FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
-#~ "more details."
-#~ msgstr ""
-#~ "Empathy wurde mit dem Ziel veröffentlicht, dass Sie es nützlich finden, "
-#~ "jedoch OHNE JEGLICHE GARANTIE, sogar ohne eine implizite Garantie der "
-#~ "VERKAUFBARKEIT oder der VERWENDBARKEIT FÜR EINEN SPEZIELLEN ZWECK. "
-#~ "Schauen Sie für weitere Informationen bitte in der »GNU General Public "
-#~ "License« (GNU GPL) nach."
-
-#~ msgid ""
-#~ "You should have received a copy of the GNU General Public License along "
-#~ "with Empathy; if not, write to the Free Software Foundation, Inc., 51 "
-#~ "Franklin Street, Fifth Floor, Boston, MA 02110-130159 USA"
-#~ msgstr ""
-#~ "Mit Empathy sollten Sie außerdem eine Kopie der »GNU General Public "
-#~ "License« erhalten haben. Wenn dem nicht so ist, schreiben Sie bitte an "
-#~ "die Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, "
-#~ "Boston, MA 02110-1301, USA."
-
-#~ msgid "About Empathy"
-#~ msgstr "Info zu Empathy"
-
-#~ msgid "Empathy can use the network to guess the location"
-#~ msgstr "Empathy darf das Netzwerk verwenden, um die Position zu ermitteln"
-
-#~ msgid "Whether Empathy can use the network to guess the location."
-#~ msgstr ""
-#~ "Legt fest, ob Empathy das Netzwerk nutzen darf, um den Standort zu "
-#~ "schätzen."
-
-#~ msgid "Empathy can use the cellular network to guess the location"
-#~ msgstr ""
-#~ "Empathy darf das Mobilfunknetz verwenden, um die Position zu schätzen"
-
-#~ msgid "Whether Empathy can use the cellular network to guess the location."
-#~ msgstr ""
-#~ "Legt fest, ob Empathy das Mobilfunknetz nutzen darf, um den Standort zu "
-#~ "schätzen."
-
-#~ msgid "Empathy can use the GPS to guess the location"
-#~ msgstr "Empathy darf das GPS verwenden, um die Position zu schätzen"
-
-#~ msgid "Whether Empathy can use the GPS to guess the location."
-#~ msgstr ""
-#~ "Legt fest, ob Empathy das GPS nutzen darf, um den Standort zu schätzen."
-
-#~ msgid "Password not found"
-#~ msgstr "Passwort nicht gefunden"
-
-#~ msgid "IM account password for %s (%s)"
-#~ msgstr "IM-Konto Passwort für %s (%s)"
-
-#~ msgid "Password for chatroom '%s' on account %s (%s)"
-#~ msgstr "Passwort für Chatraum »%s« von Konto %s (%s)"
-
-#~ msgid "%d second ago"
-#~ msgid_plural "%d seconds ago"
-#~ msgstr[0] "Vor %d Sekunde"
-#~ msgstr[1] "Vor %d Sekunden"
-
-#~ msgid "%d minute ago"
-#~ msgid_plural "%d minutes ago"
-#~ msgstr[0] "Vor %d Minute"
-#~ msgstr[1] "Vor %d Minuten"
-
-#~ msgid "%d hour ago"
-#~ msgid_plural "%d hours ago"
-#~ msgstr[0] "Vor %d Stunde"
-#~ msgstr[1] "Vor %d Stunden"
-
-#~ msgid "%d day ago"
-#~ msgid_plural "%d days ago"
-#~ msgstr[0] "Vor %d Tag"
-#~ msgstr[1] "Vor %d Tagen"
-
-#~ msgid "%d week ago"
-#~ msgid_plural "%d weeks ago"
-#~ msgstr[0] "Vor %d Woche"
-#~ msgstr[1] "Vor %d Wochen"
-
-#~ msgid "%d month ago"
-#~ msgid_plural "%d months ago"
-#~ msgstr[0] "Vor %d Monat"
-#~ msgstr[1] "Vor %d Monaten"
-
-#~ msgid "in the future"
-#~ msgstr "in der Zukunft"
-
-#~ msgid "Yahoo! Japan"
-#~ msgstr "Yahoo! Japan"
-
-#~ msgid "Facebook Chat"
-#~ msgstr "Facebook-Chat"
-
-#~ msgid "Pass_word"
-#~ msgstr "Pass_wort"
-
-#~ msgid "Screen _Name"
-#~ msgstr "Anzeige_name"
-
-#~ msgid "<b>Example:</b> MyScreenName"
-#~ msgstr "<b>Beispiel:</b> MeinName"
-
-#~ msgid "_Port"
-#~ msgstr "_Port"
-
-#~ msgid "_Server"
-#~ msgstr "_Server"
-
-#~ msgid "Advanced"
-#~ msgstr "Fortgeschritten"
-
-#~ msgid "What is your AIM screen name?"
-#~ msgstr "Wie lautet Ihr AIM AOL-Name?"
-
-#~ msgid "What is your AIM password?"
-#~ msgstr "Wie lautet Ihr AIM-Passwort?"
-
-#~ msgid "Remember Password"
-#~ msgstr "Passwort merken"
-
-#~ msgid "Password"
-#~ msgstr "Passwort"
-
-#~ msgid "Server"
-#~ msgstr "Server"
-
-#~ msgid "Port"
-#~ msgstr "Port"
-
-#~ msgid "%s"
-#~ msgstr "%s"
-
-#~ msgid "%s:"
-#~ msgstr "%s:"
-
-#~ msgid "Username:"
-#~ msgstr "Benutzername:"
-
-#~ msgid "A_pply"
-#~ msgstr "An_wenden"
-
-#~ msgid "L_og in"
-#~ msgstr "_Anmelden"
-
-#~ msgid "This account already exists on the server"
-#~ msgstr "Dieses Konto ist bereits auf dem Server vorhanden"
-
-#~ msgid "Create a new account on the server"
-#~ msgstr "Ein neues Konto auf dem Server anlegen"
-
-#~ msgid "%1$s on %2$s"
-#~ msgstr "%1$s auf %2$s"
-
-#~ msgid "%s Account"
-#~ msgstr "%s-Konto"
-
-#~ msgid "New account"
-#~ msgstr "Neues Konto"
-
-#~ msgid "Login I_D"
-#~ msgstr "Anmelde-_Kennung"
-
-#~ msgid "<b>Example:</b> username"
-#~ msgstr "<b>Beispiel:</b> Benutzername"
-
-#~ msgid "What is your GroupWise User ID?"
-#~ msgstr "Wie lautet Ihr GroupWise-Benutzername?"
-
-#~ msgid "What is your GroupWise password?"
-#~ msgstr "Wie lautet Ihr GroupWise-Passwort?"
-
-#~ msgid "ICQ _UIN"
-#~ msgstr "ICQ-_UIN"
-
-#~ msgid "<b>Example:</b> 123456789"
-#~ msgstr "<b>Beispiel:</b> 123456789"
-
-#~ msgid "Ch_aracter set"
-#~ msgstr "_Zeichensatz"
-
-#~ msgid "What is your ICQ UIN?"
-#~ msgstr "Wie lautet Ihre ICQ-UIN?"
-
-#~ msgid "What is your ICQ password?"
-#~ msgstr "Wie lautet Ihr ICQ-Passwort?"
-
-#~ msgid "Network"
-#~ msgstr "Netzwerk"
-
-#~ msgid "Character set"
-#~ msgstr "Zeichensatz"
-
-#~ msgid "Up"
-#~ msgstr "Nach oben"
-
-#~ msgid "Down"
-#~ msgstr "Nach unten"
-
-#~ msgid "Servers"
-#~ msgstr "Server"
-
-#~ msgid ""
-#~ "Most IRC servers don't need a password, so if you're not sure, don't "
-#~ "enter a password."
-#~ msgstr ""
-#~ "Die meisten IRC-Server verlangen kein Passwort. Falls Sie nicht sicher "
-#~ "sind, geben Sie kein Passwort ein."
-
-#~ msgid "Nickname"
-#~ msgstr "Spitzname"
-
-#~ msgid "Quit message"
-#~ msgstr "Verlassen-Nachricht"
-
-#~ msgid "Real name"
-#~ msgstr "Echter Name"
-
-#~ msgid "Username"
-#~ msgstr "Benutzername"
-
-#~ msgid "Which IRC network?"
-#~ msgstr "Welches IRC-Netzwerk?"
-
-#~ msgid "What is your IRC nickname?"
-#~ msgstr "Wie lautet Ihr Spitzname im IRC?"
-
-#~ msgid "What is your Facebook username?"
-#~ msgstr "Wie lautet Ihr Facebook-Benutzername?"
-
-#~ msgid ""
-#~ "This is your username, not your normal Facebook login.\n"
-#~ "If you are facebook.com/<b>badger</b>, enter <b>badger</b>.\n"
-#~ "Use <a href=\"http://www.facebook.com/username/\">this page</a> to choose "
-#~ "a Facebook username if you don't have one."
-#~ msgstr ""
-#~ "Dies ist Ihr Benutzername, nicht Ihr gewöhnlicher Facebook-Anmeldename.\n"
-#~ "Falls Sie facebook.com/<b>dachs</b> sind, geben Sie <b>dachs</b> ein.\n"
-#~ "Wählen Sie auf <a href=\"http://www.facebook.com/username/\">dieser "
-#~ "Seite</a> einen Facebook-Benutzernamen, falls Sie noch keinen besitzen."
-
-#~ msgid "What is your Facebook password?"
-#~ msgstr "Wie lautet Ihr Facebook-Passwort?"
-
-#~ msgid "What is your Google ID?"
-#~ msgstr "Wie lautet Ihre Google-ID?"
-
-#~ msgid "<b>Example:</b> user@gmail.com"
-#~ msgstr "<b>Beispiel:</b> user@hotmail.com"
-
-#~ msgid "What is your Google password?"
-#~ msgstr "Wie lautet Ihr Passwort bei Google?"
-
-#~ msgid "<b>Example:</b> user@jabber.org"
-#~ msgstr "<b>Beispiel:</b> benutzer@jabber.org"
-
-#~ msgid "I_gnore SSL certificate errors"
-#~ msgstr "SSL-Zertifikatfehler _ignorieren"
-
-#~ msgid "Priori_ty"
-#~ msgstr "Priori_tät"
-
-#~ msgid "Reso_urce"
-#~ msgstr "Resso_urce"
-
-#~ msgid "Encr_yption required (TLS/SSL)"
-#~ msgstr "_Verschlüsselung erforderlich (TLS/SSL)"
-
-#~ msgid "Override server settings"
-#~ msgstr "Server-Einstellungen überschreiben"
-
-#~ msgid "Use old SS_L"
-#~ msgstr "Alte SS_L-Verschlüsselung verwenden"
-
-#~ msgid "What is your Jabber ID?"
-#~ msgstr "Wie lautet Ihre Jabber-Kennung?"
-
-#~ msgid "What is your desired Jabber ID?"
-#~ msgstr "Wie lautet Ihre gewünschte Jabber-Kennung?"
-
-#~ msgid "What is your Jabber password?"
-#~ msgstr "Wie lautet Ihr Jabber-Passwort?"
-
-#~ msgid "What is your desired Jabber password?"
-#~ msgstr "Wie lautet Ihr gewünschtes Jabber-Passwort?"
-
-#~ msgid "Nic_kname"
-#~ msgstr "_Spitzname"
-
-#~ msgid "_Last Name"
-#~ msgstr "_Nachname"
-
-#~ msgid "_First Name"
-#~ msgstr "_Vorname"
-
-#~ msgid "_Published Name"
-#~ msgstr "_Veröffentlichter Name"
-
-#~ msgid "_Jabber ID"
-#~ msgstr "_Jabber-Kennung"
-
-#~ msgid "E-_mail address"
-#~ msgstr "E-_Mail-Adresse"
-
-#~ msgid "<b>Example:</b> user@hotmail.com"
-#~ msgstr "<b>Beispiel:</b> user@hotmail.com"
-
-#~ msgid "What is your Windows Live ID?"
-#~ msgstr "Wie lautet Ihre Windows Live-Kennung?"
-
-#~ msgid "What is your Windows Live password?"
-#~ msgstr "Wie lautet Ihr Windows Live-Passwort?"
-
-#~ msgid "Auto"
-#~ msgstr "Automatisch"
-
-#~ msgid "UDP"
-#~ msgstr "UDP"
-
-#~ msgid "TCP"
-#~ msgstr "TCP"
-
-#~ msgid "TLS"
-#~ msgstr "TLS"
-
-#~ msgid "Register"
-#~ msgstr "Registrieren (Anmelden)"
-
-#~ msgid "Options"
-#~ msgstr "Einstellungen"
-
-#~ msgid "None"
-#~ msgstr "Kein"
-
-#~ msgid "_Username"
-#~ msgstr "_Benutzername"
-
-#~ msgid "<b>Example:</b> user@my.sip.server"
-#~ msgstr "<b>Beispiel:</b> benutzer@my.sip.server"
-
-#~ msgid "Use this account to call _landlines and mobile phones"
-#~ msgstr ""
-#~ "Dieses Konto für a_lle Anrufe ins Festnetz und zu Mobilfunkanschlüssen "
-#~ "verwenden"
-
-#~ msgid "NAT Traversal Options"
-#~ msgstr "Einstellungen zu NAT-Traversal"
-
-#~ msgid "Proxy Options"
-#~ msgstr "Proxy-Einstellungen"
-
-#~ msgid "Miscellaneous Options"
-#~ msgstr "Verschiedene Einstellungen"
-
-#~ msgid "STUN Server"
-#~ msgstr "STUN-Server"
-
-#~ msgid "Discover the STUN server automatically"
-#~ msgstr "Den STUN-Server automatisch suchen"
-
-#~ msgid "Discover Binding"
-#~ msgstr "Bindung suchen"
-
-#~ msgid "Keep-Alive Options"
-#~ msgstr "Einstellungen zu Keep-Alive"
-
-#~ msgid "Mechanism"
-#~ msgstr "Mechanismus"
-
-#~ msgid "Interval (seconds)"
-#~ msgstr "Intervall (Sekunden)"
-
-#~ msgid "Authentication username"
-#~ msgstr "Benutzername zur Legitimierung"
-
-#~ msgid "Transport"
-#~ msgstr "Transport"
