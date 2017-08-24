@@ -9,10 +9,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: empathy\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
 "product=empathy&keywords=I18N+L10N&component=General\n"
-"POT-Creation-Date: 2017-02-21 11:07+0000\n"
-"PO-Revision-Date: 2017-02-22 13:39+0100\n"
+"POT-Creation-Date: 2017-08-17 00:23+0000\n"
+"PO-Revision-Date: 2017-08-24 08:53+0200\n"
 "Last-Translator: Milo Casagrande <milo@milo.name>\n"
 "Language-Team: Italian <tp@lists.linux.it>\n"
 "Language: it\n"
@@ -20,9 +20,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
-"X-Generator: Poedit 2.0beta3\n"
+"X-Generator: Poedit 1.8.12\n"
 
-#: ../data/empathy.desktop.in.in.h:1
+#: ../data/empathy.desktop.in.in.h:1 ../data/empathy.appdata.xml.in.h:1
 msgid "Empathy"
 msgstr "Empathy"
 
@@ -34,7 +34,7 @@ msgstr "Messaggistica istantanea"
 msgid "Empathy Internet Messaging"
 msgstr "Messaggistica Internet Empathy"
 
-#: ../data/empathy.desktop.in.in.h:4
+#: ../data/empathy.desktop.in.in.h:4 ../data/empathy.appdata.xml.in.h:2
 msgid "Chat on Google Talk, Facebook, MSN and many other chat services"
 msgstr ""
 "Conversa su Google Talk, Facebook, MSN e molti altri servizi di messaggistica"
@@ -45,25 +45,29 @@ msgstr ""
 "chat;talk;im;messaggi;messaggio;irc;voip;gtalk;facebook;jabber;parlare;"
 "chiacchierare;"
 
-#: ../data/empathy.appdata.xml.in.h:1
+#: ../data/empathy.appdata.xml.in.h:3
 msgid ""
 "Empathy is the official instant messaging application of the GNOME desktop "
-"environment.  Empathy can connect to AIM, MSN, Jabber (including Facebook "
-"and Google Talk), IRC, and many other messaging networks. You can chat with "
-"text, make audio and video calls, or even transfer files, depending on what "
-"your contact’s chat application allows."
+"environment. Empathy can connect to AIM, MSN, Jabber (including Facebook and "
+"Google Talk), IRC, and many other messaging networks."
 msgstr ""
 "Empathy è l'applicazione ufficiale di messaggistica dell'ambiente grafico "
 "GNOME. Con Empathy è possibile collegarsi a AIM, MSN, Facebook e Google Talk "
-"(Jabber), IRC e a molte altre reti di conversazione. È possibile instaurare "
-"conversazioni testuali o fare chiamate audio e video e trasferire file (in "
-"base all'applicazione usata dai propri contatti)."
+"(Jabber), IRC e a molte altre reti di conversazione."
 
-#: ../data/empathy.appdata.xml.in.h:2
+#: ../data/empathy.appdata.xml.in.h:4
+msgid ""
+"You can chat with text, make audio and video calls, or even transfer files, "
+"depending on what your contact’s chat application allows."
+msgstr ""
+"È possibile instaurare conversazioni testuali o fare chiamate audio e video "
+"e trasferire file (in base all'applicazione usata dai propri contatti)."
+
+#: ../data/empathy.appdata.xml.in.h:5
 msgid ""
 "Empathy provides integrated messaging for the GNOME desktop, so you’ll never "
-"miss a message.  You can respond to your contacts without even having to "
-"open Empathy!"
+"miss a message. You can respond to your contacts without even having to open "
+"Empathy!"
 msgstr ""
 "Empthy fornisce un sistema di messaggistica integrato nel desktop GNOME: è "
 "possibile rispondere ai propri contatti senza dover aprire Empathy stesso."
@@ -549,7 +553,7 @@ msgstr "Errore nel tentativo di trasferire il file"
 msgid "The other participant is unable to transfer the file"
 msgstr "L'altro utente non è in grado di trasferire il file"
 
-#: ../libempathy/empathy-ft-handler.c:748 ../libempathy/empathy-utils.c:260
+#: ../libempathy/empathy-ft-handler.c:748 ../libempathy/empathy-utils.c:256
 msgid "Unknown reason"
 msgstr "Motivo sconosciuto"
 
@@ -586,141 +590,141 @@ msgstr "%s ha chiamato"
 msgid "Call from %s"
 msgstr "Chiamata da %s"
 
-#: ../libempathy/empathy-utils.c:180
+#: ../libempathy/empathy-utils.c:176
 msgid "Available"
 msgstr "Disponibile"
 
-#: ../libempathy/empathy-utils.c:182
+#: ../libempathy/empathy-utils.c:178
 msgid "Busy"
 msgstr "Non disponibile"
 
-#: ../libempathy/empathy-utils.c:185
+#: ../libempathy/empathy-utils.c:181
 msgid "Away"
 msgstr "Assente"
 
-#: ../libempathy/empathy-utils.c:187
+#: ../libempathy/empathy-utils.c:183
 msgid "Invisible"
 msgstr "Invisibile"
 
-#: ../libempathy/empathy-utils.c:189
+#: ../libempathy/empathy-utils.c:185
 msgid "Offline"
 msgstr "Fuori rete"
 
 #. translators: presence type is unknown
-#: ../libempathy/empathy-utils.c:192
+#: ../libempathy/empathy-utils.c:188
 msgctxt "presence"
 msgid "Unknown"
 msgstr "Sconosciuto"
 
-#: ../libempathy/empathy-utils.c:232
+#: ../libempathy/empathy-utils.c:228
 msgid "No reason specified"
 msgstr "Nessun motivo specificato"
 
-#: ../libempathy/empathy-utils.c:234 ../libempathy/empathy-utils.c:290
+#: ../libempathy/empathy-utils.c:230 ../libempathy/empathy-utils.c:286
 msgid "Status is set to offline"
 msgstr "Lo stato è impostato a «Fuori rete»"
 
-#: ../libempathy/empathy-utils.c:236 ../libempathy/empathy-utils.c:270
+#: ../libempathy/empathy-utils.c:232 ../libempathy/empathy-utils.c:266
 #: ../libempathy-gtk/empathy-call-utils.c:42
 #: ../libempathy-gtk/empathy-new-message-dialog.c:70
 msgid "Network error"
 msgstr "Errore di rete"
 
-#: ../libempathy/empathy-utils.c:238 ../libempathy/empathy-utils.c:272
+#: ../libempathy/empathy-utils.c:234 ../libempathy/empathy-utils.c:268
 msgid "Authentication failed"
 msgstr "Autenticazione non riuscita"
 
-#: ../libempathy/empathy-utils.c:240 ../libempathy/empathy-utils.c:274
+#: ../libempathy/empathy-utils.c:236 ../libempathy/empathy-utils.c:270
 msgid "Encryption error"
 msgstr "Errore di cifratura"
 
-#: ../libempathy/empathy-utils.c:242
+#: ../libempathy/empathy-utils.c:238
 msgid "Name in use"
 msgstr "Nome in uso"
 
-#: ../libempathy/empathy-utils.c:244 ../libempathy/empathy-utils.c:276
+#: ../libempathy/empathy-utils.c:240 ../libempathy/empathy-utils.c:272
 msgid "Certificate not provided"
 msgstr "Certificato non fornito"
 
-#: ../libempathy/empathy-utils.c:246 ../libempathy/empathy-utils.c:278
+#: ../libempathy/empathy-utils.c:242 ../libempathy/empathy-utils.c:274
 msgid "Certificate untrusted"
 msgstr "Certificato non fidato"
 
-#: ../libempathy/empathy-utils.c:248 ../libempathy/empathy-utils.c:280
+#: ../libempathy/empathy-utils.c:244 ../libempathy/empathy-utils.c:276
 msgid "Certificate expired"
 msgstr "Certificato scaduto"
 
-#: ../libempathy/empathy-utils.c:250 ../libempathy/empathy-utils.c:282
+#: ../libempathy/empathy-utils.c:246 ../libempathy/empathy-utils.c:278
 msgid "Certificate not activated"
 msgstr "Certificato non attivato"
 
-#: ../libempathy/empathy-utils.c:252 ../libempathy/empathy-utils.c:284
+#: ../libempathy/empathy-utils.c:248 ../libempathy/empathy-utils.c:280
 msgid "Certificate hostname mismatch"
 msgstr "Corrispondenza errata nel nome host del certificato"
 
-#: ../libempathy/empathy-utils.c:254 ../libempathy/empathy-utils.c:286
+#: ../libempathy/empathy-utils.c:250 ../libempathy/empathy-utils.c:282
 msgid "Certificate fingerprint mismatch"
 msgstr "Corrispondenza errata nell'impronta del certificato"
 
-#: ../libempathy/empathy-utils.c:256 ../libempathy/empathy-utils.c:288
+#: ../libempathy/empathy-utils.c:252 ../libempathy/empathy-utils.c:284
 msgid "Certificate self-signed"
 msgstr "Certificato auto-firmato"
 
-#: ../libempathy/empathy-utils.c:258
+#: ../libempathy/empathy-utils.c:254
 msgid "Certificate error"
 msgstr "Errore nel certificato"
 
-#: ../libempathy/empathy-utils.c:292
+#: ../libempathy/empathy-utils.c:288
 msgid "Encryption is not available"
 msgstr "La cifratura non è disponibile"
 
-#: ../libempathy/empathy-utils.c:294
+#: ../libempathy/empathy-utils.c:290
 msgid "Certificate is invalid"
 msgstr "Il certificato non è valido"
 
-#: ../libempathy/empathy-utils.c:296
+#: ../libempathy/empathy-utils.c:292
 msgid "Connection has been refused"
 msgstr "La connessione è stata rifiutata"
 
-#: ../libempathy/empathy-utils.c:298
+#: ../libempathy/empathy-utils.c:294
 msgid "Connection can’t be established"
 msgstr "La connessione non può essere stabilita"
 
-#: ../libempathy/empathy-utils.c:300
+#: ../libempathy/empathy-utils.c:296
 msgid "Connection has been lost"
 msgstr "La connessione è stata persa"
 
-#: ../libempathy/empathy-utils.c:302
+#: ../libempathy/empathy-utils.c:298
 msgid "This account is already connected to the server"
 msgstr "Questo account è già collegato al server"
 
-#: ../libempathy/empathy-utils.c:304
+#: ../libempathy/empathy-utils.c:300
 msgid ""
 "Connection has been replaced by a new connection using the same resource"
 msgstr ""
 "La connessione è stata sostituita con una nuova che sfrutta la stessa risorsa"
 
-#: ../libempathy/empathy-utils.c:307
+#: ../libempathy/empathy-utils.c:303
 msgid "The account already exists on the server"
 msgstr "L'account esiste già sul server"
 
 # (ndt) rivedere too busy
-#: ../libempathy/empathy-utils.c:309
+#: ../libempathy/empathy-utils.c:305
 msgid "Server is currently too busy to handle the connection"
 msgstr "Il server è troppo carico per gestire la connessione"
 
-#: ../libempathy/empathy-utils.c:311
+#: ../libempathy/empathy-utils.c:307
 msgid "Certificate has been revoked"
 msgstr "Il certificato è stato revocato"
 
-#: ../libempathy/empathy-utils.c:313
+#: ../libempathy/empathy-utils.c:309
 msgid ""
 "Certificate uses an insecure cipher algorithm or is cryptographically weak"
 msgstr ""
 "Il cifrario utilizzato dall'algoritmo del certificato non è sicuro o ha una "
 "cifratura debole"
 
-#: ../libempathy/empathy-utils.c:316
+#: ../libempathy/empathy-utils.c:312
 msgid ""
 "The length of the server certificate, or the depth of the server certificate "
 "chain, exceed the limits imposed by the cryptography library"
@@ -728,11 +732,11 @@ msgstr ""
 "La lunghezza del certificato o la profondità della catena del certificato "
 "del server supera i limiti imposti dalla libreria di cifratura"
 
-#: ../libempathy/empathy-utils.c:320
+#: ../libempathy/empathy-utils.c:316
 msgid "Your software is too old"
 msgstr "Il software in uso è troppo datato"
 
-#: ../libempathy/empathy-utils.c:322
+#: ../libempathy/empathy-utils.c:318
 msgid "Internal error"
 msgstr "Errore interno"
 
@@ -1907,7 +1911,7 @@ msgstr "Fa_tto"
 
 #. Tweak the dialog
 #: ../libempathy-gtk/empathy-new-message-dialog.c:323
-#: ../src/empathy-roster-window.c:2367
+#: ../src/empathy-roster-window.c:2368
 msgid "New Conversation"
 msgstr "Nuova conversazione"
 
@@ -2360,11 +2364,11 @@ msgstr ""
 msgid "No protocol backends installed"
 msgstr "Nessun protocollo installato"
 
-#: ../src/empathy-auth-client.c:285
+#: ../src/empathy-auth-client.c:284
 msgid " — Empathy authentication client"
 msgstr " — Client autenticazione Empathy"
 
-#: ../src/empathy-auth-client.c:301
+#: ../src/empathy-auth-client.c:299
 msgid "Empathy authentication client"
 msgstr "Client autenticazione Empathy"
 
@@ -2697,10 +2701,6 @@ msgstr "Candidato locale:"
 #: ../src/empathy-call-window.ui.h:32 ../src/empathy-preferences.ui.h:28
 msgid "Audio"
 msgstr "Audio"
-
-#: ../src/empathy-chat.c:102
-msgid "— Empathy Chat Client"
-msgstr "— Client chat Empathy"
 
 #: ../src/empathy-chatrooms-window.c:244
 msgid "Name"
@@ -3426,7 +3426,7 @@ msgstr "Mostrare i gruppi"
 msgid "Show account balances"
 msgstr "Mostrare i bilanci dell'account"
 
-#: ../src/empathy-preferences.ui.h:4 ../src/empathy-roster-window.c:2330
+#: ../src/empathy-preferences.ui.h:4 ../src/empathy-roster-window.c:2331
 msgid "Contact List"
 msgstr "Elenco contatti"
 
@@ -3668,23 +3668,19 @@ msgstr "È necessario abilitare uno degli account per visualizzare i contatti."
 msgid "You need to enable %s to see contacts here."
 msgstr "È necessario abilitare «%s» per visualizzare i contatti."
 
-#: ../src/empathy-roster-window.c:1739
-msgid "Change your presence to see contacts here"
-msgstr "Modificare la propria presenza per visualizzare i contatti"
-
-#: ../src/empathy-roster-window.c:1748
+#: ../src/empathy-roster-window.c:1749
 msgid "No match found"
 msgstr "Nessun risultato"
 
-#: ../src/empathy-roster-window.c:1755
+#: ../src/empathy-roster-window.c:1756
 msgid "You haven’t added any contacts yet"
 msgstr "Non è stato aggiunto ancora alcun contatto"
 
-#: ../src/empathy-roster-window.c:1758
+#: ../src/empathy-roster-window.c:1759
 msgid "No online contacts"
 msgstr "Nessun contatto collegato"
 
-#: ../src/empathy-roster-window.c:2359
+#: ../src/empathy-roster-window.c:2360
 msgid "Conversations"
 msgstr "Conversazioni"
 
@@ -3792,6 +3788,12 @@ msgstr "Modifica opzioni account %s"
 #: ../ubuntu-online-accounts/empathy.application.in.h:1
 msgid "Integrate your IM accounts"
 msgstr "Integra i propri account di messaggistica"
+
+#~ msgid "— Empathy Chat Client"
+#~ msgstr "— Client chat Empathy"
+
+#~ msgid "Change your presence to see contacts here"
+#~ msgstr "Modificare la propria presenza per visualizzare i contatti"
 
 #~ msgid "_Copy Link Address"
 #~ msgstr "_Copia indirizzo collegamento"
