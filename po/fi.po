@@ -16,10 +16,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: empathy\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
 "product=empathy&keywords=I18N+L10N&component=General\n"
-"POT-Creation-Date: 2017-02-01 22:03+0000\n"
-"PO-Revision-Date: 2017-02-04 19:10+0200\n"
+"POT-Creation-Date: 2017-08-26 00:26+0000\n"
+"PO-Revision-Date: 2017-08-29 23:51+0300\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos+l10n@iki.fi>\n"
 "Language-Team: suomi <lokalisointi-lista@googlegroups.com>\n"
 "Language: fi\n"
@@ -28,9 +28,9 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-POT-Import-Date: 2012-03-05 15:05:34+0000\n"
-"X-Generator: Gtranslator 2.91.7\n"
+"X-Generator: Poedit 1.8.7.1\n"
 
-#: ../data/empathy.desktop.in.in.h:1
+#: ../data/empathy.desktop.in.in.h:1 ../data/empathy.appdata.xml.in.h:1
 msgid "Empathy"
 msgstr "Empathy"
 
@@ -42,11 +42,11 @@ msgstr "Pikaviestin"
 msgid "Empathy Internet Messaging"
 msgstr "Empathy-pikaviestin"
 
-#: ../data/empathy.desktop.in.in.h:4
+#: ../data/empathy.desktop.in.in.h:4 ../data/empathy.appdata.xml.in.h:2
 msgid "Chat on Google Talk, Facebook, MSN and many other chat services"
 msgstr ""
-"Keskustele käyttäen Google Talkia, Facebookia, MSN:ää ja monia muita "
-"palveluja"
+"Keskustele Google Talkissa, Facebookissa, MSN:ssä ja monissa muissa "
+"palveluissa"
 
 #: ../data/empathy.desktop.in.in.h:5
 msgid "chat;talk;im;message;irc;voip;gtalk;facebook;jabber;"
@@ -54,25 +54,29 @@ msgstr ""
 "chat;talk;im;message;irc;voip;gtalk;facebook;jabber;keskustelu;viesti;"
 "pikaviestin;"
 
-#: ../data/empathy.appdata.xml.in.h:1
+#: ../data/empathy.appdata.xml.in.h:3
 msgid ""
 "Empathy is the official instant messaging application of the GNOME desktop "
-"environment.  Empathy can connect to AIM, MSN, Jabber (including Facebook "
-"and Google Talk), IRC, and many other messaging networks. You can chat with "
-"text, make audio and video calls, or even transfer files, depending on what "
-"your contact’s chat application allows."
+"environment. Empathy can connect to AIM, MSN, Jabber (including Facebook and "
+"Google Talk), IRC, and many other messaging networks."
 msgstr ""
 "Empathy on virallinen pikaviestinsovellus Gnome-työpöydälle. Empathyn avulla "
 "voit yhdistää AIMiin, MSN:ään, Jabberiin (mukaan lukien Facebook ja Google "
-"Talk), IRC:hen ja moneen muuhun viestintäverkkoon. Voit keskustella "
-"tekstipohjaisesti, soittaa ääni- ja videopuheluita ja siirtää tiedostoja "
-"riippuen vastapuolen käyttämän sovelluksen tukemista toiminnoista."
+"Talk), IRC:hen ja moneen muuhun viestintäverkkoon."
 
-#: ../data/empathy.appdata.xml.in.h:2
+#: ../data/empathy.appdata.xml.in.h:4
+msgid ""
+"You can chat with text, make audio and video calls, or even transfer files, "
+"depending on what your contact’s chat application allows."
+msgstr ""
+"Voit keskustella kirjoittamalla, soittaa ääni- ja videopuheluita, tai jopa "
+"siirtää tiedostoja riippuen mitä vastapuolen keskustelusovellus sallii."
+
+#: ../data/empathy.appdata.xml.in.h:5
 msgid ""
 "Empathy provides integrated messaging for the GNOME desktop, so you’ll never "
-"miss a message.  You can respond to your contacts without even having to "
-"open Empathy!"
+"miss a message. You can respond to your contacts without even having to open "
+"Empathy!"
 msgstr ""
 "Empathy tuo pikaviestinnän Gnome-työpöydälle, joten viestit eivät jää enää "
 "huomaamatta. Voit vastata tuttavillesi ilman että edes avaat Empathy-ikkunaa!"
@@ -288,7 +292,6 @@ msgid "Whether to show popup notifications when away or busy."
 msgstr "Näytetäänkö ponnahdusilmoituksia varattuna tai poissa oltaessa."
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:50
-#| msgid "Pop up notifications if the chat isn't focused"
 msgid "Pop up notifications if the chat isn’t focused"
 msgstr "Ponnahdusilmoitus kohdistamattomasta keskustelusta"
 
@@ -463,7 +466,6 @@ msgid "Echo cancellation support"
 msgstr "Kaiun poiston tuki"
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:87
-#| msgid "Whether to enable Pulseaudio's echo cancellation filter."
 msgid "Whether to enable PulseAudio’s echo cancellation filter."
 msgstr "Käytetäänkö PulseAudion suodatinta kaiun poistamiseksi."
 
@@ -482,12 +484,10 @@ msgid ""
 msgstr "Pyydetäänkö pääikkunan sulkemisesta vahvistusta."
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:90
-#| msgid "Empathy can publish the user's location"
 msgid "Empathy can publish the user’s location"
 msgstr "Empathy voi julkaista käyttäjän sijainnin"
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:91
-#| msgid "Whether Empathy can publish the user's location to their contacts."
 msgid "Whether Empathy can publish the user’s location to their contacts."
 msgstr "Saako Empathy paljastaa käyttäjän sijainnin tuttaville."
 
@@ -496,8 +496,6 @@ msgid "Empathy should reduce the location’s accuracy"
 msgstr "Empathyn pitää heikentää sijainnin tarkkuutta"
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:93
-#| msgid ""
-#| "Whether Empathy should reduce the location's accuracy for privacy reasons."
 msgid ""
 "Whether Empathy should reduce the location’s accuracy for privacy reasons."
 msgstr ""
@@ -527,7 +525,7 @@ msgstr "Virhe yritettäessä siirtää tiedostoa"
 msgid "The other participant is unable to transfer the file"
 msgstr "Toinen osapuoli ei voi siirtää tiedostoa"
 
-#: ../libempathy/empathy-ft-handler.c:748 ../libempathy/empathy-utils.c:260
+#: ../libempathy/empathy-ft-handler.c:748 ../libempathy/empathy-utils.c:256
 msgid "Unknown reason"
 msgstr "Tuntematon syy"
 
@@ -563,137 +561,137 @@ msgstr "Soitettiin käytäjälle %s"
 msgid "Call from %s"
 msgstr "Puhelu käyttäjältä %s"
 
-#: ../libempathy/empathy-utils.c:180
+#: ../libempathy/empathy-utils.c:176
 msgid "Available"
 msgstr "Tavoitettavissa"
 
-#: ../libempathy/empathy-utils.c:182
+#: ../libempathy/empathy-utils.c:178
 msgid "Busy"
 msgstr "Varattu"
 
-#: ../libempathy/empathy-utils.c:185
+#: ../libempathy/empathy-utils.c:181
 msgid "Away"
 msgstr "Poissa"
 
-#: ../libempathy/empathy-utils.c:187
+#: ../libempathy/empathy-utils.c:183
 msgid "Invisible"
 msgstr "Näkymätön"
 
-#: ../libempathy/empathy-utils.c:189
+#: ../libempathy/empathy-utils.c:185
 msgid "Offline"
 msgstr "Poissa linjoilta"
 
 #. translators: presence type is unknown
-#: ../libempathy/empathy-utils.c:192
+#: ../libempathy/empathy-utils.c:188
 msgctxt "presence"
 msgid "Unknown"
 msgstr "Tuntematon"
 
-#: ../libempathy/empathy-utils.c:232
+#: ../libempathy/empathy-utils.c:228
 msgid "No reason specified"
 msgstr "Erittelemätön syy"
 
-#: ../libempathy/empathy-utils.c:234 ../libempathy/empathy-utils.c:290
+#: ../libempathy/empathy-utils.c:230 ../libempathy/empathy-utils.c:286
 msgid "Status is set to offline"
 msgstr "Tila on nyt ”Poissa linjoilta”"
 
-#: ../libempathy/empathy-utils.c:236 ../libempathy/empathy-utils.c:270
+#: ../libempathy/empathy-utils.c:232 ../libempathy/empathy-utils.c:266
 #: ../libempathy-gtk/empathy-call-utils.c:42
 #: ../libempathy-gtk/empathy-new-message-dialog.c:70
 msgid "Network error"
 msgstr "Verkkovirhe"
 
-#: ../libempathy/empathy-utils.c:238 ../libempathy/empathy-utils.c:272
+#: ../libempathy/empathy-utils.c:234 ../libempathy/empathy-utils.c:268
 msgid "Authentication failed"
 msgstr "Tunnistautuminen epäonnistui"
 
-#: ../libempathy/empathy-utils.c:240 ../libempathy/empathy-utils.c:274
+#: ../libempathy/empathy-utils.c:236 ../libempathy/empathy-utils.c:270
 msgid "Encryption error"
 msgstr "Salausvirhe"
 
-#: ../libempathy/empathy-utils.c:242
+#: ../libempathy/empathy-utils.c:238
 msgid "Name in use"
 msgstr "Nimi on käytössä"
 
-#: ../libempathy/empathy-utils.c:244 ../libempathy/empathy-utils.c:276
+#: ../libempathy/empathy-utils.c:240 ../libempathy/empathy-utils.c:272
 msgid "Certificate not provided"
 msgstr "Varmennetta ei ole annettu"
 
-#: ../libempathy/empathy-utils.c:246 ../libempathy/empathy-utils.c:278
+#: ../libempathy/empathy-utils.c:242 ../libempathy/empathy-utils.c:274
 msgid "Certificate untrusted"
 msgstr "Varmenne ei ole luotettu"
 
-#: ../libempathy/empathy-utils.c:248 ../libempathy/empathy-utils.c:280
+#: ../libempathy/empathy-utils.c:244 ../libempathy/empathy-utils.c:276
 msgid "Certificate expired"
 msgstr "Varmenne on vanhentunut"
 
-#: ../libempathy/empathy-utils.c:250 ../libempathy/empathy-utils.c:282
+#: ../libempathy/empathy-utils.c:246 ../libempathy/empathy-utils.c:278
 msgid "Certificate not activated"
 msgstr "Varmenne ei ole vielä aktivoitu"
 
-#: ../libempathy/empathy-utils.c:252 ../libempathy/empathy-utils.c:284
+#: ../libempathy/empathy-utils.c:248 ../libempathy/empathy-utils.c:280
 msgid "Certificate hostname mismatch"
 msgstr "Varmenteen verkkonimi ei täsmää"
 
-#: ../libempathy/empathy-utils.c:254 ../libempathy/empathy-utils.c:286
+#: ../libempathy/empathy-utils.c:250 ../libempathy/empathy-utils.c:282
 msgid "Certificate fingerprint mismatch"
 msgstr "Varmenteen sormenjälki ei täsmää"
 
-#: ../libempathy/empathy-utils.c:256 ../libempathy/empathy-utils.c:288
+#: ../libempathy/empathy-utils.c:252 ../libempathy/empathy-utils.c:284
 msgid "Certificate self-signed"
 msgstr "Itseallekirjoitettu varmenne"
 
-#: ../libempathy/empathy-utils.c:258
+#: ../libempathy/empathy-utils.c:254
 msgid "Certificate error"
 msgstr "Varmennevirhe"
 
-#: ../libempathy/empathy-utils.c:292
+#: ../libempathy/empathy-utils.c:288
 msgid "Encryption is not available"
 msgstr "Salausta ei ole käytettävissä"
 
-#: ../libempathy/empathy-utils.c:294
+#: ../libempathy/empathy-utils.c:290
 msgid "Certificate is invalid"
 msgstr "Varmenne ei ole kelvollinen"
 
-#: ../libempathy/empathy-utils.c:296
+#: ../libempathy/empathy-utils.c:292
 msgid "Connection has been refused"
 msgstr "Yhteys hylättiin"
 
-#: ../libempathy/empathy-utils.c:298
+#: ../libempathy/empathy-utils.c:294
 msgid "Connection can’t be established"
 msgstr "Yhteyttä ei voi muodostaa"
 
-#: ../libempathy/empathy-utils.c:300
+#: ../libempathy/empathy-utils.c:296
 msgid "Connection has been lost"
 msgstr "Yhteys katkesi"
 
-#: ../libempathy/empathy-utils.c:302
+#: ../libempathy/empathy-utils.c:298
 msgid "This account is already connected to the server"
 msgstr "Tämä tili on jo yhteydessä palvelimeen"
 
-#: ../libempathy/empathy-utils.c:304
+#: ../libempathy/empathy-utils.c:300
 msgid ""
 "Connection has been replaced by a new connection using the same resource"
 msgstr "Yhteys on korvattu samaa resurssia käyttävällä uudella yhteydellä"
 
-#: ../libempathy/empathy-utils.c:307
+#: ../libempathy/empathy-utils.c:303
 msgid "The account already exists on the server"
 msgstr "Tili on jo olemassa palvelimella"
 
-#: ../libempathy/empathy-utils.c:309
+#: ../libempathy/empathy-utils.c:305
 msgid "Server is currently too busy to handle the connection"
 msgstr "Palvelin on liian kiireinen käsitelläkseen tätä yhteyttä"
 
-#: ../libempathy/empathy-utils.c:311
+#: ../libempathy/empathy-utils.c:307
 msgid "Certificate has been revoked"
 msgstr "Varmenne on kumottu"
 
-#: ../libempathy/empathy-utils.c:313
+#: ../libempathy/empathy-utils.c:309
 msgid ""
 "Certificate uses an insecure cipher algorithm or is cryptographically weak"
 msgstr "Varmenne käyttää heikkoa salausmenetelmää"
 
-#: ../libempathy/empathy-utils.c:316
+#: ../libempathy/empathy-utils.c:312
 msgid ""
 "The length of the server certificate, or the depth of the server certificate "
 "chain, exceed the limits imposed by the cryptography library"
@@ -701,11 +699,11 @@ msgstr ""
 "Palvelinsertifikaatin pituus tai palvelinsertifikaattiketjun pituus ovat "
 "suurempia kuin salauskirjasto sallii"
 
-#: ../libempathy/empathy-utils.c:320
+#: ../libempathy/empathy-utils.c:316
 msgid "Your software is too old"
 msgstr "Sovelluksesi on liian vanha"
 
-#: ../libempathy/empathy-utils.c:322
+#: ../libempathy/empathy-utils.c:318
 msgid "Internal error"
 msgstr "Sisäinen virhe"
 
@@ -1116,7 +1114,6 @@ msgid "Remove"
 msgstr "Poista"
 
 #: ../libempathy-gtk/empathy-contact-chooser.c:416
-#| msgid "_Search for Contacts…"
 msgid "Type to search a contact…"
 msgstr "Etsi tuttavia…"
 
@@ -1847,13 +1844,12 @@ msgstr "Keskustelua aloittaessa tapahtui virhe"
 
 #. add chat button
 #: ../libempathy-gtk/empathy-new-message-dialog.c:307
-#| msgid "Done"
 msgid "_Done"
 msgstr "_Valmis"
 
 #. Tweak the dialog
 #: ../libempathy-gtk/empathy-new-message-dialog.c:323
-#: ../src/empathy-roster-window.c:2367
+#: ../src/empathy-roster-window.c:2364
 msgid "New Conversation"
 msgstr "Uusi keskustelu"
 
@@ -2320,31 +2316,31 @@ msgstr ""
 msgid "No protocol backends installed"
 msgstr "Yhteyskäytäntötaustaosia ei asennettu"
 
-#: ../src/empathy-auth-client.c:285
+#: ../src/empathy-auth-client.c:284
 msgid " — Empathy authentication client"
 msgstr " — Empathyn tunnistautumisasiakas"
 
-#: ../src/empathy-auth-client.c:301
+#: ../src/empathy-auth-client.c:299
 msgid "Empathy authentication client"
 msgstr "Empathyn tunnistautumisasiakas"
 
-#: ../src/empathy.c:405
+#: ../src/empathy.c:402
 msgid "Don’t connect on startup"
 msgstr "Älä yhdistä käynnistettäessä"
 
-#: ../src/empathy.c:409
+#: ../src/empathy.c:406
 msgid "Don’t display the contact list or any other dialogs on startup"
 msgstr "Älä näytä tuttavalistaa tai muita ikkunoita käynnistyksessä"
 
-#: ../src/empathy.c:438
+#: ../src/empathy.c:435
 msgid "— Empathy IM Client"
 msgstr "— Empathy-pikaviestin"
 
-#: ../src/empathy.c:624
+#: ../src/empathy.c:621
 msgid "Error contacting the Account Manager"
 msgstr "Virhe yhdistettäessä tilienhallintaan"
 
-#: ../src/empathy.c:626
+#: ../src/empathy.c:623
 #, c-format
 msgid ""
 "There was an error while trying to connect to the Telepathy Account Manager. "
@@ -2647,10 +2643,6 @@ msgstr "Paikallisehdokas:"
 #: ../src/empathy-call-window.ui.h:32 ../src/empathy-preferences.ui.h:28
 msgid "Audio"
 msgstr "Ääni"
-
-#: ../src/empathy-chat.c:102
-msgid "— Empathy Chat Client"
-msgstr "— Empathy-keskusteluasiakas"
 
 #: ../src/empathy-chatrooms-window.c:244
 msgid "Name"
@@ -3358,7 +3350,7 @@ msgstr "Näytä ryhmät"
 msgid "Show account balances"
 msgstr "Näytä tilien varallisuus"
 
-#: ../src/empathy-preferences.ui.h:4 ../src/empathy-roster-window.c:2330
+#: ../src/empathy-preferences.ui.h:4 ../src/empathy-roster-window.c:2331
 msgid "Contact List"
 msgstr "Tuttavaluettelo"
 
@@ -3578,24 +3570,19 @@ msgstr "Ota ainakin yksi tileistäsi käyttöön, jotta näet tuttaviasi tääll
 msgid "You need to enable %s to see contacts here."
 msgstr "Ota %s käyttöön, jotta näet tuttaviasi täällä."
 
-#: ../src/empathy-roster-window.c:1739
-msgid "Change your presence to see contacts here"
-msgstr "Vaihda läsnäolotilaasi, jotta näet tuttaviasi täällä."
-
-#: ../src/empathy-roster-window.c:1748
+#: ../src/empathy-roster-window.c:1749
 msgid "No match found"
 msgstr "Vastinetta ei löytynyt"
 
-#: ../src/empathy-roster-window.c:1755
+#: ../src/empathy-roster-window.c:1756
 msgid "You haven’t added any contacts yet"
 msgstr "Et ole lisännyt yhtään tuttavaa vielä"
 
-#: ../src/empathy-roster-window.c:1758
+#: ../src/empathy-roster-window.c:1759
 msgid "No online contacts"
 msgstr "Tuttavia ei ole linjoilla"
 
-#: ../src/empathy-roster-window.c:2359
-#| msgid "Conversation"
+#: ../src/empathy-roster-window.c:2356
 msgid "Conversations"
 msgstr "Keskustelut"
 
@@ -3699,6 +3686,12 @@ msgstr "Muokkaa tilin \"%s\" tietoja"
 #: ../ubuntu-online-accounts/empathy.application.in.h:1
 msgid "Integrate your IM accounts"
 msgstr "Yhdistä pikaviestintilisi"
+
+#~ msgid "— Empathy Chat Client"
+#~ msgstr "— Empathy-keskusteluasiakas"
+
+#~ msgid "Change your presence to see contacts here"
+#~ msgstr "Vaihda läsnäolotilaasi, jotta näet tuttaviasi täällä."
 
 #~ msgid "_Copy Link Address"
 #~ msgstr "_Kopioi linkin osoite"
