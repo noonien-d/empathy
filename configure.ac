@@ -583,7 +583,7 @@ AC_SUBST([ENABLE_CODING_STYLE_CHECKS])
 AC_CONFIG_FILES([
    Makefile
    data/Makefile
-   data/empathy.desktop.in
+   data/org.gnome.Empathy.desktop.in
    data/icons/Makefile
    data/themes/Makefile
    extensions/Makefile

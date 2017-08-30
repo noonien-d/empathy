@@ -2,7 +2,7 @@ SUBDIRS = icons themes
 
 desktopdir = $(datadir)/applications
 desktop_in_files = \
-	empathy.desktop.in \
+	org.gnome.Empathy.desktop.in \
 	$(NULL)
 desktop_DATA = $(desktop_in_files:.desktop.in=.desktop)
 @INTLTOOL_DESKTOP_RULE@
