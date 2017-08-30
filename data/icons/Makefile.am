@@ -5,13 +5,13 @@ public_icons_themes = \
 	$(NULL)
 
 public_icons = \
-	hicolor_apps_16x16_empathy.png \
-	hicolor_apps_22x22_empathy.png \
-	hicolor_apps_24x24_empathy.png \
-	hicolor_apps_32x32_empathy.png \
-	hicolor_apps_48x48_empathy.png \
-	hicolor_apps_256x256_empathy.png \
-	hicolor_apps_scalable_empathy-symbolic.svg \
+	hicolor_apps_16x16_org.gnome.Empathy.png \
+	hicolor_apps_22x22_org.gnome.Empathy.png \
+	hicolor_apps_24x24_org.gnome.Empathy.png \
+	hicolor_apps_32x32_org.gnome.Empathy.png \
+	hicolor_apps_48x48_org.gnome.Empathy.png \
+	hicolor_apps_256x256_org.gnome.Empathy.png \
+	hicolor_apps_scalable_org.gnome.Empathy-symbolic.svg \
 	$(NULL)
 
 private_icons_themes = \
@@ -66,7 +66,7 @@ private_icons = \
 EXTRA_DIST = \
 	$(public_icons)		\
 	$(private_icons)	\
-	empathy.svg		\
+	org.gnome.Empathy.svg		\
 	$(NULL)
 
 include $(srcdir)/utils.mk
