@@ -1,8 +1,8 @@
 # List of source files containing translatable strings.
 # Please keep this file sorted alphabetically.
 
-data/empathy.desktop.in.in
-data/empathy.appdata.xml.in
+data/org.gnome.Empathy.desktop.in.in
+data/org.gnome.Empathy.appdata.xml.in
 [type: gettext/gsettings]data/org.gnome.Empathy.gschema.xml
 
 libempathy/empathy-ft-handler.c

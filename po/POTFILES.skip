@@ -1,5 +1,6 @@
+# List of source files that should *not* be translated.
 # Please keep this file sorted alphabetically.
 
-data/empathy.desktop.in
+data/org.gnome.Empathy.desktop.in
 
 telepathy-account-widgets
