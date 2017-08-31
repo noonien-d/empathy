@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop-application">
-  <id>org.gnome.empathy</id>
+  <id>org.gnome.Empathy</id>
   <metadata_license>CC0</metadata_license>
 
   <_name>Empathy</_name>
@@ -19,7 +19,7 @@
     </_p>
   </description>
 
-  <launchable type="desktop-id">empathy.desktop</launchable>
+  <launchable type="desktop-id">org.gnome.Empathy.desktop</launchable>
 
   <url type="homepage">https://wiki.gnome.org/Empathy</url>
   <screenshots>
@@ -33,6 +33,6 @@
   <translation type="gettext">empathy</translation>
 
   <provides>
-    <id>empathy.desktop</id>
+    <id>org.gnome.Empathy.desktop</id>
   </provides>
 </component>

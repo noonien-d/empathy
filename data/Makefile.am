@@ -61,7 +61,7 @@ css_DATA = \
 	$(NULL)
 
 appdatadir = $(datadir)/metainfo
-appdata_in_files = empathy.appdata.xml.in
+appdata_in_files = org.gnome.Empathy.appdata.xml.in
 appdata_DATA = $(appdata_in_files:.xml.in=.xml)
 @INTLTOOL_XML_RULE@
 
