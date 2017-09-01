@@ -8,9 +8,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: empathy\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-01-30 21:40+0100\n"
-"PO-Revision-Date: 2014-03-01 17:02+0100\n"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
+"product=empathy&keywords=I18N+L10N&component=General\n"
+"POT-Creation-Date: 2017-08-31 14:43+0000\n"
+"PO-Revision-Date: 2017-09-01 13:28+0200\n"
 "Last-Translator: Pau Iranzo <paugnu@gmail.com>\n"
 "Language-Team: Catalan <tradgnome@softcatala.org>\n"
 "Language: ca\n"
@@ -18,54 +19,61 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 1.8.11\n"
 
-#: ../data/empathy.desktop.in.in.h:1
+#: ../data/org.gnome.Empathy.desktop.in.in.h:1
+#: ../data/org.gnome.Empathy.appdata.xml.in.h:1
 msgid "Empathy"
 msgstr "Empathy"
 
-#: ../data/empathy.desktop.in.in.h:2
+#: ../data/org.gnome.Empathy.desktop.in.in.h:2
 msgid "IM Client"
 msgstr "Client de missatgeria instantània"
 
-#: ../data/empathy.desktop.in.in.h:3
+#: ../data/org.gnome.Empathy.desktop.in.in.h:3
 msgid "Empathy Internet Messaging"
 msgstr "Missatgeria d'Internet Empathy"
 
-#: ../data/empathy.desktop.in.in.h:4
+#: ../data/org.gnome.Empathy.desktop.in.in.h:4
+#: ../data/org.gnome.Empathy.appdata.xml.in.h:2
 msgid "Chat on Google Talk, Facebook, MSN and many other chat services"
 msgstr ""
 "Conversa a través del Google Talk, el Facebook, el MSN i molts altres "
 "serveis de xat"
 
-#: ../data/empathy.desktop.in.in.h:5
+#: ../data/org.gnome.Empathy.desktop.in.in.h:5
 msgid "chat;talk;im;message;irc;voip;gtalk;facebook;jabber;"
 msgstr ""
 "xat;parla;missatgeria instantània;missatge;irc;veuip;gtalk;facebook;jabber;"
 
-#: ../data/empathy.appdata.xml.in.h:1
+#: ../data/org.gnome.Empathy.appdata.xml.in.h:3
 msgid ""
 "Empathy is the official instant messaging application of the GNOME desktop "
-"environment.  Empathy can connect to AIM, MSN, Jabber (including Facebook "
-"and Google Talk), IRC, and many other messaging networks. You can chat with "
-"text, make audio and video calls, or even transfer files, depending on what "
-"your contact’s chat application allows."
+"environment. Empathy can connect to AIM, MSN, Jabber (including Facebook and "
+"Google Talk), IRC, and many other messaging networks."
 msgstr ""
 "L'Empathy és l'aplicació oficial de missatgeria instantània de l'entorn "
 "d'escriptori GNOME. L'Empathy pot connectar-se a les xarxes de missatgeria "
-"AIM, MSN, Jabber (incloent Facebook i Google Talk), IRC i moltes altres. "
+"AIM, MSN, Jabber (incloent Facebook i Google Talk), IRC i moltes altres."
+
+#: ../data/org.gnome.Empathy.appdata.xml.in.h:4
+msgid ""
+"You can chat with text, make audio and video calls, or even transfer files, "
+"depending on what your contact’s chat application allows."
+msgstr ""
 "Podeu xatejar mitjançant text, fer trucades d'àudio i vídeo i fins i tot "
 "transferir fitxers, segons el que permeti l'aplicació de xat dels vostres "
 "contactes."
 
-#: ../data/empathy.appdata.xml.in.h:2
+#: ../data/org.gnome.Empathy.appdata.xml.in.h:5
 msgid ""
 "Empathy provides integrated messaging for the GNOME desktop, so you’ll never "
-"miss a message.  You can respond to your contacts without even having to "
-"open Empathy!"
+"miss a message. You can respond to your contacts without even having to open "
+"Empathy!"
 msgstr ""
 "L'Empathy proporciona una missatgeria integrada amb l'escriptori GNOME, per "
 "així assegurar-se que mai perdreu un missatge. Podeu respondre als vostres "
-"contactes fins i tot sense obrir l'Empathy!"
+"contactes fins i tot sense obrir l'Empathy."
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:1
 msgid "Connection managers should be used"
@@ -537,7 +545,7 @@ msgstr "S'ha produït un error en enviar el fitxer"
 msgid "The other participant is unable to transfer the file"
 msgstr "L'interlocutor no pot enviar el fitxer"
 
-#: ../libempathy/empathy-ft-handler.c:748 ../libempathy/empathy-utils.c:260
+#: ../libempathy/empathy-ft-handler.c:748 ../libempathy/empathy-utils.c:256
 msgid "Unknown reason"
 msgstr "Motiu desconegut"
 
@@ -573,141 +581,141 @@ msgstr "Trucada de %s"
 msgid "Call from %s"
 msgstr "Trucada des de %s"
 
-#: ../libempathy/empathy-utils.c:180
+#: ../libempathy/empathy-utils.c:176
 msgid "Available"
 msgstr "Disponible"
 
-#: ../libempathy/empathy-utils.c:182
+#: ../libempathy/empathy-utils.c:178
 msgid "Busy"
 msgstr "Ocupat"
 
-#: ../libempathy/empathy-utils.c:185
+#: ../libempathy/empathy-utils.c:181
 msgid "Away"
 msgstr "Absent"
 
-#: ../libempathy/empathy-utils.c:187
+#: ../libempathy/empathy-utils.c:183
 msgid "Invisible"
 msgstr "Invisible"
 
-#: ../libempathy/empathy-utils.c:189
+#: ../libempathy/empathy-utils.c:185
 msgid "Offline"
 msgstr "Fora de línia"
 
 #. translators: presence type is unknown
-#: ../libempathy/empathy-utils.c:192
+#: ../libempathy/empathy-utils.c:188
 msgctxt "presence"
 msgid "Unknown"
 msgstr "Desconegut"
 
-#: ../libempathy/empathy-utils.c:232
+#: ../libempathy/empathy-utils.c:228
 msgid "No reason specified"
 msgstr "No s'ha especificat el motiu"
 
-#: ../libempathy/empathy-utils.c:234 ../libempathy/empathy-utils.c:290
+#: ../libempathy/empathy-utils.c:230 ../libempathy/empathy-utils.c:286
 msgid "Status is set to offline"
 msgstr "S'ha establert l'estat a desconnectat"
 
-#: ../libempathy/empathy-utils.c:236 ../libempathy/empathy-utils.c:270
+#: ../libempathy/empathy-utils.c:232 ../libempathy/empathy-utils.c:266
 #: ../libempathy-gtk/empathy-call-utils.c:42
 #: ../libempathy-gtk/empathy-new-message-dialog.c:70
 msgid "Network error"
 msgstr "Error de la xarxa"
 
-#: ../libempathy/empathy-utils.c:238 ../libempathy/empathy-utils.c:272
+#: ../libempathy/empathy-utils.c:234 ../libempathy/empathy-utils.c:268
 msgid "Authentication failed"
 msgstr "Ha fallat l'autenticació"
 
-#: ../libempathy/empathy-utils.c:240 ../libempathy/empathy-utils.c:274
+#: ../libempathy/empathy-utils.c:236 ../libempathy/empathy-utils.c:270
 msgid "Encryption error"
 msgstr "Error de xifratge"
 
-#: ../libempathy/empathy-utils.c:242
+#: ../libempathy/empathy-utils.c:238
 msgid "Name in use"
 msgstr "Nom ja utilitzat"
 
-#: ../libempathy/empathy-utils.c:244 ../libempathy/empathy-utils.c:276
+#: ../libempathy/empathy-utils.c:240 ../libempathy/empathy-utils.c:272
 msgid "Certificate not provided"
 msgstr "No s'ha proporcionat el certificat"
 
-#: ../libempathy/empathy-utils.c:246 ../libempathy/empathy-utils.c:278
+#: ../libempathy/empathy-utils.c:242 ../libempathy/empathy-utils.c:274
 msgid "Certificate untrusted"
 msgstr "El certificat no és de confiança"
 
-#: ../libempathy/empathy-utils.c:248 ../libempathy/empathy-utils.c:280
+#: ../libempathy/empathy-utils.c:244 ../libempathy/empathy-utils.c:276
 msgid "Certificate expired"
 msgstr "El certificat ha vençut"
 
-#: ../libempathy/empathy-utils.c:250 ../libempathy/empathy-utils.c:282
+#: ../libempathy/empathy-utils.c:246 ../libempathy/empathy-utils.c:278
 msgid "Certificate not activated"
 msgstr "El certificat no està activat"
 
-#: ../libempathy/empathy-utils.c:252 ../libempathy/empathy-utils.c:284
+#: ../libempathy/empathy-utils.c:248 ../libempathy/empathy-utils.c:280
 msgid "Certificate hostname mismatch"
 msgstr "No coincideix el nom de la màquina del certificat"
 
-#: ../libempathy/empathy-utils.c:254 ../libempathy/empathy-utils.c:286
+#: ../libempathy/empathy-utils.c:250 ../libempathy/empathy-utils.c:282
 msgid "Certificate fingerprint mismatch"
 msgstr "No coincideix l'empremta digital del certificat"
 
-#: ../libempathy/empathy-utils.c:256 ../libempathy/empathy-utils.c:288
+#: ../libempathy/empathy-utils.c:252 ../libempathy/empathy-utils.c:284
 msgid "Certificate self-signed"
 msgstr "Certificat signat per un mateix"
 
-#: ../libempathy/empathy-utils.c:258
+#: ../libempathy/empathy-utils.c:254
 msgid "Certificate error"
 msgstr "Error en el certificat"
 
-#: ../libempathy/empathy-utils.c:292
+#: ../libempathy/empathy-utils.c:288
 msgid "Encryption is not available"
 msgstr "L'encriptació no està disponible"
 
-#: ../libempathy/empathy-utils.c:294
+#: ../libempathy/empathy-utils.c:290
 msgid "Certificate is invalid"
 msgstr "El certificat no és vàlid"
 
-#: ../libempathy/empathy-utils.c:296
+#: ../libempathy/empathy-utils.c:292
 msgid "Connection has been refused"
 msgstr "S'ha rebutjat la connexió"
 
-#: ../libempathy/empathy-utils.c:298
+#: ../libempathy/empathy-utils.c:294
 msgid "Connection can’t be established"
 msgstr "No es pot establir la connexió"
 
-#: ../libempathy/empathy-utils.c:300
+#: ../libempathy/empathy-utils.c:296
 msgid "Connection has been lost"
 msgstr "S'ha perdut la connexió"
 
-#: ../libempathy/empathy-utils.c:302
+#: ../libempathy/empathy-utils.c:298
 msgid "This account is already connected to the server"
 msgstr "Aquest compte ja està connectat al servidor"
 
-#: ../libempathy/empathy-utils.c:304
+#: ../libempathy/empathy-utils.c:300
 msgid ""
 "Connection has been replaced by a new connection using the same resource"
 msgstr ""
 "S'ha reemplaçat la connexió per una altra de nova fent servir el mateix "
 "recurs"
 
-#: ../libempathy/empathy-utils.c:307
+#: ../libempathy/empathy-utils.c:303
 msgid "The account already exists on the server"
 msgstr "Ja existeix aquest compte al servidor"
 
-#: ../libempathy/empathy-utils.c:309
+#: ../libempathy/empathy-utils.c:305
 msgid "Server is currently too busy to handle the connection"
 msgstr "El servidor està massa ocupat per gestionar la connexió"
 
-#: ../libempathy/empathy-utils.c:311
+#: ../libempathy/empathy-utils.c:307
 msgid "Certificate has been revoked"
 msgstr "S'ha revocat el certificat"
 
-#: ../libempathy/empathy-utils.c:313
+#: ../libempathy/empathy-utils.c:309
 msgid ""
 "Certificate uses an insecure cipher algorithm or is cryptographically weak"
 msgstr ""
 "El certificat utilitza un algorisme criptogràfic no segur o la seva "
 "fortalesa criptogràfica és feble"
 
-#: ../libempathy/empathy-utils.c:316
+#: ../libempathy/empathy-utils.c:312
 msgid ""
 "The length of the server certificate, or the depth of the server certificate "
 "chain, exceed the limits imposed by the cryptography library"
@@ -715,11 +723,11 @@ msgstr ""
 "La llargada del certificat del servidor o la profunditat de la cadena de "
 "certificació excedeix els límits de la biblioteca criptogràfica"
 
-#: ../libempathy/empathy-utils.c:320
+#: ../libempathy/empathy-utils.c:316
 msgid "Your software is too old"
 msgstr "El programari és massa vell"
 
-#: ../libempathy/empathy-utils.c:322
+#: ../libempathy/empathy-utils.c:318
 msgid "Internal error"
 msgstr "Error intern"
 
@@ -1867,7 +1875,7 @@ msgstr "_Fet"
 
 #. Tweak the dialog
 #: ../libempathy-gtk/empathy-new-message-dialog.c:323
-#: ../src/empathy-roster-window.c:2367
+#: ../src/empathy-roster-window.c:2364
 msgid "New Conversation"
 msgstr "Conversa nova"
 
@@ -2304,31 +2312,31 @@ msgstr ""
 msgid "No protocol backends installed"
 msgstr "No hi ha cap protocol de rerefons instal·lat"
 
-#: ../src/empathy-auth-client.c:285
+#: ../src/empathy-auth-client.c:284
 msgid " — Empathy authentication client"
 msgstr " — Client d'autenticació de l'Empathy"
 
-#: ../src/empathy-auth-client.c:301
+#: ../src/empathy-auth-client.c:299
 msgid "Empathy authentication client"
 msgstr "Client d'autenticació de l'Empathy"
 
-#: ../src/empathy.c:405
+#: ../src/empathy.c:402
 msgid "Don’t connect on startup"
 msgstr "No connectis en iniciar"
 
-#: ../src/empathy.c:409
+#: ../src/empathy.c:406
 msgid "Don’t display the contact list or any other dialogs on startup"
 msgstr "No mostris la llista de contactes ni  cap altre diàleg en iniciar"
 
-#: ../src/empathy.c:438
+#: ../src/empathy.c:435
 msgid "— Empathy IM Client"
 msgstr "— Client de missatgeria instantània Empathy"
 
-#: ../src/empathy.c:624
+#: ../src/empathy.c:621
 msgid "Error contacting the Account Manager"
 msgstr "S'ha produït un error en contactar amb el gestor de comptes"
 
-#: ../src/empathy.c:626
+#: ../src/empathy.c:623
 #, c-format
 msgid ""
 "There was an error while trying to connect to the Telepathy Account Manager. "
@@ -2635,10 +2643,6 @@ msgstr "Candidat local:"
 #: ../src/empathy-call-window.ui.h:32 ../src/empathy-preferences.ui.h:28
 msgid "Audio"
 msgstr "Àudio"
-
-#: ../src/empathy-chat.c:102
-msgid "— Empathy Chat Client"
-msgstr "— Client de xat Empathy"
 
 #: ../src/empathy-chatrooms-window.c:244
 msgid "Name"
@@ -3076,7 +3080,7 @@ msgstr "S'ha rebut «%s» d'en/na %s"
 #. translators: first %s is filename, second %s
 #. * is the contact name
 #: ../src/empathy-ft-manager.c:488
-#, , c-format
+#, c-format
 msgid "“%s” sent to %s"
 msgstr "S'ha enviat «%s» a en/na %s"
 
@@ -3351,7 +3355,7 @@ msgstr "Mostra els grups"
 msgid "Show account balances"
 msgstr "Mostra el saldo dels comptes"
 
-#: ../src/empathy-preferences.ui.h:4 ../src/empathy-roster-window.c:2330
+#: ../src/empathy-preferences.ui.h:4 ../src/empathy-roster-window.c:2331
 msgid "Contact List"
 msgstr "Llista de contactes"
 
@@ -3574,23 +3578,19 @@ msgstr "Heu d'habilitar com a mínim un compte per veure contactes aquí."
 msgid "You need to enable %s to see contacts here."
 msgstr "Heu d'habilitar %s per veure contactes aquí."
 
-#: ../src/empathy-roster-window.c:1739
-msgid "Change your presence to see contacts here"
-msgstr "Canvieu el vostre estat per veure els contactes"
-
-#: ../src/empathy-roster-window.c:1748
+#: ../src/empathy-roster-window.c:1749
 msgid "No match found"
 msgstr "No s'ha trobat cap coincidència"
 
-#: ../src/empathy-roster-window.c:1755
+#: ../src/empathy-roster-window.c:1756
 msgid "You haven’t added any contacts yet"
 msgstr "Encara no heu afegit cap contacte"
 
-#: ../src/empathy-roster-window.c:1758
+#: ../src/empathy-roster-window.c:1759
 msgid "No online contacts"
 msgstr "No hi ha cap contacte en línia"
 
-#: ../src/empathy-roster-window.c:2359
+#: ../src/empathy-roster-window.c:2356
 msgid "Conversations"
 msgstr "Conversacions"
 
@@ -3694,6 +3694,12 @@ msgstr "Edita les opcions del compte %s"
 #: ../ubuntu-online-accounts/empathy.application.in.h:1
 msgid "Integrate your IM accounts"
 msgstr "Integreu els vostres comptes de missatgeria instantània"
+
+#~ msgid "— Empathy Chat Client"
+#~ msgstr "— Client de xat Empathy"
+
+#~ msgid "Change your presence to see contacts here"
+#~ msgstr "Canvieu el vostre estat per veure els contactes"
 
 #~ msgid "_Copy Link Address"
 #~ msgstr "_Copia l'adreça de l'enllaç"
