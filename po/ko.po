@@ -36,8 +36,8 @@ msgstr ""
 "Project-Id-Version: empathy\n"
 "Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
 "product=empathy&keywords=I18N+L10N&component=General\n"
-"POT-Creation-Date: 2017-02-23 11:00+0000\n"
-"PO-Revision-Date: 2017-03-11 18:34+0900\n"
+"POT-Creation-Date: 2017-08-26 00:26+0000\n"
+"PO-Revision-Date: 2017-08-28 07:00+0900\n"
 "Last-Translator: Changwoo Ryu <cwryu@debian.org>\n"
 "Language-Team: GNOME Korea <gnome-kr@googlegroups.com>\n"
 "Language: ko\n"
@@ -46,7 +46,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: ../data/empathy.desktop.in.in.h:1
+#: ../data/empathy.desktop.in.in.h:1 ../data/empathy.appdata.xml.in.h:1
 msgid "Empathy"
 msgstr "엠퍼시"
 
@@ -59,7 +59,7 @@ msgstr "메신저 클라이언트"
 msgid "Empathy Internet Messaging"
 msgstr "엠퍼시 인터넷 메신저"
 
-#: ../data/empathy.desktop.in.in.h:4
+#: ../data/empathy.desktop.in.in.h:4 ../data/empathy.appdata.xml.in.h:2
 msgid "Chat on Google Talk, Facebook, MSN and many other chat services"
 msgstr "구글 토크, 페이스북, MSN 및 기타 대화 서비스에서 대화"
 
@@ -69,24 +69,24 @@ msgstr ""
 "chat;채팅;talk;대화;im;메신저;message;메시지;irc;voip;gtalk;지톡;지토크;"
 "facebook;페이스북;jabber;재버;"
 
-#: ../data/empathy.appdata.xml.in.h:1
+#: ../data/empathy.appdata.xml.in.h:3
 msgid ""
 "Empathy is the official instant messaging application of the GNOME desktop "
-"environment.  Empathy can connect to AIM, MSN, Jabber (including Facebook "
-"and Google Talk), IRC, and many other messaging networks. You can chat with "
-"text, make audio and video calls, or even transfer files, depending on what "
-"your contact’s chat application allows."
-msgstr ""
-"엠퍼시는 그놈 데스크톱 환경의 공식 메신저 프로그램입니다. 엠퍼시는 AIM, MSN, "
-"재버(페이스북과 구글토크 포함), IRC 및 기타 여러가지 메신저 네트워크에 연결"
-"할 수 있습니다. 지정한 메신저가 허용하는 범위가 어디까지냐에 따라 문자로 대화"
-"할 수도 있고, 음성이나 영상 전화를 걸 수도 있고, 파일을 전송할 수도 있습니다."
+"environment. Empathy can connect to AIM, MSN, Jabber (including Facebook and "
+"Google Talk), IRC, and many other messaging networks."
+msgstr "엠퍼시는 그놈 데스크톱 환경의 공식 메신저 프로그램입니다. 엠퍼시는 AIM, MSN, 재버(페이스북과 구글토크 포함), IRC 및 기타 여러가지 메신저 네트워크에 연결할 수 있습니다."
 
-#: ../data/empathy.appdata.xml.in.h:2
+#: ../data/empathy.appdata.xml.in.h:4
+msgid ""
+"You can chat with text, make audio and video calls, or even transfer files, "
+"depending on what your contact’s chat application allows."
+msgstr "지정한 메신저가 허용하는 범위가 어디까지냐에 따라 문자로 대화할 수도 있고, 음성이나 영상 전화를 걸 수도 있고, 파일을 전송할 수도 있습니다.<"
+
+#: ../data/empathy.appdata.xml.in.h:5
 msgid ""
 "Empathy provides integrated messaging for the GNOME desktop, so you’ll never "
-"miss a message.  You can respond to your contacts without even having to "
-"open Empathy!"
+"miss a message. You can respond to your contacts without even having to open "
+"Empathy!"
 msgstr ""
 "엠퍼시는 그놈 데스크톱의 통합 메시지 전송 기능을 제공합니다. 그러므로 절대로 "
 "메시지를 놓치지 않습니다. 엠퍼시를 열 필요도 없이 보낸 사람에게 답장을 보낼 "
@@ -522,7 +522,7 @@ msgstr "파일을 전송하는 중에 오류가 발생했습니다"
 msgid "The other participant is unable to transfer the file"
 msgstr "상대가 파일을 전송할 수 없습니다"
 
-#: ../libempathy/empathy-ft-handler.c:748 ../libempathy/empathy-utils.c:260
+#: ../libempathy/empathy-ft-handler.c:748 ../libempathy/empathy-utils.c:256
 msgid "Unknown reason"
 msgstr "알 수 없는 이유"
 
@@ -558,138 +558,138 @@ msgstr "호출함: %s"
 msgid "Call from %s"
 msgstr "호출 받음: %s"
 
-#: ../libempathy/empathy-utils.c:180
+#: ../libempathy/empathy-utils.c:176
 msgid "Available"
 msgstr "대화 가능"
 
-#: ../libempathy/empathy-utils.c:182
+#: ../libempathy/empathy-utils.c:178
 msgid "Busy"
 msgstr "다른 용무 중"
 
-#: ../libempathy/empathy-utils.c:185
+#: ../libempathy/empathy-utils.c:181
 msgid "Away"
 msgstr "자리 비움"
 
-#: ../libempathy/empathy-utils.c:187
+#: ../libempathy/empathy-utils.c:183
 msgid "Invisible"
 msgstr "상태 감춤"
 
-#: ../libempathy/empathy-utils.c:189
+#: ../libempathy/empathy-utils.c:185
 msgid "Offline"
 msgstr "연결 중지"
 
 #. translators: presence type is unknown
-#: ../libempathy/empathy-utils.c:192
+#: ../libempathy/empathy-utils.c:188
 msgctxt "presence"
 msgid "Unknown"
 msgstr "알 수 없음"
 
-#: ../libempathy/empathy-utils.c:232
+#: ../libempathy/empathy-utils.c:228
 msgid "No reason specified"
 msgstr "이유를 지정하지 않았습니다"
 
-#: ../libempathy/empathy-utils.c:234 ../libempathy/empathy-utils.c:290
+#: ../libempathy/empathy-utils.c:230 ../libempathy/empathy-utils.c:286
 msgid "Status is set to offline"
 msgstr "상태가 연결 중지로 설정되었습니다"
 
-#: ../libempathy/empathy-utils.c:236 ../libempathy/empathy-utils.c:270
+#: ../libempathy/empathy-utils.c:232 ../libempathy/empathy-utils.c:266
 #: ../libempathy-gtk/empathy-call-utils.c:42
 #: ../libempathy-gtk/empathy-new-message-dialog.c:70
 msgid "Network error"
 msgstr "네트워크 오류"
 
-#: ../libempathy/empathy-utils.c:238 ../libempathy/empathy-utils.c:272
+#: ../libempathy/empathy-utils.c:234 ../libempathy/empathy-utils.c:268
 msgid "Authentication failed"
 msgstr "인증 실패"
 
-#: ../libempathy/empathy-utils.c:240 ../libempathy/empathy-utils.c:274
+#: ../libempathy/empathy-utils.c:236 ../libempathy/empathy-utils.c:270
 msgid "Encryption error"
 msgstr "암호화 오류"
 
-#: ../libempathy/empathy-utils.c:242
+#: ../libempathy/empathy-utils.c:238
 msgid "Name in use"
 msgstr "이름이 사용 중입니다"
 
-#: ../libempathy/empathy-utils.c:244 ../libempathy/empathy-utils.c:276
+#: ../libempathy/empathy-utils.c:240 ../libempathy/empathy-utils.c:272
 msgid "Certificate not provided"
 msgstr "인증서가 없습니다"
 
-#: ../libempathy/empathy-utils.c:246 ../libempathy/empathy-utils.c:278
+#: ../libempathy/empathy-utils.c:242 ../libempathy/empathy-utils.c:274
 msgid "Certificate untrusted"
 msgstr "인증서를 신뢰할 수 없습니다"
 
-#: ../libempathy/empathy-utils.c:248 ../libempathy/empathy-utils.c:280
+#: ../libempathy/empathy-utils.c:244 ../libempathy/empathy-utils.c:276
 msgid "Certificate expired"
 msgstr "인증서가 만료되었습니다"
 
-#: ../libempathy/empathy-utils.c:250 ../libempathy/empathy-utils.c:282
+#: ../libempathy/empathy-utils.c:246 ../libempathy/empathy-utils.c:278
 msgid "Certificate not activated"
 msgstr "인증서를 활성화하지 않았습니다"
 
-#: ../libempathy/empathy-utils.c:252 ../libempathy/empathy-utils.c:284
+#: ../libempathy/empathy-utils.c:248 ../libempathy/empathy-utils.c:280
 msgid "Certificate hostname mismatch"
 msgstr "인증서 호스트 이름이 맞지 않습니다"
 
-#: ../libempathy/empathy-utils.c:254 ../libempathy/empathy-utils.c:286
+#: ../libempathy/empathy-utils.c:250 ../libempathy/empathy-utils.c:282
 msgid "Certificate fingerprint mismatch"
 msgstr "인증서 핑거프린트가 맞지 않습니다"
 
-#: ../libempathy/empathy-utils.c:256 ../libempathy/empathy-utils.c:288
+#: ../libempathy/empathy-utils.c:252 ../libempathy/empathy-utils.c:284
 msgid "Certificate self-signed"
 msgstr "자기만 서명한 인증서입니다"
 
-#: ../libempathy/empathy-utils.c:258
+#: ../libempathy/empathy-utils.c:254
 msgid "Certificate error"
 msgstr "인증서 오류"
 
-#: ../libempathy/empathy-utils.c:292
+#: ../libempathy/empathy-utils.c:288
 msgid "Encryption is not available"
 msgstr "암호화를 사용할 수 없습니다"
 
-#: ../libempathy/empathy-utils.c:294
+#: ../libempathy/empathy-utils.c:290
 msgid "Certificate is invalid"
 msgstr "인증서가 올바르지 않습니다"
 
-#: ../libempathy/empathy-utils.c:296
+#: ../libempathy/empathy-utils.c:292
 msgid "Connection has been refused"
 msgstr "연결이 거부되었습니다"
 
-#: ../libempathy/empathy-utils.c:298
+#: ../libempathy/empathy-utils.c:294
 msgid "Connection can’t be established"
 msgstr "연결이 완료되지 않았습니다"
 
-#: ../libempathy/empathy-utils.c:300
+#: ../libempathy/empathy-utils.c:296
 msgid "Connection has been lost"
 msgstr "연결이 끊어졌습니다"
 
-#: ../libempathy/empathy-utils.c:302
+#: ../libempathy/empathy-utils.c:298
 msgid "This account is already connected to the server"
 msgstr "이 계정은 이미 서버와 연결했습니다"
 
-#: ../libempathy/empathy-utils.c:304
+#: ../libempathy/empathy-utils.c:300
 msgid ""
 "Connection has been replaced by a new connection using the same resource"
 msgstr "기존 연결이 같은 리소스를 사용해 새롭게 연결되었습니다"
 
-#: ../libempathy/empathy-utils.c:307
+#: ../libempathy/empathy-utils.c:303
 msgid "The account already exists on the server"
 msgstr "서버에 해당 계정이 이미 있습니다"
 
-#: ../libempathy/empathy-utils.c:309
+#: ../libempathy/empathy-utils.c:305
 msgid "Server is currently too busy to handle the connection"
 msgstr "서버가 사용량이 너무 많아 연결을 받아들일 수 없습니다"
 
-#: ../libempathy/empathy-utils.c:311
+#: ../libempathy/empathy-utils.c:307
 msgid "Certificate has been revoked"
 msgstr "인증서가 철회되었습니다"
 
-#: ../libempathy/empathy-utils.c:313
+#: ../libempathy/empathy-utils.c:309
 msgid ""
 "Certificate uses an insecure cipher algorithm or is cryptographically weak"
 msgstr ""
 "인증서가 안전하지 않은 암호화 알고리즘을 사용하거나 암호화가 취약합니다"
 
-#: ../libempathy/empathy-utils.c:316
+#: ../libempathy/empathy-utils.c:312
 msgid ""
 "The length of the server certificate, or the depth of the server certificate "
 "chain, exceed the limits imposed by the cryptography library"
@@ -697,11 +697,11 @@ msgstr ""
 "서버 인증서의 길이 혹은 서버 인증서 체인의 단계가 암호화 라이브러리가 지정한 "
 "한계를 넘아갔습니다"
 
-#: ../libempathy/empathy-utils.c:320
+#: ../libempathy/empathy-utils.c:316
 msgid "Your software is too old"
 msgstr "소프트웨어가 너무 오래되었습니다"
 
-#: ../libempathy/empathy-utils.c:322
+#: ../libempathy/empathy-utils.c:318
 msgid "Internal error"
 msgstr "내부 오류"
 
@@ -1846,7 +1846,7 @@ msgstr "완료(_D)"
 
 #. Tweak the dialog
 #: ../libempathy-gtk/empathy-new-message-dialog.c:323
-#: ../src/empathy-roster-window.c:2367
+#: ../src/empathy-roster-window.c:2364
 msgid "New Conversation"
 msgstr "새 대화"
 
@@ -2280,11 +2280,11 @@ msgstr "새 계정을 만들면, 해당 프로토콜의 백엔드를 먼저 설�
 msgid "No protocol backends installed"
 msgstr "설치한 백엔드 프로토콜이 없습니다"
 
-#: ../src/empathy-auth-client.c:285
+#: ../src/empathy-auth-client.c:284
 msgid " — Empathy authentication client"
 msgstr "— 엠퍼시 인증 클라이언트"
 
-#: ../src/empathy-auth-client.c:301
+#: ../src/empathy-auth-client.c:299
 msgid "Empathy authentication client"
 msgstr "엠퍼시 인증 클라이언트"
 
@@ -2609,10 +2609,6 @@ msgstr "로컬 후보:"
 #: ../src/empathy-call-window.ui.h:32 ../src/empathy-preferences.ui.h:28
 msgid "Audio"
 msgstr "음성"
-
-#: ../src/empathy-chat.c:102
-msgid "— Empathy Chat Client"
-msgstr "— 엠퍼시 채팅 클라이언트"
 
 #: ../src/empathy-chatrooms-window.c:244
 msgid "Name"
@@ -3317,7 +3313,7 @@ msgstr "그룹 표시"
 msgid "Show account balances"
 msgstr "계정 잔액 표시"
 
-#: ../src/empathy-preferences.ui.h:4 ../src/empathy-roster-window.c:2330
+#: ../src/empathy-preferences.ui.h:4 ../src/empathy-roster-window.c:2331
 msgid "Contact List"
 msgstr "연락처 목록"
 
@@ -3535,23 +3531,19 @@ msgstr "이 연락처를 보려면 계정 중 하나를 활성화 해야 합니�
 msgid "You need to enable %s to see contacts here."
 msgstr "이 연락처를 보려면 %s을(를) 활성화 해야 합니다."
 
-#: ../src/empathy-roster-window.c:1739
-msgid "Change your presence to see contacts here"
-msgstr "연락처를 보려면 내 상태를 바꾸십시오"
-
-#: ../src/empathy-roster-window.c:1748
+#: ../src/empathy-roster-window.c:1749
 msgid "No match found"
 msgstr "해당 사항이 없습니다"
 
-#: ../src/empathy-roster-window.c:1755
+#: ../src/empathy-roster-window.c:1756
 msgid "You haven’t added any contacts yet"
 msgstr "아직 연락처를 추가하지 않았습니다"
 
-#: ../src/empathy-roster-window.c:1758
+#: ../src/empathy-roster-window.c:1759
 msgid "No online contacts"
 msgstr "온라인 연락처 없음"
 
-#: ../src/empathy-roster-window.c:2359
+#: ../src/empathy-roster-window.c:2356
 msgid "Conversations"
 msgstr "대화"
 
