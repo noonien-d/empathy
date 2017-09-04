@@ -5,9 +5,9 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: empathy-help master\n"
-"POT-Creation-Date: 2017-08-17 04:16+0000\n"
-"PO-Revision-Date: 2017-09-04 09:23+0700\n"
+"Project-Id-Version: empathy-help gnome-3-12\n"
+"POT-Creation-Date: 2017-09-04 19:27+0700\n"
+"PO-Revision-Date: 2017-09-04 19:34+0700\n"
 "Last-Translator: Andika Triwidada <andika@gmail.com>\n"
 "Language-Team: Indonesian <gnome-l10n-id@googlegroups.com>\n"
 "Language: id\n"
@@ -550,9 +550,6 @@ msgstr ""
 
 #. (itstool) path: item/p
 #: C/add-account.page:50
-#| msgid ""
-#| "From the <gui>Contact List</gui> window, choose <guiseq><gui>Edit</gui> "
-#| "<gui>Accounts</gui></guiseq>, or press <key>F4</key>."
 msgid ""
 "Click <guiseq><gui>Empathy</gui><gui>Accounts</gui></guiseq>, or press "
 "<key>F4</key>."
@@ -716,6 +713,8 @@ msgstr ""
 "Jendela baru akan terbuka. Ketika koneksi telah terjalin, Anda akan melihat "
 "total waktu pembicaraan pada bagian bawah jendela."
 
+# typo 'hand up'? previously 'Hang up'
+# commit 65d8bef73f
 #. (itstool) path: item/p
 #: C/audio-call.page:55
 msgid ""
@@ -737,13 +736,13 @@ msgstr ""
 #. (itstool) path: section/title
 #: C/audio-call.page:71
 msgid "Start an audio conversation with a meta-contact"
-msgstr "Mulai perbincangan menggunakan suara dengan meta-contact"
+msgstr "Memulai perbincangan suara dengan kontak meta"
 
 #. (itstool) path: item/p
 #: C/audio-call.page:74 C/send-message.page:53 C/video-call.page:68
 msgid ""
 "From the <gui>Contact List</gui> window, right-click on the meta-contact."
-msgstr "Dari jendela <gui>Daftar Kontak</gui>, klik-kanan pada meta-contact."
+msgstr "Dari jendela <gui>Daftar Kontak</gui>, klik kanan pada kontak meta."
 
 #. (itstool) path: item/p
 #: C/audio-call.page:79
@@ -751,8 +750,8 @@ msgid ""
 "Select the contact you want to have the conversation, and from the menu "
 "select <gui style=\"menuitem\">Audio Call</gui>."
 msgstr ""
-"Pilih kontak yang ingin Anda gunakan untuk berbincang, dan dari menu pilih "
-"<gui style=\"menuitem\">Panggilan Suara</gui>."
+"Pilih kontak yang ingin Anda ajak untuk berbincang, dan dari menu pilih <gui "
+"style=\"menuitem\">Panggilan Suara</gui>."
 
 #. (itstool) path: note/p
 #: C/audio-call.page:86 C/send-message.page:65 C/video-call.page:80
@@ -812,7 +811,7 @@ msgstr ""
 #. (itstool) path: section/title
 #: C/audio-video.page:49
 msgid "Supported Account Types"
-msgstr "Tipe Aku Yang Didukung"
+msgstr "Tipe Akun yang Didukung"
 
 #. (itstool) path: section/p
 #: C/audio-video.page:51
@@ -822,8 +821,8 @@ msgid ""
 "supported for each type of account."
 msgstr ""
 "Anda hanya dapat menggunakan pangggilan suara dan video pada akun yang "
-"mendukung layanan tersebut. Tabel dibawah ini menampikan daftar tipe akun "
-"yang mendukung panggilan suara dan video."
+"mendukung layanan tersebut. Tabel dibawah ini menampilkan daftar apakah "
+"suara dan video didukung bagi setiap tipe akun."
 
 #. (itstool) path: note/p
 #: C/audio-video.page:56
@@ -833,11 +832,10 @@ msgid ""
 "plugins may make audio or video conversations possible on account types that "
 "are listed as unsupported here."
 msgstr ""
-"Tipe-tipe akun disediakan oleh pengaya. Sistem Anda tidak mungkin tidak "
-"memiliki semua tipe yang tersedia, atau mungkin memiliki tipe yang tidak "
-"terdapat dalam daftar. Pengaya yang diperbarui mungkin dapat membuat "
-"panggilan suara dan video menjadi mungkin pada daftar tipe akun yang "
-"didaftar sebagai tidak didukung di sini."
+"Tipe-tipe akun disediakan oleh pengaya. Sistem Anda mungkin tidak memiliki "
+"semua tipe yang tersedia, atau mungkin memiliki tipe yang tidak terdapat "
+"dalam daftar. Pengaya yang diperbarui bisa membuat panggilan suara dan video "
+"menjadi mungkin pada tipe akun yang didaftar sebagai tidak didukung di sini."
 
 #. (itstool) path: td/p
 #: C/audio-video.page:74
@@ -976,7 +974,7 @@ msgstr ""
 msgid ""
 "Click on the drop-down list at the top of the <gui>Contact List</gui> window."
 msgstr ""
-"Klik daftar drop-down pada bagian atas jendela <gui>Daftar Kontak</gui>."
+"Klik daftar tarik turun pada bagian atas jendela <gui>Daftar Kontak</gui>."
 
 #. (itstool) path: item/p
 #: C/change-status.page:51
@@ -994,7 +992,7 @@ msgstr ""
 "Lihat <link xref=\"status-icons\"/> untuk daftar status bawaan dan apa "
 "artinya. Anda juga dapat <link xref=\"set-custom-status\">menambah pesan "
 "status lainnya</link> untuk menyediakan lebih banyak informasi mengenai "
-"ketersediaan Anda pada kontak Anda."
+"ketersediaan Anda pada kontak Anda. "
 
 #. (itstool) path: note/p
 #: C/change-status.page:63
@@ -1008,7 +1006,7 @@ msgstr ""
 #. (itstool) path: info/desc
 #: C/create-account.page:32
 msgid "Create an account for one of the supported messaging services."
-msgstr "Buat sebuah akun untuk satu layanan yang disupport."
+msgstr "Buat sebuah akun untuk satu layanan perpesanan yang didukung."
 
 #. (itstool) path: page/title
 #: C/create-account.page:36
@@ -1026,7 +1024,7 @@ msgid ""
 msgstr ""
 "Sebagian besar tipe akun perlu membuat akun baru dengan penyedia layanan "
 "sebelum Anda dapat menggunakan akun tersebut dengan aplikasi perpesanan "
-"instant. Anda dapat menggunakan <app>Empathy</app> untuk mendaftarkan akun "
+"instan. Anda dapat menggunakan <app>Empathy</app> untuk mendaftarkan akun "
 "baru dengan beberapa penyedia akun menggunakan langkah yang sama dengan "
 "<link xref=\"add-account\">menambah sebuah akun</link>."
 
@@ -1050,7 +1048,7 @@ msgid ""
 "did not register your nick or are unable to do so and another user is using "
 "it, then you will need to choose a different one."
 msgstr ""
-"Jaringan IRC mengharuskan Anda mennyatakan nama panggilan ketika Anda "
+"Jaringan IRC mengharuskan Anda menyatakan nama panggilan ketika Anda "
 "terkoneksi ke server. Beberapa jaringan IRC menggunakan suatu layanan, "
 "seperti NickServ, yang memungkinkan pengguna untuk <link xref=\"irc-nick-"
 "password\">melindungi nama panggilan mereka</link>. Jika Anda tidak "
@@ -1064,9 +1062,9 @@ msgid ""
 "Some IRC servers are password protected. You will need to know the password "
 "to connect to these servers. Generally, these are private IRC networks."
 msgstr ""
-"Beberapa penyedia layanan IRC diproteksi oleh kata sandi. Anda harus "
-"mengetahui kata sandi untuk terkoneksi dengan penyedia layanan mereka. "
-"Umumnya, jaringan tersebut adalah jaringan IRC pribadi."
+"Beberapa server IRC diproteksi oleh kata sandi. Anda harus mengetahui kata "
+"sandi untuk terkoneksi dengan server-server ini. Umumnya, jaringan tersebut "
+"adalah jaringan IRC pribadi."
 
 #. (itstool) path: note/p
 #: C/create-account.page:62
@@ -1075,7 +1073,7 @@ msgid ""
 "discussion."
 msgstr ""
 "Banyak proyek GNOME menggunakan <code>irc.gnome.org</code> untuk diskusi "
-"related-project."
+"terkait proyek."
 
 #. (itstool) path: section/p
 #: C/create-account.page:70
@@ -1096,7 +1094,7 @@ msgid ""
 "org/\">jabber.org</link>."
 msgstr ""
 "Anda harus membuat akun baru dengan penyedia Jabber. Terdapat banyak "
-"penyedia; salah satu yang popular adalah <link href=\"http://register.jabber."
+"penyedia; salah satu yang populer adalah <link href=\"http://register.jabber."
 "org/\">jabber.org</link>."
 
 #. (itstool) path: note/p
@@ -1158,7 +1156,7 @@ msgstr ""
 #. (itstool) path: section/title
 #: C/create-account.page:112
 msgid "Proprietary Services"
-msgstr "Layanan Yang Memiliki Hak Milik"
+msgstr "Layanan Proprietari"
 
 #. (itstool) path: section/p
 #: C/create-account.page:114
@@ -1193,7 +1191,7 @@ msgstr "<link href=\"https://login.yahoo.com/config/login\">Yahoo!</link>"
 #. (itstool) path: info/desc
 #: C/disable-account.page:9
 msgid "Prevent <app>Empathy</app> from automatically logging in to an account."
-msgstr "Mencegah <app>Empathy</app> dari login otomatis pada akun Anda."
+msgstr "Mencegah <app>Empathy</app> login otomatis ke akun Anda."
 
 #. (itstool) path: page/title
 #: C/disable-account.page:40
@@ -1220,7 +1218,7 @@ msgid ""
 "From the <gui>Contact List</gui> window, choose <guiseq><gui>Edit</gui> "
 "<gui>Accounts</gui></guiseq>, or press <key>F4</key>."
 msgstr ""
-"Dari jendela <gui>Daftar Kontak</gui>, pilih <guiseq><gui>Ubah</gui> "
+"Dari jendela <gui>Daftar Kontak</gui>, pilih <guiseq><gui>Sunting</gui> "
 "<gui>Akun</gui></guiseq>, atau tekan tombol <key>F4</key>."
 
 #. (itstool) path: item/p
@@ -1235,7 +1233,7 @@ msgstr ""
 #. (itstool) path: item/p
 #: C/disable-account.page:57
 msgid "On the right side of the window, switch it off."
-msgstr "Pada bagian kanan jendela, matikan.."
+msgstr "Pada bagian kanan jendela, matikan."
 
 #. (itstool) path: page/p
 #: C/disable-account.page:62
@@ -1245,12 +1243,12 @@ msgstr "Untuk mengaktifkan kembali akun, nyalakan."
 #. (itstool) path: info/desc
 #: C/favorite-rooms.page:10
 msgid "Set, join and manage favorite rooms."
-msgstr "Atur, gabung dan manage ruangan favorit."
+msgstr "Mengatur, bergabung dengan, dan mengelola ruangan-ruangan favorit."
 
 #. (itstool) path: page/title
 #: C/favorite-rooms.page:29
 msgid "Favorite rooms"
-msgstr "Ruangan Favorit"
+msgstr "Ruangan favorit"
 
 #. (itstool) path: section/title
 #: C/favorite-rooms.page:32
@@ -1260,7 +1258,7 @@ msgstr "Atur ruangan sebagai favorit"
 #. (itstool) path: item/p
 #: C/favorite-rooms.page:35
 msgid "Join a room."
-msgstr "Gabung pada ruangan."
+msgstr "Bergabung ke ruangan."
 
 #. (itstool) path: item/p
 #: C/favorite-rooms.page:40
@@ -1268,8 +1266,8 @@ msgid ""
 "See <link xref=\"irc-join-room\"/> for more information on how to join an "
 "IRC room."
 msgstr ""
-"See <link xref=\"irc-join-room\"/> untuk informasi lainnya bagaimana cara "
-"bergabung dengan ruang IRC."
+"See <link xref=\"irc-join-room\"/> untuk informasi lebih lanjut tentang "
+"bagaimana cara bergabung dengan ruang IRC."
 
 #. (itstool) path: item/p
 #: C/favorite-rooms.page:46
@@ -1277,8 +1275,8 @@ msgid ""
 "See <link xref=\"group-conversations\"/> for more information on how to "
 "start or join a group conversation."
 msgstr ""
-"See <link xref=\"group-conversations\"/> untuk informasi lain bagaimana "
-"memulai atau bergabung dengan grup untuk berbincang."
+"See <link xref=\"group-conversations\"/> untuk informasi lebih lanjut "
+"tentang bagaimana memulai atau bergabung ke perbincangan kelompok."
 
 #. (itstool) path: item/p
 #: C/favorite-rooms.page:54
@@ -1449,6 +1447,10 @@ msgid ""
 "PEP</link> is maintained online. Google Talk does not support this feature "
 "at this time."
 msgstr ""
+"Untuk mempublikasikan lokasi geografis Anda, server Jabber Anda perlu "
+"mendukung Personal Eventing Protocol (PEP). Suatu daftar <link href=\"http://"
+"coccinella.im/servers/servers_by_pubsub_pep.html\">server yang mendukung "
+"PEP</link> dipelihara daring. Google Talk tidak mendukung fitur ini saat ini."
 
 #. (itstool) path: info/desc
 #: C/geolocation-privacy.page:8
@@ -1494,10 +1496,10 @@ msgid ""
 "send different information. The use of external devices such as GPS or "
 "mobile phone will increase the accuracy of the information sent."
 msgstr ""
-"Jenis yang berbeda pada jaringan mungkin memiliki pengaturan akurasi yang "
-"berbeda, dan mungkin mengirimkan informasi yang berbeda pula. Penggunaan "
-"perangkat tambahan seperti GPS atau telefon selular akan menambah akurasi "
-"dari informasi yang dikirim."
+"Jaringan yang berbeda mungkin memiliki pengaturan akurasi yang berbeda, dan "
+"mungkin mengirimkan informasi yang berbeda pula. Penggunaan perangkat "
+"tambahan seperti GPS atau telepon selular akan meningkatkan akurasi dari "
+"informasi yang dikirim."
 
 #. (itstool) path: section/p
 #: C/geolocation-privacy.page:49
@@ -1505,7 +1507,7 @@ msgid ""
 "When the privacy mode is enabled, nothing more precise than your city will "
 "be sent, even if you are using an external device."
 msgstr ""
-"Ketika mode privasi diaktifkan, tidak ada yang lebih rinci dari kota Anda "
+"Ketika mode privasi diaktifkan, tidak ada yang lebih presisi dari kota Anda "
 "yang akan dikirim, bahkan jika Anda menggunakan peranti eksternal."
 
 #. (itstool) path: section/title
@@ -1528,18 +1530,22 @@ msgstr "Apa itu mode privasi"
 msgid ""
 "The privacy mode, enabled by default, is a reduced accuracy mode that will "
 "decrease the accuracy of the geographical position sent to your contacts."
-msgstr "Mode Privasi, diaktifkan secara default."
+msgstr ""
+"Mode privasi, yang diaktifkan secara default, adalah suatu mode akurasi "
+"terreduksi yang menurunkan akurasi posisi geografis yang dikirim ke kontak-"
+"kontak Anda."
 
 #. (itstool) path: section/title
 #: C/geolocation-privacy.page:71
 msgid "Privacy overview"
-msgstr "Ikhtisar Privasi"
+msgstr "Ikhtisar privasi"
 
 #. (itstool) path: section/p
 #: C/geolocation-privacy.page:72
 msgid ""
 "Overview of the various geolocation privacy settings in <app>Empathy</app>."
 msgstr ""
+"Ringkasan dari berbagai setelan privasi geolokasi dalam <app>Empathy</app>."
 
 #. (itstool) path: item/p
 #: C/geolocation-privacy.page:77
@@ -1555,7 +1561,9 @@ msgstr "Mode privasi diaktifkan secara default."
 #: C/geolocation-privacy.page:87
 msgid ""
 "Privacy mode prevails even when using external and more precise devices."
-msgstr "Mode privasi berlaku ketika perangkat tambahan digunakan."
+msgstr ""
+"Mode privasi berlaku bahkan ketika memakai peranti eksternal dan lebih "
+"presisi."
 
 #. (itstool) path: item/p
 #: C/geolocation-privacy.page:92
@@ -1589,6 +1597,9 @@ msgid ""
 "feature. Most of the Jabber servers support it. See your service website "
 "documentation for more information."
 msgstr ""
+"Server yang sedang Anda pakai juga perlu mendukung fitur geolokasi. "
+"Kebanyakan server Jabber mendukungnya. Lihat situs web dokumentasi layanan "
+"Anda untuk informasi lebih lanjut."
 
 #. (itstool) path: section/title
 #: C/geolocation-supported.page:47
@@ -1604,7 +1615,7 @@ msgid ""
 msgstr ""
 "Fitur geolokasi <app>Empathy</app> tidak kompatibel dengan layanan posisi "
 "geografis lainnya seperti <em>Google Latitude</em>, <em>Yahoo Fire Eagle</"
-"em> or <em>Brightkite</em>."
+"em>, atau <em>Brightkite</em>."
 
 #. (itstool) path: info/desc
 #: C/geolocation-turn.page:9
@@ -1620,7 +1631,7 @@ msgstr "Mengaktifkan/mematikan geolokasi"
 #. (itstool) path: item/p
 #: C/geolocation-turn.page:37
 msgid "Choose <guiseq><gui>Edit</gui><gui>Preferences</gui></guiseq>."
-msgstr "Pilih <guiseq><gui>Edit</gui><gui>Preferences</gui></guiseq>."
+msgstr "Pilih <guiseq><gui>Sunting</gui><gui>Preferensi</gui></guiseq>."
 
 #. (itstool) path: item/p
 #: C/geolocation-turn.page:42
@@ -1632,7 +1643,8 @@ msgstr "Pilih tab <gui>Lokasi</gui>."
 msgid ""
 "Select <gui>Publish location to my contacts</gui> to activate geolocation."
 msgstr ""
-"Pilih <gui>Publikasikan pada kontak saya</gui> untuk mengaktifkan geolokasi."
+"Pilih <gui>Publikasikan lokasi ke kontak saya</gui> untuk mengaktifkan "
+"geolokasi."
 
 #. (itstool) path: item/p
 #: C/geolocation-turn.page:50
@@ -1655,14 +1667,14 @@ msgid ""
 "position, select the appropriate option in the <gui>Location sources</gui> "
 "section."
 msgstr ""
-"Jika Anda memiliki perangkat tambahan seperti GPS atau ingin mengirim "
-"akurasi posisi yang lainnya, pilih pilihan yang tepat pada sesi <gui>Sumber "
-"lokasi</gui>."
+"Jika Anda memiliki peranti eksternal seperti GPS atau ingin mengirim posisi "
+"yang lebih akurat, pilih pilihan yang tepat pada bagian <gui>Sumber lokasi</"
+"gui>."
 
 #. (itstool) path: info/desc
 #: C/geolocation-what-is.page:9
 msgid "Understanding geolocation."
-msgstr "Pahamai geolokasi."
+msgstr "Memahami geolokasi."
 
 #. (itstool) path: page/title
 #: C/geolocation-what-is.page:33
@@ -1676,7 +1688,7 @@ msgid ""
 "computer or a device connected to the Internet."
 msgstr ""
 "Geolokasi memungkinan Anda untuk mengidentifikasikan lokasi geografis "
-"sesungguhnya pada komputer atau perangkat yang terkoneksi dengan Internet."
+"sesungguhnya dari komputer atau perangkat yang terkoneksi dengan Internet."
 
 #. (itstool) path: page/p
 #: C/geolocation-what-is.page:37
@@ -1701,8 +1713,8 @@ msgid ""
 "Set the accuracy of your location and the device used to discover your "
 "location."
 msgstr ""
-"Mengatur akurasi dari kontak Anda dan perangkat yang digunakan untuk "
-"menjelajahi lokasi Anda."
+"Mengatur akurasi lokasi Anda dan peranti yang digunakan untuk menemukan "
+"lokasi Anda."
 
 #. (itstool) path: note/p
 #: C/geolocation-what-is.page:60
@@ -1710,13 +1722,14 @@ msgid ""
 "In order to see your contacts’ geographical locations, they need to use a "
 "service and an application that supports geolocation."
 msgstr ""
-"Untuk melihat lokasi geografis Anda, mereka harus menggunakan layanan dan "
-"aplikasi yang mendukung geolokasi."
+"Untuk melihat lokasi geografis kontak-kontak Anda, mereka harus menggunakan "
+"layanan dan aplikasi yang mendukung geolokasi."
 
 #. (itstool) path: info/desc
 #: C/group-conversations.page:8
 msgid "Start or join a group conversation with your contacts."
-msgstr "Mulai atai bergabung pada grup dengan kontak Anda."
+msgstr ""
+"Memulai atau bergabung ke perbincangan kelompok dengan kontak-kontak Anda."
 
 #. (itstool) path: page/title
 #: C/group-conversations.page:34
@@ -1729,6 +1742,8 @@ msgid ""
 "Group conversations permits you to have text conversations with more than "
 "one contact at the same time."
 msgstr ""
+"Perbincangan kelompok memungkinkan Anda melakukan percakapan dengan lebih "
+"dari satu kontak pada saat yang sama."
 
 #. (itstool) path: page/p
 #: C/group-conversations.page:40
@@ -1736,6 +1751,8 @@ msgid ""
 "To have a group conversation you need to have a registered account with "
 "either Jabber or Google Talk, or a People Nearby account."
 msgstr ""
+"Untuk melakukan perbincangan kelompok Anda perlu memiliki akun yang "
+"terdaftar pada Jabber atau Google Talk, atau suatu akun People Nearby."
 
 #. (itstool) path: note/p
 #: C/group-conversations.page:46
@@ -1743,6 +1760,8 @@ msgid ""
 "You can have a group conversation only with the contacts that are using the "
 "same service as yours."
 msgstr ""
+"Anda hanya bisa melakukan perbincangan kelompok dengan kontak-kontak yang "
+"memakai layanan yang sama dengan Anda."
 
 #. (itstool) path: section/title
 #: C/group-conversations.page:54
@@ -1765,6 +1784,8 @@ msgid ""
 "From the <gui>Account</gui> drop-down list, select the account you want to "
 "use for the group conversation."
 msgstr ""
+"Dari daftar tarik turun <gui>Akun</gui>, pilih akun yang ingin Anda pakai "
+"untuk perbincangan kelompok."
 
 #. (itstool) path: item/p
 #: C/group-conversations.page:69
@@ -1772,11 +1793,13 @@ msgid ""
 "In the <gui>Server</gui> text box, type the name of server in which the "
 "conversation will be hosted."
 msgstr ""
+"Dalam kotak teks <gui>Server</gui>, ketikkan nama server yang akan menjadi "
+"tempat percakapan."
 
 #. (itstool) path: item/p
 #: C/group-conversations.page:73
 msgid "Leave it empty if it will be on the current server."
-msgstr ""
+msgstr "Biarkan kosong bila itu akan ada pada server saat ini."
 
 #. (itstool) path: item/p
 #: C/group-conversations.page:78
@@ -1784,6 +1807,8 @@ msgid ""
 "In the <gui>Room</gui> text box, type the name you want to give to the "
 "conversation."
 msgstr ""
+"Dalam kotak teks <gui>Ruangan</gui>, ketikkan nama yang ingin Anda berikan "
+"ke perbincangan."
 
 #. (itstool) path: note/p
 #: C/group-conversations.page:82
@@ -1792,6 +1817,9 @@ msgid ""
 "name will be publicly available for other people to join. It is not possible "
 "to create a private room."
 msgstr ""
+"Ini akan menjadi nama ruangan tempat Anda akan berbincang. Nama ini akan "
+"tersedia secara publik bagi orang lain yang akan bergabung. Tidak mungkin "
+"untuk membuat suatu ruangan pribadi."
 
 #. (itstool) path: item/p
 #: C/group-conversations.page:90
@@ -1800,11 +1828,14 @@ msgid ""
 "<gui>Contact List</gui> window, select the contact you want to invite, and "
 "perform one of the following:"
 msgstr ""
+"Untuk mengundang kontak lain bergabung ke perbincangan kelompok, dari "
+"jendela <gui>Daftar Kontak</gui>, pilih kontak yang ingin Anda undang, dan "
+"lakukan satu dari yang berikut: "
 
 #. (itstool) path: item/p
 #: C/group-conversations.page:97
 msgid "Right-click on the contact and choose <gui>Invite to chatroom</gui>."
-msgstr ""
+msgstr "Klik kanan pada kontak dan pilih <gui>Undang ke ruang obrolan</gui>."
 
 #. (itstool) path: item/p
 #: C/group-conversations.page:102
@@ -1812,6 +1843,8 @@ msgid ""
 "Choose <guiseq><gui>Edit</gui><gui>Contact</gui><gui>Invite to chatroom</"
 "gui></guiseq>."
 msgstr ""
+"Pilih <guiseq><gui>Sunting</gui><gui>Kontak</gui><gui>Undang ke ruang "
+"obrolan</gui></guiseq>."
 
 #. (itstool) path: item/p
 #: C/group-conversations.page:107
@@ -1819,6 +1852,8 @@ msgid ""
 "If you have more than one group conversation open, select the one you want "
 "to invite your contacts."
 msgstr ""
+"Bila Anda punya lebih dari satu perbincangan kelompok yang terbuka, pilih "
+"satu yang Anda inginkan mengundang kontak Anda."
 
 #. (itstool) path: section/title
 #: C/group-conversations.page:118
@@ -1829,11 +1864,12 @@ msgstr "Bergabung ke perbincangan kelompok"
 #: C/group-conversations.page:128
 msgid "Expand the <gui>Room List</gui> section to see all the existing rooms."
 msgstr ""
+"Kembangkan bagian <gui>Daftar Ruang</gui> untuk melihat semua ruang yang ada."
 
 #. (itstool) path: item/p
 #: C/group-conversations.page:133
 msgid "Double-click on the name of a room to join it."
-msgstr ""
+msgstr "Klik ganda pada nama ruangan untuk bergabung ke sana."
 
 #. (itstool) path: section/p
 #: C/group-conversations.page:139
@@ -1842,11 +1878,14 @@ msgid ""
 "require a password, or might be invitation only. <app>Empathy</app> does not "
 "support these kind of rooms."
 msgstr ""
+"Tidak mungkin untuk bergabung ke semua ruang yang ada. Beberapa ruang "
+"mungkin memerlukan kata sandi, atau mungkin hanya untuk undangan. "
+"<app>Empathy</app> tidak mendukung ruang-ruang jenis ini."
 
 #. (itstool) path: info/desc
 #: C/hide-contacts.page:8
 msgid "Hide the offline contacts from your <gui>Contact List</gui>."
-msgstr ""
+msgstr "Menyembunyikan kontak luring dari <gui>Daftar Kontak</gui> Anda."
 
 #. (itstool) path: page/title
 #: C/hide-contacts.page:19
@@ -1859,6 +1898,9 @@ msgid ""
 "Normally, <app>Empathy</app> shows all your contacts: those that are online, "
 "with which you can have a conversation, and also those that are offline."
 msgstr ""
+"Biasanya, <app>Empathy</app> menampilkan semua kontak Anda: mereka yang "
+"daring, yang dengannya Anda dapat melakukan perbincangan, dan juga mereka "
+"yang luring."
 
 #. (itstool) path: page/p
 #: C/hide-contacts.page:25
@@ -1872,16 +1914,21 @@ msgid ""
 "<gui>Offline Contacts</gui></guiseq>, or press <keyseq><key>Ctrl</key> "
 "<key>H</key></keyseq>."
 msgstr ""
+"Dari jendela <gui>Daftar Kontak</gui>, pilih <guiseq><gui>Tilik</gui> "
+"<gui>Kontak Luring</gui></guiseq>, atau tekan <keyseq><key>Ctrl</key> "
+"<key>H</key></keyseq>."
 
 #. (itstool) path: item/p
 #: C/hide-contacts.page:36
 msgid "To show the offline contacts again, repeat the same procedure above."
 msgstr ""
+"Untuk menampilkan kontak-kontak luring lagi, ulangi prosedur yang sama di "
+"atas."
 
 #. (itstool) path: info/desc
 #: C/import-account.page:10
 msgid "Import an account from another instant messaging application."
-msgstr ""
+msgstr "Mengimpor suatu akun dari aplikasi perpesanan instan lain."
 
 #. (itstool) path: credit/name
 #: C/import-account.page:19
@@ -1900,6 +1947,9 @@ msgid ""
 "accounts from other instant messaging applications. Currently, the only "
 "supported application is <app>Pidgin</app>."
 msgstr ""
+"Pertama kali Anda menjalankan <app>Empathy</app>, dia akan menawarkan untuk "
+"mengimpor akun-akun Anda dari aplikasi perpesanan instan lain. Saat ini, "
+"aplikasi yang didukung hanya <app>Pidgin</app>."
 
 #. (itstool) path: item/p
 #: C/import-account.page:50
@@ -1907,6 +1957,8 @@ msgid ""
 "Run <app>Empathy</app> for the first time. An assistant will offer you a "
 "number of options to create new accounts."
 msgstr ""
+"Jalankan <app>Empathy</app> untuk pertama kali. Suatu asisten akan "
+"menawarkan sejumlah opsi untuk membuat akun baru."
 
 #. (itstool) path: item/p
 #: C/import-account.page:54
@@ -1914,11 +1966,12 @@ msgid ""
 "Select <gui>Yes, import my account details from</gui> and click "
 "<gui>Forward</gui>."
 msgstr ""
+"Pilih <gui>Ya, impor rincian akun saya dari</gui> dan klik <gui>Maju</gui>."
 
 #. (itstool) path: item/p
 #: C/import-account.page:58
 msgid "Select the check box next to each account you wish to import."
-msgstr ""
+msgstr "Pilih kotak centang di sebelah setiap akun yang hendak Anda impor."
 
 #. (itstool) path: item/p
 #: C/import-account.page:61 C/irc-nick-password.page:63
@@ -1931,19 +1984,17 @@ msgid ""
 "It is not currently possible to import accounts after you have completed the "
 "first-run assistant."
 msgstr ""
+"Saat ini tidak mungkin mengimpor akun setelah Anda menyelesaikan asisten "
+"dijalankan-pertama."
 
 #. (itstool) path: info/desc
 #: C/index.page:28
-#, fuzzy
-#| msgid ""
-#| "Empathy is the instant messenging application for GNOME. It supports "
-#| "text, voice and video chat over many protocols."
 msgid ""
 "Empathy is the instant messaging application for GNOME. It supports text, "
 "voice and video chat over many protocols."
 msgstr ""
-"Empathy adalah aplikasi perpesanan instant bagi GNOME. Mendukung teks, "
-"obrolan suara dan video melalui bermacam-macam protokol."
+"Empathy adalah aplikasi perpesanan instan bagi GNOME. Mendukung obrolan "
+"teks, suara, dan video melalui berbagai protokol."
 
 #. (itstool) path: info/title
 #: C/index.page:30
@@ -1985,7 +2036,7 @@ msgstr "Percakapan Suara dan Video"
 #. (itstool) path: section/title
 #: C/index.page:56
 msgid "Advanced Actions"
-msgstr "Pilihan Lanjutan"
+msgstr "Aksi Tingkat Lanjut"
 
 #. (itstool) path: section/title
 #: C/index.page:60 C/irc-manage.page:64
@@ -1995,7 +2046,7 @@ msgstr "Masalah Umum"
 #. (itstool) path: info/desc
 #: C/introduction.page:9
 msgid "Introduction to the <app>Empathy</app> instant messenger."
-msgstr ""
+msgstr "Pengenalan ke perpesanan instan <app>Empathy</app>."
 
 #. (itstool) path: page/title
 #: C/introduction.page:21
@@ -2004,18 +2055,14 @@ msgstr "Perkenalan"
 
 #. (itstool) path: page/p
 #: C/introduction.page:23
-#, fuzzy
-#| msgid ""
-#| "Empathy is the instant messenging application for GNOME. It supports "
-#| "text, voice and video chat over many protocols."
 msgid ""
 "<app>Empathy</app> is an instant messaging application for the GNOME "
 "Desktop. It supports text messaging, voice &amp; video calls, file "
 "transfers, and all the most used messaging systems such as Jabber and Google "
 "Talk."
 msgstr ""
-"Empathy adalah aplikasi perpesanan instant bagi GNOME. Mendukung teks, "
-"obrolan suara dan video melalui bermacam-macam protokol."
+"<app>Empathy</app> adalah aplikasi perpesanan instan bagi Desktop GNOME. "
+"Mendukung obrolan teks, suara, dan video melalui berbagai protokol."
 
 #. (itstool) path: page/p
 #: C/introduction.page:28
@@ -2023,6 +2070,9 @@ msgid ""
 "<app>Empathy</app> includes features that help you better collaborate while "
 "at work, and that let you easily keep in touch with your friends."
 msgstr ""
+"<app>Empathy</app> menyertakan fitur-fitur yang membantu Anda berkolaborasi "
+"secara lebih baik saat bekerja, dan memungkinkan Anda dengan mudah tetap "
+"terhubung dengan teman-teman."
 
 #. (itstool) path: page/p
 #: C/introduction.page:32
@@ -2052,7 +2102,7 @@ msgstr "Jendela utama <app>Empathy</app>"
 msgctxt "_"
 msgid ""
 "external ref='figures/empathy-main-window.png' "
-"md5='6f5e0ccab794dce0c9fba09c903d4ff8'"
+"md5='54908dcb2588beddb15ef0968d2c2582'"
 msgstr "-"
 
 #. (itstool) path: media/p
@@ -2089,8 +2139,9 @@ msgstr ""
 
 #. (itstool) path: page/title
 #: C/irc-join-pwd.page:25
+#, fuzzy
 msgid "Join a protected IRC chat room"
-msgstr ""
+msgstr "Bergabung ke suatu ruang obrolan IRC"
 
 #. (itstool) path: page/p
 #: C/irc-join-pwd.page:27
@@ -2260,7 +2311,7 @@ msgstr ""
 #: C/irc-send-file.page:31
 #, fuzzy
 msgid "Send files over IRC"
-msgstr "Kirim berkas ke perangkat Bluetooth"
+msgstr "Kirim berkas melalui surel..."
 
 #. (itstool) path: page/p
 #: C/irc-send-file.page:33
@@ -2271,7 +2322,7 @@ msgstr ""
 #: C/irc-start-conversation.page:8
 #, fuzzy
 msgid "Start a conversation with an IRC contact."
-msgstr "Mulai perbincangan menggunakan suara dengan meta-contact"
+msgstr "Memulai perbincangan video dengan kontak meta"
 
 #. (itstool) path: page/title
 #: C/irc-start-conversation.page:30
@@ -2313,7 +2364,7 @@ msgstr ""
 #. (itstool) path: info/desc
 #: C/license.page:8
 msgid "Legal information."
-msgstr "Informasi legal."
+msgstr "Informasi hukum."
 
 #. (itstool) path: page/title
 #: C/license.page:11
@@ -2505,7 +2556,7 @@ msgstr "Lepas taut kontak"
 #: C/link-contacts.page:93
 #, fuzzy
 msgid "To unlink a linked contact:"
-msgstr "Lepas taut"
+msgstr "%s terkait ke kontak"
 
 #. (itstool) path: item/p
 #: C/link-contacts.page:98
@@ -2527,7 +2578,9 @@ msgstr ""
 #: C/link-contacts.page:108
 #, fuzzy
 msgid "Press <gui style=\"button\">Linked Contacts</gui>."
-msgstr "Tekan tombol <gui style=\"button\">Alarm</gui>."
+msgstr ""
+"Tekan <gui style=\"button\">Taut</gui> untuk menaut kontak-kontak yang "
+"dipilih."
 
 #. (itstool) path: item/p
 #: C/link-contacts.page:113
@@ -2548,8 +2601,8 @@ msgstr ""
 #, fuzzy
 msgid "Finally, press <gui style=\"button\">Done</gui> to finish editing."
 msgstr ""
-"Mutakhirkan alarm dan tekan <gui style=\"button\">Selesai</gui> untuk "
-"mengakhiri menyunting."
+"Klik <gui style=\"button\">Selesai</gui> untuk mengakhiri penyuntingan "
+"kontak."
 
 #. (itstool) path: info/desc
 #: C/overview.page:9
@@ -2565,7 +2618,7 @@ msgstr "Aruna S"
 #: C/overview.page:25
 #, fuzzy
 msgid "Overview of instant messaging"
-msgstr "Alamat Pesan Instant"
+msgstr "Klien Perpesanan Instan untuk GNOME"
 
 #. (itstool) path: page/p
 #: C/overview.page:27
@@ -2607,8 +2660,9 @@ msgstr ""
 
 #. (itstool) path: info/desc
 #: C/prev-conv.page:8
+#, fuzzy
 msgid "Browse or search your previous conversations."
-msgstr ""
+msgstr "Cari perbincangan sebelumnya"
 
 #. (itstool) path: page/title
 #: C/prev-conv.page:36
@@ -3081,15 +3135,13 @@ msgstr ""
 
 #. (itstool) path: info/desc
 #: C/send-message.page:8
-#, fuzzy
 msgid "Send a message to one of your contacts."
-msgstr "Mengirim pesan kepada kontak yang dipilih"
+msgstr "Mengirim pesan ke salah satu kontak Anda."
 
 #. (itstool) path: page/title
 #: C/send-message.page:32
-#, fuzzy
 msgid "Send a message to someone"
-msgstr "Meneruskan pesan ini ke orang lain sebagai lampiran"
+msgstr "Mengirim pesan ke seseorang"
 
 #. (itstool) path: item/p
 #: C/send-message.page:36
@@ -3134,7 +3186,7 @@ msgstr "Jim Campbell"
 #: C/set-custom-status.page:34
 #, fuzzy
 msgid "Set a custom message"
-msgstr "_Pesan ubahan"
+msgstr "Pesan Gubahan…"
 
 #. (itstool) path: page/p
 #: C/set-custom-status.page:36
@@ -3157,7 +3209,7 @@ msgid ""
 "From the <gui>Contact List</gui> window, click on the drop-down list at the "
 "top."
 msgstr ""
-"Klik daftar drop-down pada bagian atas jendela <gui>Daftar Kontak</gui>."
+"Klik daftar tarik turun pada bagian atas jendela <gui>Daftar Kontak</gui>."
 
 #. (itstool) path: item/p
 #: C/set-custom-status.page:52
@@ -3190,9 +3242,8 @@ msgstr ""
 
 #. (itstool) path: section/title
 #: C/set-custom-status.page:78
-#, fuzzy
 msgid "Edit and remove a custom message"
-msgstr "Ubah _pesan"
+msgstr "Menyunting dan menghapus suatu pesan ubahan"
 
 #. (itstool) path: item/p
 #: C/set-custom-status.page:88
@@ -3201,9 +3252,8 @@ msgstr ""
 
 #. (itstool) path: item/p
 #: C/set-custom-status.page:95
-#, fuzzy
 msgid "To edit a custom message:"
-msgstr "Ubah _pesan"
+msgstr "Untuk menyunting suatu pesan ubahan:"
 
 #. (itstool) path: item/p
 #: C/set-custom-status.page:100
@@ -3219,9 +3269,8 @@ msgstr ""
 
 #. (itstool) path: item/p
 #: C/set-custom-status.page:113
-#, fuzzy
 msgid "To remove a custom message:"
-msgstr "Pakai pesan log gubahan:"
+msgstr "Untuk menghapus suatu pesan ubahan:"
 
 #. (itstool) path: item/p
 #: C/set-custom-status.page:118
@@ -3232,15 +3281,13 @@ msgstr ""
 
 #. (itstool) path: item/p
 #: C/set-custom-status.page:124
-#, fuzzy
 msgid "Click on the <gui>Remove</gui> button."
-msgstr "Klik tombol <gui>Hapus</gui> di bagian bawah panel sisi."
+msgstr "Klik tombol <gui>Hapus</gui>."
 
 #. (itstool) path: item/p
 #: C/set-custom-status.page:133
-#, fuzzy
 msgid "When finished, click on <gui>Close</gui>."
-msgstr "Klik <gui>Tutup</gui>."
+msgstr "Setelah selesai, klik <gui>Tutup</gui>."
 
 #. (itstool) path: note/p
 #: C/set-custom-status.page:140
@@ -3251,9 +3298,8 @@ msgstr ""
 
 #. (itstool) path: info/desc
 #: C/share-desktop.page:7
-#, fuzzy
 msgid "Show your desktop to your contacts."
-msgstr "Berbagi desktop Anda"
+msgstr "Berbagi desktop Anda ke kontak-kontak Anda."
 
 #. (itstool) path: page/title
 #: C/share-desktop.page:33
@@ -3350,7 +3396,7 @@ msgstr "Ikon ada"
 #. (itstool) path: item/title
 #: C/status-icons.page:40
 msgid "<_:media-1/> <gui>Available</gui>"
-msgstr ""
+msgstr "<_:media-1/> <gui>Ada</gui>"
 
 #. (itstool) path: item/p
 #: C/status-icons.page:42
@@ -3459,7 +3505,6 @@ msgstr ""
 
 #. (itstool) path: item/p
 #: C/video-call.page:54
-#, fuzzy
 msgid ""
 "To end the conversation, click on the <gui style=\"button\">hang up</gui> "
 "button."
