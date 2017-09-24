@@ -598,7 +598,7 @@ msgid ""
 msgstr ""
 "Untuk mengubah nama yang mengidentifikasi akun pada jendela <gui>Akun "
 "Perpesanan dan VoIP</gui>, pilih akun dari daftar di sebelah kiri lalu klik "
-"pada nama atau tekan spasi. Sunting nama akun dan tekan <key>Enter</gui> "
+"pada nama atau tekan spasi. Sunting nama akun dan tekan <key>Enter</key> "
 "ketika Anda telah selesai."
 
 #. (itstool) path: info/desc
