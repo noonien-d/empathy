@@ -8,8 +8,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: empathy-help\n"
-"POT-Creation-Date: 2017-10-05 11:46+0000\n"
-"PO-Revision-Date: 2017-11-06 02:12+0100\n"
+"POT-Creation-Date: 2017-11-06 01:14+0000\n"
+"PO-Revision-Date: 2017-11-06 02:18+0100\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <community-poland@mozilla.org>\n"
 "Language: pl\n"
@@ -2083,10 +2083,10 @@ msgstr "Główne okno programu <app>Empathy</app>"
 msgctxt "_"
 msgid ""
 "external ref='figures/empathy-main-window.png' "
-"md5='54908dcb2588beddb15ef0968d2c2582'"
+"md5='6f5e0ccab794dce0c9fba09c903d4ff8'"
 msgstr ""
 "external ref='figures/empathy-main-window.png' "
-"md5='54908dcb2588beddb15ef0968d2c2582'"
+"md5='6f5e0ccab794dce0c9fba09c903d4ff8'"
 
 #. (itstool) path: media/p
 #: C/introduction.page:42
