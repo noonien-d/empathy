@@ -169,7 +169,8 @@
 					self.cancel();
 				}
 				self.isConsecutive = false;
-				var element = document.getElementById("message-token-"+token);
+				var msg = document.getElementById("message-token-"+token);
+				var element = msg.getElementsByClassName("status")[0];
 				if (element)
 				{
 					element.textContent = element.textContent+state;

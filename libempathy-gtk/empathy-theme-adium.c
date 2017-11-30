@@ -261,7 +261,7 @@ theme_adium_parse_body (EmpathyThemeAdium *self,
   tpaw_string_parser_substr (text, -1, parsers, string);
 
   if (!tp_str_empty (token))
-    g_string_append (string, "</span>");
+    g_string_append (string, "<span class=\"status\" /></span>");
 
   /* Wrap body in order to make tabs and multiple spaces displayed
    * properly. See bug #625745. */
