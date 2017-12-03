@@ -75,7 +75,102 @@ empathy_webkit_replace_smiley (const gchar *text,
       hit->path, (int)len, text, (int)len, text);
 }
 
+#define SCHEMES           "([a-zA-Z\\+]+)"
+#define INVALID_CHARS     "\\s\"<>"
+#define INVALID_CHARS_EXT INVALID_CHARS "\\[\\](){},;:"
+#define INVALID_CHARS_FULL INVALID_CHARS_EXT "?'"
+#define BODY_END          "([^"INVALID_CHARS"]*)[^"INVALID_CHARS_FULL".]"
+#define IMAGEEXTS         "(jpg|jpeg|png|gif|bmp)"
+#define IMG_URI_REGEX     "(?i)("SCHEMES"://"BODY_END"."IMAGEEXTS")" \
+                          "|((www|ftp)\\."BODY_END")"
+
+static GRegex *
+imguri_regex_dup_singleton (void)
+{
+  static GRegex *uri_regex = NULL;
+
+  /* We intentionally leak the regex so it's not recomputed */
+  if (!uri_regex)
+    {
+      GError *error = NULL;
+
+      uri_regex = g_regex_new (IMG_URI_REGEX, 0, 0, &error);
+      if (uri_regex == NULL)
+        {
+          g_warning ("Failed to create reg exp: %s", error->message);
+          g_error_free (error);
+          return NULL;
+        }
+    }
+
+  return g_regex_ref (uri_regex);
+}
+
+void
+empathy_webkit_match_imagelink (const gchar *text,
+    gssize len,
+    TpawStringReplace replace_func,
+    TpawStringParser *sub_parsers,
+    gpointer user_data)
+{
+  GRegex *uri_regex;
+  GMatchInfo *match_info;
+  gboolean match;
+  gint last = 0;
+
+  uri_regex = imguri_regex_dup_singleton ();
+  if (uri_regex == NULL)
+    {
+      tpaw_string_parser_substr (text, len, sub_parsers, user_data);
+      return;
+    }
+
+  match = g_regex_match_full (uri_regex, text, len, 0, 0, &match_info, NULL);
+  if (match)
+    {
+      gint s = 0, e = 0;
+
+      do
+        {
+          g_match_info_fetch_pos (match_info, 0, &s, &e);
+
+          if (s > last)
+            {
+              /* Append the text between last link (or the
+               * start of the message) and this link */
+              tpaw_string_parser_substr (text + last,
+                  s - last,
+                  sub_parsers,
+                  user_data);
+            }
+          replace_func (text + s, e - s, NULL, user_data);
+
+          last = e;
+        } while (g_match_info_next (match_info, NULL));
+    }
+
+  tpaw_string_parser_substr (text + last, len - last, sub_parsers, user_data);
+
+  g_match_info_free (match_info);
+  g_regex_unref (uri_regex);
+}
+
+static void
+empathy_webkit_replace_imagelink (const gchar *text,
+    gssize len,
+    gpointer match_data,
+    gpointer user_data)
+{
+  GString *string = user_data;
+
+  /* Replace link by a <img/> tag */
+  g_string_append_printf (string,
+      "<a href=\"%.*s\"><img src=\"%.*s\" alt=\"%.*s\" title=\"%.*s\" style=\"max-width:30%;\" /></a>",
+      (int)len, text, (int)len, text, (int)len, text, (int)len, text);
+}
+
 static TpawStringParser string_parsers[] = {
+  { empathy_webkit_match_imagelink, empathy_webkit_replace_imagelink },
   { tpaw_string_match_link, tpaw_string_replace_link },
   { empathy_webkit_match_newline, NULL },
   { tpaw_string_match_all, tpaw_string_replace_escaped },
@@ -83,6 +178,7 @@ static TpawStringParser string_parsers[] = {
 };
 
 static TpawStringParser string_parsers_with_smiley[] = {
+  { empathy_webkit_match_imagelink, empathy_webkit_replace_imagelink },
   { tpaw_string_match_link, tpaw_string_replace_link },
   { empathy_string_match_smiley, empathy_webkit_replace_smiley },
   { empathy_webkit_match_newline, NULL },
