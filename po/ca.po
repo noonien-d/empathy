@@ -1568,7 +1568,7 @@ msgstr "%s el %s"
 
 #: ../libempathy-gtk/empathy-individual-widget.c:716
 msgid "%B %e, %Y at %R UTC"
-msgstr "%e de %B de %Y a les %R UTC"
+msgstr "%e %B de %Y a les %R UTC"
 
 #. Alias
 #: ../libempathy-gtk/empathy-individual-widget.c:1359
@@ -1644,7 +1644,7 @@ msgstr "Xat amb %s"
 #: ../libempathy-gtk/empathy-log-window.c:1376
 msgctxt "A date with the time"
 msgid "%A, %e %B %Y %X"
-msgstr "%A %e de %B de %Y a les %X"
+msgstr "%A %e %B de %Y a les %X"
 
 #. Translators: this is an emote: '* Danielle waves'
 #: ../libempathy-gtk/empathy-log-window.c:1319
@@ -1689,7 +1689,7 @@ msgstr "Ahir"
 #. Translators: A date such as '23 May 2010' (strftime format)
 #: ../libempathy-gtk/empathy-log-window.c:1765
 msgid "%e %B %Y"
-msgstr "%e de %B de %Y"
+msgstr "%e %B de %Y"
 
 #: ../libempathy-gtk/empathy-log-window.c:1869
 #: ../libempathy-gtk/empathy-log-window.c:3500
