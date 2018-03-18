@@ -27,6 +27,7 @@ libempathy-gtk/empathy-individual-dialogs.c
 libempathy-gtk/empathy-individual-edit-dialog.c
 libempathy-gtk/empathy-individual-information-dialog.c
 libempathy-gtk/empathy-individual-menu.c
+libempathy-gtk/empathy-individual-store.h
 libempathy-gtk/empathy-individual-view.c
 libempathy-gtk/empathy-individual-widget.c
 [type: gettext/glade]libempathy-gtk/empathy-individual-widget.ui
