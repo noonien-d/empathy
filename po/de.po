@@ -19,38 +19,40 @@ msgstr ""
 "Project-Id-Version: empathy master\n"
 "Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
 "product=empathy&keywords=I18N+L10N&component=General\n"
-"POT-Creation-Date: 2017-08-17 00:23+0000\n"
-"PO-Revision-Date: 2017-08-19 13:57+0200\n"
-"Last-Translator: Mario Blättermann <mario.blaettermann@gmail.com>\n"
+"POT-Creation-Date: 2018-03-18 00:25+0000\n"
+"PO-Revision-Date: 2018-03-18 00:36-0400\n"
+"Last-Translator: Florian Heiser <gnu.l10n.de@gmail.com>\n"
 "Language-Team: Deutsch <gnome-de@gnome.org>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.0.3\n"
+"X-Generator: Poedit 2.0.6\n"
 
-#: ../data/empathy.desktop.in.in.h:1 ../data/empathy.appdata.xml.in.h:1
+#: ../data/org.gnome.Empathy.desktop.in.in.h:1
+#: ../data/org.gnome.Empathy.appdata.xml.in.h:1
 msgid "Empathy"
 msgstr "Empathy"
 
-#: ../data/empathy.desktop.in.in.h:2
+#: ../data/org.gnome.Empathy.desktop.in.in.h:2
 msgid "IM Client"
 msgstr "Sofortnachrichten-Client"
 
-#: ../data/empathy.desktop.in.in.h:3
+#: ../data/org.gnome.Empathy.desktop.in.in.h:3
 msgid "Empathy Internet Messaging"
 msgstr "Empathy Internet-Sofortnachrichtendienst"
 
-#: ../data/empathy.desktop.in.in.h:4 ../data/empathy.appdata.xml.in.h:2
+#: ../data/org.gnome.Empathy.desktop.in.in.h:4
+#: ../data/org.gnome.Empathy.appdata.xml.in.h:2
 msgid "Chat on Google Talk, Facebook, MSN and many other chat services"
 msgstr "Chat auf Google Talk, Facebook, MSN und vielen anderen Chat-Diensten"
 
-#: ../data/empathy.desktop.in.in.h:5
+#: ../data/org.gnome.Empathy.desktop.in.in.h:5
 msgid "chat;talk;im;message;irc;voip;gtalk;facebook;jabber;"
 msgstr "chat;gespräch;im;nachrichten;irc;voip;gtalk;facebook;jabber;"
 
-#: ../data/empathy.appdata.xml.in.h:3
+#: ../data/org.gnome.Empathy.appdata.xml.in.h:3
 msgid ""
 "Empathy is the official instant messaging application of the GNOME desktop "
 "environment. Empathy can connect to AIM, MSN, Jabber (including Facebook and "
@@ -61,7 +63,7 @@ msgstr ""
 "Talk eingeschlossen), IRC, und vielen anderen Nachrichtennetzwerken "
 "verbinden."
 
-#: ../data/empathy.appdata.xml.in.h:4
+#: ../data/org.gnome.Empathy.appdata.xml.in.h:4
 msgid ""
 "You can chat with text, make audio and video calls, or even transfer files, "
 "depending on what your contact’s chat application allows."
@@ -70,7 +72,7 @@ msgstr ""
 "unterhalten, oder sogar, falls dies die Nachrichtenanwendung ihres Kontakts "
 "erlaubt, Dateien übertragen."
 
-#: ../data/empathy.appdata.xml.in.h:5
+#: ../data/org.gnome.Empathy.appdata.xml.in.h:5
 msgid ""
 "Empathy provides integrated messaging for the GNOME desktop, so you’ll never "
 "miss a message. You can respond to your contacts without even having to open "
@@ -1473,6 +1475,20 @@ msgstr "In den Chatraum _einladen"
 msgid "_Add Contact…"
 msgstr "Kontakt _hinzufügen …"
 
+#: ../libempathy-gtk/empathy-individual-store.h:73
+#: ../libempathy-gtk/empathy-roster-model.h:29
+msgid "Ungrouped"
+msgstr "Nicht gruppiert"
+
+#: ../libempathy-gtk/empathy-individual-store.h:74
+msgid "Favorite People"
+msgstr "Favorisierte Personen"
+
+#: ../libempathy-gtk/empathy-individual-store.h:75
+#: ../libempathy-gtk/empathy-roster-model.h:28
+msgid "People Nearby"
+msgstr "Personen in der Nähe"
+
 #: ../libempathy-gtk/empathy-individual-view.c:2367
 #, c-format
 msgid "Do you really want to remove the group “%s”?"
@@ -1902,7 +1918,7 @@ msgstr "_Fertig"
 
 #. Tweak the dialog
 #: ../libempathy-gtk/empathy-new-message-dialog.c:323
-#: ../src/empathy-roster-window.c:2368
+#: ../src/empathy-roster-window.c:2364
 msgid "New Conversation"
 msgstr "Neue Unterhaltung"
 
@@ -2159,14 +2175,6 @@ msgstr "Eingehende Datei von %s"
 #: ../libempathy-gtk/empathy-roster-model.h:27
 msgid "Top Contacts"
 msgstr "Favorisierte Kontakte"
-
-#: ../libempathy-gtk/empathy-roster-model.h:28
-msgid "People Nearby"
-msgstr "Personen in der Nähe"
-
-#: ../libempathy-gtk/empathy-roster-model.h:29
-msgid "Ungrouped"
-msgstr "Nicht gruppiert"
 
 #. Add a prefix explaining that something goes wrong when trying to
 #. * fetch contact's presence.
@@ -3637,7 +3645,7 @@ msgstr "Sie haben noch keine Kontakte hinzugefügt"
 msgid "No online contacts"
 msgstr "Keine Online-Kontakte"
 
-#: ../src/empathy-roster-window.c:2360
+#: ../src/empathy-roster-window.c:2356
 msgid "Conversations"
 msgstr "Unterhaltungen"
 
