@@ -2178,7 +2178,7 @@ msgstr "<_:media-1/> Empathy"
 #. (itstool) path: section/title
 #: C/index.page:40
 msgid "Account Management"
-msgstr "Xestión da cona"
+msgstr "Xestión da conta"
 
 #. (itstool) path: section/title
 #: C/index.page:44
