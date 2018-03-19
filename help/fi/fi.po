@@ -300,7 +300,7 @@ msgstr "Jos et vielä omista tiliä, eikä sinulla ole vielä omaa <emphasis>kä
 
 #: C/empathy.xml:329(para)
 msgid "In order to talk with other users, also called <emphasis>contacts</emphasis>, you need to use the same service they are using. If, for example, one contact is using the <emphasis role=\"strong\">Jabber</emphasis> service, you need to have an account registered with that service."
-msgstr "Puhuaksesi muiden käyttäjien (eli <emphasis>tuttavien</emphasis) kanssa, teidän täytyy käyttää samaa palvelua. Esimerkiksi, jos tuttava käyttää <emphasis role=\"strong \">Jabber</emphasis>-palvelua, sinulla täytyy olla tili kyseiseen palveluun."
+msgstr "Puhuaksesi muiden käyttäjien (eli <emphasis>tuttavien</emphasis>) kanssa, teidän täytyy käyttää samaa palvelua. Esimerkiksi, jos tuttava käyttää <emphasis role=\"strong \">Jabber</emphasis>-palvelua, sinulla täytyy olla tili kyseiseen palveluun."
 
 #: C/empathy.xml:336(para)
 msgid "<application>Empathy</application> can handle as many accounts on any supported services as you want and you can have them all open at the same time."
@@ -312,7 +312,7 @@ msgstr "Tilin rekisteröinti"
 
 #: C/empathy.xml:343(para)
 msgid "You can freely register an account on any of the following services. Follow the instructions reported on each website on how to register your new account. At the end of the registration process you should have a <emphasis>user name</emphasis> (or an <emphasis>account ID</emphasis>) and a <emphasis>password</emphasis> that you will use to create the account in <application>Empathy</application>."
-msgstr "Voit vapaasti rekisteröidä tilin mihin tahansa seuraavista palveluista. Seuraa sivustolla annettuja ohjeita tilin rekisteröintiin. Rekisteröinnin jälkeen sinulla tulisi olla <emphasis>käyttäjänimi (tai <emphasis>käyttäjä-ID</emphasis>) ja <emphasis>salasana</emphasis>, jota voit käyttää luodaksesi tilin <application>Empathyyn</application>."
+msgstr "Voit vapaasti rekisteröidä tilin mihin tahansa seuraavista palveluista. Seuraa sivustolla annettuja ohjeita tilin rekisteröintiin. Rekisteröinnin jälkeen sinulla tulisi olla <emphasis>käyttäjänimi</emphasis> (tai <emphasis>käyttäjä-ID</emphasis>) ja <emphasis>salasana</emphasis>, jota voit käyttää luodaksesi tilin <application>Empathyyn</application>."
 
 #. Translators: try to find a localized version of the
 #. 	    registration service website
