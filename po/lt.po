@@ -6,15 +6,15 @@
 # Saulius <saulius.shopaga@gmail.com>, 2008, 2009.
 # Žygimantas Beručka <zygis@gnome.org>, 2004-2010, 2010, 2011, 2012.
 # Algimantas Margevičius <margevicius.algimantas@gmail.com>, 2011.
-# Aurimas Černius <aurisc4@gmail.com>, 2013, 2014, 2017.
+# Aurimas Černius <aurisc4@gmail.com>, 2013, 2014, 2017, 2018.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: empathy\n"
 "Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
 "product=empathy&keywords=I18N+L10N&component=General\n"
-"POT-Creation-Date: 2017-08-17 00:23+0000\n"
-"PO-Revision-Date: 2017-08-22 22:46+0300\n"
+"POT-Creation-Date: 2018-03-19 17:20+0000\n"
+"PO-Revision-Date: 2018-03-19 23:07+0200\n"
 "Last-Translator: Aurimas Černius <aurisc4@gmail.com>\n"
 "Language-Team: Lietuvių <gnome-lt@lists.akl.lt>\n"
 "Language: lt\n"
@@ -26,35 +26,31 @@ msgstr ""
 "X-Generator: Gtranslator 2.91.7\n"
 "X-Project-Style: gnome\n"
 
-#: ../data/empathy.desktop.in.in.h:1 ../data/empathy.appdata.xml.in.h:1
+#: ../data/org.gnome.Empathy.desktop.in.in.h:1
+#: ../data/org.gnome.Empathy.appdata.xml.in.h:1
 msgid "Empathy"
 msgstr "Empathy"
 
-#: ../data/empathy.desktop.in.in.h:2
+#: ../data/org.gnome.Empathy.desktop.in.in.h:2
 msgid "IM Client"
 msgstr "Tikralaikių pokalbių klientas"
 
-#: ../data/empathy.desktop.in.in.h:3
+#: ../data/org.gnome.Empathy.desktop.in.in.h:3
 msgid "Empathy Internet Messaging"
 msgstr "Tikralaikių pokalbių programa Empathy"
 
-#: ../data/empathy.desktop.in.in.h:4 ../data/empathy.appdata.xml.in.h:2
+#: ../data/org.gnome.Empathy.desktop.in.in.h:4
+#: ../data/org.gnome.Empathy.appdata.xml.in.h:2
 msgid "Chat on Google Talk, Facebook, MSN and many other chat services"
 msgstr ""
 "Plepėkite naudodamiesi „Google Talk“, „Facebook“, „MSN“ ir kitomis pokalbių "
 "paslaugomis"
 
-#: ../data/empathy.desktop.in.in.h:5
+#: ../data/org.gnome.Empathy.desktop.in.in.h:5
 msgid "chat;talk;im;message;irc;voip;gtalk;facebook;jabber;"
 msgstr "pokalbiai;pranešimai;žinutės;irc;voip;gtalk;facebook;jabber;"
 
-#: ../data/empathy.appdata.xml.in.h:3
-#| msgid ""
-#| "Empathy is the official instant messaging application of the GNOME "
-#| "desktop environment.  Empathy can connect to AIM, MSN, Jabber (including "
-#| "Facebook and Google Talk), IRC, and many other messaging networks. You "
-#| "can chat with text, make audio and video calls, or even transfer files, "
-#| "depending on what your contact’s chat application allows."
+#: ../data/org.gnome.Empathy.appdata.xml.in.h:3
 msgid ""
 "Empathy is the official instant messaging application of the GNOME desktop "
 "environment. Empathy can connect to AIM, MSN, Jabber (including Facebook and "
@@ -64,7 +60,7 @@ msgstr ""
 "Empathy gali prisijungti prie AIM, MSN, Jabber (įskaitant Facebook ir Google "
 "Talk), IRC ir daugelio kitų pranešimų tinklų."
 
-#: ../data/empathy.appdata.xml.in.h:4
+#: ../data/org.gnome.Empathy.appdata.xml.in.h:4
 msgid ""
 "You can chat with text, make audio and video calls, or even transfer files, "
 "depending on what your contact’s chat application allows."
@@ -73,11 +69,7 @@ msgstr ""
 "persiųsti failus priklausomai nuo to, ką leidžia jūsų kontakto pokalbių "
 "programa."
 
-#: ../data/empathy.appdata.xml.in.h:5
-#| msgid ""
-#| "Empathy provides integrated messaging for the GNOME desktop, so you’ll "
-#| "never miss a message.  You can respond to your contacts without even "
-#| "having to open Empathy!"
+#: ../data/org.gnome.Empathy.appdata.xml.in.h:5
 msgid ""
 "Empathy provides integrated messaging for the GNOME desktop, so you’ll never "
 "miss a message. You can respond to your contacts without even having to open "
@@ -1439,6 +1431,21 @@ msgstr "_Pakviesti į pokalbių kambarį"
 msgid "_Add Contact…"
 msgstr "_Pridėti kontaktą…"
 
+#: ../libempathy-gtk/empathy-individual-store.h:73
+#: ../libempathy-gtk/empathy-roster-model.h:29
+msgid "Ungrouped"
+msgstr "Negrupuoti"
+
+#: ../libempathy-gtk/empathy-individual-store.h:74
+#| msgid "Favorite"
+msgid "Favorite People"
+msgstr "Mėgiami žmonės"
+
+#: ../libempathy-gtk/empathy-individual-store.h:75
+#: ../libempathy-gtk/empathy-roster-model.h:28
+msgid "People Nearby"
+msgstr "Žmonės netoliese"
+
 #: ../libempathy-gtk/empathy-individual-view.c:2367
 #, c-format
 msgid "Do you really want to remove the group “%s”?"
@@ -1865,7 +1872,7 @@ msgstr "_Atlikta"
 
 #. Tweak the dialog
 #: ../libempathy-gtk/empathy-new-message-dialog.c:323
-#: ../src/empathy-roster-window.c:2368
+#: ../src/empathy-roster-window.c:2364
 msgid "New Conversation"
 msgstr "Naujas pokalbis"
 
@@ -2118,14 +2125,6 @@ msgstr "Failas jums nuo %s"
 #: ../libempathy-gtk/empathy-roster-model.h:27
 msgid "Top Contacts"
 msgstr "Populiariausi kontaktai"
-
-#: ../libempathy-gtk/empathy-roster-model.h:28
-msgid "People Nearby"
-msgstr "Žmonės netoliese"
-
-#: ../libempathy-gtk/empathy-roster-model.h:29
-msgid "Ungrouped"
-msgstr "Negrupuoti"
 
 #. Add a prefix explaining that something goes wrong when trying to
 #. * fetch contact's presence.
@@ -3578,7 +3577,7 @@ msgstr "Dar nepridėjote jokių kontaktų"
 msgid "No online contacts"
 msgstr "Nėra kontaktų internete"
 
-#: ../src/empathy-roster-window.c:2360
+#: ../src/empathy-roster-window.c:2356
 msgid "Conversations"
 msgstr "Pokalbiai"
 
