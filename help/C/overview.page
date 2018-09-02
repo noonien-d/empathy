@@ -33,19 +33,6 @@
     Some of these even support audio and video calling.
   </p>
 
-  <table frame="all" shade="cols">
-     <tr>
-       <td><p><media type="image" src="figures/video_overview.png" mime="image/png" style="right" width="150" height="150" its:translate="no" /></p></td>
-       <td><p><media type="image" src="figures/conf_overview.png" mime="image/png" style="right" width="150" height="150" its:translate="no" /></p></td>
-       <td><p><media type="image" src="figures/croom_overview.png" mime="image/png" style="right" width="150" height="150" its:translate="no" /></p></td>
-     </tr>
-     <tr>
-       <td><p>Video Conference</p></td>
-       <td><p>Group chats</p></td>
-       <td><p>Chat rooms</p></td>
-      </tr>
-  </table>
-
   <p>
     Some instant messaging applications can be used to connect to chat rooms,
     online places where like-minded people meet to talk. One popular means to
