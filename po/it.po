@@ -1,18 +1,17 @@
 # Italian translation for Empaty
-# Copyright (C) 2003-2010, 2011, 2012, 2013, 2014, 2017 The Free Software Foundation, Inc.
+# Copyright (C) 2003-2010, 2011, 2012, 2013, 2014, 2017, 2018 The Free Software Foundation, Inc.
 # This file is distributed under the same license as the Empaty package.
 # Fabio Bonelli <fabiobonelli@libero.it>, 2003
 # Michele Baldessari <michele@pupazzo.org>, 2003
 # Luca Ferretti <lferrett@gnome.org>, 2011.
-# Milo Casagrande <milo@ubuntu.com>, 2007-2010, 2011, 2012, 2013, 2014, 2017.
+# Milo Casagrande <milo@milo.name>, 2007-2010, 2011, 2012, 2013, 2014, 2017, 2018.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: empathy\n"
-"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
-"product=empathy&keywords=I18N+L10N&component=General\n"
-"POT-Creation-Date: 2017-08-17 00:23+0000\n"
-"PO-Revision-Date: 2017-08-24 08:53+0200\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/empathy/issues\n"
+"POT-Creation-Date: 2018-06-22 10:08+0000\n"
+"PO-Revision-Date: 2018-09-03 14:26+0200\n"
 "Last-Translator: Milo Casagrande <milo@milo.name>\n"
 "Language-Team: Italian <tp@lists.linux.it>\n"
 "Language: it\n"
@@ -20,32 +19,34 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
-"X-Generator: Poedit 1.8.12\n"
+"X-Generator: Poedit 2.1.1\n"
 
-#: ../data/empathy.desktop.in.in.h:1 ../data/empathy.appdata.xml.in.h:1
+#: ../data/org.gnome.Empathy.desktop.in.in.h:1
+#: ../data/org.gnome.Empathy.appdata.xml.in.h:1
 msgid "Empathy"
 msgstr "Empathy"
 
-#: ../data/empathy.desktop.in.in.h:2
+#: ../data/org.gnome.Empathy.desktop.in.in.h:2
 msgid "IM Client"
 msgstr "Messaggistica istantanea"
 
-#: ../data/empathy.desktop.in.in.h:3
+#: ../data/org.gnome.Empathy.desktop.in.in.h:3
 msgid "Empathy Internet Messaging"
 msgstr "Messaggistica Internet Empathy"
 
-#: ../data/empathy.desktop.in.in.h:4 ../data/empathy.appdata.xml.in.h:2
+#: ../data/org.gnome.Empathy.desktop.in.in.h:4
+#: ../data/org.gnome.Empathy.appdata.xml.in.h:2
 msgid "Chat on Google Talk, Facebook, MSN and many other chat services"
 msgstr ""
 "Conversa su Google Talk, Facebook, MSN e molti altri servizi di messaggistica"
 
-#: ../data/empathy.desktop.in.in.h:5
+#: ../data/org.gnome.Empathy.desktop.in.in.h:5
 msgid "chat;talk;im;message;irc;voip;gtalk;facebook;jabber;"
 msgstr ""
 "chat;talk;im;messaggi;messaggio;irc;voip;gtalk;facebook;jabber;parlare;"
 "chiacchierare;"
 
-#: ../data/empathy.appdata.xml.in.h:3
+#: ../data/org.gnome.Empathy.appdata.xml.in.h:3
 msgid ""
 "Empathy is the official instant messaging application of the GNOME desktop "
 "environment. Empathy can connect to AIM, MSN, Jabber (including Facebook and "
@@ -55,7 +56,7 @@ msgstr ""
 "GNOME. Con Empathy è possibile collegarsi a AIM, MSN, Facebook e Google Talk "
 "(Jabber), IRC e a molte altre reti di conversazione."
 
-#: ../data/empathy.appdata.xml.in.h:4
+#: ../data/org.gnome.Empathy.appdata.xml.in.h:4
 msgid ""
 "You can chat with text, make audio and video calls, or even transfer files, "
 "depending on what your contact’s chat application allows."
@@ -63,7 +64,7 @@ msgstr ""
 "È possibile instaurare conversazioni testuali o fare chiamate audio e video "
 "e trasferire file (in base all'applicazione usata dai propri contatti)."
 
-#: ../data/empathy.appdata.xml.in.h:5
+#: ../data/org.gnome.Empathy.appdata.xml.in.h:5
 msgid ""
 "Empathy provides integrated messaging for the GNOME desktop, so you’ll never "
 "miss a message. You can respond to your contacts without even having to open "
@@ -1475,6 +1476,20 @@ msgstr "_Invita nella stanza"
 msgid "_Add Contact…"
 msgstr "A_ggiungi contatto…"
 
+#: ../libempathy-gtk/empathy-individual-store.h:73
+#: ../libempathy-gtk/empathy-roster-model.h:29
+msgid "Ungrouped"
+msgstr "Non raggruppati"
+
+#: ../libempathy-gtk/empathy-individual-store.h:74
+msgid "Favorite People"
+msgstr "Contatto preferito"
+
+#: ../libempathy-gtk/empathy-individual-store.h:75
+#: ../libempathy-gtk/empathy-roster-model.h:28
+msgid "People Nearby"
+msgstr "Persone nelle vicinanze"
+
 #: ../libempathy-gtk/empathy-individual-view.c:2367
 #, c-format
 msgid "Do you really want to remove the group “%s”?"
@@ -1911,7 +1926,7 @@ msgstr "Fa_tto"
 
 #. Tweak the dialog
 #: ../libempathy-gtk/empathy-new-message-dialog.c:323
-#: ../src/empathy-roster-window.c:2368
+#: ../src/empathy-roster-window.c:2364
 msgid "New Conversation"
 msgstr "Nuova conversazione"
 
@@ -2173,14 +2188,6 @@ msgstr "File in arrivo da parte di %s"
 #: ../libempathy-gtk/empathy-roster-model.h:27
 msgid "Top Contacts"
 msgstr "Contatti principali"
-
-#: ../libempathy-gtk/empathy-roster-model.h:28
-msgid "People Nearby"
-msgstr "Persone nelle vicinanze"
-
-#: ../libempathy-gtk/empathy-roster-model.h:29
-msgid "Ungrouped"
-msgstr "Non raggruppati"
 
 #. Add a prefix explaining that something goes wrong when trying to
 #. * fetch contact's presence.
@@ -3680,7 +3687,7 @@ msgstr "Non è stato aggiunto ancora alcun contatto"
 msgid "No online contacts"
 msgstr "Nessun contatto collegato"
 
-#: ../src/empathy-roster-window.c:2360
+#: ../src/empathy-roster-window.c:2356
 msgid "Conversations"
 msgstr "Conversazioni"
 
