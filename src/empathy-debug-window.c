@@ -1997,9 +1997,9 @@ am_prepared_cb (GObject *am,
           "recently sent or received.\nIf you don’t want to see such "
           "information available in a public bug report, you "
           "can choose to limit the visibility of your bug to "
-          "Empathy developers when reporting it by displaying "
-          "the advanced fields in the "
-          "<a href=\"https://bugzilla.gnome.org/enter_bug.cgi?product=empathy\">"
+          "GNOME developers when reporting it by marking the "
+          "bug report as confidential in the "
+          "<a href=\"https://gitlab.gnome.org/GNOME/empathy/issues/new/\">"
           "bug report</a>."));
   gtk_label_set_use_markup (GTK_LABEL (label), TRUE);
   gtk_label_set_line_wrap (GTK_LABEL (label), TRUE);
