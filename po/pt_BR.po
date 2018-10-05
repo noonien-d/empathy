@@ -1,5 +1,5 @@
 # Brazilian Portuguese translation of Empathy.
-# Copyright (C) 2017 Free Software Foundation, Inc.
+# Copyright (C) 2018 Free Software Foundation, Inc.
 # This file is distributed under the same license as the empathy package.
 # Luiz Guaraldo <software.livre@terra.com.br>, 2004.
 # André Filipe de Assunção e Brito <decko@ufpr.br>, 2007.
@@ -22,10 +22,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Empathy\n"
-"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=empath"
-"y&keywords=I18N+L10N&component=General\n"
-"POT-Creation-Date: 2018-03-19 21:08+0000\n"
-"PO-Revision-Date: 2018-03-23 16:46-0200\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/empathy/issues\n"
+"POT-Creation-Date: 2018-09-14 18:15+0000\n"
+"PO-Revision-Date: 2018-10-05 08:24-0200\n"
 "Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Brazilian Portuguese <gnome-pt_br-list@gnome.org>\n"
 "Language: pt_BR\n"
@@ -1449,7 +1448,6 @@ msgid "Ungrouped"
 msgstr "Sem grupo"
 
 #: ../libempathy-gtk/empathy-individual-store.h:74
-#| msgid "Favorite"
 msgid "Favorite People"
 msgstr "Pessoas favoritas"
 
@@ -2909,23 +2907,32 @@ msgid "Error"
 msgstr "Erro"
 
 #: ../src/empathy-debug-window.c:1995
+#| msgid ""
+#| "Even if they don’t display passwords, logs can contain sensitive "
+#| "information such as your list of contacts or the messages you recently "
+#| "sent or received.\n"
+#| "If you don’t want to see such information available in a public bug "
+#| "report, you can choose to limit the visibility of your bug to Empathy "
+#| "developers when reporting it by displaying the advanced fields in the <a "
+#| "href=\"https://bugzilla.gnome.org/enter_bug.cgi?product=empathy\">bug "
+#| "report</a>."
 msgid ""
 "Even if they don’t display passwords, logs can contain sensitive information "
 "such as your list of contacts or the messages you recently sent or "
 "received.\n"
 "If you don’t want to see such information available in a public bug report, "
-"you can choose to limit the visibility of your bug to Empathy developers "
-"when reporting it by displaying the advanced fields in the <a href=\"https://"
-"bugzilla.gnome.org/enter_bug.cgi?product=empathy\">bug report</a>."
+"you can choose to limit the visibility of your bug to GNOME developers when "
+"reporting it by marking the bug report as confidential in the <a href="
+"\"https://gitlab.gnome.org/GNOME/empathy/issues/new/\">bug report</a>."
 msgstr ""
 "Mesmo se eles não exibam senhas, os registros podem conter informação "
 "sensível como a sua lista de contatos ou as mensagens que você enviou ou "
 "recebeu recentemente.\n"
 "Se você não quiser ver tais informações disponíveis em um relatório de erro "
 "público, você pode escolher limitar a visibilidade do erro aos "
-"desenvolvedores do Empathy ao relatá-lo exibindo os campos avançados no <a "
-"href=\"https://bugzilla.gnome.org/enter_bug.cgi?product=empathy\">relatório "
-"de erro</a>."
+"desenvolvedores do GNOME ao relatá-lo marcando o relatório de erro como "
+"confidencial no <a href=\"https://gitlab.gnome.org/GNOME/empathy/issues/new/"
+"\">relatório de erro</a>."
 
 #: ../src/empathy-debug-window.c:2027
 msgid "Time"
