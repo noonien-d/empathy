@@ -26,10 +26,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Empathy\n"
-"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
-"product=empathy&keywords=I18N+L10N&component=General\n"
-"POT-Creation-Date: 2017-08-26 14:31+0000\n"
-"PO-Revision-Date: 2017-08-31 19:31+0200\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/empathy/issues\n"
+"POT-Creation-Date: 2018-09-14 18:15+0000\n"
+"PO-Revision-Date: 2018-10-27 16:11+0200\n"
 "Last-Translator: Alan Mortensen <alanmortensen.am@gmail.com>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
 "Language: da\n"
@@ -37,30 +36,32 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.8.7.1\n"
+"X-Generator: Poedit 2.0.6\n"
 
-#: ../data/empathy.desktop.in.in.h:1 ../data/empathy.appdata.xml.in.h:1
+#: ../data/org.gnome.Empathy.desktop.in.in.h:1
+#: ../data/org.gnome.Empathy.appdata.xml.in.h:1
 msgid "Empathy"
 msgstr "Empathy"
 
-#: ../data/empathy.desktop.in.in.h:2
+#: ../data/org.gnome.Empathy.desktop.in.in.h:2
 msgid "IM Client"
 msgstr "IM-Klient"
 
-#: ../data/empathy.desktop.in.in.h:3
+#: ../data/org.gnome.Empathy.desktop.in.in.h:3
 msgid "Empathy Internet Messaging"
 msgstr "Samtaleklienten Empathy"
 
-#: ../data/empathy.desktop.in.in.h:4 ../data/empathy.appdata.xml.in.h:2
+#: ../data/org.gnome.Empathy.desktop.in.in.h:4
+#: ../data/org.gnome.Empathy.appdata.xml.in.h:2
 msgid "Chat on Google Talk, Facebook, MSN and many other chat services"
 msgstr "Chat via Google Talk, Facebook, MSN og mange andre tjenester"
 
-#: ../data/empathy.desktop.in.in.h:5
+#: ../data/org.gnome.Empathy.desktop.in.in.h:5
 msgid "chat;talk;im;message;irc;voip;gtalk;facebook;jabber;"
 msgstr ""
 "chat;tale;im;besked;irc;vopi;gtalk;gacebook;jabber;kvikbesked;lynbesked;snak;"
 
-#: ../data/empathy.appdata.xml.in.h:3
+#: ../data/org.gnome.Empathy.appdata.xml.in.h:3
 msgid ""
 "Empathy is the official instant messaging application of the GNOME desktop "
 "environment. Empathy can connect to AIM, MSN, Jabber (including Facebook and "
@@ -70,7 +71,7 @@ msgstr ""
 "kan forbinde til AIM, MSN, Jabber (inklusive Facebook og Google Talk), IRC "
 "og mange andre beskednetværk."
 
-#: ../data/empathy.appdata.xml.in.h:4
+#: ../data/org.gnome.Empathy.appdata.xml.in.h:4
 msgid ""
 "You can chat with text, make audio and video calls, or even transfer files, "
 "depending on what your contact’s chat application allows."
@@ -78,7 +79,7 @@ msgstr ""
 "Du kan chatte med tekst, foretage lyd- og videoopkald eller endog overføre "
 "filer, afhængigt af hvad din kontaktpersons chatprogram tillader."
 
-#: ../data/empathy.appdata.xml.in.h:5
+#: ../data/org.gnome.Empathy.appdata.xml.in.h:5
 msgid ""
 "Empathy provides integrated messaging for the GNOME desktop, so you’ll never "
 "miss a message. You can respond to your contacts without even having to open "
@@ -1458,6 +1459,20 @@ msgstr "_Invitér til chatrum"
 msgid "_Add Contact…"
 msgstr "_Tilføj kontakt …"
 
+#: ../libempathy-gtk/empathy-individual-store.h:73
+#: ../libempathy-gtk/empathy-roster-model.h:29
+msgid "Ungrouped"
+msgstr "Ikke grupperet"
+
+#: ../libempathy-gtk/empathy-individual-store.h:74
+msgid "Favorite People"
+msgstr "Favoritfolk"
+
+#: ../libempathy-gtk/empathy-individual-store.h:75
+#: ../libempathy-gtk/empathy-roster-model.h:28
+msgid "People Nearby"
+msgstr "Folk i nærheden"
+
 #: ../libempathy-gtk/empathy-individual-view.c:2367
 #, c-format
 msgid "Do you really want to remove the group “%s”?"
@@ -2137,14 +2152,6 @@ msgstr "Indkommende fil fra %s"
 #: ../libempathy-gtk/empathy-roster-model.h:27
 msgid "Top Contacts"
 msgstr "Topkontakter"
-
-#: ../libempathy-gtk/empathy-roster-model.h:28
-msgid "People Nearby"
-msgstr "Folk i nærheden"
-
-#: ../libempathy-gtk/empathy-roster-model.h:29
-msgid "Ungrouped"
-msgstr "Ikke grupperet"
 
 #. Add a prefix explaining that something goes wrong when trying to
 #. * fetch contact's presence.
@@ -2921,9 +2928,9 @@ msgid ""
 "such as your list of contacts or the messages you recently sent or "
 "received.\n"
 "If you don’t want to see such information available in a public bug report, "
-"you can choose to limit the visibility of your bug to Empathy developers "
-"when reporting it by displaying the advanced fields in the <a href=\"https://"
-"bugzilla.gnome.org/enter_bug.cgi?product=empathy\">bug report</a>."
+"you can choose to limit the visibility of your bug to GNOME developers when "
+"reporting it by marking the bug report as confidential in the <a href="
+"\"https://gitlab.gnome.org/GNOME/empathy/issues/new/\">bug report</a>."
 msgstr ""
 "Selvom der ikke står adgangskoder i dem, kan logge godt indeholder følsom "
 "information, som f.eks. din kontaktliste eller de beskeder du har sendt "
@@ -2931,8 +2938,8 @@ msgstr ""
 "Hvis du ikke ønsker, at denne slags information skal være at finde i en "
 "offentlig fejlrapport, kan du vælge at begrænse synligheden af din "
 "fejlrapport til Empathys udviklere. Dette kan du gøre ved hjælp af de "
-"avancerede felter i <a href=\"https://bugzilla.gnome.org/enter_bug.cgi?"
-"product=empathy\">fejlrapporten</a>."
+"avancerede felter i <a href=\"https://gitlab.gnome.org/GNOME/empathy/issues/"
+"new/\">fejlrapporten</a>."
 
 #: ../src/empathy-debug-window.c:2027
 msgid "Time"
@@ -4663,9 +4670,6 @@ msgstr "Integrér dine IM-konti"
 
 #~ msgid "Personal Information"
 #~ msgstr "Personlige oplysninger"
-
-#~ msgid "Favorite People"
-#~ msgstr "Favoritfolk"
 
 #~ msgctxt "Edit contact (contextual menu)"
 #~ msgid "_Edit"
