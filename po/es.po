@@ -8,15 +8,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: empathy.master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/empathy/issues\n"
-"POT-Creation-Date: 2018-06-10 14:57+0000\n"
-"PO-Revision-Date: 2018-06-22 09:32+0200\n"
+"POT-Creation-Date: 2018-09-14 18:15+0000\n"
+"PO-Revision-Date: 2018-10-31 16:21+0100\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: es <gnome-es-list@gnome.org>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Gtranslator 2.91.6\n"
+"X-Generator: Gtranslator 2.91.7\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../data/org.gnome.Empathy.desktop.in.in.h:1
@@ -127,8 +127,7 @@ msgstr ""
 "ejecutar o no las tareas de limpieza. Los usuarios no deben cambiar esta "
 "clave manualmente."
 
-#: ../data/org.gnome.Empathy.gschema.xml.h:12
-#: ../src/empathy-preferences.ui.h:1
+#: ../data/org.gnome.Empathy.gschema.xml.h:12 ../src/empathy-preferences.ui.h:1
 msgid "Show offline contacts"
 msgstr "Mostrar contactos desconectados"
 
@@ -1144,8 +1143,7 @@ msgstr "Contactos bloqueados"
 
 #: ../libempathy-gtk/empathy-contact-blocking-dialog.ui.h:3
 #: ../libempathy-gtk/empathy-status-preset-dialog.ui.h:1
-#: ../src/empathy-accounts-dialog.ui.h:2
-#: ../src/empathy-chatrooms-window.ui.h:3
+#: ../src/empathy-accounts-dialog.ui.h:2 ../src/empathy-chatrooms-window.ui.h:3
 msgid "Remove"
 msgstr "Quitar"
 
@@ -1467,7 +1465,6 @@ msgid "Ungrouped"
 msgstr "Sin grupo"
 
 #: ../libempathy-gtk/empathy-individual-store.h:74
-#| msgid "Favorite"
 msgid "Favorite People"
 msgstr "Personas favoritas"
 
@@ -2912,23 +2909,32 @@ msgid "Error"
 msgstr "Error"
 
 #: ../src/empathy-debug-window.c:1995
+#| msgid ""
+#| "Even if they don’t display passwords, logs can contain sensitive "
+#| "information such as your list of contacts or the messages you recently "
+#| "sent or received.\n"
+#| "If you don’t want to see such information available in a public bug "
+#| "report, you can choose to limit the visibility of your bug to Empathy "
+#| "developers when reporting it by displaying the advanced fields in the <a "
+#| "href=\"https://bugzilla.gnome.org/enter_bug.cgi?product=empathy\">bug "
+#| "report</a>."
 msgid ""
 "Even if they don’t display passwords, logs can contain sensitive information "
 "such as your list of contacts or the messages you recently sent or "
 "received.\n"
 "If you don’t want to see such information available in a public bug report, "
-"you can choose to limit the visibility of your bug to Empathy developers "
-"when reporting it by displaying the advanced fields in the <a href=\"https://"
-"bugzilla.gnome.org/enter_bug.cgi?product=empathy\">bug report</a>."
+"you can choose to limit the visibility of your bug to GNOME developers when "
+"reporting it by marking the bug report as confidential in the <a href="
+"\"https://gitlab.gnome.org/GNOME/empathy/issues/new/\">bug report</a>."
 msgstr ""
 "Aunque no muestren contraseñas, los archivos de registro pueden contener "
 "información sensible como su lista de contactos o sus mensajes enviados o "
 "recibidos recientemente.\n"
 "Si no quiere que esta información esté disponible públicamente en un informe "
 "de error, puede elegir limitar la visibilidad de su informe a los "
-"desarrolladores de Empathy al enviar el informe, mostrando los campos "
-"avanzados del <a href=\"https://bugzilla.gnome.org/enter_bug.cgi?"
-"product=empathy\">informe de error</a>."
+"desarrolladores de GNOME al enviar el informe, marcando el <a href=\"https://"
+"gitlab.gnome.org/GNOME/empathy/issues/new/\">informe de error</a> como "
+"confidencial."
 
 #: ../src/empathy-debug-window.c:2027
 msgid "Time"
