@@ -6,15 +6,14 @@
 # Saulius <saulius.shopaga@gmail.com>, 2008, 2009.
 # Žygimantas Beručka <zygis@gnome.org>, 2004-2010, 2010, 2011, 2012.
 # Algimantas Margevičius <margevicius.algimantas@gmail.com>, 2011.
-# Aurimas Černius <aurisc4@gmail.com>, 2013, 2014, 2017, 2018.
+# Aurimas Černius <aurisc4@gmail.com>, 2013-2018.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: empathy\n"
-"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
-"product=empathy&keywords=I18N+L10N&component=General\n"
-"POT-Creation-Date: 2018-03-19 17:20+0000\n"
-"PO-Revision-Date: 2018-03-19 23:07+0200\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/empathy/issues\n"
+"POT-Creation-Date: 2018-09-14 18:15+0000\n"
+"PO-Revision-Date: 2018-11-25 18:11+0200\n"
 "Last-Translator: Aurimas Černius <aurisc4@gmail.com>\n"
 "Language-Team: Lietuvių <gnome-lt@lists.akl.lt>\n"
 "Language: lt\n"
@@ -23,7 +22,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n"
 "%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Gtranslator 2.91.7\n"
+"X-Generator: Gtranslator 3.30.1\n"
 "X-Project-Style: gnome\n"
 
 #: ../data/org.gnome.Empathy.desktop.in.in.h:1
@@ -1437,7 +1436,6 @@ msgid "Ungrouped"
 msgstr "Negrupuoti"
 
 #: ../libempathy-gtk/empathy-individual-store.h:74
-#| msgid "Favorite"
 msgid "Favorite People"
 msgstr "Mėgiami žmonės"
 
@@ -2889,21 +2887,30 @@ msgid "Error"
 msgstr "Klaida"
 
 #: ../src/empathy-debug-window.c:1995
+#| msgid ""
+#| "Even if they don’t display passwords, logs can contain sensitive "
+#| "information such as your list of contacts or the messages you recently "
+#| "sent or received.\n"
+#| "If you don’t want to see such information available in a public bug "
+#| "report, you can choose to limit the visibility of your bug to Empathy "
+#| "developers when reporting it by displaying the advanced fields in the <a "
+#| "href=\"https://bugzilla.gnome.org/enter_bug.cgi?product=empathy\">bug "
+#| "report</a>."
 msgid ""
 "Even if they don’t display passwords, logs can contain sensitive information "
 "such as your list of contacts or the messages you recently sent or "
 "received.\n"
 "If you don’t want to see such information available in a public bug report, "
-"you can choose to limit the visibility of your bug to Empathy developers "
-"when reporting it by displaying the advanced fields in the <a href=\"https://"
-"bugzilla.gnome.org/enter_bug.cgi?product=empathy\">bug report</a>."
+"you can choose to limit the visibility of your bug to GNOME developers when "
+"reporting it by marking the bug report as confidential in the <a href="
+"\"https://gitlab.gnome.org/GNOME/empathy/issues/new/\">bug report</a>."
 msgstr ""
 "Net jei nerodo slaptažodžių, žurnalai turi jautrios informacijos, tokios "
 "kaip jūsų kontaktų ar neseniai siųstų bei gautų žinučių sąrašai.\n"
-"Jei nenorite tokios informacijos matyti viešumoje pranešime apie klaidą, "
-"galite apriboti pranešomos klaidos matomumą tik Empathy kūrėjams parodydami "
-"sudėtingesnius laukus <a href=\"https://bugzilla.gnome.org/enter_bug.cgi?"
-"product=empathy\">pranešime apie klaidą</a>."
+"Jei nenorite tokios informacijos matyti viešame pranešime apie klaidą, "
+"galite apriboti pranešamos klaidos matomumą padarydami jį konfidencialiu <a "
+"href=\"https://gitlab.gnome.org/GNOME/empathy/issues/new/\">pranešime apie "
+"klaidą</a>."
 
 #: ../src/empathy-debug-window.c:2027
 msgid "Time"
