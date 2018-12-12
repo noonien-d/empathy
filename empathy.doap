@@ -14,7 +14,7 @@ Empathy uses Telepathy for protocol support and has a user interface based on Go
   <homepage rdf:resource="https://wiki.gnome.org/Apps/Empathy" />
   <mailing-list rdf:resource="http://lists.freedesktop.org/mailman/listinfo/telepathy" />
   <download-page rdf:resource="http://download.gnome.org/sources/empathy/" />
-  <bug-database rdf:resource="https://bugzilla.gnome.org/browse.cgi?product=empathy" />
+  <bug-database rdf:resource="https://gitlab.gnome.org/GNOME/empathy/issues/" />
   <programming-language>C</programming-language>
 
   <maintainer>
