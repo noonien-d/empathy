@@ -1,21 +1,20 @@
-# Hungarian translation of empathy.
-# Copyright (C) 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2017 Free Software Foundation, Inc.
+# Hungarian translation for empathy.
+# Copyright (C) 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2017, 2019 Free Software Foundation, Inc.
 # This file is distributed under the same license as the empathy package.
 #
 # Gabor Kelemen <kelemeng at gnome dot hu>, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013.
 # Balázs Meskó <meskobalazs at gmail dot com>, 2011.
 # Bence Lukács <lukacs.bence1 at gmail dot com>, 2012.
 # Péter Bojtos <ptr at ulx dot hu>, 2013.
-# Balázs Úr <urbalazs at gmail dot com>, 2013, 2014, 2017.
+# Balázs Úr <urbalazs at gmail dot com>, 2013, 2014, 2017, 2019.
 msgid ""
 msgstr ""
 "Project-Id-Version: empathy master\n"
-"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
-"product=empathy&keywords=I18N+L10N&component=General\n"
-"POT-Creation-Date: 2017-08-31 14:43+0000\n"
-"PO-Revision-Date: 2017-09-03 17:33+0200\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/empathy/issues\n"
+"POT-Creation-Date: 2018-09-14 18:15+0000\n"
+"PO-Revision-Date: 2019-01-26 21:21+0100\n"
 "Last-Translator: Balázs Úr <urbalazs@gmail.com>\n"
-"Language-Team: Hungarian <openscope at googlegroups dot com>\n"
+"Language-Team: Hungarian <gnome-hu-list at gnome dot org>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -48,12 +47,6 @@ msgstr ""
 "azonnali;"
 
 #: ../data/org.gnome.Empathy.appdata.xml.in.h:3
-#| msgid ""
-#| "Empathy is the official instant messaging application of the GNOME "
-#| "desktop environment.  Empathy can connect to AIM, MSN, Jabber (including "
-#| "Facebook and Google Talk), IRC, and many other messaging networks. You "
-#| "can chat with text, make audio and video calls, or even transfer files, "
-#| "depending on what your contact’s chat application allows."
 msgid ""
 "Empathy is the official instant messaging application of the GNOME desktop "
 "environment. Empathy can connect to AIM, MSN, Jabber (including Facebook and "
@@ -72,10 +65,6 @@ msgstr ""
 "fájlátviteleket is attól függően, hogy a partner alkalmazása mit támogat."
 
 #: ../data/org.gnome.Empathy.appdata.xml.in.h:5
-#| msgid ""
-#| "Empathy provides integrated messaging for the GNOME desktop, so you’ll "
-#| "never miss a message.  You can respond to your contacts without even "
-#| "having to open Empathy!"
 msgid ""
 "Empathy provides integrated messaging for the GNOME desktop, so you’ll never "
 "miss a message. You can respond to your contacts without even having to open "
@@ -1434,6 +1423,20 @@ msgstr "Meg_hívás csevegőszobába"
 msgid "_Add Contact…"
 msgstr "Partner _felvétele…"
 
+#: ../libempathy-gtk/empathy-individual-store.h:73
+#: ../libempathy-gtk/empathy-roster-model.h:29
+msgid "Ungrouped"
+msgstr "Csoportosítatlan"
+
+#: ../libempathy-gtk/empathy-individual-store.h:74
+msgid "Favorite People"
+msgstr "Kedvenc partnerek"
+
+#: ../libempathy-gtk/empathy-individual-store.h:75
+#: ../libempathy-gtk/empathy-roster-model.h:28
+msgid "People Nearby"
+msgstr "Közeli emberek"
+
 #: ../libempathy-gtk/empathy-individual-view.c:2367
 #, c-format
 msgid "Do you really want to remove the group “%s”?"
@@ -2110,14 +2113,6 @@ msgstr "Bejövő fájl %s partnertől"
 #: ../libempathy-gtk/empathy-roster-model.h:27
 msgid "Top Contacts"
 msgstr "Fontos partnerek"
-
-#: ../libempathy-gtk/empathy-roster-model.h:28
-msgid "People Nearby"
-msgstr "Közeli emberek"
-
-#: ../libempathy-gtk/empathy-roster-model.h:29
-msgid "Ungrouped"
-msgstr "Csoportosítatlan"
 
 #. Add a prefix explaining that something goes wrong when trying to
 #. * fetch contact's presence.
@@ -2877,17 +2872,18 @@ msgid ""
 "such as your list of contacts or the messages you recently sent or "
 "received.\n"
 "If you don’t want to see such information available in a public bug report, "
-"you can choose to limit the visibility of your bug to Empathy developers "
-"when reporting it by displaying the advanced fields in the <a href=\"https://"
-"bugzilla.gnome.org/enter_bug.cgi?product=empathy\">bug report</a>."
+"you can choose to limit the visibility of your bug to GNOME developers when "
+"reporting it by marking the bug report as confidential in the <a href="
+"\"https://gitlab.gnome.org/GNOME/empathy/issues/new/\">bug report</a>."
 msgstr ""
 "Még ha nem is tartalmaznak jelszavakat, a naplófájlok érzékeny adatokat "
 "tartalmazhatnak, mint például partnereket vagy érkezett és elküldött "
 "üzeneteket.\n"
 "Ha nem kívánja, hogy ezen információk publikusak legyenek a hibajelentésben, "
-"kiválaszthatja, hogy a hibajegy csak az Empathy fejlesztők számára legyen "
-"látható. Ezt a haladó beállításokban teheti meg a <a href=\"https://bugzilla."
-"gnome.org/enter_bug.cgi?product=empathy\">hibajelentőben</a>."
+"kiválaszthatja, hogy a hibajegy csak a GNOME fejlesztők számára legyen "
+"látható. Ezt a hibajegy bizalmassá tételével teheti meg a <a "
+"href=\"https://gitlab.gnome.org/GNOME/empathy/issues/new/\">hibajelentésben<"
+"/a>."
 
 #: ../src/empathy-debug-window.c:2027
 msgid "Time"
