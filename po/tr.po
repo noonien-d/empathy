@@ -10,49 +10,44 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: empathy\n"
-"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
-"product=empathy&keywords=I18N+L10N&component=General\n"
-"POT-Creation-Date: 2017-08-17 00:23+0000\n"
-"PO-Revision-Date: 2017-08-28 00:38+0300\n"
-"Last-Translator: Emin Tufan Çetin <etcetin@gmail.com>\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/empathy/issues\n"
+"POT-Creation-Date: 2018-09-14 18:15+0000\n"
+"PO-Revision-Date: 2019-01-08 11:40+0200\n"
+"Last-Translator: Sabri Ünal <libreajans@gmail.com>\n"
 "Language-Team: Türkçe <gnome-turk@gnome.org>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Gtranslator 2.91.7\n"
+"X-Generator: Poedit 2.0.6\n"
 "X-POOTLE-MTIME: 1416054937.000000\n"
 
-#: ../data/empathy.desktop.in.in.h:1 ../data/empathy.appdata.xml.in.h:1
+#: ../data/org.gnome.Empathy.desktop.in.in.h:1
+#: ../data/org.gnome.Empathy.appdata.xml.in.h:1
 msgid "Empathy"
 msgstr "Empathy"
 
-#: ../data/empathy.desktop.in.in.h:2
+#: ../data/org.gnome.Empathy.desktop.in.in.h:2
 msgid "IM Client"
 msgstr "Anlık Mesajlaşma İstemcisi"
 
-#: ../data/empathy.desktop.in.in.h:3
+#: ../data/org.gnome.Empathy.desktop.in.in.h:3
 msgid "Empathy Internet Messaging"
 msgstr "Empathy İnternetten Mesajlaşma"
 
-#: ../data/empathy.desktop.in.in.h:4 ../data/empathy.appdata.xml.in.h:2
+#: ../data/org.gnome.Empathy.desktop.in.in.h:4
+#: ../data/org.gnome.Empathy.appdata.xml.in.h:2
 msgid "Chat on Google Talk, Facebook, MSN and many other chat services"
 msgstr ""
 "Google Talk, Facebook, MSN ve daha birçok sohbet hizmeti üzerinden sohbet "
 "edin"
 
-#: ../data/empathy.desktop.in.in.h:5
+#: ../data/org.gnome.Empathy.desktop.in.in.h:5
 msgid "chat;talk;im;message;irc;voip;gtalk;facebook;jabber;"
 msgstr "chat;sohbet;konuşma;im;mesaj;ileti;irc;voip;gtalk;facebook;jabber;"
 
-#: ../data/empathy.appdata.xml.in.h:3
-#| msgid ""
-#| "Empathy is the official instant messaging application of the GNOME "
-#| "desktop environment.  Empathy can connect to AIM, MSN, Jabber (including "
-#| "Facebook and Google Talk), IRC, and many other messaging networks. You "
-#| "can chat with text, make audio and video calls, or even transfer files, "
-#| "depending on what your contact’s chat application allows."
+#: ../data/org.gnome.Empathy.appdata.xml.in.h:3
 msgid ""
 "Empathy is the official instant messaging application of the GNOME desktop "
 "environment. Empathy can connect to AIM, MSN, Jabber (including Facebook and "
@@ -62,7 +57,7 @@ msgstr ""
 "Empathy AIM, MSN, Jabber (Facebook ve Google Talk dahil), IRC ve birçok "
 "başka mesajlaşma ağlarına bağlanabilir."
 
-#: ../data/empathy.appdata.xml.in.h:4
+#: ../data/org.gnome.Empathy.appdata.xml.in.h:4
 msgid ""
 "You can chat with text, make audio and video calls, or even transfer files, "
 "depending on what your contact’s chat application allows."
@@ -70,11 +65,7 @@ msgstr ""
 "Yazışarak sohbet edebilir, sesli veya görüntülü görüşebilir ve hatta sohbet "
 "ettiğiniz kişinin kullandığı uygulamaya bağlı olarak dosya iletebilirsiniz."
 
-#: ../data/empathy.appdata.xml.in.h:5
-#| msgid ""
-#| "Empathy provides integrated messaging for the GNOME desktop, so you’ll "
-#| "never miss a message.  You can respond to your contacts without even "
-#| "having to open Empathy!"
+#: ../data/org.gnome.Empathy.appdata.xml.in.h:5
 msgid ""
 "Empathy provides integrated messaging for the GNOME desktop, so you’ll never "
 "miss a message. You can respond to your contacts without even having to open "
@@ -300,7 +291,6 @@ msgid "Whether to show popup notifications when away or busy."
 msgstr "Uzakta veya meşgul iken açılır uyarıların gösterilip gösterilmeyeceği."
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:50
-#| msgid "Pop up notifications if the chat isn't focused"
 msgid "Pop up notifications if the chat isn’t focused"
 msgstr "Sohbet odaklanmamışsa uyarıları açılır pencerede göster"
 
@@ -389,9 +379,6 @@ msgid "Inform other users when you are typing to them"
 msgstr "Diğer kullanıcılara yazarken onları bilgilendir"
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:69
-#| msgid ""
-#| "Whether to send the 'composing' or 'paused' chat states. Does not "
-#| "currently affect the 'gone' state."
 msgid ""
 "Whether to send the “composing” or “paused” chat states. Does not currently "
 "affect the “gone” state."
@@ -412,9 +399,6 @@ msgid "Spell checking languages"
 msgstr "İmla denetimi dilleri"
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:73
-#| msgid ""
-#| "Comma-separated list of spell checker languages to use (e.g. \"en, fr, nl"
-#| "\")."
 msgid ""
 "Comma-separated list of spell checker languages to use (e.g. “en, fr, nl”)."
 msgstr ""
@@ -461,7 +445,7 @@ msgstr "Odaya Katıl iletişim penceresinde son seçilen hesap"
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:81
 msgid "D-Bus object path of the last account selected to join a room."
-msgstr "Bir odaya katılmak için son seçilen hesabın D-Bus nesne yolu"
+msgstr "Bir odaya katılmak için son seçilen hesabın D-Bus nesne yolu."
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:82
 msgid "Camera device"
@@ -485,7 +469,6 @@ msgid "Echo cancellation support"
 msgstr "Yankı giderme desteği"
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:87
-#| msgid "Whether to enable Pulseaudio's echo cancellation filter."
 msgid "Whether to enable PulseAudio’s echo cancellation filter."
 msgstr ""
 "Pulseaudio’nun yankı giderme süzgecinin etkinleştirilip "
@@ -496,9 +479,6 @@ msgid "Show hint about closing the main window"
 msgstr "Ana pencereyi kapatırken ipucu göster"
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:89
-#| msgid ""
-#| "Whether to show the message dialog about closing the main window with the "
-#| "'x' button in the title bar."
 msgid ""
 "Whether to show the message dialog about closing the main window with the "
 "“x” button in the title bar."
@@ -507,24 +487,19 @@ msgstr ""
 "penceresinin gösterilip gösterilmeyeceği."
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:90
-#| msgid "Empathy can publish the user's location"
 msgid "Empathy can publish the user’s location"
 msgstr "Empathy kullanıcının konumunu yayımlayabilir"
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:91
-#| msgid "Whether Empathy can publish the user's location to their contacts."
 msgid "Whether Empathy can publish the user’s location to their contacts."
 msgstr ""
 "Empathy’nin kişilere kullanıcının konumunu yayımlayıp yayımlayamayacağı."
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:92
-#| msgid "Empathy should reduce the location's accuracy"
 msgid "Empathy should reduce the location’s accuracy"
 msgstr "Empathy konumun hassasiyetini indirgemeli"
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:93
-#| msgid ""
-#| "Whether Empathy should reduce the location's accuracy for privacy reasons."
 msgid ""
 "Whether Empathy should reduce the location’s accuracy for privacy reasons."
 msgstr ""
@@ -688,7 +663,6 @@ msgid "Connection has been refused"
 msgstr "Bağlantı reddedildi"
 
 #: ../libempathy/empathy-utils.c:294
-#| msgid "Connection can't be established"
 msgid "Connection can’t be established"
 msgstr "Bağlantı kurulamadı"
 
@@ -779,7 +753,6 @@ msgid "There was an error starting the call"
 msgstr "Arama başlatılırken bir hata oluştu"
 
 #: ../libempathy-gtk/empathy-call-utils.c:44
-#| msgid "The specified contact doesn't support calls"
 msgid "The specified contact doesn’t support calls"
 msgstr "Belirtilen kişi, aramaları desteklemiyor"
 
@@ -796,7 +769,6 @@ msgid "Emergency calls are not supported on this protocol"
 msgstr "Bu iletişim kuralında acil aramalar desteklenmiyor"
 
 #: ../libempathy-gtk/empathy-call-utils.c:52
-#| msgid "You don't have enough credit in order to place this call"
 msgid "You don’t have enough credit in order to place this call"
 msgstr "Bu çağrıyı gerçekleştirmek için yeterli krediniz yok"
 
@@ -857,10 +829,6 @@ msgid "/me <message>: send an ACTION message to the current conversation"
 msgstr "/me <ileti>: geçerli görüşmeye bir EYLEM iletisi gönder"
 
 #: ../libempathy-gtk/empathy-chat.c:1083
-#| msgid ""
-#| "/say <message>: send <message> to the current conversation. This is used "
-#| "to send a message starting with a '/'. For example: \"/say /join is used "
-#| "to join a new chat room\""
 msgid ""
 "/say <message>: send <message> to the current conversation. This is used to "
 "send a message starting with a “/”. For example: “/say /join is used to join "
@@ -903,7 +871,6 @@ msgstr "ileti göndermek için yetersiz bakiye"
 #: ../libempathy-gtk/empathy-chat.c:1540 ../libempathy-gtk/empathy-chat.c:1554
 #: ../libempathy-gtk/empathy-chat.c:1617
 #, c-format
-#| msgid "Error sending message '%s': %s"
 msgid "Error sending message “%s”: %s"
 msgstr "“%s” iletisi gönderilirken hata: %s"
 
@@ -974,7 +941,6 @@ msgstr "(Öneri Yok)"
 #. translators: %s is the selected word
 #: ../libempathy-gtk/empathy-chat.c:2286
 #, c-format
-#| msgid "Add '%s' to Dictionary"
 msgid "Add “%s” to Dictionary"
 msgstr "“%s” sözcüğünü sözlüğe ekle"
 
@@ -982,7 +948,6 @@ msgstr "“%s” sözcüğünü sözlüğe ekle"
 #. * second %s is the language name of the target dictionary
 #: ../libempathy-gtk/empathy-chat.c:2323
 #, c-format
-#| msgid "Add '%s' to %s Dictionary"
 msgid "Add “%s” to %s Dictionary"
 msgstr "“%s” sözcüğünü %s Sözlüğe ekle"
 
@@ -1156,7 +1121,6 @@ msgid "Remove"
 msgstr "Sil"
 
 #: ../libempathy-gtk/empathy-contact-chooser.c:416
-#| msgid "_Search for Contacts…"
 msgid "Type to search a contact…"
 msgstr "Kişi aramak için yaz…"
 
@@ -1186,7 +1150,6 @@ msgid "Your message introducing yourself:"
 msgstr "Kendinizi tanıtan iletiniz:"
 
 #: ../libempathy-gtk/empathy-contact-search-dialog.c:674
-#| msgid "Please let me see when you're online. Thanks!"
 msgid "Please let me see when you’re online. Thanks!"
 msgstr ""
 "Lütfen çevrim içi olduğunuzda sizi görebilmeme izin verin. Teşekkürler!"
@@ -1283,7 +1246,6 @@ msgstr "%s engellensin mi?"
 #: ../libempathy-gtk/empathy-individual-dialogs.c:239
 #: ../libempathy-gtk/empathy-subscription-dialog.c:125
 #, c-format
-#| msgid "Are you sure you want to block '%s' from contacting you again?"
 msgid "Are you sure you want to block “%s” from contacting you again?"
 msgstr ""
 "“%s”in sizinle yeniden iletişim kurmasını engellemek istediğinizden emin "
@@ -1327,7 +1289,7 @@ msgstr "gnome-contacts kurulu değil"
 #: ../libempathy-gtk/empathy-individual-information-dialog.c:325
 msgid "Please install gnome-contacts to access contacts details."
 msgstr ""
-"Kişinin ayrıntılarını ulaşmak için lütfen gnome-contacts paketini yükleyin"
+"Kişinin ayrıntılarını ulaşmak için lütfen gnome-contacts paketini yükleyin."
 
 #. Translators: this is used in the context menu for a contact. The first
 #. * parameter is a contact ID (e.g. foo@jabber.org) and the second is one
@@ -1378,7 +1340,6 @@ msgstr "Kişiyi _Engelle"
 
 #: ../libempathy-gtk/empathy-individual-menu.c:729
 #, c-format
-#| msgid "Remove from _Group '%s'"
 msgid "Remove from _Group “%s”"
 msgstr "“%s” _Kümesinden Çıkar"
 
@@ -1388,15 +1349,11 @@ msgstr "Sil ve _Engelle"
 
 #: ../libempathy-gtk/empathy-individual-menu.c:838
 #, c-format
-#| msgid "Do you really want to remove the contact '%s'?"
 msgid "Do you really want to remove the contact “%s”?"
 msgstr "Gerçekten “%s” kişisini kaldırmak istiyor musunuz?"
 
 #: ../libempathy-gtk/empathy-individual-menu.c:847
 #, c-format
-#| msgid ""
-#| "Do you really want to remove the linked contact '%s'? Note that this will "
-#| "remove all the contacts which make up this linked contact."
 msgid ""
 "Do you really want to remove the linked contact “%s”? Note that this will "
 "remove all the contacts which make up this linked contact."
@@ -1475,9 +1432,22 @@ msgstr "Sohbet Odasına _Davet Et"
 msgid "_Add Contact…"
 msgstr "Kişi _Ekle…"
 
+#: ../libempathy-gtk/empathy-individual-store.h:73
+#: ../libempathy-gtk/empathy-roster-model.h:29
+msgid "Ungrouped"
+msgstr "Kümelenmemiş"
+
+#: ../libempathy-gtk/empathy-individual-store.h:74
+msgid "Favorite People"
+msgstr "Sık Görüşülen Kişiler"
+
+#: ../libempathy-gtk/empathy-individual-store.h:75
+#: ../libempathy-gtk/empathy-roster-model.h:28
+msgid "People Nearby"
+msgstr "Yakındaki İnsanlar"
+
 #: ../libempathy-gtk/empathy-individual-view.c:2367
 #, c-format
-#| msgid "Do you really want to remove the group '%s'?"
 msgid "Do you really want to remove the group “%s”?"
 msgstr "Gerçekten “%s” kümesini kaldırmak istiyor musunuz?"
 
@@ -1629,7 +1599,7 @@ msgstr "<b>Konum</b> (tarihinde)"
 
 #: ../libempathy-gtk/empathy-individual-widget.ui.h:2
 msgid "Online from a phone or mobile device"
-msgstr "Bir telefon ya da taşınabilir aygıttan bağlanıyor."
+msgstr "Bir telefon ya da taşınabilir aygıttan bağlanıyor"
 
 #: ../libempathy-gtk/empathy-local-xmpp-assistant-widget.c:82
 msgid ""
@@ -1880,7 +1850,6 @@ msgid "You must be invited to join this channel"
 msgstr "Bu kanala katılmak için davet edilmiş olmanız gerekiyor"
 
 #: ../libempathy-gtk/empathy-new-message-dialog.c:92
-#| msgid "Can't proceed while disconnected"
 msgid "Can’t proceed while disconnected"
 msgstr "Bağlı değilken devam edilemez"
 
@@ -1894,13 +1863,12 @@ msgstr "Görüşme başlatılırken bir hata oluştu"
 
 #. add chat button
 #: ../libempathy-gtk/empathy-new-message-dialog.c:307
-#| msgid "Done"
 msgid "_Done"
 msgstr "_Bitti"
 
 #. Tweak the dialog
 #: ../libempathy-gtk/empathy-new-message-dialog.c:323
-#: ../src/empathy-roster-window.c:2368
+#: ../src/empathy-roster-window.c:2364
 msgid "New Conversation"
 msgstr "Yeni Konuşma"
 
@@ -2061,7 +2029,6 @@ msgid "The certificate has expired."
 msgstr "Sertifikanın tarihi geçmiş."
 
 #: ../libempathy-gtk/empathy-tls-dialog.c:161
-#| msgid "The certificate hasn't yet been activated."
 msgid "The certificate hasn’t yet been activated."
 msgstr "Sertifika henüz etkinleştirilmemiş."
 
@@ -2070,8 +2037,6 @@ msgid "The certificate does not have the expected fingerprint."
 msgstr "Sertifika, beklenen parmak izlerini taşımıyor."
 
 #: ../libempathy-gtk/empathy-tls-dialog.c:167
-#| msgid ""
-#| "The hostname verified by the certificate doesn't match the server name."
 msgid "The hostname verified by the certificate doesn’t match the server name."
 msgstr ""
 "Sertifika tarafından doğrulanan ana makine adı, sunucu adıyla eşleşmiyor."
@@ -2158,14 +2123,6 @@ msgstr "%s’den gelen dosya"
 msgid "Top Contacts"
 msgstr "Sık Görüşülen Kişiler"
 
-#: ../libempathy-gtk/empathy-roster-model.h:28
-msgid "People Nearby"
-msgstr "Yakındaki İnsanlar"
-
-#: ../libempathy-gtk/empathy-roster-model.h:29
-msgid "Ungrouped"
-msgstr "Kümelenmemiş"
-
 #. Add a prefix explaining that something goes wrong when trying to
 #. * fetch contact's presence.
 #: ../libempathy-gtk/empathy-roster-contact.c:252
@@ -2186,15 +2143,12 @@ msgstr ""
 "Emin Tufan Çetin <etcetin@gmail.com>"
 
 #: ../src/empathy-accounts.c:171
-#| msgid "Don't display any dialogs; do any work (eg, importing) and exit"
 msgid "Don’t display any dialogs; do any work (e.g. importing) and exit"
 msgstr ""
 "Hiçbir iletişim penceresi gösterme, yapılacakları yap (içe aktarma vb.) ve "
 "çık"
 
 #: ../src/empathy-accounts.c:175
-#| msgid ""
-#| "Don't display any dialogs unless there are only \"People Nearby\" accounts"
 msgid ""
 "Don’t display any dialogs unless there are only “People Nearby” accounts"
 msgstr ""
@@ -2211,7 +2165,6 @@ msgid "<account-id>"
 msgstr "<hesap-kimliği>"
 
 #: ../src/empathy-accounts.c:186
-#| msgid "- Empathy Accounts"
 msgid "— Empathy Accounts"
 msgstr "— Empathy Hesapları"
 
@@ -2349,7 +2302,6 @@ msgid "No protocol backends installed"
 msgstr "Hiçbir iletişim kuralı yüklü değil"
 
 #: ../src/empathy-auth-client.c:284
-#| msgid " - Empathy authentication client"
 msgid " — Empathy authentication client"
 msgstr " — Empathy yetkilendirme istemcisi"
 
@@ -2358,18 +2310,15 @@ msgid "Empathy authentication client"
 msgstr "Empathy kimlik denetimi istemcisi"
 
 #: ../src/empathy.c:402
-#| msgid "Don't connect on startup"
 msgid "Don’t connect on startup"
 msgstr "Başlangıçta bağlanma"
 
 #: ../src/empathy.c:406
-#| msgid "Don't display the contact list or any other dialogs on startup"
 msgid "Don’t display the contact list or any other dialogs on startup"
 msgstr ""
 "Başlangıçta kişi listesi ya da herhangi bir iletişim penceresi gösterme"
 
 #: ../src/empathy.c:435
-#| msgid "- Empathy IM Client"
 msgid "— Empathy IM Client"
 msgstr "— Empathy Anlık Mesajlaşma İstemcisi"
 
@@ -2395,7 +2344,6 @@ msgid "In a call"
 msgstr "Bir çağrıda"
 
 #: ../src/empathy-call.c:223
-#| msgid "- Empathy Audio/Video Client"
 msgid "— Empathy Audio/Video Client"
 msgstr "— Empathy Ses/Görüntü İstemcisi"
 
@@ -2482,7 +2430,6 @@ msgstr "Süre"
 #. Translators: 'status — minutes∶seconds' the caller has been connected
 #: ../src/empathy-call-window.c:2979
 #, c-format
-#| msgid "%s — %d:%02dm"
 msgid "%s — %d∶%02dm"
 msgstr "%s — %d∶%02dd"
 
@@ -2492,9 +2439,6 @@ msgstr "Teknik Ayrıntılar"
 
 #: ../src/empathy-call-window.c:3114
 #, c-format
-#| msgid ""
-#| "%s's software does not understand any of the audio formats supported by "
-#| "your computer"
 msgid ""
 "%s’s software does not understand any of the audio formats supported by your "
 "computer"
@@ -2504,9 +2448,6 @@ msgstr ""
 
 #: ../src/empathy-call-window.c:3119
 #, c-format
-#| msgid ""
-#| "%s's software does not understand any of the video formats supported by "
-#| "your computer"
 msgid ""
 "%s’s software does not understand any of the video formats supported by your "
 "computer"
@@ -2516,9 +2457,6 @@ msgstr ""
 
 #: ../src/empathy-call-window.c:3125
 #, c-format
-#| msgid ""
-#| "Can't establish a connection to %s. One of you might be on a network that "
-#| "does not allow direct connections."
 msgid ""
 "Can’t establish a connection to %s. One of you might be on a network that "
 "does not allow direct connections."
@@ -2543,10 +2481,6 @@ msgstr ""
 
 #: ../src/empathy-call-window.c:3150
 #, c-format
-#| msgid ""
-#| "Something unexpected happened in a Telepathy component. Please <a href="
-#| "\"%s\">report this bug</a> and attach logs gathered from the 'Debug' "
-#| "window in the Help menu."
 msgid ""
 "Something unexpected happened in a Telepathy component. Please <a href=\"%s"
 "\">report this bug</a> and attach logs gathered from the “Debug” window in "
@@ -2565,12 +2499,10 @@ msgid "The end of the stream was reached"
 msgstr "Akışın sonuna ulaşıldı"
 
 #: ../src/empathy-call-window.c:3202
-#| msgid "Can't establish audio stream"
 msgid "Can’t establish audio stream"
 msgstr "Ses akışı kurulamıyor"
 
 #: ../src/empathy-call-window.c:3212
-#| msgid "Can't establish video stream"
 msgid "Can’t establish video stream"
 msgstr "Görüntü akışı kurulamıyor"
 
@@ -2874,7 +2806,6 @@ msgid "Show a particular service"
 msgstr "Belli bir hizmeti göster"
 
 #: ../src/empathy-debugger.c:81
-#| msgid "- Empathy Debugger"
 msgid "— Empathy Debugger"
 msgstr "— Empathy Hata Ayıklayıcısı"
 
@@ -2914,7 +2845,7 @@ msgstr "Duraklat"
 
 #: ../src/empathy-debug-window.c:1938
 msgid "Level "
-msgstr "Düzey"
+msgstr "Düzey "
 
 #: ../src/empathy-debug-window.c:1957
 msgid "Debug"
@@ -2941,31 +2872,21 @@ msgid "Error"
 msgstr "Hata"
 
 #: ../src/empathy-debug-window.c:1995
-#| msgid ""
-#| "Even if they don't display passwords, logs can contain sensitive "
-#| "information such as your list of contacts or the messages you recently "
-#| "sent or received.\n"
-#| "If you don't want to see such information available in a public bug "
-#| "report, you can choose to limit the visibility of your bug to Empathy "
-#| "developers when reporting it by displaying the advanced fields in the <a "
-#| "href=\"https://bugzilla.gnome.org/enter_bug.cgi?product=empathy\">bug "
-#| "report</a>."
 msgid ""
 "Even if they don’t display passwords, logs can contain sensitive information "
 "such as your list of contacts or the messages you recently sent or "
 "received.\n"
 "If you don’t want to see such information available in a public bug report, "
-"you can choose to limit the visibility of your bug to Empathy developers "
-"when reporting it by displaying the advanced fields in the <a href=\"https://"
-"bugzilla.gnome.org/enter_bug.cgi?product=empathy\">bug report</a>."
+"you can choose to limit the visibility of your bug to GNOME developers when "
+"reporting it by marking the bug report as confidential in the <a href="
+"\"https://gitlab.gnome.org/GNOME/empathy/issues/new/\">bug report</a>."
 msgstr ""
 "Parolalarınızı göstermese bile, sistem günlükleri; kişi listeniz, son "
 "gönderdiğiniz veya aldığınız iletiler gibi hassas bilgileri içerebilir.\n"
 "Eğer halka açık hata bildirimlerinde bu gibi bilgilerin görünmesini "
-"istemiyorsanız, <a href=\"https://bugzilla.gnome.org/enter_bug.cgi?"
-"product=empathy\">Hata bildirme</a> sayfasında Empathy geliştiricilerine "
-"gönderilecek hata bildiriminizde gelişmiş alanları kullanarak "
-"sınırlandırmayı seçebilirsiniz."
+"istemiyorsanız, <a href=\"https://gitlab.gnome.org/GNOME/empathy/issues/new/"
+"\">Hata bildirme</a> sayfasında Empathy geliştiricilerine gönderilecek hata "
+"bildiriminizde gelişmiş alanları kullanarak sınırlandırmayı seçebilirsiniz."
 
 #: ../src/empathy-debug-window.c:2027
 msgid "Time"
@@ -3065,7 +2986,6 @@ msgstr ""
 #. Translators: time left, when it is more than one hour
 #: ../src/empathy-ft-manager.c:94
 #, c-format
-#| msgid "%u:%02u.%02u"
 msgid "%u∶%02u.%02u"
 msgstr "%u∶%02u.%02u"
 
@@ -3095,14 +3015,12 @@ msgstr "%s / %s"
 #. translators: first %s is filename, second %s is the contact name
 #: ../src/empathy-ft-manager.c:300
 #, c-format
-#| msgid "Receiving \"%s\" from %s"
 msgid "Receiving “%s” from %s"
 msgstr "“%s” dosyası %s kişisinden alınıyor"
 
 #. translators: first %s is filename, second %s is the contact name
 #: ../src/empathy-ft-manager.c:303
 #, c-format
-#| msgid "Sending \"%s\" to %s"
 msgid "Sending “%s” to %s"
 msgstr "“%s” dosyası %s kişisine gönderiliyor"
 
@@ -3110,7 +3028,6 @@ msgstr "“%s” dosyası %s kişisine gönderiliyor"
 #. * is the contact name
 #: ../src/empathy-ft-manager.c:333
 #, c-format
-#| msgid "Error receiving \"%s\" from %s"
 msgid "Error receiving “%s” from %s"
 msgstr "“%s” dosyası %s kullanıcısından alınırken hata"
 
@@ -3122,7 +3039,6 @@ msgstr "Dosya alırken hata"
 #. * is the contact name
 #: ../src/empathy-ft-manager.c:341
 #, c-format
-#| msgid "Error sending \"%s\" to %s"
 msgid "Error sending “%s” to %s"
 msgstr "“%s” dosyası %s kullanıcısına gönderilirken hata"
 
@@ -3134,7 +3050,6 @@ msgstr "Dosya gönderirken hata"
 #. * is the contact name
 #: ../src/empathy-ft-manager.c:483
 #, c-format
-#| msgid "\"%s\" received from %s"
 msgid "“%s” received from %s"
 msgstr "“%s” dosyası %s kişisinden alındı"
 
@@ -3142,7 +3057,6 @@ msgstr "“%s” dosyası %s kişisinden alındı"
 #. * is the contact name
 #: ../src/empathy-ft-manager.c:488
 #, c-format
-#| msgid "\"%s\" sent to %s"
 msgid "“%s” sent to %s"
 msgstr "“%s” dosyası %s kişisine gönderildi"
 
@@ -3151,19 +3065,16 @@ msgid "File transfer completed"
 msgstr "Dosya aktarımı tamamlandı"
 
 #: ../src/empathy-ft-manager.c:610 ../src/empathy-ft-manager.c:774
-#| msgid "Waiting for the other participant's response"
 msgid "Waiting for the other participant’s response"
 msgstr "Diğer katılımcının yanıtı bekleniyor"
 
 #: ../src/empathy-ft-manager.c:636 ../src/empathy-ft-manager.c:674
 #, c-format
-#| msgid "Checking integrity of \"%s\""
 msgid "Checking integrity of “%s”"
 msgstr "“%s” tümlüğü denetleniyor"
 
 #: ../src/empathy-ft-manager.c:639 ../src/empathy-ft-manager.c:677
 #, c-format
-#| msgid "Hashing \"%s\""
 msgid "Hashing “%s”"
 msgstr "Karma “%s”"
 
@@ -3288,12 +3199,9 @@ msgid ""
 "the current account&apos;s server"
 msgstr ""
 "Odayı barındıran sunucuyu girin ya da oda şimdiki hesabın sunucusunda ise "
-"boş bırakın."
+"boş bırakın"
 
 #: ../src/empathy-new-chatroom-dialog.ui.h:4
-#| msgid ""
-#| "Enter the server which hosts the room, or leave it empty if the room is "
-#| "on the current account's server"
 msgid ""
 "Enter the server which hosts the room, or leave it empty if the room is on "
 "the current account’s server"
@@ -3306,7 +3214,6 @@ msgid "_Server:"
 msgstr "_Sunucu:"
 
 #: ../src/empathy-new-chatroom-dialog.ui.h:7
-#| msgid "Couldn't load room list"
 msgid "Couldn’t load room list"
 msgstr "Oda listesi yüklenemedi"
 
@@ -3398,7 +3305,6 @@ msgstr "Yapamazsan, yemin et sevdiğine"
 
 #. translators: Quote from Romeo & Julier, for chat theme preview
 #: ../src/empathy-preferences.c:653
-#| msgid "And I'll no longer be a Capulet."
 msgid "And I’ll no longer be a Capulet."
 msgstr "Vazgeçeyim Capulet olmaktan ben."
 
@@ -3649,7 +3555,6 @@ msgid "No match found"
 msgstr "Eşleşme bulunamadı"
 
 #: ../src/empathy-roster-window.c:1756
-#| msgid "You haven't added any contacts yet"
 msgid "You haven’t added any contacts yet"
 msgstr "Henüz kimseyi eklemediniz"
 
@@ -3657,7 +3562,7 @@ msgstr "Henüz kimseyi eklemediniz"
 msgid "No online contacts"
 msgstr "Çevrim içi kimse yok"
 
-#: ../src/empathy-roster-window.c:2360
+#: ../src/empathy-roster-window.c:2356
 msgid "Conversations"
 msgstr "Konuşmalar"
 
@@ -4830,9 +4735,6 @@ msgstr "Anlık mesajlaşma hesaplarınızı tümleştirin"
 
 #~ msgid "Set your presence and current status"
 #~ msgstr "Gösterim ve mevcut durum ayarı"
-
-#~ msgid "Favorite People"
-#~ msgstr "Sık Görüşülen Kişiler"
 
 #~ msgid "C_hat"
 #~ msgstr "So_hbet"
