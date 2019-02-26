@@ -23,15 +23,15 @@
 # Wouter Bolsterlee <wbolster@gnome.org>, 2006—2011.
 # Hannie Dumoleyn <hannie@ubuntu-nl.org>, 2010—2011, 2012, 2017.
 # Erwin Poeze <donnut@outlook.com>, 2014.
-# Justin van Steijn <justin50@live.nl>, 2016.
+# Justin van Steijn <jvs@fsfe.org>, 2016.
+# Nathan Follens <nthn@unseen.is>, 2019.
 msgid ""
 msgstr ""
 "Project-Id-Version: empathy\n"
-"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=empathy"
-"&keywords=I18N+L10N&component=General\n"
-"POT-Creation-Date: 2017-08-17 03:50+0000\n"
-"PO-Revision-Date: 2017-08-28 13:09+0100\n"
-"Last-Translator: Hannie Dumoleyn <hannie@ubuntu-nl.org>\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/empathy/issues\n"
+"POT-Creation-Date: 2018-09-14 18:15+0000\n"
+"PO-Revision-Date: 2019-02-26 13:32+0100\n"
+"Last-Translator: Nathan Follens <nthn@unseen.is>\n"
 "Language-Team: Dutch <gnome-nl-list@gnome.org>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
@@ -39,35 +39,31 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Launchpad-Export-Date: 2010-09-28 11:24+0000\n"
-"X-Generator: Lokalize 2.0\n"
+"X-Generator: Poedit 2.2.1\n"
 
-#: ../data/empathy.desktop.in.in.h:1 ../data/empathy.appdata.xml.in.h:1
+#: ../data/org.gnome.Empathy.desktop.in.in.h:1
+#: ../data/org.gnome.Empathy.appdata.xml.in.h:1
 msgid "Empathy"
 msgstr "Empathy"
 
-#: ../data/empathy.desktop.in.in.h:2
+#: ../data/org.gnome.Empathy.desktop.in.in.h:2
 msgid "IM Client"
 msgstr "Chatprogramma"
 
-#: ../data/empathy.desktop.in.in.h:3
+#: ../data/org.gnome.Empathy.desktop.in.in.h:3
 msgid "Empathy Internet Messaging"
 msgstr "Empathy-chatprogramma"
 
-#: ../data/empathy.desktop.in.in.h:4 ../data/empathy.appdata.xml.in.h:2
+#: ../data/org.gnome.Empathy.desktop.in.in.h:4
+#: ../data/org.gnome.Empathy.appdata.xml.in.h:2
 msgid "Chat on Google Talk, Facebook, MSN and many other chat services"
 msgstr "Chatten op Google Talk, Facebook, MSN en vele andere chatdiensten"
 
-#: ../data/empathy.desktop.in.in.h:5
+#: ../data/org.gnome.Empathy.desktop.in.in.h:5
 msgid "chat;talk;im;message;irc;voip;gtalk;facebook;jabber;"
 msgstr "chat;talk;im;message;irc;voip;gtalk;facebook;jabber;gesprek;bericht;"
 
-#: ../data/empathy.appdata.xml.in.h:3
-#| msgid ""
-#| "Empathy is the official instant messaging application of the GNOME "
-#| "desktop environment.  Empathy can connect to AIM, MSN, Jabber (including "
-#| "Facebook and Google Talk), IRC, and many other messaging networks. You "
-#| "can chat with text, make audio and video calls, or even transfer files, "
-#| "depending on what your contact’s chat application allows."
+#: ../data/org.gnome.Empathy.appdata.xml.in.h:3
 msgid ""
 "Empathy is the official instant messaging application of the GNOME desktop "
 "environment. Empathy can connect to AIM, MSN, Jabber (including Facebook and "
@@ -77,28 +73,24 @@ msgstr ""
 "maken met AIM, MSN, Jabber (inclusief Facebook en Google Talk), IRC en vele "
 "andere netwerken voor het uitwisselen van berichten."
 
-#: ../data/empathy.appdata.xml.in.h:4
+#: ../data/org.gnome.Empathy.appdata.xml.in.h:4
 msgid ""
 "You can chat with text, make audio and video calls, or even transfer files, "
 "depending on what your contact’s chat application allows."
 msgstr ""
-" U kunt chatten via tekst, (video)gesprekken voeren en zelfs bestanden"
-" verzenden, afhankelijk "
-"van de mogelijkheden van het programma van uw contactpersoon."
+"U kunt chatten via tekst, (video)gesprekken voeren en zelfs bestanden "
+"verzenden, afhankelijk van de mogelijkheden van het programma van uw "
+"contactpersoon."
 
-#: ../data/empathy.appdata.xml.in.h:5
-#| msgid ""
-#| "Empathy provides integrated messaging for the GNOME desktop, so you’ll "
-#| "never miss a message.  You can respond to your contacts without even "
-#| "having to open Empathy!"
+#: ../data/org.gnome.Empathy.appdata.xml.in.h:5
 msgid ""
 "Empathy provides integrated messaging for the GNOME desktop, so you’ll never "
 "miss a message. You can respond to your contacts without even having to open "
 "Empathy!"
 msgstr ""
 "Empathy biedt geïntegreerde berichtenuitwisseling voor Gnome, zodat u nooit "
-"een bericht hoeft te missen. U kunt zelfs reageren op uw contacten zonder"
-" Empathy te openen!"
+"een bericht hoeft te missen. U kunt zelfs reageren op uw contacten zonder "
+"Empathy te openen!"
 
 #: ../data/org.gnome.Empathy.gschema.xml.h:1
 msgid "Connection managers should be used"
@@ -803,7 +795,7 @@ msgstr "U mag het onderwerp niet wijzigen"
 
 #: ../libempathy-gtk/empathy-chat.c:967
 msgid "Invalid contact ID"
-msgstr "ongeldig contact-ID"
+msgstr "Ongeldig contact-ID"
 
 #: ../libempathy-gtk/empathy-chat.c:1054
 msgid "/clear: clear all messages from the current conversation"
@@ -882,7 +874,7 @@ msgstr "Onbekende opdracht; zie /help voor de beschikbare opdrachten"
 
 #: ../libempathy-gtk/empathy-chat.c:1536
 msgid "insufficient balance to send message"
-msgstr "Onvoldoende saldo om een bericht te versturen"
+msgstr "onvoldoende saldo om een bericht te versturen"
 
 #: ../libempathy-gtk/empathy-chat.c:1540 ../libempathy-gtk/empathy-chat.c:1554
 #: ../libempathy-gtk/empathy-chat.c:1617
@@ -902,7 +894,7 @@ msgstr "Fout bij versturen van bericht: %s"
 #, c-format
 msgid "insufficient balance to send message. <a href='%s'>Top up</a>."
 msgstr ""
-"Onvoldoende saldo om bericht te versturen. <a href='%s'>Vul het aan</a>."
+"onvoldoende saldo om bericht te versturen. <a href='%s'>Vul het aan</a>."
 
 #: ../libempathy-gtk/empathy-chat.c:1588
 msgid "not capable"
@@ -1140,7 +1132,6 @@ msgid "Remove"
 msgstr "Verwijderen"
 
 #: ../libempathy-gtk/empathy-contact-chooser.c:416
-#| msgid "_Search for Contacts…"
 msgid "Type to search a contact…"
 msgstr "Contacten zoeken…"
 
@@ -1306,7 +1297,7 @@ msgstr "Verbonden contacten"
 
 #: ../libempathy-gtk/empathy-individual-information-dialog.c:322
 msgid "gnome-contacts not installed"
-msgstr "Gnome-contacten niet geïnstalleerd"
+msgstr "gnome-contacts niet geïnstalleerd"
 
 #: ../libempathy-gtk/empathy-individual-information-dialog.c:325
 msgid "Please install gnome-contacts to access contacts details."
@@ -1454,6 +1445,21 @@ msgstr "_Uitnodigen naar gespreksruimte"
 #: ../src/empathy-roster-window.ui.h:4
 msgid "_Add Contact…"
 msgstr "Cont_act toevoegen…"
+
+#: ../libempathy-gtk/empathy-individual-store.h:73
+#: ../libempathy-gtk/empathy-roster-model.h:29
+msgid "Ungrouped"
+msgstr "Groep opgeheven"
+
+# hmmmm (Wouter Bolsterlee)
+#: ../libempathy-gtk/empathy-individual-store.h:74
+msgid "Favorite People"
+msgstr "Favoriete personen"
+
+#: ../libempathy-gtk/empathy-individual-store.h:75
+#: ../libempathy-gtk/empathy-roster-model.h:28
+msgid "People Nearby"
+msgstr "Mensen in de omgeving"
 
 #: ../libempathy-gtk/empathy-individual-view.c:2367
 #, c-format
@@ -1873,7 +1879,6 @@ msgstr "Er is een fout opgetreden bij het starten van het gesprek"
 
 #. add chat button
 #: ../libempathy-gtk/empathy-new-message-dialog.c:307
-#| msgid "Done"
 msgid "_Done"
 msgstr "_Klaar"
 
@@ -2134,14 +2139,6 @@ msgstr "Binnenkomend bestand van %s"
 msgid "Top Contacts"
 msgstr "Belangrijkste contacten"
 
-#: ../libempathy-gtk/empathy-roster-model.h:28
-msgid "People Nearby"
-msgstr "Mensen in de omgeving"
-
-#: ../libempathy-gtk/empathy-roster-model.h:29
-msgid "Ungrouped"
-msgstr "Groep opgeheven"
-
 #. Add a prefix explaining that something goes wrong when trying to
 #. * fetch contact's presence.
 #: ../libempathy-gtk/empathy-roster-contact.c:252
@@ -2161,8 +2158,11 @@ msgstr ""
 "Wouter Bolsterlee\n"
 "Hannie Dumoleyn\n"
 "Erwin Poeze\n"
+"Nathan Follens\n"
+"\n"
 "Meer info over Gnome-NL http://nl.gnome.org\n"
-"Launchpad Contributions:\n"
+"\n"
+"Launchpad-bijdragen:\n"
 "  A. Vugts https://launchpad.net/~mail-axelv\n"
 "  Benno Schulenberg https://launchpad.net/~bennoschulenberg\n"
 "  Danny https://launchpad.net/~danny-fleppuhstein\n"
@@ -2944,9 +2944,9 @@ msgid ""
 "such as your list of contacts or the messages you recently sent or "
 "received.\n"
 "If you don’t want to see such information available in a public bug report, "
-"you can choose to limit the visibility of your bug to Empathy developers "
-"when reporting it by displaying the advanced fields in the <a href=\"https://"
-"bugzilla.gnome.org/enter_bug.cgi?product=empathy\">bug report</a>."
+"you can choose to limit the visibility of your bug to GNOME developers when "
+"reporting it by marking the bug report as confidential in the <a href="
+"\"https://gitlab.gnome.org/GNOME/empathy/issues/new/\">bug report</a>."
 msgstr ""
 "Zelfs zonder wachtwoorden te tonen kunnen logbestanden gevoelige informatie "
 "bevatten, zoals uw contactenlijst of recent verstuurde of ontvangen "
@@ -2954,8 +2954,8 @@ msgstr ""
 "Als u niet wilt dat dit soort informatie beschikbaar is in een openbaar "
 "foutrapport, dan kunt u ervoor kiezen de zichtbaarheid van uw fout aan "
 "Empathy-ontwikkelaars te beperken door bij het melden de uitgebreide velden "
-"te tonen in het <a href=\"https://bugzilla.gnome.org/enter_bug.cgi?"
-"product=empathy\">foutrapport</a>."
+"te tonen in het <a href=\"https://gitlab.gnome.org/GNOME/empathy/issues/new/"
+"\">foutrapport</a>."
 
 #: ../src/empathy-debug-window.c:2027
 msgid "Time"
@@ -3635,7 +3635,6 @@ msgid "No online contacts"
 msgstr "Geen online-contacten"
 
 #: ../src/empathy-roster-window.c:2356
-#| msgid "Conversation"
 msgid "Conversations"
 msgstr "Gesprekken"
 
