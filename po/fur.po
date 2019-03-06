@@ -6,10 +6,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: empathy master\n"
-"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
-"product=empathy&keywords=I18N+L10N&component=General\n"
-"POT-Creation-Date: 2017-08-04 00:44+0000\n"
-"PO-Revision-Date: 2017-08-06 16:46+0200\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/empathy/issues\n"
+"POT-Creation-Date: 2018-09-14 18:15+0000\n"
+"PO-Revision-Date: 2019-03-06 09:06+0100\n"
 "Last-Translator: Fabio Tomat <f.t.public@gmail.com>\n"
 "Language-Team: Friulian <f.t.public@gmail.com>\n"
 "Language: fur\n"
@@ -17,32 +16,34 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.0.2\n"
+"X-Generator: Poedit 2.2.1\n"
 
-#: ../data/empathy.desktop.in.in.h:1 ../data/empathy.appdata.xml.in.h:1
+#: ../data/org.gnome.Empathy.desktop.in.in.h:1
+#: ../data/org.gnome.Empathy.appdata.xml.in.h:1
 msgid "Empathy"
 msgstr "Empathy"
 
-#: ../data/empathy.desktop.in.in.h:2
+#: ../data/org.gnome.Empathy.desktop.in.in.h:2
 msgid "IM Client"
 msgstr "Client di Messaçs Istantanis"
 
-#: ../data/empathy.desktop.in.in.h:3
+#: ../data/org.gnome.Empathy.desktop.in.in.h:3
 msgid "Empathy Internet Messaging"
 msgstr "Sisteme pai Messaçs Internet Empathy"
 
-#: ../data/empathy.desktop.in.in.h:4 ../data/empathy.appdata.xml.in.h:2
+#: ../data/org.gnome.Empathy.desktop.in.in.h:4
+#: ../data/org.gnome.Empathy.appdata.xml.in.h:2
 msgid "Chat on Google Talk, Facebook, MSN and many other chat services"
 msgstr ""
 "Cjacare su Google Talk, Facebook, MSN e une vore di altris servizis par "
 "messazâ su internet"
 
-#: ../data/empathy.desktop.in.in.h:5
+#: ../data/org.gnome.Empathy.desktop.in.in.h:5
 msgid "chat;talk;im;message;irc;voip;gtalk;facebook;jabber;"
 msgstr ""
 "chat;talk;im;messaç;messaçs;irc;voip;gtalk;facebook;jabber;cjacarâ;tabaiâ;"
 
-#: ../data/empathy.appdata.xml.in.h:3
+#: ../data/org.gnome.Empathy.appdata.xml.in.h:3
 msgid ""
 "Empathy is the official instant messaging application of the GNOME desktop "
 "environment. Empathy can connect to AIM, MSN, Jabber (including Facebook and "
@@ -52,7 +53,7 @@ msgstr ""
 "GNOME. Empaty al pues conetisi a AIM, MSN, Jabber (includût Facebook e "
 "Google Talk), IRC e une vore di altris rêts di conversazion."
 
-#: ../data/empathy.appdata.xml.in.h:4
+#: ../data/org.gnome.Empathy.appdata.xml.in.h:4
 msgid ""
 "You can chat with text, make audio and video calls, or even transfer files, "
 "depending on what your contact’s chat application allows."
@@ -60,7 +61,7 @@ msgstr ""
 "Si pues chatâ cul test, fâ clamadis sonoris e video o ancje trasferî file, "
 "dut al dipent di ce che la aplicazion di chat dal contat e permet di fâ."
 
-#: ../data/empathy.appdata.xml.in.h:5
+#: ../data/org.gnome.Empathy.appdata.xml.in.h:5
 msgid ""
 "Empathy provides integrated messaging for the GNOME desktop, so you’ll never "
 "miss a message. You can respond to your contacts without even having to open "
@@ -1447,6 +1448,20 @@ msgstr "_Invide te stanzie"
 msgid "_Add Contact…"
 msgstr "_Zonte contat..."
 
+#: ../libempathy-gtk/empathy-individual-store.h:73
+#: ../libempathy-gtk/empathy-roster-model.h:29
+msgid "Ungrouped"
+msgstr "Cence grup"
+
+#: ../libempathy-gtk/empathy-individual-store.h:74
+msgid "Favorite People"
+msgstr "Personis preferidis"
+
+#: ../libempathy-gtk/empathy-individual-store.h:75
+#: ../libempathy-gtk/empathy-roster-model.h:28
+msgid "People Nearby"
+msgstr "Int tes vicinancis"
+
 #: ../libempathy-gtk/empathy-individual-view.c:2367
 #, c-format
 msgid "Do you really want to remove the group “%s”?"
@@ -1872,7 +1887,7 @@ msgstr "_Fat"
 
 #. Tweak the dialog
 #: ../libempathy-gtk/empathy-new-message-dialog.c:323
-#: ../src/empathy-roster-window.c:2367
+#: ../src/empathy-roster-window.c:2364
 msgid "New Conversation"
 msgstr "Gnove conversazion"
 
@@ -2126,14 +2141,6 @@ msgstr "Al sta rivant un file di %s"
 #: ../libempathy-gtk/empathy-roster-model.h:27
 msgid "Top Contacts"
 msgstr "Contats principâi"
-
-#: ../libempathy-gtk/empathy-roster-model.h:28
-msgid "People Nearby"
-msgstr "Int tes vicinancis"
-
-#: ../libempathy-gtk/empathy-roster-model.h:29
-msgid "Ungrouped"
-msgstr "Cence grup"
 
 #. Add a prefix explaining that something goes wrong when trying to
 #. * fetch contact's presence.
@@ -2643,10 +2650,6 @@ msgstr "Candidât locâl:"
 msgid "Audio"
 msgstr "Audio"
 
-#: ../src/empathy-chat.c:102
-msgid "— Empathy Chat Client"
-msgstr "— Client di conversazion Empathy"
-
 #: ../src/empathy-chatrooms-window.c:244
 msgid "Name"
 msgstr "Non"
@@ -2900,18 +2903,18 @@ msgid ""
 "such as your list of contacts or the messages you recently sent or "
 "received.\n"
 "If you don’t want to see such information available in a public bug report, "
-"you can choose to limit the visibility of your bug to Empathy developers "
-"when reporting it by displaying the advanced fields in the <a href=\"https://"
-"bugzilla.gnome.org/enter_bug.cgi?product=empathy\">bug report</a>."
+"you can choose to limit the visibility of your bug to GNOME developers when "
+"reporting it by marking the bug report as confidential in the <a href="
+"\"https://gitlab.gnome.org/GNOME/empathy/issues/new/\">bug report</a>."
 msgstr ""
 "Ancje se no mostrin password, i regjistris a puedin vê informazions "
 "sensibilis come la liste dai contats o i messaçs che tu âs di resint inviât "
 "o ricevût.\n"
-"Par fâ in mût che chest gjenar di informazions no sedin mostradis intune "
-"segnalazion di erôr in public, al è pussibil limitâ la visibilitât dal erôr "
-"ai svilupadôrs di Empathy. Par fâ chest, dopre il cjamp des opzions "
-"avanzadis presint inte <a href=\"https://bugzilla.gnome.org/enter_bug.cgi?"
-"product=empathy\">segnalazion</a>."
+"Par fâ in mût che chest gjenar di informazions nol sedi mostrât intune "
+"segnalazion di erôr publiche, al è pussibil limitâ la visibilitât dal erôr "
+"ai svilupadôrs di GNOME. Par fâ chest, segne l'erôr come confidenziâl inte "
+"<a href=\"https://gitlab.gnome.org/GNOME/empathy/issues/new/\">segnalazion</"
+"a>."
 
 #: ../src/empathy-debug-window.c:2027
 msgid "Time"
@@ -3354,7 +3357,7 @@ msgstr "Mostre grups"
 msgid "Show account balances"
 msgstr "Mostre conts dai account"
 
-#: ../src/empathy-preferences.ui.h:4 ../src/empathy-roster-window.c:2330
+#: ../src/empathy-preferences.ui.h:4 ../src/empathy-roster-window.c:2331
 msgid "Contact List"
 msgstr "Liste contats"
 
@@ -3574,23 +3577,19 @@ msgstr "Tu scugnis abilitâ un dai tiei account par viodi contats achì."
 msgid "You need to enable %s to see contacts here."
 msgstr "Tu scugnis abilitâ %s par viodi i contats chi."
 
-#: ../src/empathy-roster-window.c:1739
-msgid "Change your presence to see contacts here"
-msgstr "Cambie la tô presince par viodi i contats achì"
-
-#: ../src/empathy-roster-window.c:1748
+#: ../src/empathy-roster-window.c:1749
 msgid "No match found"
 msgstr "Nissune corispuindince cjatade"
 
-#: ../src/empathy-roster-window.c:1755
+#: ../src/empathy-roster-window.c:1756
 msgid "You haven’t added any contacts yet"
 msgstr "No tu âs ancjemò zontât nissun contat"
 
-#: ../src/empathy-roster-window.c:1758
+#: ../src/empathy-roster-window.c:1759
 msgid "No online contacts"
 msgstr "Nissun contat tacât"
 
-#: ../src/empathy-roster-window.c:2359
+#: ../src/empathy-roster-window.c:2356
 msgid "Conversations"
 msgstr "Conversazions"
 
@@ -3694,6 +3693,12 @@ msgstr "Modifiche lis opzions dal account %s"
 #: ../ubuntu-online-accounts/empathy.application.in.h:1
 msgid "Integrate your IM accounts"
 msgstr "Integre i tiei account pai messaçs istantanis"
+
+#~ msgid "— Empathy Chat Client"
+#~ msgstr "— Client di conversazion Empathy"
+
+#~ msgid "Change your presence to see contacts here"
+#~ msgstr "Cambie la tô presince par viodi i contats achì"
 
 #~ msgid "_Copy Link Address"
 #~ msgstr "_Copie direzion link"
