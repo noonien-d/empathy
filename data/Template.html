@@ -155,6 +155,21 @@
 				self.coalesce();
 			}
 			
+			this.prepend = function(html) {
+				// if we started this fragment with a consecuative message,
+				// cancel and output before we continue
+				if(self.isConsecutive) {
+					self.cancel();
+				}
+				self.isConsecutive = false;
+				rmInsertNode();
+				var node = createHTMLNode(html);
+				self.fragment.insertBefore(node, self.fragment.childNodes[0]);
+				node = null;
+				self.onchange();
+				self.coalesce();
+			}
+
 			this.replaceLast = function (html, shouldScroll) {
 				rmInsertNode();
 				var node = createHTMLNode(html);
@@ -199,6 +214,14 @@
 			shouldScroll = shouldScroll || false;
 			// only group next messages if we're already coalescing input
 			coalescedHTML.appendNext(html, shouldScroll);
+		}
+
+		function prepend(html) {
+			coalescedHTML.prepend(html)
+		}
+
+		function prependPrev(html) {
+			coalescedHTML.prepend(html)
 		}
 
 		function replaceLastMessage(html){
