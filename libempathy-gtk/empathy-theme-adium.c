@@ -537,10 +537,10 @@ web_view_javascript_finished (GObject      *object,
         str_value = (gchar *)g_malloc (str_length);
         JSStringGetUTF8CString (js_str_value, str_value, str_length);
         JSStringRelease (js_str_value);
-        g_print ("Script result: %s\n", str_value);
+        g_print ("Script result: %s type: \n", str_value);
         g_free (str_value);
-    } else {
-        g_warning ("Error running javascript: unexpected return value");
+    } else if (!JSValueIsNull(context, value)) {
+        g_warning ("Script result: value of type %d", JSValueGetType(context, value));
     }
     webkit_javascript_result_unref (js_result);
 }
