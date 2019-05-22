@@ -6,12 +6,13 @@
 # Taufiq Wirahman <taufiq.wirahman@gmail.com>, 2010.
 # Dirgita <dirgitadevina@yahoo.co.id>, 2011, 2014.
 # Andika Triwidada <andika@gmail.com>, 2011-2014, 2018.
+# Kukuh Syafaat <kukuhsyafaat@gnome.org>, 2017, 2018, 2019.
 msgid ""
 msgstr ""
 "Project-Id-Version: empathy master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/empathy/issues\n"
-"POT-Creation-Date: 2018-09-14 18:15+0000\n"
-"PO-Revision-Date: 2018-09-22 15:26+0700\n"
+"POT-Creation-Date: 2019-04-13 12:09+0000\n"
+"PO-Revision-Date: 2019-05-22 14:17+0700\n"
 "Last-Translator: Kukuh Syafaat <kukuhsyafaat@gnome.org>\n"
 "Language-Team: Indonesian <gnome-l10n-id@googlegroups.com>\n"
 "Language: id\n"
@@ -19,7 +20,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 2.0.6\n"
+"X-Generator: Poedit 2.2.1\n"
 
 #: ../data/org.gnome.Empathy.desktop.in.in.h:1
 #: ../data/org.gnome.Empathy.appdata.xml.in.h:1
@@ -610,7 +611,7 @@ msgstr "Kesalahan jaringan"
 
 #: ../libempathy/empathy-utils.c:234 ../libempathy/empathy-utils.c:268
 msgid "Authentication failed"
-msgstr "Otentikasi gagal"
+msgstr "Autentikasi gagal"
 
 # Kesalahan penyandian?
 # Saya tetap memakai enkripsi sebagai lawan dari dekripsi (decryption) dengan acuan dari KBBI
@@ -730,7 +731,7 @@ msgstr "Klik untuk memperbesar"
 #: ../libempathy-gtk/empathy-bad-password-dialog.c:128
 #, c-format
 msgid "Authentication failed for account <b>%s</b>"
-msgstr "Otentikasi gagal bagi akun <b>%s</b>"
+msgstr "Autentikasi gagal bagi akun <b>%s</b>"
 
 #: ../libempathy-gtk/empathy-bad-password-dialog.c:140
 #: ../libempathy-gtk/empathy-chat.c:3853
@@ -2311,11 +2312,11 @@ msgstr "Tak ada protokol backend yang terpasang"
 
 #: ../src/empathy-auth-client.c:284
 msgid " — Empathy authentication client"
-msgstr " — Klien otentikasi Empathy"
+msgstr " — Klien autentikasi Empathy"
 
 #: ../src/empathy-auth-client.c:299
 msgid "Empathy authentication client"
-msgstr "Klien otentikasi Empathy"
+msgstr "Klien autentikasi Empathy"
 
 #: ../src/empathy.c:402
 msgid "Don’t connect on startup"
