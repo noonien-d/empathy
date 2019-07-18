@@ -1170,8 +1170,8 @@ msgstr "El vostre missatge d'introducció:"
 
 #: ../libempathy-gtk/empathy-contact-search-dialog.c:674
 msgid "Please let me see when you’re online. Thanks!"
-msgstr "Permeta'm veure quan estàs en línia. Gràcies."
-
+msgstr "Permetre'm veure quan estàs en línia. Gràcies."
+ 
 #: ../libempathy-gtk/empathy-contact-widget.c:158
 #: ../libempathy-gtk/empathy-individual-widget.c:955
 msgid "Save Avatar"
@@ -2152,7 +2152,7 @@ msgid ""
 "%s of free space are required to save this file, but only %s is available. "
 "Please choose another location."
 msgstr ""
-"Es necessita %s d'espai lliure per desar el fitxer, però només hi ha %s."
+"Es necessita %s d'espai lliure per desar el fitxer, però només hi ha %s. "
 "Seleccioneu una altra ubicació."
 
 #: ../libempathy-gtk/empathy-ui-utils.c:931
