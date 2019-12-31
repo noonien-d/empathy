@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: empathy-help.master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-19 20:35+0000\n"
+"POT-Creation-Date: 2019-09-15 14:16+0000\n"
 "PO-Revision-Date: 2016-08-24 10:38+0200\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: Español; Castellano <gnome-es-list@gnome.org>\n"
@@ -156,7 +156,7 @@ msgstr ""
 "apodos. En algunas redes, incluyendo la popular red freenode, las "
 "contraseñas de servidor se redireccionan automáticamente a NickServ, "
 "permitiéndole usar este campo para identificarse con NickServ. Para obtener "
-"más información consulte la <link xref=\"irc-nick-password\"/>."
+"más información consulte la sección <link xref=\"irc-nick-password\"/>."
 
 #. (itstool) path: item/title
 #: C/account-irc.page:77
@@ -356,7 +356,7 @@ msgstr ""
 "inicio de sesión y una contraseña. Para algunas cuentas en cierto tipo de "
 "redes, puede necesitar introducir información adicional en la sección "
 "<gui>Avanzadas</gui>. Generalmente no necesitará usar las opciones avanzadas "
-"de debajo. Consulte la <link xref=\"add-account\"/> para obtener "
+"de debajo. Consulte la sección <link xref=\"add-account\"/> para obtener "
 "instrucciones generales para añadir una cuenta."
 
 #. (itstool) path: note/p
@@ -514,12 +514,12 @@ msgstr "Añadir una cuenta nueva en <app>Empathy</app>."
 #: C/import-account.page:23 C/index.page:20 C/introduction.page:13
 #: C/irc-commands.page:10 C/irc-join-pwd.page:17 C/irc-join-room.page:16
 #: C/irc-manage.page:19 C/irc-nick-password.page:18 C/irc-send-file.page:16
-#: C/irc-start-conversation.page:15 C/link-contacts.page:15
-#: C/prev-conv.page:17 C/prob-conn-acctdisabled.page:19
-#: C/prob-conn-auth.page:22 C/prob-conn-name.page:19
-#: C/prob-conn-neterror.page:20 C/remove-account.page:19
-#: C/salut-protocol.page:18 C/send-file.page:21 C/set-custom-status.page:19
-#: C/share-desktop.page:14 C/status-icons.page:17 C/video-call.page:25
+#: C/irc-start-conversation.page:15 C/link-contacts.page:15 C/prev-conv.page:17
+#: C/prob-conn-acctdisabled.page:19 C/prob-conn-auth.page:22
+#: C/prob-conn-name.page:19 C/prob-conn-neterror.page:20
+#: C/remove-account.page:19 C/salut-protocol.page:18 C/send-file.page:21
+#: C/set-custom-status.page:19 C/share-desktop.page:14 C/status-icons.page:17
+#: C/video-call.page:25
 msgid "Milo Casagrande"
 msgstr "Milo Casagrande"
 
@@ -539,7 +539,7 @@ msgstr ""
 "Puede añadir cuentas de mensajería instantánea de cualquier servicio "
 "soportado para comunicarse con todos sus contactos desde <app>Empathy</app>. "
 "Para algunos proveedores de cuentas estos pasos le permitirán registrar una "
-"cuenta nueva. Para obtener más detalles consulte la <link xref=\"create-"
+"cuenta nueva. Para obtener más detalles consulte la sección <link xref=\"create-"
 "account\"/>."
 
 #. (itstool) path: item/p
@@ -984,7 +984,7 @@ msgid ""
 "status messages</link> to provide more information about your availability "
 "to your contacts."
 msgstr ""
-"Consulte la <link xref=\"status-icons\"/> para obtener una lista de los "
+"Consulte la sección <link xref=\"status-icons\"/> para obtener una lista de los "
 "estados predefinidos y lo que significan. También puede <link xref=\"set-"
 "custom-status\">añadir mensajes de estado personalizados</link> para "
 "proporcionar a sus contactos más información acerca de su disponibilidad."
@@ -1264,7 +1264,7 @@ msgid ""
 "IRC room."
 msgstr ""
 "Para obtener más información acerca de cómo unirse a una sala de chat IRC, "
-"consulte la <link xref=\"irc-join-room\"/>."
+"consulte la sección <link xref=\"irc-join-room\"/>."
 
 #. (itstool) path: item/p
 #: C/favorite-rooms.page:46
@@ -1273,7 +1273,7 @@ msgid ""
 "start or join a group conversation."
 msgstr ""
 "Para obtener más información acerca de cómo unirse a una conversación en "
-"grupo, consulte la <link xref=\"group-conversations\"/>."
+"grupo, consulte la sección <link xref=\"group-conversations\"/>."
 
 #. (itstool) path: item/p
 #: C/favorite-rooms.page:54
@@ -2047,24 +2047,6 @@ msgstr "Acciones avanzadas"
 msgid "Common Problems"
 msgstr "Problemas comunes"
 
-#. (itstool) path: media
-#. This is a reference to an external file such as an image or video. When
-#. the file changes, the md5 hash will change to let you know you need to
-#. update your localized copy. The msgstr is not used at all. Set it to
-#. whatever you like once you have updated your copy of the file.
-#: C/introduction.page:41
-#| msgctxt "_"
-#| msgid ""
-#| "external ref='figures/empathy-main-window.png' "
-#| "md5='54908dcb2588beddb15ef0968d2c2582'"
-msgctxt "_"
-msgid ""
-"external ref='figures/empathy-main-window.png' "
-"md5='6f5e0ccab794dce0c9fba09c903d4ff8'"
-msgstr ""
-"external ref='figures/empathy-main-window.png' "
-"md5='6f5e0ccab794dce0c9fba09c903d4ff8'"
-
 #. (itstool) path: info/desc
 #: C/introduction.page:9
 msgid "Introduction to the <app>Empathy</app> instant messenger."
@@ -2119,6 +2101,20 @@ msgstr "Ventana de <gui>Lista de contactos</gui>"
 #: C/introduction.page:40
 msgid "<app>Empathy</app> main window"
 msgstr "Ventana principal de <app>Empathy</app>"
+
+#. (itstool) path: figure/media
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/introduction.page:41
+msgctxt "_"
+msgid ""
+"external ref='figures/empathy-main-window.png' "
+"md5='6f5e0ccab794dce0c9fba09c903d4ff8'"
+msgstr ""
+"external ref='figures/empathy-main-window.png' "
+"md5='6f5e0ccab794dce0c9fba09c903d4ff8'"
 
 #. (itstool) path: media/p
 #: C/introduction.page:42
@@ -2203,7 +2199,7 @@ msgid ""
 msgstr ""
 "Puede unirse a salas de chat IRC (también conocidos como canales de IRC) en "
 "cualquier red de IRC a la que esté conectado. Para conectarse a una red de "
-"IRC consulte la <link xref=\"add-account\"/> y la <link xref=\"account-irc\"/"
+"IRC consulte la sección <link xref=\"add-account\"/> y la <link xref=\"account-irc\"/"
 ">."
 
 #. (itstool) path: item/p
@@ -2698,23 +2694,8 @@ msgstr ""
 "link> de diferentes proveedores de servicios. Algunos de ellos soportan "
 "incluso llamadas con sonido y vídeo."
 
-#. (itstool) path: td/p
-#: C/overview.page:43
-msgid "Video Conference"
-msgstr "Videoconferencia"
-
-#. (itstool) path: td/p
-#: C/overview.page:44
-msgid "Group chats"
-msgstr "Conversaciones en grupo"
-
-#. (itstool) path: td/p
-#: C/overview.page:45
-msgid "Chat rooms"
-msgstr "Salas de chat"
-
 #. (itstool) path: page/p
-#: C/overview.page:49
+#: C/overview.page:36
 msgid ""
 "Some instant messaging applications can be used to connect to chat rooms, "
 "online places where like-minded people meet to talk. One popular means to "
@@ -3787,6 +3768,15 @@ msgstr ""
 "Seleccione el contacto con el que quiere tener la conversación y, del menú, "
 "seleccione <gui style=\"menuitem\">Llamada de vídeo</gui>."
 
+#~ msgid "Video Conference"
+#~ msgstr "Videoconferencia"
+
+#~ msgid "Group chats"
+#~ msgstr "Conversaciones en grupo"
+
+#~ msgid "Chat rooms"
+#~ msgstr "Salas de chat"
+
 #~ msgid "Facebook Chat"
 #~ msgstr "Chat de Facebook"
 
@@ -3836,7 +3826,7 @@ msgstr ""
 #~ "Si aún no tiene una cuenta registrada seleccione <gui>Crear una cuenta "
 #~ "nueva en el servidor</gui>. Esta característica no está disponible para "
 #~ "todos los tipos de cuentas y puede no funcionar con algunos proveedores "
-#~ "de cuentas. Para obtener más información consulte la <link xref=\"create-"
+#~ "de cuentas. Para obtener más información consulte la sección <link xref=\"create-"
 #~ "account\"/>."
 
 #~ msgctxt "_"
