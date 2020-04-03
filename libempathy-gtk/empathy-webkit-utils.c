@@ -80,7 +80,7 @@ empathy_webkit_replace_smiley (const gchar *text,
 #define INVALID_CHARS_EXT INVALID_CHARS "\\[\\](){},;:"
 #define INVALID_CHARS_FULL INVALID_CHARS_EXT "?'"
 #define BODY_END          "([^"INVALID_CHARS"]*)[^"INVALID_CHARS_FULL".]"
-#define IMAGEEXTS         "(jpg|jpeg|png|gif|bmp)"
+#define IMAGEEXTS         "(jpg|jpeg|png|gif|bmp|webp)"
 #define IMG_URI_REGEX     "(?i)("SCHEMES"://"BODY_END"."IMAGEEXTS")"
 
 static GRegex *
