@@ -2093,6 +2093,7 @@ chat_input_has_focus_notify_cb (GtkWidget   *widget,
 				GParamSpec  *pspec,
 				EmpathyChat *chat)
 {
+	empathy_chat_messages_read(chat);
 	empathy_theme_adium_focus_toggled (chat->view, gtk_widget_has_focus (widget));
 }
 
